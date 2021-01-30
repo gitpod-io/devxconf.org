@@ -14,10 +14,16 @@
  * limitations under the License.
  */
 
+import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
+
 import cn from 'classnames';
 import styleUtils from './utils.module.css';
 import styles from './hero.module.css';
-import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
+import IconGithub from './icons/icon-github';
+
+const GitHub = <div className={styles.github}>
+    <span><IconGithub size={25} color="#111"/> GitHub</span>
+</div>;
 
 export default function Hero() {
   return (
@@ -34,7 +40,7 @@ export default function Hero() {
       </h2>
       <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
         The first {BRAND_NAME}
-        <br className={styleUtils['show-on-desktop']} /> global user conference
+        <br className={styleUtils['show-on-desktop']} /> conference
       </h1>
       <h2
         className={cn(
@@ -48,10 +54,13 @@ export default function Hero() {
       </h2>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
         <p>{DATE}</p>
-        <div className={styles['description-separator']} />
+        &nbsp;-&nbsp;
         <p>
-          <strong>Online</strong>
+          Virtual
         </p>
+      </div>
+      <div className={styles["btn-wrapper"]}>
+        <a href="" className="btn" style={{display: 'flex'}}>Register with {GitHub}</a>
       </div>
     </div>
   );

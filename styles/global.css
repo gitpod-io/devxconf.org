@@ -51,11 +51,13 @@
   --accents-7: #333333;
   --accents-8: #111111;
 
+  --white: #fff;
   --gray: #252729;
   --secondary-color: #8a8f98;
   --sidebar: #0e0e10;
   --header-height: 72px;
-  --brand: #845ef7;
+  --background: #1c1c1c;
+  --brand: #FF5043;
 }
 
 html {
@@ -160,4 +162,15 @@ svg circle {
   width: auto;
   height: auto;
   clip: auto;
+}
+
+/* Re-usable Components */
+
+.btn {
+    display: inline-block;
+    border-radius: 100px;
+    padding: 10px 30px;
+    color: var(--white);
+    background: var(--brand);
+    text-transform: uppercase;
 }

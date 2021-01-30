@@ -35,7 +35,6 @@
   justify-content: center;
   align-items: center;
   margin-bottom: var(--space-8x);
-  color: var(--brand);
 }
 
 .description {
@@ -57,6 +56,19 @@
 
 .info :global(p) {
   margin: 0;
+}
+
+.btn-wrapper {
+    max-width: 380px;
+    text-align: center;
+}
+
+.github {
+    display: inline-block;
+}
+
+.github span {
+    display: flex;
 }
 
 @media (min-width: 768px) {

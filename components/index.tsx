@@ -20,8 +20,6 @@ import Ticket from './ticket';
 import Layout from './layout';
 import ConfContainer from './conf-container';
 import Hero from './hero';
-import Form from './form';
-import LearnMore from './learn-more';
 
 type Props = {
   defaultUserData: UserData;
@@ -50,8 +48,6 @@ export default function Conf({
           {pageState === 'registration' && !sharePage ? (
             <>
               <Hero />
-              <Form />
-              <LearnMore />
             </>
           ) : (
             <Ticket

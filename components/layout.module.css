@@ -15,7 +15,7 @@
  */
 
 .background {
-  background: #000;
+  background: var(--background);
   color: #fff;
   min-height: 100vh;
   min-height: var(--100vh);
@@ -45,14 +45,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--sidebar);
-  border-bottom: 1px solid var(--accents-7);
   height: var(--header-height);
   z-index: 2;
 }
 
 .header-logos {
-  max-width: 200px;
+  max-width: 300px;
   display: flex;
   align-items: center;
   margin: var(--space-2x) var(--space-4x);
@@ -113,5 +111,5 @@
 
 .logo {
   display: flex;
-  width: 40px;
+  width: 120px;
 }
