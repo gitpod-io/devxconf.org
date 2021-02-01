@@ -42,6 +42,11 @@
   --text-lg: 18px;
   --text-xl: 24px;
 
+  --heading-primary: 80px;
+  --heading-secondary: 44px;
+
+  --heading-secondary-mobile: 36px;
+
   --accents-1: #fafafa;
   --accents-2: #eaeaea;
   --accents-3: #999999;
@@ -52,10 +57,10 @@
   --accents-8: #111111;
 
   --white: #fff;
-  --gray: #252729;
+  --grey: #252729;
   --secondary-color: #8a8f98;
   --sidebar: #0e0e10;
-  --header-height: 72px;
+  --header-height: 95px;
   --background: #1c1c1c;
   --brand: #FF5043;
 }
@@ -94,11 +99,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
 }
+
 html,
 body {
   color: #fff;
   background-color: #111;
 }
+
+.row {
+  margin: 0 auto;
+  max-width: 1180px;
+  width: 95%;
+}
+
 ::selection {
   background-color: #0070f3;
   color: #fff;
@@ -113,6 +126,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  line-height: 1.15;
 }
 a {
   text-decoration: none;
@@ -142,6 +156,7 @@ svg path,
 svg circle {
   shape-rendering: geometricprecision;
 }
+
 [data-reach-skip-link] {
   border: 0;
   clip: rect(0 0 0 0);
@@ -164,13 +179,16 @@ svg circle {
   clip: auto;
 }
 
-/* Re-usable Components */
+.heading-secondary {
+  font-size: var(--heading-primary);
+}
 
 .btn {
-    display: inline-block;
-    border-radius: 100px;
-    padding: 10px 30px;
-    color: var(--white);
-    background: var(--brand);
-    text-transform: uppercase;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 30px;
+  color: var(--white);
+  font-weight: 600;
+  background: var(--brand);
+  text-transform: uppercase;
 }

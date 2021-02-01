@@ -1,0 +1,8 @@
+.section {
+    padding: var(--space-32x) 0;
+    text-align: center;
+}
+
+.section-intro {
+    margin: var(--space-32x) 0;
+}

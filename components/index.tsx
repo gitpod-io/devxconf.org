@@ -14,12 +14,16 @@
  * limitations under the License.
  */
 
-import { useState } from 'react';
-import { PageState, ConfDataContext, UserData } from '@lib/hooks/use-conf-data';
-import Ticket from './ticket';
-import Layout from './layout';
+import { ConfDataContext, PageState, UserData } from '@lib/hooks/use-conf-data';
+
 import ConfContainer from './conf-container';
-import Hero from './hero';
+import Hero from './index/hero';
+import Layout from './layout';
+import SpeakersGrid from './speakers-grid';
+import Sponsors from './index/sponsors';
+import Ticket from './ticket';
+import { speakers } from 'contents';
+import { useState } from 'react';
 
 type Props = {
   defaultUserData: UserData;
@@ -48,6 +52,8 @@ export default function Conf({
           {pageState === 'registration' && !sharePage ? (
             <>
               <Hero />
+              <SpeakersGrid speakers={speakers} />
+              <Sponsors />
             </>
           ) : (
             <Ticket

@@ -20,15 +20,15 @@ export type Image = {
 
 export type Speaker = {
   name: string;
-  bio: string;
+  bio?: string;
   title: string;
-  slug: string;
-  twitter: string;
-  github: string;
+  slug?: string;
+  twitter?: string;
+  github?: string;
   company: string;
-  talk: Talk;
+  talk?: Talk;
   image: Image;
-  imageSquare: Image;
+  imageSquare?: Image;
 };
 
 export type Stage = {

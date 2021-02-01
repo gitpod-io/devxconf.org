@@ -14,15 +14,25 @@
  * limitations under the License.
  */
 
+.section {
+  text-align: center;
+}
+
+.section-header {
+  max-width: 840px;
+  margin: auto;
+}
+
 .grid {
+  max-width: 1100px;
   margin: 50px auto;
-  padding: 0 24px;
+  padding: 0 50px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 24px;
+  grid-gap: 50px;
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
@@ -41,20 +51,14 @@
 
 .card {
   border-radius: var(--space-2x);
-  background: #111111;
   display: flex;
   flex-direction: column;
-  background-clip: content-box, border-box;
-  background-image: linear-gradient(#111111, #111111), linear-gradient(to right, #333333, #333333);
-  padding: 1px;
   cursor: pointer;
 }
 
 .card:hover,
 .card:focus {
   outline: none;
-  background-image: linear-gradient(#111111, #111111),
-    linear-gradient(to right, var(--brand), var(--brand));
 }
 
 .cardBody {
@@ -69,12 +73,14 @@
 .imageWrapper {
   width: 100%;
   height: 100%;
+  padding: 25px 35px;
+  background-image: url('/pattern-square.png');
+  background-size: cover;
 }
 
 .image {
   object-fit: cover;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-radius: 50%;
 }
 
 @media (max-width: 471px) {

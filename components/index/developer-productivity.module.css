@@ -1,0 +1,30 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+    margin: var(--space-32x) auto;
+}
+
+.header {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto var(--space-12x);
+}
+
+.pattern  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title {
+    margin: 0 auto;
+    font-size: var(--heading-secondary-mobile);
+    padding: 10px 40px;
+}
+
+@media(min-width: 768px) {
+    .title {
+        font-size: var(--heading-secondary);
+    }
+}

@@ -50,8 +50,9 @@
 }
 
 .header-logos {
-  max-width: 300px;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   align-items: center;
   margin: var(--space-2x) var(--space-4x);
 }
@@ -62,6 +63,10 @@
 }
 
 @media screen and (min-width: 770px) {
+  .header-logos {
+    padding: var(--space-3x) 0;
+  }
+  
   .header-right {
     display: initial;
   }
@@ -73,6 +78,10 @@
 }
 
 @media screen and (min-width: 1032px) {
+  .header-logos {
+    max-width: 300px;
+  }
+
   .tabs {
     display: initial;
   }

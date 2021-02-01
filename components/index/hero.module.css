@@ -15,7 +15,8 @@
  */
 
 .wrapper {
-  margin-top: var(--space-12x);
+  position: relative;
+  margin-top: var(--space-16x);
 }
 
 .hero {
@@ -58,20 +59,11 @@
   margin: 0;
 }
 
-.btn-wrapper {
-    max-width: 380px;
-    text-align: center;
-}
-
-.github {
-    display: inline-block;
-}
-
-.github span {
-    display: flex;
-}
-
 @media (min-width: 768px) {
+  .wrapper {
+    margin-top: var(--space-32x);
+  }
+
   .hero {
     font-size: 100px;
     line-height: 1;

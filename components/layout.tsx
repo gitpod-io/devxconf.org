@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
+import Footer from './footer';
 import Link from 'next/link';
-import cn from 'classnames';
-import { useRouter } from 'next/router';
-import { SkipNavContent } from '@reach/skip-nav';
-import { NAVIGATION } from '@lib/constants';
-import styles from './layout.module.css';
 import Logo from './icons/icon-logo';
 import MobileMenu from './mobile-menu';
-import Footer from './footer';
+import { NAVIGATION } from '@lib/constants';
+import { SkipNavContent } from '@reach/skip-nav';
+import cn from 'classnames';
+import styles from './layout.module.css';
+import { useRouter } from 'next/router';
 
 type Props = {
   children: React.ReactNode;
@@ -39,30 +39,32 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
     <>
       <div className={styles.background}>
         {!hideNav && (
-          <header className={cn(styles.header)}>
-            <div className={styles['header-logos']}>
-              <MobileMenu key={router.asPath} />
-              <Link href="/">
-                {/* eslint-disable-next-line */}
-                <a className={styles.logo}>
-                  <Logo />
-                </a>
-              </Link>
-            </div>
-            <div className={styles.tabs}>
-              {NAVIGATION.map(({ name, route }) => (
-                <Link key={name} href={route}>
-                  <a
-                    className={cn(styles.tab, {
-                      [styles['tab-active']]: activeRoute.startsWith(route)
-                    })}
-                  >
-                    {name}
+          <div className="row">
+            <header className={cn(styles.header)}>
+              <div className={styles['header-logos']}>
+                <Link href="/">
+                  {/* eslint-disable-next-line */}
+                  <a className={styles.logo}>
+                    <Logo />
                   </a>
                 </Link>
-              ))}
-            </div>
-          </header>
+                <MobileMenu key={router.asPath} />
+              </div>
+              <div className={styles.tabs}>
+                {NAVIGATION.map(({ name, route }) => (
+                  <Link key={name} href={route}>
+                    <a
+                      className={cn(styles.tab, {
+                        [styles['tab-active']]: activeRoute.startsWith(route)
+                      })}
+                    >
+                      {name}
+                    </a>
+                  </Link>
+                ))}
+              </div>
+            </header>
+          </div>
         )}
         <div className={styles.page}>
           <main className={styles.main} style={layoutStyles}>
