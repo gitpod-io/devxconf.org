@@ -1,0 +1,21 @@
+.section {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contents {
+    margin-left: var(--gutter-medium);
+}
+
+.contents h2 {
+    margin-bottom: var(--gutter-medium);
+}
+
+.live {
+    font-weight: 600;
+    color: var(--brand);
+    margin-bottom: var(--gutter-medium);
+}

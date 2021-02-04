@@ -21,6 +21,7 @@
   min-height: var(--100vh);
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .page {

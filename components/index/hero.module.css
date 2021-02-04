@@ -16,7 +16,7 @@
 
 .wrapper {
   position: relative;
-  margin-top: var(--space-16x);
+  margin-top: var(--gutter-huge);
 }
 
 .hero {

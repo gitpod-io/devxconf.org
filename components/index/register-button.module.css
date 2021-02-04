@@ -9,6 +9,5 @@
 .btn-wrapper > * {
     display: inline-flex;
     align-items: center;
-    letter-spacing: 1px;
-    margin-bottom: var(--space-32x);
+    margin-bottom: var(--gutter-huge);
 }

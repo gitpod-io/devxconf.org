@@ -16,6 +16,8 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import Section from './layout/section';
+import SectionHeader from './layout/section-header';
 import { Speaker } from '@lib/types';
 import styles from './speakers-grid.module.css';
 
@@ -25,15 +27,15 @@ type Props = {
 
 export default function SpeakersGrid({ speakers }: Props) {
   return (
-    <section className={styles.section}>
-      <div className={styles["section-header"]}>
+    <Section className={styles.section}>
+      <SectionHeader>
         <h2 className="heading-secondary">Speakers</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit
           amet, consectetur adipiscing elit.
         </p>
-      </div>
+      </SectionHeader>
       <div className={styles.grid}>
         {speakers.map(speaker => (
           <Link key={speaker.name} href={`/speakers/${speaker.slug}`} >
@@ -64,6 +66,6 @@ export default function SpeakersGrid({ speakers }: Props) {
         ))}
       </div>
       <p>More to be announced soon</p>
-    </section>
+    </Section>
   );
 }

@@ -59,7 +59,7 @@ export default function Hero() {
         styles={{
           position: 'absolute',
           right: '-15px',
-          height: '500px'
+          height: '400px'
         }}
       />
       <DeveloperProductivity />

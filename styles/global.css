@@ -36,16 +36,24 @@
   --space-16x: 64px;
   --space-32x: 128px;
 
+  --gutter-huge: 150px;
+  --gutter-large: 75px;
+  --gutter-medium: 37.5px;
+  --gutter-small: 18.75px;
+  --gutter-small-x: 10px;
+
+
   --text-xs: 12px;
   --text-sm: 14px;
   --text-md: 16px;
   --text-lg: 18px;
   --text-xl: 24px;
 
-  --heading-primary: 80px;
-  --heading-secondary: 44px;
+  --heading-secondary: 80px;
+  --heading-tertiary: 44px;
+  --heading-tertiary-mobile: 36px;
 
-  --heading-secondary-mobile: 36px;
+  --container-medium: 840px;
 
   --accents-1: #fafafa;
   --accents-2: #eaeaea;
@@ -75,6 +83,7 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 *,
 *:before,
@@ -180,14 +189,19 @@ svg circle {
 }
 
 .heading-secondary {
-  font-size: var(--heading-primary);
+  font-size: var(--heading-secondary);
+}
+
+.heading-tertiary { 
+  font-size: var(--heading-tertiary);
 }
 
 .btn {
   display: inline-block;
   border-radius: 100px;
-  padding: 15px 30px;
+  padding: 15px 35px;
   color: var(--white);
+  letter-spacing: 3px;
   font-weight: 600;
   background: var(--brand);
   text-transform: uppercase;

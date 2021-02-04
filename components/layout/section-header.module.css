@@ -1,0 +1,8 @@
+.section-header {
+    max-width: var(--container-medium);
+    margin: auto;
+}
+
+.section-header h2 + p {
+    margin: var(--gutter-medium) 0 var(--gutter-large);
+}

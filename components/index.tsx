@@ -16,7 +16,9 @@
 
 import { ConfDataContext, PageState, UserData } from '@lib/hooks/use-conf-data';
 
+import About from './about';
 import ConfContainer from './conf-container';
+import FollowUsOnTwitter from './follow-us-on-twitter';
 import Hero from './index/hero';
 import Layout from './layout';
 import SpeakersGrid from './speakers-grid';
@@ -54,6 +56,8 @@ export default function Conf({
               <Hero />
               <SpeakersGrid speakers={speakers} />
               <Sponsors />
+              <FollowUsOnTwitter />
+              <About />
             </>
           ) : (
             <Ticket
