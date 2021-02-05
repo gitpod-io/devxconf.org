@@ -1,5 +1,5 @@
 .section {
-    padding-top: var(--gutter-large);
+    padding-top: 0;
 }
 
 .header {

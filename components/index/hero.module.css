@@ -16,7 +16,6 @@
 
 .wrapper {
   position: relative;
-  margin-top: var(--gutter-huge);
 }
 
 .hero {
@@ -60,10 +59,6 @@
 }
 
 @media (min-width: 768px) {
-  .wrapper {
-    margin-top: var(--space-32x);
-  }
-
   .hero {
     font-size: 100px;
     line-height: 1;
