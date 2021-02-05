@@ -43,7 +43,7 @@ export default function Hero() {
         {SITE_DESCRIPTION}
       </h2>
       <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        The first {BRAND_NAME}
+        The first <span className={styles.brand}>{BRAND_NAME}</span>
         <br className={styleUtils['show-on-desktop']} /> conference
       </h1>
       <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>

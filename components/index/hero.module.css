@@ -58,6 +58,14 @@
   margin: 0;
 }
 
+.brand {
+  color: transparent;
+  background-clip: text;
+  background-image: url('/patterns/circle.png');
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 768px) {
   .hero {
     font-size: 100px;
