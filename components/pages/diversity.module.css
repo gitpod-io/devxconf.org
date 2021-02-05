@@ -1,0 +1,37 @@
+.section {
+    padding-top: var(--gutter-large);
+}
+
+.header {
+    max-width: 580px;
+    margin: auto;
+    text-align: left;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--gutter-huge);
+}
+
+.title-container img {
+    height: 100%;
+}
+
+.title-container h1 {
+    margin-left: var(--gutter-medium);
+}
+
+@media(max-width: 767px) {
+    .title-container {
+        margin: 0 auto var(--gutter-huge);
+        max-width: 300px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 350px) {
+    .title-container {
+        max-width: auto;
+    }
+}

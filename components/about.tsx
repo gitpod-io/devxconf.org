@@ -4,7 +4,7 @@ import styles from './about.module.css';
 
 const About = () => (
   <Section className={styles.section}>
-    <img src="/patterns/vertical-line.png" aria-hidden="true" />
+    <img src="/patterns/vertical-line.png" aria-hidden={true} />
     <div className={styles.contents}>
       <h2 className="heading-tertiary">About</h2>
       <p>

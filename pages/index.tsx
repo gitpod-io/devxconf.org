@@ -14,12 +14,11 @@
  * limitations under the License.
  */
 
-import { useRouter } from 'next/router';
-import { SkipNavContent } from '@reach/skip-nav';
-
-import Page from '@components/page';
-import ConfContent from '@components/index';
+import ConfContent from '@components/pages/index';
 import { META_DESCRIPTION } from '@lib/constants';
+import Page from '@components/page';
+import { SkipNavContent } from '@reach/skip-nav';
+import { useRouter } from 'next/router';
 
 export default function Conf() {
   const { query } = useRouter();

@@ -16,14 +16,14 @@
 
 import { ConfDataContext, PageState, UserData } from '@lib/hooks/use-conf-data';
 
-import About from './about';
-import ConfContainer from './conf-container';
-import FollowUsOnTwitter from './follow-us-on-twitter';
-import Hero from './index/hero';
-import Layout from './layout';
-import SpeakersGrid from './speakers-grid';
-import Sponsors from './index/sponsors';
-import Ticket from './ticket';
+import About from '../about';
+import ConfContainer from '../conf-container';
+import FollowUsOnTwitter from '../follow-us-on-twitter';
+import Hero from '../index/hero';
+import Layout from '../layout';
+import SpeakersGrid from '../speakers-grid';
+import Sponsors from '../index/sponsors';
+import Ticket from '../ticket';
 import { speakers } from 'contents';
 import { useState } from 'react';
 

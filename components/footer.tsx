@@ -21,7 +21,7 @@ import styles from './footer.module.css';
 export default function Footer() {
   return (
     <footer className={cn(styles.footer)}>
-      <Link href="/imprint">Imprint</Link> | <Link href="/privacy">Privacy</Link> | <Link href="/source-code">Source Code</Link> 
+      <Link href="/imprint">Imprint</Link> | <Link href="/privacy">Privacy</Link> | <a href="https://github.com/gitpod-io/devxconf.org/" target="_blank">Source Code</a> 
     </footer>
   );
 }

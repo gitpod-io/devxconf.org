@@ -49,6 +49,8 @@
   --text-lg: 18px;
   --text-xl: 24px;
 
+  --heading-primary: 100px;
+  --heading-primary-mobile: 52px;
   --heading-secondary: 80px;
   --heading-tertiary: 44px;
   --heading-tertiary-mobile: 36px;
@@ -188,6 +190,10 @@ svg circle {
   clip: auto;
 }
 
+.heading-primary {
+  font-size: var(--heading-primary);
+}
+
 .heading-secondary {
   font-size: var(--heading-secondary);
 }
@@ -205,4 +211,10 @@ svg circle {
   font-weight: 600;
   background: var(--brand);
   text-transform: uppercase;
+}
+
+@media(max-width: 767px) {
+  .heading-primary {
+    font-size: var(--heading-primary-mobile);
+  }
 }

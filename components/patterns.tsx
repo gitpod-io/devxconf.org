@@ -1,10 +1,10 @@
-import { patternHalfCircleDataPoints, patternSquareDataPoints } from "contents/svgDataPoints";
+import { patternCircleDataPoints, patternHalfCircleDataPoints } from "contents/svgDataPoints";
 
 import { CSSProperties } from "react";
 import cn from 'classnames';
 import moduleStyles from './patterns.module.css';
 
-interface PatternHalfCircleProps {
+interface PatternProps {
     className?: string
     styles?: CSSProperties
     isInverted?: boolean
@@ -14,7 +14,7 @@ export const PatternHalfCircle = ({
     className, 
     styles,
     isInverted
-}: PatternHalfCircleProps) => (
+}: PatternProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="227"
@@ -59,3 +59,62 @@ export const PatternHalfCircle = ({
     </defs>
   </svg>
 );
+
+export const PatternCircle = ({className, styles}: PatternProps) => (
+  <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="446"
+      height="481"
+      fill="none"
+      viewBox="0 0 446 481"
+      className={className}
+      style={styles}
+    >
+      <mask
+        id="a"
+        width="446"
+        height="481"
+        x="0"
+        y="0"
+        maskUnits="userSpaceOnUse"
+      >
+        <path
+          fill="url(#paint0_radial)"
+          d={patternCircleDataPoints}
+        ></path>
+      </mask>
+      <g mask="url(#a)">
+        <ellipse
+          cx="224.159"
+          cy="243.111"
+          fill="url(#paint1_radial)"
+          rx="221.129"
+          ry="238.216"
+        ></ellipse>
+      </g>
+      <defs>
+        <radialGradient
+          id="paint0_radial"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientTransform="rotate(-53.709 356.332 -76.074) scale(243.769 238.517)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.484" stopColor="#FF5043"></stop>
+          <stop offset="0.922" stopColor="#FF5043"></stop>
+        </radialGradient>
+        <radialGradient
+          id="paint1_radial"
+          cx="0"
+          cy="0"
+          r="1"
+          gradientTransform="scale(229.459 247.19) rotate(90 -.003 .98)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.318" stopColor="#FF5043"></stop>
+          <stop offset="0.957" stopColor="#A99278" stopOpacity="0"></stop>
+        </radialGradient>
+      </defs>
+    </svg>
+)

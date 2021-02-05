@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { META_DESCRIPTION, SAMPLE_TICKET_NUMBER, SITE_NAME, SITE_URL } from '@lib/constants';
+
+import ConfContent from '@components/pages/index';
 import Error from 'next/error';
 import Head from 'next/head';
+import Page from '@components/page';
 import { SkipNavContent } from '@reach/skip-nav';
 import redis from '@lib/redis';
-
-import Page from '@components/page';
-import ConfContent from '@components/index';
-import { SITE_URL, SITE_NAME, META_DESCRIPTION, SAMPLE_TICKET_NUMBER } from '@lib/constants';
 
 type Props = {
   username: string | null;
