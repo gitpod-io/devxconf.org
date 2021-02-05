@@ -116,8 +116,7 @@
 
 .tab-active {
   color: #fff;
-  background: linear-gradient(90deg, var(--brand), var(--brand)) left bottom transparent no-repeat;
-  background-size: 100% 1px;
+  text-decoration: underline;
 }
 
 .logo {
