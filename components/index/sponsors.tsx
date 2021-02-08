@@ -52,7 +52,6 @@ const Sponsors = () => (
   <Section>
     <SectionHeader>
       <h2 className={cn("heading-secondary", styles["sponsors-title"])}>
-      {/* <img src="/pattern-square.png" aria-hidden={true}/> */}
         Sponsors
       </h2>
       <p>

@@ -1,5 +1,11 @@
 .sponsors-title {
-    position: relative;
+    background: url('/patterns/quadrant-top.png');
+    background-repeat: no-repeat;
+    display: inline flex;
+    height: 180px;
+    align-items: flex-end;
+    padding: 0 130px 10px;
+    background-size: contain;
 }
 
 .sponsors {
@@ -26,6 +32,18 @@
 @media(max-width: 580px) {
     .sponsors {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sponsors-title {
+        height: 130px;
+        padding: 0 100px 10px;
+    }
+}
+
+@media(max-width: 460px) {
+    .sponsors-title {
+        display: flex;
+        justify-content: center;
     }
 }
 
