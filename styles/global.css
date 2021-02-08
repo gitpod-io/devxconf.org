@@ -53,7 +53,7 @@
   --heading-primary-mobile: 52px;
   --heading-secondary: 80px;
   --heading-secondary-mobile: 44px;
-  --heading-tertiary: 40px;
+  --heading-tertiary: 48px;
   --heading-tertiary-mobile: 30px;
 
   --container-medium: 840px;
@@ -205,6 +205,7 @@ svg circle {
 
 .btn {
   display: inline-block;
+  max-height: 57px;
   border-radius: 100px;
   padding: 15px 35px;
   color: var(--white);
@@ -212,6 +213,11 @@ svg circle {
   font-weight: 600;
   background: var(--brand);
   text-transform: uppercase;
+}
+
+.btn img,
+.btn svg {
+  margin-left: 12px;
 }
 
 @media(max-width: 767px) {

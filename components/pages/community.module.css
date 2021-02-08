@@ -1,0 +1,18 @@
+.section {
+    padding-top: 0;
+    max-width: 720px;
+    margin: auto;
+}
+
+.section p {
+    margin: var(--gutter-medium) 0;
+}
+
+.link {
+    display: inline flex;
+    align-items: center;
+}
+
+.link img {
+    height: 48px;
+}
