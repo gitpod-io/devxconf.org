@@ -1,6 +1,5 @@
 .section {
     padding: var(--gutter-huge) 0;
-    text-align: center;
 }
 
 .section-intro {

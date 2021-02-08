@@ -2,6 +2,10 @@
     padding-top: 0;
 }
 
+.section h1 {
+    text-align: center;
+}
+
 .manifestations {
     display: grid;
     grid-template-columns: 1fr 1fr;

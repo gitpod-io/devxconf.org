@@ -1,3 +1,7 @@
+.section {
+    text-align: center;
+}
+
 .sponsors-title {
     background: url('/patterns/quadrant-top.png');
     background-repeat: no-repeat;

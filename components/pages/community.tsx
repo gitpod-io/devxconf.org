@@ -14,7 +14,7 @@ const Community = () => (
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit
           amet.
         </p>
-        <a href="#" className={cn('btn', styles.link)}>
+        <a href="#" className={cn('btn btn--big', styles.link)}>
           Go to <img src="/discord.svg" alt="Discord" />
         </a>
       </Section>

@@ -49,7 +49,7 @@ const sponsors: SponsorProps[] = [
 ]
 
 const Sponsors = () => (
-  <Section>
+  <Section className={styles.section}>
     <SectionHeader>
       <h2 className={cn("heading-secondary", styles["sponsors-title"])}>
         Sponsors
@@ -75,7 +75,7 @@ const Sponsors = () => (
     </div>
     <div className={styles.footnote}>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-    <a href="#" className="btn btn--ghost">See Prospectus</a>
+    <a href="#" className="btn btn--secondary">See Prospectus</a>
     </div>
   </Section>
 );
