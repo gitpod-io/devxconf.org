@@ -2,7 +2,10 @@ import { Speaker } from "@lib/types";
 
 export const speakers: Speaker[] = [
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -15,7 +18,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -28,7 +34,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -41,7 +50,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -54,7 +66,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -67,7 +82,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -80,7 +98,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {
@@ -93,7 +114,10 @@ export const speakers: Speaker[] = [
         keynote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-        name: 'Moritz Eysholdt',
+        name: <>
+            Mortiz<br />Eysholdt
+        </>,
+        alt: 'Mortiz Eysholdt',
         company: 'gitpod',
         title: 'Co-Founder',
         image: {

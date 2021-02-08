@@ -38,16 +38,16 @@ export default function SpeakersGrid({ speakers }: Props) {
       </SectionHeader>
       <div className={styles.grid}>
         {speakers.map(speaker => (
-          <Link key={speaker.name} href={`/speakers/${speaker.slug}`} >
+          <Link key={speaker.alt} href={`/speakers/${speaker.slug}`} >
             <a role="button" tabIndex={0} className={styles.card}>
               <div className={styles.imageWrapper}>
                 <Image
-                  alt={speaker.name}
+                  alt={speaker.alt}
                   src={speaker.image.url}
                   className={styles.image}
                   loading="lazy"
                   quality="50"
-                  title={speaker.name}
+                  title={speaker.alt}
                   width={300}
                   height={300}
                 />

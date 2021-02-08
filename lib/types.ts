@@ -19,7 +19,7 @@ export type Image = {
 };
 
 export type Speaker = {
-  name: string;
+  name: string | JSX.Element;
   bio: string;
   title: string;
   slug?: string;
@@ -29,7 +29,8 @@ export type Speaker = {
   talk?: Talk;
   image: Image;
   imageSquare?: Image;
-  keynote?: string 
+  keynote?: string;
+  alt?: string;
 };
 
 export type Stage = {
