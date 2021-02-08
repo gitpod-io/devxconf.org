@@ -52,8 +52,9 @@
   --heading-primary: 100px;
   --heading-primary-mobile: 52px;
   --heading-secondary: 80px;
-  --heading-tertiary: 44px;
-  --heading-tertiary-mobile: 36px;
+  --heading-secondary-mobile: 44px;
+  --heading-tertiary: 40px;
+  --heading-tertiary-mobile: 30px;
 
   --container-medium: 840px;
 
@@ -216,5 +217,13 @@ svg circle {
 @media(max-width: 767px) {
   .heading-primary {
     font-size: var(--heading-primary-mobile);
+  }
+
+  .heading-secondary {
+    font-size: var(--heading-secondary-mobile);
+  }
+
+  .heading-tertiary {
+    font-size: var(--heading-tertiary-mobile);
   }
 }
