@@ -12,6 +12,10 @@
     overflow: hidden;
 }
 
+.footnote a {
+    margin-top: var(--gutter-small);
+}
+
 @media(max-width: 950px) {
     .sponsors {
         grid-template-columns: repeat(3, 1fr);

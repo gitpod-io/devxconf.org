@@ -74,6 +74,10 @@ const Sponsors = () => (
         ))
       }
     </div>
+    <div className={styles.footnote}>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+    <a href="#" className="btn btn--ghost">See Prospectus</a>
+    </div>
   </Section>
 );
 

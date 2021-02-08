@@ -213,6 +213,11 @@ svg circle {
   font-weight: 600;
   background: var(--brand);
   text-transform: uppercase;
+  border: 1px solid var(--brand);
+}
+
+.btn--ghost {
+  background: transparent;
 }
 
 .btn img,
