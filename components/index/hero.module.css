@@ -61,9 +61,9 @@
 .brand {
   color: transparent;
   background-clip: text;
-  background-image: url('/patterns/circle.png');
+  background-image: url('/patterns/square.svg');
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
 }
 
 @media (min-width: 768px) {
