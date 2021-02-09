@@ -9,7 +9,7 @@ const Diversity = () => (
   <Layout>
     <Section className={styles.section}>
       <div className="row">
-        <div className={styles.header}>
+        <div className={cn(styles.header, 'wrapper-small')}>
           <div className={styles['intro-container']}>
             <img src="/patterns/diversity-title-pattern.png" aria-hidden={true} />
             <h1 className="heading-tertiary">Diversity, Equity & Inclusion</h1>

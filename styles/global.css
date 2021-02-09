@@ -198,6 +198,11 @@ svg circle {
   clip: auto;
 }
 
+.wrapper-small {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
 .heading-primary {
   font-size: var(--heading-primary);
 }
