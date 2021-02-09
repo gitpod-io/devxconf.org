@@ -127,6 +127,12 @@
     }
 } 
 
+@media(max-width: 960px) {
+    .support-item {
+        flex: 0 0 48%;
+    }
+}
+
 @media(max-width: 850px) {
     .action {
         align-items: flex-start;
@@ -140,6 +146,20 @@
 
     .action-list {
         flex: 0 0 55%;
+    }
+
+    .support {
+        flex-direction: column;
+    }
+
+    .support-item:not(:last-child) {
+        margin-bottom: var(--gutter-large);
+    }
+}
+
+@media(max-width: 460px) {
+    .support-item ul {
+        flex-direction: column;
     }
 }
 
