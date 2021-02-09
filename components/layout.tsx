@@ -39,31 +39,33 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
     <>
       <div className={styles.background}>
         {!hideNav && (
-          <div className="row">
-            <header className={cn(styles.header)}>
-              <div className={styles['header-logos']}>
-                <Link href="/">
-                  {/* eslint-disable-next-line */}
-                  <a className={styles.logo}>
-                    <Logo />
-                  </a>
-                </Link>
-                <MobileMenu key={router.asPath} />
-              </div>
-              <div className={styles.tabs}>
-                {NAVIGATION.map(({ name, route }) => (
-                  <Link key={name} href={route}>
-                    <a
-                      className={cn(styles.tab, {
-                        [styles['tab-active']]: activeRoute.startsWith(route)
-                      })}
-                    >
-                      {name}
+          <div className={styles["header-container"]}>
+            <div className="row">
+              <header className={cn(styles.header)}>
+                <div className={styles['header-logos']}>
+                  <Link href="/">
+                    {/* eslint-disable-next-line */}
+                    <a className={styles.logo}>
+                      <Logo />
                     </a>
                   </Link>
-                ))}
-              </div>
-            </header>
+                  <MobileMenu key={router.asPath} />
+                </div>
+                <div className={styles.tabs}>
+                  {NAVIGATION.map(({ name, route }) => (
+                    <Link key={name} href={route}>
+                      <a
+                        className={cn(styles.tab, {
+                          [styles['tab-active']]: activeRoute.startsWith(route)
+                        })}
+                      >
+                        {name}
+                      </a>
+                    </Link>
+                  ))}
+                </div>
+              </header>
+            </div>
           </div>
         )}
         <div className={styles.page}>

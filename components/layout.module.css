@@ -34,6 +34,7 @@
 .main {
   flex: 1;
   display: flex;
+  margin-top: calc(var(--gutter-huge) + var(--header-height));
 }
 
 .full {
@@ -42,11 +43,19 @@
   width: 100%;
 }
 
+.header-container { 
+  background: var(--background);
+  position: fixed;
+  height: var(--header-height);
+  width: 100%;
+  z-index: 2;
+}
+
 .header {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--header-height);
   z-index: 2;
   margin-bottom: var(--gutter-huge);
 }
