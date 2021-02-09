@@ -1,0 +1,10 @@
+.link-container {
+    max-width: 980px;
+    text-align: center;
+    margin: var(--gutter-huge) auto 0;
+}
+
+.link {
+    display: inline-flex;
+    align-items: center;
+}

@@ -113,17 +113,6 @@
     margin-top: var(--gutter-medium);
 }
 
-.back-link-container {
-    max-width: 980px;
-    text-align: center;
-    margin: var(--gutter-huge) auto 0;
-}
-
-.back-link {
-    display: inline-flex;
-    align-items: center;
-}
-
 @media(max-width: 1220px) {
     .action {
         justify-content: space-between;

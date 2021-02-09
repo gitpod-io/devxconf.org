@@ -1,6 +1,5 @@
-import IconArrow from '@components/icons/icon-arrow';
+import BackToOverview from '@components/back-to-overview';
 import Layout from '@components/layout';
-import Link from 'next/link';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
 import cn from 'classnames';
@@ -128,13 +127,7 @@ const Diversity = () => (
           height: '500px'
         }}
       />
-      <div className={cn("row", styles["back-link-container"])}>
-        <Link href="/">
-          <a className={styles['back-link']}>
-            <IconArrow /> Back to Overview
-          </a>
-        </Link>
-      </div>
+      <BackToOverview />
     </Section>
   </Layout>
 );
