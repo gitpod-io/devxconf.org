@@ -19,7 +19,7 @@
 }
 
 .hero {
-  font-size: 52px;
+  font-size: var(--heading-primary-mobile);
   line-height: 1.15;
   letter-spacing: -0.05em;
   font-weight: 700;
@@ -63,12 +63,19 @@
   background-clip: text;
   background-image: url('/patterns/square.svg');
   background-size: cover;
-  /* background-position: center; */
+}
+
+.footnote {
+  max-width: 300px;
+  margin: var(--gutter-normal) auto 0;
+  text-align: center;
+  font-size: var(--footnote);
+  color: var(--grey);
 }
 
 @media (min-width: 768px) {
   .hero {
-    font-size: 100px;
+    font-size: var(--heading-primary);
     line-height: 1;
     font-weight: 800;
     margin: 0 0px 40px;

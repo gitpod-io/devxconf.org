@@ -15,6 +15,9 @@
  */
 
 .footer {
-  margin: var(--space-12x) auto;
-  color: var(--secondary-color);
+  width: 100%;
+  margin: var(--gutter-large) auto var(--gutter-medium);
+  font-size: var(--footnote);
+  color: var(--grey);
+  text-align: center;
 }

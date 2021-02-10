@@ -5,5 +5,5 @@
 .btn-wrapper > * {
     display: inline-flex;
     align-items: center;
-    margin-bottom: var(--gutter-huge);
+    margin-bottom: var(--gutter-huge) 0;
 }

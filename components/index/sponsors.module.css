@@ -12,6 +12,10 @@
     background-size: contain;
 }
 
+.section-header h2 + p {
+    margin: var(--gutter-medium);
+}
+
 .sponsors {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -20,6 +24,11 @@
     max-width: 1000px;
     margin: var(--space-16x) auto;
     overflow: hidden;
+}
+
+.footnote {
+    max-width: 660px;
+    margin: auto;
 }
 
 .footnote a {

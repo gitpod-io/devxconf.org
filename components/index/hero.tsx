@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { BRAND_NAME, DATE, SITE_DESCRIPTION } from '@lib/constants';
+import { BRAND_NAME, DATE } from '@lib/constants';
 
 import DeveloperProductivity from './developer-productivity';
 import { PatternHalfCircle } from '@components/patterns';
@@ -26,35 +26,39 @@ import styles from './hero.module.css';
 export default function Hero() {
   return (
     <div className={styles.wrapper}>
-      <PatternHalfCircle 
+      <PatternHalfCircle
         styles={{
           position: 'absolute',
           left: '-15px'
         }}
       />
-      <h2
-        className={cn(
-          styleUtils.appear,
-          styleUtils['appear-third'],
-          styleUtils['show-on-mobile'],
-          styles.description
-        )}
-      >
-        {SITE_DESCRIPTION}
-      </h2>
-      <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
-        The first <span className={styles.brand}>{BRAND_NAME}</span>
-        <br className={styleUtils['show-on-desktop']} /> conference
-      </h1>
-      <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-        <p>{DATE}</p>
-        &nbsp;-&nbsp;
-        <p>
-          Virtual
+      <div className="row">
+        {/* <h2
+          className={cn(
+            styleUtils.appear,
+            styleUtils['appear-third'],
+            styleUtils['show-on-mobile'],
+            styles.description
+          )}
+        >
+          {SITE_DESCRIPTION}
+        </h2> */}
+        <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
+          The first <span className={styles.brand}>{BRAND_NAME}</span>
+          <br className={styleUtils['show-on-desktop']} /> conference
+        </h1>
+        <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
+          <p>{DATE}</p>
+          &nbsp;-&nbsp;
+          <p>Virtual</p>
+        </div>
+        <RegisterButton />
+        <p className={styles.footnote}>
+          With your registration, you agree to DevX Conf’s <strong>DE&I</strong>,{' '}
+          <strong>ToS</strong> and <strong>Privacy Policy</strong>.
         </p>
       </div>
-      <RegisterButton />
-      <PatternHalfCircle 
+      <PatternHalfCircle
         isInverted={true}
         styles={{
           position: 'absolute',

@@ -32,19 +32,16 @@ const DeveloperProductivity = () => (
             </radialGradient>
           </defs>
         </svg>
-        <h2 className={cn(styles.title, "heading-tertiary")}>
-          Accelerate
+        <h2 className={cn(styles.title, "heading-secondary")}>
+          Bring back joy 
           <br />
-          Developer
+          and speed to
           <br />
-          Productivity
+          our workflows.
         </h2>
       </div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet,
-        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-        aliqua. Ut enim ad minim veniam, quis nost
+      With DevX Conf we want to create a space for creators where we can start from first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds to make developers feel like everything is at their fingertips. The goal is to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across four different areas.
       </p>
     </div>
   </div>

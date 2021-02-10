@@ -19,6 +19,7 @@ import Link from 'next/link';
 import Section from './layout/section';
 import SectionHeader from './layout/section-header';
 import { Speaker } from '@lib/types';
+import cn from 'classnames';
 import styles from './speakers-grid.module.css';
 
 type Props = {
@@ -28,44 +29,45 @@ type Props = {
 export default function SpeakersGrid({ speakers }: Props) {
   return (
     <Section className={styles.section}>
-      <SectionHeader>
-        <h2 className="heading-secondary">Speakers</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit
-          amet, consectetur adipiscing elit.
-        </p>
-      </SectionHeader>
-      <div className={styles.grid}>
-        {speakers.map(speaker => (
-          <Link key={speaker.alt} href={`/speakers/${speaker.slug}`} >
-            <a role="button" tabIndex={0} className={styles.card}>
-              <div className={styles.imageWrapper}>
-                <Image
-                  alt={speaker.alt}
-                  src={speaker.image.url}
-                  className={styles.image}
-                  loading="lazy"
-                  quality="50"
-                  title={speaker.alt}
-                  width={300}
-                  height={300}
-                />
-              </div>
-              <div className={styles.cardBody}>
-                <div>
-                  <h2 className={styles.name}>{speaker.name}</h2>
-                  <p className={styles.title}>
-                    {`${speaker.title} @ `}
-                    <span className={styles.company}>{speaker.company}</span>
-                  </p>
+      <div className="row">
+        <SectionHeader className={styles['section-header']}>
+          <h2 className="heading-secondary">Speakers</h2>
+          <p>
+            We seeked out to speakers who advocate the cutting edge of their particular discipline
+            and who can share their insights of building exceptional dev experiences.
+          </p>
+        </SectionHeader>
+        <div className={styles.grid}>
+          {speakers.map(speaker => (
+            <Link key={speaker.alt} href={`/speakers/${speaker.slug}`}>
+              <a role="button" tabIndex={0} className={styles.card}>
+                <div className={styles.imageWrapper}>
+                  <Image
+                    alt={speaker.alt}
+                    src={speaker.image.url}
+                    className={styles.image}
+                    loading="lazy"
+                    quality="50"
+                    title={speaker.alt}
+                    width={300}
+                    height={300}
+                  />
                 </div>
-              </div>
-            </a>
-          </Link>
-        ))}
+                <div className={styles.cardBody}>
+                  <div>
+                    <h3 className={cn(styles.name, 'heading-quadrary')}>{speaker.name}</h3>
+                    <p className={styles.title}>
+                      {`${speaker.title} @`}
+                      <span className={styles.company}>{speaker.company}</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </Link>
+          ))}
+        </div>
+        <p className={styles.more}>More to be announced soon</p>
       </div>
-      <p>More to be announced soon</p>
     </Section>
   );
 }

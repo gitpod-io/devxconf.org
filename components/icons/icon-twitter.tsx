@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-type Props = { width: number | string, [key: string]: any};
+type Props = { width?: number | string, [key: string]: any};
 
 export default function IconTwitter({ width, className }: Props) {
   return (

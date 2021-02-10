@@ -2,7 +2,7 @@ import Sponsor, { SponsorProps } from './sponsor';
 
 import Section from '@components/layout/section';
 import SectionHeader from '@components/layout/section-header';
-import cn from 'classnames'
+import cn from 'classnames';
 import styles from './sponsors.module.css';
 
 const sponsors: SponsorProps[] = [
@@ -46,36 +46,32 @@ const sponsors: SponsorProps[] = [
     logo: 'mozilla.svg',
     website: 'https://www.mozilla.org/en-US/'
   }
-]
+];
 
 const Sponsors = () => (
   <Section className={styles.section}>
-    <SectionHeader>
-      <h2 className={cn("heading-secondary", styles["sponsors-title"])}>
-        Sponsors
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet,
-        consectetur adipiscing elit.
-      </p>
-    </SectionHeader>
-    <a href="" className="btn">
-      BECOME A SPONSOR
-    </a>
-    <div className={styles.sponsors}>
-      {
-        sponsors.map((sponsor, i) => ( 
-          <Sponsor
-            key={i}
-            {...sponsor}
-          />
-        ))
-      }
-    </div>
-    <div className={styles.footnote}>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-    <a href="#" className="btn btn--secondary">See Prospectus</a>
+    <div className="row">
+      <SectionHeader className={styles['section-header']}>
+        <h2 className={cn('heading-secondary', styles['sponsors-title'])}>Sponsors</h2>
+        <p>Promote your technologies and thought leadership the in the DevX landscape.</p>
+      </SectionHeader>
+      <a href="" className="btn">
+        BECOME A SPONSOR
+      </a>
+      <div className={styles.sponsors}>
+        {sponsors.map((sponsor, i) => (
+          <Sponsor key={i} {...sponsor} />
+        ))}
+      </div>
+      <div className={styles.footnote}>
+        <p>
+          More details and different sponsorship options, you can find in our sponsorship
+          prospectus.
+        </p>
+        <a href="#" className="btn btn--secondary">
+          See Prospectus
+        </a>
+      </div>
     </div>
   </Section>
 );

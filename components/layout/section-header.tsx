@@ -1,7 +1,15 @@
+import cn from 'classnames'
 import styles from './section-header.module.css'
 
-const SectionHeader = ({children}: {children: JSX.Element | JSX.Element[]}) => (
-    <div className={styles["section-header"]}>
+interface SectionHeaderProps {
+    children: JSX.Element | JSX.Element[]
+    className?: string
+}
+
+const SectionHeader = ({children, className}: SectionHeaderProps) => (
+    <div 
+        className={cn(styles["section-header"], className)}
+    >
         {children}
     </div>
 )

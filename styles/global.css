@@ -37,6 +37,7 @@
   --space-32x: 128px;
 
   --grid-max-width: 1180px;
+  --header-height: 95px;
 
   --gutter-huge: 150px;
   --gutter-large: 75px;
@@ -45,38 +46,45 @@
   --gutter-small: 18.75px;
   --gutter-small-x: 10px;
 
-
   --text-xs: 12px;
   --text-sm: 14px;
   --text-md: 16px;
   --text-lg: 18px;
   --text-xl: 24px;
 
-  --heading-primary: 100px;
-  --heading-primary-mobile: 52px;
-  --heading-secondary: 80px;
-  --heading-secondary-mobile: 44px;
-  --heading-tertiary: 48px;
-  --heading-tertiary-mobile: 30px;
+  --heading-primary: 110px;
+  --heading-primary-mobile: 54px;
+  --heading-secondary: 54px;
+  --heading-secondary-mobile: 38px;
+  --heading-tertiary: 28px;
+  --heading-tertiary-mobile: 22px;
+  --heading-quadrary: 16px;
 
-  --container-medium: 840px;
+  --body-big: 18px;
+  --body-big-mobile: 17px;
+  --body: 15px;
+  --footnote: 12px;
 
-  --accents-1: #fafafa;
+  --container-medium: 600px;
+
+  /* --accents-1: #fafafa;
   --accents-2: #eaeaea;
   --accents-3: #999999;
   --accents-4: #888888;
   --accents-5: #666666;
   --accents-6: #444444;
   --accents-7: #333333;
-  --accents-8: #111111;
+  --accents-8: #111111; */
 
+  --black: #1c1c1c;
+  --grey: #9e9e9e;
+  --grey-1: #c4c4c4;
   --white: #fff;
-  --grey: #252729;
-  --secondary-color: #8a8f98;
-  --sidebar: #0e0e10;
-  --header-height: 95px;
-  --background: #1c1c1c;
-  --brand: #FF5043;
+  --brand: #ff5043;
+  --text-white: #f9f9fb;
+
+  /* --secondary-color: #8a8f98;
+  --sidebar: #0e0e10; */
 }
 
 html {
@@ -103,8 +111,9 @@ body {
   line-height: 1.65;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: var(--text-md);
+  font-size: var(--body-big);
   font-weight: 400;
+  color: var(--text-white);
   min-width: 320px;
   direction: ltr;
   font-feature-settings: 'kern';
@@ -115,16 +124,9 @@ body {
   overflow: hidden;
 }
 
-html,
-body {
-  color: #fff;
-  background-color: #111;
-}
-
 .row {
   margin: 0 auto;
   max-width: 1180px;
-  width: 90%;
 }
 
 ::selection {
@@ -142,6 +144,7 @@ h2,
 h3 {
   margin: 0;
   line-height: 1.15;
+  color: var(--white);
 }
 a {
   text-decoration: none;
@@ -211,13 +214,15 @@ svg circle {
   font-size: var(--heading-secondary);
 }
 
-.heading-tertiary { 
+.heading-tertiary {
   font-size: var(--heading-tertiary);
 }
 
 .heading-quadrary {
   color: var(--brand);
-  font-size: var(--text-md);
+  font-size: var(--heading-quadrary);
+  letter-spacing: 3px;
+  line-height: 130%;
 }
 
 p + p {
@@ -230,12 +235,13 @@ p + p {
   border-radius: 100px;
   padding: 10px 38px;
   color: var(--white);
+  font-size: var(--heading-quadrary);
   letter-spacing: 3px;
   font-weight: 600;
   background: var(--brand);
   text-transform: uppercase;
   border: 1px solid var(--brand);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .btn:hover,
@@ -257,7 +263,15 @@ p + p {
   margin-left: 12px;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
+  body {
+    font-size: var(--heading-quadrary);
+  }
+
+  .row {
+    padding: 0 var(--gutter-medium);
+  }
+
   .heading-primary {
     font-size: var(--heading-primary-mobile);
   }
@@ -268,5 +282,77 @@ p + p {
 
   .heading-tertiary {
     font-size: var(--heading-tertiary-mobile);
+  }
+}
+
+@media (max-width: 470px) {
+
+  .btn {
+    padding: 10px 30px;
+  }
+
+  .btn--big {
+    padding: 13px 30px;
+  }
+
+  .btn--big svg,
+  .btn--big img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 440px) {
+  .row {
+    padding: 0 var(--gutter-normal);
+  }
+}
+
+@media (max-width: 410px) {
+  .row {
+    padding: 0 var(--gutter-small);
+  }
+
+  .btn {
+    max-height: 55px;
+  }
+}
+
+@media (max-width: 390px) {
+  .row {
+    padding: 0 12px;
+  }
+
+  .btn {
+    font-size: var(--body);
+    letter-spacing: 2px;
+    max-height: 49px;
+  }
+
+  .btn img,
+  .btn svg {
+    margin-left: 8px;
+    width: 90px;
+  }
+
+  .btn--big {
+    padding: 12px 28px;
+  }
+}
+
+@media(max-width: 350px) {
+  .btn--big {
+    padding: 10px 22px;
+  }
+
+  .btn img,
+  .btn svg {
+    margin-left: 6px;
+    width: 85px;
+  }  
+}
+
+@media (min-width: 768px) {
+  .row {
+    width: 90%;
   }
 }

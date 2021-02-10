@@ -1,17 +1,17 @@
 .section {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     max-width: 500px;
     margin: 0 auto;
     text-align: left;
 }
 
 .contents {
-    margin-left: var(--gutter-medium);
+    margin: 0 0 var(--gutter-small) var(--gutter-medium);
 }
 
 .contents h2 {
-    margin-bottom: var(--gutter-medium);
+    margin: var(--gutter-small) 0 var(--gutter-medium);
 }
 
 .live {

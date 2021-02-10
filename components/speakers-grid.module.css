@@ -18,9 +18,17 @@
   text-align: center;
 }
 
+.section-header {
+  max-width: 600px;
+}
+
+.section-header h2 + p {
+  margin-bottom: var(--gutter-medium);
+}
+
 .grid {
   max-width: 1100px;
-  margin: 50px auto;
+  margin: 0 auto var(--gutter-large);
   padding: 0 50px;
   width: 100%;
   display: flex;
@@ -46,8 +54,10 @@
 
 .card {
   border-radius: var(--space-2x);
+  font-size: var(--body);
   display: flex;
   flex-direction: column;
+  color: var(--grey-1);
   cursor: pointer;
   max-width: 250px;
   padding: 10px;
@@ -60,6 +70,7 @@
 .card:focus {
   outline: none;
   border-color: var(--brand);
+  color: var(--text-white);
 }
 
 .cardBody {
@@ -75,7 +86,7 @@
   width: 100%;
   height: 100%;
   padding: 25px 35px;
-  background-image: url('/pattern-square.png');
+  background-image: url('/pattern-square.svg');
   background-size: cover;
 }
 
@@ -91,18 +102,16 @@
 }
 
 .name {
-  font-weight: bold;
-  color: #f1f1f1;
-  font-size: 20px;
   text-transform: uppercase;
+  color: var(--white);
   margin: 0 0 var(--gutter-small);
-  line-height: 1.4;
-}
-
-.company {
-  color: #f1f1f1;
 }
 
 .title {
   margin: 0;
+}
+
+.more {
+  color: var(--grey);
+  font-size: var(--body);
 }

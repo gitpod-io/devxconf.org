@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
 import { useCallback, useState } from 'react';
+
+import LoadingDots from './loading-dots';
+import { SITE_DESCRIPTION } from '@lib/constants';
+import cn from 'classnames';
+import { register } from '@lib/user-api';
 import styleUtils from './utils.module.css';
 import styles from './conf-entry.module.css';
-import LoadingDots from './loading-dots';
-import { register } from '@lib/user-api';
-import { SITE_DESCRIPTION } from '@lib/constants';
 import useEmailQueryParam from '@lib/hooks/use-email-query-param';
 
 type FormState = 'default' | 'loading' | 'error';
@@ -76,7 +77,7 @@ export default function ConfEntry({ onRegister }: { onRegister: () => void }) {
   }, []);
 
   return (
-    <div className={cn(styles.container, styleUtils.appear, styleUtils['appear-first'])}>
+    <div className={cn(styleUtils.appear, styleUtils['appear-first'])}>
       <h1 className={cn(styles.hero)}>Join the conference.</h1>
       <h2 className={cn(styles.description)}>{SITE_DESCRIPTION}</h2>
       <form onSubmit={onSubmit} className={styles.form}>
