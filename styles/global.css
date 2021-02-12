@@ -114,7 +114,6 @@ body {
   font-size: var(--body-big);
   font-weight: 400;
   color: var(--text-white);
-  min-width: 320px;
   direction: ltr;
   font-feature-settings: 'kern';
   text-rendering: optimizeLegibility;
@@ -152,7 +151,8 @@ a {
   color: var(--secondary-color);
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: var(--brand);
 }
 
@@ -202,7 +202,7 @@ svg circle {
 }
 
 .wrapper-small {
-  max-width: 640px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
@@ -223,6 +223,7 @@ svg circle {
   font-size: var(--heading-quadrary);
   letter-spacing: 3.2px;
   line-height: 130%;
+  text-transform: uppercase;
 }
 
 p + p {

@@ -178,6 +178,10 @@
     .intro-container img {
         height: 150px;
     }
+
+    .action-heading {
+        font-size: var(--heading-secondary-mobile);
+    }
 }
 
 @media(max-width: 680px) {
