@@ -17,6 +17,7 @@
 import { BRAND_NAME, DATE } from '@lib/constants';
 
 import DeveloperProductivity from './developer-productivity';
+import Link from 'next/link';
 import { PatternHalfCircle } from '@components/patterns';
 import RegisterButton from './register-button';
 import cn from 'classnames';
@@ -54,8 +55,8 @@ export default function Hero() {
         </div>
         <RegisterButton />
         <p className={styles.footnote}>
-          With your registration, you agree to DevX Conf’s <strong>DE&I</strong>,{' '}
-          <strong>ToS</strong> and <strong>Privacy Policy</strong>.
+          With your registration, you agree to DevX Conf’s <Link href="#">DE&I</Link>,{' '}
+          <Link href="/tos">ToS</Link> and <Link href="privacy-policy">Privacy Policy</Link>.
         </p>
       </div>
       <PatternHalfCircle

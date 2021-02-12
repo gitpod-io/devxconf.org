@@ -73,6 +73,10 @@
   color: var(--grey);
 }
 
+.footnote a {
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .hero {
     font-size: var(--heading-primary);

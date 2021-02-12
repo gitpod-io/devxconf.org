@@ -115,15 +115,13 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  transition: all .2s;
 }
 
+.tab-active,
 .tab:hover,
 .tab:focus,
 .tab:active {
-  color: #fff;
-}
-
-.tab-active {
   color: #fff;
   text-decoration: underline;
 }

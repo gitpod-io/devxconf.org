@@ -221,7 +221,7 @@ svg circle {
 .heading-quadrary {
   color: var(--brand);
   font-size: var(--heading-quadrary);
-  letter-spacing: 3px;
+  letter-spacing: 3.2px;
   line-height: 130%;
 }
 
@@ -244,21 +244,35 @@ p + p {
   transition: all 0.2s;
 }
 
+.btn .fill {
+  transition: all .2s;
+  fill: var(--black);
+}
+
 .btn:hover,
 .btn:focus {
-  background: var(--brand);
+  background: transparent;
   color: var(--white);
+}
+
+.btn:hover .fill,
+.btn:focus .fill {
+  fill: var(--white);
 }
 
 .btn--secondary {
   background: transparent;
 }
 
+.btn--secondary:hover,
+.btn--secondary:focus {
+  background: var(--brand);
+}
+
 .btn--big {
   padding: 18px 40px;
 }
 
-.btn img,
 .btn svg {
   margin-left: 12px;
 }
@@ -328,7 +342,6 @@ p + p {
     max-height: 49px;
   }
 
-  .btn img,
   .btn svg {
     margin-left: 8px;
     width: 90px;
@@ -344,7 +357,6 @@ p + p {
     padding: 10px 22px;
   }
 
-  .btn img,
   .btn svg {
     margin-left: 6px;
     width: 85px;
