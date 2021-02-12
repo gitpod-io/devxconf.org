@@ -11,13 +11,30 @@ const Diversity = () => (
       <div className="row">
         <div className={cn(styles.header, 'wrapper-small')}>
           <div className={styles['intro-container']}>
-            <img src="/patterns/diversity-title-pattern.png" aria-hidden={true} />
-            <h1 className="heading-tertiary">Diversity, Equity & Inclusion</h1>
+            <img src="/patterns/diversity-title-pattern.svg" aria-hidden={true} />
+            <h1 className="heading-secondary">
+              Diversity,
+              <br />
+              Equity &<br /> Inclusion
+            </h1>
           </div>
           <p>
             These values are essential for us at DevX Conf. We want to build a more diverse,
             inclusive and understanding tech community. A better place for all.
           </p>
+        </div>
+      </div>
+      <PatternHalfCircle
+        isInverted={true}
+        styles={{
+          position: 'absolute',
+          right: '-15px',
+          height: '500px',
+          marginTop: '-100px'
+        }}
+      />
+      <div className="row">
+        <div className="wrapper-small">
           <div className={styles.features}>
             <div>
               <h2 className="heading-quadrary">Diversity drives us</h2>
@@ -114,7 +131,7 @@ const Diversity = () => (
               For every registration to our discord channel we'll donate $1 to a non-profit
               organisation that we support. Would you like to join us?
             </p>
-            <a href="#" className={cn("btn btn--secondary", styles["donate-btn"])}>
+            <a href="#" className={cn('btn btn--secondary', styles['donate-btn'])}>
               Donate Now
             </a>
           </div>
@@ -124,7 +141,8 @@ const Diversity = () => (
         styles={{
           position: 'absolute',
           left: '-15px',
-          height: '500px'
+          height: '460px',
+          marginTop: '50px'
         }}
       />
       <BackToOverview />

@@ -2,6 +2,7 @@
     max-width: 980px;
     text-align: center;
     margin: var(--gutter-huge) auto 0;
+    padding-top: var(--gutter-large);
 }
 
 .link {

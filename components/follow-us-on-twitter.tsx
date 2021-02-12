@@ -12,7 +12,7 @@ const FollowUsOnTwitter = () => (
           Stay updated –<br />
           follow us on Twitter
         </h2>
-        <a className={styles.handle}>
+        <a href="https://twitter.com/devxconf" target="_blank" className={styles.handle}>
           <IconTwitter className={styles.icon} />
           @DEVXCONF
         </a>
