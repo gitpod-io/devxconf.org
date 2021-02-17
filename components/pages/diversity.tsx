@@ -1,4 +1,4 @@
-import BackToOverview from '@components/back-to-overview';
+import BackLink from '@components/backlink';
 import Layout from '@components/layout';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
@@ -145,7 +145,9 @@ const Diversity = () => (
           marginTop: '50px'
         }}
       />
-      <BackToOverview />
+      <div style={{textAlign: 'center', marginTop: 'calc(2 * var(--gutter-huge))'}}>
+        <BackLink href="/" destinationText="Overview" />
+      </div>
     </Section>
   </Layout>
 );

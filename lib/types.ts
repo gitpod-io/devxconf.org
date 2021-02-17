@@ -55,7 +55,7 @@ export type Link = {
 
 export type Sponsor = {
   name: string;
-  description: string;
+  description: string | string[];
   slug: string;
   website: string;
   callToAction: string;

@@ -28,7 +28,9 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
           <div className={styles.cardBody}>
             <div>
               <h2 className={styles.name}>{sponsor.name}</h2>
-              <p className={styles.description}>{sponsor.description}</p>
+              <p className={styles.description}>{
+                typeof sponsor.description === 'string' ? sponsor.description : sponsor.description[0]
+              }</p>
             </div>
           </div>
         )}

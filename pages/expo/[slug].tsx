@@ -14,60 +14,37 @@
  * limitations under the License.
  */
 
-import { GetStaticProps, GetStaticPaths } from 'next';
-
+import BackLink from '@components/backlink';
+import Layout from '@components/layout';
+import { META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import SponsorSection from '@components/sponsor-section';
-import Layout from '@components/layout';
+import { sponsors } from 'contents/expo';
+import { useRouter } from 'next/router';
 
-import { getAllSponsors } from '@lib/cms-api';
-import { Sponsor } from '@lib/types';
-import { META_DESCRIPTION } from '@lib/constants';
-
-type Props = {
-  sponsor: Sponsor;
-};
-
-export default function SponsorPage({ sponsor }: Props) {
+export default function SponsorPage() {
   const meta = {
     title: 'Demo - Virtual Event Starter Kit',
     description: META_DESCRIPTION
   };
+  const slug = useRouter().query.slug;
+
+  const sponsor = sponsors.find(s => s.slug === slug);
 
   return (
     <Page meta={meta}>
-      <Layout>
-        <SponsorSection sponsor={sponsor} />
+      <Layout layoutStyles={{marginTop: `var(--gutter-huge)`}}>
+        <div className="row">
+          <BackLink href="/expo" destinationText="Expo"/>
+          {
+            undefined !== sponsor ? 
+            (
+              <SponsorSection sponsor={sponsor} />
+            )
+            : null
+          }
+        </div>
       </Layout>
     </Page>
   );
 }
-
-export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const slug = params?.slug;
-  const sponsors = await getAllSponsors();
-  const sponsor = sponsors.find((s: Sponsor) => s.slug === slug) || null;
-
-  if (!sponsor) {
-    return {
-      notFound: true
-    };
-  }
-
-  return {
-    props: {
-      sponsor
-    },
-    revalidate: 60
-  };
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const sponsors = await getAllSponsors();
-  const slugs = sponsors.map((s: Sponsor) => ({ params: { slug: s.slug } }));
-
-  return {
-    paths: slugs,
-    fallback: 'blocking'
-  };
-};

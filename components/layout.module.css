@@ -90,7 +90,7 @@
 
 @media screen and (min-width: 1032px) {
   .header-logos {
-    max-width: 300px;
+    max-width: 200px;
   }
 
   .tabs {
@@ -106,7 +106,6 @@
 
 .tab {
   text-transform: uppercase;
-  padding: var(--space-4x);
   font-size: var(--heading-quadrary);
   color: var(--secondary-color);
   font-weight: 600;
@@ -116,6 +115,10 @@
   align-items: center;
   cursor: pointer;
   transition: all .2s;
+}
+
+.tab:not(:last-child) {
+  margin-right: var(--gutter-medium);
 }
 
 .tab-active,

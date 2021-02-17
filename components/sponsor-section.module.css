@@ -23,63 +23,56 @@
 
 .layout {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   height: 100%;
+  margin-top: var(--gutter-large);
 }
 
 .container {
   display: block;
-  padding: 24px;
   min-width: initial;
+  padding-right: var(--gutter-medium);
+  flex: 0 0 40%;
 }
 
-@media (min-width: 960px) {
-  .video {
-    height: 100%;
-    margin: 0 var(--space-4x) 0 0;
-    max-height: 800px;
-  }
-
-  .layout {
-    flex-direction: row-reverse;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    min-width: 600px;
-  }
-}
-
-.backlink {
-  color: var(--secondary-color);
-  padding: 0 24px;
+.yt {
   display: flex;
-  align-items: center;
-  font-weight: 500;
-  margin-top: var(--space-16x);
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
 }
 
-@media (min-width: 500px) {
+.yt img {
+  max-width: 600px;
+  width: 100%;
+}
+
+@media (max-width: 1160px) {
   .container {
-    padding: var(--space-8x);
-  }
-
-  .backlink {
-    padding: 0 var(--space-8x);
+    flex: 0 0 50%;
   }
 }
 
-.backlink > svg {
-  margin-right: var(--space-2x);
+@media (max-width: 1080px) {
+  .layout {
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .yt {
+    justify-content: center;
+    margin-bottom: var(--gutter-medium);
+  }
+
+  .container {
+    padding-right: 0;
+  }
 }
 
-.backlink:hover {
-  color: #fff;
-}
-
-.name-and-logo {
-  display: block;
+.img-container {
+  margin-bottom: var(--gutter-small);
 }
 
 .sponsor-details {
@@ -88,81 +81,6 @@
   flex-direction: column;
   color: var(--accents-2);
   border-bottom: 1px solid var(--accents-7);
-}
-
-.image::before {
-  content: '';
-  padding-top: 50%;
-  float: left;
-}
-
-.image {
-  overflow: hidden;
-  width: 100%;
-  border-radius: 50%;
-  width: var(--space-16x);
-  height: var(--space-16x);
-  min-width: var(--space-16x);
-  min-height: var(--space-16x);
-  border: 1px solid var(--accents-7);
-}
-
-.name {
-  font-weight: 800;
-  color: #fff;
-  font-size: 30px;
-  margin: 0;
-  line-height: 1.4;
-  letter-spacing: -0.05em;
-  margin: var(--space-4x) 0 0 0;
-}
-
-.button {
-  border-radius: var(--space-2x);
-  border: 1px solid #fff;
-  color: #000;
-  background: #fff;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: var(--text-md);
-  letter-spacing: -0.02em;
-  font-weight: 500;
-  outline: none;
-  transition: background-color 0.2s ease;
-  padding: 0 var(--space-4x);
-  height: 55px;
-  width: 100%;
-  max-width: 100%;
-  margin-right: var(--space-4x);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button:hover,
-.button:focus {
-  background: black;
-  color: #fff;
-}
-
-.button > svg {
-  margin-left: var(--space-2x);
-  min-height: var(--space-4x);
-  min-width: var(--space-4x);
-}
-
-.button-resource {
-  background: #111111;
-  color: #fff;
-  border: 1px solid var(--accents-7);
-  max-width: 100%;
-  margin-bottom: var(--space-4x);
-}
-
-@media (min-width: 500px) {
-  .button-resource {
-    max-width: 350px;
-  }
 }
 
 .truncate {
@@ -178,7 +96,7 @@
 }
 
 .description {
-  color: var(--secondary-color);
+  color: var(--grey-1);
 }
 
 .resources {
@@ -186,36 +104,19 @@
   flex-direction: column;
 }
 
-.heading {
-  font-weight: 800;
-  color: #fff;
-  font-size: 24px;
-  margin: var(--space-4x) 0;
-  line-height: 1.4;
-  letter-spacing: -0.05em;
+.resources a:not(:last-child) {
+  margin-bottom: var(--gutter-medium);
 }
 
-@media (min-width: 500px) {
-  .sponsor-details {
-    flex-direction: row;
-    padding: var(--space-4x) 0 var(--space-8x) 0;
-  }
+.resources-title {
+  margin-bottom: var(--gutter-medium);
+}
 
-  .heading {
-    margin: var(--space-8x) 0;
-  }
+.sponsor-details {
+  flex-direction: column;
+  padding: var(--space-4x) 0 var(--space-8x) 0;
+}
 
-  .name-and-logo {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .name {
-    font-size: 48px;
-    margin: 0 0 0 var(--space-4x);
-  }
-
-  .image {
-    margin: 0 24px 0 0;
-  }
+.sponsor-details a:not(:last-child) {
+  margin-bottom: var(--gutter-medium);
 }

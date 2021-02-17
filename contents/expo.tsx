@@ -4,14 +4,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'gold',
     logo: {
       url: '/gitlab.svg'
@@ -34,14 +34,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'gold',
     logo: {
       url: '/gitlab.svg'
@@ -61,14 +61,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'gold',
     logo: {
       url: '/gitlab.svg'
@@ -88,14 +88,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'silver',
     logo: {
       url: '/gitlab.svg'
@@ -115,14 +115,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'silver',
     logo: {
       url: '/gitlab.svg'
@@ -145,14 +145,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'silver',
     logo: {
       url: '/gitlab.svg'
@@ -172,14 +172,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'silver',
     logo: {
       url: '/gitlab.svg'
@@ -199,14 +199,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -229,14 +229,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -256,14 +256,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -283,14 +283,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -313,14 +313,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -340,14 +340,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -367,14 +367,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'
@@ -397,14 +397,14 @@ export const sponsors: Sponsor[] = [
   {
     name: 'GitLab',
     description:
-      'From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',
+      ['From project planning and source code management to CI/CD and monitoring, GitLab is a complete DevOps platform, delivered as a single application.',  'GitLab is an open source end-to-end software development platform with built-in version control, issue tracking, code review, CI/CD, and more.'],
     discord: '',
-    links: [{ text: '', url: '' }],
+    links: [{ text: 'GitLab for Teams', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://gitlab.com',
-    youtubeSlug: '',
+    youtubeSlug: 'd6D-OUPnJeg',
     callToAction: 'Try Now',
     callToActionLink: '',
-    slug: 'test',
+    slug: 'gitlab',
     tier: 'start-up',
     logo: {
       url: '/gitlab.svg'

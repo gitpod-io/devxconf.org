@@ -64,8 +64,8 @@
   --heading-tertiary-mobile: 22px;
   --heading-quadrary: 16px;
 
-  --body-big: 18px;
-  --body-big-mobile: 17px;
+  --body-big: 17px;
+  --body-big-mobile: 16px;
   --body: 15px;
   --footnote: 12px;
 
@@ -252,6 +252,7 @@ p + p {
 .btn {
   display: inline-block;
   max-height: 65px;
+  max-width: 300px;
   border-radius: 100px;
   padding: 10px 38px;
   color: var(--white);
@@ -259,6 +260,7 @@ p + p {
   letter-spacing: 3px;
   font-weight: 600;
   background: var(--brand);
+  text-align: center;
   text-transform: uppercase;
   border: 1px solid var(--brand);
   transition: all 0.2s;
@@ -290,6 +292,7 @@ p + p {
 }
 
 .btn--big {
+  max-width: initial;
   padding: 18px 40px;
 }
 

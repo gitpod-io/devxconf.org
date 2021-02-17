@@ -1,4 +1,4 @@
-import BackToOverview from '@components/back-to-overview';
+import BackLink from '@components/backlink';
 import Layout from '@components/layout';
 import { PatternCircle } from '@components/patterns';
 import Section from '@components/layout/section';
@@ -114,7 +114,9 @@ const Manifest = () => (
               </ul>
             </div>
           </div>
-          <BackToOverview />
+          <div style={{textAlign: 'center', marginTop: 'var(--gutter-huge)'}}>
+            <BackLink href="/" destinationText="Overview"/>
+          </div>
         </Section>
       </div>
     </div>
