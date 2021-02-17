@@ -19,7 +19,7 @@ export type Image = {
 };
 
 export type Speaker = {
-  name: string | JSX.Element;
+  name: JSX.Element;
   bio: string;
   title: string;
   slug?: string;
@@ -63,7 +63,7 @@ export type Sponsor = {
   links: SponsorLink[];
   discord: string;
   tier: string;
-  cardImage: Image;
+  cardImage: JSX.Element;
   logo: Image;
   youtubeSlug: string;
 };

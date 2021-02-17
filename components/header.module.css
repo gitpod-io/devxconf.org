@@ -14,20 +14,14 @@
  * limitations under the License.
  */
 
-.hero {
-  font-size: 28px;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  font-weight: 800;
-  margin: var(--space-8x) 24px var(--space-2x);
+.header {
+  text-align: center;
 }
 
 .description {
   font-size: var(--text-md);
   line-height: 1.4;
   color: var(--secondary-color);
-  margin-top: 0;
-  margin-left: 24px;
 }
 
 @media (min-width: 768px) {

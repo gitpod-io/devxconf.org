@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
+import { format, isAfter, isBefore, parseISO } from 'date-fns';
+import { useEffect, useState } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
-import { parseISO, format, isBefore, isAfter } from 'date-fns';
 import { Talk } from '@lib/types';
+import cn from 'classnames';
 import styles from './talk-card.module.css';
 
 type Props = {
@@ -61,13 +62,13 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
             <div className={styles.speaker}>
               <div className={styles['avatar-group']}>
                 {speaker.map(s => (
-                  <div key={s.name} className={styles['avatar-wrapper']}>
+                  <div key={s.alt} className={styles['avatar-wrapper']}>
                     <Image
                       loading="lazy"
-                      alt={s.name}
+                      alt={s.alt}
                       className={styles.avatar}
                       src={s.image.url}
-                      title={s.name}
+                      title={s.alt}
                       width={24}
                       height={24}
                     />

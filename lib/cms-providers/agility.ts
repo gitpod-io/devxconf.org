@@ -163,6 +163,8 @@ export async function getAllSponsors(): Promise<Sponsor[]> {
       tier: company.fields.tier,
       description: company.fields.description,
       cardImage: {
+        // eslint-disable-next-line
+        // @ts-ignore
         url: `${company.fields.cardImage.url}`
       },
       logo: {

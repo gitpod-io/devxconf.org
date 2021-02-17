@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import cn from 'classnames';
 import styles from './header.module.css';
 
 type Props = {
@@ -23,9 +24,9 @@ type Props = {
 
 export default function Header({ hero, description }: Props) {
   return (
-    <>
-      <h1 className={styles.hero}>{hero}</h1>
+    <div className={cn(styles.header, "row")}>
+      <h1 className="heading-secondary">{hero}</h1>
       <p className={styles.description}>{description}</p>
-    </>
+    </div>
   );
 }

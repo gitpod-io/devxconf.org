@@ -54,7 +54,7 @@
 .topic-title {
     background: url('/patterns/small-quadrant-top.svg');
     background-repeat: no-repeat;
-    display: inline flex;
+    display: inline-flex;
     height: 100px;
     align-items: flex-end;
     padding: 0 130px 10px;

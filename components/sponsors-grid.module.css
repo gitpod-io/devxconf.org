@@ -14,29 +14,37 @@
  * limitations under the License.
  */
 
+.category {
+  margin-top: var(--gutter-large);
+}
+
+.category h3 {
+  color: var(--brand);
+  text-align: center;
+}
+
 .card {
   border-radius: var(--space-2x);
-  background: #111111;
   display: flex;
   flex-direction: column;
+  max-width: 290px;
   background-clip: content-box, border-box;
-  background-image: linear-gradient(#111111, #111111), linear-gradient(to right, #333333, #333333);
-  padding: 1px;
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 10px 0;
   cursor: pointer;
+  border: 1px solid transparent;
+  min-width: 270px;
 }
 
 .card:hover,
 .card:focus {
   outline: none;
-  background-image: linear-gradient(#111111, #111111),
-    linear-gradient(to right, var(--brand), var(--brand));
+  border-color: var(--brand);
 }
 
 .grid {
   width: 100%;
   margin: 50px auto;
-  padding: 0 24px;
 }
 
 @media (min-width: 768px) {
@@ -44,19 +52,15 @@
     margin-bottom: 0;
   }
   .grid {
-    display: grid;
-    grid-gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
   }
-}
-
-.silver {
-  border-radius: 6px;
 }
 
 .cardBody {
   padding: var(--space-4x);
-  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -68,29 +72,30 @@
   height: 100%;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 160px;
+  background: var(--black-1);
+  border-radius: 8px;
 }
 
 .image {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  max-width: 150px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 .name {
   font-weight: bold;
-  color: #f1f1f1;
   font-size: 24px;
   margin: 0;
   line-height: 1.4;
 }
 
 .description {
+  font-size: var(--body);
   margin-top: var(--space);
   margin-bottom: 0;
   line-height: 1.4;
+  color: var(--grey-1);
 }

@@ -14,60 +14,19 @@
  * limitations under the License.
  */
 
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { useRouter } from 'next/router'
 
-import Page from '@components/page';
-import SpeakerSection from '@components/speaker-section';
-import Layout from '@components/layout';
+const Speaker = () => { 
+  const router = useRouter()
+  const name = router.query.slug
 
-import { getAllSpeakers } from '@lib/cms-api';
-import { Speaker } from '@lib/types';
-import { META_DESCRIPTION } from '@lib/constants';
-
-type Props = {
-  speaker: Speaker;
-};
-
-export default function SpeakerPage({ speaker }: Props) {
-  const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
-    description: META_DESCRIPTION
-  };
-
+  console.log(name)
+  
   return (
-    <Page meta={meta}>
-      <Layout>
-        <SpeakerSection speaker={speaker} />
-      </Layout>
-    </Page>
-  );
+    <>
+      <h1>{name}</h1>
+    </>
+  )
 }
 
-export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const slug = params?.slug;
-  const speakers = await getAllSpeakers();
-  const currentSpeaker = speakers.find((s: Speaker) => s.slug === slug) || null;
-
-  if (!currentSpeaker) {
-    return {
-      notFound: true
-    };
-  }
-
-  return {
-    props: {
-      speaker: currentSpeaker
-    },
-    revalidate: 60
-  };
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const speakers = await getAllSpeakers();
-  const slugs = speakers.map((s: Speaker) => ({ params: { slug: s.slug } }));
-
-  return {
-    paths: slugs,
-    fallback: false
-  };
-};
+export default Speaker

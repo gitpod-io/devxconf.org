@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import Link from 'next/link';
-import Image from 'next/image';
-import cn from 'classnames';
 import GithubIcon from '@components/icons/icon-github';
+import Image from 'next/image';
+import Link from 'next/link';
 import { Speaker } from '@lib/types';
+import cn from 'classnames';
 import styles from './speaker-section.module.css';
 
 const TwitterIcon = () => (
@@ -55,11 +55,11 @@ export default function SpeakerSection({ speaker }: Props) {
           Back to speakers
         </a>
       </Link>
-      <div key={speaker.name} className={styles.container}>
+      <div key={speaker.alt} className={styles.container}>
         <div style={{ minWidth: '300px' }}>
           <Image
-            alt={speaker.name}
-            title={speaker.name}
+            alt={speaker.alt}
+            title={speaker.alt}
             src={speaker.image.url}
             className={styles.image}
             loading="lazy"
