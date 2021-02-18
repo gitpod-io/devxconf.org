@@ -28,7 +28,7 @@ type Props = {
 
 export default function SpeakersGrid({ speakers }: Props) {
   return (
-    <Section className={styles.section}>
+    <Section className={styles.section} id="speakers">
       <div className="row">
         <SectionHeader className={styles['section-header']}>
           <h2 className="heading-secondary">Speakers</h2>
@@ -39,16 +39,16 @@ export default function SpeakersGrid({ speakers }: Props) {
         </SectionHeader>
         <div className={styles.grid}>
           {speakers.map(speaker => (
-            <Link key={speaker.alt} href={`/speakers/${speaker.slug}`}>
+            <Link key={speaker.name} href={`/speakers/${speaker.slug}`}>
               <a role="button" tabIndex={0} className={styles.card}>
                 <div className={styles.imageWrapper}>
                   <Image
-                    alt={speaker.alt}
+                    alt={speaker.name}
                     src={speaker.image.url}
                     className={styles.image}
                     loading="lazy"
                     quality="50"
-                    title={speaker.alt}
+                    title={speaker.name}
                     width={300}
                     height={300}
                   />

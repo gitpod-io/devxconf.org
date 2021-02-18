@@ -18,6 +18,10 @@
   margin-top: var(--gutter-large);
 }
 
+.category:last-of-type {
+  margin-bottom: var(--gutter-huge);
+}
+
 .category h3 {
   color: var(--brand);
   text-align: center;
@@ -34,6 +38,12 @@
   cursor: pointer;
   border: 1px solid transparent;
   min-width: 270px;
+}
+
+@media(max-width: 767px) {
+  .card {
+    margin-bottom: var(--gutter-medium);
+  }
 }
 
 .card:hover,

@@ -14,19 +14,45 @@
  * limitations under the License.
  */
 
-import { useRouter } from 'next/router'
+import BackLink from '@components/backlink';
+import Layout from '@components/layout';
+import { META_DESCRIPTION } from '@lib/constants';
+import Page from '@components/page';
+import { PatternHalfCircle } from '@components/patterns';
+import SpeakerSection from '@components/speaker-section';
+import { speakers } from 'contents';
+import { useRouter } from 'next/router';
 
-const Speaker = () => { 
-  const router = useRouter()
-  const name = router.query.slug
+export default function SponsorPage() {
+  const meta = {
+    title: 'Demo - Virtual Event Starter Kit',
+    description: META_DESCRIPTION
+  };
+  const slug = useRouter().query.slug;
 
-  console.log(name)
-  
+  const speaker = speakers.find(s => s.slug === slug);
+
   return (
-    <>
-      <h1>{name}</h1>
-    </>
-  )
+    <Page meta={meta}>
+      <Layout layoutStyles={{marginTop: `var(--gutter-huge)`}}>
+        <div className="row">
+          <BackLink href="/#speakers" destinationText="Speakers"/>
+          {
+            undefined !== speaker ? (
+              <SpeakerSection speaker={speaker} />
+            ) : null
+          }
+        </div>
+        <PatternHalfCircle
+        isInverted={true}
+        styles={{
+          position: 'absolute',
+          bottom: 100,
+          right: '-80px',
+          height: '200px'
+        }}
+      />
+      </Layout>
+    </Page>
+  );
 }
-
-export default Speaker
