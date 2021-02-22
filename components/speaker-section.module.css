@@ -29,18 +29,19 @@
 .img-bg {
   display: flex;
   align-items: center;
+  justify-content: center;
   background: url('/patterns/pattern-circle.svg');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
-  padding: 30px;
+  padding: 32px;
 }
 
 .img-container img {
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  transform: translateY(10px);
+  transform: translateY(6px);
 }
 
 .text-content {
@@ -68,7 +69,7 @@
 @media(max-width: 1120px) {
   .container {
     flex-direction: column;
-    max-width: 640px;
+    max-width: var(--wrapper-small);
     margin: auto;
   }
 

@@ -69,6 +69,7 @@ export default function SponsorSection({ sponsor }: Props) {
               Chat on Discord
             </a>
           </div>
+          <img className={styles.pattern} src="/patterns/horizontal-line.svg" aria-hidden={true}/>
           <div className={styles.resources}>
             <h2 className={cn("heading-tertiary", styles["resources-title"])}>Resources</h2>
             {sponsor.links.map(link => (

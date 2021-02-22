@@ -99,6 +99,11 @@
   color: var(--grey-1);
 }
 
+.pattern {
+  display: block;
+  margin: var(--gutter-medium) 0;
+}
+
 .resources {
   display: flex;
   flex-direction: column;

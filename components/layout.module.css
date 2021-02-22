@@ -109,7 +109,7 @@
   font-size: var(--heading-quadrary);
   color: var(--secondary-color);
   font-weight: 600;
-  letter-spacing: -0.05em;
+  letter-spacing: var(--letter-spacing);
   height: 100%;
   display: inline-flex;
   align-items: center;

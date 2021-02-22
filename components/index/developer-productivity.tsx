@@ -41,7 +41,7 @@ const DeveloperProductivity = () => (
         </h2>
       </div>
       <p>
-      With DevX Conf we want to create a space for creators where we can start from first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds to make developers feel like everything is at their fingertips. The goal is to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across four different areas.
+      With DevX Conf we want to create a space for creators where we can start from&nbsp;first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds to make developers feel like everything is at their fingertips. The goal is to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across four different areas.
       </p>
     </div>
   </div>

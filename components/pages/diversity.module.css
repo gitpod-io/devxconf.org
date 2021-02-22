@@ -6,10 +6,6 @@
     text-align: left;
 }
 
-.header p:last-of-type {
-    margin-bottom: var(--gutter-large);
-}
-
 .intro-container {
     position: relative;
     display: flex;
@@ -35,6 +31,7 @@
 }
 
 .features h2 {
+    margin-top: var(--gutter-large);
     text-transform: uppercase;
 }
 
@@ -113,6 +110,10 @@
     margin-bottom: var(--gutter-small);
     color: var(--secondary-color);
     text-transform: uppercase;
+}
+
+.support-item a {
+    color: var(--grey);
 }
 
 .donate-btn {

@@ -3,6 +3,7 @@ import Layout from '@components/layout';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
 import cn from 'classnames';
+import { organizationsWeSupport } from 'contents/diversity';
 import styles from './diversity.module.css';
 
 const Diversity = () => (
@@ -114,11 +115,13 @@ const Diversity = () => (
           <div className={styles['support-item']}>
             <h3>Organisations we support:</h3>
             <ul>
-              <li>@DiversifyTechCo</li>
-              <li>@jointechladies</li>
-              <li>@WomenWhoCode</li>
-              <li>@Code2040</li>
-              <li>@pocintech</li>
+              {organizationsWeSupport.map(org => (
+                <li>
+                  <a href={`https://twitter.com/${org}`} target="_blank" key={org} className="heading-quadrary">
+                    @{org}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div className={styles['support-item']}>
@@ -145,7 +148,7 @@ const Diversity = () => (
           marginTop: '50px'
         }}
       />
-      <div style={{textAlign: 'center', marginTop: 'calc(2 * var(--gutter-huge))'}}>
+      <div style={{ textAlign: 'center', marginTop: 'calc(2 * var(--gutter-huge))' }}>
         <BackLink href="/" destinationText="Overview" />
       </div>
     </Section>

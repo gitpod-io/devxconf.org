@@ -28,13 +28,9 @@
 }
 
 .info {
-  font-size: 20px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: var(--space-8x);
+  text-align: center;
+  color: var(--white);
 }
 
 .description {
@@ -62,6 +58,7 @@
   color: transparent;
   background-clip: text;
   background-image: url('/patterns/square.svg');
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -86,7 +83,6 @@
   }
 
   .info {
-    font-size: 24px;
     margin-bottom: 80px;
   }
 

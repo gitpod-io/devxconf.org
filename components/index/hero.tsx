@@ -48,10 +48,10 @@ export default function Hero() {
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-          <p>{DATE}</p>
+        <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info, "heading-quadrary")}>
+          <span>{DATE}</span>
           &nbsp;-&nbsp;
-          <p>Virtual</p>
+          <span>Virtual</span>
         </div>
         <RegisterButton />
         <p className={styles.footnote}>
