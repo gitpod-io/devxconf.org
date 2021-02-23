@@ -20,12 +20,12 @@
 
 .handle:hover,
 .handle:focus {
-    color: var(--brand);
+    color: var(--white);
 }
 
 .handle:hover .icon,
 .handle:focus .icon {
-    fill: var(--brand);
+    fill: var(--white);
 } 
 
 .icon {

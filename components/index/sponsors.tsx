@@ -51,9 +51,9 @@ const sponsors: SponsorProps[] = [
 const Sponsors = () => (
   <Section className={styles.section}>
     <div className="row">
-      <SectionHeader className={styles['section-header']}>
+      <SectionHeader className="wrapper-small">
         <h2 className={cn('heading-secondary', styles['sponsors-title'])}>Sponsors</h2>
-        <p>Promote your technologies and thought leadership the in the DevX landscape.</p>
+        <p>Promote your technologies and demonstrate your thought leadership in the DevX landscape.</p>
       </SectionHeader>
       <a href="" className="btn">
         BECOME A SPONSOR
@@ -63,7 +63,7 @@ const Sponsors = () => (
           <Sponsor key={i} {...sponsor} />
         ))}
       </div>
-      <div className={styles.footnote}>
+      <div className="wrapper-small">
         <p>
           More details and different sponsorship options, you can find in our sponsorship
           prospectus.

@@ -30,7 +30,7 @@ export default function SpeakersGrid({ speakers }: Props) {
   return (
     <Section className={styles.section} id="speakers">
       <div className="row">
-        <SectionHeader className={styles['section-header']}>
+        <SectionHeader className="wrapper-small">
           <h2 className="heading-secondary">Speakers</h2>
           <p>
             We seeked out to speakers who advocate the cutting edge of their particular discipline

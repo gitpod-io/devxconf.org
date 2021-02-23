@@ -43,9 +43,6 @@
     margin: 0 auto calc(2 * var(--gutter-huge));
 }
 
-.action a {
- color: var(--brand);
-}
 
 .action-heading {
     display: flex;
@@ -112,8 +109,13 @@
     text-transform: uppercase;
 }
 
-.support-item a {
+.support-item li a {
     color: var(--grey);
+}
+
+.support-item li a:hover,
+.support-item li a:focus {
+    color: var(--white);
 }
 
 .donate-btn {

@@ -26,11 +26,6 @@
     overflow: hidden;
 }
 
-.footnote {
-    max-width: 600px;
-    margin: auto;
-}
-
 .footnote a {
     margin-top: var(--gutter-small);
 }

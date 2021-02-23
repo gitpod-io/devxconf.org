@@ -18,10 +18,6 @@
   text-align: center;
 }
 
-.section-header {
-  max-width: 600px;
-}
-
 .section-header h2 + p {
   margin-bottom: var(--gutter-medium);
 }
