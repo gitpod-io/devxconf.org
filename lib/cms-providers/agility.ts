@@ -61,22 +61,22 @@ export async function getAllSpeakers(): Promise<Speaker[]> {
 
     const talk = (talks || []).length > 0 ? talks[0] : null;
 
-    lst.push({
-      name: speaker.fields.name,
-      title: speaker.fields.title,
-      bio: speaker.fields.bio,
-      slug: speaker.fields.slug,
-      twitter: speaker.fields.twitter,
-      github: speaker.fields.github,
-      company: speaker.fields.company.fields.name,
-      image: {
-        url: `${speaker.fields.image.url}?w=300&h=400&c=1`
-      },
-      imageSquare: {
-        url: `${speaker.fields.image.url}?w=192&h=192&c=1`
-      },
-      talk
-    });
+    // lst.push({
+    //   name: speaker.fields.name,
+    //   title: speaker.fields.title,
+    //   bio: speaker.fields.bio,
+    //   slug: speaker.fields.slug,
+    //   twitter: speaker.fields.twitter,
+    //   github: speaker.fields.github,
+    //   company: speaker.fields.company.fields.name,
+    //   image: {
+    //     url: `${speaker.fields.image.url}?w=300&h=400&c=1`
+    //   },
+    //   imageSquare: {
+    //     url: `${speaker.fields.image.url}?w=192&h=192&c=1`
+    //   },
+    //   talk
+    // });
   });
 
   return lst.sort((a, b) => (a.name > b.name ? 1 : -1));
