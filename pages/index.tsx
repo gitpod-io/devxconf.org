@@ -37,6 +37,7 @@ export default function Conf() {
   return (
     <Page meta={meta} fullViewport>
       <SkipNavContent />
+      <p>Test</p>
       <ConfContent
         defaultUserData={defaultUserData}
         defaultPageState={query.ticketNumber ? 'ticket' : 'registration'}
