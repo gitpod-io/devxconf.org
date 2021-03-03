@@ -12,20 +12,17 @@
     display: flex;
     align-items: center;
     color: #9E9E9E;
-    font-weight: 600;
-    letter-spacing: 3px;
-    margin-top: var(--gutter-medium);
     transition: all .2s;
 }
 
 .handle:hover,
 .handle:focus {
-    color: var(--brand);
+    color: var(--white);
 }
 
 .handle:hover .icon,
 .handle:focus .icon {
-    fill: var(--brand);
+    fill: var(--white);
 } 
 
 .icon {
@@ -34,4 +31,18 @@
     fill: #9E9E9E;
     margin-right: var(--gutter-small-x);
     transition: all .2s;
+}
+
+@media(max-width: 767px) {
+    .follow-us {
+        text-align: center;
+    }
+
+    .pattern {
+        display: none;
+    }
+
+    .handle {
+        display: inline-flex;
+    }
 }

@@ -27,7 +27,7 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
         {sponsor.tier !== 'start-up' && (
           <div className={styles.cardBody}>
             <div>
-              <h2 className={styles.name}>{sponsor.name}</h2>
+              <h2 className={cn(styles.name, "heading-quadrary")}>{sponsor.name}</h2>
               <p className={styles.description}>{
                 typeof sponsor.description === 'string' ? sponsor.description : sponsor.description[0]
               }</p>

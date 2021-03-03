@@ -22,23 +22,28 @@
     gap: 30px 40px;
     align-items: center;
     max-width: 1000px;
-    margin: var(--space-16x) auto;
+    margin: var(--gutter-large) auto;
     overflow: hidden;
 }
 
 .footnote {
-    max-width: 600px;
-    margin: auto;
-}
-
-.footnote a {
-    margin-top: var(--gutter-small);
+    margin-bottom: var(--gutter-medium);
 }
 
 @media(max-width: 950px) {
     .sponsors {
         grid-template-columns: repeat(3, 1fr);
         gap: 30px 0px;
+    }
+}
+
+@media(max-width: 767px) {
+    .sponsors {
+        margin: var(--gutter-large-mobile) auto;
+    }
+
+    .footnote {
+        margin-bottom: var(--gutter-medium-mobile);
     }
 }
 
@@ -53,15 +58,3 @@
     }
 }
 
-@media(max-width: 460px) {
-    .sponsors-title {
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media(max-width: 340px) {
-    .sponsors {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}

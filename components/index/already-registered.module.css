@@ -1,0 +1,11 @@
+.container {
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.handle {
+  display: flex;
+  justify-content: center;
+}

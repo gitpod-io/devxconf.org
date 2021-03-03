@@ -23,13 +23,15 @@ import { sponsors } from 'contents/expo';
 import { useRouter } from 'next/router';
 
 export default function SponsorPage() {
+  const slug = useRouter().query.slug;
+  const sponsor = sponsors.find(s => s.slug === slug);
+
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: `Sponosor ${sponsor?.name} | Devx Conf`,
     description: META_DESCRIPTION
   };
-  const slug = useRouter().query.slug;
 
-  const sponsor = sponsors.find(s => s.slug === slug);
+
 
   return (
     <Page meta={meta}>

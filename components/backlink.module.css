@@ -9,3 +9,11 @@
     display: inline-flex;
     align-items: center;
 }
+
+
+@media(max-width: 767px) {
+    .link-container {
+        margin: var(--gutter-large) auto 0;
+        padding-top: var(--gutter-large-mobile);
+    }
+}

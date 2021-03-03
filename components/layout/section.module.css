@@ -5,3 +5,9 @@
 .section-intro {
     margin: var(--gutter-huge) 0;
 }
+
+@media(max-width: 768px) {
+    .section {
+        padding: var(--gutter-large-mobile) 0;
+    }
+}

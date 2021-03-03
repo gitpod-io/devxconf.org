@@ -17,3 +17,9 @@
 .link img {
     height: 48px;
 }
+
+@media(max-width: 767px) {
+    .section p {
+        margin: var(--gutter-medium-mobile) 0;
+    }
+}

@@ -16,8 +16,32 @@
 
 .footer {
   width: 100%;
-  margin: var(--gutter-large) auto var(--gutter-medium);
+  margin: var(--gutter-medium) auto;
   font-size: var(--footnote);
-  color: var(--grey);
   text-align: center;
+}
+
+.link {
+  color: var(--grey-2);
+}
+
+.link:not(:last-child) {
+  margin-right: var(--gutter-small);
+}
+
+@media(max-width: 767px) {
+  .link:not(:last-child) {
+    margin-right: var(--gutter-small-mobile);
+  }
+}
+
+
+@media(max-width: 333px) {
+  .footer {
+    font-size: 11px;
+  }
+
+  .link:not(:last-child) {
+    margin-right: 8px;
+  }
 }

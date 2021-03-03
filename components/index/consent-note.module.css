@@ -1,0 +1,8 @@
+.note {
+    font-size: var(--footnote);
+    color: var(--grey-2);
+}
+
+.note a {
+    font-weight: 600;
+}

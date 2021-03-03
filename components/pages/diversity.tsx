@@ -2,6 +2,7 @@ import BackLink from '@components/backlink';
 import Layout from '@components/layout';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
+import Support from '@components/diversity/support';
 import cn from 'classnames';
 import styles from './diversity.module.css';
 
@@ -25,6 +26,7 @@ const Diversity = () => (
         </div>
       </div>
       <PatternHalfCircle
+        className={styles.pattern}
         isInverted={true}
         styles={{
           position: 'absolute',
@@ -104,40 +106,15 @@ const Diversity = () => (
               </li>
               <li>
                 Do you have more ideas on how we can foster a diverse community? →{' '}
-                <a href="#">Please reach out</a>
+                <a href="mailto:contact@devxconf.org">Please reach out</a>
               </li>
             </ul>
           </div>
         </div>
-
-        <div className={styles.support}>
-          <div className={styles['support-item']}>
-            <h3>Organisations we support:</h3>
-            <ul>
-              <li>@DiversifyTechCo</li>
-              <li>@jointechladies</li>
-              <li>@WomenWhoCode</li>
-              <li>@Code2040</li>
-              <li>@pocintech</li>
-            </ul>
-          </div>
-          <div className={styles['support-item']}>
-            <h3>There is still a lot to do</h3>
-            <p>
-              We're not, where we'd like to be. So we have to keep fighting for your values. For
-              that we started a donation initative.
-            </p>
-            <p>
-              For every registration to our discord channel we'll donate $1 to a non-profit
-              organisation that we support. Would you like to join us?
-            </p>
-            <a href="#" className={cn('btn btn--secondary', styles['donate-btn'])}>
-              Donate Now
-            </a>
-          </div>
-        </div>
       </div>
+      <Support />
       <PatternHalfCircle
+        className={styles.pattern}
         styles={{
           position: 'absolute',
           left: '-15px',
@@ -145,7 +122,7 @@ const Diversity = () => (
           marginTop: '50px'
         }}
       />
-      <div style={{textAlign: 'center', marginTop: 'calc(2 * var(--gutter-huge))'}}>
+      <div className="backlink-container">
         <BackLink href="/" destinationText="Overview" />
       </div>
     </Section>
