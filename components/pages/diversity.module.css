@@ -47,7 +47,7 @@
     display: flex;
     justify-content: flex-end;
     flex: 1;
-    margin-bottom: calc(var(--gutter-large) + var(--gutter-normal));
+    margin-bottom: calc(var(--gutter-large) + var(--gutter-medium));
 }
 
 .action-list {
@@ -149,9 +149,9 @@
         display: none;
     }
 
-    .backlink-container {
+    /* .backlink-container {
         margin-top: calc(2 * var(--gutter-large));
-    }
+    } */
 }
 
 @media(max-width: 680px) {

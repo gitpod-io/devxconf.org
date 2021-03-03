@@ -1,12 +1,12 @@
-import styles from './sponsor.module.css'
+import styles from './partner.module.css'
 
-export interface SponsorProps {
+export interface PartnerProps {
     title: string;
     logo: string;
     website: string;
 }
 
-const Sponsor = ({title, logo, website}: SponsorProps) => (
+const Sponsor = ({title, logo, website}: PartnerProps) => (
    <a href={website} target="_blank">
         <img 
             src={`/sponsors/${logo}`} 

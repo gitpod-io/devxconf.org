@@ -31,7 +31,7 @@
   border-radius: var(--space-2x);
   display: flex;
   flex-direction: column;
-  max-width: 290px;
+  max-width: 260px;
   background-clip: content-box, border-box;
   padding: 0;
   margin: 10px;
@@ -64,7 +64,7 @@
 }
 
 .cardBody {
-  padding: var(--space-4x);
+  padding: 16px 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

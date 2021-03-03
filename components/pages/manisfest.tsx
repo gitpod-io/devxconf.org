@@ -1,4 +1,3 @@
-import BackLink from '@components/backlink';
 import Layout from '@components/layout';
 import { PatternCircle } from '@components/patterns';
 import Section from '@components/layout/section';
@@ -12,36 +11,40 @@ interface TopicProps {
 
 const topics: TopicProps[] = [
   {
-    title: 'Develop',
+    title: 'Code',
     topics: [
       'Editors',
-      'Remote Dev Environments',
-      'Ephemeral Dev Environments',
+      'Ephemeral Dev Environments– Remote Dev Environments',
       'Language Stack / Ecosystem',
-      'Inner loop for multi-service, containerised development',
       'API Design Principles',
       'Programming Languages & Productivity'
     ]
   },
   {
-    title: 'Build, Text & Deploy',
+    title: 'Test, Build & Deploy',
     topics: [
       'CI Pipeline vs Build System',
       'Distributed Caching & Build',
       'Reproducible builds',
-      'Pipeline abstraction',
-      'Death to .yml, Gluecode',
+      'Lifecycle consistency',
       'Gluecode',
-      'Config vs Code'
+      'Config (HCL) vs Code '
     ]
   },
   {
     title: 'Collaborate',
-    topics: ['Remote work', 'Pair Programming & Mentoring', 'Keep in sync with your team', 'GitOps']
+    topics: [
+      'CI Pipeline vs Build System',
+      'Distributed Caching & Build',
+      'Reproducible builds',
+      'Lifecycle consistency',
+      'Gluecode',
+      'Config (HCL) vs Code '
+    ]
   },
   {
     title: 'Run',
-    topics: ['Instant continuous deploys', 'Serverless', 'Monolith vs Distributed']
+    topics: ['Instant continuous deploys', 'Serverless', 'Monitoring']
   }
 ];
 
@@ -64,10 +67,9 @@ const Manifest = () => (
             <h1 className="heading-secondary">Bring back joy and speed to our workflows. </h1>
             <p>
               DevX Conf is about developer experience - our daily experience when trying to get the
-              job done. We write code within specific languages/ frameworks, use tools, glue them
+              job done. We write code within specific languages/frameworks, use tools, glue them
               together to (tool) chains, develop against APIs and communicate and collaborate with
-              our colleagues. All of that should be efficient, sustainable and joyful - and
-              currently it is not.{' '}
+              our colleagues. All of that should be efficient, sustainable and joyful.
             </p>
             <p>
               The myriad of tools that are released each single day initially sounded like the
@@ -76,11 +78,14 @@ const Manifest = () => (
               <a href="https://twitter.com/dastbe/status/1303858170155081728?s=20" target="_blank">
                 CNCF landscape meme
               </a>{' '}
-              is worth more than a thousand of words. Our friends at{' '}
-              <a href="https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/" target="_blank">
-                Redmonk
+              is worth more than a thousand of words. Our friends at Redmonk gave it a name -{' '}
+              <a
+                href="https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/"
+                target="_blank"
+              >
+                developer experience gap
               </a>{' '}
-              gave it a name - developer experience gap and brought it home with their definition:
+              and brought it home with their definition:
             </p>
             <blockquote className={styles.quote}>
               <p>
@@ -115,18 +120,15 @@ const Manifest = () => (
           </div>
           <div className={styles['topic-container']}>
             {topics.map((topic, i) => (
-              <div className={styles.topic} key={`${i}`+topic.title}>
+              <div className={styles.topic} key={`${i}` + topic.title}>
                 <h4 className="heading-quadrary">{topic.title}</h4>
                 <ul className={cn(styles.ul, 'dashed-list')}>
-                  { topic.topics.map((t, i) => (
-                    <li key={`${i}`+topic.title}>{t}</li>
-                  ) ) }
+                  {topic.topics.map((t, i) => (
+                    <li key={`${i}` + topic.title}>{t}</li>
+                  ))}
                 </ul>
               </div>
             ))}
-          </div>
-          <div className="backlink-container">
-            <BackLink href="/" destinationText="Overview" />
           </div>
         </Section>
       </div>

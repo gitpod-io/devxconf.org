@@ -1,11 +1,11 @@
-import Sponsor, { SponsorProps } from './sponsor';
+import Partner, { PartnerProps } from './partner';
 
 import Section from '@components/layout/section';
 import SectionHeader from '@components/layout/section-header';
 import cn from 'classnames';
-import styles from './sponsors.module.css';
+import styles from './partners.module.css';
 
-const sponsors: SponsorProps[] = [
+const partners: PartnerProps[] = [
   {
     title: 'GitLab',
     logo: 'gitlab.svg',
@@ -48,19 +48,19 @@ const sponsors: SponsorProps[] = [
   }
 ];
 
-const Sponsors = () => (
+const Partners = () => (
   <Section className={styles.section}>
     <div className="row">
       <SectionHeader className="wrapper-small">
-        <h2 className={cn('heading-secondary', styles['sponsors-title'])}>Sponsors</h2>
+        <h2 className={cn('heading-secondary', styles['sponsors-title'])}>Partners</h2>
         <p>Promote your technologies and demonstrate your thought leadership in the DevX landscape.</p>
       </SectionHeader>
       <a href="mailto:contact@devxconf.org?subject=Sponsorship request" className="btn">
         BECOME A SPONSOR
       </a>
       <div className={styles.sponsors}>
-        {sponsors.map((sponsor, i) => (
-          <Sponsor key={i} {...sponsor} />
+        {partners.map((partner, i) => (
+          <Partner key={i} {...partner} />
         ))}
       </div>
       <div className="wrapper-small">
@@ -76,4 +76,4 @@ const Sponsors = () => (
   </Section>
 );
 
-export default Sponsors;
+export default Partners;
