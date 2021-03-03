@@ -21,37 +21,35 @@ import Page from '@components/page';
 import { PatternHalfCircle } from '@components/patterns';
 import SpeakerSection from '@components/speaker-section';
 import { speakers } from 'contents';
+import styles from './[slug].module.css';
 import { useRouter } from 'next/router';
 
 export default function SponsorPage() {
+  const slug = useRouter().query.slug;
+  const speaker = speakers.find(s => s.slug === slug);
+
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: `${speaker?.name} Speaker | Devx Conf`,
     description: META_DESCRIPTION
   };
-  const slug = useRouter().query.slug;
-
-  const speaker = speakers.find(s => s.slug === slug);
 
   return (
     <Page meta={meta}>
-      <Layout layoutStyles={{marginTop: `var(--gutter-huge)`}}>
+      <Layout layoutStyles={{ marginTop: `var(--gutter-huge)` }}>
         <div className="row">
-          <BackLink href="/#speakers" destinationText="Speakers"/>
-          {
-            undefined !== speaker ? (
-              <SpeakerSection speaker={speaker} />
-            ) : null
-          }
+          <BackLink href="/#speakers" destinationText="Speakers" />
+          {undefined !== speaker ? <SpeakerSection speaker={speaker} /> : null}
         </div>
         <PatternHalfCircle
-        isInverted={true}
-        styles={{
-          position: 'absolute',
-          bottom: 100,
-          right: '-80px',
-          height: '200px'
-        }}
-      />
+          className={styles.pattern}
+          isInverted={true}
+          styles={{
+            position: 'absolute',
+            bottom: 100,
+            right: '-80px',
+            height: '200px'
+          }}
+        />
       </Layout>
     </Page>
   );

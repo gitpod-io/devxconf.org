@@ -16,6 +16,7 @@
 
 .wrapper {
   position: relative;
+  text-align: center;
 }
 
 .hero {
@@ -23,18 +24,13 @@
   line-height: 1.15;
   letter-spacing: -0.05em;
   font-weight: 700;
-  text-align: center;
   margin: 0 0 25px;
 }
 
 .info {
-  font-size: 20px;
-  line-height: 1.4;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: var(--space-8x);
+  margin-bottom: var(--gutter-large-mobile);
+  text-align: center;
+  color: var(--white);
 }
 
 .description {
@@ -62,19 +58,34 @@
   color: transparent;
   background-clip: text;
   background-image: url('/patterns/square.svg');
+  background-position: bottom;
   background-size: cover;
 }
 
 .footnote {
-  max-width: 300px;
-  margin: var(--gutter-normal) auto 0;
+  margin: var(--gutter-small) auto 0;
   text-align: center;
   font-size: var(--footnote);
-  color: var(--grey);
+  color: var(--grey-2);
 }
 
-.footnote a {
+.register-with-email {
+  background: transparent;
+  border: none;
   font-weight: 600;
+  color: inherit;
+  transition: all .2s;
+}
+
+.register-with-email:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+@media(max-width: 767px) {
+  .pattern {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -86,7 +97,6 @@
   }
 
   .info {
-    font-size: 24px;
     margin-bottom: 80px;
   }
 

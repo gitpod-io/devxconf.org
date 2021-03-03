@@ -17,7 +17,7 @@
 .nav-overlay {
   position: fixed;
   z-index: 100;
-  top: 95px;
+  top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -69,5 +69,11 @@
 @media (min-width: 1032px) {
   .button {
     display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  .nav-overlay {
+    top: 50px;
   }
 }

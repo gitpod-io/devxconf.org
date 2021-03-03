@@ -14,15 +14,14 @@
  * limitations under the License.
  */
 
-import { GetStaticProps, GetStaticPaths } from 'next';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
-import Page from '@components/page';
-import StageContainer from '@components/stage-container';
 import Layout from '@components/layout';
-
-import { getAllStages } from '@lib/cms-api';
-import { Stage } from '@lib/types';
 import { META_DESCRIPTION } from '@lib/constants';
+import Page from '@components/page';
+import { Stage } from '@lib/types';
+import StageContainer from '@components/stage-container';
+import { getAllStages } from '@lib/cms-api';
 
 type Props = {
   stage: Stage;
@@ -31,7 +30,7 @@ type Props = {
 
 export default function StagePage({ stage, allStages }: Props) {
   const meta = {
-    title: 'Demo - Virtual Event Starter Kit',
+    title: '',
     description: META_DESCRIPTION
   };
 

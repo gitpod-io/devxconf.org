@@ -21,7 +21,7 @@ const Community = () => (
   <Layout>
     <div className="row">
       <Section className={styles.section}>
-        <h1 className="heading-tertiary">Join us on Discord</h1>
+        <h1 className="heading-secondary">Join us on Discord</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit

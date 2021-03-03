@@ -9,9 +9,21 @@
     }
 }
 
-@media(max-width: 580px) {
+@media(max-width: 767px) {
     .logo {
-        max-width: 140px;
+        width: 150px;
+    }
+}
+
+@media(max-width: 460px) {
+    .logo {
         max-height: 40px;
+        width: 130px;
+    }
+}
+
+@media(max-width: 320px) {
+    .logo {
+        width: 110px;
     }
 }

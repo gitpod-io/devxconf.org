@@ -23,7 +23,7 @@ import { sponsors } from 'contents/expo';
 
 export default function ExpoPage() {
   const meta = {
-    title: 'Expo - Virtual Event Starter Kit',
+    title: 'Expo | Devx Conf',
     description: META_DESCRIPTION
   };
 

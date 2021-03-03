@@ -5,6 +5,46 @@ import Section from '@components/layout/section';
 import cn from 'classnames';
 import styles from './manifest.module.css';
 
+interface TopicProps {
+  title: string;
+  topics: string[];
+}
+
+const topics: TopicProps[] = [
+  {
+    title: 'Develop',
+    topics: [
+      'Editors',
+      'Remote Dev Environments',
+      'Ephemeral Dev Environments',
+      'Language Stack / Ecosystem',
+      'Inner loop for multi-service, containerised development',
+      'API Design Principles',
+      'Programming Languages & Productivity'
+    ]
+  },
+  {
+    title: 'Build, Text & Deploy',
+    topics: [
+      'CI Pipeline vs Build System',
+      'Distributed Caching & Build',
+      'Reproducible builds',
+      'Pipeline abstraction',
+      'Death to .yml, Gluecode',
+      'Gluecode',
+      'Config vs Code'
+    ]
+  },
+  {
+    title: 'Collaborate',
+    topics: ['Remote work', 'Pair Programming & Mentoring', 'Keep in sync with your team', 'GitOps']
+  },
+  {
+    title: 'Run',
+    topics: ['Instant continuous deploys', 'Serverless', 'Monolith vs Distributed']
+  }
+];
+
 const Manifest = () => (
   <Layout>
     <div className="row">
@@ -18,6 +58,7 @@ const Manifest = () => (
               left: '50%',
               transform: 'translateX(-50%)'
             }}
+            className={styles.pattern}
           />
           <div className={styles.content}>
             <h1 className="heading-secondary">Bring back joy and speed to our workflows. </h1>
@@ -32,11 +73,11 @@ const Manifest = () => (
               The myriad of tools that are released each single day initially sounded like the
               promised developer-land. While choice is great, it doesn't necessarily make our lives
               easier. How that feels? This pure gold{' '}
-              <a href="#" target="_blank">
+              <a href="https://twitter.com/dastbe/status/1303858170155081728?s=20" target="_blank">
                 CNCF landscape meme
               </a>{' '}
               is worth more than a thousand of words. Our friends at{' '}
-              <a href="#" target="_blank">
+              <a href="https://redmonk.com/sogrady/2020/10/06/developer-experience-gap/" target="_blank">
                 Redmonk
               </a>{' '}
               gave it a name - developer experience gap and brought it home with their definition:
@@ -73,49 +114,19 @@ const Manifest = () => (
             <h2 className={cn('heading-secondary', styles['topic-title'])}>Topics</h2>
           </div>
           <div className={styles['topic-container']}>
-            <div className={styles.topic}>
-              <h4 className="heading-quadrary">Develop</h4>
-              <ul className={styles.ul}>
-                <li>Editors</li>
-                <li>Remote Dev Environments</li>
-                <li>Ephemeral Dev Environments</li>
-                <li>Language Stack / Ecosystem</li>
-                <li>Microservice development</li>
-                <li>Effective API Design Principles</li>
-                <li>Programming Languages & Productivity</li>
-              </ul>
-            </div>
-            <div className={styles.topic}>
-              <h4 className="heading-quadrary">Build, Text & Deploy</h4>
-              <ul className={styles.ul}>
-                <li>CI Pipeline vs Build System</li>
-                <li>Distributed Caching & Build</li>
-                <li>Reproducible builds</li>
-                <li>Pipeline Abstraction</li>
-                <li>Death to .yml, Gluecode</li>
-                <li>Config vs Code </li>
-              </ul>
-            </div>
-            <div className={styles.topic}>
-              <h4 className="heading-quadrary">Collaborate</h4>
-              <ul className={styles.ul}>
-                <li>Remote work</li>
-                <li>Pair Programming & Mentoring</li>
-                <li>Keep in sync with your team</li>
-                <li>GitOps</li>
-              </ul>
-            </div>
-            <div className={styles.topic}>
-              <h4 className="heading-quadrary">Run</h4>
-              <ul className={styles.ul}>
-                <li>Instant continuous deploys</li>
-                <li>Serverless</li>
-                <li>Monolith vs Distributed</li>
-              </ul>
-            </div>
+            {topics.map((topic, i) => (
+              <div className={styles.topic} key={`${i}`+topic.title}>
+                <h4 className="heading-quadrary">{topic.title}</h4>
+                <ul className={cn(styles.ul, 'dashed-list')}>
+                  { topic.topics.map((t, i) => (
+                    <li key={`${i}`+topic.title}>{t}</li>
+                  ) ) }
+                </ul>
+              </div>
+            ))}
           </div>
-          <div style={{textAlign: 'center', marginTop: 'var(--gutter-huge)'}}>
-            <BackLink href="/" destinationText="Overview"/>
+          <div className="backlink-container">
+            <BackLink href="/" destinationText="Overview" />
           </div>
         </Section>
       </div>
