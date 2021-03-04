@@ -68,7 +68,7 @@ const Partners = () => (
           More details and different sponsorship options, you can find in our sponsorship
           prospectus.
         </p> */}
-        <a href="#" className="btn btn--secondary">
+        <a href="/prospectus.pdf" download className="btn btn--secondary">
           See Prospectus
         </a>
       </div>
