@@ -308,6 +308,11 @@ a:focus {
   transition: all 0.2s;
 }
 
+.btn:disabled {
+  pointer-events: none;
+  opacity: .5;
+}
+
 .btn .fill {
   transition: all .2s;
   fill: var(--black);
