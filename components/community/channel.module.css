@@ -9,6 +9,12 @@
     border: 1px solid var(--grey-2);
     overflow: hidden;
     border-radius: 8px;
+    transition: all .2s;
+}
+
+.channel:hover,
+.channel:focus {
+    border-color: var(--brand);
 }
 
 .bg {
@@ -18,6 +24,7 @@
 }
 
 .channel svg {
+    z-index: 1;
     width: 44px;
 }
 

@@ -24,16 +24,6 @@ const Diversity = () => (
           </p>
         </div>
       </div>
-      <PatternHalfCircle
-        className={styles.pattern}
-        isInverted={true}
-        styles={{
-          position: 'absolute',
-          right: '-15px',
-          height: '500px',
-          marginTop: '-100px'
-        }}
-      />
       <div className="row">
         <div className="wrapper-small">
           <div className={styles.features}>

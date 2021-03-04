@@ -47,7 +47,10 @@ const Community = () => (
           </div>
         </div>
 
-        {/* <TwitterHandle /> */}
+        <div className={styles.follow}>
+          <h2 className="heading-tertiary">Stay updated - follow us on Twitter</h2>
+          <TwitterHandle />
+        </div>
       </Section>
     </div>
   </Layout>

@@ -28,7 +28,7 @@ const GitHubLogo = () => (
 );
 
 const RegisterButton = () => (
-  <div className={cn(styleUtils.appear, styleUtils['appear-fifth'],styles['btn-wrapper'])}>
+  <div className={styles['btn-wrapper']}>
     <a href="" className="btn btn--big">
       Register with <GitHubLogo />
     </a>

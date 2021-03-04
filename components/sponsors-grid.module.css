@@ -38,6 +38,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   min-width: 270px;
+  font-weight: 400;
 }
 
 .card:hover,
