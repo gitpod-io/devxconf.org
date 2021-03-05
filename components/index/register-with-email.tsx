@@ -79,6 +79,7 @@ const RegisterWithEmail = () => {
           autoFocus
           required
           onChange={e => validateEmail(e)}
+          className={styles.input}
         />
         { 
           emailError ? <span className={styles.error}>{emailError}</span> : null

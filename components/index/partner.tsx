@@ -7,7 +7,7 @@ export interface PartnerProps {
 }
 
 const Sponsor = ({title, logo, website}: PartnerProps) => (
-   <a href={website} target="_blank">
+   <a href={website} className="partner__link" target="_blank">
         <img 
             src={`/sponsors/${logo}`} 
             alt={title}

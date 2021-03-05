@@ -14,6 +14,7 @@
 
 .channel:hover,
 .channel:focus {
+    outline: none;
     border-color: var(--brand);
 }
 

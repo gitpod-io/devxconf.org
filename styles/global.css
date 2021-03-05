@@ -85,6 +85,8 @@
   --white: #fff;
   --brand: #ff5043;
   --text-white: #f9f9fb;
+
+  --outline: 2px solid var(--brand);
 }
 *,
 *:before,
@@ -263,8 +265,33 @@ p + p {
 }
 
 /* -------------------------------------- */
-/* ----- Buttons & Links ----- */
+/* ----- Buttons, Links & Form elements ----- */
 /* -------------------------------------- */
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+a:focus {
+  outline: var(--outline);
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus,
+body:not(.user-is-tabbing) a:focus {
+  outline: none;
+}
+
+.partner__link {
+  border: 2px solid transparent;
+}
+
+body.user-is-tabbing .partner__link:focus { 
+  outline: none;
+  border: var(--outline);
+}
 
 a:hover,
 button:hover {
@@ -315,8 +342,12 @@ a:focus {
 }
 
 .btn .fill {
-  transition: all .2s;
+  transition: all 0.2s;
   fill: var(--black);
+}
+
+.btn:focus {
+  outline: none;
 }
 
 .btn:hover,
@@ -348,6 +379,11 @@ a:focus {
   margin-left: 12px;
 }
 
+input:focus {
+  outline: none;
+  border: 1px solid var(--brand);
+}
+
 /* -------------------------------------- */
 /* ----- Lists ----- */
 /* -------------------------------------- */
@@ -368,7 +404,6 @@ a:focus {
   position: absolute;
   left: 0;
 }
-
 
 @media (max-width: 767px) {
   body {
@@ -394,7 +429,6 @@ a:focus {
 }
 
 @media (max-width: 470px) {
-
   .btn {
     padding: 10px 28px;
   }
@@ -446,7 +480,7 @@ a:focus {
   }
 }
 
-@media(max-width: 350px) {
+@media (max-width: 350px) {
   .btn {
     min-width: 230px;
   }
@@ -458,7 +492,7 @@ a:focus {
   .btn svg {
     margin-left: 6px;
     width: 85px;
-  }  
+  }
 }
 
 @media (min-width: 768px) {
@@ -471,7 +505,7 @@ a:focus {
 
 .sponsor-logo path {
   fill: var(--grey);
-  transition: all .2s;
+  transition: all 0.2s;
 }
 
 .sponsor-card:hover path {
