@@ -21,8 +21,8 @@ import ConfContainer from '../conf-container';
 import FollowUsOnTwitter from '../follow-us-on-twitter';
 import Hero from '../index/hero';
 import Layout from '../layout';
+import Partners from '../index/partners';
 import SpeakersGrid from '../speakers-grid';
-import Sponsors from '../index/sponsors';
 import Ticket from '../ticket';
 import { speakers } from 'contents';
 import { useState } from 'react';
@@ -55,7 +55,7 @@ export default function Conf({
             <>
               <Hero />
               <SpeakersGrid speakers={speakers} />
-              <Sponsors />
+              <Partners />
               <FollowUsOnTwitter />
               <About />
             </>

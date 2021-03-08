@@ -44,7 +44,7 @@
   --header-height: 95px;
   --header-height-mobile: 52px;
 
-  --gutter-huge: 150px;
+  --gutter-huge: 140px;
   --gutter-large: 75px;
   --gutter-medium: 37.5px;
   --gutter-normal: 28px;
@@ -253,10 +253,10 @@ p + p {
   margin: 0 auto;
 }
 
-.backlink-container {
+/* .backlink-container {
   text-align: center;
   margin-top: var(--gutter-large);
-}
+} */
 
 .footnote {
   color: var(--grey-2);
@@ -283,6 +283,7 @@ a {
   text-decoration: none;
   transition: color 0.2s ease;
   color: var(--grey);
+  font-weight: 600;
 }
 
 a:hover,

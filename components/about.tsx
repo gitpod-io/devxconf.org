@@ -10,10 +10,9 @@ const About = () => (
       <div className={styles.contents}>
         <h2 className="heading-secondary">About</h2>
         <p>
-          The conference is organized by Gitpod, the open-source developer platform for automated
-          dev environments.
+          The conference is organized by Gitpod, an open-source developer platform for automated dev environments.
         </p>
-        <div className={cn(styles.live, 'heading-quadrary')}>WE LIVE DEVX</div>
+        <div className={cn(styles.live, 'heading-quadrary')}>All About Devx</div>
         <a href="https://www.gitpod.io/" target="_blank" className={styles.link}>
           <svg
             xmlns="http://www.w3.org/2000/svg"

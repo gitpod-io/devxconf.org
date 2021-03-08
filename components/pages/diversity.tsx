@@ -1,4 +1,3 @@
-import BackLink from '@components/backlink';
 import Layout from '@components/layout';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
@@ -20,36 +19,25 @@ const Diversity = () => (
             </h1>
           </div>
           <p>
-            These values are essential for us at DevX Conf. We want to build a more diverse,
-            inclusive and understanding tech community. A better place for all.
+            DevX is built around values for a more diverse, inclusive and understanding tech
+            community. A better place for all.
           </p>
         </div>
       </div>
-      <PatternHalfCircle
-        className={styles.pattern}
-        isInverted={true}
-        styles={{
-          position: 'absolute',
-          right: '-15px',
-          height: '500px',
-          marginTop: '-100px'
-        }}
-      />
       <div className="row">
         <div className="wrapper-small">
           <div className={styles.features}>
             <div>
               <h2 className="heading-quadrary">Diversity drives us</h2>
               <p>
-                To change the world for the better, we need to take diversity as our strength. To
-                feel part of a team and be engaged, you must feel included and valued. That's why we
-                strive to build and nurture a culture where inclusiveness is a matter of course, not
-                a choice.{' '}
+                We need to take diversity as our strength and create a community where everyone
+                feels included and valued. We strive to build and nurture a culture where
+                inclusiveness is a matter of course, not a choice.
               </p>
               <p>
                 We celebrate that every person brings a unique perspective and experience to the
                 community. Together we want to establish a welcoming conference, where everyone
-                feels heard, valued and empowered.{' '}
+                feels heard, valued and empowered.
               </p>
             </div>
             <div>
@@ -99,10 +87,13 @@ const Diversity = () => (
                 Thinking sustainable: instead of getting drowned in useless swag, all attendees can
                 choose to donate their swag
               </li>
-              <li>Each gold sponsor financed a scholarship for xyz</li>
+              <li>For each gold sponsor we’ll donate $500 to organisations we support</li>
               <li>
-                Our values around DE&I are part of our code of conduct that every sponsor and
-                attendee needs approve before joining the event
+                All attendees need to agree to our values around DE&I before joining the event
+              </li>
+              <li>
+                DevX Conf is a non-profit event. Every surplus will be donated to organizations we
+                support
               </li>
               <li>
                 Do you have more ideas on how we can foster a diverse community? →{' '}
@@ -122,9 +113,6 @@ const Diversity = () => (
           marginTop: '50px'
         }}
       />
-      <div className="backlink-container">
-        <BackLink href="/" destinationText="Overview" />
-      </div>
     </Section>
   </Layout>
 );

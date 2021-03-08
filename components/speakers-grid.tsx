@@ -33,8 +33,8 @@ export default function SpeakersGrid({ speakers }: Props) {
         <SectionHeader className="wrapper-small">
           <h2 className="heading-secondary">Speakers</h2>
           <p>
-            We seeked out to speakers who advocate the cutting edge of their particular discipline
-            and who can share their insights of building exceptional dev experiences.
+            Our speakers deeply care about frictionless developer workflows and leverage automation
+            to solve problems.
           </p>
         </SectionHeader>
         <div className={styles.grid}>

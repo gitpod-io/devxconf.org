@@ -30,7 +30,7 @@ export default function ExpoPage() {
   return (
     <Page meta={meta}>
       <Layout>
-        <Header hero="Sponsor Exposition" description="Learn more about our conference sponsors." />
+        <Header hero="Partner Exposition" description="Learn more about our conference partners." />
         <SponsorsGrid sponsors={sponsors} />
       </Layout>
     </Page>
