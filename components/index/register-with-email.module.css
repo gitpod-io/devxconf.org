@@ -25,3 +25,10 @@
 .btn {
     min-width: auto;
 }
+
+.error {
+    display: block;
+    margin: 3px 0 -24px;
+    font-size: var(--footnote);
+    color: var(--brand);
+}
