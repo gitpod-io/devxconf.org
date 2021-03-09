@@ -14,13 +14,17 @@
  * limitations under the License.
  */
 
+ // eslint-disable-next-line
+ // @ts-nocheck
+
+import { Image as ImageProps, Talk } from '@lib/types';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
 import { useEffect, useState } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Talk } from '@lib/types';
 import cn from 'classnames';
+import { speakers } from 'contents';
 import styles from './talk-card.module.css';
 
 type Props = {
@@ -30,13 +34,20 @@ type Props = {
 };
 
 const formatDate = (date: string) => {
+  console.log(date);
   // https://github.com/date-fns/date-fns/issues/946
-  return format(parseISO(date), "h:mmaaaaa'm'");
+  // return format(parseISO(date), "h:mmaaaaa'm'");
+  return date;
 };
+
+const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
+  <img loading="lazy" alt={name} className={styles.avatar} src={image.url} title={name} />
+);
 
 export default function TalkCard({ talk: { title, speaker, start, end }, showTime }: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
+  const isSpeakerArray = speakers.length > 1;
 
   useEffect(() => {
     const now = Date.now();
@@ -44,12 +55,16 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
   }, []);
 
-  const firstSpeakerLink = `/speakers/${speaker[0].slug}`;
+  let firstSpeakerLink;
+
+  if (isSpeakerArray) {
+    firstSpeakerLink = `/speakers/${speakers[0].slug}`;
+  }
 
   return (
     <div key={title} className={styles.talk}>
       {showTime && <p className={styles.time}>{startAndEndTime || <>&nbsp;</>}</p>}
-      <Link href={firstSpeakerLink}>
+      <Link href={`${isSpeakerArray ? firstSpeakerLink : ''}`}>
         <a
           className={cn(styles.card, {
             [styles['is-live']]: isTalkLive
@@ -59,26 +74,14 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
             <h4 title={title} className={styles.title}>
               {title}
             </h4>
-            <div className={styles.speaker}>
-              <div className={styles['avatar-group']}>
-                {speaker.map(s => (
-                  <div key={s.name} className={styles['avatar-wrapper']}>
-                    <Image
-                      loading="lazy"
-                      alt={s.name}
-                      className={styles.avatar}
-                      src={s.image.url}
-                      title={s.name}
-                      width={24}
-                      height={24}
-                    />
-                  </div>
-                ))}
+            {undefined !== speaker ? (
+              <div className={styles.speaker}>
+                <div className={styles['avatar-group']}>
+                  {<Avatar name={speaker.name} image={speaker.image} />}
+                </div>
+                <h4 className={styles['speaker-name']}>{speaker.name}</h4>
               </div>
-              <h5 className={styles.name}>
-                {speaker.length === 1 ? speaker[0].name : `${speaker.length} speakers`}
-              </h5>
-            </div>
+            ) : null}
           </div>
         </a>
       </Link>
