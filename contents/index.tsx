@@ -9,7 +9,7 @@ export const speakers: Speaker[] = [
             url: '/speakers/placeholder.svg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
-        slug: 'mortiz-eysholdt',
+        slug: 'max-mustermann',
         twitter: '',
         linkedin: '',
         github: '',
@@ -23,7 +23,7 @@ export const speakers: Speaker[] = [
             url: '/speakers/placeholder.svg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
-        slug: 'mortiz-eysholdt',
+        slug: 'max-mustermann',
         twitter: '',
         linkedin: '',
         github: '',
@@ -37,7 +37,7 @@ export const speakers: Speaker[] = [
             url: '/speakers/placeholder.svg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
-        slug: 'mortiz-eysholdt',
+        slug: 'max-mustermann',
         twitter: '',
         linkedin: '',
         github: '',
@@ -51,7 +51,7 @@ export const speakers: Speaker[] = [
             url: '/speakers/placeholder.svg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
-        slug: 'mortiz-eysholdt',
+        slug: 'max-mustermann',
         twitter: '',
         linkedin: '',
         github: '',

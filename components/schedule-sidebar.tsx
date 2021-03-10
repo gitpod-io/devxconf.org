@@ -14,44 +14,30 @@
  * limitations under the License.
  */
 
-import { useEffect, useState } from 'react';
-
-import { SHORT_DATE } from '@lib/constants';
 import Select from './select';
 import { Stage } from '@lib/types';
 import TalkCard from './talk-card';
 import styles from './schedule-sidebar.module.css';
-import { useRouter } from 'next/router';
+import { useState } from 'react';
 
 type Props = {
   allStages: Stage[];
 };
 
 export default function ScheduleSidebar({ allStages }: Props) {
-  const router = useRouter();
-  const [currentStageSlug, setCurrentStageSlug] = useState(router.query.slug);
-  const currentStage = allStages.find((s: Stage) => s.slug === currentStageSlug);
+  const [stage, setStage] = useState('a');
 
-  useEffect(() => {
-    setCurrentStageSlug(router.query.slug);
-  }, [router.query.slug]);
+  const currentStage = allStages.find((s: Stage) => s.slug === stage);
 
   return (
     <div className={styles.schedule}>
-      <h3 className={styles.header}>Schedule</h3>
-      <p>{SHORT_DATE}</p>
-      <Select
-        aria-label="Select a stage"
-        value={currentStageSlug}
-        onChange={e => {
-          const slug = e.target.value;
-          setCurrentStageSlug(slug);
-          router.push(`/stage/${slug}`);
-        }}
-      >
+      <h3 className="heading-tertiary">Schedule</h3>
+      <Select aria-label="Select a stage" value={stage} onChange={e => {
+        setStage(e.target.value);
+      }}>
         {allStages.map(stage => (
           <option key={stage.slug} value={stage.slug}>
-            {stage.name}
+            {stage.day}
           </option>
         ))}
       </Select>

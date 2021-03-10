@@ -65,8 +65,10 @@
   width: 100%;
 }
 
-.talks > div {
-  margin-right: var(--gutter-normal);
+@media(min-width: 768px) {
+  .talks > div {
+    margin-right: var(--gutter-normal);
+  }
 }
 
 @media (max-width: 767px) {
@@ -94,10 +96,6 @@
 
   .day {
     margin: var(--gutter-medium-mobile) 0 var(--gutter-small);
-  }
-
-  .talks > div {
-    margin-right: var(--gutter-small);
   }
 }
 

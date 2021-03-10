@@ -14,61 +14,28 @@
  * limitations under the License.
  */
 
-import { GetStaticPaths, GetStaticProps } from 'next';
-
 import Layout from '@components/layout';
 import { META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import { Stage } from '@lib/types';
 import StageContainer from '@components/stage-container';
-import { getAllStages } from '@lib/cms-api';
+import { allStages } from 'contents/schedule-and-stage';
 
 type Props = {
   stage: Stage;
-  allStages: Stage[];
 };
 
-export default function StagePage({ stage, allStages }: Props) {
+export default function StagePage() {
   const meta = {
-    title: '',
+    title: 'Stage | DevX Conf',
     description: META_DESCRIPTION
   };
 
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <StageContainer stage={stage} allStages={allStages} />
+        <StageContainer stage={allStages[0]} />
       </Layout>
     </Page>
   );
 }
-
-export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-  const slug = params?.slug;
-  const stages = await getAllStages();
-  const stage = stages.find((s: Stage) => s.slug === slug) || null;
-
-  if (!stage) {
-    return {
-      notFound: true
-    };
-  }
-
-  return {
-    props: {
-      stage,
-      allStages: stages
-    },
-    revalidate: 60
-  };
-};
-
-export const getStaticPaths: GetStaticPaths = async () => {
-  const stages = await getAllStages();
-  const slugs = stages.map((s: Stage) => ({ params: { slug: s.slug } }));
-
-  return {
-    paths: slugs,
-    fallback: false
-  };
-};

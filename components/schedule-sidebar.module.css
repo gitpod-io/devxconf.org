@@ -28,6 +28,10 @@
   --talk-card-width: 100%;
 }
 
+.schedule h3 {
+  margin-bottom: var(--gutter-small);
+}
+
 .schedule::-webkit-scrollbar {
   display: none;
 }
@@ -41,13 +45,17 @@
 }
 
 .talks {
-  margin-top: var(--space-4x);
+  margin-top: var(--gutter-small);
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+.talks > *:not(:last-child) {
+  margin-bottom: var(--gutter-medium);
 }
 
 .talks::-webkit-scrollbar {
@@ -58,8 +66,25 @@
   .schedule {
     height: unset;
     min-height: 340px;
-    max-width: 303px;
-    max-height: calc(var(--100vh) - var(--header-height));
+    max-width: 330px;
+    max-height: calc(var(--100vh) + 150px - var(--header-height));
     --talk-card-width: unset;
+    padding-left: var(--gutter-normal);
+  }
+}
+
+@media(max-width: 767px) {
+  .schedule {
+    padding: var(--gutter-normal) var(--gutter-small);
+    height: 55vh;
+    max-height: calc(var(--100vh) - var(--header-height) - 100px);
+  }
+
+  .schedule h3 {
+    margin-bottom: var(--gutter-small-mobile);
+  }
+  
+  .talks {
+    margin-top: var(--gutter-small-mobile);
   }
 }

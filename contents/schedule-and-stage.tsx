@@ -30,13 +30,20 @@ export const allStages: Stage[] = [
         end: '10:30AM',
         speaker: speakers[0]
       },
+      {
+        title: 'Example',
+        description: 'Test',
+        start: '9:00AM',
+        end: '9:30AM',
+        speaker: speakers[0]
+      },
     ]
   },
   {
     name: 'Stage B',
     day: 'Thursday, April 28',
     discord: '',
-    slug: 'a',
+    slug: 'b',
     stream: '',
     schedule: [
       {
