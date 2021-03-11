@@ -4,7 +4,7 @@ import { speakers } from 'contents';
 export const allStages: Stage[] = [
   {
     name: 'Stage A',
-    day: 'Wednesday, April 27',
+    day: 'Wednesday, April 28',
     discord: '',
     slug: 'a',
     stream: '',
@@ -36,12 +36,12 @@ export const allStages: Stage[] = [
         start: '9:00AM',
         end: '9:30AM',
         speaker: speakers[0]
-      },
+      }, 
     ]
   },
   {
     name: 'Stage B',
-    day: 'Thursday, April 28',
+    day: 'Thursday, April 29',
     discord: '',
     slug: 'b',
     stream: '',

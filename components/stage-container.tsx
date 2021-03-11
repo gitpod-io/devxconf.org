@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
+import { DiscordLogo } from './pages/community';
 import Link from 'next/link';
 // import ConfEntry from './conf-entry';
 import ScheduleSidebar from './schedule-sidebar';
 import { Stage } from '@lib/types';
 import { allStages } from 'contents/schedule-and-stage';
 import cn from 'classnames';
-import styleUtils from './utils.module.css';
 import styles from './stage-container.module.css';
 
 type Props = {
@@ -33,11 +33,11 @@ export default function StageContainer({ stage }: Props) {
       <div className={styles.container}>
         <div className={styles.streamContainer}>
           {/* {loginStatus === 'loggedIn' ? ( */}
-          <div className={cn(styles.stream, styleUtils.appear, styleUtils['appear-first'])}>
+          <div className={styles.stream}>
             <div className={styles.yt}>
               <img src="/yt-placeholder.svg" alt="Youtube" />
             </div>
-            <div className={cn(styles.bottom, styleUtils.appear, styleUtils['appear-second'])}>
+            <div className={styles.bottom}>
               <div className={styles.messageContainer}>
                 <h2 className="heading-tertiary">{stage.name}</h2>
                 <p>Short description</p>
@@ -47,9 +47,9 @@ export default function StageContainer({ stage }: Props) {
                   target="_blank"
                   href="https://discord.gg/7m562hZv"
                   rel="noopener noreferrer"
-                  className="btn"
+                  className={cn("btn btn--big", styles["chat-button"])}
                 >
-                  Join Live Chat
+                  Join Live Chat <DiscordLogo />
                 </a>
                 <Link href={`/speakers/${stage.slug}`}>
                   <a className="btn btn--secondary">See Speaker Profile</a>

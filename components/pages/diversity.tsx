@@ -19,8 +19,7 @@ const Diversity = () => (
             </h1>
           </div>
           <p>
-            DevX is built around values for a more diverse, inclusive and understanding tech
-            community. A better place for all.
+          DevX is built on values aiming for a more diverse, inclusive and understanding tech community. A better place for all.
           </p>
         </div>
       </div>
@@ -97,7 +96,7 @@ const Diversity = () => (
               </li>
               <li>
                 Do you have more ideas on how we can foster a diverse community? →{' '}
-                <a href="mailto:contact@devxconf.org">Please reach out</a>
+                <a href="mailto:contact@devxconf.org">Please get in contact</a>
               </li>
             </ul>
           </div>
