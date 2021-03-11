@@ -7,7 +7,7 @@ import cn from 'classnames';
 import styles from './community.module.css';
 import { title } from 'process';
 
-const DiscordLogo = () => (
+export const DiscordLogo = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="141" height="48" viewBox="0 0 141 48">
     <path
       className="fill"

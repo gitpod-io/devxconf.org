@@ -14,23 +14,27 @@
  * limitations under the License.
  */
 
-import cn from 'classnames';
 import { Stage, Talk } from '@lib/types';
-import styles from './schedule.module.css';
+
+import Layout from './layout';
+import { PatternHalfCircle } from '@components/patterns';
 import TalkCard from './talk-card';
+import cn from 'classnames';
+import styles from './schedule.module.css';
 
 function StageRow({ stage }: { stage: Stage }) {
   // Group talks by the time block
-  const timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
-    allBlocks[talk.start] = [...(allBlocks[talk.start] || []), talk];
-    return allBlocks;
-  }, {});
+  let timeBlocks: any;
 
+  if (undefined !== stage.schedule) {
+    timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
+      allBlocks[talk.start] = [...(allBlocks[talk.start] || []), talk];
+      return allBlocks;
+    }, {});
+  }
   return (
     <div key={stage.name} className={styles.row}>
-      <h3 className={cn(styles['stage-name'], styles[stage.slug])}>
-        <span>{stage.name}</span>
-      </h3>
+      <h2 className={styles.day}>{stage.day}</h2>
       <div className={cn(styles.talks, styles[stage.slug])}>
         {Object.keys(timeBlocks).map((startTime: string) => (
           <div key={startTime}>
@@ -50,12 +54,32 @@ type Props = {
 
 export default function Schedule({ allStages }: Props) {
   return (
-    <div className={styles.container}>
-      <div className={styles['row-wrapper']}>
-        {allStages.map(stage => (
-          <StageRow key={stage.slug} stage={stage} />
-        ))}
+    <Layout>
+      <div className="row">
+        <div className={styles.header}>
+          <h1 className="heading-secondary">Schedule</h1>
+          <p className={styles.intro}>
+            The conference starts April 27th 17:00 CET (GMT+1). Local times shown below.
+          </p>
+        </div>
+        <div className={styles.container}>
+          <div className={styles['row-wrapper']}>
+            {allStages.map(stage => (
+              <StageRow key={stage.slug} stage={stage} />
+            ))}
+          </div>
+        </div>
       </div>
-    </div>
+      <PatternHalfCircle
+        isInverted={true}
+        styles={{
+          position: 'absolute',
+          bottom: '0',
+          right: '-15px',
+          height: '300px'
+        }}
+        className={styles.pattern}
+      />
+    </Layout>
   );
 }

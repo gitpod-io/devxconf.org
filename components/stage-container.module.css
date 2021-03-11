@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+.row {
+  margin-bottom: var(--gutter-huge);
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -34,13 +38,43 @@
   height: 100%;
 }
 
+.yt > img {
+  height: 100%;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--gutter-huge);
+  max-width: 400px;
+}
+
+.chat-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container a:not(:last-child) {
+  margin-bottom: var(--gutter-medium);
+}
+
+.discord {
+  height: 32px;
+  width: 32px;
+  margin-left: 0;
+}
+
 @media screen and (min-width: 1032px) {
   .container {
     flex-direction: row;
   }
 
   .streamContainer {
-    width: calc(100vw - 303px);
+    width: calc(100vw - 310px);
+    padding-right: var(--gutter-medium);
+    border-right: 1px solid var(--grey-2);
   }
 }
 
@@ -48,52 +82,7 @@
   display: flex;
   flex-direction: column;
   align-items: initial;
-  margin: var(--space-4x);
-  height: 215px;
-}
-
-.stageName {
-  display: flex;
-  font-size: 24px;
-  color: #fff;
-  line-height: 1.15;
-  letter-spacing: -0.05em;
-  font-weight: 800;
-  margin-bottom: var(--space-2x);
-}
-
-.button {
-  border-radius: var(--space-2x);
-  border: none;
-  color: #fff;
-  background: #3362df;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: var(--text-md);
-  letter-spacing: -0.02em;
-  font-weight: 500;
-  outline: none;
-  transition: background-color 0.2s ease;
-  padding: 0 var(--space-4x);
-  height: 50px;
-  width: 200px;
-  min-width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: var(--space-4x);
-}
-
-.button:hover,
-.button:focus {
-  background: black;
-  color: #fff;
-}
-
-.button > svg {
-  margin-left: var(--space-2x);
-  min-height: var(--space-8x);
-  min-width: var(--space-8x);
+  margin-top: var(--gutter-normal);
 }
 
 .messageContainer {
@@ -104,32 +93,39 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-right: var(--space-4x);
+  margin-bottom: var(--gutter-large);
 }
 
-@media screen and (min-width: 600px) {
-  .bottom {
-    align-items: center;
-    flex-direction: row;
-  }
-
-  .button {
-    margin-top: 0;
-  }
+.messageContainer h2 {
+  margin-bottom: var(--gutter-small);
 }
 
-@media screen and (min-width: 768px) {
+@media(max-width: 767px) {
+  .streamContainer {
+    height: initial;
+  }
+
+  .row {
+    margin-bottom: var(--gutter-large);
+  }
+
+  .btn-container {
+    margin-bottom: var(--gutter-normal);
+  }
+
+  .btn-container a:not(:last-child) {
+    margin-bottom: var(--gutter-medium-mobile);
+  }
+
   .messageContainer {
-    flex-direction: row;
-    align-items: center;
+    margin-bottom: var(--gutter-medium);
   }
 
-  .stageName {
-    font-size: var(--space-8x);
-    margin-bottom: 0;
+  .messageContainer h2 {
+    margin-bottom: var(--gutter-small-mobile);
   }
 
-  .bottom {
-    height: 100px;
+  .btn-container a:not(:last-child) {
+    margin-bottom: var(--gutter-small);
   }
 }
