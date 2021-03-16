@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+import '@styles/font.css';
 import '@styles/global.css';
 import '@styles/nprogress.css';
 
