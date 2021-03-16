@@ -35,10 +35,11 @@ export type Speaker = {
 
 export type Stage = {
   name: string;
+  day: string;
   slug: string;
   stream: string;
   discord: string;
-  schedule: Talk[];
+  schedule?: Talk[];
 };
 
 export type Talk = {
@@ -46,7 +47,7 @@ export type Talk = {
   description: string;
   start: string;
   end: string;
-  speaker: Speaker[];
+  speaker?: Speaker[] | Speaker;
 };
 
 export type Link = {
@@ -101,4 +102,5 @@ export type GitHubOAuthData =
       type: 'user';
       name: string;
       login: string;
+      email: string;
     };

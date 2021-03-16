@@ -24,7 +24,7 @@ export const META_DESCRIPTION =
   'This is an open source demo that Next.js developers can clone, deploy, and fully customize for events. Created through collaboration of marketers, designers, and developers at Vercel.';
 export const SITE_DESCRIPTION =
   'An interactive online experience by the community, free for everyone.';
-export const DATE = 'April 27-29, 2021';
+export const DATE = 'April 28-29, 2021';
 export const SHORT_DATE = 'Oct 27 - 9:00am PST';
 export const FULL_DATE = 'Oct 27th 9am Pacific Time (GMT-7)';
 export const TWEET_TEXT = META_DESCRIPTION;
@@ -45,24 +45,8 @@ export const NAVIGATION = [
   //   route: '/stage'
   // },
   {
-    name: 'Speakers',
-    route: '/#speakers'
-  },
-  {
-    name: 'Diversity',
-    route: '/diversity'
-  },
-  {
     name: 'Manifest',
     route: '/manifest'
-  },
-  {
-    name: 'Community',
-    route: '/community'
-  },
-  {
-    name: 'Expo',
-    route: '/expo'
   },
 ];
 

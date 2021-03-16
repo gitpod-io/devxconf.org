@@ -23,6 +23,7 @@
     "classnames": "2.2.6",
     "cookie": "0.4.1",
     "date-fns": "2.16.1",
+    "google-spreadsheet": "^3.1.15",
     "htmlescape": "1.1.1",
     "intersection-observer": "0.12.0",
     "ioredis": "4.19.4",
@@ -35,7 +36,7 @@
     "react-dom": "17.0.1",
     "smoothscroll-polyfill": "0.4.4",
     "swr": "0.3.9",
-    "validator": "13.5.2",
+    "validator": "^13.5.2",
     "vanilla-tilt": "1.7.0"
   },
   "devDependencies": {

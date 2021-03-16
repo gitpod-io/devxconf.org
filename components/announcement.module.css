@@ -1,0 +1,14 @@
+.wrapper {
+    background: #2d2d2d;
+    padding: var(--gutter-small);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+@media(max-width: 767px) {
+    .wrapper {
+        padding: var(--gutter-small-mobile);
+    }
+}

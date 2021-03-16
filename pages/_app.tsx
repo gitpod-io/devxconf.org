@@ -14,14 +14,27 @@
  * limitations under the License.
  */
 
-import { SSRProvider, OverlayProvider } from 'react-aria';
+import '@styles/font.css';
 import '@styles/global.css';
 import '@styles/nprogress.css';
+
+import { OverlayProvider, SSRProvider } from 'react-aria';
+
 import type { AppProps } from 'next/app';
 import NProgress from '@components/nprogress';
 import ResizeHandler from '@components/resize-handler';
+import { handleFirstTab } from 'utils/accessibility';
+import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    window.addEventListener('keydown', handleFirstTab);
+
+    return (): void => {
+      window.removeEventListener('keydown', handleFirstTab);
+    };
+  }, []);
+
   return (
     <SSRProvider>
       <OverlayProvider>

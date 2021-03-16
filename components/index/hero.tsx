@@ -16,15 +16,20 @@
 
 import { BRAND_NAME, DATE } from '@lib/constants';
 
+import ConsentNote from './consent-note';
 import DeveloperProductivity from './developer-productivity';
-import Link from 'next/link';
 import { PatternHalfCircle } from '@components/patterns';
+import Popup from '@components/popup';
 import RegisterButton from './register-button';
+import RegisterWithEmail from './register-with-email';
 import cn from 'classnames';
 import styleUtils from '../utils.module.css';
 import styles from './hero.module.css';
+import { useState } from 'react';
 
 export default function Hero() {
+  const [isRegisterWithEmailSelected, setIsRegisterWithEmailSelected] = useState(false);
+
   return (
     <div className={styles.wrapper}>
       <PatternHalfCircle
@@ -32,32 +37,37 @@ export default function Hero() {
           position: 'absolute',
           left: '-15px'
         }}
+        className={styles.pattern}
       />
       <div className="row">
-        {/* <h2
-          className={cn(
-            styleUtils.appear,
-            styleUtils['appear-third'],
-            styleUtils['show-on-mobile'],
-            styles.description
-          )}
-        >
-          {SITE_DESCRIPTION}
-        </h2> */}
-        <h1 className={cn(styleUtils.appear, styleUtils['appear-third'], styles.hero)}>
+        <h1 className={styles.hero}>
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div className={cn(styleUtils.appear, styleUtils['appear-fourth'], styles.info)}>
-          <p>{DATE}</p>
+        <div
+          className={cn(
+            styles.info,
+            'heading-quadrary'
+          )}
+        >
+          <span>{DATE}</span>
           &nbsp;-&nbsp;
-          <p>Virtual</p>
+          <span>Virtual</span>
         </div>
-        <RegisterButton />
-        <p className={styles.footnote}>
-          With your registration, you agree to DevX Conf’s <Link href="#">DE&I</Link>,{' '}
-          <Link href="/tos">ToS</Link> and <Link href="privacy-policy">Privacy Policy</Link>.
-        </p>
+          {/* <button
+            className={cn("btn btn--big", styles["register-button"])}
+            onClick={() => setIsRegisterWithEmailSelected(true)}
+          >
+            Register with Email
+          </button>
+          <Popup
+            isShown={isRegisterWithEmailSelected}
+            setIsShown={setIsRegisterWithEmailSelected}
+            bodyStyles={{ display: 'flex', justifyContent: 'center' }}
+          >
+            <RegisterWithEmail />
+          </Popup>
+          <ConsentNote /> */}
       </div>
       <PatternHalfCircle
         isInverted={true}
@@ -66,6 +76,7 @@ export default function Hero() {
           right: '-15px',
           height: '400px'
         }}
+        className={styles.pattern}
       />
       <DeveloperProductivity />
     </div>

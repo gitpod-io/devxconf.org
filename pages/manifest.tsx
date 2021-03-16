@@ -4,7 +4,7 @@ import Page from '@components/page';
 
 export default function Conf() {
   const meta = {
-    title: 'Manifest - DevX Conf',
+    title: 'Manifest | DevX Conf',
     description: META_DESCRIPTION
   };
 

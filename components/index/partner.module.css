@@ -1,0 +1,29 @@
+.logo {
+    max-width: 220px;
+}
+
+@media(max-width: 950px) {
+    .logo {
+        max-width: 180px;
+        max-height: 50px;
+    }
+}
+
+@media(max-width: 767px) {
+    .logo {
+        width: 150px;
+    }
+}
+
+@media(max-width: 460px) {
+    .logo {
+        max-height: 40px;
+        width: 130px;
+    }
+}
+
+@media(max-width: 320px) {
+    .logo {
+        width: 110px;
+    }
+}

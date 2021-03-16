@@ -1,0 +1,12 @@
+.container {
+    align-items: center;
+    max-width: 388px;
+    margin: auto;
+    color: var(--grey);
+}
+
+.container img { 
+    display: inline-block;
+    width: 40px;
+    margin-bottom: var(--gutter-small);
+}

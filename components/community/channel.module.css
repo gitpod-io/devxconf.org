@@ -1,0 +1,35 @@
+.channel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 226px;
+    border: 1px solid var(--grey-2);
+    overflow: hidden;
+    border-radius: 8px;
+    transition: all .2s;
+}
+
+.channel:hover,
+.channel:focus {
+    outline: none;
+    border-color: var(--brand);
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    transform: scale(1.2);
+}
+
+.channel svg {
+    z-index: 1;
+    width: 44px;
+}
+
+.channel h3 {
+    color: var(--white);
+    margin: var(--gutter-small);
+}

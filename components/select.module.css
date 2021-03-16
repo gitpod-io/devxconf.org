@@ -15,8 +15,9 @@
  */
 
 .container {
+  margin-bottom: var(--gutter-normal);
   appearance: none;
-  color: var(--secondary-color);
+  color: var(--grey);
   display: inline-flex;
   text-transform: uppercase;
   user-select: none;
@@ -30,7 +31,8 @@
   outline: none;
   overflow: hidden;
   border-radius: var(--space-2x);
-  background-color: var(--sidebar);
+  background-color: var(--black-1);
+  max-width: var(--talk-card-width, 270px)
 }
 
 .select {
@@ -38,13 +40,13 @@
   appearance: none;
   border: none;
   cursor: default;
-  color: #fff;
+  color: var(--grey);
   font-size: 14px;
   font-family: inherit;
   width: 100%;
   word-spacing: normal;
   writing-mode: horizontal-tb !important;
-  padding: var(--space-4x) var(--space-8x) var(--space-4x) var(--space-4x);
+  padding: var(--gutter-small-x);
   transition: border-color 0.2s ease, background-color 0.2s ease;
   border: 1px solid var(--accents-7);
   border-radius: var(--space-2x);
@@ -56,13 +58,10 @@
   outline: none;
 }
 
-.select:invalid {
-  color: var(--secondary-color);
-}
 
 .select option {
   background-color: black;
-  color: #fff;
+  color: var(--grey);
 }
 
 .arrow {
@@ -77,5 +76,5 @@
 }
 
 .arrow > svg {
-  color: #fff;
+  color: var(--grey);
 }

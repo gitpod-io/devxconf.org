@@ -19,8 +19,9 @@
 }
 
 .time {
-  color: var(--secondary-color);
+  color: var(--grey);
   margin: 0 0 var(--space-2x);
+  font-size: var(--body);
 }
 
 .card {
@@ -31,10 +32,11 @@
   max-width: var(--talk-card-width, 270px);
   padding: 1px;
   background-clip: content-box, border-box;
-  background-image: linear-gradient(#111111, #111111), linear-gradient(to right, #333333, #333333);
+  border: 1px solid var(--grey-2);
+  transition: all .2s;
 }
 .card:hover {
-  background-image: linear-gradient(#111111, #111111), linear-gradient(to right, #aaa, #aaa);
+ border-color: var(--brand);
 }
 
 .is-live {
@@ -43,11 +45,11 @@
 }
 
 .card-body {
-  padding: var(--space-4x);
+  padding: var(--gutter-small);
+  padding-bottom: var(--gutter-normal);
 }
 
 .title {
-  font-size: 14px;
   font-weight: 700;
   color: #e5e5e5;
   margin: 0;
@@ -58,25 +60,23 @@
 .speaker {
   display: flex;
   align-items: center;
-  margin-top: var(--space-2x);
+  margin-top: var(--gutter-small-x);
 }
 
-.name {
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-  color: var(--secondary-color);
+
+.speaker-name {
+  color: var(--grey);
+  font-size: var(--body);
+  font-weight: 400;
 }
 
 .avatar {
-  height: 24px;
-  width: 24px;
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin-right: var(--gutter-small-mobile);
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.avatar-wrapper {
-  margin-right: var(--space-2x);
 }
 
 .avatar-group {
@@ -89,4 +89,17 @@
 
 .link:hover .card:not(.is-live) {
   background-image: linear-gradient(#111111, #111111), linear-gradient(to right, #555, #555);
+}
+
+@media(max-width: 767px) {
+  .card {
+    text-align: left;
+  }
+}
+
+
+@media(max-width: 320px) {
+  .card {
+    min-width: 240px;
+  }
 }

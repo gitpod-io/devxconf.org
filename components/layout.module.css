@@ -45,7 +45,7 @@
 .header-container { 
   background: var(--black);
   position: fixed;
-  height: var(--header-height);
+  height: calc(var(--header-height) + 59px);
   width: 100%;
   z-index: 2;
 }
@@ -72,6 +72,7 @@
   margin: var(--space-2x) var(--space-16x);
   display: none;
 }
+
 
 @media screen and (min-width: 770px) {
   .header-logos {
@@ -109,7 +110,7 @@
   font-size: var(--heading-quadrary);
   color: var(--secondary-color);
   font-weight: 600;
-  letter-spacing: -0.05em;
+  letter-spacing: var(--letter-spacing);
   height: 100%;
   display: inline-flex;
   align-items: center;
@@ -132,5 +133,23 @@
 .logo {
   display: flex;
   width: 120px;
-  height: 65px;
+  height: 62px;
+}
+
+@media(max-width: 767px) {
+  .header-container { 
+    background: var(--black);
+    position: fixed;
+    height: calc( var(--header-height-mobile) + 72px);
+    width: 100%;
+    z-index: 2;
+  }
+
+  .main {
+    margin-top: calc(var(--gutter-large-mobile) + var(--header-height-mobile) + 72px);
+  }
+
+  .logo {
+    height: 40px;
+  }
 }

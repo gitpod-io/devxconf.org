@@ -42,8 +42,8 @@ export const PatternHalfCircle = ({
         gradientTransform="rotate(-51.606 318.275 368.004) scale(384.508 383.868)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.484" stopColor="#c29693"></stop>
-        <stop offset="0.922" stopColor="#FF5043"></stop>
+        <stop offset="0.484" stopColor="#FF8A00"></stop>
+        <stop offset="0.922" stopColor="#FFAE33"></stop>
       </radialGradient>
       <radialGradient
         id="paint1_radial"
@@ -53,8 +53,8 @@ export const PatternHalfCircle = ({
         gradientTransform="rotate(90 -202.208 116.167) scale(330.239)"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0.318" stopColor="#FF5043"></stop>
-        <stop offset="0.957" stopColor="#A99278" stopOpacity="0"></stop>
+        <stop offset="0.318" stopColor="#FF8A00"></stop>
+        <stop offset="0.957" stopColor="#FFAE33" stopOpacity="0"></stop>
       </radialGradient>
     </defs>
   </svg>
@@ -101,8 +101,8 @@ export const PatternCircle = ({className, styles}: PatternProps) => (
           gradientTransform="rotate(-53.709 356.332 -76.074) scale(243.769 238.517)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.484" stopColor="#FF5043"></stop>
-          <stop offset="0.922" stopColor="#FF5043"></stop>
+          <stop offset="0.484" stopColor="#FF8A00"></stop>
+          <stop offset="0.922" stopColor="#FF8A00"></stop>
         </radialGradient>
         <radialGradient
           id="paint1_radial"
@@ -112,7 +112,7 @@ export const PatternCircle = ({className, styles}: PatternProps) => (
           gradientTransform="scale(229.459 247.19) rotate(90 -.003 .98)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.318" stopColor="#FF5043"></stop>
+          <stop offset="0.318" stopColor="#FF8A00"></stop>
           <stop offset="0.957" stopColor="#A99278" stopOpacity="0"></stop>
         </radialGradient>
       </defs>
@@ -160,8 +160,8 @@ export const PatternQuadrantTop = ({ className, styles, isInverted }: PatternPro
           gradientTransform="matrix(69.44649 -88.54101 88.18221 69.16506 100.34 116.324)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.484" stopColor="#FF5043"></stop>
-          <stop offset="0.922" stopColor="#FF5043"></stop>
+          <stop offset="0.484" stopColor="#FF8A00"></stop>
+          <stop offset="0.922" stopColor="#FF8A00"></stop>
         </radialGradient>
         <radialGradient
           id="paint1_radial"
@@ -171,7 +171,7 @@ export const PatternQuadrantTop = ({ className, styles, isInverted }: PatternPro
           gradientTransform="scale(149.954 161.541) rotate(90 .163 1.134)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.234" stopColor="#FF5043"></stop>
+          <stop offset="0.234" stopColor="#FF8A00"></stop>
           <stop offset="0.957" stopColor="#A99278" stopOpacity="0"></stop>
         </radialGradient>
       </defs>

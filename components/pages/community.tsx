@@ -1,11 +1,14 @@
-import FollowUsOnTwitter from '@components/follow-us-on-twitter';
+import Channel from '@components/community/channel';
 import Layout from '@components/layout';
 import Section from '@components/layout/section';
+import { TwitterHandle } from '@components/follow-us-on-twitter';
+import { channels } from 'contents/community';
 import cn from 'classnames';
 import styles from './community.module.css';
+import { title } from 'process';
 
-const DiscordLogo = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="141" height="48"  viewBox="0 0 141 48">
+export const DiscordLogo = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="141" height="48" viewBox="0 0 141 48">
     <path
       className="fill"
       d="M25.168 21.188c-1.004 0-1.797.864-1.797 1.94s.81 1.94 1.797 1.94c1.005 0 1.798-.864 1.798-1.94s-.81-1.94-1.798-1.94zm-6.433 0c-1.004 0-1.797.864-1.797 1.94s.81 1.94 1.797 1.94c1.005 0 1.798-.864 1.798-1.94.018-1.076-.793-1.94-1.798-1.94z"
@@ -21,18 +24,35 @@ const Community = () => (
   <Layout>
     <div className="row">
       <Section className={styles.section}>
-        <h1 className="heading-tertiary">Join us on Discord</h1>
+        <h1 className="heading-secondary">Join us on Discord</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit
-          amet.
+          Let’s meet on Discord to get to know each other, exchange knowledge and share experiences.
+          It’s a place to foster professional and personal growth and to simply have a great time
+          together.
         </p>
-        <a href="#" className={cn('btn btn--big', styles.link)}>
+        <a
+          href="https://discord.gg/BwknNDDXJu"
+          target="_blank"
+          className={cn('btn btn--big', styles.link)}
+        >
           Go to <DiscordLogo />
         </a>
+
+        <div className={styles.channels}>
+          <h2 className="heading-tertiary">Recommended Channels</h2>
+          <div className={styles['channel-container']}>
+            {channels.map(channel => (
+              <Channel key={title} {...channel} />
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.follow}>
+          <h2 className="heading-tertiary">Stay updated - follow us on Twitter</h2>
+          <TwitterHandle />
+        </div>
       </Section>
     </div>
-    <FollowUsOnTwitter />
   </Layout>
 );
 

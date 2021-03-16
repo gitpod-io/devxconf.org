@@ -24,5 +24,27 @@ module.exports = {
       'cdn.aglty.io'
     ],
     imageSizes: [24, 64, 300]
+  },
+  env: {
+    SPREADSHEET_ID: process.env.SPREADSHEET_ID,
+    SHEET_ID: '0',
+    CLIENT_EMAIL: process.env.CLIENT_EMAIL,
+    PRIVATE_KEY: process.env.PRIVATE_KEY,
+    NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID: process.env.GITHUB_OAUTH_CLIENT_ID,
+    GITHUB_OAUTH_CLIENT_SECRET: process.env.GITHUB_OAUTH_CLIENT_SECRET,
+    NEXT_PUBLIC_SITE_ORIGIN: 'http://localhost:3000',
+  },
+  webpack: (config, options) => {
+    config.node = {
+      // Some libraries import Node modules but don't use them in the browser.
+      // Tell Webpack to provide empty mocks for them so importing them works.
+      ...config.node,
+      fs: 'empty',
+      child_process: 'empty',
+      net: 'empty',
+      tls: 'empty'
+    };
+
+    return config;
   }
 };

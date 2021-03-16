@@ -3,5 +3,11 @@
 }
 
 .section-header h2 + p {
-    margin: var(--gutter-medium) 0 var(--gutter-large);
+    margin-bottom: var(--gutter-medium);
+}
+
+@media(max-width: 767px) {
+    .section-header h2 + p {
+        margin-bottom: var(--gutter-medium-mobile);
+    }
 }

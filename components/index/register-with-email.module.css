@@ -1,0 +1,40 @@
+.form {
+    display: inline-block;
+    text-align: center;
+    max-width: 235px;
+    margin-bottom: var(--gutter-large);
+}
+
+.input {
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    border: 1px solid var(--grey);
+    text-align: center;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+.input::placeholder {
+    color: var(--grey-2);
+}
+
+.input:hover,
+.input:focus {
+    border: 1px solid var(--brand);
+}
+
+.form button {
+    margin: var(--gutter-normal) auto 0;
+}
+
+.btn {
+    min-width: auto;
+}
+
+.error {
+    display: block;
+    margin: 3px 0 -24px;
+    font-size: var(--footnote);
+    color: var(--brand);
+}
