@@ -24,7 +24,6 @@ const RegisterWithEmail = () => {
 
   const validateEmail = (e) => {
     var email = e.target.value
-    console.log(email)
     if (validator.isEmail(email) || !email) { 
       setEmailError('') 
     } else {
@@ -40,14 +39,12 @@ const RegisterWithEmail = () => {
       });
       // loads document properties and worksheets
       await doc.loadInfo();
-
       const sheet = doc.sheetsById[SHEET_ID];
       const rows = await sheet.getRows();
       let existingEmails = [];
       rows.map(row => {
         existingEmails.push(row._rawData[0]);
       });
-      console.log(existingEmails, existingEmails.includes(email), email);
 
       if (existingEmails.includes(email)) {
         setIsAlreadyRegistered(true);

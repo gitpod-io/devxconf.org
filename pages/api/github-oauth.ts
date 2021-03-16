@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
-import { NextApiRequest, NextApiResponse } from 'next';
-import { nanoid } from 'nanoid';
 import * as qs from 'querystring';
-import redis from '@lib/redis';
-import { renderSuccess, renderError } from '@lib/render-github-popup';
+
+import { NextApiRequest, NextApiResponse } from 'next';
+import { renderError, renderSuccess } from '@lib/render-github-popup';
+
+// import { nanoid } from 'nanoid';
+// import redis from '@lib/redis';
 
 /**
  * This API route must be triggered as a callback of your GitHub OAuth app.
@@ -34,13 +36,14 @@ export default async function githubOAuth(req: NextApiRequest, res: NextApiRespo
   const q = qs.stringify({
     client_id: process.env.NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID,
     client_secret: process.env.GITHUB_OAUTH_CLIENT_SECRET,
-    code: req.query.code
+    code: req.query.code,
+    scope: ['user:email']
   });
 
   const accessTokenRes = await fetch(`https://github.com/login/oauth/access_token?${q}`, {
     method: 'POST',
     headers: {
-      Accept: 'application/json'
+      Accept: 'application/json' 
     }
   });
 
@@ -55,33 +58,51 @@ export default async function githubOAuth(req: NextApiRequest, res: NextApiRespo
 
   const { access_token: accessToken } = await accessTokenRes.json();
 
-  const userRes = await fetch('https://api.github.com/user', {
+  const userEmailRes = await fetch('https://api.github.com/user/emails', {
     headers: {
-      Authorization: `bearer ${accessToken as string}`
+      Authorization: `token ${accessToken as string}`,
+      Accept: "application/vnd.github.v3+json"
     }
   });
 
-  if (!userRes.ok) {
-    console.error(`Failed to get GitHub user: ${userRes.status} ${await userRes.text()}`);
+  if (!userEmailRes.ok) {
+    console.error(`Failed to get GitHub user: ${userEmailRes.status} ${await userEmailRes.text()}`);
     res.statusCode = 500;
     res.end(renderError());
     return;
   }
 
-  const user = await userRes.json();
+  const userEmail = await userEmailRes.json();
 
-  if (redis) {
-    const token = nanoid();
-    const key = `github-user:${token}`;
+  console.log(userEmail)
 
-    await redis
-      .multi()
-      .hmset(key, 'id', user.id, 'login', user.login, 'name', user.name || '')
-      .expire(key, 60 * 10) // 10m TTL
-      .exec();
+  // const userRes = await fetch('https://api.github.com/user', {
+  //   headers: {
+  //     Authorization: `bearer ${accessToken as string}`
+  //   }
+  // });
 
-    res.end(renderSuccess({ type: 'token', token }));
-  } else {
-    res.end(renderSuccess({ type: 'user', login: user.login, name: user.name }));
-  }
+  // if (!userRes.ok) {
+  //   console.error(`Failed to get GitHub user: ${userRes.status} ${await userRes.text()}`);
+  //   res.statusCode = 500;
+  //   res.end(renderError());
+  //   return;
+  // }
+
+  // const user = await userRes.json();
+
+  // if (redis) {
+  //   const token = nanoid();
+  //   const key = `github-user:${token}`;
+
+  //   await redis
+  //     .multi()
+  //     .hmset(key, 'id', user.id, 'login', user.login, 'name', user.name || '')
+  //     .expire(key, 60 * 10) // 10m TTL
+  //     .exec();
+
+  //   res.end(renderSuccess({ type: 'token', token }));
+  // } else {
+  //   res.end(renderSuccess({ type: 'user', login: user.login, name: user.name, email: user.email }));
+  // }
 }

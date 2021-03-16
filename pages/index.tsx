@@ -33,7 +33,6 @@ export default function Conf() {
     name: query.name?.toString(),
     username: query.username?.toString()
   };
-
   return (
     <Page meta={meta} fullViewport>
       <SkipNavContent />
