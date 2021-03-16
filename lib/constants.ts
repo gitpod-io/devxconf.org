@@ -45,24 +45,8 @@ export const NAVIGATION = [
   //   route: '/stage'
   // },
   {
-    name: 'Speakers',
-    route: '/#speakers'
-  },
-  {
-    name: 'Diversity',
-    route: '/diversity'
-  },
-  {
     name: 'Manifest',
     route: '/manifest'
-  },
-  {
-    name: 'Community',
-    route: '/community'
-  },
-  {
-    name: 'Expo',
-    route: '/expo'
   },
 ];
 

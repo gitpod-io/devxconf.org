@@ -62,6 +62,10 @@
   background-size: cover;
 }
 
+.register-button {
+  margin-bottom: var(--gutter-medium);
+}
+
 .footnote {
   margin: var(--gutter-small) auto 0;
   text-align: center;

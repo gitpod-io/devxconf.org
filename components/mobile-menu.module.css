@@ -74,6 +74,12 @@
 
 @media(max-width: 767px) {
   .nav-overlay {
-    top: 50px;
+    top: 125px;
+  }
+}
+
+@media(max-width: 323px) {
+  .nav-overlay {
+    top: 145px;
   }
 }

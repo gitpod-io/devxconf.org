@@ -40,16 +40,6 @@ export default function Hero() {
         className={styles.pattern}
       />
       <div className="row">
-        {/* <h2
-          className={cn(
-            styleUtils.appear,
-            styleUtils['appear-third'],
-            styleUtils['show-on-mobile'],
-            styles.description
-          )}
-        >
-          {SITE_DESCRIPTION}
-        </h2> */}
         <h1 className={styles.hero}>
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
@@ -64,9 +54,12 @@ export default function Hero() {
           &nbsp;-&nbsp;
           <span>Virtual</span>
         </div>
-        {!isRegisterWithEmailSelected ? (
-          <RegisterButton />
-        ) : (
+          {/* <button
+            className={cn("btn btn--big", styles["register-button"])}
+            onClick={() => setIsRegisterWithEmailSelected(true)}
+          >
+            Register with Email
+          </button>
           <Popup
             isShown={isRegisterWithEmailSelected}
             setIsShown={setIsRegisterWithEmailSelected}
@@ -74,19 +67,7 @@ export default function Hero() {
           >
             <RegisterWithEmail />
           </Popup>
-        )}
-
-        {!isRegisterWithEmailSelected ? (
-          <p className={styles.footnote}>
-            <button
-              className={styles['register-with-email']}
-              onClick={() => setIsRegisterWithEmailSelected(true)}
-            >
-              Register via email
-            </button>
-          </p>
-        ) : null}
-        {!isRegisterWithEmailSelected ? <ConsentNote /> : null}
+          <ConsentNote /> */}
       </div>
       <PatternHalfCircle
         isInverted={true}

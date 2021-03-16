@@ -21,16 +21,6 @@ export default function Footer() {
   return (
     <div className="row">
       <footer className={styles.footer}>
-        <Link href="/imprint">
-          <a className={styles.link}>
-            Imprint
-          </a>
-        </Link> 
-        <Link href="/privacy">
-          <a className={styles.link}>
-            Privacy
-          </a>
-        </Link>
         <a className={styles.link} href="https://github.com/gitpod-io/devxconf.org/" target="_blank">
           Source Code
         </a>
