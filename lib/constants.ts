@@ -45,8 +45,8 @@ export const NAVIGATION = [
   //   route: '/stage'
   // },
   {
-    name: 'Manifest',
-    route: '/manifest'
+    name: 'Manifesto',
+    route: '/manifesto'
   },
 ];
 
