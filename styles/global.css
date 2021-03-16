@@ -66,14 +66,15 @@
   --body-big-mobile: 16px;
   --body: 15px;
   --footnote: 12px;
-  --black: #1c1c1c;
+  --black: #161616;
   --black-1: #292929;
-  --grey: #9e9e9e;
+  --grey: #8E8787;
   --grey-1: #c4c4c4;
   --grey-2: #5c5c5c;
-  --white: #fff;
-  --brand: #ff5043;
-  --text-white: #f9f9fb;
+  --white: #fdfbfb;
+  --brand: #FFAE33;
+  --gradient: #FF8A00;
+  --text-white: #F3F1F0;
 
   --outline: 2px solid var(--brand);
 }

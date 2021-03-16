@@ -9,7 +9,7 @@ export interface ChannelProps {
 
 const Channel = ({ title, href, icon }: ChannelProps) => (
     <a href={href} target="_balnk" className={styles.channel}>
-        <img src="/channel-bg.png" className={styles.bg} aria-hidden="true"/>
+        <img src="/channel-bg.svg" className={styles.bg} aria-hidden="true"/>
         {icon}
         <h3 className="heading-quadrary">{title}</h3>
     </a>

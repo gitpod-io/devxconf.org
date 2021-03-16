@@ -3,16 +3,6 @@
     margin-top: -30px;
 }
 
-.sponsors-title {
-    background: url('/patterns/quadrant-top.png');
-    background-repeat: no-repeat;
-    display: inline-flex;
-    height: 180px;
-    align-items: flex-end;
-    padding: 0 130px 10px;
-    background-size: contain;
-}
-
 .section-header h2 + p {
     margin: var(--gutter-medium);
 }
