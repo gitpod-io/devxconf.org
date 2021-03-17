@@ -17,10 +17,18 @@
 import * as qs from 'querystring';
 
 import { NextApiRequest, NextApiResponse } from 'next';
-import { renderError, renderSuccess } from '@lib/render-github-popup';
+import { renderAlreadyRegistered, renderError, renderSuccess } from '@lib/render-github-popup';
+
+import { persistEmail } from '@lib/google-spreadsheet'
 
 // import { nanoid } from 'nanoid';
 // import redis from '@lib/redis';
+
+type UserEmailsResponse = {
+  email: string;
+  primary: boolean;
+  visibility: string;
+};
 
 /**
  * This API route must be triggered as a callback of your GitHub OAuth app.
@@ -36,8 +44,7 @@ export default async function githubOAuth(req: NextApiRequest, res: NextApiRespo
   const q = qs.stringify({
     client_id: process.env.NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID,
     client_secret: process.env.GITHUB_OAUTH_CLIENT_SECRET,
-    code: req.query.code,
-    scope: ['user:email']
+    code: req.query.code
   });
 
   const accessTokenRes = await fetch(`https://github.com/login/oauth/access_token?${q}`, {
@@ -72,9 +79,18 @@ export default async function githubOAuth(req: NextApiRequest, res: NextApiRespo
     return;
   }
 
-  const userEmail = await userEmailRes.json();
+  const userEmails:UserEmailsResponse[] = await userEmailRes.json();
+  const userEmailDetails = userEmails.find(({visibility, primary}) => visibility === 'public' || primary);
+  const userEmail = (userEmailDetails && userEmailDetails.email) || "";
 
-  console.log(userEmail)
+  if (await persistEmail(userEmail)) {
+    return res.status(200).end();
+  } else {
+    res.statusCode = 409;
+    res.end(renderAlreadyRegistered());
+    return;
+  }
+
 
   // const userRes = await fetch('https://api.github.com/user', {
   //   headers: {

@@ -210,3 +210,63 @@ export function renderError() {
 </html>
 `;
 }
+
+export function renderAlreadyRegistered() {
+  return `
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <title>Authorize application</title>
+      <style>
+        html {
+          box-sizing: border-box;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+            'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+            'Helvetica Neue', sans-serif;
+          background: #000;
+        }
+
+        body {
+          margin: 0;
+          color: red;
+          min-height: 100vh;
+          padding: 60px 20px;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        h1 {
+          font-size: 64px;
+          letter-spacing: -0.05em;
+          line-height: 1;
+          margin: 20px 0;
+          max-width: 600px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 24px;
+          line-height: 1.4;
+          margin: 0;
+          text-align: center;
+          max-width: 400px;
+        }
+
+        *,
+        *:before,
+        *:after {
+          box-sizing: inherit;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>You have already registered.</h1>
+      <p>Please follow us <a href="https://twitter.com/devxconf" target="_blank">on Twitter</a> to stay updated..</p>
+    </body>
+  </html>
+  `;
+}
