@@ -11,31 +11,30 @@ interface TopicProps {
 
 const topics: TopicProps[] = [
   {
-    title: 'Code',
+    title: 'Develop',
     topics: [
       'Editors',
-      'Ephemeral Dev Environments– Remote Dev Environments',
-      'Language Stack / Ecosystem',
       'API Design Principles',
-      'Programming Languages & Productivity'
+      'Ephemeral Dev Environments',
+      'Remote Dev Environments',
+      'Programming Languages & Productivity',
+      'Security'
+    ]
+  },
+  {
+    title: 'Collaborate',
+    topics: [
+      'Remote work',
+      'Pair Programming & Mentoring',
+      'Keeping in sync with your team',
+      'GitOps'
     ]
   },
   {
     title: 'Test, Build & Deploy',
     topics: [
       'CI Pipeline vs Build System',
-      'Distributed Caching & Build',
-      'Reproducible builds',
-      'Lifecycle consistency',
-      'Gluecode',
-      'Config (HCL) vs Code '
-    ]
-  },
-  {
-    title: 'Collaborate',
-    topics: [
-      'CI Pipeline vs Build System',
-      'Distributed Caching & Build',
+      'Distributed Caching/Build',
       'Reproducible builds',
       'Lifecycle consistency',
       'Gluecode',

@@ -18,7 +18,7 @@ const DeveloperProductivity = () => (
         <img className={styles["dotted-line-horizontal"]} src="/patterns/horizontal-line.svg" aria-hidden={true}/>
       </div>
       <p>
-      DevX Conf is a space for creators where we can start from first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds. To make developers feel again like everything is at their fingertips. We want to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across the areas of coding, testing, building, deploying, collaborating and running.
+      DevX Conf is a space for creators where we can start from first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds. To improve developer experience. To make us feel again like everything is at our fingertips. We want to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across the areas of coding, testing, building, deploying, collaborating on and running software.
       </p>
     </div>
   </div>
