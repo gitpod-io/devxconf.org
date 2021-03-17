@@ -9,14 +9,10 @@ type ErrorResponse = {
   };
 };
 
-type SpreadsheetRow = {
-  _rawData: string[]
-}
-
-const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
-const SHEET_ID = process.env.SHEET_ID;
-const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const SPREADSHEET_ID: string = process.env.SPREADSHEET_ID || "";
+const SHEET_ID: string = process.env.SHEET_ID || "";
+const CLIENT_EMAIL: string = process.env.CLIENT_EMAIL || "";
+const PRIVATE_KEY: string = process.env.PRIVATE_KEY || "";
 
 export default async function register(
   req: NextApiRequest,
@@ -55,7 +51,7 @@ export default async function register(
     const sheet = doc.sheetsById[SHEET_ID];
     const rows = await sheet.getRows();
     let existingEmails: string[] = [];
-    rows.map((row: SpreadsheetRow) => {
+    rows.map((row) => {
       existingEmails.push(row._rawData[0]);
     });
 
