@@ -4,23 +4,16 @@ import React, { useRef, useState } from 'react';
 
 import AlreadyRegistered from './already-registered';
 import ConsentNote from './consent-note';
-import { GoogleSpreadsheet } from 'google-spreadsheet';
 import RegisterationSuccess from './registeration-success';
 import cn from 'classnames';
 import styles from './register-with-email.module.css';
 import validator from 'validator';
-
-const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
-const SHEET_ID = process.env.SHEET_ID;
-const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
-const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 const RegisterWithEmail = () => {
   const [submitted, setSubmitted] = useState(false);
   const [isAlreadyRegistered, setIsAlreadyRegistered] = useState(false);
   const [emailError, setEmailError] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
-  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
   const validateEmail = (e) => {
     var email = e.target.value
@@ -33,24 +26,20 @@ const RegisterWithEmail = () => {
 
   const addEmail = async email => {
     try {
-      await doc.useServiceAccountAuth({
-        client_email: CLIENT_EMAIL,
-        private_key: PRIVATE_KEY
-      });
-      // loads document properties and worksheets
-      await doc.loadInfo();
-      const sheet = doc.sheetsById[SHEET_ID];
-      const rows = await sheet.getRows();
-      let existingEmails = [];
-      rows.map(row => {
-        existingEmails.push(row._rawData[0]);
+      const response = await fetch('/api/register-email', {
+        body: JSON.stringify({email}),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'POST'
       });
 
-      if (existingEmails.includes(email)) {
-        setIsAlreadyRegistered(true);
+      if (response.status === 200) {
         setSubmitted(true);
-      } else {
-        const result = await sheet.addRow({ Emails: email });
+      } else if (response.status === 400) {
+        setEmailError('Please enter a valid email.') 
+      } else if (response.status === 409) {
+        setIsAlreadyRegistered(true);
         setSubmitted(true);
       }
     } catch (e) {
