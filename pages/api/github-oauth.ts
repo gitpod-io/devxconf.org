@@ -84,7 +84,9 @@ export default async function githubOAuth(req: NextApiRequest, res: NextApiRespo
   const userEmail = (userEmailDetails && userEmailDetails.email) || "";
 
   if (await persistEmail(userEmail)) {
-    return res.status(200).end();
+    res.statusCode = 200;
+    res.end(renderSuccess());
+    return;
   } else {
     res.statusCode = 409;
     res.end(renderAlreadyRegistered());

@@ -101,7 +101,7 @@ export function renderSuccess(data?: GitHubOAuthData) {
       />
     </svg>
     <h1>Success!</h1>
-    <p>You may close this window and see your ticket image.</p>
+    <p>Thanks for your registration. You will receive an email confirmation shortly.</p>
     <script>
       if (window.opener) {
         window.opener.postMessage(${htmlescape(data || '')}, ${htmlescape(SITE_ORIGIN || '*')});
