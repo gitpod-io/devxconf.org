@@ -35,7 +35,7 @@ export default function Hero() {
       <PatternHalfCircle
         styles={{
           position: 'absolute',
-          left: '-15px'
+          left: '-5px'
         }}
         className={styles.pattern}
       />

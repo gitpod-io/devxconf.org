@@ -58,7 +58,7 @@
   color: transparent;
   background-clip: text;
   background-image: url('/patterns/square.svg');
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
 }
 
