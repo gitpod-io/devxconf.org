@@ -811,6 +811,11 @@
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.4.0.tgz#14f854c0f93d326e39da6e3b6f34f7d37513d108"
   integrity sha512-y7mImlc/rNkvCRmg8gC3/lj87S7pTUIJ6QGjwHR9WQJcFs+ZMTOaoPrkdFA/YdbuqVEmEbb5RdhVxMkAcgOnpg==
 
+"@types/google-spreadsheet@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/google-spreadsheet/-/google-spreadsheet-3.0.2.tgz#7de085873ccfa06a12959f2939ece2291bbcc9b4"
+  integrity sha512-866PHvBTTEIsaRdMv/Ypz/KK3r2Bi9qwQ8WRF/h4My9lT7cJhVwTD06cTvNHHKO0qiDRjUP9TubAXY3PBJrN9w==
+
 "@types/htmlescape@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/htmlescape/-/htmlescape-1.1.1.tgz#8aa7ac246f9a69999b84873f072f2e30e1334f03"

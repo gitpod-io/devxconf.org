@@ -32,7 +32,7 @@ module.exports = {
     PRIVATE_KEY: process.env.PRIVATE_KEY,
     NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID: process.env.GITHUB_OAUTH_CLIENT_ID,
     GITHUB_OAUTH_CLIENT_SECRET: process.env.GITHUB_OAUTH_CLIENT_SECRET,
-    NEXT_PUBLIC_SITE_ORIGIN: 'http://localhost:3000',
+    NEXT_PUBLIC_SITE_ORIGIN: process.env.NEXT_PUBLIC_SITE_ORIGIN,
   },
   webpack: (config, options) => {
     config.node = {

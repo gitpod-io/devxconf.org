@@ -40,34 +40,44 @@ export default function Hero() {
         className={styles.pattern}
       />
       <div className="row">
+        {/* <h2
+          className={cn(
+            styleUtils.appear,
+            styleUtils['appear-third'],
+            styleUtils['show-on-mobile'],
+            styles.description
+          )}
+        >
+          {SITE_DESCRIPTION}
+        </h2> */}
         <h1 className={styles.hero}>
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div
-          className={cn(
-            styles.info,
-            'heading-quadrary'
-          )}
-        >
+        <div className={cn(styles.info, 'heading-quadrary')}>
           <span>{DATE}</span>
           &nbsp;-&nbsp;
           <span>Virtual</span>
         </div>
-          {/* <button
-            className={cn("btn btn--big", styles["register-button"])}
+
+        <RegisterButton />
+        <Popup
+          isShown={isRegisterWithEmailSelected}
+          setIsShown={setIsRegisterWithEmailSelected}
+          bodyStyles={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <RegisterWithEmail />
+        </Popup>
+
+        <p className={styles.footnote}>
+          <button
+            className={styles['register-with-email']}
             onClick={() => setIsRegisterWithEmailSelected(true)}
           >
-            Register with Email
+            Register via email
           </button>
-          <Popup
-            isShown={isRegisterWithEmailSelected}
-            setIsShown={setIsRegisterWithEmailSelected}
-            bodyStyles={{ display: 'flex', justifyContent: 'center' }}
-          >
-            <RegisterWithEmail />
-          </Popup>
-          <ConsentNote /> */}
+        </p>
+        <ConsentNote />
       </div>
       <PatternHalfCircle
         isInverted={true}

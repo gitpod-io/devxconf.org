@@ -34,7 +34,7 @@ const RegisterButton = () => {
         // eslint-disable-next-line
         // @ts-ignore
         process.env.NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID
-      )}`,
+      )}&scope=user:email`,
       'githubOAuth',
       `resizable,scrollbars,status,width=${windowWidth},height=${windowHeight},top=${windowTop},left=${windowLeft}`
     );
