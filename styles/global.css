@@ -315,10 +315,10 @@ a:focus {
   min-width: 250px;
   border-radius: 100px;
   padding: 10px 32px;
-  color: var(--white);
   font-size: var(--heading-quadrary);
   letter-spacing: var(--letter-spacing);
   font-weight: 600;
+  color: var(--black);
   background: var(--brand);
   text-align: center;
   text-transform: uppercase;
@@ -353,6 +353,7 @@ a:focus {
 
 .btn--secondary {
   background: transparent;
+  color: var(--white);
 }
 
 .btn--secondary:hover,
@@ -367,6 +368,10 @@ a:focus {
 
 .btn svg {
   margin-left: 12px;
+}
+
+.btn--big__text {
+  display: none;
 }
 
 input:focus {
@@ -482,6 +487,20 @@ input:focus {
   .btn svg {
     margin-left: 6px;
     width: 85px;
+  }
+}
+
+@media(max-width: 320px) {
+  .btn--big {
+    padding: 8px 14px;
+  }
+
+  .btn svg {
+    display: none;
+  }
+
+  .btn--big__text {
+    display: inline;
   }
 }
 
