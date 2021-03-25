@@ -5,8 +5,8 @@ import styles from './consent-note.module.css'
 const ConsentNote = () => (
   <p className={styles.note}>
     With your registration, you agree to DevX Conf’s{' '}
-    <Link href="/code-of-conduct"><a>Code of Conduct</a></Link>,{' '}
-    <Link href="privacy-policy"><a>Privacy Policy</a></Link> and its <Link href="/diversity"><a>DE&I</a></Link> values.
+    <Link href="/code-of-conduct"><a>Code of Conduct</a></Link> and{' '}
+    <Link href="privacy-policy"><a>Privacy Policy</a></Link>.
   </p>
 );
 

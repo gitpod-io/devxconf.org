@@ -35,6 +35,15 @@
     color: var(--grey-1);
 }
 
+.wrapper a {
+    color: var(--brand);
+}
+
+.wrapper a:hover,
+.wrapper a:focus {
+    color: var(--gradient);
+}
+
 @media(max-width: 767px) {
     .wrapper {
         padding-bottom: var(--gutter-large);
