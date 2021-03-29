@@ -1,0 +1,95 @@
+.recommendedbooks {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.recommendedbooks-item {
+    flex: 0 0 45%;
+}
+
+.recommendedbooks-item h3 {
+    margin-bottom: var(--gutter-normal);
+}
+
+.recommendedbooks-item ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+}
+
+.recommendedbooks-item li {
+    flex: 42%;
+    margin-bottom: var(--gutter-small);
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.recommendedbooks-item li a {
+    color: var(--grey);
+}
+
+.recommendedbooks-item li a:hover,
+.recommendedbooks-item li a:focus {
+    color: var(--white);
+}
+
+.donate-btn {
+    margin-top: var(--gutter-medium);
+}
+
+.modal-list {
+    display: flex;
+    max-width: 500px;
+    margin: var(--gutter-normal) auto 0;
+}
+
+.modal-list li {
+    flex: 0 0 40%;
+}
+
+@media(max-width: 650px) {
+    .modal-list li {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 960px) {
+    .recommendedbooks-item {
+        flex: 0 0 48%;
+    }
+}
+
+@media(max-width: 940px) {
+    .recommendedbooks {
+        flex-direction: column;
+    }
+
+    .recommendedbooks-item:not(:last-child) {
+        margin-bottom: var(--gutter-large);
+    }
+}
+
+@media(max-width: 767px) {
+    .action-list li:not(:last-child) {
+        margin-bottom: var(--gutter-small-mobile);
+    }
+
+    .recommendedbooks-item:not(:last-child) {
+        margin-bottom: var(--gutter-large-mobile);
+    }
+
+    .recommendedbooks-item li {
+        margin-bottom: var(--gutter-small-mobile);
+    }
+}
+
+@media(max-width: 460px) {
+    .recommendedbooks-item ul {
+        flex-direction: column;
+    }
+}
