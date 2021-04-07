@@ -53,6 +53,10 @@ export const NAVIGATION = [
     route: '/manifesto'
   },
   {
+    name: 'Open-Source',
+    route: '/opensource'
+  },
+  {
     name: 'Community',
     route: '/community'
   }

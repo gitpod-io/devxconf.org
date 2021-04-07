@@ -11,7 +11,7 @@
     display: flex;
     justify-content: stretch;
     align-items: center;
-    max-width: 300px;
+    max-width: 320px;
     margin: 0 auto var(--gutter-large);
 }
 
@@ -112,7 +112,7 @@
 @media(max-width: 767px) {
     .intro-container {
         margin: 0 auto var(--gutter-large-mobile);
-        max-width: 220px;
+        max-width: 240px;
     }
 
     .intro-container img {

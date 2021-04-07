@@ -3,7 +3,7 @@ import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
 import Support from '@components/diversity/support';
 import cn from 'classnames';
-import styles from './diversity.module.css';
+import styles from './opensource.module.css';
 
 const Diversity = () => (
   <Layout>
@@ -13,42 +13,52 @@ const Diversity = () => (
           <div className={styles['intro-container']}>
             <img src="/patterns/diversity-title-pattern.svg" aria-hidden={true} />
             <h1 className="heading-secondary">
-              Diversity,
+              It's time to
               <br />
-              Equity &<br /> Inclusion
+              start giving
+              <br /> back
             </h1>
           </div>
-          <p>
-          DevX is built on values aiming for a more diverse, inclusive and understanding tech community. A better place for all.
-          </p>
         </div>
       </div>
       <div className="row">
         <div className="wrapper-small">
           <div className={styles.features}>
             <div>
-              <h2 className="heading-quadrary">Diversity drives us</h2>
+              <h2 className="heading-quadrary">The problem</h2>
               <p>
-                We need to take diversity as our strength and create a community where everyone
-                feels included and valued. We strive to build and nurture a culture where
-                inclusiveness is a matter of course, not a choice.
+                The myriad of tools that are relied upon by developers everyday are built and
+                maintained almost exclusively by unpaid volunteers, and the maintainers of
+                open-source projects, our digital infrastructure, are in desperate need of financial
+                support. Because code is less charismatic than a hit YouTube video or Kickstarter
+                campaign, there is little public awareness of and appreciation for this work. As a
+                result, there is not nearly enough institutional support for the output that sparked
+                an information revolution and is the backbone of our digital reality.
               </p>
               <p>
-                We celebrate that every person brings a unique perspective and experience to the
-                community. Together we want to establish a welcoming conference, where everyone
-                feels heard, valued and empowered.
+                Just like physical infrastructure, digital infrastructure needs regular upkeep and
+                maintenance. Without effective support for open-source authors work, not only will
+                their labor go uncompensated, but the digital world risks security breaches,
+                interruptions in service, and slowed innovation.
               </p>
             </div>
             <div>
-              <h2 className="heading-quadrary">Good times Enlights Us</h2>
+              <h2 className="heading-quadrary">The challenge</h2>
               <p>
-                DevX Conf is a platform to exchange knowledge, to encourage each other and to build
-                connections. We want to fosters professional and personal growth while advancing and
-                educating the field of developer experience.
+                As a industry we haven't established the conditions where companies are readily able
+                to mitigate these risks. The free software community has spent a lot of time and
+                effort at discussing user freedoms however they have been almost silent on the
+                unintended consequences.
               </p>
+            </div>
+            <div>
+              <h2 className="heading-quadrary">Diversity</h2>
               <p>
-                We want to have a great time, share laughters and move forward to more open-minded
-                and curious world.
+                Volunteers by definition are made up by those whom have the time to volunteer and
+                paying for resources that are being consumed broadens the list of people who can do
+                open-source. A recent analysis of GitHub found that just 5.4% of open source
+                contributors were women, compared to roughly 15 to 20% of technical roles at
+                software companies overall.
               </p>
             </div>
           </div>
