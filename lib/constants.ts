@@ -52,6 +52,10 @@ export const NAVIGATION = [
     name: 'Manifesto',
     route: '/manifesto'
   },
+  {
+    name: 'Community',
+    route: '/community'
+  }
 ];
 
 export type TicketGenerationState = 'default' | 'loading';
