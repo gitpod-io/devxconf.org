@@ -45,6 +45,10 @@ export const NAVIGATION = [
   //   route: '/stage'
   // },
   {
+     name: 'Speakers',
+     route: '/#speakers'
+  },
+  {
     name: 'Manifesto',
     route: '/manifesto'
   },
