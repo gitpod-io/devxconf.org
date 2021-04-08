@@ -4,7 +4,7 @@ import Page from '@components/page';
 
 export default function Conf() {
   const meta = {
-    title: 'Diversity, Equity & Inclusion | DevX Conf',
+    title: 'Open-source | DevX Conf',
     description: META_DESCRIPTION
   };
 
