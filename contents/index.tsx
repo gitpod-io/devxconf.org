@@ -6,7 +6,7 @@ export const speakers: Speaker[] = [
         company: 'GitHub',
         title: 'CTO',
         image: {
-            url: 'jason-warner.png'
+            url: 'jason-warner.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -20,7 +20,7 @@ export const speakers: Speaker[] = [
         company: 'Babel',
         title: 'Core Maintainer @Babel',
         image: {
-            url: 'henry-zhu.png'
+            url: 'henry-zhu.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -34,7 +34,7 @@ export const speakers: Speaker[] = [
         company: 'Darklang',
         title: 'Founder',
         image: {
-            url: 'ellen-chisa.png'
+            url: 'ellen-chisa.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -48,7 +48,7 @@ export const speakers: Speaker[] = [
         company: 'VMware',
         title: 'Spring Developer Advocate',
         image: {
-            url: 'josh-long.png'
+            url: 'josh-long.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -62,7 +62,7 @@ export const speakers: Speaker[] = [
         company: 'CodeSee',
         title: 'Founder',
         image: {
-            url: 'shanea-leven.png'
+            url: 'shanea-leven.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -76,7 +76,7 @@ export const speakers: Speaker[] = [
         company: 'Sourcegraph',
         title: 'CTO',
         image: {
-            url: 'beyang-liu.png'
+            url: 'beyang-liu.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -90,7 +90,7 @@ export const speakers: Speaker[] = [
         company: 'Yarn',
         title: 'Lead Maintainer',
         image: {
-            url: 'mael-nison.png'
+            url: 'mael-nison.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -104,7 +104,7 @@ export const speakers: Speaker[] = [
         company: 'Serverless @GraphQL',
         title: 'Developer Advocate',
         image: {
-            url: 'nader-dabit.png'
+            url: 'nader-dabit.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -118,7 +118,7 @@ export const speakers: Speaker[] = [
         company: 'Render',
         title: 'Founder & CEO',
         image: {
-            url: 'anurag-goel.png'
+            url: 'anurag-goel.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -132,7 +132,7 @@ export const speakers: Speaker[] = [
         company: 'Github1s',
         title: 'Maintainer',
         image: {
-            url: 'yihong-cheng.png'
+            url: 'yihong-cheng.jpg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -160,7 +160,7 @@ export const speakers: Speaker[] = [
         company: 'useoptic',
         title: 'Founder',
         image: {
-            url: 'aidan-cunniffe.png'
+            url: 'aidan-cunniffe.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -174,7 +174,7 @@ export const speakers: Speaker[] = [
         company: 'Linear',
         title: 'CTO',
         image: {
-            url: 'tuomas-artman.png'
+            url: 'tuomas-artman.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -188,7 +188,7 @@ export const speakers: Speaker[] = [
         company: 'HaxorDX',
         title: 'Founder',
         image: {
-            url: 'ian-jennings.png'
+            url: 'ian-jennings.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',
@@ -202,7 +202,7 @@ export const speakers: Speaker[] = [
         company: 'CloudQuery',
         title: 'Founder',
         image: {
-            url: 'yevgeny-pats.png'
+            url: 'yevgeny-pats.jpeg'
         },
         bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
         slug: 'max-mustermann',

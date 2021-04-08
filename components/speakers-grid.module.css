@@ -89,6 +89,7 @@
 
 .image {
   object-fit: cover;
+  filter: grayscale(100%);
   border-radius: 50%;
 }
 
