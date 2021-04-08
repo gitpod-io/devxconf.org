@@ -50,7 +50,7 @@ export default function SpeakersGrid({ speakers }: Props) {
             // <Link key={speaker.name} href={`/speakers/${speaker.slug}`}>
             <div>
               {/* <a role="button" tabIndex={0} className={styles.card}> */}
-              <div className={styles.card}>
+              <a  href={`https://twitter.com/${speaker.twitter}`} target="_blank" className={styles.card}>
                 <div className={styles.imageWrapper}>
                   <Image
                     alt={speaker.name}
@@ -65,14 +65,14 @@ export default function SpeakersGrid({ speakers }: Props) {
                 </div>
                 <div className={styles.cardBody}>
                   <div>
-                    <a href={`https://twitter.com/${speaker.twitter}`} target="_blank"><h3 className={cn(styles.name, 'heading-quadrary')}>{speaker.name}</h3></a>
+                    <h3 className={cn(styles.name, 'heading-quadrary')}>{speaker.name}</h3>
                     <p className={styles.title}>
                       {`${speaker.title} @`}
                       <span className={styles.company}>{speaker.company}</span>
                     </p>
                   </div>
                 </div>
-              </div>
+              </a>
             </div>
           ))}
         </div>
