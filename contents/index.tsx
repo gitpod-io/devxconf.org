@@ -18,7 +18,7 @@ export const speakers: Speaker[] = [
     {
         name: 'Henry Zhu',
         company: 'Babel',
-        title: 'Core Maintainer @Babel',
+        title: 'Core Maintainer',
         image: {
             url: 'henry-zhu.jpeg'
         },
