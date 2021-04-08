@@ -58,17 +58,17 @@ const Partners = () => (
       <a href="mailto:contact@devxconf.org?subject=Sponsorship request" className="btn">
         BECOME A SPONSOR
       </a>
-      <div className={styles.sponsors}>
+      {/* <div className={styles.sponsors}>
         {partners.map((partner, i) => (
           <Partner key={i} {...partner} />
         ))}
-      </div>
+      </div> */}
       <div className="wrapper-small">
         {/* <p className={styles.footnote}>
           More details and different sponsorship options, you can find in our sponsorship
           prospectus.
         </p> */}
-        <a href="/prospectus.pdf" target="_blank" className="btn btn--secondary">
+        <a href="/prospectus.pdf" target="_blank" className={cn("btn btn--secondary", styles.btn)}>
           See Prospectus
         </a>
       </div>
