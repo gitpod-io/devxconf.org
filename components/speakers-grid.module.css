@@ -73,7 +73,7 @@
 }
 
 .cardBody {
-  padding: var(--space-4x);
+  padding: var(--space-4x) 0;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
