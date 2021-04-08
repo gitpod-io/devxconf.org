@@ -1,7 +1,9 @@
+import Books from '@components/opensource/books';
+import Join from '@components/opensource/join';
 import Layout from '@components/layout';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
-import Support from '@components/diversity/support';
+import Support from '@components/opensource/support';
 import cn from 'classnames';
 import styles from './opensource.module.css';
 
@@ -61,6 +63,10 @@ const Diversity = () => (
                 software companies overall.
               </p>
             </div>
+            <div className={styles.vision}>
+              <h2 className="heading-quadrary">Our Vision</h2>
+              <p className="heading-tertiary">Think ahead, secure your supply chain.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -77,16 +83,19 @@ const Diversity = () => (
             <ul>
               <li>
                 <b>WE’RE FUNDING OPEN SOURCE</b>
-                <br/>
-                  – DevX Conf is a non-profit event. Every surplus and $500 for each Gold Sponsor will be donated. 
-                <br/>
-                  – For every registration to our discord channel we’ll donate $1 to open-source projects we depend upon. 
+                <br />
+                – DevX Conf is a non-profit event. Every surplus and $500 for each Gold Sponsor will
+                be donated.
+                <br />– For every registration to our discord channel we’ll donate $1 to open-source
+                projects we depend upon.
               </li>
               <li>
-              Sharing our experiences with funding open-source projects and insights for maintainers whom wish to become financially independent.
+                Sharing our experiences with funding open-source projects and insights for
+                maintainers whom wish to become financially independent.
               </li>
               <li>
-              Encouraging people, companies and conferences to secure their supply chain and acting as a role model for further generations.
+                Encouraging people, companies and conferences to secure their supply chain and
+                acting as a role model for further generations.
               </li>
               <li>
                 Do you have more ideas on how funding can foster a diverse community? →{' '}
@@ -98,83 +107,30 @@ const Diversity = () => (
       </div>
     </Section>
 
-    <Section>
-      <div className="row">
-        <div className={styles.action}>
-          <div className={styles['action-list']}>
-            <h2>Do you want to join in on our journey of funding open source?</h2>
-            <p>Here is want you can do:</p>
-            <ol>
-              <li>
-                Generate the bill of materials in your commerical software.
-              </li>
-              <li>
-                Identify whom your unpaid vendors are.
-              </li>
-              <li>
-                Mitigate your supply chain risks by funding open-source maintainers.
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </Section>
+    <Join />
 
-    <Section className={styles.section}>
-      <div className="row">
-        <div className="wrapper-small">
-          <div className={styles.features}>
-            <div>
-              <h2 className="heading-quadrary">Shape the future you want to live in</h2>
-              <p>
-                When Heartbleed was discovered, OpenSSL was maintained by a handful of volunteers and only one of whom worked full-time. The security flaw caused billions of dollars of economic damage yet at the time yearly support to the OpenSSL project only US$2,000.
-              </p>
-              <p>
-                Much has changed since the 1st of Feburary 2012  and the infrastructure to financially support open-source maintainers now exists thanks to the efforts of OpenCollective and GitHub Sponsors.
-              </p>
-              <p>
-                It is important that we all do our part in funding maintainers as it is importance that maintainers achieve income diversity as that enables roadmap and project independence.
-              </p>
-              <p>
-                There are less than 2100 people in the inner GitHub maintainer community. What would the future look like if they empowered to become independent artists?
-              </p>
-              <p>
-                If one of those people can help more people better understand a technology or improve the developer experience for an entire ecosystem what is the worth/value of that and why aren’t we doing that yet?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <PatternHalfCircle
-        isInverted={true}
-        styles={{
-          position: 'absolute',
-          right: '-15px',
+    <PatternHalfCircle
+      isInverted={true}
+      className={styles.pattern}
+      styles={{
+        position: 'absolute',
+        right: '-15px',
+        height: '400px'
+      }}
+    />
 
-          height: '400px'
-        }}
-      />
-    </Section>
+    <PatternHalfCircle
+      isInverted={true}
+      className={styles.pattern}
+      styles={{
+        position: 'absolute',
+        right: '-15px',
+        bottom: '700px',
+        height: '400px'
+      }}
+    />
 
-    <Section className={styles.section}>
-      <div className="row">
-        <div className="wrapper-small">
-          <div className={styles.features}>
-            <div>
-              <h2 className="heading-quadrary">Recommended books</h2>
-              <p>
-                Nadia Eghbal in 2016 with the support of the Ford Foundation authored an extensive report into the unseen labor behind our digital infrastructure.
-              </p>
-              <p>
-                Eghbal outlines, digital infrastructure should be treated as a necessary public good. Free public source code makes it exponentially cheaper and easier for companies to build software, and makes technology more accessible across the globe.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Section>
-
-
+    <Books />
   </Layout>
 );
 
