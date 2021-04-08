@@ -30,7 +30,8 @@
 
 @media(max-width: 767px) {
     .title {
-        margin-bottom: var(--gutter-large-mobile);
+        margin-bottom: var(--gutter-medium-mobile);
+
     }
 
     .list {
