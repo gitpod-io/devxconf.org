@@ -24,7 +24,7 @@
 
 .grid {
   max-width: 1100px;
-  margin: var(--gutter-huge) auto;
+  margin: var(--gutter-huge) auto var(--gutter-large);
   padding: 0 50px;
   width: 100%;
   display: flex;
