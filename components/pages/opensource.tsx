@@ -115,16 +115,6 @@ const Diversity = () => (
       styles={{
         position: 'absolute',
         right: '-15px',
-        height: '400px'
-      }}
-    />
-
-    <PatternHalfCircle
-      isInverted={true}
-      className={styles.pattern}
-      styles={{
-        position: 'absolute',
-        right: '-15px',
         bottom: '700px',
         height: '400px'
       }}
