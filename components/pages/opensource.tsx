@@ -11,7 +11,7 @@ const Diversity = () => (
       <div className="row">
         <div className={cn(styles.header, 'wrapper-small')}>
           <div className={styles['intro-container']}>
-            <img src="/patterns/diversity-title-pattern.svg" aria-hidden={true} />
+            <img src="/patterns/opensource-title-pattern.svg" aria-hidden={true} />
             <h1 className="heading-secondary">
               It's time to
               <br />
@@ -64,15 +64,6 @@ const Diversity = () => (
           </div>
         </div>
       </div>
-      <PatternHalfCircle
-        isInverted={true}
-        styles={{
-          position: 'absolute',
-          right: '-15px',
-
-          height: '400px'
-        }}
-      />
     </Section>
 
     <Section>
@@ -85,44 +76,105 @@ const Diversity = () => (
             <p>Change requires actions. This what we do:</p>
             <ul>
               <li>
-                Having an equal speaker representation to acknowledge success, encourage others and
-                acting as a role model for further generations
+                <b>WE’RE FUNDING OPEN SOURCE</b>
+                <br/>
+                  – DevX Conf is a non-profit event. Every surplus and $500 for each Gold Sponsor will be donated. 
+                <br/>
+                  – For every registration to our discord channel we’ll donate $1 to open-source projects we depend upon. 
               </li>
               <li>
-                We're donating $1 for every registrations to our discord channel to an organisation
-                we support
+              Sharing our experiences with funding open-source projects and insights for maintainers whom wish to become financially independent.
               </li>
               <li>
-                Thinking sustainable: instead of getting drowned in useless swag, all attendees can
-                choose to donate their swag
-              </li>
-              <li>For each gold sponsor we’ll donate $500 to organisations we support</li>
-              <li>
-                All attendees need to agree to our values around DE&I before joining the event
+              Encouraging people, companies and conferences to secure their supply chain and acting as a role model for further generations.
               </li>
               <li>
-                DevX Conf is a non-profit event. Every surplus will be donated to organizations we
-                support
-              </li>
-              <li>
-                Do you have more ideas on how we can foster a diverse community? →{' '}
+                Do you have more ideas on how funding can foster a diverse community? →{' '}
                 <a href="mailto:contact@devxconf.org">Please get in contact</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <Support />
+    </Section>
+
+    <Section>
+      <div className="row">
+        <div className={styles.action}>
+          <div className={styles['action-list']}>
+            <h2>Do you want to join in on our journey of funding open source?</h2>
+            <p>Here is want you can do:</p>
+            <ol>
+              <li>
+                Generate the bill of materials in your commerical software.
+              </li>
+              <li>
+                Identify whom your unpaid vendors are.
+              </li>
+              <li>
+                Mitigate your supply chain risks by funding open-source maintainers.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+    <Section className={styles.section}>
+      <div className="row">
+        <div className="wrapper-small">
+          <div className={styles.features}>
+            <div>
+              <h2 className="heading-quadrary">Shape the future you want to live in</h2>
+              <p>
+                When Heartbleed was discovered, OpenSSL was maintained by a handful of volunteers and only one of whom worked full-time. The security flaw caused billions of dollars of economic damage yet at the time yearly support to the OpenSSL project only US$2,000.
+              </p>
+              <p>
+                Much has changed since the 1st of Feburary 2012  and the infrastructure to financially support open-source maintainers now exists thanks to the efforts of OpenCollective and GitHub Sponsors.
+              </p>
+              <p>
+                It is important that we all do our part in funding maintainers as it is importance that maintainers achieve income diversity as that enables roadmap and project independence.
+              </p>
+              <p>
+                There are less than 2100 people in the inner GitHub maintainer community. What would the future look like if they empowered to become independent artists?
+              </p>
+              <p>
+                If one of those people can help more people better understand a technology or improve the developer experience for an entire ecosystem what is the worth/value of that and why aren’t we doing that yet?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       <PatternHalfCircle
-        className={styles.pattern}
+        isInverted={true}
         styles={{
           position: 'absolute',
-          left: '-15px',
-          height: '460px',
-          marginTop: '50px'
+          right: '-15px',
+
+          height: '400px'
         }}
       />
     </Section>
+
+    <Section className={styles.section}>
+      <div className="row">
+        <div className="wrapper-small">
+          <div className={styles.features}>
+            <div>
+              <h2 className="heading-quadrary">Recommended books</h2>
+              <p>
+                Nadia Eghbal in 2016 with the support of the Ford Foundation authored an extensive report into the unseen labor behind our digital infrastructure.
+              </p>
+              <p>
+                Eghbal outlines, digital infrastructure should be treated as a necessary public good. Free public source code makes it exponentially cheaper and easier for companies to build software, and makes technology more accessible across the globe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Section>
+
+
   </Layout>
 );
 
