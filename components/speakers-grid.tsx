@@ -65,7 +65,7 @@ export default function SpeakersGrid({ speakers }: Props) {
                 </div>
                 <div className={styles.cardBody}>
                   <div>
-                    <h3 className={cn(styles.name, 'heading-quadrary')}>{speaker.name}</h3>
+                    <a href={`https://twitter.com/${speaker.twitter}`} target="_blank"><h3 className={cn(styles.name, 'heading-quadrary')}>{speaker.name}</h3></a>
                     <p className={styles.title}>
                       {`${speaker.title} @`}
                       <span className={styles.company}>{speaker.company}</span>
