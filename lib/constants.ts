@@ -45,9 +45,21 @@ export const NAVIGATION = [
   //   route: '/stage'
   // },
   {
+     name: 'Speakers',
+     route: '/#speakers'
+  },
+  {
     name: 'Manifesto',
     route: '/manifesto'
   },
+  {
+    name: 'Open-Source',
+    route: '/opensource'
+  },
+  {
+    name: 'Community',
+    route: '/community'
+  }
 ];
 
 export type TicketGenerationState = 'default' | 'loading';

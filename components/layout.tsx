@@ -41,7 +41,6 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
       <div className={styles.background}>
         {!hideNav && (
           <div className={styles["header-container"]}>
-            <Announcement />
             <div className="row">
               <header className={cn(styles.header)}>
                 <div className={styles['header-logos']}>

@@ -18,9 +18,13 @@ import { ConfDataContext, PageState, UserData } from '@lib/hooks/use-conf-data';
 
 import About from '../about';
 import ConfContainer from '../conf-container';
+import FollowUsOnTwitter from '@components/follow-us-on-twitter';
 import Hero from '../index/hero';
 import Layout from '../layout';
+import Partners from '@components/index/partners';
+import SpeakersGrid from '@components/speakers-grid';
 import Ticket from '../ticket';
+import { speakers } from 'contents';
 import { useState } from 'react';
 
 type Props = {
@@ -50,6 +54,9 @@ export default function Conf({
           {pageState === 'registration' && !sharePage ? (
             <>
               <Hero />
+              <SpeakersGrid speakers={speakers}/>
+              <Partners />
+              <FollowUsOnTwitter />
               <About />
             </>
           ) : (

@@ -15,7 +15,7 @@
  */
 
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 import Section from './layout/section';
 import SectionHeader from './layout/section-header';
 import { Speaker } from '@lib/types';
@@ -36,15 +36,25 @@ export default function SpeakersGrid({ speakers }: Props) {
             Our speakers deeply care about frictionless developer workflows and leverage automation
             to solve problems.
           </p>
+          <p>
+            So far, the line up is not as diverse as we’d like to it be. Can you help us change
+            that? Spread the word or get in contact directly.
+          </p>
+
+          <a href="mailto:contact@devxconf.org?subject=Become a Speaker" className={cn('btn', styles.btn)}>
+            Become a Speaker
+          </a>
         </SectionHeader>
         <div className={styles.grid}>
           {speakers.map(speaker => (
-            <Link key={speaker.name} href={`/speakers/${speaker.slug}`}>
-              <a role="button" tabIndex={0} className={styles.card}>
+            // <Link key={speaker.name} href={`/speakers/${speaker.slug}`}>
+            <div>
+              {/* <a role="button" tabIndex={0} className={styles.card}> */}
+              <a  href={`https://twitter.com/${speaker.twitter}`} target="_blank" className={styles.card}>
                 <div className={styles.imageWrapper}>
                   <Image
                     alt={speaker.name}
-                    src={speaker.image.url}
+                    src={`/speakers/${speaker.image.url}`}
                     className={styles.image}
                     loading="lazy"
                     quality="50"
@@ -63,7 +73,7 @@ export default function SpeakersGrid({ speakers }: Props) {
                   </div>
                 </div>
               </a>
-            </Link>
+            </div>
           ))}
         </div>
         <p className={cn(styles.more, 'footnote')}>More to be announced soon</p>
