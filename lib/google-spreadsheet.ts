@@ -25,7 +25,7 @@ export async function persistEmail(email: string) {
     if (existingEmails.includes(email)) {
       return false;
     } else {
-      await sheet.addRow({ Emails: email });
+      await sheet.addRow({ Emails: email, Event: "DevX" });
     }
   } catch (e) {
     console.error('Could not persist email address in Google Sheet: ', e);
