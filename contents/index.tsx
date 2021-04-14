@@ -20,7 +20,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Erich Gamma',
     company: 'Mircosoft',
-    title: 'Creator VS Code',
+    title: 'Creator of VS Code',
     image: {
       url: 'erich-gamma.jpeg'
     },
@@ -124,6 +124,22 @@ export const speakers: Speaker[] = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
     slug: 'max-mustermann',
     twitter: 'arcanis',
+    linkedin: '',
+    github: '',
+    keynote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    name: 'Lili Kastilio',
+    company: 'Snyk',
+    title: 'Technical Services Architect',
+    image: {
+      url: 'lili.jpeg'
+    },
+    bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+    slug: 'max-mustermann',
+    twitter: 'lilianakastilio',
     linkedin: '',
     github: '',
     keynote:
