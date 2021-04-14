@@ -17,9 +17,6 @@
     overflow: hidden;
 }
 
-.btn {
-    margin-top: var(--gutter-medium);
-}
 
 .footnote {
     margin-bottom: var(--gutter-medium);
