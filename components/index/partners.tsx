@@ -2,50 +2,39 @@ import Partner, { PartnerProps } from './partner';
 
 import Section from '@components/layout/section';
 import SectionHeader from '@components/layout/section-header';
-import cn from 'classnames';
 import styles from './partners.module.css';
 
 const partners: PartnerProps[] = [
   {
-    title: 'GitLab',
-    logo: 'gitlab.svg',
-    website: 'https://gitlab.com/'
+    title: 'CodeSee',
+    logo: 'codesee.svg',
+    website: 'https://www.codesee.io/'
   },
   {
-    title: 'Google Cloud',
-    logo: 'google-cloud.svg',
-    website: 'https://cloud.google.com/'
+    title: 'Sourcegraph',
+    logo: 'sourcegraph.svg',
+    website: 'https://about.sourcegraph.com/'
   },
   {
-    title: 'Uber',
-    logo: 'uber.svg',
-    website: 'https://www.uber.com'
+    title: 'Raycast',
+    logo: 'raycast.svg',
+    website: 'https://raycast.com/'
   },
   {
-    title: 'Mozilla',
-    logo: 'mozilla.svg',
-    website: 'https://www.mozilla.org/en-US/'
+    title: 'Optic',
+    logo: 'useoptic.svg',
+    website: 'https://useoptic.com/'
   },
   {
-    title: 'GitLab',
-    logo: 'gitlab.svg',
-    website: 'https://gitlab.com/'
+    title: 'CNCF',
+    logo: 'cnfc.svg',
+    website: 'https://www.cncf.io/'
   },
   {
-    title: 'Google Cloud',
-    logo: 'google-cloud.svg',
-    website: 'https://cloud.google.com/'
+    title: 'CloudQuery',
+    logo: 'cloudquery.svg',
+    website: 'https://www.cloudquery.io/'
   },
-  {
-    title: 'Uber',
-    logo: 'uber.svg',
-    website: 'https://www.uber.com'
-  },
-  {
-    title: 'Mozilla',
-    logo: 'mozilla.svg',
-    website: 'https://www.mozilla.org/en-US/'
-  }
 ];
 
 const Partners = () => (
@@ -58,17 +47,17 @@ const Partners = () => (
       <a href="mailto:contact@devxconf.org?subject=Sponsorship request" className="btn">
         BECOME A SPONSOR
       </a>
-      {/* <div className={styles.sponsors}>
+      <div className={styles.sponsors}>
         {partners.map((partner, i) => (
           <Partner key={i} {...partner} />
         ))}
-      </div> */}
+      </div>
       <div className="wrapper-small">
         {/* <p className={styles.footnote}>
           More details and different sponsorship options, you can find in our sponsorship
           prospectus.
         </p> */}
-        <a href="/prospectus.pdf" target="_blank" className={cn("btn btn--secondary", styles.btn)}>
+        <a href="/prospectus.pdf" target="_blank" className="btn btn--secondary">
           See Prospectus
         </a>
       </div>
