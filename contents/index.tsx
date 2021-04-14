@@ -308,7 +308,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Thomas Paul Mann',
     company: 'Raycast',
-    title: 'Building',
+    title: 'CEO & Co-Founder',
     image: {
       url: 'thomas-paul-mann.jpeg'
     },
