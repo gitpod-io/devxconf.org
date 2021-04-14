@@ -7,7 +7,7 @@ import styles from './partners.module.css';
 const partners: PartnerProps[] = [
   {
     title: 'CodeSee',
-    logo: 'codesee.png',
+    logo: 'codesee.svg',
     website: 'https://www.codesee.io/'
   },
   {
@@ -22,7 +22,7 @@ const partners: PartnerProps[] = [
   },
   {
     title: 'Optic',
-    logo: 'useoptic.png',
+    logo: 'useoptic.svg',
     website: 'https://useoptic.com/'
   },
   {
