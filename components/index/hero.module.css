@@ -70,7 +70,7 @@
   margin: var(--gutter-small) auto 0;
   text-align: center;
   font-size: var(--footnote);
-  color: var(--grey-2);
+  color: var(--grey);
 }
 
 .register-with-email {
