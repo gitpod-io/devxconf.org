@@ -336,5 +336,21 @@ export const speakers: Speaker[] = [
     github: '',
     keynote:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    name: "Jean Yang",
+    company: 'Akita Software',
+    title: 'Founder + CEO',
+    image: {
+      url: 'jean-yang.jpeg'
+    },
+    bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+    slug: 'max-mustermann',
+    twitter: 'jeanqasaur',
+    linkedin: '',
+    github: '',
+    keynote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
   }
 ];
