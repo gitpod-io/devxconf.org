@@ -1,5 +1,9 @@
 import { Stage } from '@lib/types';
+import { isEurope } from 'utils/helpers';
 import { speakers } from 'contents';
+
+const getSpeakerByName = (name: string) =>
+  speakers.find(s => s.name.toLowerCase() === name.toLowerCase());
 
 export const allStages: Stage[] = [
   {
@@ -10,33 +14,66 @@ export const allStages: Stage[] = [
     stream: '',
     schedule: [
       {
-        title: 'Example',
-        description: 'Test',
-        start: '9:00AM',
-        end: '9:30AM',
-        speaker: speakers[0]
+        title: 'Intro',
+        description: '',
+        start: isEurope() ? '17:00' : '8:00 AM',
+        end: isEurope() ? '17:10' : '8:10 AM',
+        speaker: [
+          {
+            name: 'Jason Warner',
+            company: 'GitHub',
+            title: 'CTO',
+            image: {
+              url: 'jason-warner.jpeg'
+            },
+            bio:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+            slug: 'max-mustermann',
+            twitter: 'jasoncwarner',
+            linkedin: '',
+            github: '',
+            keynote:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          },
+          {
+            name: 'Jason Warner',
+            company: 'GitHub',
+            title: 'CTO',
+            image: {
+              url: 'jason-warner.jpeg'
+            },
+            bio:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+            slug: 'max-mustermann',
+            twitter: 'jasoncwarner',
+            linkedin: '',
+            github: '',
+            keynote:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          }
+        ]
       },
       {
-        title: 'Example',
-        description: 'Test',
-        start: '9:30AM',
-        end: '10:00AM',
-        speaker: speakers[1]
+        title: 'Fireside Chat with Johannes',
+        description: '',
+        start: isEurope() ? '17:10' : '8:10 AM',
+        end: isEurope() ? '17:40' : '8:40 AM',
+        speaker: getSpeakerByName('Erich Gamma')
       },
       {
-        title: 'Example',
-        description: 'Test',
-        start: '10:00AM',
-        end: '10:30AM',
-        speaker: speakers[0]
+        title: 'Development Outage/ Treating your default branch as production',
+        description: '',
+        start: isEurope() ? '17:40' : '8:40 AM',
+        end: isEurope() ? '18:00' : '9:00 AM',
+        speaker: getSpeakerByName('Borja Burgos')
       },
       {
-        title: 'Example',
-        description: 'Test',
-        start: '9:00AM',
-        end: '9:30AM',
-        speaker: speakers[0]
-      }, 
+        title: "Is DevEx not good… because we don't want it to be?",
+        description: '',
+        start: isEurope() ? '18:00' : '9:00 AM',
+        end: isEurope() ? '18:20' : '9:20 AM',
+        speaker: getSpeakerByName('Ellen Chisa')
+      }
     ]
   },
   {
@@ -48,25 +85,25 @@ export const allStages: Stage[] = [
     schedule: [
       {
         title: 'Example',
-        description: 'Test',
+        description: '',
         start: '9:00AM',
         end: '9:30AM',
         speaker: speakers[0]
       },
       {
         title: 'Example',
-        description: 'Test',
+        description: '',
         start: '9:30AM',
         end: '10:00AM',
         speaker: speakers[1]
       },
       {
         title: 'Example',
-        description: 'Test',
+        description: '',
         start: '10:00AM',
         end: '10:30AM',
         speaker: speakers[0]
       }
     ]
-  },
+  }
 ];

@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
- // eslint-disable-next-line
- // @ts-nocheck
+// eslint-disable-next-line
+// @ts-nocheck
 
 import { Image as ImageProps, Talk } from '@lib/types';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
@@ -24,6 +24,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
+import { isEurope } from 'utils/helpers';
 import { speakers } from 'contents';
 import styles from './talk-card.module.css';
 
@@ -41,7 +42,13 @@ const formatDate = (date: string) => {
 };
 
 const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
-  <img loading="lazy" alt={name} className={styles.avatar} src={image.url} title={name} />
+  <img
+    loading="lazy"
+    alt={name}
+    className={styles.avatar}
+    src={`/speakers/${image.url}`}
+    title={name}
+  />
 );
 
 export default function TalkCard({ talk: { title, speaker, start, end }, showTime }: Props) {
@@ -63,28 +70,37 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
 
   return (
     <div key={title} className={styles.talk}>
-      {showTime && <p className={styles.time}>{startAndEndTime || <>&nbsp;</>}</p>}
-      <Link href={`${isSpeakerArray ? firstSpeakerLink : ''}`}>
-        <a
+      {showTime && <p className={styles.time}>{startAndEndTime || <>&nbsp;</>} {isEurope() ? "CEST" : "PT"}</p>}
+      {/* <Link href={`${isSpeakerArray ? firstSpeakerLink : ''}`}> */}
+      {/* <a
           className={cn(styles.card, {
             [styles['is-live']]: isTalkLive
           })}
-        >
-          <div className={styles['card-body']}>
-            <h4 title={title} className={styles.title}>
-              {title}
-            </h4>
-            {undefined !== speaker ? (
-              <div className={styles.speaker}>
-                <div className={styles['avatar-group']}>
-                  {<Avatar name={speaker.name} image={speaker.image} />}
-                </div>
-                <h4 className={styles['speaker-name']}>{speaker.name}</h4>
+        > */}
+      <div
+        className={cn(styles.card, {
+          [styles['is-live']]: isTalkLive
+        })}
+      >
+        <div className={styles['card-body']}>
+          <h4 title={title} className={styles.title}>
+            {title}
+          </h4>
+          {undefined !== speaker ? (
+            <div className={styles.speaker}>
+              <div className={styles['avatar-group']}>
+              {/* {<Avatar name={speaker.name} image={speaker.image} />} */}
+
               </div>
-            ) : null}
-          </div>
-        </a>
-      </Link>
+              <h4 className={styles['speaker-name']}>
+                {typeof speaker !== 'string' ? speaker.name : speaker}
+              </h4>
+            </div>
+          ) : null}
+        </div>
+      </div>
+      {/* </a> */}
+      {/* </Link> */}
     </div>
   );
 }
