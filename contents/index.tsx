@@ -19,7 +19,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Erich Gamma',
-    company: 'Mircosoft',
+    company: 'Microsoft',
     title: 'Creator of VS Code',
     image: {
       url: 'erich-gamma.jpeg'
