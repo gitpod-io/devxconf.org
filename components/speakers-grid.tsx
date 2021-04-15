@@ -36,14 +36,6 @@ export default function SpeakersGrid({ speakers }: Props) {
             Our speakers deeply care about frictionless developer workflows and leverage automation
             to solve problems.
           </p>
-          <p>
-            So far, the line up is not as diverse as we’d like to it be. Can you help us change
-            that? Spread the word or get in contact directly.
-          </p>
-
-          <a href="mailto:contact@devxconf.org?subject=Become a Speaker" className={cn('btn', styles.btn)}>
-            Become a Speaker
-          </a>
         </SectionHeader>
         <div className={styles.grid}>
           {speakers.map(speaker => (
