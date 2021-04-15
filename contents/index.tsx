@@ -20,7 +20,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Erich Gamma',
     company: 'Mircosoft',
-    title: 'Creator VS Code',
+    title: 'Creator of VS Code',
     image: {
       url: 'erich-gamma.jpeg'
     },
@@ -124,6 +124,22 @@ export const speakers: Speaker[] = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
     slug: 'max-mustermann',
     twitter: 'arcanis',
+    linkedin: '',
+    github: '',
+    keynote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    name: 'Lili Kastilio',
+    company: 'Snyk',
+    title: 'Technical Services Architect',
+    image: {
+      url: 'lili.jpeg'
+    },
+    bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+    slug: 'max-mustermann',
+    twitter: 'lilianakastilio',
     linkedin: '',
     github: '',
     keynote:
@@ -268,6 +284,54 @@ export const speakers: Speaker[] = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
     slug: 'max-mustermann',
     twitter: 'everconfusedguy',
+    linkedin: '',
+    github: '',
+    keynote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    name: "Stephen O’Grady",
+    company: 'RedMonk',
+    title: 'Co-Founder',
+    image: {
+      url: 'steve-o-grady.jpeg'
+    },
+    bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+    slug: 'max-mustermann',
+    twitter: 'sogrady',
+    linkedin: '',
+    github: '',
+    keynote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    name: 'Thomas Paul Mann',
+    company: 'Raycast',
+    title: 'CEO & Co-Founder',
+    image: {
+      url: 'thomas-paul-mann.jpeg'
+    },
+    bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+    slug: 'max-mustermann',
+    twitter: 'thomaspaulmann',
+    linkedin: '',
+    github: '',
+    keynote:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+  },
+  {
+    name: "Borja Burgos",
+    company: 'Datadog',
+    title: 'Director of Product',
+    image: {
+      url: 'bojra-burgos.png'
+    },
+    bio:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+    slug: 'max-mustermann',
+    twitter: 'borja_burgos',
     linkedin: '',
     github: '',
     keynote:
