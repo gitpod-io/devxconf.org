@@ -2,10 +2,6 @@
     text-align: center;
 }
 
-.wrapper h1 {
-    color: var(--brand);
-}
-
 .wrapper p {
     margin-bottom: var(--gutter-normal);
 }

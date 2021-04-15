@@ -13,7 +13,7 @@ export default function Conf() {
             <h1 className="heading-primary">404</h1>
             <p>Oh, no! Something went wrong on our side.</p>
             <Link href="/">
-              <a className="btn">Go Home</a>
+              <a className="btn">Go to DevX Conf</a>
             </Link>
           </div>
         </div>
