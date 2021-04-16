@@ -107,7 +107,7 @@ export default function SpeakerSection({ speaker }: Props) {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkedinIcon color="var(--grey)" />
+                  <LinkedinIcon />
                 </a>
               ) : null}
             </div>
