@@ -65,7 +65,11 @@
   width: 100%;
 }
 
-@media(min-width: 768px) {
+.talks > div {
+  margin-bottom: var(--gutter-medium);
+}
+
+@media(min-width: 620px) {
   .talks > div {
     margin-right: var(--gutter-normal);
   }
