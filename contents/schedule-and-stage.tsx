@@ -84,7 +84,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Jason Warner')
       },
       {
-        title: 'Cloud native java',
+        title: 'Cloud native Java',
         description: '',
         start: isEurope() ? '19:00' : '10:00 AM',
         end: isEurope() ? '19:20' : '10:20 AM',
