@@ -27,11 +27,10 @@ export const allStages: Stage[] = [
               url: 'johannes.jpeg'
             },
             bio: '',
-            slug: '',
             twitter: '',
             linkedin: '',
             github: '',
-            keynote: ''
+            abstract: ''
           },
           {
             name: 'Christin',
@@ -41,11 +40,10 @@ export const allStages: Stage[] = [
               url: 'christin.jpeg'
             },
             bio: '',
-            slug: '',
             twitter: '',
             linkedin: '',
             github: '',
-            keynote: ''
+            abstract: ''
           }
         ]
       },

@@ -24,6 +24,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
+import { hyphenate } from './speakers-grid';
 import { isEurope } from 'utils/helpers';
 import { speakers } from 'contents';
 import styles from './talk-card.module.css';
@@ -51,7 +52,6 @@ const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
   />
 );
 
-export const hyphenate = (str: string) => str.split(" ").join('-').toLowerCase()
 
 export default function TalkCard({ talk: { title, speaker, start, end }, showTime }: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
@@ -72,7 +72,9 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
           {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
         </p>
       )}
+      {/* eslint-disable-next-line */}
       <Link href={`/speakers/${hyphenate(speaker.name || '')}`}>
+        
       <a
           className={cn(styles.card, {
             [styles['is-live']]: isTalkLive
