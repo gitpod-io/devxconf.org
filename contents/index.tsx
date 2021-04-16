@@ -55,6 +55,19 @@ export const speakers: Speaker[] = [
     abstract: ''
   },
   {
+    name: 'Rachel Myers',
+    company: 'Google',
+    title: 'Engineer',
+    image: {
+      url: 'rachelmyers.jpeg'
+    },
+    bio: '',
+    twitter: 'rachelmyers',
+    linkedin: 'rachelmyers',
+    github: 'rachelmyers',
+    abstract: ''
+  },
+  {
     name: 'Ellen Chisa',
     company: 'Boldstart',
     title: 'Founder In Residence',
@@ -556,5 +569,5 @@ export const speakers: Speaker[] = [
     linkedin: 'anton-kosyakov-4093b610',
     github: 'akosyakov',
     abstract: ''
-  }
+  },
 ];
