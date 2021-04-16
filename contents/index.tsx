@@ -19,27 +19,20 @@ export const speakers: Speaker[] = [
     company: 'Microsoft',
     title: 'VS Code Dev Lead',
     image: {
-      url: 'erich-gamma.jpeg'
+      url: 'erich-gamma.png'
     },
     bio: (
       <>
         <p>
-          Erich Gamma is a member of the Gang of Four which is known for its classical book “Design
-          Patterns – Elements of Reusable Object-Oriented Software”. He was one of the originators
-          of the Eclipse project. Together with Kent Beck he developed JUnit, the de facto standard
-          testing tool for Java software.
+          Erich is a Microsoft Technical Fellow and is currently working on Visual Studio Code. In the past he contributed to Design Patterns, JUnit, Eclipse, and IBM’s Rational Team Concert. He works in Zurich and skis in Andermatt, Switzerland.
         </p>
-        <p>
-          Previously he worked for IBM as a Distinguished Engineer. Since 2011, he is a Microsoft
-          Distinguished Engineer and leads a team which works out of a small Microsoft development
-          lab in Zurich and is responsible for Visual Studio Code.
-        </p>
+    
       </>
     ),
     twitter: 'ErichGamma',
     linkedin: 'erichgamma',
     github: 'egamma',
-    abstract: 'Fireside Chat with Sven'
+    abstract: 'Fireside Chat with Sven Efftinge'
   },
   {
     name: 'Henry Zhu',
