@@ -47,6 +47,7 @@ export type Talk = {
   start: string;
   end: string;
   speaker?: Speaker[] | Speaker;
+  isLinkLess?: boolean;
 };
 
 export type Link = {

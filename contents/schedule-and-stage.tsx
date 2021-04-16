@@ -45,7 +45,8 @@ export const allStages: Stage[] = [
             github: '',
             abstract: ''
           }
-        ]
+        ],
+        isLinkLess: true
       },
       {
         title: 'Fireside Chat with Johannes',
@@ -67,6 +68,64 @@ export const allStages: Stage[] = [
         start: isEurope() ? '18:00' : '9:00 AM',
         end: isEurope() ? '18:20' : '9:20 AM',
         speaker: getSpeakerByName('Ellen Chisa')
+      },
+      {
+        title: 'Monorepos, are they right for you?',
+        description: '',
+        start: isEurope() ? '18:20' : '9:20 AM',
+        end: isEurope() ? '18:40' : '9:40 AM',
+        speaker: getSpeakerByName('Maël Nison')
+      },
+      {
+        title: 'Fireside Chat',
+        description: '',
+        start: isEurope() ? '18:40' : '9:40 AM',
+        end: isEurope() ? '19:00' : '10:00 AM',
+        speaker: getSpeakerByName('Jason Warner')
+      },
+      {
+        title: 'Cloud Native Java',
+        description: '',
+        start: isEurope() ? '19:00' : '10:00 AM',
+        end: isEurope() ? '19:20' : '10:20 AM',
+        speaker: getSpeakerByName('Josh Long')
+      },
+      {
+        title: 'Why I love incremental delivery and why you should too',
+        description: '',
+        start: isEurope() ? '19:20' : '10:20 AM',
+        end: isEurope() ? '19:40' : '10:40 AM',
+        speaker: getSpeakerByName('Lili Kastilio')
+      },
+      {
+        title: 'TBD',
+        description: '',
+        start: isEurope() ? '19:40' : '10:40 AM',
+        end: isEurope() ? '20:00' : '11:00 AM',
+        speaker: getSpeakerByName('Yevgeny Pats')
+      },
+      {
+        title: 'Find friction in your developer experience by user testing with developers.',
+        description: '',
+        start: isEurope() ? '20:00' : '11:00 AM',
+        end: isEurope() ? '20:20' : '11:20 AM',
+        speaker: getSpeakerByName('Ian Jennings')
+      },
+      {
+        title: 'Gitpod',
+        description: '',
+        start: isEurope() ? '20:20' : '11:20 AM',
+        end: isEurope() ? '20:40' : '11:40 AM',
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [getSpeakerByName('Mike Nikles'), getSpeakerByName('Anton Kosyakov')]
+      },
+      {
+        title: 'The Developer Experience Gap',
+        description: '',
+        start: isEurope() ? '20:40' : '11:40 AM',
+        end: isEurope() ? '21:00' : '12:00 PM',
+        speaker: getSpeakerByName("Stephen O'Grady")
       }
     ]
   },
