@@ -91,7 +91,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Josh Long')
       },
       {
-        title: 'Why I love incremental delivery and why you should too',
+        title: 'Why I love incremental delivery and why you should too.',
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
@@ -164,7 +164,7 @@ export const allStages: Stage[] = [
         },
       },
       {
-        title: 'Brave Browser - DevX: History of Code Search',
+        title: 'DevX: History of Code Search',
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -213,7 +213,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Aidan Cunniffe')
       },
       {
-        title: 'How to Build a dApp',
+        title: 'How to build a dApp',
         description: '',
         start: isEurope() ? '20:00' : '11:00 AM',
         end: isEurope() ? '20:20' : '11:20 AM',
@@ -227,7 +227,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Jean Yang')
       },
       {
-        title: 'Fireside Chat about “how to prioritize dev experience in the development process above all else”',
+        title: 'How to prioritize dev experience in the development process above all else',
         description: '',
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',

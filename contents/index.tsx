@@ -467,8 +467,8 @@ export const speakers: Speaker[] = [
     bio:
       "Thomas loves to make tools. He's co-founder and CEO of Raycast and previously built products as a software engineer at Facebook.",
     twitter: 'thomaspaulmann',
-    linkedin: '',
-    github: 'sogrady',
+    linkedin: 'thomas-paul-mann-5183101a4',
+    github: 'thomaspaulmann',
     abstract: (
       <>
         <p>
