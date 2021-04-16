@@ -59,7 +59,7 @@ export const speakers: Speaker[] = [
     company: 'Google',
     title: 'Engineer',
     image: {
-      url: 'rachelmyers.jpeg'
+      url: 'rachel-myers.jpeg'
     },
     bio: '',
     twitter: 'rachelmyers',
@@ -135,7 +135,7 @@ export const speakers: Speaker[] = [
     github: 'joshlong',
     abstract: (
       <>
-        <p>Topic: Cloud Native Java</p>
+        <p> <b>Cloud Native Java</b></p>
         <p>“It is not necessary to change. Survival is not mandatory.” -W. Edwards Deming</p>
         <p>
           Work takes time to flow through an organization and ultimately be deployed to production
@@ -197,7 +197,7 @@ export const speakers: Speaker[] = [
     github: 'beyang',
     abstract: (
       <>
-        <p>Topic: Code Search Tooling and integrating that to devs workflows (exact title tbd)</p>
+        <p> <b>DevX: History of Code Search</b></p>
         <p>
           What is code search? Code search is an important dev tool for some of the largest and most
           highly respected companies and open-source organizations, but many developers have never
@@ -237,7 +237,7 @@ export const speakers: Speaker[] = [
     github: 'lili2311',
     abstract: (
       <>
-        <p>Topic: Why I love incremental delivery and why you should too.</p>
+        <p><b>Why I love incremental delivery and why you should too.</b></p>
         <p>
           In order to innovate and deliver new products that your users will love you often have to
           design & build very complex features. You may even be the first doing that in that
@@ -264,7 +264,7 @@ export const speakers: Speaker[] = [
     github: 'dabit3',
     abstract: (
       <>
-        <p>Topic: How to Build a dApp</p>
+        <p><b>How to build a dApp</b></p>
         <p>
           Decentralized apps (dApps) are continuing to gain momentum in the industry. Blockchain
           developers are also now some of the highest paid in the entire industry. Building
@@ -324,7 +324,7 @@ export const speakers: Speaker[] = [
     linkedin: 'kylequest',
     github: 'kcq',
     abstract:
-      'Topic: Simplifying the Journey of Your Containerized Application from Dev to Production'
+      'Simplifying the Journey of Your Containerized Application from Dev to Production'
   },
   {
     name: 'Aidan Cunniffe',
@@ -340,7 +340,7 @@ export const speakers: Speaker[] = [
     github: 'acunniffe',
     abstract: (
       <>
-        <p>Topic: Make your APIs Developer-friendly</p>
+        <p> <b>Make your APIs Developer-friendly</b></p>
         <p>
           APIs are not only ‘programming interfaces’ they’re how teams split work, collaborate with
           one another, share capabilities, and make awesome software. Most APIs are internal and
@@ -367,10 +367,9 @@ export const speakers: Speaker[] = [
     github: 'artman',
     abstract: (
       <>
-        <p>Topic</p>
         <p>
-          Fireside Chat about “how to prioritize dev experience in the development process above all
-          else”
+          <b>How to prioritize dev experience in the development process above all
+          else</b>
         </p>
       </>
     )
@@ -389,7 +388,7 @@ export const speakers: Speaker[] = [
     github: 'ianjennings',
     abstract: (
       <>
-        <p>Find friction in your developer experience by user testing with developers.</p>
+        <p><b>Find friction in your developer experience by user testing with developers.</b></p>
 
         <p>
           Do you know what's stopping developers from getting started with your product? Developer
@@ -407,8 +406,7 @@ export const speakers: Speaker[] = [
     image: {
       url: 'yevgeny-pats.jpeg'
     },
-    bio:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
+
     twitter: 'yevgenypats',
     linkedin: 'yevgeny-pats-5973328b',
     github: 'yevgenypats',
@@ -428,7 +426,7 @@ export const speakers: Speaker[] = [
     github: 'inian',
     abstract: (
       <>
-        <p>Topic: DX, Performance, Security - Choose any three</p>
+        <p> <b>DX, Performance, Security - Choose any three</b></p>
 
         <p>
           Balancing Developer Experience with other concerns like performance and security is not
@@ -462,7 +460,7 @@ export const speakers: Speaker[] = [
     github: 'sogrady',
     abstract: (
       <>
-        <p>Topic: The Developer Experience Gap</p>
+        <p> <b>The developer experience gap</b></p>
       </>
     )
   },
@@ -481,8 +479,8 @@ export const speakers: Speaker[] = [
     abstract: (
       <>
         <p>
-          Topic: Fireside Chat about “how to prioritize dev experience in the development process
-          above all else”
+          <b>How to prioritize dev experience in the development process
+          above all else</b>
         </p>
       </>
     )
@@ -530,7 +528,7 @@ export const speakers: Speaker[] = [
     github: 'jeanqasaur',
     abstract: (
       <>
-        <p>Talk title: "Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</p>
+        <p><b>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</b></p>
         <p>
           The rise of APIs and service-oriented architectures has made it easier than ever before to
           build complex web applications. But the developer tools we use were made for a simpler
