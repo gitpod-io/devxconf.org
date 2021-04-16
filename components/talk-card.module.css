@@ -80,6 +80,10 @@
   filter: grayscale(100%);
 }
 
+.avatar + .avatar {
+  margin-left: -30px;
+}
+
 .avatar-group {
   display: flex;
 }

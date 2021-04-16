@@ -20,36 +20,32 @@ export const allStages: Stage[] = [
         end: isEurope() ? '17:10' : '8:10 AM',
         speaker: [
           {
-            name: 'Jason Warner',
-            company: 'GitHub',
-            title: 'CTO',
+            name: 'Johannes',
+            company: '',
+            title: '',
             image: {
-              url: 'jason-warner.jpeg'
+              url: 'johannes.jpeg'
             },
-            bio:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
-            slug: 'max-mustermann',
-            twitter: 'jasoncwarner',
+            bio: '',
+            slug: '',
+            twitter: '',
             linkedin: '',
             github: '',
-            keynote:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            keynote: ''
           },
           {
-            name: 'Jason Warner',
-            company: 'GitHub',
-            title: 'CTO',
+            name: 'Christin',
+            company: '',
+            title: '',
             image: {
-              url: 'jason-warner.jpeg'
+              url: 'christin.jpeg'
             },
-            bio:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost',
-            slug: 'max-mustermann',
-            twitter: 'jasoncwarner',
+            bio: '',
+            slug: '',
+            twitter: '',
             linkedin: '',
             github: '',
-            keynote:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostLorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            keynote: ''
           }
         ]
       },

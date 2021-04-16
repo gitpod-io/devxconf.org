@@ -51,6 +51,8 @@ const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
   />
 );
 
+export const hyphenate = (str: string) => str.split(" ").join('-').toLowerCase()
+
 export default function TalkCard({ talk: { title, speaker, start, end }, showTime }: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
@@ -62,26 +64,20 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
   }, []);
 
-  let firstSpeakerLink;
-
-  if (isSpeakerArray) {
-    firstSpeakerLink = `/speakers/${speakers[0].slug}`;
-  }
 
   return (
     <div key={title} className={styles.talk}>
-      {showTime && <p className={styles.time}>{startAndEndTime || <>&nbsp;</>} {isEurope() ? "CEST" : "PT"}</p>}
-      {/* <Link href={`${isSpeakerArray ? firstSpeakerLink : ''}`}> */}
-      {/* <a
+      {showTime && (
+        <p className={styles.time}>
+          {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
+        </p>
+      )}
+      <Link href={`/speakers/${hyphenate(speaker.name || '')}`}>
+      <a
           className={cn(styles.card, {
             [styles['is-live']]: isTalkLive
           })}
-        > */}
-      <div
-        className={cn(styles.card, {
-          [styles['is-live']]: isTalkLive
-        })}
-      >
+        >
         <div className={styles['card-body']}>
           <h4 title={title} className={styles.title}>
             {title}
@@ -89,18 +85,23 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
           {undefined !== speaker ? (
             <div className={styles.speaker}>
               <div className={styles['avatar-group']}>
-              {/* {<Avatar name={speaker.name} image={speaker.image} />} */}
-
+                {
+                  speaker.length ? (
+                  // eslint-disable-next-line
+                    speaker.map(s => <Avatar name={s.name} image={s.image} />)
+                  ) : (
+                    <Avatar name={speaker.name} image={speaker.image} />
+                  )
+                }
               </div>
               <h4 className={styles['speaker-name']}>
-                {typeof speaker !== 'string' ? speaker.name : speaker}
+                {speaker.length === 2 ? `${speaker[0].name} and ${speaker[1].name}` : speaker.name}
               </h4>
             </div>
           ) : null}
         </div>
-      </div>
-      {/* </a> */}
-      {/* </Link> */}
+      </a>
+      </Link>
     </div>
   );
 }
