@@ -59,7 +59,7 @@ export default function Schedule({ allStages }: Props) {
         <div className={styles.header}>
           <h1 className="heading-secondary">Schedule</h1>
           <p className={styles.intro}>
-            The conference starts April 27th 17:00 CET (GMT+1). Local times shown below.
+            The conference starts April 28th 17:00 CEST. Local times shown below.
           </p>
         </div>
         <div className={styles.container}>
