@@ -530,5 +530,31 @@ export const speakers: Speaker[] = [
         </p>
       </>
     )
+  },
+  {
+    name: 'Mike Nikles',
+    company: 'Gitpod',
+    title: 'Senior Developer Success Engineer',
+    image: {
+      url: 'mike-nikles.png'
+    },
+    bio: <></>,
+    twitter: 'mikenikles',
+    linkedin: 'mikenikles',
+    github: 'mikenikles',
+    abstract: <></>
+  },
+  {
+    name: 'Anton Kosyakov',
+    company: 'Gitpod',
+    title: 'Software Engineer',
+    image: {
+      url: 'anton-kosyakov.jpeg'
+    },
+    bio: <></>,
+    twitter: 'akosyakov',
+    linkedin: 'anton-kosyakov-4093b610',
+    github: 'akosyakov',
+    abstract: <></>
   }
 ];
