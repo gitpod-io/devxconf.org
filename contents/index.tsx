@@ -399,7 +399,7 @@ export const speakers: Speaker[] = [
     image: {
       url: 'yevgeny-pats.jpeg'
     },
-
+    bio: '',
     twitter: 'yevgenypats',
     linkedin: 'yevgeny-pats-5973328b',
     github: 'yevgenypats',
