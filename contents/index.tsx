@@ -301,7 +301,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Kyle Quest',
     company: 'DockerSlim',
-    title: 'Founder & CTO',
+    title: 'Creator of',
     image: {
       url: 'kyle-quest.png'
     },
