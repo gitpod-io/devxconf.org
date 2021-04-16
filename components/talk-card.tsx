@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
- // eslint-disable-next-line
- // @ts-nocheck
+// eslint-disable-next-line
+// @ts-nocheck
 
 import { Image as ImageProps, Talk } from '@lib/types';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
@@ -24,6 +24,8 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
+import { hyphenate } from './speakers-grid';
+import { isEurope } from 'utils/helpers';
 import { speakers } from 'contents';
 import styles from './talk-card.module.css';
 
@@ -41,13 +43,20 @@ const formatDate = (date: string) => {
 };
 
 const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
-  <img loading="lazy" alt={name} className={styles.avatar} src={image.url} title={name} />
+  <img
+    loading="lazy"
+    alt={name}
+    className={styles.avatar}
+    src={`/speakers/${image.url}`}
+    title={name}
+  />
 );
 
-export default function TalkCard({ talk: { title, speaker, start, end }, showTime }: Props) {
+export default function TalkCard({ talk: { title, speaker, start, end, isLinkLess }, showTime }: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
-  const isSpeakerArray = speakers.length > 1;
+  // eslint-disable-next-line
+  const slug = hyphenate(speaker.name || speaker[0].name)
 
   useEffect(() => {
     const now = Date.now();
@@ -55,36 +64,55 @@ export default function TalkCard({ talk: { title, speaker, start, end }, showTim
     setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
   }, []);
 
-  let firstSpeakerLink;
-
-  if (isSpeakerArray) {
-    firstSpeakerLink = `/speakers/${speakers[0].slug}`;
-  }
+  const renderCardBody = () => (
+    <div className={styles['card-body']}>
+      <h4 title={title} className={styles.title}>
+        {title}
+      </h4>
+      {undefined !== speaker ? (
+        <div className={styles.speaker}>
+          <div className={styles['avatar-group']}>
+            {speaker.length ? (
+              // eslint-disable-next-line
+              speaker.map(s => <Avatar name={s.name} image={s.image} />)
+            ) : (
+              <Avatar name={speaker.name} image={speaker.image} />
+            )}
+          </div>
+          <h4 className={styles['speaker-name']}>
+            {speaker.length === 2 ? `${speaker[0].name} and ${speaker[1].name}` : speaker.name}
+          </h4>
+        </div>
+      ) : null}
+    </div>
+  );
 
   return (
     <div key={title} className={styles.talk}>
-      {showTime && <p className={styles.time}>{startAndEndTime || <>&nbsp;</>}</p>}
-      <Link href={`${isSpeakerArray ? firstSpeakerLink : ''}`}>
-        <a
+      {showTime && (
+        <p className={styles.time}>
+          {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
+        </p>
+      )}
+      { isLinkLess ? (
+        <div
           className={cn(styles.card, {
             [styles['is-live']]: isTalkLive
           })}
         >
-          <div className={styles['card-body']}>
-            <h4 title={title} className={styles.title}>
-              {title}
-            </h4>
-            {undefined !== speaker ? (
-              <div className={styles.speaker}>
-                <div className={styles['avatar-group']}>
-                  {<Avatar name={speaker.name} image={speaker.image} />}
-                </div>
-                <h4 className={styles['speaker-name']}>{speaker.name}</h4>
-              </div>
-            ) : null}
-          </div>
-        </a>
-      </Link>
+          {renderCardBody()}
+        </div>
+      ) : (
+        <Link href={`/speakers/${slug}`}>
+          <a
+            className={cn(styles.card, {
+              [styles['is-live']]: isTalkLive
+            })}
+          >
+            {renderCardBody()}
+          </a>
+        </Link>
+      )}
     </div>
   );
 }
