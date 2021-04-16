@@ -49,14 +49,14 @@ export const allStages: Stage[] = [
         isLinkLess: true
       },
       {
-        title: 'Fireside Chat with Johannes',
+        title: 'Fireside chat',
         description: '',
         start: isEurope() ? '17:10' : '8:10 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
         speaker: getSpeakerByName('Erich Gamma')
       },
       {
-        title: 'Development Outage/ Treating your default branch as production',
+        title: 'Development outage/ treating your default branch as production',
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -77,7 +77,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Maël Nison')
       },
       {
-        title: 'Fireside Chat',
+        title: 'Fireside chat',
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
@@ -91,7 +91,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Josh Long')
       },
       {
-        title: 'Why I love incremental delivery and why you should too.',
+        title: 'Why I love incremental delivery and why you should too',
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
@@ -105,14 +105,14 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Yevgeny Pats')
       },
       {
-        title: 'Find friction in your developer experience by user testing with developers.',
+        title: 'Find friction in your developer experience by user testing with developers',
         description: '',
         start: isEurope() ? '20:00' : '11:00 AM',
         end: isEurope() ? '20:20' : '11:20 AM',
         speaker: getSpeakerByName('Ian Jennings')
       },
       {
-        title: 'Gitpod',
+        title: 'Ephemeral Development Environments',
         description: '',
         start: isEurope() ? '20:20' : '11:20 AM',
         end: isEurope() ? '20:40' : '11:40 AM',
@@ -121,7 +121,7 @@ export const allStages: Stage[] = [
         speaker: [getSpeakerByName('Mike Nikles'), getSpeakerByName('Anton Kosyakov')]
       },
       {
-        title: 'The Developer Experience Gap',
+        title: 'The developer experience gap',
         description: '',
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
@@ -137,7 +137,7 @@ export const allStages: Stage[] = [
     stream: '',
     schedule: [
       {
-        title: 'DX, Performance, Security - Choose any three',
+        title: 'DX, performance, security - choose any three',
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
@@ -164,7 +164,7 @@ export const allStages: Stage[] = [
         },
       },
       {
-        title: 'DevX: History of Code Search',
+        title: 'DevX: history of code search',
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -192,7 +192,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Henry Zhu')
       },
       {
-        title: 'Simplifying the Journey of Your Containerized Application from Dev to Production',
+        title: 'Simplifying the journey of your containerized application from dev to production',
         description: '',
         start: isEurope() ? '19:00' : '10:00 AM',
         end: isEurope() ? '19:20' : '10:20 AM',
@@ -220,7 +220,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Nader Dabit')
       },
       {
-        title: '"Testing" in Prod Isn\'t the Only Way: Why Observability Needs Structure',
+        title: '"Testing" in prod Isn\'t the only way: why observability needs structure',
         description: '',
         start: isEurope() ? '20:20' : '11:20 AM',
         end: isEurope() ? '20:40' : '11:40 AM',
