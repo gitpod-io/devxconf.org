@@ -137,25 +137,103 @@ export const allStages: Stage[] = [
     stream: '',
     schedule: [
       {
-        title: 'Example',
+        title: 'DX, Performance, Security - Choose any three',
         description: '',
-        start: '9:00AM',
-        end: '9:30AM',
-        speaker: speakers[0]
+        start: isEurope() ? '17:00' : '8:00 AM',
+        end: isEurope() ? '17:20' : '8:20 AM',
+        speaker: getSpeakerByName("Inian Parameshwaran"),
+        isLinkLess: true
       },
       {
-        title: 'Example',
+        title: 'TBD',
         description: '',
-        start: '9:30AM',
-        end: '10:00AM',
-        speaker: speakers[1]
+        start: isEurope() ? '17:20' : '8:20 AM',
+        end: isEurope() ? '17:40' : '8:40 AM',
+        speaker: {
+          name: 'TBD',
+          company: '',
+          title: '',
+          image: {
+            url: 'placeholder.svg'
+          },
+          bio: '',
+          twitter: '',
+          linkedin: '',
+          github: '',
+          abstract: ''
+        },
       },
       {
-        title: 'Example',
+        title: 'Brave Browser - DevX: History of Code Search',
         description: '',
-        start: '10:00AM',
-        end: '10:30AM',
-        speaker: speakers[0]
+        start: isEurope() ? '17:40' : '8:40 AM',
+        end: isEurope() ? '18:00' : '9:00 AM',
+        speaker: getSpeakerByName('Beyang Liu')
+      },
+      {
+        title: "The story of GitHub1s - speed & familiarity matters",
+        description: '',
+        start: isEurope() ? '18:00' : '9:00 AM',
+        end: isEurope() ? '18:20' : '9:20 AM',
+        speaker: getSpeakerByName('Yihong Cheng')
+      },
+      {
+        title: 'TBD',
+        description: '',
+        start: isEurope() ? '18:20' : '9:20 AM',
+        end: isEurope() ? '18:40' : '9:40 AM',
+        speaker: getSpeakerByName('Shanea Leven')
+      },
+      {
+        title: 'TBD',
+        description: '',
+        start: isEurope() ? '18:40' : '9:40 AM',
+        end: isEurope() ? '19:00' : '10:00 AM',
+        speaker: getSpeakerByName('Henry Zhu')
+      },
+      {
+        title: 'Simplifying the Journey of Your Containerized Application from Dev to Production',
+        description: '',
+        start: isEurope() ? '19:00' : '10:00 AM',
+        end: isEurope() ? '19:20' : '10:20 AM',
+        speaker: getSpeakerByName('Kyle Quest')
+      },
+      {
+        title: 'TBD',
+        description: '',
+        start: isEurope() ? '19:20' : '10:20 AM',
+        end: isEurope() ? '19:40' : '10:40 AM',
+        speaker: getSpeakerByName('Anurag Goel')
+      },
+      {
+        title: 'Make your APIs Developer-friendly',
+        description: '',
+        start: isEurope() ? '19:40' : '10:40 AM',
+        end: isEurope() ? '20:00' : '11:00 AM',
+        speaker: getSpeakerByName('Aidan Cunniffe')
+      },
+      {
+        title: 'How to Build a dApp',
+        description: '',
+        start: isEurope() ? '20:00' : '11:00 AM',
+        end: isEurope() ? '20:20' : '11:20 AM',
+        speaker: getSpeakerByName('Nader Dabit')
+      },
+      {
+        title: '"Testing" in Prod Isn\'t the Only Way: Why Observability Needs Structure',
+        description: '',
+        start: isEurope() ? '20:20' : '11:20 AM',
+        end: isEurope() ? '20:40' : '11:40 AM',
+        speaker: getSpeakerByName('Jean Yang')
+      },
+      {
+        title: 'Fireside Chat about “how to prioritize dev experience in the development process above all else”',
+        description: '',
+        start: isEurope() ? '20:40' : '11:40 AM',
+        end: isEurope() ? '21:00' : '12:00 PM',
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
       }
     ]
   }
