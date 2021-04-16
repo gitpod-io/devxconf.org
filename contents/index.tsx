@@ -538,11 +538,11 @@ export const speakers: Speaker[] = [
     image: {
       url: 'mike-nikles.png'
     },
-    bio: <></>,
+    bio: '',
     twitter: 'mikenikles',
     linkedin: 'mikenikles',
     github: 'mikenikles',
-    abstract: <></>
+    abstract: ''
   },
   {
     name: 'Anton Kosyakov',
@@ -551,10 +551,10 @@ export const speakers: Speaker[] = [
     image: {
       url: 'anton-kosyakov.jpeg'
     },
-    bio: <></>,
+    bio: '',
     twitter: 'akosyakov',
     linkedin: 'anton-kosyakov-4093b610',
     github: 'akosyakov',
-    abstract: <></>
+    abstract: ''
   }
 ];

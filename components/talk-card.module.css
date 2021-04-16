@@ -28,8 +28,8 @@
   color: inherit;
   display: block;
   border-radius: var(--space-2x);
-  min-width: var(--talk-card-width, 270px);
-  max-width: var(--talk-card-width, 270px);
+  min-width: var(--talk-card-width, 250px);
+  max-width: var(--talk-card-width, 260px);
   padding: 1px;
   background-clip: content-box, border-box;
   border: 1px solid var(--grey-2);
