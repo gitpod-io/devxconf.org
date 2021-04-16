@@ -20,7 +20,7 @@ export const allStages: Stage[] = [
         end: isEurope() ? '17:10' : '8:10 AM',
         speaker: [
           {
-            name: 'Johannes',
+            name: 'Johannes Landgraf',
             company: '',
             title: '',
             image: {
@@ -33,7 +33,7 @@ export const allStages: Stage[] = [
             abstract: ''
           },
           {
-            name: 'Christin',
+            name: 'Christin Frohne',
             company: '',
             title: '',
             image: {
@@ -49,7 +49,7 @@ export const allStages: Stage[] = [
         isLinkLess: true
       },
       {
-        title: 'Fireside chat',
+        title: 'The evolution of DevX - An interview with Erich Gamma',
         description: '',
         start: isEurope() ? '17:10' : '8:10 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
