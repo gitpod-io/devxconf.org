@@ -71,8 +71,13 @@ export default function SpeakerSection({ speaker }: Props) {
                 <span>{speaker.company}</span>
               </div>
             </div>
-            <h2 className="heading-quadrary">Bio</h2>
-            <div>{typeof speaker.bio === 'string' ? <p>{speaker.bio}</p> : speaker.bio}</div>
+
+            {speaker.bio ? (
+              <>
+                <h2 className="heading-quadrary">Bio</h2>
+                <div>{typeof speaker.bio === 'string' ? <p>{speaker.bio}</p> : speaker.bio}</div>
+              </>
+            ) : null}
             <h2 className="heading-quadrary">Contact</h2>
             <div className={styles.icons}>
               {speaker.twitter ? (
@@ -106,8 +111,18 @@ export default function SpeakerSection({ speaker }: Props) {
                 </a>
               ) : null}
             </div>
-            <h2 className="heading-quadrary">Abstract</h2>
-              <div>{typeof speaker.abstract === 'string' ? <p>{speaker.abstract}</p> : speaker.abstract}</div>
+            {speaker.abstract ? (
+              <>
+                <h2 className="heading-quadrary">Abstract</h2>
+                <div>
+                  {typeof speaker.abstract === 'string' ? (
+                    <p>{speaker.abstract}</p>
+                  ) : (
+                    speaker.abstract
+                  )}
+                </div>
+              </>
+            ) : null}
           </div>
         </div>
       </div>
