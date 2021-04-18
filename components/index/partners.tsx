@@ -26,6 +26,11 @@ const partners: PartnerProps[] = [
     website: 'https://useoptic.com/'
   },
   {
+    title: 'slim.ai',
+    logo: 'slim-ai.svg',
+    website: 'https://www.slim.ai/'
+  },
+  {
     title: 'CNCF',
     logo: 'cnfc.svg',
     website: 'https://www.cncf.io/'
