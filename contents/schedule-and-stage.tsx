@@ -53,7 +53,21 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:10' : '8:10 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
-        speaker: getSpeakerByName('Erich Gamma')
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [getSpeakerByName('Erich Gamma'), {
+          name: 'Sven Efftinge',
+            company: '',
+            title: '',
+            image: {
+              url: 'sven-efftinge.jpeg'
+            },
+            bio: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            abstract: ''
+        }]
       },
       {
         title: 'Development outage/ treating your default branch as production',
@@ -81,7 +95,21 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
-        speaker: getSpeakerByName('Jason Warner')
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [getSpeakerByName('Jason Warner'), {
+          name: 'Johannes Landgraf',
+          company: '',
+          title: '',
+          image: {
+            url: 'johannes.jpeg'
+          },
+          bio: '',
+          twitter: '',
+          linkedin: '',
+          github: '',
+          abstract: ''
+        }]
       },
       {
         title: 'Cloud native Java',
