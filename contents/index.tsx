@@ -19,7 +19,7 @@ export const speakers: Speaker[] = [
     company: 'Microsoft',
     title: 'VS Code Dev Lead',
     image: {
-      url: 'erich-gamma.png'
+      url: 'erich-gamma.jpg'
     },
     bio: (
       <>
@@ -66,7 +66,7 @@ export const speakers: Speaker[] = [
     company: 'Google',
     title: 'Engineer',
     image: {
-      url: 'rachel-myers.jpeg'
+      url: 'rachel-myers.jpg'
     },
     bio:
       "Rachel's an engineer on Firebase Authentication and Security Rules; she focuses on empowering developers to build secure, best-in-class applications that robustly protect users’ privacy. Before joining Google, Rachel co-founded Opsolutely (YC S16), and was an early engineer at GitHub. Outside of work, she mentors and invests in founders from underrepresented backgrounds, serves on the Board for RailsBridge, and has received awards from Women Who Code. She/Her.",
@@ -309,7 +309,7 @@ export const speakers: Speaker[] = [
     company: 'Serverless @GraphQL',
     title: 'Developer Advocate',
     image: {
-      url: 'nader-dabit.jpeg'
+      url: 'nader-dabit.jpg'
     },
     bio:
       'Nader Dabit is an author and full stack developer currently working with Edge & Node on DeFi, Web3, and The Graph.',
