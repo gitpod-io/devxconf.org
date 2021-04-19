@@ -119,11 +119,11 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Josh Long')
       },
       {
-        title: 'Why I love incremental delivery and why you should too',
+        title: 'Internal DevX Experience is broken… and you should be pissed',
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
-        speaker: getSpeakerByName('Lili Kastilio')
+        speaker: getSpeakerByName('Shanea Leven')
       },
       {
         title: 'TBD',
@@ -206,11 +206,11 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Yihong Cheng')
       },
       {
-        title: 'TBD',
+        title: 'Why I love incremental delivery and why you should too',
         description: '',
         start: isEurope() ? '18:20' : '9:20 AM',
         end: isEurope() ? '18:40' : '9:40 AM',
-        speaker: getSpeakerByName('Shanea Leven')
+        speaker: getSpeakerByName('Lili Kastilio')
       },
       {
         title: 'TBD',
