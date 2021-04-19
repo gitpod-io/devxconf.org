@@ -46,6 +46,9 @@
   outline: none;
   border-color: var(--brand);
 }
+.card--focusless {
+  cursor: initial;
+}
 
 .grid {
   width: 100%;
@@ -79,8 +82,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 160px;
+  height: 170px;
+  min-height: 170px;
   background: var(--black-1);
+  padding: 0 var(--gutter-medium);
   border-radius: 8px;
 }
 

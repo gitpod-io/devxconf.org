@@ -15,10 +15,10 @@
  */
 
 .video {
-  margin: 24px 0;
   height: 100%;
-  max-height: 300px;
+  min-height: 280px;
   width: 100%;
+  margin-top: var(--gutter-small);
 }
 
 .layout {
@@ -74,6 +74,7 @@
 
 .img-container {
   margin-bottom: var(--gutter-small);
+  max-width: 250px;
 }
 
 .sponsor-details {

@@ -57,16 +57,16 @@ export type Link = {
 export type Sponsor = {
   name: string;
   description: string | string[];
-  slug: string;
   website: string;
-  callToAction: string;
-  callToActionLink: string;
-  links: SponsorLink[];
+  callToAction?: string;
+  callToActionLink?: string;
+  links?: SponsorLink[];
   discord: string;
   tier: string;
-  cardImage: JSX.Element;
+  cardImage?: JSX.Element;
   logo: Image;
   youtubeSlug: string;
+  image?: string;
 };
 
 export type SponsorLink = {

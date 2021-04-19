@@ -63,6 +63,10 @@ export const NAVIGATION = [
   {
     name: 'Community',
     route: '/community'
+  },
+  {
+    name: 'Expo',
+    route: '/expo'
   }
 ];
 
