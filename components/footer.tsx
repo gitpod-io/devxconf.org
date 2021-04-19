@@ -27,6 +27,9 @@ export default function Footer() {
         <Link href="/privacy-policy">
           <a className={styles.link}>Privacy Policy</a>
         </Link>
+        <Link href="/diversity">
+          <a className={styles.link}>DE&I</a>
+        </Link>
         <a
           className={styles.link}
           href="https://github.com/gitpod-io/devxconf.org/"
