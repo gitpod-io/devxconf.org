@@ -41,11 +41,11 @@ export const speakers: Speaker[] = [
     image: {
       url: 'henry-zhu.jpeg'
     },
-    bio: '',
+    bio: 'Henry works in open source as a steward of Babel after leaving a job at Adobe. He wants to understand the future of open source through maintenance, funding efforts, and conversations via Hope in Source podcast.',
     twitter: 'left_pad',
     linkedin: '',
     github: 'hzoo',
-    abstract: ''
+    abstract: 'Let us talk about the perspective of open source projects as dependencies. As someone in the middle of it, I just wanted to share some thoughts on taking what is considered largely a hobby and going the donation route. What are maintainers free to work on, what is the lifecycle of a project, what is worth funding anyway?'
   },
   {
     name: 'Rachel Myers',
@@ -376,7 +376,7 @@ export const speakers: Speaker[] = [
     },
     bio:
       'Ian Jennings is the founder of Haxor, a developer experience testing platform. Haxor tests and measures APIs, SDKs, and developer products with on-demand feedback from real developers.',
-    twitter: 'ianjnnngs',
+    twitter: '@ianj3nnings',
     linkedin: 'jnnngs',
     github: 'ianjennings',
     abstract: (
@@ -542,11 +542,11 @@ export const speakers: Speaker[] = [
     image: {
       url: 'mike-nikles.png'
     },
-    bio: '',
+    bio: 'Mike Nikles is a software architect who values developer experience, productivity and team morale. For two decades, Mike has taken ideas from inception to production, at startups or as lead for teams at large companies. He works as a Senior Developer & Customer Success Engineer at Gitpod where he helps teams automate their ephemeral development environments.',
     twitter: 'mikenikles',
     linkedin: 'mikenikles',
     github: 'mikenikles',
-    abstract: ''
+    abstract: 'Local, long-lived development environments are what we are used to. We spend effort to configure and nurture them, which takes time away from more important tasks. In this talk, Mike and Anton introduce the concept of ephemeral development environments, their benefits and how you can get started right away too.'
   },
   {
     name: 'Anton Kosyakov',
@@ -555,10 +555,10 @@ export const speakers: Speaker[] = [
     image: {
       url: 'anton-kosyakov.jpeg'
     },
-    bio: '',
+    bio: 'Anton has been working on Gitpod since its beginning. He is responsible for providing tight and up-to-date integration of VS Code with Gitpod workspaces.',
     twitter: 'akosyakov',
     linkedin: 'anton-kosyakov-4093b610',
     github: 'akosyakov',
-    abstract: ''
+    abstract: 'Local, long-lived development environments are what we are used to. We spend effort to configure and nurture them, which takes time away from more important tasks. In this talk, Mike and Anton introduce the concept of ephemeral development environments, their benefits and how you can get started right away too.'
   },
 ];

@@ -126,7 +126,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Lili Kastilio')
       },
       {
-        title: 'TBD',
+        title: 'Infrastructure security, visibility and cost-optimization',
         description: '',
         start: isEurope() ? '19:40' : '10:40 AM',
         end: isEurope() ? '20:00' : '11:00 AM',
@@ -213,7 +213,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Shanea Leven')
       },
       {
-        title: 'TBD',
+        title: 'Trapped in the open source supply chain',
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
@@ -227,7 +227,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Kyle Quest')
       },
       {
-        title: 'TBD',
+        title: 'DevX in the Internet Era: One Step Forward, Two Steps Back',
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
