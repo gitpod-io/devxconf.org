@@ -17,7 +17,7 @@
 type Props = {
   color: string;
   size: number;
-  className: string;
+  className?: string;
 };
 
 export default function IconGithub({ color = '#111111', size = 22, className }: Props) {
