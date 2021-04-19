@@ -12,7 +12,7 @@ export const speakers: Speaker[] = [
     twitter: 'jasoncwarner',
     linkedin: 'jcwarner',
     github: 'jasoncwarner',
-    abstract: 'Fireside Chat with Johannes'
+    abstract: 'DevX at Heroku and GitHub - An interview with Jason Warner'
   },
   {
     name: 'Erich Gamma',
@@ -33,7 +33,7 @@ export const speakers: Speaker[] = [
     twitter: 'ErichGamma',
     linkedin: 'erichgamma',
     github: 'egamma',
-    abstract: 'Fireside Chat with Sven Efftinge'
+    abstract: 'The evolution of DevX - An interview with Erich Gamma'
   },
   {
     name: 'Henry Zhu',

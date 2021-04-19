@@ -91,7 +91,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Maël Nison')
       },
       {
-        title: 'Fireside chat',
+        title: 'DevX at Heroku and GitHub - An interview with Jason Warner',
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
