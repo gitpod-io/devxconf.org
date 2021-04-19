@@ -24,9 +24,10 @@ export const speakers: Speaker[] = [
     bio: (
       <>
         <p>
-          Erich is a Microsoft Technical Fellow and is currently working on Visual Studio Code. In the past he contributed to Design Patterns, JUnit, Eclipse, and IBM’s Rational Team Concert. He works in Zurich and skis in Andermatt, Switzerland.
+          Erich is a Microsoft Technical Fellow and is currently working on Visual Studio Code. In
+          the past he contributed to Design Patterns, JUnit, Eclipse, and IBM’s Rational Team
+          Concert. He works in Zurich and skis in Andermatt, Switzerland.
         </p>
-    
       </>
     ),
     twitter: 'ErichGamma',
@@ -41,11 +42,24 @@ export const speakers: Speaker[] = [
     image: {
       url: 'henry-zhu.jpeg'
     },
-    bio: 'Henry works in open source as a steward of Babel after leaving a job at Adobe. He wants to understand the future of open source through maintenance, funding efforts, and conversations via Hope in Source podcast.',
+    bio:
+      'Henry works in open source as a steward of Babel after leaving a job at Adobe. He wants to understand the future of open source through maintenance, funding efforts, and conversations via Hope in Source podcast.',
     twitter: 'left_pad',
     linkedin: '',
     github: 'hzoo',
-    abstract: 'Let us talk about the perspective of open source projects as dependencies. As someone in the middle of it, I just wanted to share some thoughts on taking what is considered largely a hobby and going the donation route. What are maintainers free to work on, what is the lifecycle of a project, what is worth funding anyway?'
+    abstract: (
+      <p>
+        <p>
+          <strong>Trapped in the Open Source Supply Chain</strong>
+        </p>
+        <p>
+          Let us talk about the perspective of open source projects as dependencies. As someone in
+          the middle of it, I just wanted to share some thoughts on taking what is considered
+          largely a hobby and going the donation route. What are maintainers free to work on, what
+          is the lifecycle of a project, what is worth funding anyway?
+        </p>
+      </p>
+    )
   },
   {
     name: 'Rachel Myers',
@@ -54,11 +68,26 @@ export const speakers: Speaker[] = [
     image: {
       url: 'rachel-myers.jpeg'
     },
-    bio: '',
+    bio:
+      "Rachel's an engineer on Firebase Authentication and Security Rules; she focuses on empowering developers to build secure, best-in-class applications that robustly protect users’ privacy. Before joining Google, Rachel co-founded Opsolutely (YC S16), and was an early engineer at GitHub. Outside of work, she mentors and invests in founders from underrepresented backgrounds, serves on the Board for RailsBridge, and has received awards from Women Who Code. She/Her.",
     twitter: 'rachelmyers',
     linkedin: 'rachelmyers',
     github: 'rachelmyers',
-    abstract: ''
+    abstract: (
+      <>
+        <p>
+          <strong>Streamlining Firebase Development with local Emulators</strong>
+        </p>
+        <p>
+          People love Firebase for making every read or write just an API call away. What they
+          didn’t love was that, for years, the only development environment where you could reliably
+          test changes was a duplicate Firebase project. It was expensive, prone to mishaps, and
+          required an internet connection at all times. This is the story of building local
+          emulators that let a developer set up a new Firebase dev environment in about a minute,
+          and the mistakes we made along the way.
+        </p>
+      </>
+    )
   },
   {
     name: 'Ellen Chisa',
@@ -80,8 +109,20 @@ export const speakers: Speaker[] = [
     twitter: 'ellenchisa',
     linkedin: 'ellenchisa',
     github: 'ellenchisa',
-    abstract:
-      'Every developer claims they want something that just works, so they can just get back to writing code. But… we love being the latest to use a new tool, take joy in debugging problems no one else can solve, and want to know how things work under the hood. Every tool claims to make our lives faster and easier, but what do we really want out of our developer experience? Maybe we do want it to be hard - just not too hard.'
+    abstract: (
+      <>
+        <p>
+          <strong>Is DevEx not good… because we don't want it to be?</strong>
+        </p>
+        <p>
+          Every developer claims they want something that just works, so they can just get back to
+          writing code. But… we love being the latest to use a new tool, take joy in debugging
+          problems no one else can solve, and want to know how things work under the hood. Every
+          tool claims to make our lives faster and easier, but what do we really want out of our
+          developer experience? Maybe we do want it to be hard - just not too hard.
+        </p>
+      </>
+    )
   },
   {
     name: 'Josh Long',
@@ -128,7 +169,10 @@ export const speakers: Speaker[] = [
     github: 'joshlong',
     abstract: (
       <>
-        <p> <b>Cloud Native Java</b></p>
+        <p>
+          {' '}
+          <strong>Cloud Native Java</strong>
+        </p>
         <p>“It is not necessary to change. Survival is not mandatory.” -W. Edwards Deming</p>
         <p>
           Work takes time to flow through an organization and ultimately be deployed to production
@@ -190,7 +234,10 @@ export const speakers: Speaker[] = [
     github: 'beyang',
     abstract: (
       <>
-        <p> <b>DevX: History of Code Search</b></p>
+        <p>
+          {' '}
+          <strong>DevX: History of Code Search</strong>
+        </p>
         <p>
           What is code search? Code search is an important dev tool for some of the largest and most
           highly respected companies and open-source organizations, but many developers have never
@@ -213,8 +260,20 @@ export const speakers: Speaker[] = [
     twitter: 'arcanis',
     linkedin: '',
     github: 'arcanis',
-    abstract:
-      'Monorepos are back and more popular than ever. In this talk, we’ll dive into the problems they solve, the challenges they create, and how they stack up to the alternatives. By the end of this presentation, you’ll have a better idea why so many communities find them appealing, and how to decide if monorepos are a good fit for your current and future projects.'
+    abstract: (
+      <>
+        <p>
+          <strong>Monorepos, are they right for you?</strong>
+        </p>
+        <p>
+          Monorepos are back and more popular than ever. In this talk, we’ll dive into the problems
+          they solve, the challenges they create, and how they stack up to the alternatives. By the
+          end of this presentation, you’ll have a better idea why so many communities find them
+          appealing, and how to decide if monorepos are a good fit for your current and future
+          projects.
+        </p>
+      </>
+    )
   },
   {
     name: 'Lili Kastilio',
@@ -230,7 +289,9 @@ export const speakers: Speaker[] = [
     github: 'lili2311',
     abstract: (
       <>
-        <p><b>Why I love incremental delivery and why you should too.</b></p>
+        <p>
+          <strong>Why I love incremental delivery and why you should too.</strong>
+        </p>
         <p>
           In order to innovate and deliver new products that your users will love you often have to
           design & build very complex features. You may even be the first doing that in that
@@ -257,7 +318,9 @@ export const speakers: Speaker[] = [
     github: 'dabit3',
     abstract: (
       <>
-        <p><b>How to build a dApp</b></p>
+        <p>
+          <strong>How to build a dApp</strong>
+        </p>
         <p>
           Decentralized apps (dApps) are continuing to gain momentum in the industry. Blockchain
           developers are also now some of the highest paid in the entire industry. Building
@@ -284,11 +347,31 @@ export const speakers: Speaker[] = [
     image: {
       url: 'anurag-goel.jpeg'
     },
-    bio: '',
+    bio: (
+      <p>
+        Anurag Goel is the founder and CEO of Render (
+        <a href="https://render.com" target="_blank">
+          https://render.com
+        </a>
+        ), a modern cloud built for developers. He was previously the 8th employee and the Head of
+        Risk at Stripe.
+      </p>
+    ),
     twitter: 'anuraggoel',
     linkedin: 'anuragoel',
     github: 'anurag',
-    abstract: ''
+    abstract: (
+      <>
+        <p>
+          <strong>DevX in the Internet Era: One Step Forward, Two Steps Back</strong>
+        </p>
+        <p>
+          Building and hosting applications has both evolved and devolved since the dawn of the
+          Internet. We'll run through the history of DX, from CGI hosting in the nineties to what we
+          can look forward to in the new decade.
+        </p>
+      </>
+    )
   },
   {
     name: 'Yihong Cheng',
@@ -301,8 +384,19 @@ export const speakers: Speaker[] = [
     twitter: 'xcv58',
     linkedin: 'xcv58',
     github: 'xcv58',
-    abstract:
-      'Almost everyone knows VS Code and probably has tried it. With GitHub1s, you can use VS Code as a web app to browse open source codes without cloning the repo. And even switch to a PR or a tag to see the changed files side by side. We will share how GitHub1s achieves this and what open source community means to us.'
+    abstract: (
+      <>
+        <p>
+          <strong>The story of GitHub1s - speed & familiarity matters</strong>
+        </p>
+        <p>
+          Almost everyone knows VS Code and probably has tried it. With GitHub1s, you can use VS
+          Code as a web app to browse open source codes without cloning the repo. And even switch to
+          a PR or a tag to see the changed files side by side. We will share how GitHub1s achieves
+          this and what open source community means to us.
+        </p>
+      </>
+    )
   },
   {
     name: 'Kyle Quest',
@@ -316,8 +410,7 @@ export const speakers: Speaker[] = [
     twitter: 'kcqon',
     linkedin: 'kylequest',
     github: 'kcq',
-    abstract:
-      'Simplifying the Journey of Your Containerized Application from Dev to Production'
+    abstract: 'Simplifying the Journey of Your Containerized Application from Dev to Production'
   },
   {
     name: 'Aidan Cunniffe',
@@ -333,7 +426,10 @@ export const speakers: Speaker[] = [
     github: 'acunniffe',
     abstract: (
       <>
-        <p> <b>Make your APIs Developer-friendly</b></p>
+        <p>
+          {' '}
+          <strong>Make your APIs Developer-friendly</strong>
+        </p>
         <p>
           APIs are not only ‘programming interfaces’ they’re how teams split work, collaborate with
           one another, share capabilities, and make awesome software. Most APIs are internal and
@@ -361,8 +457,9 @@ export const speakers: Speaker[] = [
     abstract: (
       <>
         <p>
-          <b>How to prioritize dev experience in the development process above all
-          else</b>
+          <strong>
+            How to prioritize dev experience in the development process above all else
+          </strong>
         </p>
       </>
     )
@@ -381,7 +478,11 @@ export const speakers: Speaker[] = [
     github: 'ianjennings',
     abstract: (
       <>
-        <p><b>Find friction in your developer experience by user testing with developers.</b></p>
+        <p>
+          <strong>
+            Find friction in your developer experience by user testing with developers.
+          </strong>
+        </p>
 
         <p>
           Do you know what's stopping developers from getting started with your product? Developer
@@ -419,7 +520,10 @@ export const speakers: Speaker[] = [
     github: 'inian',
     abstract: (
       <>
-        <p> <b>DX, Performance, Security - Choose any three</b></p>
+        <p>
+          {' '}
+          <strong>DX, Performance, Security - Choose any three</strong>
+        </p>
 
         <p>
           Balancing Developer Experience with other concerns like performance and security is not
@@ -453,7 +557,10 @@ export const speakers: Speaker[] = [
     github: 'sogrady',
     abstract: (
       <>
-        <p> <b>The developer experience gap</b></p>
+        <p>
+          {' '}
+          <strong>The developer experience gap</strong>
+        </p>
       </>
     )
   },
@@ -472,8 +579,9 @@ export const speakers: Speaker[] = [
     abstract: (
       <>
         <p>
-          <b>How to prioritize dev experience in the development process
-          above all else</b>
+          <strong>
+            How to prioritize dev experience in the development process above all else
+          </strong>
         </p>
       </>
     )
@@ -494,7 +602,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Jean Yang',
     company: 'Akita Software',
-    title: 'Founder + CEO',
+    title: 'Founder and CEO',
     image: {
       url: 'jean-yang.jpeg'
     },
@@ -521,7 +629,9 @@ export const speakers: Speaker[] = [
     github: 'jeanqasaur',
     abstract: (
       <>
-        <p><b>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</b></p>
+        <p>
+          <strong>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</strong>
+        </p>
         <p>
           The rise of APIs and service-oriented architectures has made it easier than ever before to
           build complex web applications. But the developer tools we use were made for a simpler
@@ -542,11 +652,24 @@ export const speakers: Speaker[] = [
     image: {
       url: 'mike-nikles.png'
     },
-    bio: 'Mike Nikles is a software architect who values developer experience, productivity and team morale. For two decades, Mike has taken ideas from inception to production, at startups or as lead for teams at large companies. He works as a Senior Developer & Customer Success Engineer at Gitpod where he helps teams automate their ephemeral development environments.',
+    bio:
+      'Mike Nikles is a software architect who values developer experience, productivity and team morale. For two decades, Mike has taken ideas from inception to production, at startups or as lead for teams at large companies. He works as a Senior Developer & Customer Success Engineer at Gitpod where he helps teams automate their ephemeral development environments.',
     twitter: 'mikenikles',
     linkedin: 'mikenikles',
     github: 'mikenikles',
-    abstract: 'Local, long-lived development environments are what we are used to. We spend effort to configure and nurture them, which takes time away from more important tasks. In this talk, Mike and Anton introduce the concept of ephemeral development environments, their benefits and how you can get started right away too.'
+    abstract: (
+      <>
+        <p>
+          <strong>Ephemeral Development Environments</strong>
+        </p>
+        <p>
+          Local, long-lived development environments are what we are used to. We spend effort to
+          configure and nurture them, which takes time away from more important tasks. In this talk,
+          Mike and Anton introduce the concept of ephemeral development environments, their benefits
+          and how you can get started right away too.
+        </p>
+      </>
+    )
   },
   {
     name: 'Anton Kosyakov',
@@ -555,10 +678,23 @@ export const speakers: Speaker[] = [
     image: {
       url: 'anton-kosyakov.jpeg'
     },
-    bio: 'Anton has been working on Gitpod since its beginning. He is responsible for providing tight and up-to-date integration of VS Code with Gitpod workspaces.',
+    bio:
+      'Anton has been working on Gitpod since its beginning. He is responsible for providing tight and up-to-date integration of VS Code with Gitpod workspaces.',
     twitter: 'akosyakov',
     linkedin: 'anton-kosyakov-4093b610',
     github: 'akosyakov',
-    abstract: 'Local, long-lived development environments are what we are used to. We spend effort to configure and nurture them, which takes time away from more important tasks. In this talk, Mike and Anton introduce the concept of ephemeral development environments, their benefits and how you can get started right away too.'
-  },
+    abstract: (
+      <>
+        <p>
+          <strong>Ephemeral Development Environments</strong>
+        </p>
+        <p>
+          Local, long-lived development environments are what we are used to. We spend effort to
+          configure and nurture them, which takes time away from more important tasks. In this talk,
+          Mike and Anton introduce the concept of ephemeral development environments, their benefits
+          and how you can get started right away too.
+        </p>
+      </>
+    )
+  }
 ];

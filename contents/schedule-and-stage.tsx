@@ -173,23 +173,11 @@ export const allStages: Stage[] = [
         isLinkLess: true
       },
       {
-        title: 'TBD',
+        title: 'Streamlining Firebase Development with local Emulators',
         description: '',
         start: isEurope() ? '17:20' : '8:20 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
-        speaker: {
-          name: 'TBD',
-          company: '',
-          title: '',
-          image: {
-            url: 'placeholder.svg'
-          },
-          bio: '',
-          twitter: '',
-          linkedin: '',
-          github: '',
-          abstract: ''
-        },
+        speaker: getSpeakerByName("Rachel Myers"),
       },
       {
         title: 'DevX: history of code search',
