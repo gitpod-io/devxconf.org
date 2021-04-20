@@ -154,6 +154,13 @@ export const allStages: Stage[] = [
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
         speaker: getSpeakerByName("Stephen O'Grady")
+      },
+      {
+        title: 'Building a K8s Operator for a Distributed Database',
+        description: '',
+        start: isEurope() ? '21:00' : '12:00 PM',
+        end: isEurope() ? '21:20' : '12:20 PM',
+        speaker: getSpeakerByName("Natalie")
       }
     ]
   },
