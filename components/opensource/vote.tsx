@@ -8,7 +8,8 @@ const Vote = () => (
       <div className={styles.wrapper}>
         <h2 className="heading-secondary">Vote for your favourite open-source project</h2>
         <p>
-          And we’ll fund the winning project with a <span className={styles.imp}>$5k donation.</span>
+          And we’ll fund the winning project with a{' '}
+          <span className={styles.imp}>$5k donation.</span>
         </p>
       </div>
     </div>
