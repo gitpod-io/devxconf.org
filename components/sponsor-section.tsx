@@ -48,7 +48,7 @@ export default function SponsorSection({ sponsor }: Props) {
         <div className={styles.container}>
           <div className={styles['img-container']}>
             {!sponsor.cardImage ? (
-              <a href={sponsor.website} target="_blank">
+              <a href={sponsor.callToActionLink} target="_blank">
                 <img src={sponsor.logo.url} alt={sponsor.name} />
               </a>
             ) : null}
