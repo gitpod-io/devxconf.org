@@ -65,7 +65,12 @@
   width: 100%;
 }
 
-@media(min-width: 768px) {
+.talks > div {
+  display: flex;
+  margin-bottom: var(--gutter-large);
+}
+
+@media(min-width: 620px) {
   .talks > div {
     margin-right: var(--gutter-normal);
   }

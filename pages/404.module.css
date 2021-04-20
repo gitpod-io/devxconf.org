@@ -1,0 +1,13 @@
+.wrapper {
+    text-align: center;
+}
+
+.wrapper p {
+    margin-bottom: var(--gutter-normal);
+}
+
+@media(max-width: 768px) {
+    .wrapper p {
+        margin-bottom: var(--gutter-small);
+    }
+}

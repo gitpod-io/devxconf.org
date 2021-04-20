@@ -18,30 +18,29 @@ import Link from 'next/link';
 import styles from './footer.module.css';
 
 export default function Footer() {
-    return (
-        <div className="row">
-            <footer className={styles.footer}>
-                <Link href="privacy-policy">
-                    <a
-                        className={styles.link}
-                    >
-                        Privacy Policy
-                    </a>
-                </Link>
-                <a
-                    className={styles.link}
-                    href="https://github.com/gitpod-io/devxconf.org/" target="_blank"
-                >
-                    Source Code
-                </a>
-                <Link
-                    href="/code-of-conduct"
-                >
-                    <a className={styles.link}>
-                        Code of Conduct
-                    </a>
-                </Link>
-            </footer>
-        </div>
-    );
+  return (
+    <div className="row">
+      <footer className={styles.footer}>
+        <Link href="/imprint">
+          <a className={styles.link}>Imprint</a>
+        </Link>
+        <Link href="/privacy-policy">
+          <a className={styles.link}>Privacy Policy</a>
+        </Link>
+        <Link href="/diversity">
+          <a className={styles.link}>DE&I</a>
+        </Link>
+        <a
+          className={styles.link}
+          href="https://github.com/gitpod-io/devxconf.org/"
+          target="_blank"
+        >
+          Source Code
+        </a>
+        <Link href="/code-of-conduct">
+          <a className={styles.link}>Code of Conduct</a>
+        </Link>
+      </footer>
+    </div>
+  );
 }

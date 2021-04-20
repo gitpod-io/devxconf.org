@@ -8,17 +8,13 @@
 }
 
 .sponsors {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     max-width: 1000px;
     margin: var(--gutter-large) auto;
     overflow: hidden;
-}
-
-.btn {
-    margin-top: var(--gutter-medium);
 }
 
 .footnote {

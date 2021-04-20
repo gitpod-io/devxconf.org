@@ -219,17 +219,29 @@ export function renderAlreadyRegistered() {
       <meta charset="utf-8" />
       <title>Authorize application</title>
       <style>
+        @font-face {
+          font-family: 'ABCDiatype';
+          font-style: normal;
+          font-weight: 400;
+          src: url('https://devxconf.org/font/ABCDiatype-Regular.woff') format('woff');
+        }
+  
+        @font-face {
+          font-family: 'ABCDiatype';
+          font-style: bold;
+          font-weight: 600;
+          src: url('https://devxconf.org/font/ABCDiatype-Bold.woff') format('woff');
+        }
+  
         html {
           box-sizing: border-box;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-            'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
-            'Helvetica Neue', sans-serif;
-          background: #000;
+          font-family: 'ABCDiatype', sans-serif;
+          background: #161616;
         }
-
+  
         body {
           margin: 0;
-          color: red;
+          color: #fff;
           min-height: 100vh;
           padding: 60px 20px;
           display: flex;
@@ -238,16 +250,20 @@ export function renderAlreadyRegistered() {
           flex-direction: column;
           justify-content: center;
         }
-
+  
+        h1, p {
+          z-index: 1;
+        }
+  
         h1 {
-          font-size: 64px;
+          font-size: 54px;
           letter-spacing: -0.05em;
           line-height: 1;
-          margin: 20px 0;
+          margin-bottom: 28px;
           max-width: 600px;
           text-align: center;
         }
-
+  
         p {
           font-size: 24px;
           line-height: 1.4;
@@ -255,7 +271,17 @@ export function renderAlreadyRegistered() {
           text-align: center;
           max-width: 400px;
         }
-
+  
+        a {
+          color: #FFAE33;
+        }
+  
+        img {
+            position: absolute;
+            top: 10%;
+            height: 300px;
+        }
+  
         *,
         *:before,
         *:after {
@@ -264,9 +290,14 @@ export function renderAlreadyRegistered() {
       </style>
     </head>
     <body>
+      <img src="https://devxconf.org/patterns/pattern-circle.svg" aria-hidden="true" />
       <h1>You have already registered.</h1>
-      <p>Please follow us <a href="https://twitter.com/devxconf" target="_blank">on Twitter</a> to stay updated..</p>
+      <p>
+        Please follow us <a href="https://twitter.com/devxconf" target="_blank">on Twitter</a> to stay
+        updated..
+      </p>
     </body>
   </html>
+  
   `;
 }

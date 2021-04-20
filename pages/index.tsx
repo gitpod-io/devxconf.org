@@ -15,7 +15,7 @@
  */
 
 import ConfContent from '@components/pages/index';
-import { META_DESCRIPTION } from '@lib/constants';
+import { SITE_NAME, META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import { SkipNavContent } from '@reach/skip-nav';
 import { useRouter } from 'next/router';
@@ -23,7 +23,7 @@ import { useRouter } from 'next/router';
 export default function Conf() {
   const { query } = useRouter();
   const meta = {
-    title: 'Devx Conf',
+    title: SITE_NAME,
     description: META_DESCRIPTION
   };
   const ticketNumber = query.ticketNumber?.toString();

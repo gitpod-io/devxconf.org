@@ -20,6 +20,7 @@ import Layout from './layout';
 import { PatternHalfCircle } from '@components/patterns';
 import TalkCard from './talk-card';
 import cn from 'classnames';
+import { isEurope } from 'utils/helpers';
 import styles from './schedule.module.css';
 
 function StageRow({ stage }: { stage: Stage }) {
@@ -59,7 +60,7 @@ export default function Schedule({ allStages }: Props) {
         <div className={styles.header}>
           <h1 className="heading-secondary">Schedule</h1>
           <p className={styles.intro}>
-            The conference starts April 27th 17:00 CET (GMT+1). Local times shown below.
+            The conference starts April 28th {isEurope() ? "17:00 CEST" : "8:00 PT"}. Local times shown below.
           </p>
         </div>
         <div className={styles.container}>

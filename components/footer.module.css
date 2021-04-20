@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-.footer {
+ .footer {
   width: 100%;
   margin: var(--gutter-medium) auto;
   font-size: var(--footnote);
@@ -22,7 +22,7 @@
 }
 
 .link {
-  color: var(--grey-2);
+  color: var(--grey);
 }
 
 .link:not(:last-child) {

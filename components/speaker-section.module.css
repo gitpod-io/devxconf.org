@@ -42,6 +42,8 @@
   width: 265px;
   border-radius: 50%;
   transform: translateY(6px);
+  filter: grayscale(100%);
+  object-fit: cover;
 }
 
 .text-content {
