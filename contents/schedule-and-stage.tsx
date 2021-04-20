@@ -70,7 +70,7 @@ export const allStages: Stage[] = [
         }]
       },
       {
-        title: 'Development outage/ treating your default branch as production',
+        title: 'Using Observability to improve the Developer Experience',
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -215,7 +215,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Kyle Quest')
       },
       {
-        title: 'DevX in the Internet Era: One Step Forward, Two Steps Back',
+        title: 'DevX in the Internet Age: One Step Forward, Two Steps Back',
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
