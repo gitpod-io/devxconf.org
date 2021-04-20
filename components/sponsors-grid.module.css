@@ -90,8 +90,8 @@
 }
 
 .image {
-  max-width: 150px;
-  max-height: 80px;
+  max-height: 90px;
+  width: 100%;
   object-fit: contain;
 }
 

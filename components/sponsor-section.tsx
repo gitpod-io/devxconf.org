@@ -47,7 +47,11 @@ export default function SponsorSection({ sponsor }: Props) {
         </div>
         <div className={styles.container}>
           <div className={styles['img-container']}>
-            {!sponsor.cardImage ? <img src={sponsor.logo.url} alt={sponsor.name} /> : null}
+            {!sponsor.cardImage ? (
+              <a href={sponsor.website} target="_blank">
+                <img src={sponsor.logo.url} alt={sponsor.name} />
+              </a>
+            ) : null}
           </div>
           {typeof sponsor.description === 'string' ? (
             <p className={styles.description}>{sponsor.description}</p>
@@ -76,22 +80,28 @@ export default function SponsorSection({ sponsor }: Props) {
               Chat on Discord
             </a>
           </div>
-          <img className={styles.pattern} src="/patterns/horizontal-line.svg" aria-hidden={true} />
           {sponsor.links ? (
-            <div className={styles.resources}>
-              <h2 className={cn('heading-tertiary', styles['resources-title'])}>Resources</h2>
-              {sponsor.links.map(link => (
-                <a
-                  key={link.url}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn btn--secondary"
-                >
-                  <span className={styles.truncate}>{link.text}</span>
-                </a>
-              ))}
-            </div>
+            <>
+              <img
+                className={styles.pattern}
+                src="/patterns/horizontal-line.svg"
+                aria-hidden={true}
+              />
+              <div className={styles.resources}>
+                <h2 className={cn('heading-tertiary', styles['resources-title'])}>Resources</h2>
+                {sponsor.links.map(link => (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn--secondary"
+                  >
+                    <span className={styles.truncate}>{link.text}</span>
+                  </a>
+                ))}
+              </div>
+            </>
           ) : null}
         </div>
       </div>

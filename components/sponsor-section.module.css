@@ -77,6 +77,10 @@
   max-width: 250px;
 }
 
+.img-container img {
+  width: 100%;
+}
+
 .sponsor-details {
   margin-top: var(--gutter-medium);
   padding: var(--space-4x) 0 24px 0;
