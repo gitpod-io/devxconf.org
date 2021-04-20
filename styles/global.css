@@ -521,3 +521,15 @@ input:focus {
 .sponsor-card:hover path {
   fill: var(--white);
 }
+
+
+/* ----- Speakers ----- */
+
+.speaker__contact-icon  path{
+  transition: all .2s;
+}
+
+.speaker__contact-icon:hover path,
+.speaker__contact-icon:focus path {
+  fill: var(--white);
+}
