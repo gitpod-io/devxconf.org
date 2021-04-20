@@ -218,8 +218,12 @@ export const speakers: Speaker[] = [
     twitter: 'shanealeven',
     linkedin: 'shaneak',
     github: '',
-    abstract:
-      "Our day to day developer experience is filled with practices that are inefficient, panic ridden and just down-right an utter slog. Let's talk about how we can create a more delightful daily experience by shifting our perspective from just in time understanding to continuous code understanding."
+    abstract: <>
+      <p><strong>Internal DevX Experience is broken… and you should be pissed</strong></p>
+      <p>
+      Our day to day developer experience is filled with practices that are inefficient, panic ridden and just down-right an utter slog. Let's talk about how we can create a more delightful daily experience by shifting our perspective from just in time understanding to continuous code understanding.
+      </p>
+    </>
   },
   {
     name: 'Beyang Liu',
