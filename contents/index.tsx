@@ -218,7 +218,12 @@ export const speakers: Speaker[] = [
     twitter: 'shanealeven',
     linkedin: 'shaneak',
     github: '',
-    abstract: ''
+    abstract: <>
+      <p><strong>Internal DevX Experience is broken… and you should be pissed</strong></p>
+      <p>
+      Our day to day developer experience is filled with practices that are inefficient, panic ridden and just down-right an utter slog. Let's talk about how we can create a more delightful daily experience by shifting our perspective from just in time understanding to continuous code understanding.
+      </p>
+    </>
   },
   {
     name: 'Beyang Liu',
@@ -363,7 +368,7 @@ export const speakers: Speaker[] = [
     abstract: (
       <>
         <p>
-          <strong>DevX in the Internet Era: One Step Forward, Two Steps Back</strong>
+          <strong>DevX in the Internet Age: One Step Forward, Two Steps Back</strong>
         </p>
         <p>
           Building and hosting applications has both evolved and devolved since the dawn of the
@@ -593,11 +598,45 @@ export const speakers: Speaker[] = [
     image: {
       url: 'bojra-burgos.jpeg'
     },
-    bio: '',
+    bio: (
+      <p>
+        Borja Burgos is a DevEx-obsessed entrepreneur and technologist. In 2013 he co-founded Tutum
+        – a platform for developers to build and run their Docker applications. After Tutum's
+        acquisition by Docker in 2015, Borja relentlessly continued working on new tools and
+        services to delight developers, from their local desktops to their cloud environments.
+        Disappointed with the complexity, and lack of visibility, in modern-day testing and
+        continuous integration workflows he left Docker to co-founded Undefined Labs, makers of{' '}
+        <a href="https://scope.dev/" target="_blank">
+          Scope
+        </a>{' '}
+        and{' '}
+        <a href="https://ctr.run/" target="_blank">
+          ctr.run
+        </a>
+        . Now as part of Datadog, Borja and the rest of the{' '}
+        <a href="https://undefinedlabs.com/" target="_blank">
+          Undefined Labs
+        </a>{' '}
+        team are building the next generation of developer-centric observability tools!
+      </p>
+    ),
     twitter: 'borja_burgos',
     linkedin: 'borjaburgos',
     github: 'borjaburgos',
-    abstract: ''
+    abstract: (
+      <>
+        <p>
+          <strong>Using Observability to improve the Developer Experience</strong>
+        </p>
+        <p>
+          Observability is often associated with production and live environments, but it shouldn't
+          be! In this talk we'll explore innovative ways in which modern observability tools and
+          best practices can be leveraged during development to: improve developer productivity,
+          identify regressions earlier in the SDLC, and increase the performance and reliability of
+          our CI/CD workflows.
+        </p>
+      </>
+    )
   },
   {
     name: 'Jean Yang',
