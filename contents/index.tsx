@@ -218,12 +218,19 @@ export const speakers: Speaker[] = [
     twitter: 'shanealeven',
     linkedin: 'shaneak',
     github: '',
-    abstract: <>
-      <p><strong>Internal DevX Experience is broken… and you should be pissed</strong></p>
-      <p>
-      Our day to day developer experience is filled with practices that are inefficient, panic ridden and just down-right an utter slog. Let's talk about how we can create a more delightful daily experience by shifting our perspective from just in time understanding to continuous code understanding.
-      </p>
-    </>
+    abstract: (
+      <>
+        <p>
+          <strong>Internal DevX Experience is broken… and you should be pissed</strong>
+        </p>
+        <p>
+          Our day to day developer experience is filled with practices that are inefficient, panic
+          ridden and just down-right an utter slog. Let's talk about how we can create a more
+          delightful daily experience by shifting our perspective from just in time understanding to
+          continuous code understanding.
+        </p>
+      </>
+    )
   },
   {
     name: 'Beyang Liu',
@@ -445,6 +452,47 @@ export const speakers: Speaker[] = [
           special guests. If you produce, consume or live with an API — you should definitely make
           time for this talk!
         </p>
+      </>
+    )
+  },
+  {
+    name: 'Natalie Pistunovich',
+    company: 'Aerospike',
+    title: 'Lead Developer Advocate',
+    image: {
+      url: 'natalie.png'
+    },
+    bio:
+      "Natalie is a learner, a Google Developer Expert for Go, an OpenAI Developer Ambassador, a public speaker and a sailor. When she's not working on robust systems at Aerospike, she is organizing the conferences: GopherCon Europe, Cloud Nein, HeyAI and BSides Berlin, and the Berlin chapters of the Go and Women Techmakers user groups. Previously, she was an Engineering Manager, Software and Hardware Engineer, and a Co-Founder of a mobile start-up. In her free time, she is wondering if there is life on Mars.",
+    twitter: 'NataliePis',
+    linkedin: 'nataliepistunovich',
+    github: 'Pisush',
+    abstract: (
+      <>
+        <p>
+          <strong>Building a K8s Operator for a Distributed Database</strong>
+        </p>
+        <p>
+          How did we build a k8s operator that allows 100% up time for a high availability high
+          workload database? Operating a distributed high load, high throughput database in the
+          cloud comes with several interesting challenges. In order to manage real-time serving of
+          mission critical workloads at 100% availability we developed a Kubernetes operator that
+          handles the operational complexities.
+        </p>
+        <p>We needed to handle the following requirements:</p>
+        <ul>
+          <li>Apply live patches</li>
+          <li>Replace live cluster with tens of nodes</li>
+          <li>Handle degraded/crashed nodes</li>
+        </ul>
+        <p>Under these conditions:</p>
+        <ul>
+          <li>High Availability</li>
+          <li>remain 100% online with no down time</li>
+          <li>Operate under very high workloads and traffic</li>
+          <li>Manage replicated records across different hardware failure groups (rack awareness)</li>
+        </ul>
+        <p>Due to its stateful nature and the type of workloads that are usually handled, cluster management and recovery are non-trivial. We are using the Operators API to handle that complexity and control the clusters from within Kubernetes. In this talk we’ll cover the steps we took to plan and execute and the challenges we faced and share the best practices.</p>
       </>
     )
   },

@@ -63,6 +63,10 @@
   margin: var(--gutter-medium) 0 var(--gutter-small);
 }
 
+.abstract > * {
+  margin-bottom: var(--gutter-normal);
+}
+
 .title {
   color: var(--grey);
   margin-bottom: var(--gutter-medium);
@@ -111,6 +115,9 @@
   .title {
     color: var(--grey);
     margin-bottom: var(--gutter-medium-mobile);
+  }
+  .abstract > * {
+    margin-bottom: var(--gutter-small);
   }
 }
 
