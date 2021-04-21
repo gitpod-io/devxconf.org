@@ -47,9 +47,13 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
 
   return sponsor.tier !== 'start-up' ? (
     <Link key={sponsor.name} href={`/expo/${hyphenate(sponsor.name)}`}>
-      <a role="button" tabIndex={0} className={cn(styles.card, 'sponsor-card')}>{renderBody()}</a>
+      <a role="button" tabIndex={0} className={cn(styles.card, 'sponsor-card')}>
+        {renderBody()}
+      </a>
     </Link>
-  ) : <div className={cn(styles.card, styles["card--focusless"],'sponsor-card',)}>{renderBody()}</div>;
+  ) : (
+    <a href={sponsor.website} target="_blank" className={cn(styles.card, 'sponsor-card')}>{renderBody()}</a>
+  );
 }
 
 type Props = {

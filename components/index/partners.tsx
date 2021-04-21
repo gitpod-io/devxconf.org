@@ -21,7 +21,7 @@ const partners: PartnerProps[] = [
     website: 'https://raycast.com/'
   },
   {
-    title: 'Optic',
+    title: 'Useoptic',
     logo: 'useoptic.svg',
     website: 'https://useoptic.com/'
   },

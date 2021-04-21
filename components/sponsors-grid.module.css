@@ -46,9 +46,6 @@
   outline: none;
   border-color: var(--brand);
 }
-.card--focusless {
-  cursor: initial;
-}
 
 .grid {
   width: 100%;
