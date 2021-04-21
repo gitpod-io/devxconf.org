@@ -90,6 +90,52 @@ export const speakers: Speaker[] = [
     )
   },
   {
+    name: 'Jean Yang',
+    company: 'Akita Software',
+    title: 'Founder and CEO',
+    image: {
+      url: 'jean-yang.jpeg'
+    },
+    bio: (
+      <>
+        <p>
+          Jean Yang (
+          <a href="https://twitter.com/jeanqasaur" target="_blank">
+            @jeanqasaur
+          </a>
+          ) is the founder and CEO of{' '}
+          <a href="https://www.akitasoftware.com/" target="_blank">
+            Akita Software
+          </a>
+          , a developer tools company that is bringing structure to observability. Previously, Jean
+          was a professor of Computer Science at Carnegie Mellon University. Jean has a PhD from
+          MIT, holds software tools patents from work at Microsoft Research and Facebook, and was
+          selected as one of the MIT Technology Review's 35 Innovators Under 35 in 2016.
+        </p>
+      </>
+    ),
+    twitter: 'jeanqasaur',
+    linkedin: 'jean-yang-96575030',
+    github: 'jeanqasaur',
+    abstract: (
+      <>
+        <p>
+          <strong>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</strong>
+        </p>
+        <p>
+          The rise of APIs and service-oriented architectures has made it easier than ever before to
+          build complex web applications. But the developer tools we use were made for a simpler
+          time, one where developers had more control over all of the software they ran. Today, web
+          applications contain many heterogeneous components, all talking to each other across the
+          network, many of them SaaS apps. "Testing" in production has become the only way to make
+          sense. I'll talk about why we need to update our idea of testing, how we can do better at
+          understanding prod, and how bringing structure to observability is the way forward for
+          both.
+        </p>
+      </>
+    )
+  },
+  {
     name: 'Ellen Chisa',
     company: 'Boldstart',
     title: 'Founder In Residence',
@@ -682,52 +728,6 @@ export const speakers: Speaker[] = [
           best practices can be leveraged during development to: improve developer productivity,
           identify regressions earlier in the SDLC, and increase the performance and reliability of
           our CI/CD workflows.
-        </p>
-      </>
-    )
-  },
-  {
-    name: 'Jean Yang',
-    company: 'Akita Software',
-    title: 'Founder and CEO',
-    image: {
-      url: 'jean-yang.jpeg'
-    },
-    bio: (
-      <>
-        <p>
-          Jean Yang (
-          <a href="https://twitter.com/jeanqasaur" target="_blank">
-            @jeanqasaur
-          </a>
-          ) is the founder and CEO of{' '}
-          <a href="https://www.akitasoftware.com/" target="_blank">
-            Akita Software
-          </a>
-          , a developer tools company that is bringing structure to observability. Previously, Jean
-          was a professor of Computer Science at Carnegie Mellon University. Jean has a PhD from
-          MIT, holds software tools patents from work at Microsoft Research and Facebook, and was
-          selected as one of the MIT Technology Review's 35 Innovators Under 35 in 2016.
-        </p>
-      </>
-    ),
-    twitter: 'jeanqasaur',
-    linkedin: 'jean-yang-96575030',
-    github: 'jeanqasaur',
-    abstract: (
-      <>
-        <p>
-          <strong>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</strong>
-        </p>
-        <p>
-          The rise of APIs and service-oriented architectures has made it easier than ever before to
-          build complex web applications. But the developer tools we use were made for a simpler
-          time, one where developers had more control over all of the software they ran. Today, web
-          applications contain many heterogeneous components, all talking to each other across the
-          network, many of them SaaS apps. "Testing" in production has become the only way to make
-          sense. I'll talk about why we need to update our idea of testing, how we can do better at
-          understanding prod, and how bringing structure to observability is the way forward for
-          both.
         </p>
       </>
     )
