@@ -27,37 +27,49 @@ export default function SponsorSection({ sponsor }: Props) {
     <>
       <div className={styles.layout}>
         <div className={styles.yt}>
-          <img src="/yt-placeholder.svg" alt="Youtube"/>
+          {sponsor.youtubeSlug ? (
+            <iframe
+              className={styles.video}
+              allow="picture-in-picture"
+              allowFullScreen
+              frameBorder="0"
+              height="100%"
+              src={`https://youtube.com/embed/${sponsor.youtubeSlug}`}
+              title={sponsor.name}
+              width="100%"
+            />
+          ) : (
+            <img
+              src={sponsor.image || '/yt-placeholder.svg'}
+              alt={sponsor.image ? sponsor.name : 'Youtube'}
+            />
+          )}
         </div>
-        {/* <iframe
-          className={cn(styles.video, styleUtils.appear, styleUtils['appear-first'])}
-          allow="picture-in-picture"
-          allowFullScreen
-          frameBorder="0"
-          height="100%"
-          src={`https://youtube.com/embed/${sponsor.youtubeSlug}`}
-          title={sponsor.name}
-          width="100%"
-        /> */}
         <div className={styles.container}>
-          <div className={styles["img-container"]}>
-            {sponsor.cardImage}
+          <div className={styles['img-container']}>
+            {!sponsor.cardImage ? (
+              <a href={sponsor.callToActionLink} target="_blank">
+                <img src={sponsor.logo.url} alt={sponsor.name} />
+              </a>
+            ) : null}
           </div>
-          {
-            typeof sponsor.description === 'string' ? <p className={styles.description}>{sponsor.description}</p> : (
-              sponsor.description.map(d => <p className={styles.description}>{d}</p>)
-            )
-          }
+          {typeof sponsor.description === 'string' ? (
+            <p className={styles.description}>{sponsor.description}</p>
+          ) : (
+            sponsor.description.map(d => <p className={styles.description}>{d}</p>)
+          )}
           <div className={styles['sponsor-details']}>
-            <a
-              href={sponsor.callToActionLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              type="button"
-              className="btn"
-            >
-              {sponsor.callToAction}
-            </a>
+            {sponsor.callToAction ? (
+              <a
+                href={sponsor.callToActionLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                type="button"
+                className="btn"
+              >
+                {sponsor.callToAction}
+              </a>
+            ) : null}
             <a
               href={sponsor.discord}
               target="_blank"
@@ -68,21 +80,29 @@ export default function SponsorSection({ sponsor }: Props) {
               Chat on Discord
             </a>
           </div>
-          <img className={styles.pattern} src="/patterns/horizontal-line.svg" aria-hidden={true}/>
-          <div className={styles.resources}>
-            <h2 className={cn("heading-tertiary", styles["resources-title"])}>Resources</h2>
-            {sponsor.links.map(link => (
-              <a
-                key={link.url}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn--secondary"
-              >
-                <span className={styles.truncate}>{link.text}</span>
-              </a>
-            ))}
-          </div>
+          {sponsor.links ? (
+            <>
+              <img
+                className={styles.pattern}
+                src="/patterns/horizontal-line.svg"
+                aria-hidden={true}
+              />
+              <div className={styles.resources}>
+                <h2 className={cn('heading-tertiary', styles['resources-title'])}>Resources</h2>
+                {sponsor.links.map(link => (
+                  <a
+                    key={link.url}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn--secondary"
+                  >
+                    <span className={styles.truncate}>{link.text}</span>
+                  </a>
+                ))}
+              </div>
+            </>
+          ) : null}
         </div>
       </div>
     </>

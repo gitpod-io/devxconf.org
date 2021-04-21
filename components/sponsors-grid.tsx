@@ -17,25 +17,42 @@
 import Link from 'next/link';
 import { Sponsor } from '@lib/types';
 import cn from 'classnames';
+import { hyphenate } from './speakers-grid';
 import styles from './sponsors-grid.module.css';
 
 function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
-  return (
-    <Link key={sponsor.name} href={`/expo/${sponsor.slug}`}>
-      <a role="button" tabIndex={0} className={cn(styles.card, 'sponsor-card')}>
-        <div className={styles.imageWrapper}>{sponsor.cardImage}</div>
-        {sponsor.tier !== 'start-up' && (
-          <div className={styles.cardBody}>
-            <div>
-              <h2 className={cn(styles.name, "heading-quadrary")}>{sponsor.name}</h2>
-              <p className={styles.description}>{
-                typeof sponsor.description === 'string' ? sponsor.description : sponsor.description[0]
-              }</p>
-            </div>
-          </div>
+  const renderBody = () => (
+    <>
+      <div className={styles.imageWrapper}>
+        {!sponsor.cardImage ? (
+          <img className={styles.image} src={`${sponsor.logo.url}`} alt={sponsor.name} />
+        ) : (
+          sponsor.cardImage
         )}
+      </div>
+      {sponsor.tier !== 'start-up' && (
+        <div className={styles.cardBody}>
+          <div>
+            <h2 className={cn(styles.name, 'heading-quadrary')}>{sponsor.name}</h2>
+            <p className={styles.description}>
+              {typeof sponsor.description === 'string'
+                ? sponsor.description
+                : sponsor.description[0]}
+            </p>
+          </div>
+        </div>
+      )}
+    </>
+  );
+
+  return sponsor.tier !== 'start-up' ? (
+    <Link key={sponsor.name} href={`/expo/${hyphenate(sponsor.name)}`}>
+      <a role="button" tabIndex={0} className={cn(styles.card, 'sponsor-card')}>
+        {renderBody()}
       </a>
     </Link>
+  ) : (
+    <a href={sponsor.website} target="_blank" className={cn(styles.card, 'sponsor-card')}>{renderBody()}</a>
   );
 }
 
