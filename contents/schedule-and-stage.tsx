@@ -160,7 +160,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '21:00' : '12:00 PM',
         end: isEurope() ? '21:20' : '12:20 PM',
-        speaker: getSpeakerByName("Natalie")
+        speaker: getSpeakerByName("Natalie Pistunovich")
       }
     ]
   },

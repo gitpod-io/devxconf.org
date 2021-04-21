@@ -456,9 +456,9 @@ export const speakers: Speaker[] = [
     )
   },
   {
-    name: 'Natalie',
+    name: 'Natalie Pistunovich',
     company: 'Aerospike',
-    title: 'TBD',
+    title: 'Lead Developer Advocate',
     image: {
       url: 'natalie.png'
     },
