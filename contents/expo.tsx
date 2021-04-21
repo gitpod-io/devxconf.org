@@ -88,17 +88,29 @@ export const sponsors: Sponsor[] = [
     description:
       [' Cloudquery transforms cloud infrastructure into queryable SQL for easy monitoring, governance and security.'],
     discord: '',
-    links: [{ text: 'GitHub Repo', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://cloudquery.io',
     youtubeSlug: '',
-    callToAction: 'Try Now',
-    callToActionLink: '',
     tier: 'start-up',
     logo: {
       url: '/sponsors/cloudquery.svg'
     },
     image: 'cloudquery.png'
   },
+  {
+    name: 'Console.dev',
+    description:
+      ['Console is a free weekly email digest of the best tools and beta releases for developers.'],
+    discord: '',
+    website: '',
+    youtubeSlug: '',
+    callToAction: 'Website',
+    callToActionLink: 'https://console.dev/',
+    tier: 'silver',
+    logo: {
+      url: '/sponsors/console.svg'
+    },
+    image: 'console.png'
+  }
   // {
   //   name: 'Datadog',
   //   description:

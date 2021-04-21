@@ -42,6 +42,11 @@ const partners: PartnerProps[] = [
     website: 'https://www.cloudquery.io/',
     noDetailsPage: true,
   },
+  {
+    title: 'Console.dev',
+    logo: 'console.svg',
+    website: 'https://console.dev/'
+  }
 ];
 
 const Partners = () => (
