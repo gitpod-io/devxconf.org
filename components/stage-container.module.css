@@ -74,7 +74,6 @@
   .streamContainer {
     width: calc(100vw - 310px);
     padding-right: var(--gutter-medium);
-    border-right: 1px solid var(--grey-2);
   }
 }
 

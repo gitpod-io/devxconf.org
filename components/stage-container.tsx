@@ -17,8 +17,8 @@
 import { useEffect, useState } from 'react';
 
 import { DiscordLogo } from './pages/community';
+import EnterStage from './stage/enter-stage';
 import Link from 'next/link';
-import RegisterWithEmail from './index/register-with-email';
 import ScheduleSidebar from './schedule-sidebar';
 import { Stage } from '@lib/types';
 import { allStages } from 'contents/schedule-and-stage';
@@ -42,31 +42,33 @@ export default function StageContainer({ stage }: Props) {
       <div className={styles.container}>
         <div className={styles.streamContainer}>
           {loggedIn === true ? (
-          <div className={styles.stream}>
-            <div className={styles.yt}>
-              <img src="/yt-placeholder.svg" alt="Youtube" />
-            </div>
-            <div className={styles.bottom}>
-              <div className={styles.messageContainer}>
-                <h2 className="heading-tertiary">{stage.name}</h2>
-                <p>Short description</p>
+            <div className={styles.stream}>
+              <div className={styles.yt}>
+                <img src="/yt-placeholder.svg" alt="Youtube" />
               </div>
-              <div className={styles['btn-container']}>
-                <a
-                  target="_blank"
-                  href="https://discord.gg/7m562hZv"
-                  rel="noopener noreferrer"
-                  className={cn('btn btn--big', styles['chat-button'])}
-                >
-                  Join Live Chat <DiscordLogo />
-                </a>
-                <Link href={`/speakers/${stage.slug}`}>
-                  <a className="btn btn--secondary">See Speaker Profile</a>
-                </Link>
+              <div className={styles.bottom}>
+                <div className={styles.messageContainer}>
+                  <h2 className="heading-tertiary">{stage.name}</h2>
+                  <p>Short description</p>
+                </div>
+                <div className={styles['btn-container']}>
+                  <a
+                    target="_blank"
+                    href="https://discord.gg/7m562hZv"
+                    rel="noopener noreferrer"
+                    className={cn('btn btn--big', styles['chat-button'])}
+                  >
+                    Join Live Chat <DiscordLogo />
+                  </a>
+                  <Link href={`/speakers/${stage.slug}`}>
+                    <a className="btn btn--secondary">See Speaker Profile</a>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          ) : <RegisterWithEmail />}
+          ) : (
+            <EnterStage setLoggedIn={setIsLoggedIn} />
+          )}
         </div>
         <ScheduleSidebar allStages={allStages} />
       </div>
