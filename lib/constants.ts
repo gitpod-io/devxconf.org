@@ -25,8 +25,6 @@ export const META_DESCRIPTION =
 export const SITE_DESCRIPTION =
   'An interactive online experience by the community, free for everyone.';
 export const DATE = 'April 28-29, 2021';
-export const SHORT_DATE = 'Oct 27 - 9:00am PST';
-export const FULL_DATE = 'Oct 27th 9am Pacific Time (GMT-7)';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 
