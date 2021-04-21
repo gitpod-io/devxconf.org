@@ -14,13 +14,16 @@
  * limitations under the License.
  */
 
+import { useEffect, useState } from 'react';
+
 import { DiscordLogo } from './pages/community';
 import Link from 'next/link';
-// import ConfEntry from './conf-entry';
+import RegisterWithEmail from './index/register-with-email';
 import ScheduleSidebar from './schedule-sidebar';
 import { Stage } from '@lib/types';
 import { allStages } from 'contents/schedule-and-stage';
 import cn from 'classnames';
+import { getIsLoggedIn } from '../utils/helpers';
 import styles from './stage-container.module.css';
 
 type Props = {
@@ -28,11 +31,17 @@ type Props = {
 };
 
 export default function StageContainer({ stage }: Props) {
+  const [loggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    setIsLoggedIn(!!getIsLoggedIn());
+  });
+
   return (
     <div className={cn('row', styles.row)}>
       <div className={styles.container}>
         <div className={styles.streamContainer}>
-          {/* {loginStatus === 'loggedIn' ? ( */}
+          {loggedIn === true ? (
           <div className={styles.stream}>
             <div className={styles.yt}>
               <img src="/yt-placeholder.svg" alt="Youtube" />
@@ -47,7 +56,7 @@ export default function StageContainer({ stage }: Props) {
                   target="_blank"
                   href="https://discord.gg/7m562hZv"
                   rel="noopener noreferrer"
-                  className={cn("btn btn--big", styles["chat-button"])}
+                  className={cn('btn btn--big', styles['chat-button'])}
                 >
                   Join Live Chat <DiscordLogo />
                 </a>
@@ -57,9 +66,7 @@ export default function StageContainer({ stage }: Props) {
               </div>
             </div>
           </div>
-          {/* ) : loginStatus === 'loading' ? null : (
-          <ConfEntry onRegister={() => mutate()} />
-        )} */}
+          ) : <RegisterWithEmail />}
         </div>
         <ScheduleSidebar allStages={allStages} />
       </div>

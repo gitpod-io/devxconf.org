@@ -6,6 +6,7 @@ import AlreadyRegistered from './already-registered';
 import ConsentNote from './consent-note';
 import RegisterationSuccess from './registeration-success';
 import cn from 'classnames';
+import {setIsLoggedIn} from '../../utils/helpers'
 import styles from './register-with-email.module.css';
 import validator from 'validator';
 
@@ -41,6 +42,7 @@ const RegisterWithEmail = () => {
       } else if (response.status === 409) {
         setIsAlreadyRegistered(true);
         setSubmitted(true);
+        setIsLoggedIn()
       }
     } catch (e) {
       console.error('Error: ', e);
