@@ -33,12 +33,14 @@ export type Speaker = {
 };
 
 export type Stage = {
-  name: string;
+  name?: string;
   day: string;
   slug: string;
   stream: string;
   discord: string;
   schedule?: Talk[];
+  description?: string;
+  speaker?: string;
 };
 
 export type Talk = {

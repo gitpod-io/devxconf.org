@@ -1,3 +1,9 @@
+import * as agilityApi from './cms-providers/agility';
+import * as contentfulApi from './cms-providers/contentful';
+import * as datoCmsApi from './cms-providers/dato';
+import * as prismicApi from './cms-providers/prismic';
+import * as storyblokApi from './cms-providers/storyblok';
+
 /**
  * Copyright 2020 Vercel Inc.
  *
@@ -13,13 +19,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Job, Sponsor, Stage, Speaker } from '@lib/types';
-
-import * as agilityApi from './cms-providers/agility';
-import * as datoCmsApi from './cms-providers/dato';
-import * as contentfulApi from './cms-providers/contentful';
-import * as prismicApi from './cms-providers/prismic';
-import * as storyblokApi from './cms-providers/storyblok';
+import { Job, Speaker, Sponsor, Stage } from '@lib/types';
 
 let cmsApi: {
   getAllSpeakers: () => Promise<Speaker[]>;

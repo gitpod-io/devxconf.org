@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { Job, Sponsor, Stage, Speaker } from '@lib/types';
+import { Job, Speaker, Sponsor, Stage } from '@lib/types';
 
 const API_URL = 'https://graphql.datocms.com/';
 const API_TOKEN = process.env.DATOCMS_READ_ONLY_API_TOKEN;
@@ -76,22 +76,11 @@ export async function getAllStages(): Promise<Stage[]> {
         name
         slug
         stream
-        discord
-        schedule {
-          title
-          start
-          end
-          speaker {
-            name
-            slug
-            image {
-              url(imgixParams: {fm: jpg, fit: crop, w: 120, h: 120})
-            }
-          }
-        }
+        description
       }
     }
   `);
+
 
   return data.allStages;
 }

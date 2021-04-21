@@ -24,7 +24,9 @@ import { Stage } from '@lib/types';
 import { allStages } from 'contents/schedule-and-stage';
 import cn from 'classnames';
 import { getIsLoggedIn } from '../utils/helpers';
+import { hyphenate } from './speakers-grid';
 import styles from './stage-container.module.css';
+import useSWR from 'swr';
 
 type Props = {
   stage: Stage;
@@ -37,19 +39,35 @@ export default function StageContainer({ stage }: Props) {
     setIsLoggedIn(!!getIsLoggedIn());
   });
 
+  const response = useSWR('/api/stages', {
+    initialData: allStages,
+    refreshInterval: 5000
+  });
+
+  const updatedStages = response.data || [];
+  const updatedStage = updatedStages.find((s: Stage) => s.slug === 'a') || stage;
+
   return (
     <div className={cn('row', styles.row)}>
       <div className={styles.container}>
         <div className={styles.streamContainer}>
-          {loggedIn === true ? (
+          {!loggedIn ? (
+            <EnterStage setLoggedIn={setIsLoggedIn} />
+          ) : (
             <div className={styles.stream}>
               <div className={styles.yt}>
-                <img src="/yt-placeholder.svg" alt="Youtube" />
+                <iframe
+                  src={`https://www.youtube.com/embed/${updatedStage.stream}?autoplay=1`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
               </div>
               <div className={styles.bottom}>
                 <div className={styles.messageContainer}>
-                  <h2 className="heading-tertiary">{stage.name}</h2>
-                  <p>Short description</p>
+                  <h2 className="heading-tertiary">{updatedStage.name}</h2>
+                  {updatedStage.description ? <p>{updatedStage.description}</p> : null}
                 </div>
                 <div className={styles['btn-container']}>
                   <a
@@ -60,14 +78,14 @@ export default function StageContainer({ stage }: Props) {
                   >
                     Join Live Chat <DiscordLogo />
                   </a>
-                  <Link href={`/speakers/${stage.slug}`}>
-                    <a className="btn btn--secondary">See Speaker Profile</a>
-                  </Link>
+                  {updatedStage.speaker ? (
+                    <Link href={`/speakers/${hyphenate(updatedStage.speaker)}`}>
+                      <a className="btn btn--secondary">See Speaker Profile</a>
+                    </Link>
+                  ) : null}
                 </div>
               </div>
             </div>
-          ) : (
-            <EnterStage setLoggedIn={setIsLoggedIn} />
           )}
         </div>
         <ScheduleSidebar allStages={allStages} />
