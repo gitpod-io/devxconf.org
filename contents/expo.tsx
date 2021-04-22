@@ -105,7 +105,7 @@ export const sponsors: Sponsor[] = [
     youtubeSlug: '',
     callToAction: 'Website',
     callToActionLink: 'https://console.dev/',
-    tier: 'silver',
+    tier: 'gold',
     logo: {
       url: '/sponsors/console.svg'
     },
