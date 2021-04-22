@@ -8,7 +8,7 @@ export const speakers: Speaker[] = [
     image: {
       url: 'jason-warner.jpeg'
     },
-    bio: '',
+    bio: 'Jason Warner is GitHub’s Chief Technology Officer. In his role, Jason oversees the Office of the CTO, whose mission is to explore the unknown and non-existent aspects of technology and software in order to build a map of GitHub’s future. Jason was previously Senior Vice President of Technology at GitHub, where he has played an integral role in scaling the Engineering, Product, and Security Teams, and building GitHub’s product roadmap to fit the needs of developers around the world.Prior to joining GitHub in 2017, Jason was Vice President of Engineering at Heroku. Before Heroku, Jason oversaw Product Engineering for Ubuntu Desktop and Ubuntu Phone at Canonical. Jason is passionate about building technologies that bring people together, and he’s an active speaker, writer, and advisor.',
     twitter: 'jasoncwarner',
     linkedin: 'jcwarner',
     github: 'jasoncwarner',
@@ -468,7 +468,16 @@ export const speakers: Speaker[] = [
     twitter: 'kcqon',
     linkedin: 'kylequest',
     github: 'kcq',
-    abstract: 'Simplifying the Journey of Your Containerized Application from Dev to Production'
+    abstract: (
+      <>
+        <p>
+          <strong>Simplifying the Journey of Your Containerized Application from Dev to Production</strong>
+        </p>
+        <p>
+          Creating a containerized application PoC is deceptively simple. Making it production ready is a lot of work though. This talk will cover what’s necessary to have a production ready containerized application and the steps to get there. We’ll explore the best practices and gotchas containerizing applications. We’ll also compare creating production ready containers the hard way and the easy way.
+        </p>
+      </>
+    )
   },
   {
     name: 'Aidan Cunniffe',
@@ -621,7 +630,7 @@ export const speakers: Speaker[] = [
       <>
         <p>
           {' '}
-          <strong>DX, Performance, Security - Choose any three</strong>
+          <strong>Building Supabase Storage. DevX, performance, security - choose three</strong>
         </p>
 
         <p>

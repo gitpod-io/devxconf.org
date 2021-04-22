@@ -172,7 +172,7 @@ export const allStages: Stage[] = [
     stream: '',
     schedule: [
       {
-        title: 'DX, performance, security - choose any three',
+        title: 'Building Supabase Storage. DevX, performance, security - choose three',
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
