@@ -100,7 +100,7 @@ export const sponsors: Sponsor[] = [
     name: 'Console.dev',
     description:
       ['Console is a free weekly email digest of the best tools and beta releases for developers.'],
-    discord: '',
+    discord: 'https://discord.gg/srE7fVe3gC',
     website: '',
     youtubeSlug: '',
     callToAction: 'Website',
