@@ -7,3 +7,7 @@
 .imp {
     color: var(--brand);
 }
+
+.projects {
+    margin: var(--gutter-large) 0;
+}
