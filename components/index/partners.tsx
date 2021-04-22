@@ -34,14 +34,17 @@ const partners: PartnerProps[] = [
     title: 'CNCF',
     logo: 'cnfc.svg',
     website: 'https://www.cncf.io/',
-    noDetailsPage: true
   },
   {
     title: 'CloudQuery',
     logo: 'cloudquery.svg',
     website: 'https://www.cloudquery.io/',
-    noDetailsPage: true,
   },
+  {
+    title: 'Console.dev',
+    logo: 'console.svg',
+    website: 'https://console.dev/'
+  }
 ];
 
 const Partners = () => (
