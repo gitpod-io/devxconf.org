@@ -72,7 +72,7 @@ export default function StageContainer({ stage }: Props) {
                 <div className={styles['btn-container']}>
                   <a
                     target="_blank"
-                    href="https://discord.gg/7m562hZv"
+                    href="https://discord.gg/JP9bWxNbwS"
                     rel="noopener noreferrer"
                     className={cn('btn btn--big', styles['chat-button'])}
                   >
