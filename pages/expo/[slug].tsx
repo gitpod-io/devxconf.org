@@ -28,7 +28,7 @@ export default function SponsorPage() {
   const sponsor = sponsors.find(s => hyphenate(s.name) === slug);
 
   const meta = {
-    title: `Sponosor ${sponsor?.name} | Devx Conf`,
+    title: `Sponsor ${sponsor?.name} | Devx Conf`,
     description: META_DESCRIPTION
   };
 
