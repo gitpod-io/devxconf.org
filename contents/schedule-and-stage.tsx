@@ -161,6 +161,13 @@ export const allStages: Stage[] = [
         start: isEurope() ? '21:00' : '12:00 PM',
         end: isEurope() ? '21:20' : '12:20 PM',
         speaker: getSpeakerByName("Natalie Pistunovich")
+      },
+      {
+        title: "TBD",
+        description: '', 
+        start: isEurope() ? '21:20' : '12:20 PM',
+        end: isEurope() ? '21:40' : '12:40 PM',
+        speaker: getSpeakerByName("Ahmad Awais")
       }
     ]
   },
@@ -257,6 +264,14 @@ export const allStages: Stage[] = [
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
+      },
+      {
+        title: "TBD",
+        description: "",
+        start: isEurope() ? '21:00' : '21:20 AM',
+        end: isEurope() ? '12:00' : '12:20 PM',
+        speaker: getSpeakerByName("Micha Hernandez van Leuffen"),
+        // eslint-disable-next-line
       }
     ]
   }

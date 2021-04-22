@@ -811,5 +811,18 @@ export const speakers: Speaker[] = [
     twitter: 'MrAhmadAwais',
     linkedin: 'mrahmadawais',
     github: 'ahmadawais'
-  }
+  },
+  {
+    name: 'Micha Hernandez van Leuffen',
+    company: 'Fiberplane',
+    title: 'Founder & CEO',
+    bio: '',
+    image: {
+      url: 'micha-hernandaz.jpeg'
+    },
+    twitter: 'mies',
+    linkedin: 'mhernandezvanleuffen',
+    github: 'mies',
+
+  },
 ];
