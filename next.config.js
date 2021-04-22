@@ -26,6 +26,8 @@ module.exports = {
     imageSizes: [24, 64, 300]
   },
   env: {
+    IS_PRODUCTION: process.env.IS_PRODUCTION,
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID,
     SPREADSHEET_ID: process.env.SPREADSHEET_ID,
     SHEET_ID: '0',
     CLIENT_EMAIL: process.env.CLIENT_EMAIL,
