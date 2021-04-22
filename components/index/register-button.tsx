@@ -1,5 +1,6 @@
 import { GitHubOAuthData } from '@lib/types';
 import { SITE_ORIGIN } from '@lib/constants';
+import { setIsLoggedIn } from 'utils/helpers';
 import styles from './register-button.module.css';
 
 const GitHubLogo = () => (
@@ -60,6 +61,7 @@ const RegisterButton = () => {
       });
     })
       .then(data => {
+        setIsLoggedIn();
         console.log(data);
       })
       .catch(err => {

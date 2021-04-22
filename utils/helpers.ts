@@ -9,7 +9,6 @@ export const setIsLoggedIn = () => {
 
 export const getIsLoggedIn = () => {
   if (localStorage.getItem('isLoggedIn') === 'true') {
-    console.log()
     return true;
   }
 };

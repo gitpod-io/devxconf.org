@@ -24,7 +24,6 @@ const EXPIRES_SECONDS = 5;
 
 export default async function getStages(_: NextApiRequest, res: NextApiResponse) {
   try {
-      console.log("get stages.")
     const allStages = await getAllStages();
 
     // Set caching headers
