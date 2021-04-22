@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+export const IS_PRODUCTION = process.env.NODE_ENV === "production";
+export const GA_TRACKING_ID = process.env.GA_TRACKING_ID;
 export const SITE_URL = 'https://devxconf.org';
 export const SITE_ORIGIN = process.env.NEXT_PUBLIC_SITE_ORIGIN || new URL(SITE_URL).origin;
 export const TWITTER_USER_NAME = 'vercel';

@@ -25,15 +25,27 @@ import NProgress from '@components/nprogress';
 import ResizeHandler from '@components/resize-handler';
 import { handleFirstTab } from 'utils/accessibility';
 import { useEffect } from 'react';
+import { useRouter } from "next/router";
+import * as gtag from "lib/gtag";
+import { IS_PRODUCTION } from '@lib/constants';
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
   useEffect(() => {
     window.addEventListener('keydown', handleFirstTab);
 
+    const handleRouteChange = (url: URL) => {
+        /* invoke analytics function only for production */
+        if (IS_PRODUCTION) gtag.pageview(url);
+    };
+    router.events.on("routeChangeComplete", handleRouteChange);
+      
     return (): void => {
       window.removeEventListener('keydown', handleFirstTab);
+      router.events.off("routeChangeComplete", handleRouteChange);
     };
-  }, []);
+  }, [router.events]);
 
   return (
     <SSRProvider>
