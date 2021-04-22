@@ -62,34 +62,6 @@ export const speakers: Speaker[] = [
     )
   },
   {
-    name: 'Rachel Myers',
-    company: 'Google',
-    title: 'Engineer',
-    image: {
-      url: 'rachel-myers.jpg'
-    },
-    bio:
-      "Rachel's an engineer on Firebase Authentication and Security Rules; she focuses on empowering developers to build secure, best-in-class applications that robustly protect users’ privacy. Before joining Google, Rachel co-founded Opsolutely (YC S16), and was an early engineer at GitHub. Outside of work, she mentors and invests in founders from underrepresented backgrounds, serves on the Board for RailsBridge, and has received awards from Women Who Code. She/Her.",
-    twitter: 'rachelmyers',
-    linkedin: 'rachelmyers',
-    github: 'rachelmyers',
-    abstract: (
-      <>
-        <p>
-          <strong>Streamlining Firebase Development with local Emulators</strong>
-        </p>
-        <p>
-          People love Firebase for making every read or write just an API call away. What they
-          didn’t love was that, for years, the only development environment where you could reliably
-          test changes was a duplicate Firebase project. It was expensive, prone to mishaps, and
-          required an internet connection at all times. This is the story of building local
-          emulators that let a developer set up a new Firebase dev environment in about a minute,
-          and the mistakes we made along the way.
-        </p>
-      </>
-    )
-  },
-  {
     name: 'Jean Yang',
     company: 'Akita Software',
     title: 'Founder and CEO',
@@ -131,6 +103,34 @@ export const speakers: Speaker[] = [
           sense. I'll talk about why we need to update our idea of testing, how we can do better at
           understanding prod, and how bringing structure to observability is the way forward for
           both.
+        </p>
+      </>
+    )
+  },
+  {
+    name: 'Rachel Myers',
+    company: 'Google',
+    title: 'Engineer',
+    image: {
+      url: 'rachel-myers.jpg'
+    },
+    bio:
+      "Rachel's an engineer on Firebase Authentication and Security Rules; she focuses on empowering developers to build secure, best-in-class applications that robustly protect users’ privacy. Before joining Google, Rachel co-founded Opsolutely (YC S16), and was an early engineer at GitHub. Outside of work, she mentors and invests in founders from underrepresented backgrounds, serves on the Board for RailsBridge, and has received awards from Women Who Code. She/Her.",
+    twitter: 'rachelmyers',
+    linkedin: 'rachelmyers',
+    github: 'rachelmyers',
+    abstract: (
+      <>
+        <p>
+          <strong>Streamlining Firebase Development with local Emulators</strong>
+        </p>
+        <p>
+          People love Firebase for making every read or write just an API call away. What they
+          didn’t love was that, for years, the only development environment where you could reliably
+          test changes was a duplicate Firebase project. It was expensive, prone to mishaps, and
+          required an internet connection at all times. This is the story of building local
+          emulators that let a developer set up a new Firebase dev environment in about a minute,
+          and the mistakes we made along the way.
         </p>
       </>
     )
@@ -761,7 +761,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Anton Kosyakov',
     company: 'Gitpod',
-    title: 'Software Engineer',
+    title: 'Principal Software Engineer',
     image: {
       url: 'anton-kosyakov.jpeg'
     },
