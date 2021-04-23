@@ -161,13 +161,6 @@ export const allStages: Stage[] = [
         start: isEurope() ? '21:00' : '12:00 PM',
         end: isEurope() ? '21:20' : '12:20 PM',
         speaker: getSpeakerByName("Natalie Pistunovich")
-      },
-      {
-        title: "TBD",
-        description: '', 
-        start: isEurope() ? '21:20' : '12:20 PM',
-        end: isEurope() ? '21:40' : '12:40 PM',
-        speaker: getSpeakerByName("Ahmad Awais")
       }
     ]
   },
@@ -178,6 +171,13 @@ export const allStages: Stage[] = [
     slug: 'b',
     stream: '',
     schedule: [
+      {
+        title: "VSCode Power User Tips & Tricks",
+        description: '', 
+        start: isEurope() ? '16:40' : '7:40 AM',
+        end: isEurope() ? '17:00' : '8:00 AM',
+        speaker: getSpeakerByName("Ahmad Awais")
+      },
       {
         title: 'Building Supabase Storage. DevX, performance, security - choose three',
         description: '',

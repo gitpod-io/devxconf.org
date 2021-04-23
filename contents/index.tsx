@@ -810,7 +810,13 @@ export const speakers: Speaker[] = [
     </>,
     twitter: 'MrAhmadAwais',
     linkedin: 'mrahmadawais',
-    github: 'ahmadawais'
+    github: 'ahmadawais',
+    abstract: <>
+      <p>VSCode Power User Tips & Tricks</p>
+      <p>
+      After 10 years with Sublime Text, I switched to VSCode — the new open-source cross-platform editor everyone's talking about. I've spent over 1,000 hours perfecting my setup to help you switch today. In this talk, you'll get to learn tens of VSCode Power User workflows that'll help you save time and code more efficiently. Text manipulation to multi-cursors and even Markdown tips/tricks. You name it.
+      </p>
+    </>
   },
   {
     name: 'Micha Hernandez van Leuffen',
