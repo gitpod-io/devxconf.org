@@ -12,12 +12,15 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<{} | ErrorResponse>
 ) {
-  const projectTitle: string = ((req.body.title as string) || '')
   
   if(req.method === "GET") {
-    return getVoteCount(projectTitle);
+    const projectTitle = req.query.title;
+    console.log(projectTitle, getVoteCount(projectTitle));
+    const voteCount = await getVoteCount(projectTitle);
+    return res.json(JSON.stringify({voteCount}));
   }
   
+  const projectTitle: string = ((req.body.title as string) || '')
   
   if (await updateVoteCount(projectTitle)) {
     return res.status(200).end();

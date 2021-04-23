@@ -22,10 +22,14 @@ const Project = ({
   website 
 }: ProjectProps) => {
 
-  const response = useSWR('/api/vote', {
+  const fetcher = (url: string, title: string) => fetch(`${url}?title=${title}`).then(res => res.json())
+
+  const response = useSWR(['/api/vote', title], fetcher, {
     initialData: [],
     refreshInterval: 5000
   })
+
+  console.log(response.data)
 
   const addVote = async () => {
     try {
@@ -67,7 +71,7 @@ const Project = ({
       </div>
       <div className={styles.votes}>
         <a role="button" className={cn('btn', styles.btn)} onClick={() => addVote()}>
-          Vote
+          Vote {}
         </a>
       </div>
     </div>
