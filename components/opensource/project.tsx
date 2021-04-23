@@ -3,6 +3,7 @@ import { Project as ProjectProps } from '@lib/types';
 import React from 'react';
 import cn from 'classnames';
 import styles from './project.module.css';
+import useSWR from 'swr';
 
 const IconSite = () => (
   <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15">
@@ -13,27 +14,64 @@ const IconSite = () => (
   </svg>
 );
 
-const Project = ({ logo, title, description, github, website }: ProjectProps) => (
-  <div className={styles.project}>
-    <img className={styles.logo} src={`/projects/${logo}`} alt={title} />
-    <div className={styles.description}>
-      {description}
+const Project = ({ 
+  logo, 
+  title, 
+  description, 
+  github, 
+  website 
+}: ProjectProps) => {
+
+  const response = useSWR('/api/vote', {
+    initialData: [],
+    refreshInterval: 5000
+  })
+
+  const addVote = async () => {
+    try {
+      const response = await fetch('/api/vote', {
+        body: JSON.stringify({title}),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        method: 'POST'
+      });
+
+      if (response.status === 200) {
+        console.log("Added.")
+      } else if (response.status === 400) {
+        console.log("Error.")
+      } else if (response.status === 409) {
+        console.log("You already voted.")
+      }
+    } catch (e) {
+      console.error('Error: ', e);
+    }
+  }
+
+  return (
+    <div className={styles.project}>
+      <img className={styles.logo} src={`/projects/${logo}`} alt={title} />
+      <div className={styles.description}>
+        {description}
         <div className={styles.icons}>
-        <a href={github} target="_blank">
-        <IconGithub color="#8E8787" size={20} />
-      </a>
-      {website ? (
-        <a href={website} target="_blank">
-          <IconSite />
-        </a>
-      ) : null}
+          <a href={github} target="_blank">
+            <IconGithub color="#8E8787" size={20} />
+          </a>
+          {website ? (
+            <a href={website} target="_blank">
+              <IconSite />
+            </a>
+          ) : null}
         </div>
+      </div>
+      <div className={styles.votes}>
+        <a role="button" className={cn('btn', styles.btn)} onClick={() => addVote()}>
+          Vote
+        </a>
+      </div>
     </div>
-    <div className={styles.votes}>
-        <a role="button" className={cn("btn", styles.btn)}>Vote</a>
-        <p>101 votes</p>
-    </div>
-  </div>
-);
+  );
+}
 
 export default Project;
