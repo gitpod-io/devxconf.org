@@ -110,6 +110,19 @@ export const sponsors: Sponsor[] = [
       url: '/sponsors/console.svg'
     },
     image: 'console.png'
+  }, 
+  {
+    name: 'Ladies in DevOps',
+    description:
+      [''],
+    discord: '',
+    website: 'https://ladiesindevops.com/',
+    youtubeSlug: '',
+    tier: 'start-up',
+    logo: {
+      url: '/sponsors/ladies-in-devops.svg'
+    },
+    transform: 'scale(1.2)',
   }
   // {
   //   name: 'Datadog',

@@ -34,16 +34,26 @@ const partners: PartnerProps[] = [
     title: 'CNCF',
     logo: 'cnfc.svg',
     website: 'https://www.cncf.io/',
+    noDetailsPage: true,
   },
   {
     title: 'CloudQuery',
     logo: 'cloudquery.svg',
     website: 'https://www.cloudquery.io/',
+    noDetailsPage: true,
   },
   {
     title: 'Console.dev',
     logo: 'console.svg',
     website: 'https://console.dev/'
+
+  },
+  {
+    title: 'Ladies in DevOps',
+    logo: 'ladies-in-devops.svg',
+    website: 'https://ladiesindevops.com/',
+    transform: 'scale(1.4)',
+    noDetailsPage: true,
   }
 ];
 

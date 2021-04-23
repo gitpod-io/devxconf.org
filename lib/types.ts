@@ -67,6 +67,7 @@ export type Sponsor = {
   logo: Image;
   youtubeSlug: string;
   image?: string;
+  transform?: string;
 };
 
 export type SponsorLink = {

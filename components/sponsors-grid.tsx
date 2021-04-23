@@ -25,7 +25,7 @@ function SponsorCard({ sponsor }: { sponsor: Sponsor }) {
     <>
       <div className={styles.imageWrapper}>
         {!sponsor.cardImage ? (
-          <img className={styles.image} src={`${sponsor.logo.url}`} alt={sponsor.name} />
+          <img className={styles.image} style={{transform: sponsor.transform}} src={`${sponsor.logo.url}`} alt={sponsor.name} />
         ) : (
           sponsor.cardImage
         )}
