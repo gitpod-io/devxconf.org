@@ -19,6 +19,6 @@ export const channels: ChannelProps[] = [
     {
         title: 'Gitpod Community',
         href: 'https://discord.gg/EWN5sNfNTw',
-        icon: <svg width="42" height="48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.142 33.766v-18.92L0 12.456v23.689l20.493 11.831v-4.84l-16.351-9.37z" fill="#F9F9FB"/><path d="M20.493 38.288V24.287L8.345 17.272v14.056l12.148 6.96zM20.862 4.8l16.377 9.439 4.137-2.39L20.862 0 .348 11.848 4.5 14.244l16.363-9.445z" fill="#F9F9FB"/><path d="M33.033 16.668L20.864 9.652 8.702 16.67l12.16 7.023 12.171-7.025zM21.193 38.316l12.2-6.987v-4.783l-8.408 4.785v-4.837l12.61-7.179v14.452l-16.402 9.39v4.844l20.53-11.852V12.46l-20.53 11.852v14.003z" fill="#F9F9FB"/></svg>
+        icon: <svg width="42" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.748 1.594a3.16 3.16 0 01-1.178 4.313l-9.437 5.387a.8.8 0 00-.403.695v8.456a.8.8 0 00.403.695l7.47 4.264a.8.8 0 00.794 0l7.47-4.264a.8.8 0 00.403-.695v-5.259l-6.715 3.785a3.167 3.167 0 01-4.312-1.2 3.16 3.16 0 011.202-4.308l9.607-5.415c2.927-1.65 6.548.463 6.548 3.82v9.22a6.016 6.016 0 01-3.035 5.224l-8.576 4.895a6.03 6.03 0 01-5.978 0l-8.576-4.895A6.016 6.016 0 011.4 21.087v-9.74a6.016 6.016 0 013.035-5.225L14.43.417a3.167 3.167 0 014.318 1.177z" fill="url(#paint0_linear)"/><defs><linearGradient id="paint0_linear" x1="23.378" y1="4.839" x2="8.413" y2="28.391" gradientUnits="userSpaceOnUse"><stop stop-color="#F9F9FB"/><stop offset="1" stop-color="#F9F9FB"/></linearGradient></defs></svg>
     }
 ]
