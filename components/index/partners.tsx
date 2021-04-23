@@ -54,6 +54,12 @@ const partners: PartnerProps[] = [
     website: 'https://ladiesindevops.com/',
     transform: 'scale(1.4)',
     noDetailsPage: true,
+  },
+  {
+    title: 'Swimm',
+    logo: 'swimm.svg',
+    website: 'https://swimm.io/product/',
+    noDetailsPage: true,
   }
 ];
 
