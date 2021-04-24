@@ -265,14 +265,6 @@ export const allStages: Stage[] = [
         // @ts-ignore
         speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
       },
-      {
-        title: "TBD",
-        description: "",
-        start: isEurope() ? '21:00' : '21:20 AM',
-        end: isEurope() ? '12:00' : '12:20 PM',
-        speaker: getSpeakerByName("Micha Hernandez van Leuffen"),
-        // eslint-disable-next-line
-      }
     ]
   }
-];
+];s
