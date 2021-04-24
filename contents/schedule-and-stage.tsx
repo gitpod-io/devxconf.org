@@ -267,4 +267,4 @@ export const allStages: Stage[] = [
       },
     ]
   }
-];s
+];
