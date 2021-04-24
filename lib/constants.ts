@@ -57,7 +57,7 @@ export const NAVIGATION = [
     route: '/manifesto'
   },
   {
-    name: 'Open-Source',
+    name: 'Open-Source Funding',
     route: '/opensource'
   },
   {
