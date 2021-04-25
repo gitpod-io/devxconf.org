@@ -32,7 +32,7 @@ export const sponsors: Sponsor[] = [
   {
     name: 'Slim.ai',
     description:
-      ['TBD'],
+      ['Slim.AI is a developer efficiency platform for cloud-native applications and containerized workflows. The Slim Developer Platform provides automated optimization, workflow management, and analytic tooling for containerized apps, improving velocity, security, and performance. We help devs focus less on infrastructure and more on writing great code.'],
     discord: 'https://discord.gg/U3QvSZXyk3',
     callToAction: 'Website',
     callToActionLink: 'https://www.slim.ai',
