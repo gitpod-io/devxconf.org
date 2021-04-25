@@ -15,7 +15,7 @@ export default async function handler(
   
   if(req.method === "GET") {
     const projectTitle = req.query.title;
-    console.log(projectTitle, getVoteCount(projectTitle));
+    // @ts-ignore
     const voteCount = await getVoteCount(projectTitle);
     return res.json(JSON.stringify({voteCount}));
   }
