@@ -184,7 +184,6 @@ export const allStages: Stage[] = [
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
         speaker: getSpeakerByName("Inian Parameshwaran"),
-        isLinkLess: true
       },
       {
         title: 'Streamlining Firebase Development with local Emulators',
