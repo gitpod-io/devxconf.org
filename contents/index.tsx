@@ -137,8 +137,8 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Ellen Chisa',
-    company: 'Boldstart',
-    title: 'Founder In Residence',
+    company: 'Darklang',
+    title: 'Founder',
     image: {
       url: 'ellen-chisa.jpeg'
     },
