@@ -3,7 +3,7 @@ import Join from '@components/opensource/join';
 import Layout from '@components/layout';
 import { PatternHalfCircle } from '@components/patterns';
 import Section from '@components/layout/section';
-import Support from '@components/opensource/support';
+import Vote from '@components/opensource/vote';
 import cn from 'classnames';
 import styles from './opensource.module.css';
 
@@ -106,6 +106,8 @@ const Diversity = () => (
         </div>
       </div>
     </Section>
+
+    <Vote />
 
     <Join />
 

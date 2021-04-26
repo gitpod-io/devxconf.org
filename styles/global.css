@@ -68,13 +68,13 @@
   --footnote: 12px;
   --black: #161616;
   --black-1: #292929;
-  --grey: #8E8787;
+  --grey: #8e8787;
   --grey-1: #c4c4c4;
   --grey-2: #5c5c5c;
   --white: #fdfbfb;
-  --brand: #FFAE33;
-  --gradient: #FF8A00;
-  --text-white: #F3F1F0;
+  --brand: #ffae33;
+  --gradient: #ff8a00;
+  --text-white: #f3f1f0;
 
   --outline: 2px solid var(--brand);
 }
@@ -103,8 +103,8 @@ body {
   min-height: 100%;
   margin: 0;
   line-height: 1.65;
-  font-family: 'ABCDiatype', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'ABCDiatype', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: var(--body-big);
   font-weight: 400;
   color: var(--text-white);
@@ -278,7 +278,7 @@ body:not(.user-is-tabbing) a:focus {
   border: 2px solid transparent;
 }
 
-body.user-is-tabbing .partner__link:focus { 
+body.user-is-tabbing .partner__link:focus {
   outline: none;
   border: var(--outline);
 }
@@ -328,7 +328,7 @@ a:focus {
 
 .btn:disabled {
   pointer-events: none;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .btn .fill {
@@ -491,7 +491,7 @@ input:focus {
   }
 }
 
-@media(max-width: 320px) {
+@media (max-width: 320px) {
   .btn--big {
     padding: 8px 14px;
   }
@@ -522,11 +522,10 @@ input:focus {
   fill: var(--white);
 }
 
-
 /* ----- Speakers ----- */
 
-.speaker__contact-icon  path{
-  transition: all .2s;
+.speaker__contact-icon path {
+  transition: all 0.2s;
 }
 
 .speaker__contact-icon:hover path,

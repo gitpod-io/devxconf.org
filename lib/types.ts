@@ -107,3 +107,11 @@ export type GitHubOAuthData =
       login: string;
       email: string;
     };
+
+export type Project = {
+  title: string;
+  description: string | JSX.Element;
+  logo: string;
+  github: string;
+  website?: string;
+}
