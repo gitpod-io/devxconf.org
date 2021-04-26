@@ -6,6 +6,7 @@ import AlreadyRegistered from './already-registered';
 import ConsentNote from './consent-note';
 import RegisterationSuccess from './registeration-success';
 import cn from 'classnames';
+import {setIsLoggedIn} from '../../utils/helpers'
 import styles from './register-with-email.module.css';
 import validator from 'validator';
 
@@ -14,6 +15,7 @@ const RegisterWithEmail = () => {
   const [isAlreadyRegistered, setIsAlreadyRegistered] = useState(false);
   const [emailError, setEmailError] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
+  const [loading, setLoading] = useState(false);
 
   const validateEmail = (e) => {
     var email = e.target.value
@@ -41,6 +43,8 @@ const RegisterWithEmail = () => {
       } else if (response.status === 409) {
         setIsAlreadyRegistered(true);
         setSubmitted(true);
+        setIsLoggedIn()
+        setLoading(false);
       }
     } catch (e) {
       console.error('Error: ', e);
@@ -51,6 +55,7 @@ const RegisterWithEmail = () => {
     e.preventDefault();
     const email = inputRef.current?.value;
     addEmail(email);
+    setLoading(true);
   };
 
   return !submitted ? (
@@ -70,9 +75,11 @@ const RegisterWithEmail = () => {
         { 
           emailError ? <span className={styles.error}>{emailError}</span> : null
         }
-        <button type="submit" className={cn('btn', styles.btn)} disabled={emailError ? true : false}>
+        {
+          !loading ? <button type="submit" className={cn('btn', styles.btn)} disabled={emailError ? true : false}>
           Register Now
-        </button>
+        </button> : <span className={styles.error}>Loadig...</span>
+        }
       </form>
       <ConsentNote />
     </div>

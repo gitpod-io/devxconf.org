@@ -35,6 +35,7 @@ module.exports = {
     NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID: process.env.GITHUB_OAUTH_CLIENT_ID,
     GITHUB_OAUTH_CLIENT_SECRET: process.env.GITHUB_OAUTH_CLIENT_SECRET,
     NEXT_PUBLIC_SITE_ORIGIN: process.env.NEXT_PUBLIC_SITE_ORIGIN,
+    DATOCMS_READ_ONLY_API_TOKEN: process.env. DATOCMS_READ_ONLY_API_TOKEN,
   },
   webpack: (config, options) => {
     config.node = {

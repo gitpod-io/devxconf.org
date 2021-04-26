@@ -36,7 +36,6 @@ type Props = {
 };
 
 const formatDate = (date: string) => {
-  console.log(date);
   // https://github.com/date-fns/date-fns/issues/946
   // return format(parseISO(date), "h:mmaaaaa'm'");
   return date;
