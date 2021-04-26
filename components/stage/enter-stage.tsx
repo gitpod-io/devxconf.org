@@ -8,6 +8,8 @@ import formStyles from '../index/register-with-email.module.css';
 import { setIsLoggedIn } from 'utils/helpers';
 import styles from './enter-stage.module.css';
 import validator from 'validator';
+import GitHubButton from '@components/index/github-button';
+import RegisterWithEmail from '@components/index/register-with-email';
 
 const EnterStage = ({ setLoggedIn }: props) => {
   const [emailError, setEmailError] = useState('');
@@ -55,13 +57,15 @@ const EnterStage = ({ setLoggedIn }: props) => {
 
   return (
     <div className={cn('row', styles.row, 'wrapper-small')}>
-      <h1 className="heading-secondary">Join the confrence</h1>
+      <h1 className="heading-secondary">Join the conference</h1>
       <p>
         DevX Conf is a space for creators where we can start from first principles, collaborate,
         listen, discuss and declutter our workflows, toolchains and minds. To improve developer
         experience.
       </p>
-      <form className={formStyles.form} onSubmit={handleSubmit}>
+      <GitHubButton setLoggedIn={setLoggedIn} text="Login with" />
+      <RegisterWithEmail setLoggedIn={setLoggedIn} buttonText="Login" successText="Thanks. You will be redirected to the conference stage." />
+      {/* <form className={formStyles.form} onSubmit={handleSubmit}>
         <input
           type="text"
           className={formStyles.input}
@@ -76,7 +80,7 @@ const EnterStage = ({ setLoggedIn }: props) => {
         {
             !loading ? <button className={cn('btn', formStyles.btn)}>Join Now</button> : <span className={formStyles.error}>Loading...</span>
         }
-      </form>
+      </form> */}
     </div>
   );
 };

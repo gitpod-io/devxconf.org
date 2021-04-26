@@ -2,6 +2,9 @@ import { NextApiRequest, NextApiResponse } from 'next';
 
 import { persistEmail } from '@lib/google-spreadsheet'
 import validator from 'validator';
+import { COOKIE } from '@lib/constants';
+import cookie from 'cookie';
+import ms from 'ms';
 
 type ErrorResponse = {
   error: {
@@ -33,6 +36,16 @@ export default async function register(
     });
   }
 
+  res.setHeader(
+    'Set-Cookie',
+    cookie.serialize(COOKIE, email, {
+      httpOnly: true,
+      sameSite: 'strict',
+      secure: process.env.NODE_ENV === 'production',
+      path: '/api',
+      expires: new Date(Date.now() + ms('7 days'))
+    })
+  );
   if (await persistEmail(email)) {
     return res.status(200).end();
   } else {

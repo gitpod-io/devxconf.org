@@ -15,13 +15,15 @@ interface RegisterWithEmailProps {
   isConsentNoteShown?: boolean;
   buttonText?: string;
   successText?: string;
+  setLoggedIn?: Function;
 }
 
 const RegisterWithEmail = ({
   title,
   isConsentNoteShown,
   buttonText,
-  successText
+  successText,
+  setLoggedIn
 }: RegisterWithEmailProps) => {
   const [submitted, setSubmitted] = useState(false);
   const [isAlreadyRegistered, setIsAlreadyRegistered] = useState(false);
@@ -50,9 +52,11 @@ const RegisterWithEmail = ({
 
       if (response.status === 200) {
         setSubmitted(true);
+        setLoggedIn(true);
       } else if (response.status === 400) {
         setEmailError('Please enter a valid email.');
       } else if (response.status === 409) {
+        setLoggedIn(true);
         setIsAlreadyRegistered(true);
         setSubmitted(true);
         setIsLoggedIn()

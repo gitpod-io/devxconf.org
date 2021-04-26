@@ -22,7 +22,7 @@ const GitHubLogo = () => (
   </svg>
 );
 
-const GitHubButton = ({text}: {text: string}) => {
+const GitHubButton = ({text, setLoggedIn}: {text: string, setLoggedIn: Function}) => {
   const handleAuthorization = () => {
     const windowWidth = 600;
     const windowHeight = 700;
@@ -62,6 +62,7 @@ const GitHubButton = ({text}: {text: string}) => {
     })
       .then(data => {
         setIsLoggedIn();
+        setLoggedIn(true);
         console.log(data);
       })
       .catch(err => {
