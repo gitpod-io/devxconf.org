@@ -25,7 +25,7 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
 
   const { data } = useSWR(['/api/vote', title], fetcher, {
     initialData: [],
-    refreshInterval: 5000
+    refreshInterval: 30000
   });
 
   const isLoggedIn = () => {
@@ -36,7 +36,7 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
   const addVote = async () => {
     try {
       const response = await fetch('/api/vote', {
-        body: JSON.stringify({ title, email: 'test@test.com' }),
+        body: JSON.stringify({ title }),
         headers: {
           'Content-Type': 'application/json'
         },
@@ -44,7 +44,8 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
       });
 
       if (response.status === 200) {
-        console.log('Added.');
+        data.voteCount += 1;
+        setIsAlreadyVoted(true);
       } else if (response.status === 400) {
         console.log('Error.');
       } else if (response.status === 409) {

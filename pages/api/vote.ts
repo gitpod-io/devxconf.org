@@ -19,9 +19,9 @@ export default async function handler(
     const voteCount = await getVoteCount(projectTitle);
     return res.json(JSON.stringify({voteCount}));
   }
-  
+
   const projectTitle: string = ((req.body.title as string) || '')
-  const email: string = ((req.body.email as string) || '')
+  const email: string = req.cookies['user-id']
   
   if (await addVote(projectTitle, email)) {
     return res.status(200).end();

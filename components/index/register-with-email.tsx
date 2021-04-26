@@ -52,11 +52,15 @@ const RegisterWithEmail = ({
 
       if (response.status === 200) {
         setSubmitted(true);
-        setLoggedIn(true);
+        if (setLoggedIn) {
+          setLoggedIn(true);
+        }
       } else if (response.status === 400) {
         setEmailError('Please enter a valid email.');
       } else if (response.status === 409) {
-        setLoggedIn(true);
+        if (setLoggedIn) {
+          setLoggedIn(true);
+        }
         setIsAlreadyRegistered(true);
         setSubmitted(true);
         setIsLoggedIn()
