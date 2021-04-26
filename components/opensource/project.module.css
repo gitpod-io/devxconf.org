@@ -32,6 +32,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 0 0 10%;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: .5;
 }
 
 .btn {

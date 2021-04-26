@@ -1,5 +1,4 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { ro } from 'date-fns/locale';
 
 const SPREADSHEET_ID: string = process.env.SPREADSHEET_ID || "";
 const SHEET_ID: string = process.env.SHEET_ID || "";
@@ -34,7 +33,12 @@ export async function persistEmail(email: string) {
   return true;
 }
 
-export async function updateVoteCount(projectTitle: string) {
+interface Vote {
+  Email: string; 
+  Project: string
+}
+
+export async function addVote(projectTitle: string, email: string) {
   try {
     const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
     await doc.useServiceAccountAuth({
@@ -44,19 +48,31 @@ export async function updateVoteCount(projectTitle: string) {
 
     // loads document properties and worksheets
     await doc.loadInfo();
-    const sheet = doc.sheetsByTitle["Vote Count"];
+    const sheet = doc.sheetsByTitle["Votes"];
     const rows = await sheet.getRows();
-    let rowNumber= 0;
+    const existingVotes: Vote[] = []
 
-    rows.forEach((row, i) => {
-      if (row._rawData[0] === projectTitle) {
-        console.log(`${projectTitle} was voted.`)
-        row._rawData[1] = `${parseInt(row._rawData[1]) + 1}`
-        rowNumber = i
-      }
+    rows.map(r => existingVotes.push({
+      Email: r._rawData[0],
+      Project: r._rawData[1]
+    }))
+
+    const row: Vote = {
+      Email: email,
+      Project: projectTitle
+    }
+
+    const findVote = existingVotes.findIndex(vote => {
+      if (vote.Email === row.Email && vote.Project === row.Project) {
+        return true
+      } 
     })
 
-    await rows[rowNumber].save();
+    if (findVote > -1) {
+      return false
+    } else {
+      await sheet.addRow({ Email: email, Project: projectTitle })
+    }
   } catch (e) {
     console.log(e)
   }
@@ -64,7 +80,7 @@ export async function updateVoteCount(projectTitle: string) {
 }
 
 export async function getVoteCount(projectTitle: string) {
-  let count; 
+  let count: number = 0;
 
   try {
     const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
@@ -75,12 +91,12 @@ export async function getVoteCount(projectTitle: string) {
 
     // loads document properties and worksheets
     await doc.loadInfo();
-    const sheet = doc.sheetsByTitle["Vote Count"];
+    const sheet = doc.sheetsByTitle["Votes"];
     const rows = await sheet.getRows();
 
     rows.forEach(row => {
-      if (row._rawData[0] === projectTitle) {
-        count = row._rawData[1]
+      if (row._rawData[1] === projectTitle) {
+        count += 1 
       }
     })
   } catch (e) {

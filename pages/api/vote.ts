@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { getVoteCount, updateVoteCount } from '@lib/google-spreadsheet'
+import { getVoteCount, addVote } from '@lib/google-spreadsheet'
 
 type ErrorResponse = {
   error: {
@@ -21,8 +21,9 @@ export default async function handler(
   }
   
   const projectTitle: string = ((req.body.title as string) || '')
+  const email: string = ((req.body.email as string) || '')
   
-  if (await updateVoteCount(projectTitle)) {
+  if (await addVote(projectTitle, email)) {
     return res.status(200).end();
   } else {
     return res.status(409).end();

@@ -1,0 +1,21 @@
+@keyframes spinner {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.25) rotate(1turn);
+  }
+  to {
+    transform: scale(1) rotate(2turn);
+  }
+}
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100rem;
+  border: 2px solid #44494e;
+  border-top-color: var(--brand);
+  animation: spinner 1.75s cubic-bezier(1, 0.45, 0.45, 1) infinite;
+}

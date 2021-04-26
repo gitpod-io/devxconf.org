@@ -9,25 +9,29 @@ import cn from 'classnames';
 import styles from './register-with-email.module.css';
 import validator from 'validator';
 
-const RegisterWithEmail = () => {
+interface RegisterWithEmailProps {
+  title?: string;
+}
+
+const RegisterWithEmail = ({ title }: RegisterWithEmailProps) => {
   const [submitted, setSubmitted] = useState(false);
   const [isAlreadyRegistered, setIsAlreadyRegistered] = useState(false);
   const [emailError, setEmailError] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const validateEmail = (e) => {
-    var email = e.target.value
-    if (validator.isEmail(email) || !email) { 
-      setEmailError('') 
+  const validateEmail = e => {
+    var email = e.target.value;
+    if (validator.isEmail(email) || !email) {
+      setEmailError('');
     } else {
-      setEmailError('Please enter a valid email.') 
+      setEmailError('Please enter a valid email.');
     }
-  }
+  };
 
   const addEmail = async email => {
     try {
       const response = await fetch('/api/register-email', {
-        body: JSON.stringify({email}),
+        body: JSON.stringify({ email }),
         headers: {
           'Content-Type': 'application/json'
         },
@@ -37,7 +41,7 @@ const RegisterWithEmail = () => {
       if (response.status === 200) {
         setSubmitted(true);
       } else if (response.status === 400) {
-        setEmailError('Please enter a valid email.') 
+        setEmailError('Please enter a valid email.');
       } else if (response.status === 409) {
         setIsAlreadyRegistered(true);
         setSubmitted(true);
@@ -55,7 +59,7 @@ const RegisterWithEmail = () => {
 
   return !submitted ? (
     <div>
-      <h2 className="heading-tertiary">Register with your email</h2>
+      {title ? <h2 className="heading-tertiary">Register with your email</h2> : null}
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           ref={inputRef}
@@ -67,10 +71,12 @@ const RegisterWithEmail = () => {
           onChange={e => validateEmail(e)}
           className={styles.input}
         />
-        { 
-          emailError ? <span className={styles.error}>{emailError}</span> : null
-        }
-        <button type="submit" className={cn('btn', styles.btn)} disabled={emailError ? true : false}>
+        {emailError ? <span className={styles.error}>{emailError}</span> : null}
+        <button
+          type="submit"
+          className={cn('btn', styles.btn)}
+          disabled={emailError ? true : false}
+        >
           Register Now
         </button>
       </form>

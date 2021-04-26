@@ -1,9 +1,11 @@
 import IconGithub from '@components/icons/icon-github';
 import { Project as ProjectProps } from '@lib/types';
-import React from 'react';
+import React, { useState } from 'react';
 import cn from 'classnames';
 import styles from './project.module.css';
 import useSWR from 'swr';
+import LoadingSpinner from '@components/loading-spinner';
+import Login from './login'
 
 const IconSite = () => (
   <svg height="18" width="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 15 15">
@@ -14,27 +16,24 @@ const IconSite = () => (
   </svg>
 );
 
-const Project = ({ 
-  logo, 
-  title, 
-  description, 
-  github, 
-  website 
-}: ProjectProps) => {
+const Project = ({ logo, title, description, github, website }: ProjectProps) => {
+  const [isAlreadyVoted, setIsAlreadyVoted] = useState(false);
 
-  const fetcher = (url: string, title: string) => fetch(`${url}?title=${title}`).then(res => res.json())
+  const fetcher = (url: string, title: string) =>
+    fetch(`${url}?title=${title}`).then(res => res.json());
 
-  const response = useSWR(['/api/vote', title], fetcher, {
+  const { data } = useSWR(['/api/vote', title], fetcher, {
     initialData: [],
     refreshInterval: 5000
-  })
-
-  console.log(response.data)
+  });
+  const isLoggedIn = () => {
+    return localStorage.getItem('isLoggedIn') === `true`;
+  };
 
   const addVote = async () => {
     try {
       const response = await fetch('/api/vote', {
-        body: JSON.stringify({title}),
+        body: JSON.stringify({ title, email: 'test@test.com' }),
         headers: {
           'Content-Type': 'application/json'
         },
@@ -42,40 +41,65 @@ const Project = ({
       });
 
       if (response.status === 200) {
-        console.log("Added.")
+        console.log('Added.');
       } else if (response.status === 400) {
-        console.log("Error.")
+        console.log('Error.');
       } else if (response.status === 409) {
-        console.log("You already voted.")
+        setIsAlreadyVoted(true);
       }
     } catch (e) {
       console.error('Error: ', e);
     }
-  }
+  };
+
+  const handleClick = () => {
+    if (!isLoggedIn()) {
+    } else {
+      addVote();
+    }
+  };
 
   return (
-    <div className={styles.project}>
-      <img className={styles.logo} src={`/projects/${logo}`} alt={title} />
-      <div className={styles.description}>
-        {description}
-        <div className={styles.icons}>
-          <a href={github} target="_blank">
-            <IconGithub color="#8E8787" size={20} />
-          </a>
-          {website ? (
-            <a href={website} target="_blank">
-              <IconSite />
+    <>
+      <div className={styles.project}>
+        <img className={styles.logo} src={`/projects/${logo}`} alt={title} />
+        <div className={styles.description}>
+          {description}
+          <div className={styles.icons}>
+            <a href={github} target="_blank">
+              <IconGithub color="#8E8787" size={20} />
             </a>
-          ) : null}
+            {website ? (
+              <a href={website} target="_blank">
+                <IconSite />
+              </a>
+            ) : null}
+          </div>
+        </div>
+        <div className={styles.votes}>
+          <a
+            role="button"
+            tabIndex={isAlreadyVoted ? -1 : 0}
+            className={cn('btn', styles.btn, isAlreadyVoted ? styles.disabled : '')}
+            onClick={handleClick}
+          >
+            {isAlreadyVoted ? <span>&#10003;</span> : 'Vote'}
+          </a>
+          {data.voteCount === undefined ? (
+            <p>
+              {' '}
+              <LoadingSpinner />
+            </p>
+          ) : (
+            <p>
+              {data.voteCount} {data.voteCount === 1 ? 'vote' : 'votes'}
+            </p>
+          )}
         </div>
       </div>
-      <div className={styles.votes}>
-        <a role="button" className={cn('btn', styles.btn)} onClick={() => addVote()}>
-          Vote {}
-        </a>
-      </div>
-    </div>
+      {/* <Login /> */}
+    </>
   );
-}
+};
 
 export default Project;
