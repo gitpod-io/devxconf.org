@@ -89,7 +89,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1032px) {
+@media screen and (min-width: 1210px) {
   .header-logos {
     max-width: 200px;
   }

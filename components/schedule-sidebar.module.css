@@ -68,6 +68,7 @@
     max-height: calc(var(--100vh) + 150px - var(--header-height));
     --talk-card-width: unset;
     padding-left: var(--gutter-normal);
+    border-left: 1px solid var(--grey-2);
   }
 }
 

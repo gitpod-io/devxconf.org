@@ -70,7 +70,7 @@ export const allStages: Stage[] = [
         }]
       },
       {
-        title: 'Development outage/ treating your default branch as production',
+        title: 'Using Observability to improve the Developer Experience',
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -154,6 +154,13 @@ export const allStages: Stage[] = [
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
         speaker: getSpeakerByName("Stephen O'Grady")
+      },
+      {
+        title: 'Building a K8s Operator for a Distributed Database',
+        description: '',
+        start: isEurope() ? '21:00' : '12:00 PM',
+        end: isEurope() ? '21:20' : '12:20 PM',
+        speaker: getSpeakerByName("Natalie Pistunovich")
       }
     ]
   },
@@ -165,12 +172,18 @@ export const allStages: Stage[] = [
     stream: '',
     schedule: [
       {
-        title: 'DX, performance, security - choose any three',
+        title: "VSCode Power User Tips & Tricks",
+        description: '', 
+        start: isEurope() ? '16:40' : '7:40 AM',
+        end: isEurope() ? '17:00' : '8:00 AM',
+        speaker: getSpeakerByName("Ahmad Awais")
+      },
+      {
+        title: 'Building Supabase Storage. DevX, performance, security - choose three',
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
         speaker: getSpeakerByName("Inian Parameshwaran"),
-        isLinkLess: true
       },
       {
         title: 'Streamlining Firebase Development with local Emulators',
@@ -215,7 +228,7 @@ export const allStages: Stage[] = [
         speaker: getSpeakerByName('Kyle Quest')
       },
       {
-        title: 'DevX in the Internet Era: One Step Forward, Two Steps Back',
+        title: 'DevX in the Internet Age: One Step Forward, Two Steps Back',
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
@@ -250,7 +263,7 @@ export const allStages: Stage[] = [
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
-      }
+      },
     ]
   }
 ];

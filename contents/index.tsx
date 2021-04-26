@@ -8,7 +8,7 @@ export const speakers: Speaker[] = [
     image: {
       url: 'jason-warner.jpeg'
     },
-    bio: '',
+    bio: 'Jason Warner is GitHub’s Chief Technology Officer. In his role, Jason oversees the Office of the CTO, whose mission is to explore the unknown and non-existent aspects of technology and software in order to build a map of GitHub’s future. Jason was previously Senior Vice President of Technology at GitHub, where he has played an integral role in scaling the Engineering, Product, and Security Teams, and building GitHub’s product roadmap to fit the needs of developers around the world.Prior to joining GitHub in 2017, Jason was Vice President of Engineering at Heroku. Before Heroku, Jason oversaw Product Engineering for Ubuntu Desktop and Ubuntu Phone at Canonical. Jason is passionate about building technologies that bring people together, and he’s an active speaker, writer, and advisor.',
     twitter: 'jasoncwarner',
     linkedin: 'jcwarner',
     github: 'jasoncwarner',
@@ -62,6 +62,52 @@ export const speakers: Speaker[] = [
     )
   },
   {
+    name: 'Jean Yang',
+    company: 'Akita Software',
+    title: 'Founder and CEO',
+    image: {
+      url: 'jean-yang.jpeg'
+    },
+    bio: (
+      <>
+        <p>
+          Jean Yang (
+          <a href="https://twitter.com/jeanqasaur" target="_blank">
+            @jeanqasaur
+          </a>
+          ) is the founder and CEO of{' '}
+          <a href="https://www.akitasoftware.com/" target="_blank">
+            Akita Software
+          </a>
+          , a developer tools company that is bringing structure to observability. Previously, Jean
+          was a professor of Computer Science at Carnegie Mellon University. Jean has a PhD from
+          MIT, holds software tools patents from work at Microsoft Research and Facebook, and was
+          selected as one of the MIT Technology Review's 35 Innovators Under 35 in 2016.
+        </p>
+      </>
+    ),
+    twitter: 'jeanqasaur',
+    linkedin: 'jean-yang-96575030',
+    github: 'jeanqasaur',
+    abstract: (
+      <>
+        <p>
+          <strong>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</strong>
+        </p>
+        <p>
+          The rise of APIs and service-oriented architectures has made it easier than ever before to
+          build complex web applications. But the developer tools we use were made for a simpler
+          time, one where developers had more control over all of the software they ran. Today, web
+          applications contain many heterogeneous components, all talking to each other across the
+          network, many of them SaaS apps. "Testing" in production has become the only way to make
+          sense. I'll talk about why we need to update our idea of testing, how we can do better at
+          understanding prod, and how bringing structure to observability is the way forward for
+          both.
+        </p>
+      </>
+    )
+  },
+  {
     name: 'Rachel Myers',
     company: 'Google',
     title: 'Engineer',
@@ -91,8 +137,8 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Ellen Chisa',
-    company: 'Boldstart',
-    title: 'Founder In Residence',
+    company: 'Darklang',
+    title: 'Founder',
     image: {
       url: 'ellen-chisa.jpeg'
     },
@@ -218,7 +264,19 @@ export const speakers: Speaker[] = [
     twitter: 'shanealeven',
     linkedin: 'shaneak',
     github: '',
-    abstract: ''
+    abstract: (
+      <>
+        <p>
+          <strong>Internal DevX Experience is broken… and you should be pissed</strong>
+        </p>
+        <p>
+          Our day to day developer experience is filled with practices that are inefficient, panic
+          ridden and just down-right an utter slog. Let's talk about how we can create a more
+          delightful daily experience by shifting our perspective from just in time understanding to
+          continuous code understanding.
+        </p>
+      </>
+    )
   },
   {
     name: 'Beyang Liu',
@@ -363,7 +421,7 @@ export const speakers: Speaker[] = [
     abstract: (
       <>
         <p>
-          <strong>DevX in the Internet Era: One Step Forward, Two Steps Back</strong>
+          <strong>DevX in the Internet Age: One Step Forward, Two Steps Back</strong>
         </p>
         <p>
           Building and hosting applications has both evolved and devolved since the dawn of the
@@ -410,7 +468,16 @@ export const speakers: Speaker[] = [
     twitter: 'kcqon',
     linkedin: 'kylequest',
     github: 'kcq',
-    abstract: 'Simplifying the Journey of Your Containerized Application from Dev to Production'
+    abstract: (
+      <>
+        <p>
+          <strong>Simplifying the Journey of Your Containerized Application from Dev to Production</strong>
+        </p>
+        <p>
+          Creating a containerized application PoC is deceptively simple. Making it production ready is a lot of work though. This talk will cover what’s necessary to have a production ready containerized application and the steps to get there. We’ll explore the best practices and gotchas containerizing applications. We’ll also compare creating production ready containers the hard way and the easy way.
+        </p>
+      </>
+    )
   },
   {
     name: 'Aidan Cunniffe',
@@ -440,6 +507,47 @@ export const speakers: Speaker[] = [
           special guests. If you produce, consume or live with an API — you should definitely make
           time for this talk!
         </p>
+      </>
+    )
+  },
+  {
+    name: 'Natalie Pistunovich',
+    company: 'Aerospike',
+    title: 'Lead Developer Advocate',
+    image: {
+      url: 'natalie.png'
+    },
+    bio:
+      "Natalie is a learner, a Google Developer Expert for Go, an OpenAI Developer Ambassador, a public speaker and a sailor. When she's not working on robust systems at Aerospike, she is organizing the conferences: GopherCon Europe, Cloud Nein, HeyAI and BSides Berlin, and the Berlin chapters of the Go and Women Techmakers user groups. Previously, she was an Engineering Manager, Software and Hardware Engineer, and a Co-Founder of a mobile start-up. In her free time, she is wondering if there is life on Mars.",
+    twitter: 'NataliePis',
+    linkedin: 'nataliepistunovich',
+    github: 'Pisush',
+    abstract: (
+      <>
+        <p>
+          <strong>Building a K8s Operator for a Distributed Database</strong>
+        </p>
+        <p>
+          How did we build a k8s operator that allows 100% up time for a high availability high
+          workload database? Operating a distributed high load, high throughput database in the
+          cloud comes with several interesting challenges. In order to manage real-time serving of
+          mission critical workloads at 100% availability we developed a Kubernetes operator that
+          handles the operational complexities.
+        </p>
+        <p>We needed to handle the following requirements:</p>
+        <ul>
+          <li>Apply live patches</li>
+          <li>Replace live cluster with tens of nodes</li>
+          <li>Handle degraded/crashed nodes</li>
+        </ul>
+        <p>Under these conditions:</p>
+        <ul>
+          <li>High Availability</li>
+          <li>remain 100% online with no down time</li>
+          <li>Operate under very high workloads and traffic</li>
+          <li>Manage replicated records across different hardware failure groups (rack awareness)</li>
+        </ul>
+        <p>Due to its stateful nature and the type of workloads that are usually handled, cluster management and recovery are non-trivial. We are using the Operators API to handle that complexity and control the clusters from within Kubernetes. In this talk we’ll cover the steps we took to plan and execute and the challenges we faced and share the best practices.</p>
       </>
     )
   },
@@ -522,7 +630,7 @@ export const speakers: Speaker[] = [
       <>
         <p>
           {' '}
-          <strong>DX, Performance, Security - Choose any three</strong>
+          <strong>Building Supabase Storage. DevX, performance, security - choose three</strong>
         </p>
 
         <p>
@@ -593,54 +701,42 @@ export const speakers: Speaker[] = [
     image: {
       url: 'bojra-burgos.jpeg'
     },
-    bio: '',
+    bio: (
+      <p>
+        Borja Burgos is a DevEx-obsessed entrepreneur and technologist. In 2013 he co-founded Tutum
+        – a platform for developers to build and run their Docker applications. After Tutum's
+        acquisition by Docker in 2015, Borja relentlessly continued working on new tools and
+        services to delight developers, from their local desktops to their cloud environments.
+        Disappointed with the complexity, and lack of visibility, in modern-day testing and
+        continuous integration workflows he left Docker to co-founded Undefined Labs, makers of{' '}
+        <a href="https://scope.dev/" target="_blank">
+          Scope
+        </a>{' '}
+        and{' '}
+        <a href="https://ctr.run/" target="_blank">
+          ctr.run
+        </a>
+        . Now as part of Datadog, Borja and the rest of the{' '}
+        <a href="https://undefinedlabs.com/" target="_blank">
+          Undefined Labs
+        </a>{' '}
+        team are building the next generation of developer-centric observability tools!
+      </p>
+    ),
     twitter: 'borja_burgos',
     linkedin: 'borjaburgos',
     github: 'borjaburgos',
-    abstract: ''
-  },
-  {
-    name: 'Jean Yang',
-    company: 'Akita Software',
-    title: 'Founder and CEO',
-    image: {
-      url: 'jean-yang.jpeg'
-    },
-    bio: (
-      <>
-        <p>
-          Jean Yang (
-          <a href="https://twitter.com/jeanqasaur" target="_blank">
-            @jeanqasaur
-          </a>
-          ) is the founder and CEO of{' '}
-          <a href="https://www.akitasoftware.com/" target="_blank">
-            Akita Software
-          </a>
-          , a developer tools company that is bringing structure to observability. Previously, Jean
-          was a professor of Computer Science at Carnegie Mellon University. Jean has a PhD from
-          MIT, holds software tools patents from work at Microsoft Research and Facebook, and was
-          selected as one of the MIT Technology Review's 35 Innovators Under 35 in 2016.
-        </p>
-      </>
-    ),
-    twitter: 'jeanqasaur',
-    linkedin: 'jean-yang-96575030',
-    github: 'jeanqasaur',
     abstract: (
       <>
         <p>
-          <strong>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</strong>
+          <strong>Using Observability to improve the Developer Experience</strong>
         </p>
         <p>
-          The rise of APIs and service-oriented architectures has made it easier than ever before to
-          build complex web applications. But the developer tools we use were made for a simpler
-          time, one where developers had more control over all of the software they ran. Today, web
-          applications contain many heterogeneous components, all talking to each other across the
-          network, many of them SaaS apps. "Testing" in production has become the only way to make
-          sense. I'll talk about why we need to update our idea of testing, how we can do better at
-          understanding prod, and how bringing structure to observability is the way forward for
-          both.
+          Observability is often associated with production and live environments, but it shouldn't
+          be! In this talk we'll explore innovative ways in which modern observability tools and
+          best practices can be leveraged during development to: improve developer productivity,
+          identify regressions earlier in the SDLC, and increase the performance and reliability of
+          our CI/CD workflows.
         </p>
       </>
     )
@@ -674,7 +770,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Anton Kosyakov',
     company: 'Gitpod',
-    title: 'Software Engineer',
+    title: 'Principal Software Engineer',
     image: {
       url: 'anton-kosyakov.jpeg'
     },
@@ -696,5 +792,30 @@ export const speakers: Speaker[] = [
         </p>
       </>
     )
-  }
+  },
+  {
+    name: 'Ahmad Awais',
+    company: 'RapidAPI',
+    title: 'Head of Developer Relations ',
+    image: {
+      url: 'ahmad-awais.jpeg'
+    },
+    bio: <>
+      <p>
+        <a href="https://twitter.com/MrAhmadAwais/" target="_blank">Ahmad Awais</a> is an <a href="https://www.linkedin.com/feed/update/urn:li:activity:6790272195416350720/" target="_blank">award-winning</a> open-source engineer​,​ Head of Developer Relations at <a href="https://rapidapi.com/company/about/" target="_blank">RapidAPI</a>, Google Developers Expert ​Dev Advocate, Node.js Community Committee Outreach Lead, WordPress Core​ Dev​, and ex VP ​of ​Engineering​​ at WGA. He has authored various open-source software tools used by millions of developers worldwide, like his <a href="https://ShadesOfPurple.pro/more" target="_blank">Shades of Purple</a> code-theme​ or projects like the​ <a href="https://github.com/AhmadAwais/corona-cli" target="_blank">corona-cli</a>​.
+      </p>
+      <p>
+        ​Awais ​loves to teach. Over 20,000 developers are learning from his courses ​, i.e., <a href="https://NodeCLI.com/?utm_medium=referral&amp;utm_campaign=speaking" target="_blank">NodeCLI.com</a>, <a href="https://VSCode.pro/?utm_medium=referral&amp;utm_campaign=speaking" target="_blank">VSCode.pro</a>,​ <a href="https://NextjsBeginner.com/?utm_medium=referral&amp;utm_campaign=speaking" target="_blank">NextjsBeginner.com</a>​​. He has spoken at 100+ tech conferences, including TEDx, ReactLive, Node Summit, Google Dev Summit, Next.js Conf. ​Awais received the FOSS community leadership recognition as one of the first 12 featured <a href="https://ahmadawais.com/github-stars/" target="_blank">GitHub Star</a> with a gold <a href="https://www.linkedin.com/feed/update/urn:li:activity:6790272195416350720/" target="_blank">GitHub Stars Award</a>. ​He is a member of the SmashingMagazine Experts Panel; featured &amp; published author at CSS-Tricks, Tuts+, Scotch.io, SitePoint. You can mostly find ​him on Twitter <a href="https://twitter.com/MrAhmadAwais/" target="_blank">@MrAhmadAwais</a>, where he tweets his <a href="https://Awais.dev/odmt" target="_blank">#OneDevMinute</a> developer tips.
+      ​</p>
+    </>,
+    twitter: 'MrAhmadAwais',
+    linkedin: 'mrahmadawais',
+    github: 'ahmadawais',
+    abstract: <>
+      <p>VSCode Power User Tips & Tricks</p>
+      <p>
+      After 10 years with Sublime Text, I switched to VSCode — the new open-source cross-platform editor everyone's talking about. I've spent over 1,000 hours perfecting my setup to help you switch today. In this talk, you'll get to learn tens of VSCode Power User workflows that'll help you save time and code more efficiently. Text manipulation to multi-cursors and even Markdown tips/tricks. You name it.
+      </p>
+    </>
+  },
 ];

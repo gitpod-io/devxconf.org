@@ -114,7 +114,7 @@ export default function SpeakerSection({ speaker }: Props) {
             {speaker.abstract ? (
               <>
                 <h2 className="heading-quadrary">Abstract</h2>
-                <div>
+                <div className={styles.abstract}>
                   {typeof speaker.abstract === 'string' ? (
                     <p>{speaker.abstract}</p>
                   ) : (

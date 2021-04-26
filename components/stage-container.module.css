@@ -38,7 +38,8 @@
   height: 100%;
 }
 
-.yt > img {
+.yt > * {
+  min-height: 500px;
   height: 100%;
   width: 100%;
 }
@@ -74,7 +75,6 @@
   .streamContainer {
     width: calc(100vw - 310px);
     padding-right: var(--gutter-medium);
-    border-right: 1px solid var(--grey-2);
   }
 }
 
@@ -103,6 +103,10 @@
 @media(max-width: 767px) {
   .streamContainer {
     height: initial;
+  }
+
+  .yt > * { 
+    min-height: 300px;
   }
 
   .row {

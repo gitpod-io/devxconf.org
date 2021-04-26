@@ -33,12 +33,14 @@ export type Speaker = {
 };
 
 export type Stage = {
-  name: string;
+  name?: string;
   day: string;
   slug: string;
   stream: string;
   discord: string;
   schedule?: Talk[];
+  description?: string;
+  speaker?: string;
 };
 
 export type Talk = {
@@ -57,16 +59,17 @@ export type Link = {
 export type Sponsor = {
   name: string;
   description: string | string[];
-  slug: string;
-  website: string;
-  callToAction: string;
-  callToActionLink: string;
-  links: SponsorLink[];
+  website?: string;
+  callToAction?: string;
+  callToActionLink?: string;
+  links?: SponsorLink[];
   discord: string;
   tier: string;
-  cardImage: JSX.Element;
+  cardImage?: JSX.Element;
   logo: Image;
   youtubeSlug: string;
+  image?: string;
+  transform?: string;
 };
 
 export type SponsorLink = {
