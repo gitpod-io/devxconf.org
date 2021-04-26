@@ -24,8 +24,8 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
     fetch(`${url}?title=${title}`).then(res => res.json());
 
   const { data } = useSWR(['/api/vote', title], fetcher, {
-    initialData: [],
-    refreshInterval: 30000
+    initialData: {},
+    revalidateOnMount: true
   });
 
   const isLoggedIn = () => {
