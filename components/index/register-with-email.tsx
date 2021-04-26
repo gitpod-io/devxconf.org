@@ -11,9 +11,17 @@ import validator from 'validator';
 
 interface RegisterWithEmailProps {
   title?: string;
+  isConsentNoteShown?: boolean;
+  buttonText?: string;
+  successText?: string;
 }
 
-const RegisterWithEmail = ({ title }: RegisterWithEmailProps) => {
+const RegisterWithEmail = ({
+  title,
+  isConsentNoteShown,
+  buttonText,
+  successText
+}: RegisterWithEmailProps) => {
   const [submitted, setSubmitted] = useState(false);
   const [isAlreadyRegistered, setIsAlreadyRegistered] = useState(false);
   const [emailError, setEmailError] = useState('');
@@ -59,7 +67,7 @@ const RegisterWithEmail = ({ title }: RegisterWithEmailProps) => {
 
   return !submitted ? (
     <div>
-      {title ? <h2 className="heading-tertiary">Register with your email</h2> : null}
+      {title ? <h2 className="heading-tertiary">{title}</h2> : null}
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           ref={inputRef}
@@ -77,15 +85,15 @@ const RegisterWithEmail = ({ title }: RegisterWithEmailProps) => {
           className={cn('btn', styles.btn)}
           disabled={emailError ? true : false}
         >
-          Register Now
+          {buttonText ? buttonText : 'Register Now'}
         </button>
       </form>
-      <ConsentNote />
+      {isConsentNoteShown ? <ConsentNote /> : null}
     </div>
   ) : isAlreadyRegistered ? (
-    <AlreadyRegistered />
+    <AlreadyRegistered text={successText} />
   ) : (
-    <RegisterationSuccess />
+    <RegisterationSuccess text={successText} />
   );
 };
 

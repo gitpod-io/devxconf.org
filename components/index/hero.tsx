@@ -66,7 +66,7 @@ export default function Hero() {
           setIsShown={setIsRegisterWithEmailSelected}
           bodyStyles={{ display: 'flex', justifyContent: 'center' }}
         >
-          <RegisterWithEmail />
+          <RegisterWithEmail title="Register with your email" isConsentNoteShown={true} />
         </Popup>
 
         <p className={styles.footnote}>

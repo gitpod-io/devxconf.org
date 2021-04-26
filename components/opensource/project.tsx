@@ -18,6 +18,7 @@ const IconSite = () => (
 
 const Project = ({ logo, title, description, github, website }: ProjectProps) => {
   const [isAlreadyVoted, setIsAlreadyVoted] = useState(false);
+  const [shown, setShown] = useState(false);
 
   const fetcher = (url: string, title: string) =>
     fetch(`${url}?title=${title}`).then(res => res.json());
@@ -26,7 +27,9 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
     initialData: [],
     refreshInterval: 5000
   });
+
   const isLoggedIn = () => {
+    // Todo Use cookie to check whether the user is logged in.
     return localStorage.getItem('isLoggedIn') === `true`;
   };
 
@@ -54,6 +57,7 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
 
   const handleClick = () => {
     if (!isLoggedIn()) {
+      setShown(true)
     } else {
       addVote();
     }
@@ -97,7 +101,7 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
           )}
         </div>
       </div>
-      {/* <Login /> */}
+      <Login shown={shown} setShown={setShown} />
     </>
   );
 };
