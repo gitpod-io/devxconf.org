@@ -55,6 +55,7 @@ const RegisterWithEmail = ({
         if (setLoggedIn) {
           setLoggedIn(true);
         }
+        setIsLoggedIn()
       } else if (response.status === 400) {
         setEmailError('Please enter a valid email.');
       } else if (response.status === 409) {
