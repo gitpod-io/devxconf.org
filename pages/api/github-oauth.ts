@@ -21,6 +21,10 @@ import { renderAlreadyRegistered, renderError, renderSuccess } from '@lib/render
 
 import { persistEmail } from '@lib/google-spreadsheet'
 
+import { COOKIE } from '@lib/constants';
+import cookie from 'cookie';
+import ms from 'ms';
+
 // import { nanoid } from 'nanoid';
 // import redis from '@lib/redis';
 
@@ -83,6 +87,16 @@ export default async function githubOAuth(req: NextApiRequest, res: NextApiRespo
   const userEmailDetails = userEmails.find(({visibility, primary}) => visibility === 'public' || primary);
   const userEmail = (userEmailDetails && userEmailDetails.email) || "";
 
+  res.setHeader(
+    'Set-Cookie',
+    cookie.serialize(COOKIE, userEmail, {
+      httpOnly: true,
+      sameSite: 'strict',
+      secure: process.env.NODE_ENV === 'production',
+      path: '/api',
+      expires: new Date(Date.now() + ms('7 days'))
+    })
+  );
   if (await persistEmail(userEmail)) {
     res.statusCode = 200;
     res.end(renderSuccess());

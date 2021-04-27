@@ -1,0 +1,13 @@
+.wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.imp {
+    color: var(--brand);
+}
+
+.projects {
+    margin: var(--gutter-large) 0;
+}

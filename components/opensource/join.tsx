@@ -11,7 +11,7 @@ const Join = () => (
           Do you want to join in on our journey of funding open source?
         </h2>
         <div className="wrapper-small">
-          <p className={styles['intro-p']}>Here is want you can do:</p>
+          <p className={styles['intro-p']}>Here is what you can do:</p>
           <ol className={styles.list}>
             <li>
               <span>1- </span>Generate the bill of materials in your commerical software.

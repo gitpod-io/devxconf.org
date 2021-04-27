@@ -1,5 +1,6 @@
 import { GitHubOAuthData } from '@lib/types';
 import { SITE_ORIGIN } from '@lib/constants';
+import { setIsLoggedIn } from 'utils/helpers';
 import styles from './register-button.module.css';
 
 const GitHubLogo = () => (
@@ -21,7 +22,7 @@ const GitHubLogo = () => (
   </svg>
 );
 
-const RegisterButton = () => {
+const GitHubButton = ({text, setLoggedIn}: {text: string, setLoggedIn?: Function}) => {
   const handleAuthorization = () => {
     const windowWidth = 600;
     const windowHeight = 700;
@@ -60,6 +61,10 @@ const RegisterButton = () => {
       });
     })
       .then(data => {
+        setIsLoggedIn();
+        if (setLoggedIn) {
+          setLoggedIn(true);
+        }
         console.log(data);
       })
       .catch(err => {
@@ -71,10 +76,10 @@ const RegisterButton = () => {
   return (
     <div className={styles['btn-wrapper']}>
       <button className="btn btn--big" onClick={() => handleAuthorization()}>
-        Register with <GitHubLogo />
+        {text} <GitHubLogo />
       </button>
     </div>
   );
 };
 
-export default RegisterButton;
+export default GitHubButton;

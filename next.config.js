@@ -26,6 +26,8 @@ module.exports = {
     imageSizes: [24, 64, 300]
   },
   env: {
+    IS_PRODUCTION: process.env.IS_PRODUCTION,
+    GA_TRACKING_ID: process.env.GA_TRACKING_ID,
     SPREADSHEET_ID: process.env.SPREADSHEET_ID,
     SHEET_ID: '0',
     CLIENT_EMAIL: process.env.CLIENT_EMAIL,
@@ -33,6 +35,7 @@ module.exports = {
     NEXT_PUBLIC_GITHUB_OAUTH_CLIENT_ID: process.env.GITHUB_OAUTH_CLIENT_ID,
     GITHUB_OAUTH_CLIENT_SECRET: process.env.GITHUB_OAUTH_CLIENT_SECRET,
     NEXT_PUBLIC_SITE_ORIGIN: process.env.NEXT_PUBLIC_SITE_ORIGIN,
+    DATOCMS_READ_ONLY_API_TOKEN: process.env. DATOCMS_READ_ONLY_API_TOKEN,
   },
   webpack: (config, options) => {
     config.node = {

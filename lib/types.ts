@@ -33,12 +33,14 @@ export type Speaker = {
 };
 
 export type Stage = {
-  name: string;
+  name?: string;
   day: string;
   slug: string;
   stream: string;
   discord: string;
   schedule?: Talk[];
+  description?: string;
+  speaker?: string;
 };
 
 export type Talk = {
@@ -67,6 +69,7 @@ export type Sponsor = {
   logo: Image;
   youtubeSlug: string;
   image?: string;
+  transform?: string;
 };
 
 export type SponsorLink = {
@@ -104,3 +107,11 @@ export type GitHubOAuthData =
       login: string;
       email: string;
     };
+
+export type Project = {
+  title: string;
+  description: string | JSX.Element;
+  logo: string;
+  github: string;
+  website?: string;
+}

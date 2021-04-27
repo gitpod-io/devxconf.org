@@ -1,0 +1,23 @@
+.row {
+  text-align: center;
+  margin-top: var(--gutter-large);
+}
+
+.row p {
+  margin-bottom: var(--gutter-small);
+}
+
+.authenticate {
+    display: inline-block;
+    margin-top: var(--gutter-small);
+}
+
+@media (max-width: 767px) {
+  .row {
+    margin-top: 0;
+  }
+
+  .row p {
+    margin-bottom: var(--gutter-small-mobile);
+  }
+}

@@ -32,7 +32,7 @@ export const sponsors: Sponsor[] = [
   {
     name: 'Slim.ai',
     description:
-      ['TBD'],
+      ['Slim.AI is a developer efficiency platform for cloud-native applications and containerized workflows. The Slim Developer Platform provides automated optimization, workflow management, and analytic tooling for containerized apps, improving velocity, security, and performance. We help devs focus less on infrastructure and more on writing great code.'],
     discord: 'https://discord.gg/U3QvSZXyk3',
     callToAction: 'Website',
     callToActionLink: 'https://www.slim.ai',
@@ -88,16 +88,53 @@ export const sponsors: Sponsor[] = [
     description:
       [' Cloudquery transforms cloud infrastructure into queryable SQL for easy monitoring, governance and security.'],
     discord: '',
-    links: [{ text: 'GitHub Repo', url: '' }, { text: 'Contact Sales', url: '' }, { text: 'GitLab Enterprise', url: '' }],
     website: 'https://cloudquery.io',
     youtubeSlug: '',
-    callToAction: 'Try Now',
-    callToActionLink: '',
     tier: 'start-up',
     logo: {
       url: '/sponsors/cloudquery.svg'
     },
     image: 'cloudquery.png'
+  },
+  {
+    name: 'Console.dev',
+    description:
+      ['Console is a free weekly email digest of the best tools and beta releases for developers.'],
+    discord: 'https://discord.gg/srE7fVe3gC',
+    website: '',
+    youtubeSlug: '',
+    callToAction: 'Website',
+    callToActionLink: 'https://console.dev/',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/console.svg'
+    },
+    image: 'console.png'
+  }, 
+  {
+    name: 'Ladies in DevOps',
+    description:
+      [''],
+    discord: '',
+    website: 'https://ladiesindevops.com/',
+    youtubeSlug: '',
+    tier: 'start-up',
+    logo: {
+      url: '/sponsors/ladies-in-devops.svg'
+    },
+    transform: 'scale(1.2)',
+  },
+  {
+    name: 'Swimm',
+    description:
+      [''],
+    discord: '',
+    website: 'https://swimm.io/product/',
+    youtubeSlug: '',
+    tier: 'start-up',
+    logo: {
+      url: '/sponsors/swimm.svg'
+    },
   },
   // {
   //   name: 'Datadog',

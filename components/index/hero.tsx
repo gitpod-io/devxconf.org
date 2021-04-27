@@ -20,7 +20,7 @@ import ConsentNote from './consent-note';
 import DeveloperProductivity from './developer-productivity';
 import { PatternHalfCircle } from '@components/patterns';
 import Popup from '@components/popup';
-import RegisterButton from './register-button';
+import GitHubButton from './github-button';
 import RegisterWithEmail from './register-with-email';
 import cn from 'classnames';
 import styleUtils from '../utils.module.css';
@@ -60,13 +60,13 @@ export default function Hero() {
           <span>Virtual</span>
         </div>
 
-        <RegisterButton />
+        <GitHubButton text="Register with" />
         <Popup
           isShown={isRegisterWithEmailSelected}
           setIsShown={setIsRegisterWithEmailSelected}
           bodyStyles={{ display: 'flex', justifyContent: 'center' }}
         >
-          <RegisterWithEmail />
+          <RegisterWithEmail title="Register with your email" isConsentNoteShown={true} />
         </Popup>
 
         <p className={styles.footnote}>

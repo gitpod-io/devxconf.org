@@ -172,12 +172,18 @@ export const allStages: Stage[] = [
     stream: '',
     schedule: [
       {
+        title: "VSCode Power User Tips & Tricks",
+        description: '', 
+        start: isEurope() ? '16:40' : '7:40 AM',
+        end: isEurope() ? '17:00' : '8:00 AM',
+        speaker: getSpeakerByName("Ahmad Awais")
+      },
+      {
         title: 'Building Supabase Storage. DevX, performance, security - choose three',
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
         speaker: getSpeakerByName("Inian Parameshwaran"),
-        isLinkLess: true
       },
       {
         title: 'Streamlining Firebase Development with local Emulators',
@@ -257,7 +263,7 @@ export const allStages: Stage[] = [
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
-      }
+      },
     ]
   }
 ];
