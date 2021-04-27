@@ -8,10 +8,11 @@ const Vote = () => (
   <Section>
     <div className="row">
       <div className={styles.wrapper}>
-        <h2 className="heading-secondary">Vote for your favourite open-source project</h2>
+        <h2 className="heading-secondary">Vote for your favourite open-source projects</h2>
         <p>
-          And we’ll fund the winning project with a{' '}
-          <span className={styles.imp}>$5k donation.</span>
+          And we’ll distribute {' '}
+          <span className={styles.imp}>USD $10,000</span>
+          {' '} between the projects using <a href="https://wtfisqf.com/">Quadratic Funding</a> and the distribution of votes. 🦄{' '}
         </p>
       </div>
       <div className={styles.projects}>
