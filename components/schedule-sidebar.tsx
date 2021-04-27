@@ -19,31 +19,36 @@ import { Stage } from '@lib/types';
 import TalkCard from './talk-card';
 import styles from './schedule-sidebar.module.css';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 
 type Props = {
   allStages: Stage[];
 };
 
 export default function ScheduleSidebar({ allStages }: Props) {
-  const [stage, setStage] = useState('a');
-
+  const router = useRouter();
+  const [stage] = useState(router.query.slug);
   const currentStage = allStages.find((s: Stage) => s.slug === stage);
+  const [day, setDay] = useState(currentStage?.day);
+  
+  const currentStageDaysSchedules = allStages.filter((s: Stage) => s.slug === stage) || [];
+  const uniqueDayStrings = currentStageDaysSchedules.map((s: Stage) => s.day)
 
   return (
     <div className={styles.schedule}>
       <h3 className="heading-tertiary">Schedule</h3>
-      <Select aria-label="Select a stage" value={stage} onChange={e => {
-        setStage(e.target.value);
+      <Select aria-label="Select a day" value={day} onChange={e => {
+        setDay(e.target.value);
       }}>
-        {allStages.map(stage => (
-          <option key={stage.slug} value={stage.slug}>
-            {stage.day}
+        {uniqueDayStrings.map((day, i) => (
+          <option key={i} value={day}>
+            {day}
           </option>
         ))}
       </Select>
       <div className={styles.talks}>
-        {undefined !== currentStage?.schedule
-          ? currentStage?.schedule.map(talk => <TalkCard key={talk.title} talk={talk} showTime />)
+        {undefined !== currentStageDaysSchedules
+          ? currentStageDaysSchedules.find((s: Stage) => s.day === day)?.schedule?.map(talk => <TalkCard key={talk.title} talk={talk} showTime />)
           : null}
       </div>
     </div>
