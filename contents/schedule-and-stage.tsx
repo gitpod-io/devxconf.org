@@ -111,7 +111,13 @@ export const allStages: Stage[] = [
         end: isEurope() ? '20:20' : '11:20 AM',
         speaker: getSpeakerByName('Ian Jennings')
       },
-      // Steve Redmonk talk missing
+      {
+        title: 'The developer experience gap',
+        description: '',
+        start: isEurope() ? '20:40' : '11:40 AM',
+        end: isEurope() ? '21:00' : '12:00 PM',
+        speaker: getSpeakerByName("Stephen O'Grady")
+      },
     ]
   },
 
@@ -218,13 +224,6 @@ export const allStages: Stage[] = [
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName('Mike Nikles'), getSpeakerByName('Anton Kosyakov')]
-      },
-      {
-        title: 'The developer experience gap',
-        description: '',
-        start: isEurope() ? '20:40' : '11:40 AM',
-        end: isEurope() ? '21:00' : '12:00 PM',
-        speaker: getSpeakerByName("Stephen O'Grady")
       },
       {
         title: 'Building a K8s Operator for a Distributed Database',
