@@ -26,6 +26,7 @@ import cn from 'classnames';
 import styleUtils from '../utils.module.css';
 import styles from './hero.module.css';
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function Hero() {
   const [isRegisterWithEmailSelected, setIsRegisterWithEmailSelected] = useState(false);
@@ -55,29 +56,13 @@ export default function Hero() {
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
         <div className={cn(styles.info, 'heading-quadrary')}>
-          <span>{DATE}</span>
-          &nbsp;-&nbsp;
-          <span>Virtual</span>
+          It's live now
         </div>
-
-        <GitHubButton text="Register with" />
-        <Popup
-          isShown={isRegisterWithEmailSelected}
-          setIsShown={setIsRegisterWithEmailSelected}
-          bodyStyles={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <RegisterWithEmail title="Register with your email" isConsentNoteShown={true} />
-        </Popup>
-
-        <p className={styles.footnote}>
-          <button
-            className={styles['register-with-email']}
-            onClick={() => setIsRegisterWithEmailSelected(true)}
-          >
-            Register via email
-          </button>
-        </p>
-        <ConsentNote />
+        <Link href="/stage/a">
+          <a className="btn btn--big">
+            Go to Stage
+          </a>
+        </Link>
       </div>
       <PatternHalfCircle
         isInverted={true}

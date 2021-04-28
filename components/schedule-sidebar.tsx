@@ -18,7 +18,7 @@ import Select from './select';
 import { Stage } from '@lib/types';
 import TalkCard from './talk-card';
 import styles from './schedule-sidebar.module.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 type Props = {
@@ -27,17 +27,37 @@ type Props = {
 
 export default function ScheduleSidebar({ allStages }: Props) {
   const router = useRouter();
-  const [stage] = useState(router.query.slug);
+  const [stage, setStage] = useState(router.query.slug);
   const currentStage = allStages.find((s: Stage) => s.slug === stage);
-  const [day, setDay] = useState(currentStage?.day);
-  
+  const [day, setDay] = useState(currentStage?.day);  
   const currentStageDaysSchedules = allStages.filter((s: Stage) => s.slug === stage) || [];
   const uniqueDayStrings = currentStageDaysSchedules.map((s: Stage) => s.day)
 
+
+  useEffect(() => {
+    setStage(router.query.slug)
+  }, [router.query.slug])
+
   return (
     <div className={styles.schedule}>
+      <h3 className="heading-tertiary">Stage</h3>
+      <Select aria-label="Select a Stage" value={stage}
+        onChange={(e: any) => {
+          const slug = e.target.value;
+          setStage(slug)
+          router.push(`/stage/${slug}`)
+        }}
+        isGrey={true}
+      >
+        {[allStages[0], allStages[2]].map(stage => (
+          <option key={stage.slug} value={stage.slug}>
+            {stage.name}
+          </option>
+        ))}
+      </Select>
+
       <h3 className="heading-tertiary">Schedule</h3>
-      <Select aria-label="Select a day" value={day} onChange={e => {
+      <Select aria-label="Select a day" value={day} onChange={(e: any) => {
         setDay(e.target.value);
       }}>
         {uniqueDayStrings.map((day, i) => (
