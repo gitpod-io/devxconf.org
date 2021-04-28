@@ -22,7 +22,7 @@
  
  import { getAllStages } from '../../lib/cms-api';
  import { Stage } from '../../lib/types';
- import { META_DESCRIPTION } from '../../lib/constants';
+ import { SITE_NAME, META_DESCRIPTION } from '../../lib/constants';
  
  type Props = {
    stage: Stage;
@@ -31,7 +31,7 @@
  
  export default function StagePage({ stage, allStages }: Props) {
    const meta = {
-     title: 'Demo - Virtual Event Starter Kit',
+     title: SITE_NAME,
      description: META_DESCRIPTION
    };
  
