@@ -27,9 +27,50 @@
  import styles from './stage-container.module.css';
  import useSWR from 'swr';
  import { useRouter } from 'next/router';
+ import { getSpeakerByName } from '../contents/schedule-and-stage';
+ import { SpeakerNameAvatar } from './talk-card';
  
  type Props = {
    stage: Stage;
+ };
+ 
+ const InfoWidget = ({ name, description, speakerName, discord }: any) => {
+   const isSpeakerArray = Array.isArray(speakerName)
+   const speaker = isSpeakerArray ? [getSpeakerByName(speakerName[0]), getSpeakerByName(speakerName[1])] : getSpeakerByName(speakerName);
+ 
+   return (
+     <div className={styles.bottom}>
+       <div className={styles.messageContainer}>
+         <h2 className="heading-tertiary">{name}</h2>
+         {speaker !== undefined ? <div className={styles["speaker"]}>
+           <SpeakerNameAvatar speaker={speaker} />
+         </div> : null}
+         {description ? <p>{description}</p> : null}
+         {
+           // @ts-ignore
+           !isSpeakerArray  ? (<div>{speaker?.abstract ? speaker.abstract : null}</div>) : (<div>{speaker[0]?.abstract ? speaker[0].abstract : null}</div>)
+         }
+       </div>
+       <div className={styles['btn-container']}>
+         <a
+           target="_blank"
+           href={discord}
+           rel="noopener noreferrer"
+           className={cn('btn btn--big', styles['chat-button'])}
+         >
+           Join Live Chat <DiscordLogo />
+         </a>
+         {!isSpeakerArray && typeof speakerName === 'string' ? (
+           <Link href={`/speakers/${hyphenate(speakerName)}`}>
+             <a className="btn btn--secondary">See Speaker Profile</a>
+           </Link>
+           // @ts-ignore
+         ) : <Link href={`/speakers/${hyphenate(speaker[0].name)}`}>
+         <a className="btn btn--secondary">See Speaker Profile</a>
+       </Link>}
+       </div>
+     </div>
+   );
  };
  
  export default function StageContainer({ stage }: Props) {
@@ -41,12 +82,13 @@
    });
  
    const response = useSWR('/api/stages', {
-     initialData: allStages,
+     initialData: [],
      refreshInterval: 5000
    });
- 
+   
    const updatedStages = response.data || [];
    const updatedStage = updatedStages.find((s: Stage) => s.slug === slug) || stage;
+   const speakerName = updatedStage.speaker?.includes(',') ? updatedStage.speaker.split(',') : updatedStage.speaker
  
    return (
      <div className={cn('row', styles.row)}>
@@ -62,27 +104,12 @@
                    allowFullScreen
                  ></iframe>
                </div>
-               <div className={styles.bottom}>
-                 <div className={styles.messageContainer}>
-                   <h2 className="heading-tertiary">{updatedStage.name}</h2>
-                   {updatedStage.description ? <p>{updatedStage.description}</p> : null}
-                 </div>
-                 <div className={styles['btn-container']}>
-                   <a
-                     target="_blank"
-                     href="https://discord.gg/JP9bWxNbwS"
-                     rel="noopener noreferrer"
-                     className={cn('btn btn--big', styles['chat-button'])}
-                   >
-                     Join Live Chat <DiscordLogo />
-                   </a>
-                   {updatedStage.speaker ? (
-                     <Link href={`/speakers/${hyphenate(updatedStage.speaker)}`}>
-                       <a className="btn btn--secondary">See Speaker Profile</a>
-                     </Link>
-                   ) : null}
-                 </div>
-               </div>
+               <InfoWidget
+                 name={updatedStage.name}
+                 description={updatedStage.description}
+                 speakerName={speakerName}
+                 discord={updatedStage.discord}
+               />
              </div>
          </div>
          <ScheduleSidebar allStages={allStages} />
@@ -90,6 +117,4 @@
      </div>
    );
  }
- 
- 
  
