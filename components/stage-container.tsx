@@ -17,7 +17,6 @@
  import { useEffect, useState } from 'react';
 
  import { DiscordLogo } from './pages/community';
- import EnterStage from './stage/enter-stage';
  import Link from 'next/link';
  import ScheduleSidebar from './schedule-sidebar';
  import { Stage } from '@lib/types';
@@ -53,9 +52,6 @@
      <div className={cn('row', styles.row)}>
        <div className={styles.container}>
          <div className={styles.streamContainer}>
-           {!loggedIn ? (
-             <EnterStage setLoggedIn={setIsLoggedIn} />
-           ) : (
              <div className={styles.stream}>
                <div className={styles.yt}>
                  <iframe
@@ -88,7 +84,6 @@
                  </div>
                </div>
              </div>
-           )}
          </div>
          <ScheduleSidebar allStages={allStages} />
        </div>
