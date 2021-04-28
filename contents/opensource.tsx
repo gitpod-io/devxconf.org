@@ -21,7 +21,7 @@ export const projects: Project[] = [
         programming language.
       </p>
     ),
-    logo: 'erlang_ls.svg',
+    logo: 'erlang-ls.svg',
     github: 'https://github.com/erlang-ls/erlang_ls',
     website: 'https://erlang-ls.github.io/'
   },
@@ -44,7 +44,7 @@ export const projects: Project[] = [
         programming language.
       </p>
     ),
-    logo: 'elm-language-server.svg',
+    logo: 'els.svg',
     github: 'https://github.com/elm-tooling/elm-language-server',
     website: ''
   },
@@ -142,7 +142,7 @@ export const projects: Project[] = [
         <strong>rvm</strong> is the acronym of Ruby enVironment Manager. It manages Ruby application environments and enables switching between them..
       </p>
     ),
-    logo: 'rvm.svg',
+    logo: 'rvm.png',
     github: 'https://github.com/rvm/rvm',
     website: 'https://rvm.io/'
   },
@@ -166,7 +166,7 @@ export const projects: Project[] = [
         <strong>patch-package</strong> lets app authors instantly make and keep fixes to npm dependencies. A vital band-aid for javascript developers living on the bleeding edge.
       </p>
     ),
-    logo: 'patch-package.svg',
+    logo: 'patch-pkg.svg',
     github: 'https://github.com/ds300/patch-package',
     website: ''
   },
@@ -179,7 +179,7 @@ export const projects: Project[] = [
         programming language.
       </p>
     ),
-    logo: 'php-language-server.svg',
+    logo: 'pls.svg',
     github: 'https://github.com/felixfbecker/php-language-server',
     website: ''
   },
