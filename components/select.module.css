@@ -43,7 +43,9 @@
   color: var(--grey);
   font-size: 14px;
   font-family: inherit;
+  text-transform: uppercase;
   width: 100%;
+  letter-spacing: var(--letter-spacing);
   word-spacing: normal;
   writing-mode: horizontal-tb !important;
   padding: var(--gutter-small-x);
@@ -54,10 +56,14 @@
   background-color: var(--sidebar);
 }
 
+.is-grey {
+  background: var(--grey);
+  color: var(--black);
+}
+
 .select:focus {
   outline: none;
 }
-
 
 .select option {
   background-color: black;
@@ -73,8 +79,4 @@
   display: flex;
   align-items: center;
   transition: border 0.2s ease 0s;
-}
-
-.arrow > svg {
-  color: var(--grey);
 }

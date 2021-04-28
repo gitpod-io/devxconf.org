@@ -17,10 +17,10 @@
 import cn from 'classnames';
 import styles from './select.module.css';
 
-export default function Select({ className, ...props }: JSX.IntrinsicElements['select']) {
+export default function Select({ className, isGrey, ...props }: any) {
   return (
     <div className={styles.container}>
-      <select className={cn(styles.select, className)} {...props} />
+      <select className={cn(styles.select, className, isGrey ? styles["is-grey"] : null)} {...props} />
       <div className={styles.arrow}>
         <svg
           viewBox="0 0 24 24"
@@ -30,8 +30,9 @@ export default function Select({ className, ...props }: JSX.IntrinsicElements['s
           strokeWidth="1.5"
           strokeLinecap="round"
           strokeLinejoin="round"
-          fill="none"
+          fill='none'
           shapeRendering="geometricPrecision"
+          color={isGrey ? 'var(--black)' : 'var(--grey)'}
         >
           <path d="M6 9l6 6 6-6" />
         </svg>
