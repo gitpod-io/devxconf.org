@@ -85,21 +85,10 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
           <a
             role="button"
             tabIndex={isAlreadyVoted ? -1 : 0}
-            className={cn('btn', styles.btn, isAlreadyVoted ? styles.disabled : '')}
-            onClick={handleClick}
-          >
-            {isAlreadyVoted ? <span>&#10003;</span> : 'Vote'}
+            className={cn('btn', styles.btn)}
+            href="https://discord.gg/JMj6YjBg6e"
+          >Vote in Discord
           </a>
-          {data.voteCount === undefined ? (
-            <p>
-              {' '}
-              <LoadingSpinner />
-            </p>
-          ) : (
-            <p>
-              {data.voteCount} {data.voteCount === 1 ? 'vote' : 'votes'}
-            </p>
-          )}
         </div>
       </div>
       <Login shown={shown} setShown={setShown} />
