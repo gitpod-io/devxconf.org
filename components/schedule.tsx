@@ -54,6 +54,19 @@ type Props = {
 };
 
 export default function Schedule({ allStages }: Props) {
+  let stagesToRender: Stage[] = []
+  
+  for (let i = 0; i < allStages.length - 2; i++) {
+    console.log(allStages[i].schedule?.length, allStages[i + 2].schedule?.length)
+    stagesToRender.push({
+      ...allStages[i],
+      // @ts-ignore
+      schedule: allStages[i].schedule?.concat(allStages[i + 2].schedule).sort((a, b) => a.scheduleOrder - b.scheduleOrder)
+    })
+  }
+
+  console.log(stagesToRender)
+
   return (
     <Layout>
       <div className="row">
@@ -65,7 +78,7 @@ export default function Schedule({ allStages }: Props) {
         </div>
         <div className={styles.container}>
           <div className={styles['row-wrapper']}>
-            {allStages.map(stage => (
+            {stagesToRender.map(stage => (
               <StageRow key={stage.slug} stage={stage} />
             ))}
           </div>

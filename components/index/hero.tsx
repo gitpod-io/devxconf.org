@@ -42,26 +42,22 @@ export default function Hero() {
       />
       <div className="row">
         {/* <h2
-          className={cn(
-            styleUtils.appear,
-            styleUtils['appear-third'],
-            styleUtils['show-on-mobile'],
-            styles.description
-          )}
-        >
-          {SITE_DESCRIPTION}
-        </h2> */}
+           className={cn(
+             styleUtils.appear,
+             styleUtils['appear-third'],
+             styleUtils['show-on-mobile'],
+             styles.description
+           )}
+         >
+           {SITE_DESCRIPTION}
+         </h2> */}
         <h1 className={styles.hero}>
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div className={cn(styles.info, 'heading-quadrary')}>
-          It's live now
-        </div>
+        <div className={cn(styles.info, 'heading-quadrary')}>It's live now</div>
         <Link href="/stage/a">
-          <a className="btn btn--big">
-            Go to Stage
-          </a>
+          <a className="btn btn--big">Go to Stage</a>
         </Link>
       </div>
       <PatternHalfCircle
