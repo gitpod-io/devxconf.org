@@ -50,6 +50,7 @@ export type Talk = {
   end: string;
   speaker?: Speaker[] | Speaker;
   isLinkLess?: boolean;
+  scheduleOrder: number;
 };
 
 export type Link = {
