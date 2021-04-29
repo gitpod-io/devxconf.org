@@ -61,7 +61,7 @@ export default function Schedule({ allStages }: Props) {
     stagesToRender.push({
       ...allStages[i],
       // @ts-ignore
-      schedule: allStages[i].schedule?.concat(allStages[i + 2].schedule)
+      schedule: allStages[i].schedule?.concat(allStages[i + 2].schedule).sort((a, b) => a.scheduleOrder - b.scheduleOrder)
     })
   }
 

@@ -15,6 +15,7 @@ export const allStages: Stage[] = [
     schedule: [
       {
         title: 'Intro',
+        scheduleOrder: 1,
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:10' : '8:10 AM',
@@ -50,6 +51,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'The evolution of DevX - An interview with Erich Gamma',
+        scheduleOrder: 2,
         description: '',
         start: isEurope() ? '17:10' : '8:10 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
@@ -71,6 +73,7 @@ export const allStages: Stage[] = [
       },
       {
         title: "Is DevEx not good… because we don't want it to be?",
+        scheduleOrder: 4,
         description: '',
         start: isEurope() ? '18:00' : '9:00 AM',
         end: isEurope() ? '18:20' : '9:20 AM',
@@ -78,6 +81,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'DevX at Heroku and GitHub - An interview with Jason Warner',
+        scheduleOrder: 6,
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
@@ -99,6 +103,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Internal DevX Experience is broken… and you should be pissed',
+        scheduleOrder: 8,
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
@@ -106,6 +111,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Find friction in your developer experience by user testing with developers',
+        scheduleOrder: 10,
         description: '',
         start: isEurope() ? '20:00' : '11:00 AM',
         end: isEurope() ? '20:20' : '11:20 AM',
@@ -113,6 +119,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'The developer experience gap',
+        scheduleOrder: 12,
         description: '',
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
@@ -130,6 +137,7 @@ export const allStages: Stage[] = [
     schedule: [
       {
         title: "VSCode Power User Tips & Tricks",
+        scheduleOrder: 14,
         description: '', 
         start: isEurope() ? '16:40' : '7:40 AM',
         end: isEurope() ? '17:00' : '8:00 AM',
@@ -137,6 +145,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Streamlining Firebase Development with local Emulators',
+        scheduleOrder: 16,
         description: '',
         start: isEurope() ? '17:20' : '8:20 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
@@ -144,6 +153,7 @@ export const allStages: Stage[] = [
       },
       {
         title: "The story of GitHub1s - speed & familiarity matters",
+        scheduleOrder: 18,
         description: '',
         start: isEurope() ? '18:00' : '9:00 AM',
         end: isEurope() ? '18:20' : '9:20 AM',
@@ -151,6 +161,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Trapped in the open source supply chain',
+        scheduleOrder: 20,
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
@@ -158,6 +169,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'DevX in the Internet Age: One Step Forward, Two Steps Back',
+        scheduleOrder: 22,
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
@@ -165,6 +177,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'How to build a dApp',
+        scheduleOrder: 24,
         description: '',
         start: isEurope() ? '20:00' : '11:00 AM',
         end: isEurope() ? '20:20' : '11:20 AM',
@@ -172,6 +185,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'How to prioritize dev experience in the development process above all else',
+        scheduleOrder: 26,
         description: '',
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
@@ -190,6 +204,7 @@ export const allStages: Stage[] = [
     schedule: [
       {
         title: 'Using Observability to improve the Developer Experience',
+        scheduleOrder: 3,
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -197,6 +212,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Monorepos, are they right for you?',
+        scheduleOrder: 5,
         description: '',
         start: isEurope() ? '18:20' : '9:20 AM',
         end: isEurope() ? '18:40' : '9:40 AM',
@@ -204,6 +220,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Cloud native Java',
+        scheduleOrder: 7,
         description: '',
         start: isEurope() ? '19:00' : '10:00 AM',
         end: isEurope() ? '19:20' : '10:20 AM',
@@ -211,6 +228,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Infrastructure security, visibility and cost-optimization',
+        scheduleOrder: 9,
         description: '',
         start: isEurope() ? '19:40' : '10:40 AM',
         end: isEurope() ? '20:00' : '11:00 AM',
@@ -218,6 +236,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Ephemeral Development Environments',
+        scheduleOrder: 11,
         description: '',
         start: isEurope() ? '20:20' : '11:20 AM',
         end: isEurope() ? '20:40' : '11:40 AM',
@@ -227,6 +246,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Building a K8s Operator for a Distributed Database',
+        scheduleOrder: 13,
         description: '',
         start: isEurope() ? '21:00' : '12:00 PM',
         end: isEurope() ? '21:20' : '12:20 PM',
@@ -243,6 +263,7 @@ export const allStages: Stage[] = [
     schedule: [
       {
         title: 'Building Supabase Storage. DevX, performance, security - choose three',
+        scheduleOrder: 15,
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
@@ -250,6 +271,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'DevX: history of code search',
+        scheduleOrder: 17,
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
@@ -257,6 +279,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Why I love incremental delivery and why you should too',
+        scheduleOrder: 19,
         description: '',
         start: isEurope() ? '18:20' : '9:20 AM',
         end: isEurope() ? '18:40' : '9:40 AM',
@@ -264,6 +287,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Simplifying the journey of your containerized application from dev to production',
+        scheduleOrder: 21,
         description: '',
         start: isEurope() ? '19:00' : '10:00 AM',
         end: isEurope() ? '19:20' : '10:20 AM',
@@ -271,6 +295,7 @@ export const allStages: Stage[] = [
       },
       {
         title: 'Make your APIs developer-friendly',
+        scheduleOrder: 23,
         description: '',
         start: isEurope() ? '19:40' : '10:40 AM',
         end: isEurope() ? '20:00' : '11:00 AM',
@@ -278,6 +303,7 @@ export const allStages: Stage[] = [
       },
       {
         title: '"Testing" in prod Isn\'t the only way: why observability needs structure',
+        scheduleOrder: 25,
         description: '',
         start: isEurope() ? '20:20' : '11:20 AM',
         end: isEurope() ? '20:40' : '11:40 AM',
