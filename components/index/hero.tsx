@@ -42,42 +42,23 @@ export default function Hero() {
       />
       <div className="row">
         {/* <h2
-          className={cn(
-            styleUtils.appear,
-            styleUtils['appear-third'],
-            styleUtils['show-on-mobile'],
-            styles.description
-          )}
-        >
-          {SITE_DESCRIPTION}
-        </h2> */}
+           className={cn(
+             styleUtils.appear,
+             styleUtils['appear-third'],
+             styleUtils['show-on-mobile'],
+             styles.description
+           )}
+         >
+           {SITE_DESCRIPTION}
+         </h2> */}
         <h1 className={styles.hero}>
           The first <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div className={cn(styles.info, 'heading-quadrary')}>
-        <span>{DATE}</span>
-          &nbsp;-&nbsp;
-          <span>Virtual</span>
-        </div>
-        <GitHubButton text="Register with" />
-        <Popup
-          isShown={isRegisterWithEmailSelected}
-          setIsShown={setIsRegisterWithEmailSelected}
-          bodyStyles={{ display: 'flex', justifyContent: 'center' }}
-        >
-          <RegisterWithEmail title="Register with your email" isConsentNoteShown={true} />
-        </Popup>
-
-        <p className={styles.footnote}>
-          <button
-            className={styles['register-with-email']}
-            onClick={() => setIsRegisterWithEmailSelected(true)}
-          >
-            Register via email
-          </button>
-        </p>
-        <ConsentNote />
+        <div className={cn(styles.info, 'heading-quadrary')}>It's live now</div>
+        <Link href="/stage/a">
+          <a className="btn btn--big">Go to Stage</a>
+        </Link>
       </div>
       <PatternHalfCircle
         isInverted={true}
