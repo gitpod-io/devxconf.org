@@ -21,12 +21,10 @@ import { Image as ImageProps, Talk } from '@lib/types';
 import { format, isAfter, isBefore, parseISO } from 'date-fns';
 import { useEffect, useState } from 'react';
 
-import Image from 'next/image';
 import Link from 'next/link';
 import cn from 'classnames';
 import { hyphenate } from './speakers-grid';
 import { isEurope } from 'utils/helpers';
-import { speakers } from 'contents';
 import styles from './talk-card.module.css';
 
 type Props = {
@@ -51,6 +49,27 @@ const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
   />
 );
 
+export const SpeakerNameAvatar = ({speaker}: any) => {
+  const isSpeakerArray = Array.isArray(speaker)
+
+  return (
+    <div className={styles.speaker}>
+      <div className={styles['avatar-group']}>
+        {isSpeakerArray ? (
+          // eslint-disable-next-line
+          speaker.map(s => <Avatar name={s.name} image={s.image} />)
+        ) : (
+          <Avatar name={speaker.name} image={speaker.image} />
+        )}
+      </div>
+      <h4 className={styles['speaker-name']}>
+        {speaker.length === 2 ? `${speaker[0].name} and ${speaker[1].name}` : speaker.name}
+      </h4>
+      
+    </div>
+  )
+}
+
 export default function TalkCard({ talk: { title, speaker, start, end, isLinkLess }, showTime }: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
@@ -69,19 +88,7 @@ export default function TalkCard({ talk: { title, speaker, start, end, isLinkLes
         {title}
       </h4>
       {undefined !== speaker ? (
-        <div className={styles.speaker}>
-          <div className={styles['avatar-group']}>
-            {speaker.length ? (
-              // eslint-disable-next-line
-              speaker.map(s => <Avatar name={s.name} image={s.image} />)
-            ) : (
-              <Avatar name={speaker.name} image={speaker.image} />
-            )}
-          </div>
-          <h4 className={styles['speaker-name']}>
-            {speaker.length === 2 ? `${speaker[0].name} and ${speaker[1].name}` : speaker.name}
-          </h4>
-        </div>
+        <SpeakerNameAvatar speaker={speaker} />
       ) : null}
     </div>
   );

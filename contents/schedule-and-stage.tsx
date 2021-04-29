@@ -2,7 +2,7 @@ import { Stage } from '@lib/types';
 import { isEurope } from 'utils/helpers';
 import { speakers } from 'contents';
 
-const getSpeakerByName = (name: string) =>
+export const getSpeakerByName = (name: string) =>
   speakers.find(s => s.name.toLowerCase() === name.toLowerCase());
 
 export const allStages: Stage[] = [
