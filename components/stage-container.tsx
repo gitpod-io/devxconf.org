@@ -55,7 +55,7 @@
              <div className={styles.stream}>
                <div className={styles.yt}>
                  <iframe
-                   src={`https://www.youtube.com/embed/${updatedStage.stream}?autoplay=1`}
+                   src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1`}
                    title="YouTube video player"
                    frameBorder="0"
                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
