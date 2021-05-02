@@ -51,11 +51,14 @@ const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
   />
 );
 
-export default function TalkCard({ talk: { title, speaker, start, end, isLinkLess }, showTime }: Props) {
+export default function TalkCard({
+  talk: { title, speaker, start, end, ytId },
+  showTime
+}: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
   // eslint-disable-next-line
-  const slug = hyphenate(speaker.name || speaker[0].name)
+  const slug = hyphenate(speaker.name || speaker[0].name);
 
   useEffect(() => {
     const now = Date.now();
@@ -93,25 +96,15 @@ export default function TalkCard({ talk: { title, speaker, start, end, isLinkLes
           {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
         </p>
       )}
-      { isLinkLess ? (
-        <div
+        <a
+          href={`https://youtu.be/${ytId}`}
+          target="_blank"
           className={cn(styles.card, {
             [styles['is-live']]: isTalkLive
           })}
         >
           {renderCardBody()}
-        </div>
-      ) : (
-        <Link href={`/speakers/${slug}`}>
-          <a
-            className={cn(styles.card, {
-              [styles['is-live']]: isTalkLive
-            })}
-          >
-            {renderCardBody()}
-          </a>
-        </Link>
-      )}
+        </a>
     </div>
   );
 }

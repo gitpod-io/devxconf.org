@@ -49,8 +49,8 @@ export type Talk = {
   start: string;
   end: string;
   speaker?: Speaker[] | Speaker;
-  isLinkLess?: boolean;
   scheduleOrder: number;
+  ytId: string;
 };
 
 export type Link = {

@@ -19,6 +19,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:10' : '8:10 AM',
+        ytId: 'aI-L72XGznU',
         speaker: [
           {
             name: 'Johannes Landgraf',
@@ -47,7 +48,6 @@ export const allStages: Stage[] = [
             abstract: ''
           }
         ],
-        isLinkLess: true
       },
       {
         title: 'The evolution of DevX - An interview with Erich Gamma',
@@ -55,6 +55,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:10' : '8:10 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
+        ytId: 'JiBUDS9odA8',
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName('Erich Gamma'), {
@@ -77,6 +78,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:00' : '9:00 AM',
         end: isEurope() ? '18:20' : '9:20 AM',
+        ytId: 'nPO4QL0Q85s',
         speaker: getSpeakerByName('Ellen Chisa')
       },
       {
@@ -85,6 +87,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
+        ytId: 'SddUEk878jM',
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName('Jason Warner'), {
@@ -107,6 +110,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
+        ytId: 'N6XkqbNKxQA',
         speaker: getSpeakerByName('Shanea Leven')
       },
       {
@@ -115,6 +119,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '20:00' : '11:00 AM',
         end: isEurope() ? '20:20' : '11:20 AM',
+        ytId: 'Dn6-See4wfk',
         speaker: getSpeakerByName('Ian Jennings')
       },
       {
@@ -123,6 +128,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
+        ytId: 'Z6O13JQOmiQ',
         speaker: getSpeakerByName("Stephen O'Grady")
       },
     ]
@@ -141,6 +147,7 @@ export const allStages: Stage[] = [
         description: '', 
         start: isEurope() ? '16:40' : '7:40 AM',
         end: isEurope() ? '17:00' : '8:00 AM',
+        ytId: 'M6E5L1-TVoc',
         speaker: getSpeakerByName("Ahmad Awais")
       },
       {
@@ -149,6 +156,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:20' : '8:20 AM',
         end: isEurope() ? '17:40' : '8:40 AM',
+        ytId: '0AXj96IXueg',
         speaker: getSpeakerByName("Rachel Myers"),
       },
       {
@@ -157,6 +165,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:00' : '9:00 AM',
         end: isEurope() ? '18:20' : '9:20 AM',
+        ytId: '6Xyg6yQe2rk',
         speaker: getSpeakerByName('Yihong Cheng')
       },
       {
@@ -165,6 +174,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:40' : '9:40 AM',
         end: isEurope() ? '19:00' : '10:00 AM',
+        ytId: '0wRUU0ln9-0',
         speaker: getSpeakerByName('Henry Zhu')
       },
       {
@@ -173,6 +183,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '19:20' : '10:20 AM',
         end: isEurope() ? '19:40' : '10:40 AM',
+        ytId: 'asA7rE0mDeo',
         speaker: getSpeakerByName('Anurag Goel')
       },
       {
@@ -181,6 +192,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '20:00' : '11:00 AM',
         end: isEurope() ? '20:20' : '11:20 AM',
+        ytId: 'Ks9_hTXwh2o',
         speaker: getSpeakerByName('Nader Dabit')
       },
       {
@@ -189,6 +201,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '20:40' : '11:40 AM',
         end: isEurope() ? '21:00' : '12:00 PM',
+        ytId: 'lWF_PNqyiE8',
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
@@ -208,6 +221,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
+        ytId: '8LlM0knBuLQ',
         speaker: getSpeakerByName('Borja Burgos')
       },
       {
@@ -216,6 +230,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:20' : '9:20 AM',
         end: isEurope() ? '18:40' : '9:40 AM',
+        ytId: 'G3yIAS4NShk',
         speaker: getSpeakerByName('Maël Nison')
       },
       {
@@ -224,6 +239,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '19:00' : '10:00 AM',
         end: isEurope() ? '19:20' : '10:20 AM',
+        ytId: 'oq5FcnqEMxk',
         speaker: getSpeakerByName('Josh Long')
       },
       {
@@ -232,6 +248,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '19:40' : '10:40 AM',
         end: isEurope() ? '20:00' : '11:00 AM',
+        ytId: 'AizWSieYRGk',
         speaker: getSpeakerByName('Yevgeny Pats')
       },
       {
@@ -240,6 +257,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '20:20' : '11:20 AM',
         end: isEurope() ? '20:40' : '11:40 AM',
+        ytId: 'IXVmjkI7wkc',
         // eslint-disable-next-line
         // @ts-ignore
         speaker: [getSpeakerByName('Mike Nikles'), getSpeakerByName('Anton Kosyakov')]
@@ -250,6 +268,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '21:00' : '12:00 PM',
         end: isEurope() ? '21:20' : '12:20 PM',
+        ytId: 'VUGBq0ME2Qc',
         speaker: getSpeakerByName("Natalie Pistunovich")
       }
     ]
@@ -267,6 +286,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:00' : '8:00 AM',
         end: isEurope() ? '17:20' : '8:20 AM',
+        ytId: 'YsUYOsq_o7g',
         speaker: getSpeakerByName("Inian Parameshwaran"),
       },
       {
@@ -275,6 +295,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '17:40' : '8:40 AM',
         end: isEurope() ? '18:00' : '9:00 AM',
+        ytId: 'J4lArxTWiIY',
         speaker: getSpeakerByName('Beyang Liu')
       },
       {
@@ -283,6 +304,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '18:20' : '9:20 AM',
         end: isEurope() ? '18:40' : '9:40 AM',
+        ytId: 'AnxWXQMauMI',
         speaker: getSpeakerByName('Lili Kastilio')
       },
       {
@@ -291,6 +313,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '19:00' : '10:00 AM',
         end: isEurope() ? '19:20' : '10:20 AM',
+        ytId: '8iJ_6VUzk1I',
         speaker: getSpeakerByName('Kyle Quest')
       },
       {
@@ -299,6 +322,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '19:40' : '10:40 AM',
         end: isEurope() ? '20:00' : '11:00 AM',
+        ytId: 'E-2Eqh99nUw',
         speaker: getSpeakerByName('Aidan Cunniffe')
       },
       {
@@ -307,6 +331,7 @@ export const allStages: Stage[] = [
         description: '',
         start: isEurope() ? '20:20' : '11:20 AM',
         end: isEurope() ? '20:40' : '11:40 AM',
+        ytId: '0nrd5-9Lf7E',
         speaker: getSpeakerByName('Jean Yang')
       },
     ]
