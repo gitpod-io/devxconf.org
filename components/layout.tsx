@@ -41,7 +41,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
       <div className={styles.background}>
         {!hideNav && (
           <div className={styles["header-container"]}>
-            <div className="row">
+            <div className={styles.wrapper}>
               <header className={cn(styles.header)}>
                 <div className={styles['header-logos']}>
                   <Link href="/">
@@ -67,7 +67,7 @@ export default function Layout({ children, className, hideNav, layoutStyles }: P
                 </div>
               </header>
             </div>
-          </div>
+           </div>
         )}
         <div className={styles.page}>
           <main className={styles.main} style={layoutStyles}>

@@ -15,12 +15,13 @@
  */
 
 .schedule {
-  width: 100%;
+  width: 100vw;
+  max-height: calc(100vh - 178px);
   background: var(--sidebar);
-  padding: var(--space-8x) var(--space-4x) var(--space-16x);
+  padding: var(--space-4x) var(--space-4x) var(--space-16x);
   color: var(--secondary-color);
   font-size: 14px;
-  overflow-y: auto;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   --talk-card-width: 100%;
 }
@@ -65,7 +66,6 @@
     min-height: 1px;
     min-height: 340px;
     max-width: 330px;
-    max-height: calc(var(--100vh) + 150px - var(--header-height));
     --talk-card-width: unset;
     padding-left: var(--gutter-normal);
     border-left: 1px solid var(--grey-2);
@@ -73,10 +73,6 @@
 }
 
 @media(max-width: 767px) {
-  .schedule {
-    max-width: 500px;
-  }
-
   .schedule h3 {
     margin-bottom: var(--gutter-small-mobile);
   }

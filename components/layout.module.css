@@ -42,6 +42,10 @@
   width: 100%;
 }
 
+.wrapper {
+  padding: 0 var(--gutter-normal);
+}
+
 .header-container { 
   background: var(--black);
   position: fixed;
@@ -143,6 +147,10 @@
     height: var(--header-height-mobile);
     width: 100%;
     z-index: 2;
+  }
+
+  .wrapper {
+    padding: 0 var(--gutter-small-mobile);
   }
 
   .main {

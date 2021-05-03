@@ -13,56 +13,64 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+//@ts-nocheck
 
- import { useEffect, useState } from 'react';
+import { DiscordLogo } from './pages/community';
+import Link from 'next/link';
+import ScheduleSidebar from './schedule-sidebar';
+import { Stage } from '@lib/types';
+import { allStages } from 'contents/schedule-and-stage';
+import cn from 'classnames';
+import { hyphenate } from './speakers-grid';
+import styles from './stage-container.module.css';
+import useSWR from 'swr';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 
- import { DiscordLogo } from './pages/community';
- import Link from 'next/link';
- import ScheduleSidebar from './schedule-sidebar';
- import { Stage } from '@lib/types';
- import { allStages } from 'contents/schedule-and-stage';
- import cn from 'classnames';
- import { getIsLoggedIn } from '../utils/helpers';
- import { hyphenate } from './speakers-grid';
- import styles from './stage-container.module.css';
- import useSWR from 'swr';
- import { useRouter } from 'next/router';
- 
- type Props = {
-   stage: Stage;
- };
- 
- export default function StageContainer({ stage }: Props) {
-   const [loggedIn, setIsLoggedIn] = useState(false);
-   const slug = useRouter().query.slug;
- 
-   useEffect(() => {
-     setIsLoggedIn(!!getIsLoggedIn());
-   });
- 
-   const response = useSWR('/api/stages', {
-     initialData: allStages,
-     refreshInterval: 5000
-   });
- 
-   const updatedStages = response.data || [];
-   const updatedStage = updatedStages.find((s: Stage) => s.slug === slug) || stage;
- 
-   return (
-     <div className={cn('row', styles.row)}>
-       <div className={styles.container}>
-         <div className={styles.streamContainer}>
-             <div className={styles.stream}>
-               <div className={styles.yt}>
-                 <iframe
-                   src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1`}
-                   title="YouTube video player"
-                   frameBorder="0"
-                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                   allowFullScreen
-                 ></iframe>
-               </div>
-               <div className={styles.bottom}>
+type Props = {
+  stage?: Stage;
+};
+
+export default function StageContainer({ stage }: Props) {
+  const slug = useRouter().query.slug || 'a';
+
+  const response = useSWR('/api/stages', {
+    initialData: allStages,
+    refreshInterval: 5000
+  });
+
+  useEffect(() => {
+    const main = document.querySelector('main');
+    const footer = document.querySelector('footer');
+
+    document.body.classList.add('full');
+    main?.classList.add('stage-main');
+    footer?.classList.add('stage-footer');
+
+    return () => {
+      document.body.classList.remove('full');
+      main?.classList.remove('stage-main');
+      footer?.classList.remove('stage-footer');
+    };
+  });
+
+  const updatedStages = response.data || [];
+  const updatedStage = updatedStages.find((s: Stage) => s.slug === slug) || stage;
+  return (
+    <div className={styles.row}>
+      <div className={styles.container}>
+        <div className={styles.streamContainer}>
+          <div className={styles.stream}>
+            <div className={styles.yt}>
+              <iframe
+                src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1`}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
+            {/* <div className={styles.bottom}>
                  <div className={styles.messageContainer}>
                    <h2 className="heading-tertiary">{updatedStage.name}</h2>
                    {updatedStage.description ? <p>{updatedStage.description}</p> : null}
@@ -82,14 +90,11 @@
                      </Link>
                    ) : null}
                  </div>
-               </div>
-             </div>
-         </div>
-         <ScheduleSidebar allStages={allStages} />
-       </div>
-     </div>
-   );
- }
- 
- 
- 
+               </div> */}
+          </div>
+        </div>
+        <ScheduleSidebar allStages={allStages} />
+      </div>
+    </div>
+  );
+}
