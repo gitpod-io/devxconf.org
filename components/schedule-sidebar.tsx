@@ -27,15 +27,14 @@ type Props = {
 
 export default function ScheduleSidebar({ allStages }: Props) {
   const router = useRouter();
-  const [stage, setStage] = useState(router.query.slug);
+  const [stage, setStage] = useState(router.query.slug || 'a');
   const currentStage = allStages.find((s: Stage) => s.slug === stage);
-  const [day, setDay] = useState("Thursday, April 29");  
+  const [day, setDay] = useState("Wednesday, April 28");  
   const currentStageDaysSchedules = allStages.filter((s: Stage) => s.slug === stage) || [];
   const uniqueDayStrings = currentStageDaysSchedules.map((s: Stage) => s.day)
 
-
   useEffect(() => {
-    setStage(router.query.slug)
+    setStage(router.query.slug || 'a')
   }, [router.query.slug])
 
   return (

@@ -19,6 +19,8 @@ import { SITE_NAME, META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import { SkipNavContent } from '@reach/skip-nav';
 import { useRouter } from 'next/router';
+import Layout from '@components/layout';
+import StageContainer from '@components/stage-container';
 
 export default function Conf() {
   const { query } = useRouter();
@@ -35,11 +37,9 @@ export default function Conf() {
   };
   return (
     <Page meta={meta} fullViewport>
-      <SkipNavContent />
-      <ConfContent
-        defaultUserData={defaultUserData}
-        defaultPageState={query.ticketNumber ? 'ticket' : 'registration'}
-      />
+      <Layout>
+        <StageContainer />
+      </Layout>
     </Page>
   );
 }

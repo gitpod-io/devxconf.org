@@ -532,3 +532,22 @@ input:focus {
 .speaker__contact-icon:focus path {
   fill: var(--white);
 }
+
+/* -------------------------------------- */
+/* ----- Stage Specfic Stuff ----- */
+/* -------------------------------------- */
+
+@media(min-width: 1032px) {
+  body.full {
+    max-height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .stage-main.stage-main {
+    margin-top: 100px;
+  }
+
+  .stage-footer.stage-footer { 
+    margin: -100px 0;
+  }
+} 

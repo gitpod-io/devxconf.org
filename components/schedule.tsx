@@ -65,8 +65,6 @@ export default function Schedule({ allStages }: Props) {
     })
   }
 
-  console.log(stagesToRender)
-
   return (
     <Layout>
       <div className="row">
