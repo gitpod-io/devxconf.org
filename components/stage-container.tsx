@@ -23,9 +23,9 @@ import { allStages } from 'contents/schedule-and-stage';
 import cn from 'classnames';
 import { hyphenate } from './speakers-grid';
 import styles from './stage-container.module.css';
-import useSWR from 'swr';
-import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import useSWR from 'swr';
 
 type Props = {
   stage?: Stage;
@@ -63,7 +63,7 @@ export default function StageContainer({ stage }: Props) {
           <div className={styles.stream}>
             <div className={styles.yt}>
               <iframe
-                src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1`}
+                src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1&amp;mute=1`}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
