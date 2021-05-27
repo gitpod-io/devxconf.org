@@ -111,7 +111,7 @@
 
 .tab {
   text-transform: uppercase;
-  font-size: var(--heading-quadrary);
+  font-size: var(--text-sm);
   color: var(--secondary-color);
   font-weight: 600;
   letter-spacing: var(--letter-spacing);
@@ -123,7 +123,7 @@
 }
 
 .tab:not(:last-child) {
-  margin-right: var(--gutter-medium);
+  margin-right: var(--gutter-normal);
 }
 
 .tab-active,

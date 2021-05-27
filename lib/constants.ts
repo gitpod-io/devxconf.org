@@ -44,10 +44,10 @@ export const NAVIGATION = [
     name: 'Stage',
     route: '/stage/a'
   },
-  // {
-  //    name: 'Speakers',
-  //    route: '/#speakers'
-  // },
+  {
+     name: 'Speakers',
+     route: '/speakers'
+  },
   {
     name: 'Schedule',
     route: '/schedule'
