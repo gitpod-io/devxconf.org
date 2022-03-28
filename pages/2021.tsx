@@ -5,7 +5,7 @@ import StageContainer from '@components/stage-container';
 
 export default function Conf() {
   const meta = {
-    title: SITE_NAME,
+    title: `${SITE_NAME} 2021`,
     description: META_DESCRIPTION
   };
 
