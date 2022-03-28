@@ -26,7 +26,7 @@ export const META_DESCRIPTION =
   'DevX Conf is a space for creators where we can start from first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds. To improve developer experience. To make us feel again like everything is at our fingertips. We want to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across the areas of coding, testing, building, deploying, collaborating on and running software.';
 export const SITE_DESCRIPTION =
   'An interactive online experience by the community, free for everyone.';
-export const DATE = 'May 3-4, 2022';
+export const DATE = 'May 2nd - 3rd, 2022';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 
@@ -52,6 +52,10 @@ export const NAVIGATION = [
   //   name: 'Schedule',
   //   route: '/schedule'
   // },
+  {
+    name: "2021",
+    route: "/2021"
+  },
   {
     name: 'Manifesto',
     route: '/manifesto'
