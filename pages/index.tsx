@@ -14,31 +14,29 @@
  * limitations under the License.
  */
 
-import ConfContent from '@components/pages/index';
 import { SITE_NAME, META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
-import { SkipNavContent } from '@reach/skip-nav';
-import { useRouter } from 'next/router';
 import Layout from '@components/layout';
-import StageContainer from '@components/stage-container';
+import Hero from '@components/index/hero';
+import SpeakersGrid from '@components/speakers-grid';
+import { speakers } from 'contents';
+import Partners from '@components/index/partners';
+import FollowUsOnTwitter from '@components/follow-us-on-twitter';
+import About from '@components/about';
 
 export default function Conf() {
-  const { query } = useRouter();
   const meta = {
     title: SITE_NAME,
     description: META_DESCRIPTION
   };
-  const ticketNumber = query.ticketNumber?.toString();
-  const defaultUserData = {
-    id: query.id?.toString(),
-    ticketNumber: ticketNumber ? parseInt(ticketNumber, 10) : undefined,
-    name: query.name?.toString(),
-    username: query.username?.toString()
-  };
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <StageContainer />
+        <Hero />
+        <SpeakersGrid speakers={speakers} />
+        <Partners />
+        <FollowUsOnTwitter />
+        <About />
       </Layout>
     </Page>
   );

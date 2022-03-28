@@ -102,7 +102,7 @@ const RegisterWithEmail = ({
         </button> : <span className={styles.error}>Loadig...</span>
         }
       </form>
-      {isConsentNoteShown ? <ConsentNote /> : null}
+      {isConsentNoteShown ? <ConsentNote /> : null} 
     </div>
   ) : isAlreadyRegistered ? (
     <AlreadyRegistered text={successText} />

@@ -52,13 +52,24 @@ export default function Hero() {
            {SITE_DESCRIPTION}
          </h2> */}
         <h1 className={styles.hero}>
-          The first <span className={styles.brand}>{BRAND_NAME}</span>
+          <span className={styles.brand}>{BRAND_NAME}</span>
           <br className={styleUtils['show-on-desktop']} /> conference
         </h1>
-        <div className={cn(styles.info, 'heading-quadrary')}>It's live now</div>
-        <Link href="/stage/a">
-          <a className="btn btn--big">Go to Stage</a>
-        </Link>
+        <div className={cn(styles.info, 'heading-quadrary')}>{DATE}&nbsp;-&nbsp;Virtual</div>
+        <button
+          className={cn('btn btn--big', styles['register-button'])}
+          onClick={() => setIsRegisterWithEmailSelected(true)}
+        >
+          Register with Email
+        </button>
+        <Popup
+          isShown={isRegisterWithEmailSelected}
+          setIsShown={setIsRegisterWithEmailSelected}
+          bodyStyles={{ display: 'flex', justifyContent: 'center' }}
+        >
+          <RegisterWithEmail title="Register with your email" isConsentNoteShown={true} />
+        </Popup>
+        <ConsentNote />
       </div>
       <PatternHalfCircle
         isInverted={true}
