@@ -59,7 +59,7 @@ export default function SpeakersGrid({ speakers }: Props) {
                   <div>
                     <h3 className={cn(styles.name, 'heading-quadrary')}>{speaker.name}</h3>
                     <p className={styles.title}>
-                      {`${speaker.title} @`}
+                      {`${speaker.title} ${speaker.company ? "@" : ""}`}
                       <span className={styles.company}>{speaker.company}</span>
                     </p>
                   </div>

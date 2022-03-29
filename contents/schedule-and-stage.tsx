@@ -1,6 +1,6 @@
 import { Stage } from '@lib/types';
 import { isEurope } from 'utils/helpers';
-import { speakers } from 'contents';
+import { speakers } from 'contents/2021';
 
 const getSpeakerByName = (name: string) =>
   speakers.find(s => s.name.toLowerCase() === name.toLowerCase());

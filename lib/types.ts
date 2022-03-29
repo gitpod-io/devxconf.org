@@ -23,9 +23,9 @@ export type Speaker = {
   bio: string | JSX.Element;
   title: string;
   twitter: string;
-  github: string;
+  github?: string;
   linkedin: string;
-  company: string;
+  company?: string;
   talk?: Talk;
   image: Image;
   imageSquare?: Image;
