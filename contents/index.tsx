@@ -352,5 +352,59 @@ export const speakers: Speaker[] = [
         <p>In this talk, I'll show what such principles look like on the example of Nx, an extensible build system I've been leading for the past 5 years.</p>
       </div>
     )
-  }
+  },
+  {
+    name: 'Zach Lloyd',
+    title: 'Founder & CEO',
+    company: 'Warp',
+    image: {
+      url: 'zach-lloyd.png'
+    },
+    bio: (
+      <p>
+        Founder & CEO @ Warp (<a href='https://www.warp.dev' target='_blank' rel='noopener noreferrer'>www.warp.dev</a>)
+      </p>
+    ),
+    twitter: 'zachlloydtweets',
+    linkedin: 'zachlloyd',
+    abstract: (
+      <div>
+        <p><strong>Warp and the future of the terminal</strong></p>
+      </div>
+    )
+  },
+  {
+    name: 'Lydia Hallie',
+    title: 'Staff Developer Advocate',
+    company: 'Vercel',
+    image: {
+      url: 'lydia-hallie.jpeg'
+    },
+    bio: 'Lydia Hallie is a Staff Developer Advocate at Vercel who primarily focuses on JavaScript, React, Node, serverless technologies, and web performance. She also spends her time mentoring and doing in-person training sessions.',
+    twitter: 'lydiahallie',
+    linkedin: 'lydia-hallie',
+    github: 'lydiahallie',
+    abstract: (
+      <div>
+        <p>As modern applications are getting more and more complex, it's quite easy to end up with large bundle sizes and long loading times. Although there are many tools that can help with performance, there's still a lot you can do as a developer to load your code more efficiently. Fortunately, with the help of modern rendering patterns, we can reduce complexity, bundle sizes, and reduce loading times. In this talk, you'll learn about the implementation and use cases of modern rendering patterns including SSR, (on-demand) ISR, Streaming SSR, React Server Components, Progressive Rehydration, and Selective Rehydration.</p>
+      </div>
+    )
+  },
+  {
+    name: 'Ant Wilson',
+    title: 'Co-Founder & CTO',
+    company: '@supabase',
+    image: {
+      url: 'ant-wilson.jpg'
+    },
+    bio: 'Co-Founder, CTO, and Chief Meme Officer at Supabase. Ant is a 3x venture backed founder with an MSc in Software Engineering from Imperial College London.',
+    twitter: 'antwilson',
+    linkedin: 'anthony-wilson-46179937',
+    github: 'awalias',
+    abstract: (
+      <div>
+        <p>Ant explores how the Supabase architecture enables "Supa"-DX. Open source and modular technology choices enable Supabase to lower the barrier to deploying backends for your apps and services. We'll explore all the major DX touch points within Supabase, and how we obsess about improving them constantly.</p>
+      </div>
+    )
+  },
 ];
