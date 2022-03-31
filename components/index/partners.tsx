@@ -67,7 +67,7 @@ const Partners = () => (
   <Section className={styles.section}>
     <div className="row">
       <SectionHeader className="wrapper-small">
-        <h2 className="heading-secondary">Partners</h2>
+        <h2 className="heading-secondary">Last year’s sponsors</h2>
         <p>Promote your technologies and demonstrate your thought leadership in the DevX landscape.</p>
       </SectionHeader>
       <a href="mailto:contact@devxconf.org?subject=Sponsorship request" className="btn">
