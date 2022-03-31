@@ -1,10 +1,13 @@
 .project {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: var(--gutter-medium);
     border: 1px solid var(--grey-2);
     border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project:not(:last-child) {
@@ -17,7 +20,7 @@
 }
 
 .description {
-    flex: 0 0 48%;
+    flex: 0 0 60%;
 }
 
 .icons {
@@ -53,9 +56,9 @@
         width: 150px;
     }
 
-    .description {
+    /* .description {
         flex: 0 0 50%;
-    }
+    } */
 }
 
 @media(max-width: 840px) {
@@ -71,6 +74,7 @@
 
 @media(max-width: 767px) {
     .project {
-        padding: var(--gutter-small);
+        max-width: 500px;
+        padding: var(--gutter-small) var(--gutter-normal);
     }
 }
