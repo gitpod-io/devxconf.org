@@ -332,7 +332,7 @@ export const speakers: Speaker[] = [
     twitter: 'brendanfalk',
     linkedin: 'brendanfalk',
     github: 'brendanfalk',
-    abstract: 'Building autocomplete for the terminal '
+    abstract: 'Building autocomplete for the terminal'
   },
   {
     name: 'Victor Savkin',
