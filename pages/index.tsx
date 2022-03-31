@@ -33,7 +33,7 @@ export default function Conf() {
     <Page meta={meta} fullViewport>
       <Layout>
         <Hero />
-        <SpeakersGrid speakers={speakers} />
+        <SpeakersGrid speakers={speakers} isFootnoteShown={true}/>
         <Partners />
         <FollowUsOnTwitter />
         <About />

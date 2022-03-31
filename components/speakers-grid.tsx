@@ -24,11 +24,12 @@ import styles from './speakers-grid.module.css';
 
 type Props = {
   speakers: Speaker[];
+  isFootnoteShown?: boolean;
 };
 
 export const hyphenate = (str: string) => str.split(" ").join('-').toLowerCase()
 
-export default function SpeakersGrid({ speakers }: Props) {
+export default function SpeakersGrid({ speakers, isFootnoteShown }: Props) {
   return (
     <Section className={styles.section} id="speakers">
       <div className="row">
@@ -68,7 +69,9 @@ export default function SpeakersGrid({ speakers }: Props) {
             </Link>
           ))}
         </div>
-        <p className={cn(styles.more, 'footnote')}>More to be announced soon</p>
+        {
+          isFootnoteShown ? <p className={cn(styles.more, 'footnote')}>More speakers to be announced soon</p> : null
+        }
       </div>
     </Section>
   );
