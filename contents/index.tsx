@@ -496,5 +496,36 @@ export const speakers: Speaker[] = [
         </p>
       </div>
     )
+  },
+  {
+    name: 'Oleg Šelajev',
+    title: 'Developer Advocate',
+    company: 'AtomicJar',
+    image: {
+      url: 'oleg-selajev.jpg'
+    },
+    bio:
+      'Oleg Šelajev is a developer advocate at AtomicJar working integration tests with Testcontainers better for everyone in the community. VirtualJUG leader. In 2017 became a Java Champion.',
+    twitter: 'shelajev',
+    linkedin: 'shelajev',
+    abstract: (
+      <div>
+        <p>
+          <strong>How to make a world-class integration testing library?</strong>
+        </p>
+        <p>
+          Excellent developer experience is a careful balance between boredom and anxiety. Ideally,
+          it would make solving simple problems trivial, complex ones simple, and have enough
+          flexibility to inspire hope for tackling the impossible ones!
+        </p>
+        <p>
+          In this session, we’d like to share the story of Testcontainers - the world’s most popular
+          integration testing libraries. And look at the developer experience choices that led
+          libraries aimed at a tedious and often ungrateful task of environment setup and
+          integration testing to bring joy and even influence how developers approach their projects
+          altogether.
+        </p>
+      </div>
+    )
   }
 ];
