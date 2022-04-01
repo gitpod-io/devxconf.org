@@ -21,13 +21,14 @@ import Page from '@components/page';
 import { PatternHalfCircle } from '@components/patterns';
 import SpeakerSection from '@components/speaker-section';
 import { hyphenate } from '@components/speakers-grid';
-import { speakers } from 'contents';
+import { speakers as SpeakersNew } from 'contents';
+import { speakers as SpeakersOld} from 'contents/2021';
 import styles from './[slug].module.css';
 import { useRouter } from 'next/router';
 
 export default function SponsorPage() {
   const slug = useRouter().query.slug;
-  const speaker = speakers.find(s => hyphenate(s.name) === slug);
+  const speaker = [...SpeakersNew, ...SpeakersOld].find(s => hyphenate(s.name) === slug);
 
   const meta = {
     title: `${speaker?.name} Speaker | Devx Conf`,

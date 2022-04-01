@@ -26,7 +26,7 @@ export const META_DESCRIPTION =
   'DevX Conf is a space for creators where we can start from first principles, collaborate, listen, discuss and declutter our workflows, toolchains and minds. To improve developer experience. To make us feel again like everything is at our fingertips. We want to foster an ecosystem that sparks dialogue and establishes best practices and frameworks across the areas of coding, testing, building, deploying, collaborating on and running software.';
 export const SITE_DESCRIPTION =
   'An interactive online experience by the community, free for everyone.';
-export const DATE = 'April 28-29, 2021';
+export const DATE = 'May 2nd - 3rd, 2022';
 export const TWEET_TEXT = META_DESCRIPTION;
 export const COOKIE = 'user-id';
 
@@ -40,17 +40,21 @@ export const CODE_OF_CONDUCT =
 export const REPO = 'https://github.com/vercel/virtual-event-starter-kit';
 export const SAMPLE_TICKET_NUMBER = 1234;
 export const NAVIGATION = [
+  // {
+  //   name: 'Stage',
+  //   route: '/stage/a'
+  // },
+  // {
+  //    name: 'Speakers',
+  //    route: '/speakers'
+  // },
+  // {
+  //   name: 'Schedule',
+  //   route: '/schedule'
+  // },
   {
-    name: 'Stage',
-    route: '/stage/a'
-  },
-  {
-     name: 'Speakers',
-     route: '/speakers'
-  },
-  {
-    name: 'Schedule',
-    route: '/schedule'
+    name: "2021",
+    route: "/2021"
   },
   {
     name: 'Manifesto',
@@ -64,10 +68,10 @@ export const NAVIGATION = [
     name: 'Community',
     route: '/community'
   },
-  {
-    name: 'Expo',
-    route: '/expo'
-  }
+  // {
+  //   name: 'Expo',
+  //   route: '/expo'
+  // }
 ];
 
 export type TicketGenerationState = 'default' | 'loading';

@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-import Announcement from './announcement';
 import Footer from './footer';
 import Link from 'next/link';
 import Logo from './icons/icon-logo';

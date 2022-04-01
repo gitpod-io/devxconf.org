@@ -81,7 +81,7 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
             ) : null}
           </div>
         </div>
-        <div className={styles.votes}>
+        {/* <div className={styles.votes}>
           <a
             role="button"
             tabIndex={isAlreadyVoted ? -1 : 0}
@@ -89,7 +89,7 @@ const Project = ({ logo, title, description, github, website }: ProjectProps) =>
             href="https://discord.gg/JMj6YjBg6e"
           >Vote in Discord
           </a>
-        </div>
+        </div> */}
       </div>
       <Login shown={shown} setShown={setShown} />
     </>
