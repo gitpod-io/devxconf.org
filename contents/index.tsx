@@ -180,7 +180,7 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Ana Hevesi',
-    title: 'DevX and Open Source Community Strategist',
+    title: 'Devtools UX Researcher',
     image: {
       url: 'ana-hevesi.jpg'
     },
@@ -191,7 +191,7 @@ export const speakers: Speaker[] = [
     abstract: (
       <div>
         <p>
-          <strong>"Community: Your distributed debugging machine"</strong>
+          <strong>"Peer Support: Your distributed debugging machine"</strong>
         </p>
         <div>
           When we try to get other developers to adopt our projects, we’re asking them to take on a
