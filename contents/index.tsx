@@ -285,9 +285,9 @@ export const speakers: Speaker[] = [
     )
   },
   {
-    name: 'Alessandro Cinelli',
-    company: 'DAZN',
-    title: 'Head of DX',
+    name: 'Cirpo Cinelli',
+    company: '',
+    title: 'DX Engineering Manager',
     image: {
       url: 'alessandro-cinelli.jpeg'
     },
