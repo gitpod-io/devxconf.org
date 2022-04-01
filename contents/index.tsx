@@ -341,15 +341,27 @@ export const speakers: Speaker[] = [
     image: {
       url: 'victor-savkin.jpeg'
     },
-    bio: 'Nrwl co-founder, ex-Googler, ex-Angular core. Work on dev tools for TS/JS. Nx and Nx Cloud creator.',
+    bio:
+      'Nrwl co-founder, ex-Googler, ex-Angular core. Work on dev tools for TS/JS. Nx and Nx Cloud creator.',
     twitter: 'victorsavkin',
     linkedin: 'victorsavkin',
     github: 'vsavkin',
     abstract: (
       <div>
-        <p><strong>The balancing act of delivering high quality DX</strong></p>
-        <p>Designing a general-purpose build system involves making a lot of trade-offs: tool-ability vs. expressiveness, efficiency vs. ease of learning, lean configuration vs. discoverability, extensibility vs. API surface. These are in a constant conflict, making it a balancing act of driving coherence while ensuring high-quality DX. Such undertaking can be challenging unless you have an explicit set of design principles to help guide you. </p>
-        <p>In this talk, I'll show what such principles look like on the example of Nx, an extensible build system I've been leading for the past 5 years.</p>
+        <p>
+          <strong>The balancing act of delivering high quality DX</strong>
+        </p>
+        <p>
+          Designing a general-purpose build system involves making a lot of trade-offs: tool-ability
+          vs. expressiveness, efficiency vs. ease of learning, lean configuration vs.
+          discoverability, extensibility vs. API surface. These are in a constant conflict, making
+          it a balancing act of driving coherence while ensuring high-quality DX. Such undertaking
+          can be challenging unless you have an explicit set of design principles to help guide you.{' '}
+        </p>
+        <p>
+          In this talk, I'll show what such principles look like on the example of Nx, an extensible
+          build system I've been leading for the past 5 years.
+        </p>
       </div>
     )
   },
@@ -362,14 +374,20 @@ export const speakers: Speaker[] = [
     },
     bio: (
       <p>
-        Zach is currently the CEO and founder of Warp, which is reinventing the terminal, making it 10x more usable for developers and teams. Prior to Warp, he was the interim CTO at TIME, co-founder and CTO of SelfMade, and a Principal Engineer at Google leading development on Google Docs, Sheets, and Slides. Zach aims to create software that has a positive impact on a lot of people. He also loves playing guitar and hanging with his pup Blue.
+        Zach is currently the CEO and founder of Warp, which is reinventing the terminal, making it
+        10x more usable for developers and teams. Prior to Warp, he was the interim CTO at TIME,
+        co-founder and CTO of SelfMade, and a Principal Engineer at Google leading development on
+        Google Docs, Sheets, and Slides. Zach aims to create software that has a positive impact on
+        a lot of people. He also loves playing guitar and hanging with his pup Blue.
       </p>
     ),
     twitter: 'zachlloydtweets',
     linkedin: 'zachlloyd',
     abstract: (
       <div>
-        <p><strong>Warp and the future of the terminal</strong></p>
+        <p>
+          <strong>Warp and the future of the terminal</strong>
+        </p>
       </div>
     )
   },
@@ -380,13 +398,23 @@ export const speakers: Speaker[] = [
     image: {
       url: 'lydia-hallie.jpeg'
     },
-    bio: 'Lydia Hallie is a Staff Developer Advocate at Vercel who primarily focuses on JavaScript, React, Node, serverless technologies, and web performance. She also spends her time mentoring and doing in-person training sessions.',
+    bio:
+      'Lydia Hallie is a Staff Developer Advocate at Vercel who primarily focuses on JavaScript, React, Node, serverless technologies, and web performance. She also spends her time mentoring and doing in-person training sessions.',
     twitter: 'lydiahallie',
     linkedin: 'lydia-hallie',
     github: 'lydiahallie',
     abstract: (
       <div>
-        <p>As modern applications are getting more and more complex, it's quite easy to end up with large bundle sizes and long loading times. Although there are many tools that can help with performance, there's still a lot you can do as a developer to load your code more efficiently. Fortunately, with the help of modern rendering patterns, we can reduce complexity, bundle sizes, and reduce loading times. In this talk, you'll learn about the implementation and use cases of modern rendering patterns including SSR, (on-demand) ISR, Streaming SSR, React Server Components, Progressive Rehydration, and Selective Rehydration.</p>
+        <p>
+          As modern applications are getting more and more complex, it's quite easy to end up with
+          large bundle sizes and long loading times. Although there are many tools that can help
+          with performance, there's still a lot you can do as a developer to load your code more
+          efficiently. Fortunately, with the help of modern rendering patterns, we can reduce
+          complexity, bundle sizes, and reduce loading times. In this talk, you'll learn about the
+          implementation and use cases of modern rendering patterns including SSR, (on-demand) ISR,
+          Streaming SSR, React Server Components, Progressive Rehydration, and Selective
+          Rehydration.
+        </p>
       </div>
     )
   },
@@ -397,14 +425,107 @@ export const speakers: Speaker[] = [
     image: {
       url: 'ant-wilson.jpg'
     },
-    bio: 'Co-Founder, CTO, and Chief Meme Officer at Supabase. Ant is a 3x venture backed founder with an MSc in Software Engineering from Imperial College London.',
+    bio:
+      'Co-Founder, CTO, and Chief Meme Officer at Supabase. Ant is a 3x venture backed founder with an MSc in Software Engineering from Imperial College London.',
     twitter: 'antwilson',
     linkedin: 'anthony-wilson-46179937',
     github: 'awalias',
     abstract: (
       <div>
-        <p>Ant explores how the Supabase architecture enables "Supa"-DX. Open source and modular technology choices enable Supabase to lower the barrier to deploying backends for your apps and services. We'll explore all the major DX touch points within Supabase, and how we obsess about improving them constantly.</p>
+        <p>
+          Ant explores how the Supabase architecture enables "Supa"-DX. Open source and modular
+          technology choices enable Supabase to lower the barrier to deploying backends for your
+          apps and services. We'll explore all the major DX touch points within Supabase, and how we
+          obsess about improving them constantly.
+        </p>
       </div>
     )
   },
+  {
+    name: 'Tarun Pothulapati',
+    title: 'Engineer',
+    company: 'Gitpod',
+    image: {
+      url: 'tarun-pothulapati.jpg'
+    },
+    bio:
+      'Tarun Pothulapati is an Engineer at Gitpod working on democratising cloud developer environments. Previously, He was a maintainer of Linkerd, an open source, CNCF Incubated Service Mesh project. He also spends his time contributing to other OSS projects like Tracing, etc. Apart from work, He’s trying to be a marathon runner, and is a big coffee enthusiast.',
+    twitter: 'tarrooon',
+    linkedin: 'tpothulapati',
+    github: 'pothulapati',
+    abstract: (
+      <div>
+        <p>
+          <strong>Remote development in a remote-first world</strong>
+        </p>
+        <p>
+          Is your development environment a pet? Convert that pet into cattle by going remote! Our
+          development environments continue to become more and more complex to set up. Each project
+          we work on has a unique set of dependencies and keeping everything up to date can be a
+          full time job. With Kubernetes, we made the transition from services operating on pet-like
+          infrastructure to cattle. By packaging dependencies and spinning up on-the-fly
+          environments, we can make the same transition for development environments.
+        </p>
+        <p>
+          In this talk, you will learn where remote development environments have been, where they
+          are today and where they’re going in the future. We will discuss why right now is a
+          perfect time to adopt this new style of development and provide a clear path to adopting
+          the best practices required to convert your pet-like development environment into cattle.
+        </p>
+        <p>The following points will be covered in depth:</p>
+        <ul>
+          <li>Problem space that remote development environments solve, and it’s approach.</li>
+          <li>How VS Code Remote IDE, JetBrains Fleet, etc work.</li>
+          <li>Code from Anywhere, Any Device (due to Browser support)</li>
+          <li>On-Demand, Development environments</li>
+          <li>
+            Standardisation of developer environments with formats like `devContainer.json`,
+            `gitpod.yml`, etc to provide project specific environments.
+          </li>
+          <li>
+            How this model goes very well with OSS development where you want folks to spend as less
+            time on the configuration of dev environment
+          </li>
+        </ul>
+        <p>
+          By the end of this talk, Audiences will leave with the past, present and future of Remote
+          Developer Environments, and have an understanding of how they can make use of it in their
+          existing projects and companies. Instead of focusing on the specific implementation, tools
+          on how it's done, we focus on the concepts itself so that the audience are free to choose
+          whatever implementations that they are comfortable with.
+        </p>
+      </div>
+    )
+  },
+  {
+    name: 'Oleg Šelajev',
+    title: 'Developer Advocate',
+    company: 'AtomicJar',
+    image: {
+      url: 'oleg-selajev.jpg'
+    },
+    bio:
+      'Oleg Šelajev is a developer advocate at AtomicJar working integration tests with Testcontainers better for everyone in the community. VirtualJUG leader. In 2017 became a Java Champion.',
+    twitter: 'shelajev',
+    linkedin: 'shelajev',
+    abstract: (
+      <div>
+        <p>
+          <strong>How to make a world-class integration testing library?</strong>
+        </p>
+        <p>
+          Excellent developer experience is a careful balance between boredom and anxiety. Ideally,
+          it would make solving simple problems trivial, complex ones simple, and have enough
+          flexibility to inspire hope for tackling the impossible ones!
+        </p>
+        <p>
+          In this session, we’d like to share the story of Testcontainers - the world’s most popular
+          integration testing libraries. And look at the developer experience choices that led
+          libraries aimed at a tedious and often ungrateful task of environment setup and
+          integration testing to bring joy and even influence how developers approach their projects
+          altogether.
+        </p>
+      </div>
+    )
+  }
 ];
