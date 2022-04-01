@@ -362,7 +362,7 @@ export const speakers: Speaker[] = [
     },
     bio: (
       <p>
-        Founder & CEO @ Warp (<a href='https://www.warp.dev' target='_blank' rel='noopener noreferrer'>www.warp.dev</a>)
+        Zach is currently the CEO and founder of Warp, which is reinventing the terminal, making it 10x more usable for developers and teams. Prior to Warp, he was the interim CTO at TIME, co-founder and CTO of SelfMade, and a Principal Engineer at Google leading development on Google Docs, Sheets, and Slides. Zach aims to create software that has a positive impact on a lot of people. He also loves playing guitar and hanging with his pup Blue.
       </p>
     ),
     twitter: 'zachlloydtweets',
