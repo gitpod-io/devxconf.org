@@ -61,7 +61,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Himanshu Mishra',
     title: 'Developer Advocate',
-    company: 'spotify',
+    company: 'Spotify',
     image: {
       url: 'himanshu-mishra.png'
     },
@@ -142,7 +142,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Arsh Sharma',
     company: 'Okteto',
-    title: 'dev experience',
+    title: 'Dev Experience',
     image: {
       url: 'arsh-sharma.jpeg'
     },
@@ -286,8 +286,8 @@ export const speakers: Speaker[] = [
   },
   {
     name: 'Cirpo Cinelli',
-    company: '',
-    title: 'DX Engineering Manager',
+    company: 'Dazn',
+    title: 'Head of DX',
     image: {
       url: 'alessandro-cinelli.jpeg'
     },
@@ -421,7 +421,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Ant Wilson',
     title: 'Co-Founder & CTO',
-    company: 'supabase',
+    company: 'Supabase',
     image: {
       url: 'ant-wilson.jpg'
     },
