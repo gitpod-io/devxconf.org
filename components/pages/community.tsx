@@ -26,26 +26,25 @@ const Community = () => (
       <Section className={styles.section}>
         <h1 className="heading-secondary">Join us on Discord</h1>
         <p>
-          Let’s meet on Discord to get to know each other, exchange knowledge and share experiences.
-          It’s a place to foster professional and personal growth and to simply have a great time
-          together.
+        Let’s meet on our Discord DevX channels to get to know each other, exchange knowledge and share experiences. It’s a place to foster professional and personal growth and to simply have a great time together.
         </p>
         <a
           href="https://discord.gg/BwknNDDXJu"
           target="_blank"
           className={cn('btn btn--big', styles.link)}
+          rel="noopener noreferrer"
         >
           Go to <DiscordLogo />
         </a>
 
-        <div className={styles.channels}>
+        {/* <div className={styles.channels}>
           <h2 className="heading-tertiary">Recommended Channels</h2>
           <div className={styles['channel-container']}>
             {channels.map(channel => (
               <Channel key={title} {...channel} />
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className={styles.follow}>
           <h2 className="heading-tertiary">Stay updated - follow us on Twitter</h2>

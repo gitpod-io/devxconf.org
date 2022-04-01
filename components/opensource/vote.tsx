@@ -8,7 +8,7 @@ const Vote = () => (
   <Section>
     <div className="row">
       <div className={styles.wrapper}>
-        <h2 className="heading-secondary">Open-source Projects we supported Last Year</h2>
+        <h2 className="heading-secondary">Open-source Projects we supported last year</h2>
         <p>
           Last year the following opensource projects were supported with {' '}
           <span className={styles.imp}>USD $10,000</span>
