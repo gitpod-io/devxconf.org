@@ -142,7 +142,7 @@ export const speakers: Speaker[] = [
   {
     name: 'Arsh Sharma',
     company: 'Okteto',
-    title: 'Dev Experience',
+    title: 'Developer Experience Engineer',
     image: {
       url: 'arsh-sharma.jpeg'
     },
