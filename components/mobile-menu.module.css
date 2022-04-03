@@ -72,14 +72,20 @@
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1209px) {
   .nav-overlay {
-    top: 125px;
+    top: 86px;
   }
 }
 
-@media(max-width: 323px) {
+@media(max-width: 768px) {
   .nav-overlay {
-    top: 145px;
+    top: 50px;
+  }
+}
+
+@media(max-width: 400px) {
+  .nav-item {
+    font-size: var(--space-6x);
   }
 }
