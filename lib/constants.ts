@@ -53,10 +53,6 @@ export const NAVIGATION = [
   //   route: '/schedule'
   // },
   {
-    name: "2021",
-    route: "/2021"
-  },
-  {
     name: 'Manifesto',
     route: '/manifesto'
   },
@@ -67,6 +63,10 @@ export const NAVIGATION = [
   {
     name: 'Community',
     route: '/community'
+  },
+  {
+    name: "2021",
+    route: "/2021"
   },
   // {
   //   name: 'Expo',

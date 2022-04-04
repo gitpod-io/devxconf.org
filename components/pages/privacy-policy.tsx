@@ -5,7 +5,7 @@ const PrivacyPolicy = () => (
     <Layout>
         <TextWrapper>
             <h1 className="heading-secondary">Privacy Policy</h1>
-            <p style={{ textAlign: 'center', fontSize: 'var(--footnote)', margin: '-10px' }}>Last update March 23, 2021</p>
+            <p style={{ textAlign: 'center', fontSize: 'var(--footnote)', margin: '-10px' }}>Last update May 2, 2022</p>
             <h2>Introduction</h2>
             <p>
                 This Privacy Policy for DevX Conf website (www.devxconf.org) applies to Gitpod GmbH (hereinafter referred to as “Gitpod”, “we” or “us”).
