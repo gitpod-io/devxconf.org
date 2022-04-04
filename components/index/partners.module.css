@@ -21,6 +21,10 @@
     margin-bottom: var(--gutter-medium);
 }
 
+.btn {
+    margin-bottom: var(--gutter-medium);
+}
+
 @media(max-width: 950px) {
     .sponsors {
         grid-template-columns: repeat(3, 1fr);
