@@ -527,5 +527,56 @@ export const speakers: Speaker[] = [
         </p>
       </div>
     )
+  },
+  {
+    name: 'Alayshia Knighten',
+    title: 'Manager, Onboarding Engineering',
+    company: 'Honeycomb',
+    image: {
+      url: 'alayshia-knighten.jpg'
+    },
+    bio:
+      'Alayshia is an Onboarding Engineering manager at Honeycomb who specializes in Observability and Production Excellence. She is also a modern-day hippie that simply enjoys getting "ish" done while "buzzing" around with customers, transforming their DevOps world.',
+    linkedin: 'alayshia',
+    abstract: (
+      <div>
+        <p>
+          <strong>Progressive Delivery with Observability</strong>
+        </p>
+        <p>
+          Build, test, and deploy can be a bloody nightmare. So we try in non-production
+          environments and hold our breath, hoping that everything is okay when we push our
+          deployments to production. When it's not okay, we waste time mimicking a fake production
+          environment. What if I told you we had a way to monitor our production systems based on
+          the data we receive from them?**cough** Observability *cough*
+        </p>
+        <p>
+        Let's ask questions about our production systems, allow the data to report back, and answer the question, "is it safe to continue?" Using data-driven decisions in our CI/CD workflows lets us breathe easy "knowing" what's in front of us.
+        </p>
+      </div>
+    )
+  },
+  {
+    name: 'Boris Kirov',
+    title: 'Senior Product Designer',
+    company: 'Elastic',
+    image: {
+      url: 'boris-kirov.jpg'
+    },
+    bio:
+      'Boris is a Bulgarian product designer, currently based in Amsterdam, The Netherlands. His interest in form and function lets him express himself with technology. Fascinated by computers, he is constantly experimenting with software to understand how programs communicate between each other and how we communicate with them. His passion for open source, collaboration and developer experience led him to Elastic, while previously he used to design the Platform experience at Miro.',
+    twitter: 'sboriskirov',
+    github: 'boriskirov',
+    linkedin: 'boris-kirov-b6b110a4',
+    abstract: (
+      <div>
+        <p>
+          <strong>"Designing for developers"</strong>
+        </p>
+        <p>
+        In this talk we will go on a journey of understanding what designing for developers is, and how important it is to gain empathy and connect with your audience. We will go through concepts and methods for designing great developer experience, by covering the fundamentals of computer programming, web development and design thinking process. This talk will allow designers, managers and people outside of the engineering group to deep-dive in what it means to experience the development and usage of software.
+        </p>
+      </div>
+    )
   }
 ];
