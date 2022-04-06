@@ -22,9 +22,9 @@ export type Speaker = {
   name: string;
   bio: string | JSX.Element;
   title: string;
-  twitter: string;
+  twitter?: string;
   github?: string;
-  linkedin: string;
+  linkedin?: string;
   company?: string;
   talk?: Talk;
   image: Image;
