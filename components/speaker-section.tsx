@@ -75,8 +75,11 @@ export default function SpeakerSection({ speaker }: Props) {
             {speaker.bio ? (
               <>
                 <h2 className="heading-quadrary">Bio</h2>
-                <div>{typeof speaker.bio === 'string' ? <p>{speaker.bio}</p> : speaker.bio}</div>
-              </>
+                <div dangerouslySetInnerHTML={{
+                  // eslint-disable-next-line
+                  // @ts-ignore
+                  __html: speaker.bio
+                }} /> </>
             ) : null}
             <h2 className="heading-quadrary">Contact</h2>
             <div className={styles.icons}>

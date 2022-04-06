@@ -551,7 +551,9 @@ export const speakers: Speaker[] = [
           the data we receive from them?**cough** Observability *cough*
         </p>
         <p>
-        Let's ask questions about our production systems, allow the data to report back, and answer the question, "is it safe to continue?" Using data-driven decisions in our CI/CD workflows lets us breathe easy "knowing" what's in front of us.
+          Let's ask questions about our production systems, allow the data to report back, and
+          answer the question, "is it safe to continue?" Using data-driven decisions in our CI/CD
+          workflows lets us breathe easy "knowing" what's in front of us.
         </p>
       </div>
     )
@@ -574,7 +576,33 @@ export const speakers: Speaker[] = [
           <strong>"Designing for developers"</strong>
         </p>
         <p>
-        In this talk we will go on a journey of understanding what designing for developers is, and how important it is to gain empathy and connect with your audience. We will go through concepts and methods for designing great developer experience, by covering the fundamentals of computer programming, web development and design thinking process. This talk will allow designers, managers and people outside of the engineering group to deep-dive in what it means to experience the development and usage of software.
+          In this talk we will go on a journey of understanding what designing for developers is,
+          and how important it is to gain empathy and connect with your audience. We will go through
+          concepts and methods for designing great developer experience, by covering the
+          fundamentals of computer programming, web development and design thinking process. This
+          talk will allow designers, managers and people outside of the engineering group to
+          deep-dive in what it means to experience the development and usage of software.
+        </p>
+      </div>
+    )
+  },
+  {
+    name: 'Ulf Schwekendiek',
+    title: ' Founder and CEO',
+    company: 'Centered',
+    image: {
+      url: 'ulf-schwekendiek.jpg'
+    },
+    bio:
+      '<b>Ulf Schwekendiek</b> is the Founder and CEO of <b>Centered</b>.  Prior to <b>Centered</b>, Ulf was part of numerous product and engineering teams, including being the first mobile engineer at <b>Siri</b> before it was acquired by <b>Apple</b>.  He was a co-founder of <b>Ditto</b> which was acquired by <b>Groupon</b> and an engineer at <b>Autodesk</b>, <b>Descript</b>, <b>Detour</b>, and <b>Groupon</b>.  Prior to this, Ulf earned his Masters in Integrated Digital Media from NYU. Most recently, after leaving his post as an Engineer Lead at <b>Postmates</b>, Ulf reflected on his daily work and how he accomplished it.  He devoured books, blogs, and videos to better understand how to improve productivity and use his time mindfully.  This thoughtfulness became his next venture: <b>Centered</b>.  After designing the platform and building a team that shares the same passion for achieving mindfulness at work, Ulf launched <b>Centered</b> in early 2020.',
+    twitter: 'sulf',
+    linkedin: 'sulfme',
+    github: 'sulf',
+    abstract: (
+      <div>
+        <p>
+          Flow States and how you can achieve at least 30% more in a day with these top productivity
+          frameworks.
         </p>
       </div>
     )
