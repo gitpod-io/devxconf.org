@@ -49,7 +49,6 @@ type Props = {
 };
 
 export default function SpeakerSection({ speaker }: Props) {
-  console.log(speaker.abstract);
   return (
     <>
       <div key={speaker.name} className={styles.container}>
@@ -116,19 +115,12 @@ export default function SpeakerSection({ speaker }: Props) {
                 </a>
               ) : null}
             </div>
-            {/* {React.createElement('div', [], speaker.abstract)} */}
-            {/* {speaker.abstract ? (
+            {speaker.abstract ? (
               <>
                 <h2 className="heading-quadrary">Abstract</h2>
-                <div className={styles.abstract}>
-                  {typeof speaker.abstract === 'string' ? (
-                    <p>{speaker.abstract}</p>
-                  ) : (
-                    speaker.abstract
-                  )}
-                </div>
+                <div className={styles.abstract} dangerouslySetInnerHTML={{__html: speaker.abstract}}/>
               </>
-            ) : null} */}
+            ) : null}
           </div>
         </div>
       </div>

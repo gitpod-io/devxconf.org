@@ -22,15 +22,15 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 
 type Props = {
-  allStages: Stage[];
+  stages: Stage[];
 };
 
-export default function ScheduleSidebar({ allStages }: Props) {
+export default function ScheduleSidebar({ stages }: Props) {
   const router = useRouter();
   const [stage, setStage] = useState(router.query.slug || 'a');
-  const currentStage = allStages.find((s: Stage) => s.slug === stage);
+  // const currentStage = stages.find((s: Stage) => s.slug === stage);
   const [day, setDay] = useState("Wednesday, April 28");  
-  const currentStageDaysSchedules = allStages.filter((s: Stage) => s.slug === stage) || [];
+  const currentStageDaysSchedules = stages.filter((s: Stage) => s.slug === stage) || [];
   const uniqueDayStrings = currentStageDaysSchedules.map((s: Stage) => s.day)
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function ScheduleSidebar({ allStages }: Props) {
         }}
         isGrey={true}
       >
-        {[allStages[0], allStages[2]].map(stage => (
+        {[stages[0], stages[2]].map(stage => (
           <option key={stage.slug} value={stage.slug}>
             {stage.name}
           </option>
