@@ -612,7 +612,56 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	}
+	},
+	{
+		name: 'Maya Kaczorowski',
+		title: 'Product Manager',
+		company: 'Tailscale',
+		image: {
+			url: 'maya-kaczorowski.jpg'
+		},
+		bio:
+			'Maya is a Product Manager at Tailscale, providing secure networking for the long tail. She was previously at GitHub in software supply chain security, and before that at Google working on container security and encryption key management. Prior to Google, Maya worked at McKinsey, and studied mathematics.',
+		twitter: 'MayaKaczorowski',
+		linkedin: 'mayakaczorowski',
+		github: 'mayakacz',
+		abstract: `
+		<div>
+		  <p>
+		  	Although many development teams have now adapted to working remotely, far fewer are developing remotely. We all know the benefits of remote work - freedom and flexibility to work where and when you want - but we don’t often talk about the downsides, specifically thte isolation that comes from working alone.
+		  </p>
+		  <p>
+		  	In this talk, we’ll discuss a few ways that developing remotely can actually help address some of the hurdles your team might face working remotely. Tools on their own can’t fix organizational challenges, but paired with the right operations, your team can get the best of both worlds, with better developer onboarding, developer velocity, and simpler, more secure access to shared resources. 
+		  </p>
+		  <p>
+			So, if you’ve already had success working remotely, maybe it’s time to try developing remotely. 
+		  </p>
+		</div>
+	  `
+	},
+	{
+		name: 'Michael Bleigh',
+		title: ' Staff Software Engineer',
+		company: 'Google',
+		image: {
+			url: 'michael-bleigh.jpg'
+		},
+		bio:
+			'Michael is an engineering leader at Firebase and has been building stuff to make developers\' lives easier for more than a decade. Michael\'s experience across open source (creator of Ruby libraries such as omniauth and grape), startups (founder of Divshot), and scaled platforms (Firebase) gives him a great deal of empathy for developers and the challenges they face. Michael has also spoken at events including Railsconf, Rubyconf, OSCON, and Google I/O.',
+		twitter: 'mbleigh',
+		linkedin: 'mbleigh',
+		github: 'mbleigh',
+		abstract: `
+		<div>
+		  <p>
+		  	<strong>What does it mean to create API products at scale? How do you do it well and keep the wheels from coming off?</strong>
+		  </p>
+		  <p>
+		  	Firebase is a massive developer platform with 15+ products offered across 6+ platforms. Firebase is also known for a high-quality consistent developer experience. In this talk, peek behind the scenes at how Firebase keeps the quality bar high for its APIs while continuously evolving and growing its products. Learn how boring words like "process" and "governance" can play a pivotal and even enjoyable role in the building of complex developer systems.
+		  </p>
+		</div>
+	  `
+	},
 ];
 
 export const speakers2021: Speaker[] = [
