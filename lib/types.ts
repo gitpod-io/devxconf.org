@@ -29,7 +29,7 @@ export type Speaker = {
   talk?: Talk;
   image: Image;
   imageSquare?: Image;
-  abstract?: string | JSX.Element;
+  abstract?: string;
 };
 
 export type Stage = {

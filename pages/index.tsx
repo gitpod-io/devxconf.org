@@ -19,12 +19,11 @@ import Page from '@components/page';
 import Layout from '@components/layout';
 import Hero from '@components/index/hero';
 import SpeakersGrid from '@components/speakers-grid';
-import { speakers } from 'contents';
 import Partners from '@components/index/partners';
 import FollowUsOnTwitter from '@components/follow-us-on-twitter';
 import About from '@components/about';
 
-export default function Conf() {
+export default function Conf({speakers}: any) {
   const meta = {
     title: SITE_NAME,
     description: META_DESCRIPTION
@@ -40,4 +39,13 @@ export default function Conf() {
       </Layout>
     </Page>
   );
+}
+
+export async function getServerSideProps() {
+  const req = await fetch(`https://devxconf.org/json/2022/speakers.json`);
+  const speakers = await req.json();
+
+  return {
+      props: { speakers },
+  }
 }

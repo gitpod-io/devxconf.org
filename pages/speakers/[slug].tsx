@@ -20,15 +20,10 @@ import { META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import { PatternHalfCircle } from '@components/patterns';
 import SpeakerSection from '@components/speaker-section';
-import { hyphenate } from '@components/speakers-grid';
-import { speakers as SpeakersNew } from 'contents';
-import { speakers as SpeakersOld} from 'contents/2021';
 import styles from './[slug].module.css';
-import { useRouter } from 'next/router';
 
-export default function SponsorPage() {
-  const slug = useRouter().query.slug;
-  const speaker = [...SpeakersNew, ...SpeakersOld].find(s => hyphenate(s.name) === slug);
+export default function SponsorPage({speaker}: any) {
+   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
 
   const meta = {
     title: `${speaker?.name} Speaker | Devx Conf`,
@@ -55,4 +50,13 @@ export default function SponsorPage() {
       </Layout>
     </Page>
   );
+}
+
+export async function getServerSideProps({params}: any) {
+  const req = await fetch(`https://devxconf.org/json/${encodeURIComponent(params.slug)}.json`);
+  const speaker = await req.json();
+
+  return {
+      props: { speaker },
+  }
 }

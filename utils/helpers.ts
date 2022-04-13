@@ -12,3 +12,10 @@ export const getIsLoggedIn = () => {
     return true;
   }
 };
+
+export const stringToBeautifiedFragment = (str = "") =>
+  str
+    .toLocaleLowerCase()
+    .replace(/\s/g, "-")
+    .replace(/\?/g, "")
+    .replace(/,/g, "");

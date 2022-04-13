@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 //@ts-nocheck
 
-import { DiscordLogo } from './pages/community';
-import Link from 'next/link';
+// import { DiscordLogo } from './pages/community';
+// import Link from 'next/link';
 import ScheduleSidebar from './schedule-sidebar';
 import { Stage } from '@lib/types';
-import { allStages } from 'contents/schedule-and-stage';
-import cn from 'classnames';
-import { hyphenate } from './speakers-grid';
+// import cn from 'classnames';
+// import { hyphenate } from './speakers-grid';
 import styles from './stage-container.module.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
@@ -29,13 +29,14 @@ import useSWR from 'swr';
 
 type Props = {
   stage?: Stage;
+  stages?: Stage[];
 };
 
-export default function StageContainer({ stage }: Props) {
+export default function StageContainer({ stage, stages }: Props) {
   const slug = useRouter().query.slug || 'a';
 
   const response = useSWR('/api/stages', {
-    initialData: allStages,
+    initialData: stages,
     refreshInterval: 5000
   });
 
@@ -93,7 +94,7 @@ export default function StageContainer({ stage }: Props) {
                </div> */}
           </div>
         </div>
-        <ScheduleSidebar allStages={allStages} />
+        <ScheduleSidebar stages={stages} />
       </div>
     </div>
   );

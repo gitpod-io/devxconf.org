@@ -16,6 +16,7 @@
 
 import GithubIcon from '@components/icons/icon-github';
 import { Speaker } from '@lib/types';
+import React from 'react';
 import styles from './speaker-section.module.css';
 
 const TwitterIcon = () => (
@@ -117,13 +118,7 @@ export default function SpeakerSection({ speaker }: Props) {
             {speaker.abstract ? (
               <>
                 <h2 className="heading-quadrary">Abstract</h2>
-                <div className={styles.abstract}>
-                  {typeof speaker.abstract === 'string' ? (
-                    <p>{speaker.abstract}</p>
-                  ) : (
-                    speaker.abstract
-                  )}
-                </div>
+                <div className={styles.abstract} dangerouslySetInnerHTML={{__html: speaker.abstract}}/>
               </>
             ) : null}
           </div>

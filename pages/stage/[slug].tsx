@@ -14,22 +14,19 @@
  * limitations under the License.
  */
 
- import { GetStaticProps, GetStaticPaths } from 'next';
-
  import Page from '../../components/page';
  import StageContainer from '../../components/stage-container';
  import Layout from '../../components/layout';
  
- import { getAllStages } from '../../lib/cms-api';
  import { Stage } from '../../lib/types';
  import { SITE_NAME, META_DESCRIPTION } from '../../lib/constants';
  
  type Props = {
    stage: Stage;
-   allStages: Stage[];
+   stages: Stage[];
  };
  
- export default function StagePage({ stage, allStages }: Props) {
+ export default function StagePage({ stage, stages }: Props) {
    const meta = {
      title: SITE_NAME,
      description: META_DESCRIPTION
@@ -38,40 +35,17 @@
    return (
      <Page meta={meta} fullViewport>
        <Layout>
-         <StageContainer stage={stage} />
+         <StageContainer stage={stage} stages={stages} />
        </Layout>
      </Page>
    );
  }
- 
- export const getStaticProps: GetStaticProps<Props> = async ({ params }) => {
-   const slug = params?.slug;
-   const stages = await getAllStages();
-   const stage = stages.find((s: Stage) => s.slug === slug) || null;
- 
-   if (!stage) {
-     return {
-       notFound: true
-     };
-   }
- 
-   return {
-     props: {
-       stage,
-       allStages: stages
-     },
-     revalidate: 60
-   };
- };
- 
- export const getStaticPaths: GetStaticPaths = async () => {
-   const stages = await getAllStages();
-   const slugs = stages.map((s: Stage) => ({ params: { slug: s.slug } }));
- 
-   return {
-     paths: slugs,
-     fallback: false
-   };
- };
- 
- 
+
+ export async function getServerSideProps() {
+  const req = await fetch(`https://devxconf.org/json/2021/stages.json`);
+  const stages = await req.json();
+
+  return {
+      props: { stages },
+  }
+}

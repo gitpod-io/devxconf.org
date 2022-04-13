@@ -54,7 +54,7 @@ type Props = {
 };
 
 export default function Schedule({ allStages }: Props) {
-  let stagesToRender: Stage[] = []
+  const stagesToRender: Stage[] = []
   
   for (let i = 0; i < allStages.length - 2; i++) {
     console.log(allStages[i].schedule?.length, allStages[i + 2].schedule?.length)
