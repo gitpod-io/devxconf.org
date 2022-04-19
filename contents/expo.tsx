@@ -85,6 +85,23 @@ export const sponsors: Sponsor[] = [
     image: '/expo/tailscale.png'
   },
   {
+    name: 'Slim.ai',
+    description:
+      ['Slim.AI is a developer efficiency platform for cloud-native applications and containerized workflows. The Slim Developer Platform provides automated optimization, workflow management, and analytic tooling for containerized apps, improving velocity, security, and performance. We help devs focus less on infrastructure and more on writing great code.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.slim.ai',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/slim-ai-inc' },
+      { text: 'Twitter', url: 'https://twitter.com/slimdevops' }
+    ],
+    youtubeSlug: '',
+    tier: 'silver',
+    logo: {
+      url: '/sponsors/slim-ai.svg'
+    },
+    image: '/expo/slim-ai.png'
+  },
+  {
     name: 'CodeSee',
     description: [''],
     website: 'https://www.codesee.io/',
