@@ -13,7 +13,7 @@
     justify-content: space-around;
     align-items: center;
     max-width: 1000px;
-    margin: var(--gutter-large) auto;
+    margin: 0 auto var(--gutter-small);
     overflow: hidden;
 }
 

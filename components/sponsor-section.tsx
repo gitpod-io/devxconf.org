@@ -70,7 +70,7 @@ export default function SponsorSection({ sponsor }: Props) {
                 {sponsor.callToAction}
               </a>
             ) : null}
-            <a
+            {/* <a
               href={sponsor.discord}
               target="_blank"
               rel="noopener noreferrer"
@@ -78,7 +78,7 @@ export default function SponsorSection({ sponsor }: Props) {
               className="btn btn--secondary"
             >
               Chat on Discord
-            </a>
+            </a> */}
           </div>
           {sponsor.links ? (
             <>

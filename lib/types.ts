@@ -64,7 +64,7 @@ export type Sponsor = {
   callToAction?: string;
   callToActionLink?: string;
   links?: SponsorLink[];
-  discord: string;
+  discord?: string;
   tier: string;
   cardImage?: JSX.Element;
   logo: Image;

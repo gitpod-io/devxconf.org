@@ -1,153 +1,97 @@
 import { Sponsor } from '@lib/types';
 
+
 export const sponsors: Sponsor[] = [
   {
-    name: 'CodeSee',
-    description:
-      ['CodeSee shows you how your code works. CodeSee helps developers to deeply understand how your large-scale codebase works, document it, and collaborate continuously.'],
-    discord: 'https://discord.gg/UGZWNHeznV',
+    name: 'Gitpod',
+    description: ['Gitpod is an open-source developer platform for remote development. Accelerate your teams developer experience, remote collaboration and security - to ship new products faster and more securely.'],
     callToAction: 'Website',
-    callToActionLink: 'https://www.codesee.io/',
+    callToActionLink: 'https://www.gitpod.io/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/gitpod/' },
+      { text: 'Twitter', url: 'https://twitter.com/gitpod' }
+    ],
     youtubeSlug: '',
     tier: 'gold',
     logo: {
-      url: '/sponsors/codesee.svg'
+      url: '/sponsors/gitpod.svg'
     },
-    image: '/expo/codesee.png'
+    image: '/expo/gitpod.png'
   },
   {
-    name: 'Sourcegraph',
-    description:
-      ["Sourcegraph Universal Code Search enables developers to traverse the complex universe of interdependent codebases to find the code and information they need to do their jobs in today’s collaborative, multi-dimensional development environment.", "It's a single, scalable way to explore, navigate, and analyze all of your code regardless of system, repository, or language. Sourcegraph’s customers include many of the world’s leading companies, such as Amazon, PayPal, Uber, Lyft, Yelp, Atlassian, and Indeed."],
-    discord: 'https://discord.gg/EGTMfgQGGh',
-    callToAction: "About",
-    callToActionLink: 'https://about.sourcegraph.com/',
-    youtubeSlug: '',
-    tier: 'silver',
-    logo: {
-      url: '/sponsors/sourcegraph.svg'
-    },
-    image: '/expo/sourcegraph.png'
-  },
-  {
-    name: 'Slim.ai',
-    description:
-      ['Slim.AI is a developer efficiency platform for cloud-native applications and containerized workflows. The Slim Developer Platform provides automated optimization, workflow management, and analytic tooling for containerized apps, improving velocity, security, and performance. We help devs focus less on infrastructure and more on writing great code.'],
-    discord: 'https://discord.gg/U3QvSZXyk3',
+    name: 'WorkOS',
+    description: ['WorkOS provides APIs to make applications enterprise-ready.'],
     callToAction: 'Website',
-    callToActionLink: 'https://www.slim.ai',
+    callToActionLink: 'https://workos.com/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/workos-inc' },
+      { text: 'Twitter', url: 'https://twitter.com/workos' }
+    ],
     youtubeSlug: '',
-    tier: 'silver',
-    logo: {
-      url: '/sponsors/slim-ai.svg'
-    },
-    image: '/expo/slim-ai.png'
-  },
-  {
-    name: 'Raycast',
-    description:
-      ["Modern teams rely on countless tools and their developers experience the pain of non-stop context switching. Raycast pairs the search functionality of macOS Spotlight with deep integrations of third party services.", "Without leaving the application, developers can create an issue in Jira, review pull requests in GitHub, or join a Zoom call. Scripts and an upcoming API allow automating tedious workflows. It's time to bring back clarity to our daily work."],
-    discord: 'https://discord.gg/wrgjfPpXV6',
-    callToAction: "Website",
-    callToActionLink: 'https://raycast.com/?ref=devx-conf',
-    youtubeSlug: 'sU8WMWXXgtU',
-    tier: 'silver',
-    logo: {
-      url: '/sponsors/raycast.svg'
-    },
-  },
-  {
-    name: 'Useoptic',
-    description:
-      ["Optic is an open-source project that makes documenting your APIs easy for any team. It observes development and test traffic to learn your API's behavior, detects API changes before they go live, and adds an API changelogs to every Pull Request. It's built for busy teams that want to move fast, avoid breaking things, and get the benefits of API specifications without having to write them by hand."],
-    discord: 'https://discord.gg/QpcR5RdQs6',
-    callToActionLink: 'https://useoptic.com/',
-    callToAction: 'Website',
-    links: [{ text: 'GitHub Repo', url: 'https://github.com/opticdev/optic' }],
-    youtubeSlug: '',
-    tier: 'silver',
-    logo: {
-      url: '/sponsors/useoptic.svg'
-    },
-    image: '/expo/useoptic.png'
-  },
-  {
-    name: 'CNCF',
-    description:
-      ['TBD'],
-    discord: '',
-    website: 'https://www.cncf.io',
-    youtubeSlug: '',
-    tier: 'start-up',
-    logo: {
-      url: '/sponsors/cnfc.svg'
-    },
-  },
-  {
-    name: 'Cloud Query',
-    description:
-      [' Cloudquery transforms cloud infrastructure into queryable SQL for easy monitoring, governance and security.'],
-    discord: '',
-    website: 'https://cloudquery.io',
-    youtubeSlug: '',
-    tier: 'start-up',
-    logo: {
-      url: '/sponsors/cloudquery.svg'
-    },
-    image: 'cloudquery.png'
-  },
-  {
-    name: 'Console.dev',
-    description:
-      ['Console is a free weekly email digest of the best tools and beta releases for developers.'],
-    discord: 'https://discord.gg/srE7fVe3gC',
-    website: '',
-    youtubeSlug: '',
-    callToAction: 'Website',
-    callToActionLink: 'https://console.dev/',
     tier: 'gold',
     logo: {
-      url: '/sponsors/console.svg'
+      url: '/sponsors/workos.svg'
     },
-    image: 'console.png'
-  }, 
-  {
-    name: 'Ladies in DevOps',
-    description:
-      [''],
-    discord: '',
-    website: 'https://ladiesindevops.com/',
-    youtubeSlug: '',
-    tier: 'start-up',
-    logo: {
-      url: '/sponsors/ladies-in-devops.svg'
-    },
-    transform: 'scale(1.2)',
+    image: '/expo/workos.png'
   },
   {
     name: 'Swimm',
-    description:
-      [''],
-    discord: '',
-    website: 'https://swimm.io/product/',
-    youtubeSlug: '',
-    tier: 'start-up',
     logo: {
       url: '/sponsors/swimm.svg'
     },
+    description: [
+      'Swimm helps engineering teams sync with code by integrating Continuous Documentation into the development workflow, so that docs are always up to date.'
+    ],
+    callToAction: 'Website',
+    callToActionLink: 'https://swimm.io/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/swimm-io/' },
+      { text: 'Twitter', url: 'https://twitter.com/swimm_io' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    image: '/expo/swimm.png'
   },
-  // {
-  //   name: 'Datadog',
-  //   description:
-  //     ['TBD'],
-  //   discord: '',
-  //   website: 'https://gitlab.com',
-  //   youtubeSlug: '',
-  //   callToAction: 'Try Now',
-  //   callToActionLink: '',
-  //   tier: 'start-up',
-  //   logo: {
-  //     url: ''
-  //   },
-  // },
+  {
+    name: 'Okteto',
+    description: ['Remote Development Environments that feel like your local machine.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.okteto.com/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/okteto' },
+      { text: 'Twitter', url: 'https://twitter.com/oktetohq' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/okteto.svg'
+    },
+    image: '/expo/okteto.png'
+  },
+  {
+    name: 'Tailscale',
+    description: ['Tailscale is a zero-config VPN that makes devices and applications accessible anywhere in the world, securely and effortlessly.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.tailscale.com',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/tailscale' },
+      { text: 'Twitter', url: 'https://twitter.com/tailscale' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/tailscale.svg'
+    },
+    image: '/expo/tailscale.png'
+  },
+  {
+    name: 'CodeSee',
+    description: [''],
+    website: 'https://www.codesee.io/',
+    youtubeSlug: '',
+    tier: 'start-up',
+    logo: {
+      url: '/sponsors/codesee.svg'
+    },
+  }
 ];
