@@ -85,6 +85,22 @@ export const sponsors: Sponsor[] = [
     image: '/expo/tailscale.png'
   },
   {
+    name: 'JetBrains',
+    description: ['JetBrains is a global software vendor that creates professional software development tools and advanced collaboration solutions trusted by 12.8 million users.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.jetbrains.com/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/jetbrains' },
+      { text: 'Twitter', url: 'https://twitter.com/jetbrains' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/jetbrains.svg'
+    },
+    image: '/expo/jetbrains.png'
+  },
+  {
     name: 'Slim.ai',
     description:
       ['Slim.AI is a developer efficiency platform for cloud-native applications and containerized workflows.'],
