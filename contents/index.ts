@@ -334,11 +334,11 @@ const speakers2022: Speaker[] = [
 		image: {
 			url: 'brendan-falk.png'
 		},
-		bio: 'Brendan is co-founder / CEO of Fig.',
+		bio: 'Brendan is co-founder/CEO of Fig. Fig makes the terminal easier for beginners, more productive for advanced engineers, and more collaborative for teams. Fig is backed by YC, General Catalyst, and founders/executives from Stripe, Heroku, Adobe, and GitHub. Brendan graduated from Harvard College in 2020 is originally from Australia.',
 		twitter: 'brendanfalk',
 		linkedin: 'brendanfalk',
 		github: 'brendanfalk',
-		abstract: 'Building autocomplete for the terminal'
+		abstract: 'How Fig makes engineers 10x more productive in the terminal.'
 	},
 	{
 		name: 'Victor Savkin',
@@ -705,7 +705,7 @@ const speakers2022: Speaker[] = [
 		linkedin: 'kirill-skrygan-7b86073a',
 		abstract: `
 		<p>
-			Chat about remote development.
+			Panel talk on remote development.
 		</p>
 	  `
 	},
