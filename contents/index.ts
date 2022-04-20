@@ -662,6 +662,53 @@ const speakers2022: Speaker[] = [
 		</div>
 	  `
 	},
+	{
+		name: 'Nathan Sobo',
+		title: 'Programmer / Entrepreneur',
+		company: 'Zed',
+		image: {
+			url: 'nathan-sobo.jpeg'
+		},
+		bio: `
+			<div>
+			<p>
+				Nathan joined GitHub in late 2011 to build the Atom text editor, and he led the Atom team until 2018.
+			</p>
+
+			<p>
+				He also co-led development of Teletype for Atom, pioneering one of the first production uses of conflict-free replicated data types for collaborative text editing.
+			</p>
+			
+			<p>
+				He's been dreaming about building the world’s best text editor since he graduated from college, and is excited to finally have the knowledge, tools, and resources to achieve this vision.
+			</p>
+			</div>
+		`,
+		twitter: 'nathansobo',
+		github: 'nathansobo',
+		abstract: `
+		<p>
+			Zed is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
+		</p>
+	  `
+	},
+	{
+		name: 'Kirill Skrygan',
+		title: 'Department Lead',
+		company: 'Intellij',
+		image: {
+			url: 'kirill-skrygan.jpg'
+		},
+		bio: `Intellij Department lead`,
+		twitter: 'kskrygan',
+		github: 'kskrygan',
+		linkedin: 'kirill-skrygan-7b86073a',
+		abstract: `
+		<p>
+			Chat about remote development.
+		</p>
+	  `
+	},
 ];
 
 export const speakers2021: Speaker[] = [
