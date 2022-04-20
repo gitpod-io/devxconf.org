@@ -709,6 +709,72 @@ const speakers2022: Speaker[] = [
 		</p>
 	  `
 	},
+	{
+		name: 'Sven Efftinge',
+		title: 'Co-founder & Co-CEO',
+		company: 'Gitpod',
+		image: {
+			url: 'sven-efftinge.jpeg'
+		},
+		bio: `Sven is a co founder and co CEO of Gitpod. Before Gitpod he built and designed other development tools and programming languages. In his spare time he enjoys living at and kitesurfing on the baltic sea.`,
+		twitter: 'svenefftinge',
+		github: 'svenefftinge',
+		abstract: `
+		<p>
+		Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
+		name: 'Ben Firshman',
+		title: 'Founder',
+		company: 'Replicate',
+		image: {
+			url: 'ben-firshman.jpg'
+		},
+		bio: `Founder of Replicate. Previously, he was product at Docker and was one of the creators of Docker Compose. He also founded a few companies, written things like https://clig.dev/ , helped create The Guardian’s iPad app, and worked on GOV.UK.`,
+		twitter: 'bfirsh',
+		abstract: `
+		<p>
+		Panel talk on a history and how Docker thought about DevX.
+		</p>
+	  `
+	},
+	{
+		name: 'Arnaud Porterie',
+		title: 'Founder',
+		company: 'Echoes HQ',
+		image: {
+			url: 'arnaud-porterie.jpg'
+		},
+		bio: `Arnaud Porterie is the founder of Echoes HQ, a product helping hundreds of engineering organizations maximize their impact.
+
+		At Docker, Arnaud has managed one of the most active open source communities with over a 400 weekly contributors. Running a project at this scale has taught him both the importance of data for decision making and the importance of developer experience.
+		
+		At Veepee, Arnaud has scaled a team of 350 to a European-wide organization of 900. He realized there how unequipped were engineering leaders to make data informed decisions and effectively communicate on their teams' activity in a way that their business partners and bosses could understand.`,
+		twitter: 'arnaudporterie',
+		abstract: `
+		<p>
+		Panel talk on a history and how Docker thought about DevX.
+		</p>
+	  `
+	},
+	{
+		name: 'Wilson Mar',
+		title: 'Senior Domain Architect',
+		company: 'Hashicorp',
+		image: {
+			url: 'wilson-mar.jpeg'
+		},
+		bio: `After surviving dozens of botched onboardings as both employee and consultant, Wilson Mar has championed better processes, earlier for fellow developers and others at enterprise software organizations.`,
+		github: 'wilsonmar',
+		linkedin: 'wilsonmar',
+		abstract: `
+		<p>
+		How to onboard people in a day. Companies that drag out onboarding drain the goodwill of new people. Here are dozens of specific, concrete actions to ensure instant productivity from joiners.
+		</p>
+	  `
+	},
 ];
 
 export const speakers2021: Speaker[] = [
