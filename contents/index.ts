@@ -292,8 +292,8 @@ const speakers2022: Speaker[] = [
 	},
 	{
 		name: 'Cirpo Cinelli',
-		company: 'Dazn',
-		title: 'Head of DX',
+		company: '',
+		title: 'DevX Engineering Manager',
 		image: {
 			url: 'alessandro-cinelli.jpeg'
 		},

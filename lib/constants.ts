@@ -61,6 +61,10 @@ export const NAVIGATION = [
     route: '/opensource'
   },
   {
+    name: 'Expo',
+    route: '/expo'
+  },
+  {
     name: 'Community',
     route: '/community'
   },
@@ -68,10 +72,6 @@ export const NAVIGATION = [
     name: "2021",
     route: "/2021"
   },
-  // {
-  //   name: 'Expo',
-  //   route: '/expo'
-  // }
 ];
 
 export type TicketGenerationState = 'default' | 'loading';

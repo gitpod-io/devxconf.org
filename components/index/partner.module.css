@@ -1,7 +1,7 @@
 .logo {
-    max-width: 220px;
+    max-width: 180px;
     height: 70px;
-    margin: var(--gutter-normal);
+    margin: var(--gutter-small) var(--gutter-medium);
 }
 
 @media(max-width: 950px) {

@@ -40,13 +40,22 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  flex: 1;
 }
 
 .yt img {
   max-width: 600px;
   width: 100%;
 }
+
+.img-container {
+  margin-bottom: var(--gutter-small);
+  max-width: 250px;
+}
+
+.img-container img {
+  width: 100%;
+}
+
 
 @media (max-width: 1160px) {
   .container {
@@ -65,20 +74,16 @@
   .yt {
     justify-content: center;
     margin-bottom: var(--gutter-medium);
+    flex: none;
   }
 
   .container {
     padding-right: 0;
   }
-}
 
-.img-container {
-  margin-bottom: var(--gutter-small);
-  max-width: 250px;
-}
-
-.img-container img {
-  width: 100%;
+  .img-container {
+    max-width: 180px;
+  }
 }
 
 .sponsor-details {
