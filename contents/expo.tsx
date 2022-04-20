@@ -19,56 +19,6 @@ export const sponsors: Sponsor[] = [
     image: '/expo/gitpod.png'
   },
   {
-    name: 'WorkOS',
-    description: ['WorkOS provides APIs to make applications enterprise-ready.'],
-    callToAction: 'Website',
-    callToActionLink: 'https://workos.com/',
-    links: [
-      { text: 'Linkedin', url: 'https://www.linkedin.com/company/workos-inc' },
-      { text: 'Twitter', url: 'https://twitter.com/workos' }
-    ],
-    youtubeSlug: '',
-    tier: 'gold',
-    logo: {
-      url: '/sponsors/workos.svg'
-    },
-    image: '/expo/workos.png'
-  },
-  {
-    name: 'Swimm',
-    logo: {
-      url: '/sponsors/swimm.svg'
-    },
-    description: [
-      'Swimm helps engineering teams sync with code by integrating Continuous Documentation into the development workflow, so that docs are always up to date.'
-    ],
-    callToAction: 'Website',
-    callToActionLink: 'https://swimm.io/',
-    links: [
-      { text: 'Linkedin', url: 'https://www.linkedin.com/company/swimm-io/' },
-      { text: 'Twitter', url: 'https://twitter.com/swimm_io' }
-    ],
-    youtubeSlug: '',
-    tier: 'gold',
-    image: '/expo/swimm.png'
-  },
-  {
-    name: 'Okteto',
-    description: ['Remote Development Environments that feel like your local machine.'],
-    callToAction: 'Website',
-    callToActionLink: 'https://www.okteto.com/',
-    links: [
-      { text: 'Linkedin', url: 'https://www.linkedin.com/company/okteto' },
-      { text: 'Twitter', url: 'https://twitter.com/oktetohq' }
-    ],
-    youtubeSlug: '',
-    tier: 'gold',
-    logo: {
-      url: '/sponsors/okteto.svg'
-    },
-    image: '/expo/okteto.png'
-  },
-  {
     name: 'Tailscale',
     description: ['Tailscale is a zero-config VPN that makes devices and applications accessible anywhere in the world, securely and effortlessly.'],
     callToAction: 'Website',
@@ -99,6 +49,56 @@ export const sponsors: Sponsor[] = [
       url: '/sponsors/jetbrains.svg'
     },
     image: '/expo/jetbrains.png'
+  },
+  {
+    name: 'WorkOS',
+    description: ['WorkOS provides APIs to make applications enterprise-ready.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://workos.com/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/workos-inc' },
+      { text: 'Twitter', url: 'https://twitter.com/workos' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/workos.svg'
+    },
+    image: '/expo/workos.png'
+  },
+  {
+    name: 'Okteto',
+    description: ['Remote Development Environments that feel like your local machine.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.okteto.com/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/okteto' },
+      { text: 'Twitter', url: 'https://twitter.com/oktetohq' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/okteto.svg'
+    },
+    image: '/expo/okteto.png'
+  },
+  {
+    name: 'Swimm',
+    logo: {
+      url: '/sponsors/swimm.svg'
+    },
+    description: [
+      'Swimm helps engineering teams sync with code by integrating Continuous Documentation into the development workflow, so that docs are always up to date.'
+    ],
+    callToAction: 'Website',
+    callToActionLink: 'https://swimm.io/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/swimm-io/' },
+      { text: 'Twitter', url: 'https://twitter.com/swimm_io' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    image: '/expo/swimm.png'
   },
   {
     name: 'Slim.ai',
