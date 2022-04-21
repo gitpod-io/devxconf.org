@@ -726,6 +726,22 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
+		name: 'Chad Metcalf',
+		title: 'Building a Self Hosted Business',
+		company: 'Gitpod',
+		image: {
+			url: 'chad-metcalf.jpg'
+		},
+		bio: `Currently helping to build Gitpod. Docker, Cloudera, Puppet, WibiData alumni. Advising startups. Angel investor.`,
+		twitter: 'metcalfc',
+		github: 'metcalfc',
+		abstract: `
+		<p>
+		Panel talk on a history and how Docker thought about DevX.
+		</p>
+	  `
+	},
+	{
 		name: 'Ben Firshman',
 		title: 'Founder',
 		company: 'Replicate',
