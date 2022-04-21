@@ -1617,7 +1617,7 @@ const stages2022: Stage[] = [
 		day: 'Tuesday, May 3',
 		discord: '',
 		slug: 'a',
-		stream: 'znKHPTMpGTE',
+		stream: 'WbSMxch0zXs',
 	},
 	{
 		name: 'Stage B',
@@ -1631,7 +1631,7 @@ const stages2022: Stage[] = [
 		day: 'Tuesday, May 3',
 		discord: '',
 		slug: 'b',
-		stream: 'qAiiZtvbwpc',
+		stream: '2rlUdQvteLI',
 	}
 ]
 

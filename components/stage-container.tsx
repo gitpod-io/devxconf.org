@@ -20,29 +20,37 @@
 // import Link from 'next/link';
 import ScheduleSidebar from './schedule-sidebar';
 import { Stage } from '@lib/types';
-// import cn from 'classnames';
+import cn from 'classnames';
 // import { hyphenate } from './speakers-grid';
 import styles from './stage-container.module.css';
-import { useEffect } from 'react';
+import { createRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
 type Props = {
   stage?: Stage;
   stages?: Stage[];
+  isNew?: boolean;
 };
 
-export default function StageContainer({ stages }: Props) {
-  const slug = useRouter().query.slug;
-
-  const streamId = stages?.find(s => s.slug === slug)?.stream
+export default function StageContainer({ stages, isNew = false }: Props) {
+  const slug = useRouter().query.slug || 'a';
+  const streamId = stages?.find(s => s.slug === slug)?.stream;
+  const liveChat = createRef();
 
   useEffect(() => {
     const main = document.querySelector('main');
     const footer = document.querySelector('footer');
+    if (isNew) {
+      main.style.marginTop = 'var(--gutter-huge)';
+    } else {
+      document.body.classList.add('full');
+      main?.classList.add('stage-main');
+      footer?.classList.add('stage-footer');
+    }
 
-    document.body.classList.add('full');
-    main?.classList.add('stage-main');
-    footer?.classList.add('stage-footer');
+    if (liveChat.current) {
+      liveChat.current.src = `https://www.youtube.com/live_chat?v=${streamId}&embed_domain=${window.location.hostname}`;
+    }
 
     return () => {
       document.body.classList.remove('full');
@@ -52,23 +60,29 @@ export default function StageContainer({ stages }: Props) {
   });
 
   return (
-    <div className={styles.row}>
-      <div className={styles.container}>
-        <div className={styles.streamContainer}>
-          <div className={styles.stream}>
-            <div className={styles.yt}>
-              <iframe
-                src={`https://www.youtube.com/embed/${streamId}?autoplay=1&amp;mute=1`}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+    <>
+      <div className={cn(styles.row, !isNew && styles.height)}>
+        <div className={cn(styles.container, !isNew && styles.height)}>
+          <div className={cn(styles.streamContainer, !isNew && styles.height)}>
+            <div className={styles.stream}>
+              <div className={styles.yt}>
+                <iframe
+                  src={`https://www.youtube.com/embed/${streamId}?autoplay=1&amp;mute=1`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className={styles.video}
+                ></iframe>
+              </div>
+              {isNew ? (
+                <iframe ref={liveChat} className={styles.chat} frameborder="0"></iframe>
+              ) : null}
             </div>
           </div>
+          <ScheduleSidebar stages={stages} />
         </div>
-        <ScheduleSidebar stages={stages} />
       </div>
-    </div>
+    </>
   );
 }

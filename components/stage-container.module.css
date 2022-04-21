@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
+.height {
+  height: calc(100vh -178px);
+}
+
 .row {
-  --container-height: calc(100vh -178px);
   margin-bottom: var(--gutter-huge);
-  height: var(--container-height);
 }
 
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: var(--container-height);
 }
 
 .streamContainer {
   width: 100%;
   padding: 0;
   min-height: 400px;
-  height: var(--container-height);
 }
 
 .stream {
@@ -44,10 +44,14 @@
   height: 100%;
 }
 
-.yt > * {
-  min-height: 500px;
+.video {
+  min-height: 600px;
   height: 100%;
   width: 100%;
+}
+
+.chat {
+  min-height: 400px;
 }
 
 .btn-container {

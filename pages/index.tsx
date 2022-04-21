@@ -17,13 +17,9 @@
 import { SITE_NAME, META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import Layout from '@components/layout';
-import Hero from '@components/index/hero';
-import SpeakersGrid from '@components/speakers-grid';
-import Partners from '@components/index/partners';
-import FollowUsOnTwitter from '@components/follow-us-on-twitter';
-import About from '@components/about';
+import StageContainer from '@components/stage-container';
 
-export default function Conf({speakers}: any) {
+export default function Conf({stages}: any) {
   const meta = {
     title: SITE_NAME,
     description: META_DESCRIPTION
@@ -31,21 +27,17 @@ export default function Conf({speakers}: any) {
   return (
     <Page meta={meta} fullViewport>
       <Layout>
-        <Hero />
-        <SpeakersGrid speakers={speakers} isFootnoteShown={true}/>
-        <Partners />
-        <FollowUsOnTwitter />
-        <About />
+        <StageContainer stages={stages} isNew={true} />
       </Layout>
     </Page>
   );
 }
 
 export async function getServerSideProps() {
-  const req = await fetch(`https://devxconf.org/json/2022/speakers.json`);
-  const speakers = await req.json();
+  const req = await fetch(`https://devxconf.org/json/2022/stages.json`);
+  const stages = await req.json();
 
   return {
-      props: { speakers },
+      props: { stages },
   }
 }
