@@ -46,9 +46,10 @@ const LinkedinIcon = () => (
 
 type Props = {
   speaker: Speaker;
+  type?: "speaker" | "host";
 };
 
-export default function SpeakerSection({ speaker }: Props) {
+export default function SpeakerSection({ speaker, type }: Props) {
   return (
     <>
       <div key={speaker.name} className={styles.container}>
@@ -57,7 +58,7 @@ export default function SpeakerSection({ speaker }: Props) {
             <img
               alt={speaker.name}
               title={speaker.name}
-              src={speaker.image.url}
+              src={`${type === 'speaker' ? '' : '/speakers/'}${speaker.image.url}`}
               className={styles.image}
               loading="lazy"
             />
