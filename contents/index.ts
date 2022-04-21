@@ -777,6 +777,32 @@ const speakers2022: Speaker[] = [
 	},
 ];
 
+const hosts2022: Speaker[] = [
+	{
+		name: 'Michael Aring',
+		company: 'Gitpod',
+		title: 'GTM & DCS Lead',
+		image: {
+			url: 'michael-aring.jpg'
+		},
+		bio: 'Michael Aring is a Go-to-Market Lead at Gitpod. He is passionate about beautiful products and product-led growth. In the past, Michael has worked in venture capital at coparion and Riverside Acceleration Capital. Prior to that, he studied computer science at University College London and founded a travel marketplace in Mexico.',
+		twitter: 'MichaelAr1ng',
+		linkedin: 'michaelaring',
+	},
+	{
+		name: 'Pauline Narvas',
+		company: 'Gitpod',
+		title: 'Senior Community Engineer',
+		image: {
+			url: 'pauline-narvas.jpg'
+		},
+		bio: 'Pauline Narvas (she/her/hers) is a passionate multi-hyphenate. She’s worked in the tech industry for the past 3 years and is currently working at Gitpod as a Senior Community Engineer. Pauline is all about community and so alongside her role at Gitpod, she runs a community group called, “Ladies in DevOps”, a safe space for self-identifying women working in the DevOps/SRE/Cloud space to learn and connect with each other. She also hosts the DevX Podcast.',
+		twitter: 'paulienuh',
+		linkedin: 'pnarvas',
+		github: 'pawlean',
+	}
+];
+
 export const speakers2021: Speaker[] = [
 	{
 		name: 'Jason Warner',
@@ -1943,6 +1969,12 @@ write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022))
 
 speakers2022.forEach((speaker) => {
 	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
+})
+
+write.sync(`${targetPath}/2022/hosts.json`, JSON.stringify(hosts2022))
+
+hosts2022.forEach((host) => {
+	write.sync(`${targetPath}/${stringToBeautifiedFragment(host.name)}.json`, JSON.stringify(host))
 })
 
 write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021))

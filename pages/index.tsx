@@ -23,7 +23,7 @@ import Partners from '@components/index/partners';
 import FollowUsOnTwitter from '@components/follow-us-on-twitter';
 import About from '@components/about';
 
-export default function Conf({speakers}: any) {
+export default function Conf({ speakers, hosts }: any) {
   const meta = {
     title: SITE_NAME,
     description: META_DESCRIPTION
@@ -32,7 +32,19 @@ export default function Conf({speakers}: any) {
     <Page meta={meta} fullViewport>
       <Layout>
         <Hero />
-        <SpeakersGrid speakers={speakers} isFootnoteShown={true}/>
+        <SpeakersGrid
+          title="Speakers"
+          text="Our speakers deeply care about frictionless developer workflows and leverage automation to solve problems."
+          speakers={speakers}
+          isFootnoteShown={true}
+        />
+        <SpeakersGrid 
+          title="Our Hosts"
+          text='Text TBD...'
+          type="hosts"
+          speakers={hosts}
+          styles={{maxWidth: '650px', width: "100%", margin: '0 auto', textAlign: 'center'}}
+        />
         <Partners />
         <FollowUsOnTwitter />
         <About />
@@ -42,10 +54,12 @@ export default function Conf({speakers}: any) {
 }
 
 export async function getServerSideProps() {
-  const req = await fetch(`https://devxconf.org/json/2022/speakers.json`);
-  const speakers = await req.json();
+  const speakersReq = await fetch(`https://devxconf.org/json/2022/speakers.json`);
+  const speakers = await speakersReq.json();
+  const hostsReq = await fetch(`https://devxconf.org/json/2022/hosts.json`);
+  const hosts = await hostsReq.json();
 
   return {
-      props: { speakers },
-  }
+    props: { speakers, hosts }
+  };
 }
