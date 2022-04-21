@@ -16,6 +16,7 @@
 
 export type Image = {
   url: string;
+  className?: string;
 };
 
 export type Speaker = {

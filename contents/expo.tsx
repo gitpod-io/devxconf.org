@@ -46,7 +46,8 @@ export const sponsors: Sponsor[] = [
     youtubeSlug: '',
     tier: 'gold',
     logo: {
-      url: '/sponsors/jetbrains.svg'
+      url: '/sponsors/jetbrains.svg',
+      className: 'jetbrains'
     },
     image: '/expo/jetbrains.png'
   },
