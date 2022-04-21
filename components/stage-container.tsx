@@ -25,20 +25,16 @@ import { Stage } from '@lib/types';
 import styles from './stage-container.module.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-import useSWR from 'swr';
 
 type Props = {
   stage?: Stage;
   stages?: Stage[];
 };
 
-export default function StageContainer({ stage, stages }: Props) {
-  const slug = useRouter().query.slug || 'a';
+export default function StageContainer({ stages }: Props) {
+  const slug = useRouter().query.slug;
 
-  const response = useSWR('/api/stages', {
-    initialData: stages,
-    refreshInterval: 5000
-  });
+  const streamId = stages?.find(s => s.slug === slug)?.stream
 
   useEffect(() => {
     const main = document.querySelector('main');
@@ -55,8 +51,6 @@ export default function StageContainer({ stage, stages }: Props) {
     };
   });
 
-  const updatedStages = response.data || [];
-  const updatedStage = updatedStages.find((s: Stage) => s.slug === slug) || stage;
   return (
     <div className={styles.row}>
       <div className={styles.container}>
@@ -64,34 +58,13 @@ export default function StageContainer({ stage, stages }: Props) {
           <div className={styles.stream}>
             <div className={styles.yt}>
               <iframe
-                src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1&amp;mute=1`}
+                src={`https://www.youtube.com/embed/${streamId}?autoplay=1&amp;mute=1`}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
             </div>
-            {/* <div className={styles.bottom}>
-                 <div className={styles.messageContainer}>
-                   <h2 className="heading-tertiary">{updatedStage.name}</h2>
-                   {updatedStage.description ? <p>{updatedStage.description}</p> : null}
-                 </div>
-                 <div className={styles['btn-container']}>
-                   <a
-                     target="_blank"
-                     href="https://discord.gg/JP9bWxNbwS"
-                     rel="noopener noreferrer"
-                     className={cn('btn btn--big', styles['chat-button'])}
-                   >
-                     Join Live Chat <DiscordLogo />
-                   </a>
-                   {updatedStage.speaker ? (
-                     <Link href={`/speakers/${hyphenate(updatedStage.speaker)}`}>
-                       <a className="btn btn--secondary">See Speaker Profile</a>
-                     </Link>
-                   ) : null}
-                 </div>
-               </div> */}
           </div>
         </div>
         <ScheduleSidebar stages={stages} />

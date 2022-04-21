@@ -70,7 +70,7 @@ export const NAVIGATION = [
   },
   {
     name: "2021",
-    route: "/2021"
+    route: "/2021/stage/a"
   },
 ];
 

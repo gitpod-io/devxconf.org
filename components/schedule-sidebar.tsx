@@ -43,8 +43,9 @@ export default function ScheduleSidebar({ stages }: Props) {
       <Select aria-label="Select a Stage" value={stage}
         onChange={(e: any) => {
           const slug = e.target.value;
-          setStage(slug)
-          router.push(`/stage/${slug}`)
+          const stagePath = router.pathname.replace('[slug]', slug)
+          setStage(slug);
+          router.push(stagePath)
         }}
         isGrey={true}
       >

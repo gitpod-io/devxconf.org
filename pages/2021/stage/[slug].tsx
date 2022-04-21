@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
- import Page from '../../components/page';
- import StageContainer from '../../components/stage-container';
- import Layout from '../../components/layout';
+ import Page from '../../../components/page';
+ import StageContainer from '../../../components/stage-container';
+ import Layout from '../../../components/layout';
  
- import { Stage } from '../../lib/types';
- import { SITE_NAME, META_DESCRIPTION } from '../../lib/constants';
+ import { Stage } from '../../../lib/types';
+ import { SITE_NAME, META_DESCRIPTION } from '../../../lib/constants';
  
  type Props = {
    stage: Stage;
@@ -42,7 +42,7 @@
  }
 
  export async function getServerSideProps() {
-  const req = await fetch(`https://devxconf.org/json/2022/stages.json`);
+  const req = await fetch(`https://devxconf.org/json/2021/stages.json`);
   const stages = await req.json();
 
   return {

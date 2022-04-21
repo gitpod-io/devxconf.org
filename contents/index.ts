@@ -1604,7 +1604,36 @@ export const isEurope = () => {
 	return offset <= 0 && offset >= -180;
 };
 
-
+const stages2022: Stage[] = [
+	{
+		name: 'Stage A',
+		day: 'Monday, May 2',
+		discord: '',
+		slug: 'a',
+		stream: 'WbSMxch0zXs',
+	},
+	{
+		name: 'Stage A',
+		day: 'Tuesday, May 3',
+		discord: '',
+		slug: 'a',
+		stream: 'znKHPTMpGTE',
+	},
+	{
+		name: 'Stage B',
+		day: 'Monday, May 2',
+		discord: '',
+		slug: 'b',
+		stream: '2rlUdQvteLI',
+	},
+	{
+		name: 'Stage B',
+		day: 'Tuesday, May 3',
+		discord: '',
+		slug: 'b',
+		stream: 'qAiiZtvbwpc',
+	}
+]
 
 const stages2021: Stage[] = [
 	{
@@ -1612,7 +1641,7 @@ const stages2021: Stage[] = [
 		day: 'Wednesday, April 28',
 		discord: '',
 		slug: 'a',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: 'Intro',
@@ -1740,7 +1769,7 @@ const stages2021: Stage[] = [
 		day: 'Thursday, April 29',
 		discord: '',
 		slug: 'a',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: "VSCode Power User Tips & Tricks",
@@ -1814,7 +1843,7 @@ const stages2021: Stage[] = [
 		day: 'Wednesday, April 28',
 		discord: '',
 		slug: 'b',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: 'Using Observability to improve the Developer Experience',
@@ -1879,7 +1908,7 @@ const stages2021: Stage[] = [
 		day: 'Thursday, April 29',
 		discord: '',
 		slug: 'b',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: 'Building Supabase Storage. DevX, performance, security - choose three',
@@ -1940,6 +1969,9 @@ const stages2021: Stage[] = [
 ];
 
 write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022))
+
+write.sync(`${targetPath}/2022/stages.json`, JSON.stringify(stages2022))
+
 
 speakers2022.forEach((speaker) => {
 	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
