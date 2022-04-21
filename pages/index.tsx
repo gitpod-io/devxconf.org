@@ -39,8 +39,8 @@ export default function Conf({ speakers, hosts }: any) {
           isFootnoteShown={true}
         />
         <SpeakersGrid 
-          title="Our Hosts"
-          text='Text TBD...'
+          title="Your Hosts"
+          text='DevX Conf 2022 will be hosted by...'
           type="hosts"
           speakers={hosts}
           styles={{maxWidth: '650px', width: "100%", margin: '0 auto', textAlign: 'center'}}
