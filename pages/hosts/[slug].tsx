@@ -26,7 +26,7 @@ export default function HostPage({ speaker }: any) {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-call
 
   const meta = {
-    title: `${speaker?.name} Speaker | Devx Conf`,
+    title: `${speaker?.name} Host | Devx Conf`,
     description: META_DESCRIPTION
   };
 
