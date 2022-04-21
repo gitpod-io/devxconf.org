@@ -19,6 +19,39 @@ export const sponsors: Sponsor[] = [
     image: '/expo/gitpod.png'
   },
   {
+    name: 'Tailscale',
+    description: ['Tailscale is a zero-config VPN that makes devices and applications accessible anywhere in the world, securely and effortlessly.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.tailscale.com',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/tailscale' },
+      { text: 'Twitter', url: 'https://twitter.com/tailscale' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/tailscale.svg'
+    },
+    image: '/expo/tailscale.png'
+  },
+  {
+    name: 'JetBrains',
+    description: ['JetBrains is a global software vendor that creates professional software development tools and advanced collaboration solutions trusted by 12.8 million users.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.jetbrains.com/',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/jetbrains' },
+      { text: 'Twitter', url: 'https://twitter.com/jetbrains' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/jetbrains.svg',
+      className: 'jetbrains'
+    },
+    image: '/expo/jetbrains.png'
+  },
+  {
     name: 'WorkOS',
     description: ['WorkOS provides APIs to make applications enterprise-ready.'],
     callToAction: 'Website',
@@ -33,24 +66,6 @@ export const sponsors: Sponsor[] = [
       url: '/sponsors/workos.svg'
     },
     image: '/expo/workos.png'
-  },
-  {
-    name: 'Swimm',
-    logo: {
-      url: '/sponsors/swimm.svg'
-    },
-    description: [
-      'Swimm helps engineering teams sync with code by integrating Continuous Documentation into the development workflow, so that docs are always up to date.'
-    ],
-    callToAction: 'Website',
-    callToActionLink: 'https://swimm.io/',
-    links: [
-      { text: 'Linkedin', url: 'https://www.linkedin.com/company/swimm-io/' },
-      { text: 'Twitter', url: 'https://twitter.com/swimm_io' }
-    ],
-    youtubeSlug: '',
-    tier: 'gold',
-    image: '/expo/swimm.png'
   },
   {
     name: 'Okteto',
@@ -69,20 +84,22 @@ export const sponsors: Sponsor[] = [
     image: '/expo/okteto.png'
   },
   {
-    name: 'Tailscale',
-    description: ['Tailscale is a zero-config VPN that makes devices and applications accessible anywhere in the world, securely and effortlessly.'],
+    name: 'Swimm',
+    logo: {
+      url: '/sponsors/swimm.svg'
+    },
+    description: [
+      'Swimm helps engineering teams sync with code by integrating Continuous Documentation into the development workflow, so that docs are always up to date.'
+    ],
     callToAction: 'Website',
-    callToActionLink: 'https://www.tailscale.com',
+    callToActionLink: 'https://swimm.io/',
     links: [
-      { text: 'Linkedin', url: 'https://www.linkedin.com/company/tailscale' },
-      { text: 'Twitter', url: 'https://twitter.com/tailscale' }
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/swimm-io/' },
+      { text: 'Twitter', url: 'https://twitter.com/swimm_io' }
     ],
     youtubeSlug: '',
     tier: 'gold',
-    logo: {
-      url: '/sponsors/tailscale.svg'
-    },
-    image: '/expo/tailscale.png'
+    image: '/expo/swimm.png'
   },
   {
     name: 'Slim.ai',

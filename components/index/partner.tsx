@@ -10,9 +10,6 @@ export interface PartnerProps {
 }
 
 const Sponsor = ({ title, logo, noDetailsPage, website, transform }: PartnerProps) => {
-
-  console.log(title, website, noDetailsPage)
-
   const renderLogo = () => (
     <img src={`${logo}`} style={{ transform }} alt={title} className={styles.logo} />
   );
