@@ -23,26 +23,29 @@ import cn from 'classnames';
 import styles from './speakers-grid.module.css';
 
 type Props = {
+  title: string;
+  text: string;
   speakers: Speaker[];
   isFootnoteShown?: boolean;
+  styles?: React.CSSProperties;
+  type?: "speakers" | "hosts"
 };
 
 export const hyphenate = (str: string) => str.split(" ").join('-').toLowerCase()
 
-export default function SpeakersGrid({ speakers, isFootnoteShown }: Props) {
+export default function SpeakersGrid({ title, text, speakers, isFootnoteShown, styles: css, type = 'speakers' }: Props) {
   return (
-    <Section className={styles.section} id="speakers">
+    <Section className={type === 'speakers' ? styles.section : ''} id={type} styles={css}>
       <div className="row">
         <SectionHeader className="wrapper-small">
-          <h2 className="heading-secondary">Speakers</h2>
+          <h2 className="heading-secondary">{title}</h2>
           <p>
-            Our speakers deeply care about frictionless developer workflows and leverage automation
-            to solve problems.
+            {text}
           </p>
         </SectionHeader>
         <div className={styles.grid}>
           {speakers.map(speaker => (
-            <Link key={speaker.name} href={`/speakers/${hyphenate(speaker.name)}`}>
+            <Link key={speaker.name} href={`/${type}/${hyphenate(speaker.name)}`}>
               <a role="button" tabIndex={0} className={styles.card}>
                 <div className={styles.imageWrapper}>
                   <Image
