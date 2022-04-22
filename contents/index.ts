@@ -1658,7 +1658,7 @@ const stages2022: Stage[] = [
 				],
 			},
 			{
-				title: 'Keynote #1',
+				title: 'Remote development panel',
 				scheduleOrder: 2,
 				description: '',
 				start: {
@@ -1670,7 +1670,7 @@ const stages2022: Stage[] = [
 					pt: '8:00 AM',
 				},
 				ytId: '',
-				speaker: 'TBC',
+				speaker: 'Kirill Skrygan, Sven Efftinge, Nik Molnar, Johannes Landgraf',
 			},
 			{
 				title: 'Lydia Hallie Next.JS',
@@ -1721,7 +1721,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Brendan Falk', speakers2022),
 			},
 			{
-				title: 'The Next Generation of Developer-First Products.',
+				title: 'The Next Generation of Developer-First Products',
 				scheduleOrder: 6,
 				description: '',
 				start: {
@@ -1808,7 +1808,7 @@ const stages2022: Stage[] = [
 				speaker: 'TBC',
 			},
 			{
-				title: 'Panel: History and future of developer experience/velocity',
+				title: 'Panel: DevX Past and Future',
 				scheduleOrder: 11,
 				description: '',
 				start: {
@@ -1883,7 +1883,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Nathan Sobo', speakers2022),
 			},
 			{
-				title: 'Remote development in a remote-first world',
+				title: 'Designing for developers',
 				scheduleOrder: 16,
 				description: '',
 				start: {
@@ -1895,7 +1895,7 @@ const stages2022: Stage[] = [
 					pt: '12:30 PM',
 				},
 				ytId: '',
-				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
+				speaker: getSpeakerByName('Boris Kirov', speakers2022),
 			},
 			{
 				title: 'End of DevX Conf',
@@ -2105,7 +2105,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Wilson Mar', speakers2022),
 			},
 			{
-				title: 'Designing for developers',
+				title: 'Remote development in a remote-first world',
 				scheduleOrder: 29,
 				description: '',
 				start: {
@@ -2114,10 +2114,10 @@ const stages2022: Stage[] = [
 				},
 				end: {
 					cest: '9:30 PM',
-					pt: '12:35 PM',
+					pt: '12:30 PM',
 				},
 				ytId: '',
-				speaker: getSpeakerByName('Boris Kirov', speakers2022),
+				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
 			},
 		]
 	}
