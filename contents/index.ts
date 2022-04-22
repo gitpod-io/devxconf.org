@@ -1820,7 +1820,7 @@ const stages2022: Stage[] = [
 					pt: '9:45 AM',
 				},
 				ytId: '',
-				speaker: 'Chad Metcalf(moderator), Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
+				speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
 			},
 			{
 				title: 'The balancing act of delivering high-quality DX',
@@ -1880,7 +1880,7 @@ const stages2022: Stage[] = [
 					pt: '12:00 PM',
 				},
 				ytId: '',
-				speaker: getSpeakerByName('Maya Kaczorowski', speakers2022),
+				speaker: getSpeakerByName('Nathan Sobo', speakers2022),
 			},
 			{
 				title: 'Remote development in a remote-first world',
@@ -2098,8 +2098,8 @@ const stages2022: Stage[] = [
 					pt: '11:15 AM',
 				},
 				end: {
-					cest: '8:45 PM',
-					pt: '11:45 AM',
+					cest: '9:00 PM',
+					pt: '12:00 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Wilson Mar', speakers2022),
@@ -2109,12 +2109,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 29,
 				description: '',
 				start: {
-					cest: '8:45 PM',
-					pt: '11:45 AM',
+					cest: '9:00 PM',
+					pt: '12:00 PM',
 				},
 				end: {
-					cest: '9:15 PM',
-					pt: '12:15 PM',
+					cest: '9:30 PM',
+					pt: '12:35 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Boris Kirov', speakers2022),
