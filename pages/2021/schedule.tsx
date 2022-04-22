@@ -4,7 +4,7 @@ import Schedule from '@components/schedule';
 
 export default function Conf({stages}: any) {
   const meta = {
-    title: 'Schedule | DevX Conf',
+    title: 'Schedule 2021 | DevX Conf',
     description: META_DESCRIPTION
   };
 

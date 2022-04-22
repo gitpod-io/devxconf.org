@@ -29,7 +29,7 @@ function StageRow({ stage }: { stage: Stage }) {
 
   if (undefined !== stage.schedule) {
     timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
-      allBlocks[talk.start] = [...(allBlocks[talk.start] || []), talk];
+      allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] = [...(allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] || []), talk];
       return allBlocks;
     }, {});
   }

@@ -47,9 +47,15 @@ export type Stage = {
 export type Talk = {
   title: string;
   description: string;
-  start: string;
-  end: string;
-  speaker?: Speaker[] | Speaker;
+  start: {
+    cest: string;
+    pt: string;
+  };
+  end: {
+    cest: string;
+    pt:string;
+  };
+  speaker?: Speaker[] | Speaker | string;
   scheduleOrder: number;
   ytId: string;
 };

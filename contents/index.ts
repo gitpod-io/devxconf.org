@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 import write from 'write';
 import { dirname } from 'path';
 
@@ -1630,7 +1631,497 @@ export const isEurope = () => {
 	return offset <= 0 && offset >= -180;
 };
 
-
+const stages2022: Stage[] = [
+	{
+		name: 'Stage A',
+		day: 'Monday, May 2',
+		discord: '',
+		slug: 'a',
+		stream: 'WbSMxch0zXs',
+		schedule: [
+			{
+				title: 'Introduction',
+				scheduleOrder: 1,
+				description: '',
+				start: {
+					cest: '4:00 PM',
+					pt: '7:00 AM',
+				},
+				end: {
+					cest: '4:15 PM',
+					pt: '7:15 AM',
+				},
+				ytId: '',
+				speaker: [
+					// @ts-ignore
+					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
+				],
+			},
+			{
+				title: 'Keynote #1',
+				scheduleOrder: 2,
+				description: '',
+				start: {
+					cest: '4:15 PM',
+					pt: '7:15 AM',
+				},
+				end: {
+					cest: '5:00 PM',
+					pt: '8:00 AM',
+				},
+				ytId: '',
+				speaker: 'TBC',
+			},
+			{
+				title: 'Lydia Hallie Next.JS',
+				scheduleOrder: 4,
+				description: '',
+				start: {
+					cest: '5:30 PM',
+					pt: '8:30 AM',
+				},
+				end: {
+					cest: '6:00',
+					pt: '9:00 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
+			},
+			{
+				title: 'Okteto',
+				scheduleOrder: 6,
+				description: '',
+				start: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				end: {
+					cest: '6:30 PM',
+					pt: '9:30 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: [getSpeakerByName('Ramiro Berrelleza', speakers2022), getSpeakerByName('Arsh Sharma', speakers2022)],
+			},
+			{
+				title: 'Building auto-complete for the terminal',
+				scheduleOrder: 8,
+				description: '',
+				start: {
+					cest: '6:30 PM',
+					pt: '9:30 AM',
+				},
+				end: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Brendan Falk', speakers2022),
+			},
+			{
+				title: 'The Next Generation of Developer-First Products.',
+				scheduleOrder: 10,
+				description: '',
+				start: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				end: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
+			},
+			{
+				title: 'Building DevX Teams, my story',
+				scheduleOrder: 12,
+				description: '',
+				start: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				end: {
+					cest: '8:30 PM',
+					pt: '11:30 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
+			},
+			{
+				title: 'Building DevX Teams, my story',
+				scheduleOrder: 14,
+				description: '',
+				start: {
+					cest: '8:30 PM',
+					pt: '11:30 AM',
+				},
+				end: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Ant Wilson', speakers2022),
+			},
+			{
+				title: 'Finish for Day 1',
+				scheduleOrder: 16,
+				description: '',
+				start: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				end: {
+					cest: '9:15 PM',
+					pt: '12:15 PM',
+				},
+				ytId: '',
+				speaker: [
+					// @ts-ignore
+					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
+				],
+			},
+		]
+	},
+	{
+		name: 'Stage A',
+		day: 'Tuesday, May 3',
+		discord: '',
+		slug: 'a',
+		stream: 'WbSMxch0zXs',
+		schedule: [
+			{
+				title: 'Keynote #2',
+				scheduleOrder: 18,
+				description: '',
+				start: {
+					cest: '4:15 PM',
+					pt: '7:15 AM',
+				},
+				end: {
+					cest: '5:00 PM',
+					pt: '8:00 AM',
+				},
+				ytId: '',
+				speaker: 'TBC',
+			},
+			{
+				title: 'Panel: History and future of developer experience/velocity',
+				scheduleOrder: 20,
+				description: '',
+				start: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				end: {
+					cest: '6:45 PM',
+					pt: '9:45 AM',
+				},
+				ytId: '',
+				speaker: 'Chad Metcalf(moderator), Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
+			},
+			{
+				title: 'The balancing act of delivering high-quality DX',
+				scheduleOrder: 22,
+				description: '',
+				start: {
+					cest: '6:45 PM',
+					pt: '9:45 AM',
+				},
+				end: {
+					cest: '7:15 PM',
+					pt: '10:15 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Victor Savkin', speakers2022),
+			},
+			{
+				title: 'How Spotify engineers use Backstage daily and keep their lives simple',
+				scheduleOrder: 24,
+				description: '',
+				start: {
+					cest: '7:15 PM',
+					pt: '10:15 AM',
+				},
+				end: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Himanshu Mishra', speakers2022),
+			},
+			{
+				title: 'Remote development can improve your developers’ remote work experience',
+				scheduleOrder: 26,
+				description: '',
+				start: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				end: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Maya Kaczorowski', speakers2022),
+			},
+			{
+				title: 'Zed Text Editor',
+				scheduleOrder: 28,
+				description: '',
+				start: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				end: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Maya Kaczorowski', speakers2022),
+			},
+			{
+				title: 'Remote development in a remote-first world',
+				scheduleOrder: 30,
+				description: '',
+				start: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				end: {
+					cest: '9:30 PM',
+					pt: '12:30 PM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
+			},
+			{
+				title: 'End of DevX Conf',
+				scheduleOrder: 32,
+				description: '',
+				start: {
+					cest: '9:30 PM',
+					pt: '12:30 AM',
+				},
+				end: {
+					cest: '9:40 PM',
+					pt: '12:40 AM',
+				},
+				ytId: '',
+				speaker: [
+					// @ts-ignore
+					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
+				],
+			},
+		]
+	},
+	{
+		name: 'Stage B',
+		day: 'Monday, May 2',
+		discord: '',
+		slug: 'b',
+		stream: '2rlUdQvteLI',
+		schedule: [
+			{
+				title: 'The Radiating Circles of DevX',
+				scheduleOrder: 3,
+				description: '',
+				start: {
+					cest: '5:00 PM',
+					pt: '8:00 AM',
+				},
+				end: {
+					cest: '5:30 PM',
+					pt: '8:30 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Shawn Wang', speakers2022),
+			},
+			{
+				title: 'Community: Your distributed debugging machine',
+				scheduleOrder: 5,
+				description: '',
+				start: {
+					cest: '5:30 PM',
+					pt: '8:30 AM',
+				},
+				end: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Ana Hevesi', speakers2022),
+			},
+			{
+				title: 'Developer Experience and Product-Led Growth (PLG) - how they enable each other and your developer community, seamlessly',
+				scheduleOrder: 7,
+				description: '',
+				start: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				end: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Amara Graham', speakers2022),
+			},
+			{
+				title: 'Flow states',
+				scheduleOrder: 9,
+				description: '',
+				start: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				end: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Ulf Schwekendiek', speakers2022),
+			},
+			{
+				title: 'Make a world-class integration testing library',
+				scheduleOrder: 11,
+				description: '',
+				start: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				end: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
+			},
+			// {
+			// 	title: 'CodeSee',
+			// 	scheduleOrder: 13,
+			// 	description: '',
+			// 	start: {
+			// 		cest: '8:15 PM',
+			// 		pt: '11:15 AM',
+			// 	},
+			// 	end: {
+			// 		cest: '9:00 PM',
+			// 		pt: '12:00 PM',
+			// 	},
+			// 	ytId: '',
+			// 	// @ts-ignore
+			// 	speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
+			// }
+		]
+	},
+	{
+		name: 'Stage B',
+		day: 'Tuesday, May 3',
+		discord: '',
+		slug: 'b',
+		stream: '2rlUdQvteLI',
+		schedule: [
+			{
+				title: 'TDD and the Terminator - An introduction to Test Driven Development',
+				scheduleOrder: 15,
+				description: '',
+				start: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				end: {
+					cest: '6:45 PM',
+					pt: '9:45 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Layla Porter', hosts2022),
+			},
+			{
+				title: 'Warp and the future of the terminal',
+				scheduleOrder: 17,
+				description: '',
+				start: {
+					cest: '6:45 PM',
+					pt: '9:45 AM',
+				},
+				end: {
+					cest: '7:15 PM',
+					pt: '10:15 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Zach Lloyd', speakers2022),
+			},
+			{
+				title: 'Progressive Delivery with Observability',
+				scheduleOrder: 19,
+				description: '',
+				start: {
+					cest: '7:15 PM',
+					pt: '10:15 AM',
+				},
+				end: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Alayshia Knighten', speakers2022),
+			},
+			{
+				title: 'What does it mean to create API products at scale?',
+				scheduleOrder: 21,
+				description: '',
+				start: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				end: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Michael Bleigh', speakers2022),
+			},
+			{
+				title: 'How to onboard people in a day',
+				scheduleOrder: 23,
+				description: '',
+				start: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				end: {
+					cest: '8:45 PM',
+					pt: '11:45 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Wilson Mar', speakers2022),
+			},
+			{
+				title: 'Designing for developers',
+				scheduleOrder: 25,
+				description: '',
+				start: {
+					cest: '8:45 PM',
+					pt: '11:45 AM',
+				},
+				end: {
+					cest: '9:15 PM',
+					pt: '12:15 PM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Boris Kirov', speakers2022),
+			},
+		]
+	}
+]
 
 const stages2021: Stage[] = [
 	{
@@ -1644,8 +2135,14 @@ const stages2021: Stage[] = [
 				title: 'Intro',
 				scheduleOrder: 1,
 				description: '',
-				start: isEurope() ? '17:00' : '8:00 AM',
-				end: isEurope() ? '17:10' : '8:10 AM',
+				start: {
+					cest: '17:00 PM',
+					pt: '8:00 AM',
+				},
+				end: {
+					cest: '17:10 PM',
+					pt: '8:10 AM',
+				},
 				ytId: 'aI-L72XGznU',
 				speaker: [
 					{
@@ -1680,8 +2177,14 @@ const stages2021: Stage[] = [
 				title: 'The evolution of DevX - An interview with Erich Gamma',
 				scheduleOrder: 2,
 				description: '',
-				start: isEurope() ? '17:10' : '8:10 AM',
-				end: isEurope() ? '17:40' : '8:40 AM',
+				start: {
+					cest: '17:10 PM',
+					pt: '8:10 AM'
+				},
+				end: {
+					cest: '17:40 PM',
+					pt: '8:40 AM'
+				},
 				ytId: 'JiBUDS9odA8',
 				// eslint-disable-next-line
 				// @ts-ignore
@@ -1703,8 +2206,14 @@ const stages2021: Stage[] = [
 				title: "Is DevEx not good… because we don't want it to be?",
 				scheduleOrder: 4,
 				description: '',
-				start: isEurope() ? '18:00' : '9:00 AM',
-				end: isEurope() ? '18:20' : '9:20 AM',
+				start: {
+					cest: '18:00 PM',
+					pt: '9:00 AM'
+				},
+				end: {
+					cest: '18:20 PM',
+					pt: '9:20 AM'
+				},
 				ytId: 'nPO4QL0Q85s',
 				speaker: getSpeakerByName('Ellen Chisa')
 			},
@@ -1712,8 +2221,14 @@ const stages2021: Stage[] = [
 				title: 'DevX at Heroku and GitHub - An interview with Jason Warner',
 				scheduleOrder: 6,
 				description: '',
-				start: isEurope() ? '18:40' : '9:40 AM',
-				end: isEurope() ? '19:00' : '10:00 AM',
+				start: {
+					cest: '18:40 PM',
+					pt: '9:40 AM'
+				},
+				end: {
+					cest: '19:00 PM',
+					pt: '10:00 AM'
+				},
 				ytId: 'SddUEk878jM',
 				// eslint-disable-next-line
 				// @ts-ignore
@@ -1735,8 +2250,14 @@ const stages2021: Stage[] = [
 				title: 'Internal DevX Experience is broken… and you should be pissed',
 				scheduleOrder: 8,
 				description: '',
-				start: isEurope() ? '19:20' : '10:20 AM',
-				end: isEurope() ? '19:40' : '10:40 AM',
+				start: {
+					cest: '19:20 PM',
+					pt: '10:20 AM'
+				},
+				end: {
+					cest: '19:40 PM',
+					pt: '10:40 AM'
+				},
 				ytId: 'N6XkqbNKxQA',
 				speaker: getSpeakerByName('Shanea Leven')
 			},
@@ -1744,8 +2265,14 @@ const stages2021: Stage[] = [
 				title: 'Find friction in your developer experience by user testing with developers',
 				scheduleOrder: 10,
 				description: '',
-				start: isEurope() ? '20:00' : '11:00 AM',
-				end: isEurope() ? '20:20' : '11:20 AM',
+				start: {
+					cest: '20:00 PM',
+					pt: '11:00 AM'
+				},
+				end: {
+					cest: '20:20 PM',
+					pt: '11:20 AM'
+				},
 				ytId: 'Dn6-See4wfk',
 				speaker: getSpeakerByName('Ian Jennings')
 			},
@@ -1753,14 +2280,21 @@ const stages2021: Stage[] = [
 				title: 'The developer experience gap',
 				scheduleOrder: 12,
 				description: '',
-				start: isEurope() ? '20:40' : '11:40 AM',
-				end: isEurope() ? '21:00' : '12:00 PM',
+				start: {
+					cest: '20:40 PM',
+					pt: '11:40 AM'
+				},
+				end: {
+					cest: '21:00 PM',
+					pt: '12:00 PM'
+				},
+				// start: isEurope() ? '20:40' : '11:40 AM',
+				// end: isEurope() ? '21:00' : '12:00 PM',
 				ytId: 'Z6O13JQOmiQ',
 				speaker: getSpeakerByName("Stephen O'Grady")
 			},
 		]
 	},
-
 	{
 		name: 'Stage A',
 		day: 'Thursday, April 29',
@@ -1772,8 +2306,16 @@ const stages2021: Stage[] = [
 				title: "VSCode Power User Tips & Tricks",
 				scheduleOrder: 14,
 				description: '',
-				start: isEurope() ? '16:40' : '7:40 AM',
-				end: isEurope() ? '17:00' : '8:00 AM',
+				start: {
+					cest: '16:40 PM',
+					pt: '7:40 AM'
+				},
+				end: {
+					cest: '17:00 PM',
+					pt: '8:00 AM'
+				},
+				// start: isEurope() ? '16:40' : '7:40 AM',
+				// end: isEurope() ? '17:00' : '8:00 AM',
 				ytId: 'M6E5L1-TVoc',
 				speaker: getSpeakerByName("Ahmad Awais")
 			},
@@ -1781,8 +2323,14 @@ const stages2021: Stage[] = [
 				title: 'Streamlining Firebase Development with local Emulators',
 				scheduleOrder: 16,
 				description: '',
-				start: isEurope() ? '17:20' : '8:20 AM',
-				end: isEurope() ? '17:40' : '8:40 AM',
+				start: {
+					cest: '17:20 PM',
+					pt: '8:20 AM'
+				},
+				end: {
+					cest: '17:40 PM',
+					pt: '8:40 AM'
+				},
 				ytId: '0AXj96IXueg',
 				speaker: getSpeakerByName("Rachel Myers"),
 			},
@@ -1790,8 +2338,14 @@ const stages2021: Stage[] = [
 				title: "The story of GitHub1s - speed & familiarity matters",
 				scheduleOrder: 18,
 				description: '',
-				start: isEurope() ? '18:00' : '9:00 AM',
-				end: isEurope() ? '18:20' : '9:20 AM',
+				start: {
+					cest: '18:00 PM',
+					pt: '9:00 AM'
+				},
+				end: {
+					cest: '18:20 PM',
+					pt: '9:20 AM'
+				},
 				ytId: '6Xyg6yQe2rk',
 				speaker: getSpeakerByName('Yihong Cheng')
 			},
@@ -1799,8 +2353,14 @@ const stages2021: Stage[] = [
 				title: 'Trapped in the open source supply chain',
 				scheduleOrder: 20,
 				description: '',
-				start: isEurope() ? '18:40' : '9:40 AM',
-				end: isEurope() ? '19:00' : '10:00 AM',
+				start: {
+					cest: '18:40 PM',
+					pt: '9:40 AM'
+				},
+				end: {
+					cest: '19:00 PM',
+					pt: '10:00 AM'
+				},
 				ytId: '0wRUU0ln9-0',
 				speaker: getSpeakerByName('Henry Zhu')
 			},
@@ -1808,8 +2368,14 @@ const stages2021: Stage[] = [
 				title: 'DevX in the Internet Age: One Step Forward, Two Steps Back',
 				scheduleOrder: 22,
 				description: '',
-				start: isEurope() ? '19:20' : '10:20 AM',
-				end: isEurope() ? '19:40' : '10:40 AM',
+				start: {
+					cest: '19:20 PM',
+					pt: '10:20 AM'
+				},
+				end: {
+					cest: '19:40 PM',
+					pt: '10:40 AM'
+				},
 				ytId: 'asA7rE0mDeo',
 				speaker: getSpeakerByName('Anurag Goel')
 			},
@@ -1817,8 +2383,16 @@ const stages2021: Stage[] = [
 				title: 'How to build a dApp',
 				scheduleOrder: 24,
 				description: '',
-				start: isEurope() ? '20:00' : '11:00 AM',
-				end: isEurope() ? '20:20' : '11:20 AM',
+				start: {
+					cest: '20:00 PM',
+					pt: '11:00 AM'
+				},
+				end: {
+					cest: '20:20 PM',
+					pt: '11:20 AM'
+				},
+				// start: isEurope() ? '20:00' : '11:00 AM',
+				// end: isEurope() ? '20:20' : '11:20 AM',
 				ytId: 'Ks9_hTXwh2o',
 				speaker: getSpeakerByName('Nader Dabit')
 			},
@@ -1826,8 +2400,14 @@ const stages2021: Stage[] = [
 				title: 'How to prioritize dev experience in the development process above all else',
 				scheduleOrder: 26,
 				description: '',
-				start: isEurope() ? '20:40' : '11:40 AM',
-				end: isEurope() ? '21:00' : '12:00 PM',
+				start: {
+					cest: '20:40 PM',
+					pt: '11:40 AM'
+				},
+				end: {
+					cest: '21:00 PM',
+					pt: '12:00 PM'
+				},
 				ytId: 'lWF_PNqyiE8',
 				// eslint-disable-next-line
 				// @ts-ignore
@@ -1846,8 +2426,14 @@ const stages2021: Stage[] = [
 				title: 'Using Observability to improve the Developer Experience',
 				scheduleOrder: 3,
 				description: '',
-				start: isEurope() ? '17:40' : '8:40 AM',
-				end: isEurope() ? '18:00' : '9:00 AM',
+				start: {
+					cest: '17:40 PM',
+					pt: '8:40 AM'
+				},
+				end: {
+					cest: '18:00 PM',
+					pt: '9:00 AM'
+				},
 				ytId: '8LlM0knBuLQ',
 				speaker: getSpeakerByName('Borja Burgos')
 			},
@@ -1855,8 +2441,14 @@ const stages2021: Stage[] = [
 				title: 'Monorepos, are they right for you?',
 				scheduleOrder: 5,
 				description: '',
-				start: isEurope() ? '18:20' : '9:20 AM',
-				end: isEurope() ? '18:40' : '9:40 AM',
+				start: {
+					cest: '18:20 PM',
+					pt: '9:20 AM'
+				},
+				end: {
+					cest: '18:40 PM',
+					pt: '9:40 AM'
+				},
 				ytId: 'G3yIAS4NShk',
 				speaker: getSpeakerByName('Maël Nison')
 			},
@@ -1864,8 +2456,14 @@ const stages2021: Stage[] = [
 				title: 'Cloud native Java',
 				scheduleOrder: 7,
 				description: '',
-				start: isEurope() ? '19:00' : '10:00 AM',
-				end: isEurope() ? '19:20' : '10:20 AM',
+				start: {
+					cest: '19:00 PM',
+					pt: '10:00 AM'
+				},
+				end: {
+					cest: '19:20 PM',
+					pt: '10:20 AM'
+				},
 				ytId: 'oq5FcnqEMxk',
 				speaker: getSpeakerByName('Josh Long')
 			},
@@ -1873,8 +2471,14 @@ const stages2021: Stage[] = [
 				title: 'Infrastructure security, visibility and cost-optimization',
 				scheduleOrder: 9,
 				description: '',
-				start: isEurope() ? '19:40' : '10:40 AM',
-				end: isEurope() ? '20:00' : '11:00 AM',
+				start: {
+					cest: '19:40 PM',
+					pt: '10:40 AM'
+				},
+				end: {
+					cest: '20:00 PM',
+					pt: '11:00 AM'
+				},
 				ytId: 'AizWSieYRGk',
 				speaker: getSpeakerByName('Yevgeny Pats')
 			},
@@ -1882,8 +2486,16 @@ const stages2021: Stage[] = [
 				title: 'Ephemeral Development Environments',
 				scheduleOrder: 11,
 				description: '',
-				start: isEurope() ? '20:20' : '11:20 AM',
-				end: isEurope() ? '20:40' : '11:40 AM',
+				start: {
+					cest: '20:20 PM',
+					pt: '11:20 AM'
+				},
+				end: {
+					cest: '20:40 PM',
+					pt: '11:40 AM'
+				},
+				// start: isEurope() ? '20:20' : '11:20 AM',
+				// end: isEurope() ? '20:40' : '11:40 AM',
 				ytId: 'IXVmjkI7wkc',
 				// eslint-disable-next-line
 				// @ts-ignore
@@ -1893,8 +2505,14 @@ const stages2021: Stage[] = [
 				title: 'Building a K8s Operator for a Distributed Database',
 				scheduleOrder: 13,
 				description: '',
-				start: isEurope() ? '21:00' : '12:00 PM',
-				end: isEurope() ? '21:20' : '12:20 PM',
+				start: {
+					cest: '21:00 PM',
+					pt: '12:00 PM'
+				},
+				end: {
+					cest: '21:20 PM',
+					pt: '12:20 PM'
+				},
 				ytId: 'VUGBq0ME2Qc',
 				speaker: getSpeakerByName("Natalie Pistunovich")
 			}
@@ -1911,8 +2529,16 @@ const stages2021: Stage[] = [
 				title: 'Building Supabase Storage. DevX, performance, security - choose three',
 				scheduleOrder: 15,
 				description: '',
-				start: isEurope() ? '17:00' : '8:00 AM',
-				end: isEurope() ? '17:20' : '8:20 AM',
+				start: {
+					cest: '17:00 PM',
+					pt: '8:00 AM'
+				},
+				end: {
+					cest: '17:20 PM',
+					pt: '8:20 AM'
+				},
+				// start: isEurope() ? '17:00' : '8:00 AM',
+				// end: isEurope() ? '17:20' : '8:20 AM',
 				ytId: 'YsUYOsq_o7g',
 				speaker: getSpeakerByName("Inian Parameshwaran"),
 			},
@@ -1920,8 +2546,14 @@ const stages2021: Stage[] = [
 				title: 'DevX: history of code search',
 				scheduleOrder: 17,
 				description: '',
-				start: isEurope() ? '17:40' : '8:40 AM',
-				end: isEurope() ? '18:00' : '9:00 AM',
+				start: {
+					cest: '17:40 PM',
+					pt: '8:40 AM'
+				},
+				end: {
+					cest: '18:00 PM',
+					pt: '9:00 AM'
+				},
 				ytId: 'J4lArxTWiIY',
 				speaker: getSpeakerByName('Beyang Liu')
 			},
@@ -1929,8 +2561,14 @@ const stages2021: Stage[] = [
 				title: 'Why I love incremental delivery and why you should too',
 				scheduleOrder: 19,
 				description: '',
-				start: isEurope() ? '18:20' : '9:20 AM',
-				end: isEurope() ? '18:40' : '9:40 AM',
+				start: {
+					cest: '18:20 PM',
+					pt: '9:20 AM'
+				},
+				end: {
+					cest: '18:40 PM',
+					pt: '9:40 AM'
+				},
 				ytId: 'AnxWXQMauMI',
 				speaker: getSpeakerByName('Lili Kastilio')
 			},
@@ -1938,8 +2576,16 @@ const stages2021: Stage[] = [
 				title: 'Simplifying the journey of your containerized application from dev to production',
 				scheduleOrder: 21,
 				description: '',
-				start: isEurope() ? '19:00' : '10:00 AM',
-				end: isEurope() ? '19:20' : '10:20 AM',
+				start: {
+					cest: '19:00 PM',
+					pt: '10:00 AM'
+				},
+				end: {
+					cest: '19:20 PM',
+					pt: '10:20 AM'
+				},
+				// start: isEurope() ? '19:00' : '10:00 AM',
+				// end: isEurope() ? '19:20' : '10:20 AM',
 				ytId: '8iJ_6VUzk1I',
 				speaker: getSpeakerByName('Kyle Quest')
 			},
@@ -1947,8 +2593,14 @@ const stages2021: Stage[] = [
 				title: 'Make your APIs developer-friendly',
 				scheduleOrder: 23,
 				description: '',
-				start: isEurope() ? '19:40' : '10:40 AM',
-				end: isEurope() ? '20:00' : '11:00 AM',
+				start: {
+					cest: '19:40 PM',
+					pt: '10:40 AM'
+				},
+				end: {
+					cest: '20:00 PM',
+					pt: '11:00 AM'
+				},
 				ytId: 'E-2Eqh99nUw',
 				speaker: getSpeakerByName('Aidan Cunniffe')
 			},
@@ -1956,8 +2608,14 @@ const stages2021: Stage[] = [
 				title: '"Testing" in prod Isn\'t the only way: why observability needs structure',
 				scheduleOrder: 25,
 				description: '',
-				start: isEurope() ? '20:20' : '11:20 AM',
-				end: isEurope() ? '20:40' : '11:40 AM',
+				start: {
+					cest: '20:20 PM',
+					pt: '11:20 AM'
+				},
+				end: {
+					cest: '20:40 PM',
+					pt: '11:40 AM'
+				},
 				ytId: '0nrd5-9Lf7E',
 				speaker: getSpeakerByName('Jean Yang')
 			},
@@ -1966,6 +2624,8 @@ const stages2021: Stage[] = [
 ];
 
 write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022))
+
+write.sync(`${targetPath}/2022/stages.json`, JSON.stringify(stages2022))
 
 speakers2022.forEach((speaker) => {
 	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
