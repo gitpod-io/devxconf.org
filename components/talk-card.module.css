@@ -39,7 +39,7 @@
   border: 1px solid var(--grey-2);
   transition: all 0.2s;
 }
-.card:hover {
+a.card:hover {
   border-color: var(--brand);
 }
 

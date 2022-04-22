@@ -70,7 +70,9 @@ export default function TalkCard({ talk: { title, speaker, start, end, ytId }, s
         <div className={styles.speaker}>
           <div className={styles['avatar-group']}>
             {typeof speaker === 'string' ? (
-              'TBC'
+              <h4 className={styles['speaker-name']}>
+                {speaker}
+              </h4>
             ) : speaker.length ? (
               // eslint-disable-next-line
               speaker.map(s => <Avatar name={s.name} image={s.image} />)
@@ -93,15 +95,25 @@ export default function TalkCard({ talk: { title, speaker, start, end, ytId }, s
           {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
         </p>
       )}
-      <a
-        href={`https://youtu.be/${ytId}`}
-        target="_blank"
-        className={cn(styles.card, {
-          [styles['is-live']]: isTalkLive
-        })}
-      >
-        {renderCardBody()}
-      </a>
+      {ytId ? (
+        <a
+          href={`https://youtu.be/${ytId}`}
+          target="_blank"
+          className={cn(styles.card, {
+            [styles['is-live']]: isTalkLive
+          })}
+        >
+          {renderCardBody()}
+        </a>
+      ) : (
+        <div
+          className={cn(styles.card, {
+            [styles['is-live']]: isTalkLive
+          })}
+        >
+          {renderCardBody()}
+        </div>
+      )}
     </div>
   );
 }

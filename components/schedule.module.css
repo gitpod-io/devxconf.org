@@ -35,16 +35,11 @@
 }
 
 .stage-name {
-  font-size: 22px;
+  font-size: 20px;
   color: #fff;
-  line-height: 1.15;
-  letter-spacing: -0.05em;
   font-weight: 800;
-  min-width: 220px;
-  padding-bottom: var(--space-2x);
-  position: absolute;
-  left: initial;
   color: var(--brand);
+  margin-bottom: var(--gutter-normal);
 }
 
 .day {
@@ -55,7 +50,7 @@
   font-weight: 400;
   background: var(--black-1);
   border-radius: 8px;
-  margin: var(--gutter-medium) 0 var(--gutter-normal);
+  margin: var(--gutter-medium) 0;
 }
 
 .talks {

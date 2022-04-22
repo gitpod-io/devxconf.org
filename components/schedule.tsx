@@ -14,71 +14,81 @@
  * limitations under the License.
  */
 
-import { Stage, Talk } from '@lib/types';
+// eslint-disable-next-line
+// @ts-nocheck
+
+import { Stage } from '@lib/types';
 
 import Layout from './layout';
 import { PatternHalfCircle } from '@components/patterns';
 import TalkCard from './talk-card';
 import cn from 'classnames';
-import { isEurope } from 'utils/helpers';
 import styles from './schedule.module.css';
 
-function StageRow({ stage }: { stage: Stage }) {
-  // Group talks by the time block
-  let timeBlocks: any;
-
-  if (undefined !== stage.schedule) {
-    timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
-      allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] = [...(allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] || []), talk];
-      return allBlocks;
-    }, {});
-  }
-  return (
-    <div key={stage.name} className={styles.row}>
-      <h2 className={styles.day}>{stage.day}</h2>
+const StageSection = ({title, stage}: {title: string; stage: Stage}) => (
+  <div>
+    <h3 className={styles["stage-name"]}>{title}</h3>
       <div className={cn(styles.talks, styles[stage.slug])}>
-        {Object.keys(timeBlocks).map((startTime: string) => (
-          <div key={startTime}>
-            {timeBlocks[startTime].map((talk: Talk, index: number) => (
-              <TalkCard key={talk.title} talk={talk} showTime={index === 0} />
-            ))}
+        {stage.schedule?.map(talk => (
+          <div>
+            <TalkCard key={talk.title} talk={talk} showTime={true} />
           </div>
         ))}
       </div>
+  </div>
+)
+
+function StageRow({ stages }: { stage: Stage[] }) {
+  return (
+    <div key={stages[0].name} className={styles.row}>
+      <h2 className={styles.day}>{stages[0].day}</h2>
+      {stages.map((stage: Stage) => <StageSection title={stage.name} stage={stage} />)}
     </div>
   );
 }
 
 type Props = {
+  intro: JSX.Element | string;
   allStages: Stage[];
 };
 
-export default function Schedule({ allStages }: Props) {
-  const stagesToRender: Stage[] = []
-  
+export default function Schedule({ intro, allStages }: Props) {
+  const stagesToRender: Stage[] = [];
+
   for (let i = 0; i < allStages.length - 2; i++) {
-    console.log(allStages[i].schedule?.length, allStages[i + 2].schedule?.length)
     stagesToRender.push({
       ...allStages[i],
-      // @ts-ignore
-      schedule: allStages[i].schedule?.concat(allStages[i + 2].schedule).sort((a, b) => a.scheduleOrder - b.scheduleOrder)
-    })
+      schedule: allStages[i].schedule
+        // eslint-disable-next-line
+        // @ts-ignore
+        ?.concat(allStages[i + 2].schedule)
+        .sort((a, b) => a.scheduleOrder - b.scheduleOrder)
+    });
   }
+
+  const sortedStages = allStages.sort((a, b) => {
+    const dayA = a.day.split(",")[1]
+    const dayB = b.day.split(",")[1]
+    if (dayA > dayB) {
+      return 1;
+    }
+    if (dayA < dayB) {
+      return -1;
+    }
+    return 0;
+  });
 
   return (
     <Layout>
       <div className="row">
         <div className={styles.header}>
           <h1 className="heading-secondary">Schedule</h1>
-          <p className={styles.intro}>
-            The conference starts April 28th {isEurope() ? "17:00 CEST" : "8:00 PT"}. Local times shown below.
-          </p>
+          <p className={styles.intro}>{intro}</p>
         </div>
         <div className={styles.container}>
           <div className={styles['row-wrapper']}>
-            {stagesToRender.map(stage => (
-              <StageRow key={stage.slug} stage={stage} />
-            ))}
+            <StageRow stages={[sortedStages[0], sortedStages[1]]} />
+            <StageRow stages={[sortedStages[2], sortedStages[3]]} />
           </div>
         </div>
       </div>
