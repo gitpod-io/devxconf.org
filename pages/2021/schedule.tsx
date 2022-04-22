@@ -1,6 +1,7 @@
 import { META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import Schedule from '@components/schedule';
+import { isEurope } from 'utils/helpers';
 
 export default function Conf({stages}: any) {
   const meta = {
@@ -10,7 +11,7 @@ export default function Conf({stages}: any) {
 
   return (
     <Page meta={meta} fullViewport>
-        <Schedule allStages={stages} />
+        <Schedule intro={<>The conference starts April 28th {isEurope() ? '17:00 CEST' : '8:00 PT'}.</>} allStages={stages} />
     </Page>
   );
 }

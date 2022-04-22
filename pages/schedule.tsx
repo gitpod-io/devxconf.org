@@ -1,18 +1,23 @@
 import { META_DESCRIPTION } from '@lib/constants';
 import Page from '@components/page';
 import Schedule from '@components/schedule';
+import { isEurope } from 'utils/helpers';
 
-export default function Conf({stages}: any) {
+export default function Conf({ stages }: any) {
   const meta = {
     title: 'Schedule | DevX Conf',
     description: META_DESCRIPTION
   };
-
-  console.log(stages)
-
   return (
     <Page meta={meta} fullViewport>
-        <Schedule allStages={stages} />
+      <Schedule
+        intro={
+          <>
+            The conference starts May 2nd {isEurope() ? '4:00 PM CEST' : '7:00 AM PT'}.
+          </>
+        }
+        allStages={stages}
+      />
     </Page>
   );
 }
@@ -22,6 +27,6 @@ export async function getServerSideProps() {
   const stages = await req.json();
 
   return {
-      props: { stages },
-  }
+    props: { stages }
+  };
 }
