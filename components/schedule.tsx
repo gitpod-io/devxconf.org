@@ -25,25 +25,33 @@ import styles from './schedule.module.css';
 
 function StageRow({ stage }: { stage: Stage }) {
   // Group talks by the time block
-  let timeBlocks: any;
+  // let timeBlocks: any;
 
-  if (undefined !== stage.schedule) {
-    timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
-      allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] = [...(allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] || []), talk];
-      return allBlocks;
-    }, {});
-  }
+  // if (undefined !== stage.schedule) {
+  //   timeBlocks = stage.schedule.reduce((allBlocks: any, talk) => {
+  //     allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] = [...(allBlocks[talk.start[isEurope() ? 'cest' : 'pt']] || []), talk];
+  //     return allBlocks;
+  //   }, {});
+  // }
+
+  // console.log(stage, timeBlocks);
+
   return (
     <div key={stage.name} className={styles.row}>
       <h2 className={styles.day}>{stage.day}</h2>
       <div className={cn(styles.talks, styles[stage.slug])}>
-        {Object.keys(timeBlocks).map((startTime: string) => (
+        {/* {Object.keys(timeBlocks).map((startTime: string) => (
           <div key={startTime}>
             {timeBlocks[startTime].map((talk: Talk, index: number) => (
-              <TalkCard key={talk.title} talk={talk} showTime={index === 0} />
+              <TalkCard key={talk.title} talk={talk} showTime={true} />
             ))}
           </div>
-        ))}
+        ))} */}
+        {stage.schedule?.map(talk => {
+          return <div>
+            <TalkCard key={talk.title} talk={talk} showTime={true} />
+          </div>
+        })}
       </div>
     </div>
   );
@@ -54,15 +62,17 @@ type Props = {
 };
 
 export default function Schedule({ allStages }: Props) {
-  const stagesToRender: Stage[] = []
-  
+  const stagesToRender: Stage[] = [];
+
   for (let i = 0; i < allStages.length - 2; i++) {
-    console.log(allStages[i].schedule?.length, allStages[i + 2].schedule?.length)
     stagesToRender.push({
       ...allStages[i],
+      schedule: allStages[i].schedule
+      // eslint-disable-next-line
       // @ts-ignore
-      schedule: allStages[i].schedule?.concat(allStages[i + 2].schedule).sort((a, b) => a.scheduleOrder - b.scheduleOrder)
-    })
+        ?.concat(allStages[i + 2].schedule)
+        .sort((a, b) => a.scheduleOrder - b.scheduleOrder)
+    });
   }
 
   return (
@@ -71,7 +81,8 @@ export default function Schedule({ allStages }: Props) {
         <div className={styles.header}>
           <h1 className="heading-secondary">Schedule</h1>
           <p className={styles.intro}>
-            The conference starts April 28th {isEurope() ? "17:00 CEST" : "8:00 PT"}. Local times shown below.
+            The conference starts April 28th {isEurope() ? '17:00 CEST' : '8:00 PT'}. Local times
+            shown below.
           </p>
         </div>
         <div className={styles.container}>

@@ -93,15 +93,25 @@ export default function TalkCard({ talk: { title, speaker, start, end, ytId }, s
           {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
         </p>
       )}
-      <a
-        href={`https://youtu.be/${ytId}`}
-        target="_blank"
-        className={cn(styles.card, {
-          [styles['is-live']]: isTalkLive
-        })}
-      >
-        {renderCardBody()}
-      </a>
+      {ytId ? (
+        <a
+          href={`https://youtu.be/${ytId}`}
+          target="_blank"
+          className={cn(styles.card, {
+            [styles['is-live']]: isTalkLive
+          })}
+        >
+          {renderCardBody()}
+        </a>
+      ) : (
+        <div
+          className={cn(styles.card, {
+            [styles['is-live']]: isTalkLive
+          })}
+        >
+          {renderCardBody()}
+        </div>
+      )}
     </div>
   );
 }

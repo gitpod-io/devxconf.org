@@ -1674,7 +1674,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Lydia Hallie Next.JS',
-				scheduleOrder: 4,
+				scheduleOrder: 3,
 				description: '',
 				start: {
 					cest: '5:30 PM',
@@ -1690,7 +1690,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Okteto',
-				scheduleOrder: 6,
+				scheduleOrder: 4,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -1706,7 +1706,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Building auto-complete for the terminal',
-				scheduleOrder: 8,
+				scheduleOrder: 5,
 				description: '',
 				start: {
 					cest: '6:30 PM',
@@ -1722,7 +1722,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'The Next Generation of Developer-First Products.',
-				scheduleOrder: 10,
+				scheduleOrder: 6,
 				description: '',
 				start: {
 					cest: '7:00 PM',
@@ -1737,7 +1737,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Building DevX Teams, my story',
-				scheduleOrder: 12,
+				scheduleOrder: 7,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -1752,7 +1752,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Building DevX Teams, my story',
-				scheduleOrder: 14,
+				scheduleOrder: 8,
 				description: '',
 				start: {
 					cest: '8:30 PM',
@@ -1767,7 +1767,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Finish for Day 1',
-				scheduleOrder: 16,
+				scheduleOrder: 9,
 				description: '',
 				start: {
 					cest: '9:00 PM',
@@ -1794,7 +1794,7 @@ const stages2022: Stage[] = [
 		schedule: [
 			{
 				title: 'Keynote #2',
-				scheduleOrder: 18,
+				scheduleOrder: 10,
 				description: '',
 				start: {
 					cest: '4:15 PM',
@@ -1809,7 +1809,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Panel: History and future of developer experience/velocity',
-				scheduleOrder: 20,
+				scheduleOrder: 11,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -1824,7 +1824,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'The balancing act of delivering high-quality DX',
-				scheduleOrder: 22,
+				scheduleOrder: 12,
 				description: '',
 				start: {
 					cest: '6:45 PM',
@@ -1839,7 +1839,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'How Spotify engineers use Backstage daily and keep their lives simple',
-				scheduleOrder: 24,
+				scheduleOrder: 13,
 				description: '',
 				start: {
 					cest: '7:15 PM',
@@ -1854,7 +1854,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Remote development can improve your developers’ remote work experience',
-				scheduleOrder: 26,
+				scheduleOrder: 14,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -1869,7 +1869,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Zed Text Editor',
-				scheduleOrder: 28,
+				scheduleOrder: 15,
 				description: '',
 				start: {
 					cest: '8:15 PM',
@@ -1884,7 +1884,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Remote development in a remote-first world',
-				scheduleOrder: 30,
+				scheduleOrder: 16,
 				description: '',
 				start: {
 					cest: '9:00 PM',
@@ -1899,7 +1899,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'End of DevX Conf',
-				scheduleOrder: 32,
+				scheduleOrder: 17,
 				description: '',
 				start: {
 					cest: '9:30 PM',
@@ -1926,7 +1926,7 @@ const stages2022: Stage[] = [
 		schedule: [
 			{
 				title: 'The Radiating Circles of DevX',
-				scheduleOrder: 3,
+				scheduleOrder: 18,
 				description: '',
 				start: {
 					cest: '5:00 PM',
@@ -1942,7 +1942,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Community: Your distributed debugging machine',
-				scheduleOrder: 5,
+				scheduleOrder: 19,
 				description: '',
 				start: {
 					cest: '5:30 PM',
@@ -1958,7 +1958,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Developer Experience and Product-Led Growth (PLG) - how they enable each other and your developer community, seamlessly',
-				scheduleOrder: 7,
+				scheduleOrder: 20,
 				description: '',
 				start: {
 					cest: '7:00 PM',
@@ -1974,7 +1974,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Flow states',
-				scheduleOrder: 9,
+				scheduleOrder: 21,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -1990,7 +1990,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Make a world-class integration testing library',
-				scheduleOrder: 11,
+				scheduleOrder: 22,
 				description: '',
 				start: {
 					cest: '8:15 PM',
@@ -2006,7 +2006,7 @@ const stages2022: Stage[] = [
 			},
 			// {
 			// 	title: 'CodeSee',
-			// 	scheduleOrder: 13,
+			// 	scheduleOrder: 23,
 			// 	description: '',
 			// 	start: {
 			// 		cest: '8:15 PM',
@@ -2031,7 +2031,7 @@ const stages2022: Stage[] = [
 		schedule: [
 			{
 				title: 'TDD and the Terminator - An introduction to Test Driven Development',
-				scheduleOrder: 15,
+				scheduleOrder: 24,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -2046,7 +2046,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Warp and the future of the terminal',
-				scheduleOrder: 17,
+				scheduleOrder: 25,
 				description: '',
 				start: {
 					cest: '6:45 PM',
@@ -2061,7 +2061,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Progressive Delivery with Observability',
-				scheduleOrder: 19,
+				scheduleOrder: 26,
 				description: '',
 				start: {
 					cest: '7:15 PM',
@@ -2076,7 +2076,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'What does it mean to create API products at scale?',
-				scheduleOrder: 21,
+				scheduleOrder: 27,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -2091,7 +2091,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'How to onboard people in a day',
-				scheduleOrder: 23,
+				scheduleOrder: 28,
 				description: '',
 				start: {
 					cest: '8:15 PM',
@@ -2106,7 +2106,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Designing for developers',
-				scheduleOrder: 25,
+				scheduleOrder: 29,
 				description: '',
 				start: {
 					cest: '8:45 PM',
