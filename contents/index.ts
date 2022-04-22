@@ -2042,7 +2042,7 @@ const stages2022: Stage[] = [
 					pt: '9:45 AM',
 				},
 				ytId: '',
-				speaker: getSpeakerByName('Layla Porter', hosts2022),
+				speaker: getSpeakerByName('Layla Porter', speakers2022),
 			},
 			{
 				title: 'Warp and the future of the terminal',
