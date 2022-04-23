@@ -26,7 +26,7 @@
    stages: Stage[];
  };
  
- export default function StagePage({ stage, stages }: Props) {
+ export default function StagePage({ stages }: Props) {
    const meta = {
      title: SITE_NAME,
      description: META_DESCRIPTION
@@ -35,7 +35,7 @@
    return (
      <Page meta={meta} fullViewport>
        <Layout>
-         <StageContainer stage={stage} stages={stages} />
+         <StageContainer stages={stages} />
        </Layout>
      </Page>
    );
