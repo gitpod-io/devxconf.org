@@ -48,10 +48,10 @@ export const NAVIGATION = [
   //    name: 'Speakers',
   //    route: '/speakers'
   // },
-  // {
-  //   name: 'Schedule',
-  //   route: '/schedule'
-  // },
+  {
+    name: 'Schedule',
+    route: '/schedule'
+  },
   {
     name: 'Manifesto',
     route: '/manifesto'

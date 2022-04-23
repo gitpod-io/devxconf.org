@@ -18,15 +18,11 @@
 // @ts-nocheck
 
 import { Image as ImageProps, Talk } from '@lib/types';
-import { format, isAfter, isBefore, parseISO } from 'date-fns';
+import { isAfter, isBefore, parseISO } from 'date-fns';
 import { useEffect, useState } from 'react';
 
-import Image from 'next/image';
-import Link from 'next/link';
 import cn from 'classnames';
-import { hyphenate } from './speakers-grid';
 import { isEurope } from 'utils/helpers';
-import { speakers } from 'contents';
 import styles from './talk-card.module.css';
 
 type Props = {
@@ -51,19 +47,18 @@ const Avatar = ({ name, image }: { name: string; image: ImageProps }) => (
   />
 );
 
-export default function TalkCard({
-  talk: { title, speaker, start, end, ytId },
-  showTime
-}: Props) {
+export default function TalkCard({ talk: { title, speaker, start, end, ytId }, showTime }: Props) {
   const [isTalkLive, setIsTalkLive] = useState(false);
   const [startAndEndTime, setStartAndEndTime] = useState('');
-  // eslint-disable-next-line
-  const slug = hyphenate(speaker.name || speaker[0].name);
 
   useEffect(() => {
     const now = Date.now();
     setIsTalkLive(isAfter(now, parseISO(start)) && isBefore(now, parseISO(end)));
-    setStartAndEndTime(`${formatDate(start)} – ${formatDate(end)}`);
+    setStartAndEndTime(
+      `${formatDate(start[isEurope() ? 'cest' : 'pt'])} – ${formatDate(
+        end[isEurope() ? 'cest' : 'pt']
+      )}`
+    );
   }, []);
 
   const renderCardBody = () => (
@@ -74,7 +69,11 @@ export default function TalkCard({
       {undefined !== speaker ? (
         <div className={styles.speaker}>
           <div className={styles['avatar-group']}>
-            {speaker.length ? (
+            {typeof speaker === 'string' ? (
+              <h4 className={styles['speaker-name']}>
+                {speaker}
+              </h4>
+            ) : speaker.length ? (
               // eslint-disable-next-line
               speaker.map(s => <Avatar name={s.name} image={s.image} />)
             ) : (
@@ -96,6 +95,7 @@ export default function TalkCard({
           {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
         </p>
       )}
+      {ytId ? (
         <a
           href={`https://youtu.be/${ytId}`}
           target="_blank"
@@ -105,6 +105,15 @@ export default function TalkCard({
         >
           {renderCardBody()}
         </a>
+      ) : (
+        <div
+          className={cn(styles.card, {
+            [styles['is-live']]: isTalkLive
+          })}
+        >
+          {renderCardBody()}
+        </div>
+      )}
     </div>
   );
 }
