@@ -85,7 +85,7 @@ export const sponsors: Sponsor[] = [
   },
   {
     name: 'AtomicJar',
-    description: ['Founded by creators of Testcontainers, AtomicJar, Inc. is on a mission to build tools that developers love, and change automated testing for the better. 7 years ago we made integrated testing simpler and easier when we created Testcontainers. Developers around the world enjoy its ease of use and being able to test their code against real dependencies, not mocks. Today, Testcontainers powers over a million builds per month, helping developers build and release their software with confidence.'],
+    description: ['Founded by creators of Testcontainers, AtomicJar, Inc. is on a mission to build tools that developers love, and change automated testing for the better.'],
     callToAction: 'Website',
     callToActionLink: 'https://www.atomicjar.com',
     links: [
