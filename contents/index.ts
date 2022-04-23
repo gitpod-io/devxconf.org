@@ -714,7 +714,7 @@ const speakers2022: Speaker[] = [
 		title: 'Co-founder & Co-CEO',
 		company: 'Gitpod',
 		image: {
-			url: 'johannes-landgraf.jpg'
+			url: 'johannes.jpeg'
 		},
 		bio: `Co-CEO & Co-Founder Gitpod`,
 		twitter: 'johannneslandgraf',
@@ -796,7 +796,7 @@ const speakers2022: Speaker[] = [
 		title: 'Building a Self Hosted Business',
 		company: 'Gitpod',
 		image: {
-			url: 'shanea-leven.jpg'
+			url: 'shanea-leven.jpeg'
 		},
 		bio: `Co-CEO & Co-Founder Gitpod`,
 		twitter: 'shanealeven',
