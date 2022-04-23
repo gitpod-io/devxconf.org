@@ -2070,7 +2070,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
 			},
 			{
-				title: 'CodeSee',
+				title: 'Code Reviews is more than a crushing Developer Experience',
 				scheduleOrder: 23,
 				description: '',
 				start: {
