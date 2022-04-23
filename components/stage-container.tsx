@@ -73,6 +73,7 @@ export default function StageContainer({ stages, isNew = false }: Props) {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className={styles.video}
+                  style={isNew ? {height: '65vh', minHeight: '550px'} : {}}
                 ></iframe>
               </div>
               {isNew ? (
