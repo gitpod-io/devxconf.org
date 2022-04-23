@@ -794,12 +794,12 @@ const speakers2022: Speaker[] = [
 	},
 	{
 		name: 'Shanea Leven',
-		title: 'Building a Self Hosted Business',
-		company: 'Gitpod',
+		title: 'Co-founder & CEO',
+		company: 'CodeSee',
 		image: {
 			url: 'shanea-leven.jpeg'
 		},
-		bio: `Co-CEO & Co-Founder Gitpod`,
+		bio: `Shanea Leven is co-founder and CEO of CodeSee, a code understanding platform helping developers and teams onboard to codebases, improve code review, code planning, and more. Prior to CodeSee, Shanea led dev-focused product teams at Cloudflare, Docker, eBay and Google. Follow Shanea on Twitter @ShaneaLeven and CodeSee @CodeSeeio.`,
 		twitter: 'shanealeven',
 		abstract: `
 		<p>
