@@ -1791,8 +1791,8 @@ const stages2022: Stage[] = [
 					pt: '11:45 AM',
 				},
 				end: {
-					cest: '9:10 PM',
-					pt: '12:10 PM',
+					cest: '9:30 PM',
+					pt: '12:30 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
@@ -1802,12 +1802,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 8,
 				description: '',
 				start: {
-					cest: '9:10 PM',
-					pt: '12:10 PM',
+					cest: '9:30 PM',
+					pt: '12:30 PM',
 				},
 				end: {
-					cest: '9:40 PM',
-					pt: '12:40 PM',
+					cest: '10:00 PM',
+					pt: '1:00 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Ant Wilson', speakers2022),
@@ -1817,12 +1817,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 9,
 				description: '',
 				start: {
-					cest: '9:40 PM',
-					pt: '12:40 PM',
+					cest: '10:00 PM',
+					pt: '1:00 PM',
 				},
 				end: {
-					cest: '9:55 PM',
-					pt: '12:55 PM',
+					cest: '10:15 PM',
+					pt: '1:55 PM',
 				},
 				ytId: '',
 				speaker: [
