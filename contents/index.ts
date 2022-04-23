@@ -1687,16 +1687,16 @@ const stages2022: Stage[] = [
 		stream: 'WbSMxch0zXs',
 		schedule: [
 			{
-				title: 'Introduction',
+				title: 'Welcome to DevX Conf!',
 				scheduleOrder: 1,
 				description: '',
 				start: {
-					cest: '4:00 PM',
-					pt: '7:00 AM',
+					cest: '5:00 PM',
+					pt: '8:00 AM',
 				},
 				end: {
-					cest: '4:15 PM',
-					pt: '7:15 AM',
+					cest: '5:15 PM',
+					pt: '8:15 AM',
 				},
 				ytId: '',
 				speaker: [
@@ -1705,39 +1705,23 @@ const stages2022: Stage[] = [
 				],
 			},
 			{
-				title: 'Remote development panel',
+				title: 'Panel: Remote development',
 				scheduleOrder: 2,
 				description: '',
 				start: {
-					cest: '4:15 PM',
-					pt: '7:15 AM',
+					cest: '5:15 PM',
+					pt: '8:15 AM',
 				},
 				end: {
-					cest: '5:00 PM',
-					pt: '8:00 AM',
+					cest: '6:00 PM',
+					pt: '9:00 AM',
 				},
 				ytId: '',
 				speaker: 'Kirill Skrygan, Sven Efftinge, Nik Molnar, Johannes Landgraf',
 			},
 			{
-				title: 'Lydia Hallie Next.JS',
+				title: 'Maybe Its Time to Rethink How Youve Been Developing?',
 				scheduleOrder: 3,
-				description: '',
-				start: {
-					cest: '5:30 PM',
-					pt: '8:30 AM',
-				},
-				end: {
-					cest: '6:00',
-					pt: '9:00 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
-			},
-			{
-				title: 'Okteto',
-				scheduleOrder: 4,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -1752,8 +1736,8 @@ const stages2022: Stage[] = [
 				speaker: [getSpeakerByName('Ramiro Berrelleza', speakers2022), getSpeakerByName('Arsh Sharma', speakers2022)],
 			},
 			{
-				title: 'Building auto-complete for the terminal',
-				scheduleOrder: 5,
+				title: 'Implementation and use cases of modern rendering patterns',
+				scheduleOrder: 4,
 				description: '',
 				start: {
 					cest: '6:30 PM',
@@ -1765,6 +1749,22 @@ const stages2022: Stage[] = [
 				},
 				ytId: '',
 				// @ts-ignore
+				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
+			},
+			{
+				title: 'Building auto-complete for the terminal',
+				scheduleOrder: 5,
+				description: '',
+				start: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				end: {
+					cest: '8:00 PM',
+					pt: '11:00 AM',
+				},
+				ytId: '',
+				// @ts-ignore
 				speaker: getSpeakerByName('Brendan Falk', speakers2022),
 			},
 			{
@@ -1772,12 +1772,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 6,
 				description: '',
 				start: {
-					cest: '7:00 PM',
-					pt: '10:00 AM',
+					cest: '8:00 PM',
+					pt: '11:00 AM',
 				},
 				end: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
+					cest: '8:45 PM',
+					pt: '11:45 AM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
@@ -1787,42 +1787,42 @@ const stages2022: Stage[] = [
 				scheduleOrder: 7,
 				description: '',
 				start: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
+					cest: '8:45 PM',
+					pt: '11:45 AM',
 				},
 				end: {
-					cest: '8:30 PM',
-					pt: '11:30 AM',
+					cest: '9:10 PM',
+					pt: '12:10 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
 			},
 			{
-				title: 'Building DevX Teams, my story',
+				title: 'How the Supabase architecture enables "Supa"-DX',
 				scheduleOrder: 8,
 				description: '',
 				start: {
-					cest: '8:30 PM',
-					pt: '11:30 AM',
+					cest: '9:10 PM',
+					pt: '12:10 PM',
 				},
 				end: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
+					cest: '9:40 PM',
+					pt: '12:40 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Ant Wilson', speakers2022),
 			},
 			{
-				title: 'Finish for Day 1',
+				title: 'Conclude Day 1',
 				scheduleOrder: 9,
 				description: '',
 				start: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
+					cest: '9:40 PM',
+					pt: '12:40 PM',
 				},
 				end: {
-					cest: '9:15 PM',
-					pt: '12:15 PM',
+					cest: '9:55 PM',
+					pt: '12:55 PM',
 				},
 				ytId: '',
 				speaker: [
@@ -1840,23 +1840,41 @@ const stages2022: Stage[] = [
 		stream: 'WbSMxch0zXs',
 		schedule: [
 			{
-				title: 'Keynote #2',
+				title: 'Welcome to DevX Conf Day 2!',
 				scheduleOrder: 10,
 				description: '',
 				start: {
-					cest: '4:15 PM',
-					pt: '7:15 AM',
-				},
-				end: {
 					cest: '5:00 PM',
 					pt: '8:00 AM',
+				},
+				end: {
+					cest: '5:15 PM',
+					pt: '8:15 AM',
+				},
+				ytId: '',
+				speaker: [
+					// @ts-ignore
+					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
+				],
+			},
+			{
+				title: 'Keynote #2',
+				scheduleOrder: 11,
+				description: '',
+				start: {
+					cest: '5:15 PM',
+					pt: '8:15 AM',
+				},
+				end: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
 				},
 				ytId: '',
 				speaker: 'TBC',
 			},
 			{
 				title: 'Panel: DevX Past and Future',
-				scheduleOrder: 11,
+				scheduleOrder: 12,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -1871,7 +1889,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'The balancing act of delivering high-quality DX',
-				scheduleOrder: 12,
+				scheduleOrder: 13,
 				description: '',
 				start: {
 					cest: '6:45 PM',
@@ -1886,7 +1904,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'How Spotify engineers use Backstage daily and keep their lives simple',
-				scheduleOrder: 13,
+				scheduleOrder: 14,
 				description: '',
 				start: {
 					cest: '7:15 PM',
@@ -1901,7 +1919,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Remote development can improve your developers’ remote work experience',
-				scheduleOrder: 14,
+				scheduleOrder: 15,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -1916,7 +1934,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Zed Text Editor',
-				scheduleOrder: 15,
+				scheduleOrder: 16,
 				description: '',
 				start: {
 					cest: '8:15 PM',
@@ -1931,7 +1949,7 @@ const stages2022: Stage[] = [
 			},
 			{
 				title: 'Designing for developers',
-				scheduleOrder: 16,
+				scheduleOrder: 17,
 				description: '',
 				start: {
 					cest: '9:00 PM',
@@ -1945,16 +1963,16 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Boris Kirov', speakers2022),
 			},
 			{
-				title: 'End of DevX Conf',
-				scheduleOrder: 17,
+				title: 'End of DevX Conf 2022!',
+				scheduleOrder: 18,
 				description: '',
 				start: {
 					cest: '9:30 PM',
-					pt: '12:30 AM',
+					pt: '12:30 PM',
 				},
 				end: {
 					cest: '9:40 PM',
-					pt: '12:40 AM',
+					pt: '12:40 PM',
 				},
 				ytId: '',
 				speaker: [
@@ -1976,12 +1994,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 18,
 				description: '',
 				start: {
-					cest: '5:00 PM',
-					pt: '8:00 AM',
+					cest: '6:00 PM',
+					pt: '9:00 AM',
 				},
 				end: {
-					cest: '5:30 PM',
-					pt: '8:30 AM',
+					cest: '6:30 PM',
+					pt: '9:30 AM',
 				},
 				ytId: '',
 				// @ts-ignore
@@ -1992,12 +2010,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 19,
 				description: '',
 				start: {
-					cest: '5:30 PM',
-					pt: '8:30 AM',
+					cest: '6:30 PM',
+					pt: '9:30 AM',
 				},
 				end: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
+					cest: '7:00 PM',
+					pt: '10:00 AM',
 				},
 				ytId: '',
 				// @ts-ignore
@@ -2020,7 +2038,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Amara Graham', speakers2022),
 			},
 			{
-				title: 'Flow states',
+				title: 'Flow States with Centered',
 				scheduleOrder: 21,
 				description: '',
 				start: {
@@ -2051,22 +2069,22 @@ const stages2022: Stage[] = [
 				// @ts-ignore
 				speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
 			},
-			// {
-			// 	title: 'CodeSee',
-			// 	scheduleOrder: 23,
-			// 	description: '',
-			// 	start: {
-			// 		cest: '8:15 PM',
-			// 		pt: '11:15 AM',
-			// 	},
-			// 	end: {
-			// 		cest: '9:00 PM',
-			// 		pt: '12:00 PM',
-			// 	},
-			// 	ytId: '',
-			// 	// @ts-ignore
-			// 	speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
-			// }
+			{
+				title: 'CodeSee',
+				scheduleOrder: 23,
+				description: '',
+				start: {
+					cest: '9:00 PM',
+					pt: '12:15 AM',
+				},
+				end: {
+					cest: '9:30 PM',
+					pt: '12:30 PM',
+				},
+				ytId: '',
+				// 	// @ts-ignore
+				speaker: getSpeakerByName('Shanea Leven', speakers2022),
+			}
 		]
 	},
 	{
