@@ -710,13 +710,29 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
+		name: 'Johannes Landgraf',
+		title: 'Co-founder & Co-CEO',
+		company: 'Gitpod',
+		image: {
+			url: 'johannes-landgraf.jpg'
+		},
+		bio: `Co-CEO & Co-Founder Gitpod`,
+		twitter: 'johannneslandgraf',
+		github: 'johannneslandgraf',
+		abstract: `
+		<p>
+		Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
 		name: 'Sven Efftinge',
 		title: 'Co-founder & Co-CEO',
 		company: 'Gitpod',
 		image: {
 			url: 'sven-efftinge.jpeg'
 		},
-		bio: `Sven is a co founder and co CEO of Gitpod. Before Gitpod he built and designed other development tools and programming languages. In his spare time he enjoys living at and kitesurfing on the baltic sea.`,
+		bio: `Sven is a Co-founder and Co-CEO of Gitpod. Before Gitpod he built and designed other development tools and programming languages. In his spare time he enjoys living at and kitesurfing on the baltic sea.`,
 		twitter: 'svenefftinge',
 		github: 'svenefftinge',
 		abstract: `
@@ -772,6 +788,21 @@ const speakers2022: Speaker[] = [
 		abstract: `
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
+		</p>
+	  `
+	},
+	{
+		name: 'Shanea Leven',
+		title: 'Building a Self Hosted Business',
+		company: 'Gitpod',
+		image: {
+			url: 'shanea-leven.jpg'
+		},
+		bio: `Co-CEO & Co-Founder Gitpod`,
+		twitter: 'shanealeven',
+		abstract: `
+		<p>
+		Code Reviews is more than a crushing Developer Experience, its really a deeply human experience.
 		</p>
 	  `
 	},
