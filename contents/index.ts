@@ -1684,7 +1684,7 @@ const stages2022: Stage[] = [
 		day: 'Monday, May 2',
 		discord: '',
 		slug: 'a',
-		stream: 'WbSMxch0zXs',
+		stream: 'znKHPTMpGTE',
 		schedule: [
 			{
 				title: 'Welcome to DevX Conf!',
@@ -1837,7 +1837,7 @@ const stages2022: Stage[] = [
 		day: 'Tuesday, May 3',
 		discord: '',
 		slug: 'a',
-		stream: 'WbSMxch0zXs',
+		stream: 'znKHPTMpGTE',
 		schedule: [
 			{
 				title: 'Welcome to DevX Conf Day 2!',
@@ -1987,7 +1987,7 @@ const stages2022: Stage[] = [
 		day: 'Monday, May 2',
 		discord: '',
 		slug: 'b',
-		stream: '2rlUdQvteLI',
+		stream: 'qAiiZtvbwpc',
 		schedule: [
 			{
 				title: 'The Radiating Circles of DevX',
@@ -2092,7 +2092,7 @@ const stages2022: Stage[] = [
 		day: 'Tuesday, May 3',
 		discord: '',
 		slug: 'b',
-		stream: '2rlUdQvteLI',
+		stream: 'qAiiZtvbwpc',
 		schedule: [
 			{
 				title: 'TDD and the Terminator - An introduction to Test Driven Development',
