@@ -84,6 +84,23 @@ export const sponsors: Sponsor[] = [
     image: '/expo/okteto.png'
   },
   {
+    name: 'AtomicJar',
+    description: ['Founded by creators of Testcontainers, AtomicJar, Inc. is on a mission to build tools that developers love, and change automated testing for the better.'],
+    callToAction: 'Website',
+    callToActionLink: 'https://www.atomicjar.com',
+    links: [
+      { text: 'Linkedin', url: 'https://www.linkedin.com/company/atomicjar' },
+      { text: 'Twitter', url: 'https://twitter.com/atomicjarinc' }
+    ],
+    youtubeSlug: '',
+    tier: 'gold',
+    logo: {
+      url: '/sponsors/atomic-jar.svg',
+      className: 'atomic-jar'
+    },
+    image: '/expo/atomic-jar.png'
+  },
+  {
     name: 'Swimm',
     logo: {
       url: '/sponsors/swimm.svg'
