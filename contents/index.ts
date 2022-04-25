@@ -594,27 +594,6 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
-		name: 'Ulf Schwekendiek',
-		title: ' Founder and CEO',
-		company: 'Centered',
-		image: {
-			url: 'ulf-schwekendiek.jpg'
-		},
-		bio:
-			'<b>Ulf Schwekendiek</b> is the Founder and CEO of <b>Centered</b>.  Prior to <b>Centered</b>, Ulf was part of numerous product and engineering teams, including being the first mobile engineer at <b>Siri</b> before it was acquired by <b>Apple</b>.  He was a co-founder of <b>Ditto</b> which was acquired by <b>Groupon</b> and an engineer at <b>Autodesk</b>, <b>Descript</b>, <b>Detour</b>, and <b>Groupon</b>.  Prior to this, Ulf earned his Masters in Integrated Digital Media from NYU. Most recently, after leaving his post as an Engineer Lead at <b>Postmates</b>, Ulf reflected on his daily work and how he accomplished it.  He devoured books, blogs, and videos to better understand how to improve productivity and use his time mindfully.  This thoughtfulness became his next venture: <b>Centered</b>.  After designing the platform and building a team that shares the same passion for achieving mindfulness at work, Ulf launched <b>Centered</b> in early 2020.',
-		twitter: 'sulf',
-		linkedin: 'sulfme',
-		github: 'sulf',
-		abstract: `
-		<div>
-		  <p>
-			Flow States and how you can achieve at least 30% more in a day with these top productivity
-			frameworks.
-		  </p>
-		</div>
-	  `
-	},
-	{
 		name: 'Maya Kaczorowski',
 		title: 'Product Manager',
 		company: 'Tailscale',
@@ -1798,31 +1777,16 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
 			},
 			{
-				title: 'How the Supabase architecture enables "Supa"-DX',
-				scheduleOrder: 8,
+				title: 'Conclude Day 1',
+				scheduleOrder: 9,
 				description: '',
 				start: {
 					cest: '9:30 PM',
 					pt: '12:30 PM',
 				},
 				end: {
-					cest: '10:00 PM',
-					pt: '1:00 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Ant Wilson', speakers2022),
-			},
-			{
-				title: 'Conclude Day 1',
-				scheduleOrder: 9,
-				description: '',
-				start: {
-					cest: '10:00 PM',
-					pt: '1:00 PM',
-				},
-				end: {
-					cest: '10:15 PM',
-					pt: '1:55 PM',
+					cest: '9:40 PM',
+					pt: '12:40 PM',
 				},
 				ytId: '',
 				speaker: [
@@ -2038,8 +2002,8 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Amara Graham', speakers2022),
 			},
 			{
-				title: 'Flow States with Centered',
-				scheduleOrder: 21,
+				title: 'How the Supabase architecture enables "Supa"-DX',
+				scheduleOrder: 8,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -2050,8 +2014,7 @@ const stages2022: Stage[] = [
 					pt: '11:15 AM',
 				},
 				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Ulf Schwekendiek', speakers2022),
+				speaker: getSpeakerByName('Ant Wilson', speakers2022),
 			},
 			{
 				title: 'Make a world-class integration testing library',
