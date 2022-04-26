@@ -1822,8 +1822,8 @@ const stages2022: Stage[] = [
 				],
 			},
 			{
-				title: 'Keynote #2',
-				scheduleOrder: 11,
+				title: 'Panel: DevX Past and Future',
+				scheduleOrder: 12,
 				description: '',
 				start: {
 					cest: '5:15 PM',
@@ -1834,11 +1834,11 @@ const stages2022: Stage[] = [
 					pt: '9:00 AM',
 				},
 				ytId: '',
-				speaker: 'TBC',
+				speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
 			},
 			{
-				title: 'Panel: DevX Past and Future',
-				scheduleOrder: 12,
+				title: 'Remote development in a remote-first world',
+				scheduleOrder: 29,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -1849,7 +1849,7 @@ const stages2022: Stage[] = [
 					pt: '9:45 AM',
 				},
 				ytId: '',
-				speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
+				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
 			},
 			{
 				title: 'The balancing act of delivering high-quality DX',
@@ -2126,26 +2126,11 @@ const stages2022: Stage[] = [
 					pt: '11:15 AM',
 				},
 				end: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
+					cest: '9:15 PM',
+					pt: '12:15 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Wilson Mar', speakers2022),
-			},
-			{
-				title: 'Remote development in a remote-first world',
-				scheduleOrder: 29,
-				description: '',
-				start: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
-				},
-				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
 			},
 		]
 	}
