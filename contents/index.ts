@@ -198,7 +198,7 @@ const speakers2022: Speaker[] = [
 		abstract: `
 		<div>
 		  <p>
-			<strong>"Peer Support: Your distributed debugging machine"</strong>
+			<strong>"Peer Learning: Your developer adoption safety net"</strong>
 		  </p>
 		  <div>
 			When we try to get other developers to adopt our projects, we’re asking them to take on a
@@ -426,24 +426,21 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
-		name: 'Ant Wilson',
-		title: 'Co-Founder & CTO',
+		name: 'Inian Parameshwaran',
 		company: 'Supabase',
+		title: 'Senior Software Engineer',
 		image: {
-			url: 'ant-wilson.jpg'
+			url: 'inian.jpeg'
 		},
 		bio:
-			'Co-Founder, CTO, and Chief Meme Officer at Supabase. Ant is a 3x venture backed founder with an MSc in Software Engineering from Imperial College London.',
-		twitter: 'antwilson',
-		linkedin: 'anthony-wilson-46179937',
-		github: 'awalias',
+			'Inian Parameshwaran is a Senior Software Engineer at Supabase, an open-source Firebase alternative. He likes chocolates, working on developer tools and is passionate about security and performance. Previously, he founded a venture backed startup which helps speed up websites automatically. Did I mention he likes chocolates?',
+		twitter: 'everconfusedguy',
+		linkedin: 'inianp',
+		github: 'inian',
 		abstract: `
 		<div>
 		  <p>
-			Ant explores how the Supabase architecture enables "Supa"-DX. Open source and modular
-			technology choices enable Supabase to lower the barrier to deploying backends for your
-			apps and services. We'll explore all the major DX touch points within Supabase, and how we
-			obsess about improving them constantly.
+		  Supabase launched Edge Functions recently. This talk is a peek behind the curtains about how Supabase approaches Developer Experience. A lot of decisions went into ensuring that authoring and deploying functions on Supabase is as seamless as possible and I go over some of the tradeoffs we took. 
 		  </p>
 		</div>
 	  `
@@ -667,9 +664,12 @@ const speakers2022: Speaker[] = [
 		twitter: 'nathansobo',
 		github: 'nathansobo',
 		abstract: `
-		<p>
-			Zed is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
-		</p>
+		<div>
+			<p>Zed: Collaborative coding at the speed of light</p>
+			<p>
+				Zed is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
+			</p>
+		</div>
 	  `
 	},
 	{
@@ -683,6 +683,23 @@ const speakers2022: Speaker[] = [
 		twitter: 'kskrygan',
 		github: 'kskrygan',
 		linkedin: 'kirill-skrygan-7b86073a',
+		abstract: `
+		<p>
+			Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
+		name: 'Nik Molnar',
+		title: ' Product Director on Codespaces',
+		company: 'GitHub',
+		image: {
+			url: 'nik-molnar.jpg'
+		},
+		bio: `Nik Molnar is the Director of Product on Codespaces at GitHub. He is a father, daddy, baseball player, board gamer, Pluralsight author, lover of the web, and home chef.`,
+		twitter: 'nikmd23',
+		github: 'nikmd23',
+		linkedin: 'nikmd23',
 		abstract: `
 		<p>
 			Panel talk on remote development.
@@ -1731,7 +1748,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
 			},
 			{
-				title: 'Building auto-complete for the terminal',
+				title: 'Fig: Autocomplete for the Terminal',
 				scheduleOrder: 5,
 				description: '',
 				start: {
@@ -1739,8 +1756,8 @@ const stages2022: Stage[] = [
 					pt: '10:00 AM',
 				},
 				end: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '7:30 PM',
+					pt: '10:30 AM',
 				},
 				ytId: '',
 				// @ts-ignore
@@ -1751,12 +1768,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 6,
 				description: '',
 				start: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '7:30 PM',
+					pt: '10:30 AM',
 				},
 				end: {
-					cest: '8:45 PM',
-					pt: '11:45 AM',
+					cest: '8:00 PM',
+					pt: '11:00 AM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
@@ -1766,12 +1783,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 7,
 				description: '',
 				start: {
-					cest: '8:45 PM',
-					pt: '11:45 AM',
+					cest: '8:00 PM',
+					pt: '11:00 AM',
 				},
 				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
+					cest: '9:00 PM',
+					pt: '12:00 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
@@ -1897,7 +1914,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Maya Kaczorowski', speakers2022),
 			},
 			{
-				title: 'Zed Text Editor',
+				title: 'Zed: Collaborative coding at the speed of light',
 				scheduleOrder: 16,
 				description: '',
 				start: {
@@ -1970,7 +1987,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Shawn Wang', speakers2022),
 			},
 			{
-				title: 'Community: Your distributed debugging machine',
+				title: 'Peer Learning: Your developer adoption safety net',
 				scheduleOrder: 19,
 				description: '',
 				start: {
@@ -2014,7 +2031,7 @@ const stages2022: Stage[] = [
 					pt: '11:15 AM',
 				},
 				ytId: '',
-				speaker: getSpeakerByName('Ant Wilson', speakers2022),
+				speaker: getSpeakerByName('Inian Parameshwaran', speakers2022),
 			},
 			{
 				title: 'Make a world-class integration testing library',
@@ -2636,6 +2653,14 @@ const stages2021: Stage[] = [
 	}
 ];
 
+write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021))
+
+speakers2021.forEach((speaker) => {
+	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
+})
+
+write.sync(`${targetPath}/2021/stages.json`, JSON.stringify(stages2021))
+
 write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022))
 
 write.sync(`${targetPath}/2022/stages.json`, JSON.stringify(stages2022))
@@ -2649,11 +2674,3 @@ write.sync(`${targetPath}/2022/hosts.json`, JSON.stringify(hosts2022))
 hosts2022.forEach((host) => {
 	write.sync(`${targetPath}/${stringToBeautifiedFragment(host.name)}.json`, JSON.stringify(host))
 })
-
-write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021))
-
-speakers2021.forEach((speaker) => {
-	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
-})
-
-write.sync(`${targetPath}/2021/stages.json`, JSON.stringify(stages2021))

@@ -36,7 +36,6 @@ export default function Conf({ speakers, hosts }: any) {
           title="Speakers"
           text="Our speakers deeply care about frictionless developer workflows and leverage automation to solve problems."
           speakers={speakers}
-          isFootnoteShown={true}
         />
         <SpeakersGrid 
           title="Your Hosts"
