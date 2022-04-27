@@ -690,6 +690,23 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
+		name: 'Nik Molnar',
+		title: ' Product Director on Codespaces',
+		company: 'GitHub',
+		image: {
+			url: 'nik-molnar.jpg'
+		},
+		bio: `Nik Molnar is the Director of Product on Codespaces at GitHub. He is a father, daddy, baseball player, board gamer, Pluralsight author, lover of the web, and home chef.`,
+		twitter: 'nikmd23',
+		github: 'nikmd23',
+		linkedin: 'nikmd23',
+		abstract: `
+		<p>
+			Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
 		name: 'Johannes Landgraf',
 		title: 'Co-founder & Co-CEO',
 		company: 'Gitpod',
@@ -799,23 +816,6 @@ const speakers2022: Speaker[] = [
 		abstract: `
 		<p>
 		How to onboard people in a day. Companies that drag out onboarding drain the goodwill of new people. Here are dozens of specific, concrete actions to ensure instant productivity from joiners.
-		</p>
-	  `
-	},
-	{
-		name: 'Nik Molnar',
-		title: ' Product Director on Codespaces',
-		company: 'GitHub',
-		image: {
-			url: 'nik-molnar.jpg'
-		},
-		bio: `Nik Molnar is the Director of Product on Codespaces at GitHub. He is a father, daddy, baseball player, board gamer, Pluralsight author, lover of the web, and home chef.`,
-		twitter: 'nikmd23',
-		github: 'nikmd23',
-		linkedin: 'nikmd23',
-		abstract: `
-		<p>
-			Panel talk on remote development.
 		</p>
 	  `
 	},
