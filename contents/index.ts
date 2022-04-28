@@ -739,6 +739,22 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
+		name: 'Christof Marti',
+		title: 'Principal Software Engineer',
+		company: 'Microsoft',
+		image: {
+			url: 'christof-marti.jpeg'
+		},
+		bio: `Christof is the lead software engineer on the dev container project and a member of the VS Code team at Microsoft.`,
+		github: '',
+		linkedin: '',
+		abstract: `
+		<p>
+		Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
 		name: 'Chad Metcalf',
 		title: 'Building a Self Hosted Business',
 		company: 'Gitpod',
@@ -782,6 +798,21 @@ const speakers2022: Speaker[] = [
 		
 		At Veepee, Arnaud has scaled a team of 350 to a European-wide organization of 900. He realized there how unequipped were engineering leaders to make data informed decisions and effectively communicate on their teams' activity in a way that their business partners and bosses could understand.`,
 		twitter: 'arnaudporterie',
+		abstract: `
+		<p>
+		Panel talk on a history and how Docker thought about DevX.
+		</p>
+	  `
+	},
+	{
+		name: 'Andrea Luzzardi',
+		title: 'Co-Founder',
+		company: 'Dagger',
+		image: {
+			url: 'andrea-luzzardi.png'
+		},
+		bio: `Co-Founder at Dagger. Previously engineering at Docker, Google & Microsoft.`,
+		twitter: 'aluzzardi',
 		abstract: `
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
