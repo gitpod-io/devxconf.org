@@ -746,8 +746,6 @@ const speakers2022: Speaker[] = [
 			url: 'christof-marti.jpeg'
 		},
 		bio: `Christof is the lead software engineer on the dev container project and a member of the VS Code team at Microsoft.`,
-		github: '',
-		linkedin: '',
 		abstract: `
 		<p>
 		Panel talk on remote development.
@@ -817,7 +815,7 @@ const speakers2022: Speaker[] = [
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
 		</p>
-	  `
+	  	`
 	},
 	{
 		name: 'Shanea Leven',
@@ -1744,7 +1742,7 @@ const stages2022: Stage[] = [
 					pt: '9:00 AM',
 				},
 				ytId: '',
-				speaker: 'Kirill Skrygan, Sven Efftinge, Nik Molnar, Johannes Landgraf',
+				speaker: 'Kirill Skrygan, Sven Efftinge, Nik Molnar, Christof Marti, Johannes Landgraf',
 			},
 			{
 				title: 'Maybe Its Time to Rethink How Youve Been Developing?',
