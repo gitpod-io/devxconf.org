@@ -1742,7 +1742,7 @@ const stages2022: Stage[] = [
 					pt: '9:00 AM',
 				},
 				ytId: '',
-				speaker: 'Kirill Skrygan, Sven Efftinge, Nik Molnar, Christof Marti, Johannes Landgraf',
+				speaker: 'Kirill Skrygan, Christian Weichel, Nik Molnar, Christof Marti, Johannes Landgraf',
 			},
 			{
 				title: 'Maybe Its Time to Rethink How Youve Been Developing?',
