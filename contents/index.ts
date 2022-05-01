@@ -657,7 +657,7 @@ const speakers2022: Speaker[] = [
 			</p>
 			
 			<p>
-				He's been dreaming about building the world’s best text editor since he graduated from college, and is excited to finally have the knowledge, tools, and resources to achieve this vision.
+				He's been dreaming about building the world’s best text editor since he graduated from college, and is excited to finally have the knowledge, tools, and resources to achieve this vision. 
 			</p>
 			</div>
 		`,
@@ -667,7 +667,7 @@ const speakers2022: Speaker[] = [
 		<div>
 			<p>Zed: Collaborative coding at the speed of light</p>
 			<p>
-				Zed is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
+				<a href="https://zed.dev" >Zed</a> is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
 			</p>
 		</div>
 	  `
@@ -1801,8 +1801,8 @@ const stages2022: Stage[] = [
 					pt: '10:30 AM',
 				},
 				end: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '8:15 PM',
+					pt: '11:15 AM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
@@ -1812,8 +1812,8 @@ const stages2022: Stage[] = [
 				scheduleOrder: 7,
 				description: '',
 				start: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '8:15 PM',
+					pt: '11:15 AM',
 				},
 				end: {
 					cest: '9:00 PM',
@@ -2084,7 +2084,7 @@ const stages2022: Stage[] = [
 				description: '',
 				start: {
 					cest: '9:00 PM',
-					pt: '12:15 AM',
+					pt: '12:00 AM',
 				},
 				end: {
 					cest: '9:30 PM',
