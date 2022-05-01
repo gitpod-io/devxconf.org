@@ -1801,8 +1801,8 @@ const stages2022: Stage[] = [
 					pt: '10:30 AM',
 				},
 				end: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '8:15 PM',
+					pt: '11:15 AM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
@@ -1812,8 +1812,8 @@ const stages2022: Stage[] = [
 				scheduleOrder: 7,
 				description: '',
 				start: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '8:15 PM',
+					pt: '11:15 AM',
 				},
 				end: {
 					cest: '9:00 PM',
