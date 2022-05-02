@@ -77,7 +77,7 @@ export default function StageContainer({ stages, isNew = false }: Props) {
                 ></iframe>
               </div>
               {isNew ? (
-                <iframe ref={liveChat} className={styles.chat} frameborder="0"></iframe>
+                <iframe ref={liveChat} className={styles.chat} frameBorder="0"></iframe>
               ) : null}
             </div>
           </div>
