@@ -1823,6 +1823,22 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
 			},
 			{
+				title: 'Code Reviews is more than a crushing Developer Experience',
+				scheduleOrder: 23,
+				description: '',
+				start: {
+					cest: '9:00 PM',
+					pt: '12:00 AM',
+				},
+				end: {
+					cest: '9:30 PM',
+					pt: '12:30 PM',
+				},
+				ytId: '',
+				// 	// @ts-ignore
+				speaker: getSpeakerByName('Shanea Leven', speakers2022),
+			},
+			{
 				title: 'Conclude Day 1',
 				scheduleOrder: 9,
 				description: '',
@@ -2078,22 +2094,6 @@ const stages2022: Stage[] = [
 				// @ts-ignore
 				speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
 			},
-			{
-				title: 'Code Reviews is more than a crushing Developer Experience',
-				scheduleOrder: 23,
-				description: '',
-				start: {
-					cest: '9:00 PM',
-					pt: '12:00 AM',
-				},
-				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				ytId: '',
-				// 	// @ts-ignore
-				speaker: getSpeakerByName('Shanea Leven', speakers2022),
-			}
 		]
 	},
 	{
