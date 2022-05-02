@@ -20,33 +20,37 @@
 // import Link from 'next/link';
 import ScheduleSidebar from './schedule-sidebar';
 import { Stage } from '@lib/types';
-// import cn from 'classnames';
+import cn from 'classnames';
 // import { hyphenate } from './speakers-grid';
 import styles from './stage-container.module.css';
-import { useEffect } from 'react';
+import { createRef, useEffect } from 'react';
 import { useRouter } from 'next/router';
-import useSWR from 'swr';
 
 type Props = {
   stage?: Stage;
   stages?: Stage[];
+  isNew?: boolean;
 };
 
-export default function StageContainer({ stage, stages }: Props) {
+export default function StageContainer({ stages, isNew = false }: Props) {
   const slug = useRouter().query.slug || 'a';
-
-  const response = useSWR('/api/stages', {
-    initialData: stages,
-    refreshInterval: 5000
-  });
+  const streamId = stages?.find(s => s.slug === slug)?.stream;
+  const liveChat = createRef();
 
   useEffect(() => {
     const main = document.querySelector('main');
     const footer = document.querySelector('footer');
+    if (isNew) {
+      main.style.marginTop = 'var(--gutter-huge)';
+    } else {
+      document.body.classList.add('full');
+      main?.classList.add('stage-main');
+      footer?.classList.add('stage-footer');
+    }
 
-    document.body.classList.add('full');
-    main?.classList.add('stage-main');
-    footer?.classList.add('stage-footer');
+    if (liveChat.current) {
+      liveChat.current.src = `https://www.youtube.com/live_chat?v=${streamId}&embed_domain=${window.location.hostname}`;
+    }
 
     return () => {
       document.body.classList.remove('full');
@@ -55,47 +59,31 @@ export default function StageContainer({ stage, stages }: Props) {
     };
   });
 
-  const updatedStages = response.data || [];
-  const updatedStage = updatedStages.find((s: Stage) => s.slug === slug) || stage;
   return (
-    <div className={styles.row}>
-      <div className={styles.container}>
-        <div className={styles.streamContainer}>
-          <div className={styles.stream}>
-            <div className={styles.yt}>
-              <iframe
-                src={`https://www.youtube.com/embed/aI-L72XGznU?autoplay=1&amp;mute=1`}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
+    <>
+      <div className={cn(styles.row, !isNew && styles.height)}>
+        <div className={cn(styles.container, !isNew && styles.height)}>
+          <div className={cn(styles.streamContainer, !isNew && styles.height)}>
+            <div className={styles.stream}>
+              <div className={styles.yt}>
+                <iframe
+                  src={`https://www.youtube.com/embed/${streamId}?autoplay=1&amp;mute=1`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className={styles.video}
+                  style={isNew ? {height: '65vh', minHeight: '550px'} : {}}
+                ></iframe>
+              </div>
+              {isNew ? (
+                <iframe ref={liveChat} className={styles.chat} frameBorder="0"></iframe>
+              ) : null}
             </div>
-            {/* <div className={styles.bottom}>
-                 <div className={styles.messageContainer}>
-                   <h2 className="heading-tertiary">{updatedStage.name}</h2>
-                   {updatedStage.description ? <p>{updatedStage.description}</p> : null}
-                 </div>
-                 <div className={styles['btn-container']}>
-                   <a
-                     target="_blank"
-                     href="https://discord.gg/JP9bWxNbwS"
-                     rel="noopener noreferrer"
-                     className={cn('btn btn--big', styles['chat-button'])}
-                   >
-                     Join Live Chat <DiscordLogo />
-                   </a>
-                   {updatedStage.speaker ? (
-                     <Link href={`/speakers/${hyphenate(updatedStage.speaker)}`}>
-                       <a className="btn btn--secondary">See Speaker Profile</a>
-                     </Link>
-                   ) : null}
-                 </div>
-               </div> */}
           </div>
+          <ScheduleSidebar stages={stages} />
         </div>
-        <ScheduleSidebar stages={stages} />
       </div>
-    </div>
+    </>
   );
 }

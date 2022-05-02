@@ -2188,7 +2188,7 @@ const stages2021: Stage[] = [
 		day: 'Wednesday, April 28',
 		discord: '',
 		slug: 'a',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: 'Intro',
@@ -2359,7 +2359,7 @@ const stages2021: Stage[] = [
 		day: 'Thursday, April 29',
 		discord: '',
 		slug: 'a',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: "VSCode Power User Tips & Tricks",
@@ -2479,7 +2479,7 @@ const stages2021: Stage[] = [
 		day: 'Wednesday, April 28',
 		discord: '',
 		slug: 'b',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: 'Using Observability to improve the Developer Experience',
@@ -2582,7 +2582,7 @@ const stages2021: Stage[] = [
 		day: 'Thursday, April 29',
 		discord: '',
 		slug: 'b',
-		stream: '',
+		stream: 'aI-L72XGznU',
 		schedule: [
 			{
 				title: 'Building Supabase Storage. DevX, performance, security - choose three',
