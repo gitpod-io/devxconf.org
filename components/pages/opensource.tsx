@@ -84,10 +84,8 @@ const Diversity = () => (
               <li>
                 <b>WE’RE FUNDING OPEN SOURCE</b>
                 <br />
-                – DevX Conf is a non-profit event. Every surplus and $500 for each Gold Sponsor will
-                be donated.
-                <br />– For every registration to our discord channel we’ll donate $1 to open-source
-                projects we depend upon.
+                – DevX Conf is funding open-source and you get to decide how funds are distributed.
+                <br />- DevX Conf is a non-profit event. Every surplus is donated.
               </li>
               <li>
                 Sharing our experiences with funding open-source projects and insights for

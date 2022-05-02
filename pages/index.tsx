@@ -19,7 +19,7 @@ import Page from '@components/page';
 import Layout from '@components/layout';
 import StageContainer from '@components/stage-container';
 
-export default function Conf({stages}: any) {
+export default function Conf({ stages }: any) {
   const meta = {
     title: SITE_NAME,
     description: META_DESCRIPTION
@@ -38,6 +38,6 @@ export async function getServerSideProps() {
   const stages = await req.json();
 
   return {
-      props: { stages },
-  }
+    props: { stages }
+  };
 }

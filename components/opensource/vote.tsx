@@ -12,7 +12,7 @@ const Vote = () => (
         <p>
           Last year the following opensource projects were supported with {' '}
           <span className={styles.imp}>USD $10,000</span>
-          {' '} using <a href="https://wtfisqf.com/">Quadratic Funding</a> and the distribution of votes by the attendes. 🦄{' '}
+          {' '} using <a href="https://wtfisqf.com/">Quadratic Funding</a> and the distribution of votes by the attendes. This year we are doing it again and thanks to support from <a href="https://devxconf.org/expo">our partners</a> the amount has increased to €21,500 EUR 🦄{' '}
         </p>
       </div>
       <div className={styles.projects}>

@@ -13,7 +13,7 @@ export default function Conf({ stages }: any) {
       <Schedule
         intro={
           <>
-            The conference starts May 2nd {isEurope() ? '4:00 PM CEST' : '7:00 AM PT'}.
+            The conference starts May 2nd {isEurope() ? '5:00 PM CEST' : '8:00 AM PT'}.
           </>
         }
         allStages={stages}

@@ -198,7 +198,7 @@ const speakers2022: Speaker[] = [
 		abstract: `
 		<div>
 		  <p>
-			<strong>"Peer Support: Your distributed debugging machine"</strong>
+			<strong>"Peer Learning: Your developer adoption safety net"</strong>
 		  </p>
 		  <div>
 			When we try to get other developers to adopt our projects, we’re asking them to take on a
@@ -426,24 +426,21 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
-		name: 'Ant Wilson',
-		title: 'Co-Founder & CTO',
+		name: 'Inian Parameshwaran',
 		company: 'Supabase',
+		title: 'Senior Software Engineer',
 		image: {
-			url: 'ant-wilson.jpg'
+			url: 'inian.jpeg'
 		},
 		bio:
-			'Co-Founder, CTO, and Chief Meme Officer at Supabase. Ant is a 3x venture backed founder with an MSc in Software Engineering from Imperial College London.',
-		twitter: 'antwilson',
-		linkedin: 'anthony-wilson-46179937',
-		github: 'awalias',
+			'Inian Parameshwaran is a Senior Software Engineer at Supabase, an open-source Firebase alternative. He likes chocolates, working on developer tools and is passionate about security and performance. Previously, he founded a venture backed startup which helps speed up websites automatically. Did I mention he likes chocolates?',
+		twitter: 'everconfusedguy',
+		linkedin: 'inianp',
+		github: 'inian',
 		abstract: `
 		<div>
 		  <p>
-			Ant explores how the Supabase architecture enables "Supa"-DX. Open source and modular
-			technology choices enable Supabase to lower the barrier to deploying backends for your
-			apps and services. We'll explore all the major DX touch points within Supabase, and how we
-			obsess about improving them constantly.
+		  Supabase launched Edge Functions recently. This talk is a peek behind the curtains about how Supabase approaches Developer Experience. A lot of decisions went into ensuring that authoring and deploying functions on Supabase is as seamless as possible and I go over some of the tradeoffs we took. 
 		  </p>
 		</div>
 	  `
@@ -594,27 +591,6 @@ const speakers2022: Speaker[] = [
 	  `
 	},
 	{
-		name: 'Ulf Schwekendiek',
-		title: ' Founder and CEO',
-		company: 'Centered',
-		image: {
-			url: 'ulf-schwekendiek.jpg'
-		},
-		bio:
-			'<b>Ulf Schwekendiek</b> is the Founder and CEO of <b>Centered</b>.  Prior to <b>Centered</b>, Ulf was part of numerous product and engineering teams, including being the first mobile engineer at <b>Siri</b> before it was acquired by <b>Apple</b>.  He was a co-founder of <b>Ditto</b> which was acquired by <b>Groupon</b> and an engineer at <b>Autodesk</b>, <b>Descript</b>, <b>Detour</b>, and <b>Groupon</b>.  Prior to this, Ulf earned his Masters in Integrated Digital Media from NYU. Most recently, after leaving his post as an Engineer Lead at <b>Postmates</b>, Ulf reflected on his daily work and how he accomplished it.  He devoured books, blogs, and videos to better understand how to improve productivity and use his time mindfully.  This thoughtfulness became his next venture: <b>Centered</b>.  After designing the platform and building a team that shares the same passion for achieving mindfulness at work, Ulf launched <b>Centered</b> in early 2020.',
-		twitter: 'sulf',
-		linkedin: 'sulfme',
-		github: 'sulf',
-		abstract: `
-		<div>
-		  <p>
-			Flow States and how you can achieve at least 30% more in a day with these top productivity
-			frameworks.
-		  </p>
-		</div>
-	  `
-	},
-	{
 		name: 'Maya Kaczorowski',
 		title: 'Product Manager',
 		company: 'Tailscale',
@@ -681,16 +657,19 @@ const speakers2022: Speaker[] = [
 			</p>
 			
 			<p>
-				He's been dreaming about building the world’s best text editor since he graduated from college, and is excited to finally have the knowledge, tools, and resources to achieve this vision.
+				He's been dreaming about building the world’s best text editor since he graduated from college, and is excited to finally have the knowledge, tools, and resources to achieve this vision. 
 			</p>
 			</div>
 		`,
 		twitter: 'nathansobo',
 		github: 'nathansobo',
 		abstract: `
-		<p>
-			Zed is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
-		</p>
+		<div>
+			<p>Zed: Collaborative coding at the speed of light</p>
+			<p>
+				<a href="https://zed.dev" >Zed</a> is a fast, collaborative code editor created by the same team that brought you GitHub's Atom editor, and we're preparing to launch a private alpha in the coming weeks. In this talk, I l will demo Zed publicly for the first time and explore its unique features as well as interesting aspects of its implementation. This includes our use of conflict-free replicated data types, our custom hardware-accelerated UI framework, and the unique testing strategies we've devised to make collaborative code editing "just work".
+			</p>
+		</div>
 	  `
 	},
 	{
@@ -704,6 +683,23 @@ const speakers2022: Speaker[] = [
 		twitter: 'kskrygan',
 		github: 'kskrygan',
 		linkedin: 'kirill-skrygan-7b86073a',
+		abstract: `
+		<p>
+			Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
+		name: 'Nik Molnar',
+		title: ' Product Director on Codespaces',
+		company: 'GitHub',
+		image: {
+			url: 'nik-molnar.jpg'
+		},
+		bio: `Nik Molnar is the Director of Product on Codespaces at GitHub. He is a father, daddy, baseball player, board gamer, Pluralsight author, lover of the web, and home chef.`,
+		twitter: 'nikmd23',
+		github: 'nikmd23',
+		linkedin: 'nikmd23',
 		abstract: `
 		<p>
 			Panel talk on remote development.
@@ -736,6 +732,20 @@ const speakers2022: Speaker[] = [
 		bio: `Sven is a Co-founder and Co-CEO of Gitpod. Before Gitpod he built and designed other development tools and programming languages. In his spare time he enjoys living at and kitesurfing on the baltic sea.`,
 		twitter: 'svenefftinge',
 		github: 'svenefftinge',
+		abstract: `
+		<p>
+		Panel talk on remote development.
+		</p>
+	  `
+	},
+	{
+		name: 'Christof Marti',
+		title: 'Principal Software Engineer',
+		company: 'Microsoft',
+		image: {
+			url: 'christof-marti.jpeg'
+		},
+		bio: `Christof is the lead software engineer on the dev container project and a member of the VS Code team at Microsoft.`,
 		abstract: `
 		<p>
 		Panel talk on remote development.
@@ -791,6 +801,21 @@ const speakers2022: Speaker[] = [
 		Panel talk on a history and how Docker thought about DevX.
 		</p>
 	  `
+	},
+	{
+		name: 'Andrea Luzzardi',
+		title: 'Co-Founder',
+		company: 'Dagger',
+		image: {
+			url: 'andrea-luzzardi.png'
+		},
+		bio: `Co-Founder at Dagger. Previously engineering at Docker, Google & Microsoft.`,
+		twitter: 'aluzzardi',
+		abstract: `
+		<p>
+		Panel talk on a history and how Docker thought about DevX.
+		</p>
+	  	`
 	},
 	{
 		name: 'Shanea Leven',
@@ -1717,7 +1742,7 @@ const stages2022: Stage[] = [
 					pt: '9:00 AM',
 				},
 				ytId: '',
-				speaker: 'Kirill Skrygan, Sven Efftinge, Nik Molnar, Johannes Landgraf',
+				speaker: 'Kirill Skrygan, Christian Weichel, Nik Molnar, Christof Marti, Johannes Landgraf',
 			},
 			{
 				title: 'Maybe Its Time to Rethink How Youve Been Developing?',
@@ -1752,7 +1777,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
 			},
 			{
-				title: 'Building auto-complete for the terminal',
+				title: 'Fig: Autocomplete for the Terminal',
 				scheduleOrder: 5,
 				description: '',
 				start: {
@@ -1760,8 +1785,8 @@ const stages2022: Stage[] = [
 					pt: '10:00 AM',
 				},
 				end: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '7:30 PM',
+					pt: '10:30 AM',
 				},
 				ytId: '',
 				// @ts-ignore
@@ -1772,12 +1797,12 @@ const stages2022: Stage[] = [
 				scheduleOrder: 6,
 				description: '',
 				start: {
-					cest: '8:00 PM',
-					pt: '11:00 AM',
+					cest: '7:30 PM',
+					pt: '10:30 AM',
 				},
 				end: {
-					cest: '8:45 PM',
-					pt: '11:45 AM',
+					cest: '8:15 PM',
+					pt: '11:15 AM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
@@ -1787,42 +1812,27 @@ const stages2022: Stage[] = [
 				scheduleOrder: 7,
 				description: '',
 				start: {
-					cest: '8:45 PM',
-					pt: '11:45 AM',
+					cest: '8:15 PM',
+					pt: '11:15 AM',
 				},
 				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
+					cest: '9:00 PM',
+					pt: '12:00 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
-			},
-			{
-				title: 'How the Supabase architecture enables "Supa"-DX',
-				scheduleOrder: 8,
-				description: '',
-				start: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				end: {
-					cest: '10:00 PM',
-					pt: '1:00 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Ant Wilson', speakers2022),
 			},
 			{
 				title: 'Conclude Day 1',
 				scheduleOrder: 9,
 				description: '',
 				start: {
-					cest: '10:00 PM',
-					pt: '1:00 PM',
+					cest: '9:30 PM',
+					pt: '12:30 PM',
 				},
 				end: {
-					cest: '10:15 PM',
-					pt: '1:55 PM',
+					cest: '9:40 PM',
+					pt: '12:40 PM',
 				},
 				ytId: '',
 				speaker: [
@@ -1858,8 +1868,8 @@ const stages2022: Stage[] = [
 				],
 			},
 			{
-				title: 'Keynote #2',
-				scheduleOrder: 11,
+				title: 'Panel: DevX Past and Future',
+				scheduleOrder: 12,
 				description: '',
 				start: {
 					cest: '5:15 PM',
@@ -1870,11 +1880,11 @@ const stages2022: Stage[] = [
 					pt: '9:00 AM',
 				},
 				ytId: '',
-				speaker: 'TBC',
+				speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
 			},
 			{
-				title: 'Panel: DevX Past and Future',
-				scheduleOrder: 12,
+				title: 'Remote development in a remote-first world',
+				scheduleOrder: 29,
 				description: '',
 				start: {
 					cest: '6:00 PM',
@@ -1885,7 +1895,7 @@ const stages2022: Stage[] = [
 					pt: '9:45 AM',
 				},
 				ytId: '',
-				speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
+				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
 			},
 			{
 				title: 'The balancing act of delivering high-quality DX',
@@ -1933,7 +1943,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Maya Kaczorowski', speakers2022),
 			},
 			{
-				title: 'Zed Text Editor',
+				title: 'Zed: Collaborative coding at the speed of light',
 				scheduleOrder: 16,
 				description: '',
 				start: {
@@ -2006,7 +2016,7 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Shawn Wang', speakers2022),
 			},
 			{
-				title: 'Community: Your distributed debugging machine',
+				title: 'Peer Learning: Your developer adoption safety net',
 				scheduleOrder: 19,
 				description: '',
 				start: {
@@ -2038,8 +2048,8 @@ const stages2022: Stage[] = [
 				speaker: getSpeakerByName('Amara Graham', speakers2022),
 			},
 			{
-				title: 'Flow States with Centered',
-				scheduleOrder: 21,
+				title: 'How the Supabase architecture enables "Supa"-DX',
+				scheduleOrder: 8,
 				description: '',
 				start: {
 					cest: '7:45 PM',
@@ -2050,8 +2060,7 @@ const stages2022: Stage[] = [
 					pt: '11:15 AM',
 				},
 				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Ulf Schwekendiek', speakers2022),
+				speaker: getSpeakerByName('Inian Parameshwaran', speakers2022),
 			},
 			{
 				title: 'Make a world-class integration testing library',
@@ -2075,7 +2084,7 @@ const stages2022: Stage[] = [
 				description: '',
 				start: {
 					cest: '9:00 PM',
-					pt: '12:15 AM',
+					pt: '12:00 AM',
 				},
 				end: {
 					cest: '9:30 PM',
@@ -2163,26 +2172,11 @@ const stages2022: Stage[] = [
 					pt: '11:15 AM',
 				},
 				end: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
+					cest: '9:15 PM',
+					pt: '12:15 PM',
 				},
 				ytId: '',
 				speaker: getSpeakerByName('Wilson Mar', speakers2022),
-			},
-			{
-				title: 'Remote development in a remote-first world',
-				scheduleOrder: 29,
-				description: '',
-				start: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
-				},
-				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
 			},
 		]
 	}
@@ -2688,6 +2682,14 @@ const stages2021: Stage[] = [
 	}
 ];
 
+write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021))
+
+speakers2021.forEach((speaker) => {
+	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
+})
+
+write.sync(`${targetPath}/2021/stages.json`, JSON.stringify(stages2021))
+
 write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022))
 
 write.sync(`${targetPath}/2022/stages.json`, JSON.stringify(stages2022))
@@ -2701,11 +2703,3 @@ write.sync(`${targetPath}/2022/hosts.json`, JSON.stringify(hosts2022))
 hosts2022.forEach((host) => {
 	write.sync(`${targetPath}/${stringToBeautifiedFragment(host.name)}.json`, JSON.stringify(host))
 })
-
-write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021))
-
-speakers2021.forEach((speaker) => {
-	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
-})
-
-write.sync(`${targetPath}/2021/stages.json`, JSON.stringify(stages2021))
