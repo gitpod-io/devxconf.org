@@ -56,7 +56,7 @@ export default function ScheduleSidebar({ stages }: Props) {
         }}
         isGrey={true}
       >
-        {[stages[0], stages[1]].map(stage => (
+        {[stages[0], stages[2]].map(stage => (
           <option key={stage.slug} value={stage.slug}>
             {stage.name}
           </option>

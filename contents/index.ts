@@ -1704,160 +1704,160 @@ export const isEurope = () => {
 };
 
 const stages2022: Stage[] = [
-	// {
-	// 	name: 'Stage A',
-	// 	day: 'Monday, May 2',
-	// 	discord: '',
-	// 	slug: 'a',
-	// 	stream: 'znKHPTMpGTE',
-	// 	schedule: [
-	// 		{
-	// 			title: 'Welcome to DevX Conf!',
-	// 			scheduleOrder: 1,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '5:00 PM',
-	// 				pt: '8:00 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '5:15 PM',
-	// 				pt: '8:15 AM',
-	// 			},
-	// 			ytId: '',
-	// 			speaker: [
-	// 				// @ts-ignore
-	// 				getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
-	// 			],
-	// 		},
-	// 		{
-	// 			title: 'Panel: Remote development',
-	// 			scheduleOrder: 2,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '5:15 PM',
-	// 				pt: '8:15 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '6:00 PM',
-	// 				pt: '9:00 AM',
-	// 			},
-	// 			ytId: '',
-	// 			speaker: 'Kirill Skrygan, Christian Weichel, Nik Molnar, Christof Marti, Johannes Landgraf',
-	// 		},
-	// 		{
-	// 			title: 'Maybe Its Time to Rethink How Youve Been Developing?',
-	// 			scheduleOrder: 3,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '6:00 PM',
-	// 				pt: '9:00 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '6:30 PM',
-	// 				pt: '9:30 AM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: [getSpeakerByName('Ramiro Berrelleza', speakers2022), getSpeakerByName('Arsh Sharma', speakers2022)],
-	// 		},
-	// 		{
-	// 			title: 'Implementation and use cases of modern rendering patterns',
-	// 			scheduleOrder: 4,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '6:30 PM',
-	// 				pt: '9:30 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '7:00 PM',
-	// 				pt: '10:00 AM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: getSpeakerByName('Lydia Hallie', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Fig: Autocomplete for the Terminal',
-	// 			scheduleOrder: 5,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '7:00 PM',
-	// 				pt: '10:00 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '7:30 PM',
-	// 				pt: '10:30 AM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: getSpeakerByName('Brendan Falk', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'The Next Generation of Developer-First Products',
-	// 			scheduleOrder: 6,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '7:30 PM',
-	// 				pt: '10:30 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '8:15 PM',
-	// 				pt: '11:15 AM',
-	// 			},
-	// 			ytId: '',
-	// 			speaker: getSpeakerByName('Zeno Rocha', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Building DevX Teams, my story',
-	// 			scheduleOrder: 7,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '8:15 PM',
-	// 				pt: '11:15 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '9:00 PM',
-	// 				pt: '12:00 PM',
-	// 			},
-	// 			ytId: '',
-	// 			speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Code Reviews is more than a crushing Developer Experience',
-	// 			scheduleOrder: 23,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '9:00 PM',
-	// 				pt: '12:00 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '9:30 PM',
-	// 				pt: '12:30 PM',
-	// 			},
-	// 			ytId: '',
-	// 			// 	// @ts-ignore
-	// 			speaker: getSpeakerByName('Shanea Leven', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Conclude Day 1',
-	// 			scheduleOrder: 9,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '9:30 PM',
-	// 				pt: '12:30 PM',
-	// 			},
-	// 			end: {
-	// 				cest: '9:40 PM',
-	// 				pt: '12:40 PM',
-	// 			},
-	// 			ytId: '',
-	// 			speaker: [
-	// 				// @ts-ignore
-	// 				getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
-	// 			],
-	// 		},
-	// 	]
-	// },
+	{
+		name: 'Stage A',
+		day: 'Monday, May 2',
+		discord: '',
+		slug: 'a',
+		stream: 'znKHPTMpGTE',
+		schedule: [
+			{
+				title: 'Welcome to DevX Conf!',
+				scheduleOrder: 1,
+				description: '',
+				start: {
+					cest: '5:00 PM',
+					pt: '8:00 AM',
+				},
+				end: {
+					cest: '5:15 PM',
+					pt: '8:15 AM',
+				},
+				ytId: '',
+				speaker: [
+					// @ts-ignore
+					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
+				],
+			},
+			{
+				title: 'Panel: Remote development',
+				scheduleOrder: 2,
+				description: '',
+				start: {
+					cest: '5:15 PM',
+					pt: '8:15 AM',
+				},
+				end: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				ytId: '',
+				speaker: 'Kirill Skrygan, Christian Weichel, Nik Molnar, Christof Marti, Johannes Landgraf',
+			},
+			{
+				title: 'Maybe Its Time to Rethink How Youve Been Developing?',
+				scheduleOrder: 3,
+				description: '',
+				start: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				end: {
+					cest: '6:30 PM',
+					pt: '9:30 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: [getSpeakerByName('Ramiro Berrelleza', speakers2022), getSpeakerByName('Arsh Sharma', speakers2022)],
+			},
+			{
+				title: 'Implementation and use cases of modern rendering patterns',
+				scheduleOrder: 4,
+				description: '',
+				start: {
+					cest: '6:30 PM',
+					pt: '9:30 AM',
+				},
+				end: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
+			},
+			{
+				title: 'Fig: Autocomplete for the Terminal',
+				scheduleOrder: 5,
+				description: '',
+				start: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				end: {
+					cest: '7:30 PM',
+					pt: '10:30 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Brendan Falk', speakers2022),
+			},
+			{
+				title: 'The Next Generation of Developer-First Products',
+				scheduleOrder: 6,
+				description: '',
+				start: {
+					cest: '7:30 PM',
+					pt: '10:30 AM',
+				},
+				end: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
+			},
+			{
+				title: 'Building DevX Teams, my story',
+				scheduleOrder: 7,
+				description: '',
+				start: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				end: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
+			},
+			{
+				title: 'Code Reviews is more than a crushing Developer Experience',
+				scheduleOrder: 23,
+				description: '',
+				start: {
+					cest: '9:00 PM',
+					pt: '12:00 AM',
+				},
+				end: {
+					cest: '9:30 PM',
+					pt: '12:30 PM',
+				},
+				ytId: '',
+				// 	// @ts-ignore
+				speaker: getSpeakerByName('Shanea Leven', speakers2022),
+			},
+			{
+				title: 'Conclude Day 1',
+				scheduleOrder: 9,
+				description: '',
+				start: {
+					cest: '9:30 PM',
+					pt: '12:30 PM',
+				},
+				end: {
+					cest: '9:40 PM',
+					pt: '12:40 PM',
+				},
+				ytId: '',
+				speaker: [
+					// @ts-ignore
+					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
+				],
+			},
+		]
+	},
 	{
 		name: 'Stage A',
 		day: 'Tuesday, May 3',
@@ -2008,94 +2008,94 @@ const stages2022: Stage[] = [
 			},
 		]
 	},
-	// {
-	// 	name: 'Stage B',
-	// 	day: 'Monday, May 2',
-	// 	discord: '',
-	// 	slug: 'b',
-	// 	stream: 'qAiiZtvbwpc',
-	// 	schedule: [
-	// 		{
-	// 			title: 'The Radiating Circles of DevX',
-	// 			scheduleOrder: 18,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '6:00 PM',
-	// 				pt: '9:00 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '6:30 PM',
-	// 				pt: '9:30 AM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: getSpeakerByName('Shawn Wang', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Peer Learning: Your developer adoption safety net',
-	// 			scheduleOrder: 19,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '6:30 PM',
-	// 				pt: '9:30 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '7:00 PM',
-	// 				pt: '10:00 AM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: getSpeakerByName('Ana Hevesi', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Developer Experience and Product-Led Growth (PLG) - how they enable each other and your developer community, seamlessly',
-	// 			scheduleOrder: 20,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '7:00 PM',
-	// 				pt: '10:00 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '7:45 PM',
-	// 				pt: '10:45 AM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: getSpeakerByName('Amara Graham', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'How the Supabase architecture enables "Supa"-DX',
-	// 			scheduleOrder: 8,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '7:45 PM',
-	// 				pt: '10:45 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '8:15 PM',
-	// 				pt: '11:15 AM',
-	// 			},
-	// 			ytId: '',
-	// 			speaker: getSpeakerByName('Inian Parameshwaran', speakers2022),
-	// 		},
-	// 		{
-	// 			title: 'Make a world-class integration testing library',
-	// 			scheduleOrder: 22,
-	// 			description: '',
-	// 			start: {
-	// 				cest: '8:15 PM',
-	// 				pt: '11:15 AM',
-	// 			},
-	// 			end: {
-	// 				cest: '9:00 PM',
-	// 				pt: '12:00 PM',
-	// 			},
-	// 			ytId: '',
-	// 			// @ts-ignore
-	// 			speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
-	// 		},
-	// 	]
-	// },
+	{
+		name: 'Stage B',
+		day: 'Monday, May 2',
+		discord: '',
+		slug: 'b',
+		stream: 'qAiiZtvbwpc',
+		schedule: [
+			{
+				title: 'The Radiating Circles of DevX',
+				scheduleOrder: 18,
+				description: '',
+				start: {
+					cest: '6:00 PM',
+					pt: '9:00 AM',
+				},
+				end: {
+					cest: '6:30 PM',
+					pt: '9:30 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Shawn Wang', speakers2022),
+			},
+			{
+				title: 'Peer Learning: Your developer adoption safety net',
+				scheduleOrder: 19,
+				description: '',
+				start: {
+					cest: '6:30 PM',
+					pt: '9:30 AM',
+				},
+				end: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Ana Hevesi', speakers2022),
+			},
+			{
+				title: 'Developer Experience and Product-Led Growth (PLG) - how they enable each other and your developer community, seamlessly',
+				scheduleOrder: 20,
+				description: '',
+				start: {
+					cest: '7:00 PM',
+					pt: '10:00 AM',
+				},
+				end: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Amara Graham', speakers2022),
+			},
+			{
+				title: 'How the Supabase architecture enables "Supa"-DX',
+				scheduleOrder: 8,
+				description: '',
+				start: {
+					cest: '7:45 PM',
+					pt: '10:45 AM',
+				},
+				end: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				ytId: '',
+				speaker: getSpeakerByName('Inian Parameshwaran', speakers2022),
+			},
+			{
+				title: 'Make a world-class integration testing library',
+				scheduleOrder: 22,
+				description: '',
+				start: {
+					cest: '8:15 PM',
+					pt: '11:15 AM',
+				},
+				end: {
+					cest: '9:00 PM',
+					pt: '12:00 PM',
+				},
+				ytId: '',
+				// @ts-ignore
+				speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
+			},
+		]
+	},
 	{
 		name: 'Stage B',
 		day: 'Tuesday, May 3',
