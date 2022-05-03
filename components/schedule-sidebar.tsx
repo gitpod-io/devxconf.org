@@ -29,7 +29,7 @@ export default function ScheduleSidebar({ stages }: Props) {
   const router = useRouter();
   const [stage, setStage] = useState(router.query.slug || 'a');
   // const currentStage = stages.find((s: Stage) => s.slug === stage);
-  const [day, setDay] = useState(stages[0].day);
+  const [day, setDay] = useState(stages[1].day);
   const currentStageDaysSchedules = stages.filter((s: Stage) => s.slug === stage) || [];
   const uniqueDayStrings = currentStageDaysSchedules.map((s: Stage) => s.day);
 
