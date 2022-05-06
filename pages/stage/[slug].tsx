@@ -35,7 +35,7 @@
    return (
      <Page meta={meta} fullViewport>
        <Layout>
-         <StageContainer stages={stages} isNew={true} />
+         <StageContainer stages={stages} />
        </Layout>
      </Page>
    );
