@@ -2,26 +2,26 @@
 import write from 'write';
 import { dirname } from 'path';
 
-import { fileURLToPath } from 'url'
+import { fileURLToPath } from 'url';
 import { Speaker, Stage } from '@lib/types';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const targetPath = __dirname.replace("contents", "public") + "/json";
+const targetPath = __dirname.replace('contents', 'public') + '/json';
 
 const speakers2022: Speaker[] = [
-	{
-		name: 'Shawn Wang',
-		title: 'Head of DX',
-		company: 'Temporal',
-		image: {
-			url: 'swyx.jpg'
-		},
-		bio:
-			'swyx has worked on React and serverless JavaScript at Two Sigma, Netlify and AWS, and now serves as Head of Developer Experience at Temporal.io. He has started and run communities for hundreds of thousands of developers, like Svelte Society, /r/reactjs, and the React TypeScript Cheatsheet. His nontechnical writing was recently published in the Coding Career Handbook for Junior to Senior developers.',
-		twitter: 'swyx',
-		linkedin: 'shawnswyxwang',
-		github: 'sw-yx',
-		abstract: `
+  {
+    name: 'Shawn Wang',
+    title: 'Head of DX',
+    company: 'Temporal',
+    image: {
+      url: 'swyx.jpg'
+    },
+    bio:
+      'swyx has worked on React and serverless JavaScript at Two Sigma, Netlify and AWS, and now serves as Head of Developer Experience at Temporal.io. He has started and run communities for hundreds of thousands of developers, like Svelte Society, /r/reactjs, and the React TypeScript Cheatsheet. His nontechnical writing was recently published in the Coding Career Handbook for Junior to Senior developers.',
+    twitter: 'swyx',
+    linkedin: 'shawnswyxwang',
+    github: 'sw-yx',
+    abstract: `
 		<div>
 		  <p>
 			<strong>The Radiating Circles of DevX</strong>
@@ -39,20 +39,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Zeno Rocha',
-		title: 'VP of Developer Experience',
-		company: 'WorkOS',
-		image: {
-			url: 'zeno-rocha.png'
-		},
-		bio:
-			"Zeno Rocha is a Brazilian creator and programmer. He currently lives in Los Angeles, California, where he's the VP of Developer Experience at WorkOS. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
-		twitter: 'zenorocha',
-		linkedin: 'zenorocha',
-		github: 'zenorocha',
-		abstract: `
+  },
+  {
+    name: 'Zeno Rocha',
+    title: 'VP of Developer Experience',
+    company: 'WorkOS',
+    image: {
+      url: 'zeno-rocha.png'
+    },
+    bio:
+      "Zeno Rocha is a Brazilian creator and programmer. He currently lives in Los Angeles, California, where he's the VP of Developer Experience at WorkOS. His lifelong appreciation for building software and sharing knowledge led him to speak in over 110 conferences worldwide. His passion for open source put him on the top 20 most active users on GitHub at age 22. Before moving to the US, Zeno developed multiple applications, mentored startups, and worked at major companies in Latin America, such as Globo and Petrobras.",
+    twitter: 'zenorocha',
+    linkedin: 'zenorocha',
+    github: 'zenorocha',
+    abstract: `
 		<div>
 		  <p>
 			<strong>The Next Generation of Developer-First Products</strong>
@@ -64,20 +64,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Himanshu Mishra',
-		title: 'Developer Advocate',
-		company: 'Spotify',
-		image: {
-			url: 'himanshu-mishra.png'
-		},
-		bio:
-			'Himanshu is a Developer Advocate at Spotify working on backstage.io, previously an engineer and a core contributor to the project. He lives by "Happy Developers write happy code" and he loves advocating for Backstage and its impact on improving Developer Experience.',
-		twitter: 'OrkoHunter',
-		linkedin: 'OrkoHunter',
-		github: 'OrkoHunter',
-		abstract: `
+  },
+  {
+    name: 'Himanshu Mishra',
+    title: 'Developer Advocate',
+    company: 'Spotify',
+    image: {
+      url: 'himanshu-mishra.png'
+    },
+    bio:
+      'Himanshu is a Developer Advocate at Spotify working on backstage.io, previously an engineer and a core contributor to the project. He lives by "Happy Developers write happy code" and he loves advocating for Backstage and its impact on improving Developer Experience.',
+    twitter: 'OrkoHunter',
+    linkedin: 'OrkoHunter',
+    github: 'OrkoHunter',
+    abstract: `
 		<div>
 		  <p>
 			<strong>How Spotify engineers use Backstage daily and keep their lives simple</strong>
@@ -106,20 +106,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Ramiro Berrelleza',
-		company: 'Okteto',
-		title: 'Founder and CEO',
-		image: {
-			url: 'ramiro-berrelleza.png'
-		},
-		bio:
-			'Ramiro Berrelleza is one of the founders of Okteto. He has spent most of his career (and his free time) building cloud services and developer tools. Before starting Okteto, Ramiro was an Architect at Atlassian and a Software Engineer at Microsoft Azure. Originally from Mexico, he currently lives in the Bay Area.',
-		twitter: 'rberrelleza',
-		linkedin: 'ramiroberrelleza',
-		github: 'rberrelleza',
-		abstract: `
+  },
+  {
+    name: 'Ramiro Berrelleza',
+    company: 'Okteto',
+    title: 'Founder and CEO',
+    image: {
+      url: 'ramiro-berrelleza.png'
+    },
+    bio:
+      'Ramiro Berrelleza is one of the founders of Okteto. He has spent most of his career (and his free time) building cloud services and developer tools. Before starting Okteto, Ramiro was an Architect at Atlassian and a Software Engineer at Microsoft Azure. Originally from Mexico, he currently lives in the Bay Area.',
+    twitter: 'rberrelleza',
+    linkedin: 'ramiroberrelleza',
+    github: 'rberrelleza',
+    abstract: `
 		<div>
 		  <p>
 			Over the last five years, there has been a huge shift in the way applications get deployed
@@ -145,20 +145,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Arsh Sharma',
-		company: 'Okteto',
-		title: 'Developer Experience Engineer',
-		image: {
-			url: 'arsh-sharma.jpeg'
-		},
-		bio:
-			'Arsh is a Developer Experience Engineer at Okteto. He is active in the open-source community and has contributed to multiple CNCF projects, including Kubernetes, cert-manager, and Kyverno. He received the Kubernetes Contributor Award for his contributions to the project last year. He loves simplifying technical concepts through his blogs and is also fond of sharing his experiences at conferences.',
-		twitter: 'rinkiyakedad',
-		linkedin: 'arsh4',
-		github: 'RinkiyaKeDad',
-		abstract: `
+  },
+  {
+    name: 'Arsh Sharma',
+    company: 'Okteto',
+    title: 'Developer Experience Engineer',
+    image: {
+      url: 'arsh-sharma.jpeg'
+    },
+    bio:
+      'Arsh is a Developer Experience Engineer at Okteto. He is active in the open-source community and has contributed to multiple CNCF projects, including Kubernetes, cert-manager, and Kyverno. He received the Kubernetes Contributor Award for his contributions to the project last year. He loves simplifying technical concepts through his blogs and is also fond of sharing his experiences at conferences.',
+    twitter: 'rinkiyakedad',
+    linkedin: 'arsh4',
+    github: 'RinkiyaKeDad',
+    abstract: `
 		<div>
 		  <p>
 			Over the last five years, there has been a huge shift in the way applications get deployed
@@ -184,18 +184,18 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Ana Hevesi',
-		title: 'Devtools UX Researcher',
-		image: {
-			url: 'ana-hevesi.jpg'
-		},
-		bio:
-			'Ana Hevesi provides DX research services to inform DevRel and product strategy as an independent consultant. Previously, Ana shipped platform updates to ease tensions between Stack Overflow users, launched the first Node.js hosting platform, helped the Filecoin team prepare for outside contributors, and conducted user research at MongoDB. ',
-		twitter: 'anthrocypher',
-		linkedin: 'ananoemi',
-		abstract: `
+  },
+  {
+    name: 'Ana Hevesi',
+    title: 'Devtools UX Researcher',
+    image: {
+      url: 'ana-hevesi.jpg'
+    },
+    bio:
+      'Ana Hevesi provides DX research services to inform DevRel and product strategy as an independent consultant. Previously, Ana shipped platform updates to ease tensions between Stack Overflow users, launched the first Node.js hosting platform, helped the Filecoin team prepare for outside contributors, and conducted user research at MongoDB. ',
+    twitter: 'anthrocypher',
+    linkedin: 'ananoemi',
+    abstract: `
 		<div>
 		  <p>
 			<strong>"Peer Learning: Your developer adoption safety net"</strong>
@@ -212,20 +212,20 @@ const speakers2022: Speaker[] = [
 		  </div>
 		</div>
 	  `
-	},
-	{
-		name: 'Amara Graham',
-		company: 'Camunda',
-		title: 'Head of Developer Experience',
-		image: {
-			url: 'amara-graham.jpg'
-		},
-		bio:
-			'Amara is the Head of Developer Experience at Camunda. Before her step into developer relations, she was an enterprise web application developer focusing on line of business applications and assisting developers across various teams on implementing proprietary and open source solutions. She’s passionate about UX, technical communities (both online and offline) and excited to see where advances in AI take us. In her spare time, she experiments in the kitchen and plays video games.',
-		twitter: 'missamarakay',
-		linkedin: 'amara-graham',
-		github: 'akeller',
-		abstract: `
+  },
+  {
+    name: 'Amara Graham',
+    company: 'Camunda',
+    title: 'Head of Developer Experience',
+    image: {
+      url: 'amara-graham.jpg'
+    },
+    bio:
+      'Amara is the Head of Developer Experience at Camunda. Before her step into developer relations, she was an enterprise web application developer focusing on line of business applications and assisting developers across various teams on implementing proprietary and open source solutions. She’s passionate about UX, technical communities (both online and offline) and excited to see where advances in AI take us. In her spare time, she experiments in the kitchen and plays video games.',
+    twitter: 'missamarakay',
+    linkedin: 'amara-graham',
+    github: 'akeller',
+    abstract: `
 		<div>
 		  <p>
 			<strong>
@@ -253,20 +253,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Layla Porter',
-		company: 'VMware',
-		title: '.NET Developer Advocate',
-		image: {
-			url: 'layla-porter.jpg'
-		},
-		bio:
-			'Layla is a Developer Advocate at VMware serving the .NET community. She is a Live Coder on Twitch, a Microsoft MVP, a GitHub Star, and the founder of the #WomenOfDotNet Initiative. Layla loves sharing knowledge whilst having fun. No question is stupid and beginners are always welcome.',
-		twitter: 'LaylaCodesIt',
-		linkedin: 'layla-porter',
-		github: 'Layla-p',
-		abstract: `
+  },
+  {
+    name: 'Layla Porter',
+    company: 'VMware',
+    title: '.NET Developer Advocate',
+    image: {
+      url: 'layla-porter.jpg'
+    },
+    bio:
+      'Layla is a Developer Advocate at VMware serving the .NET community. She is a Live Coder on Twitch, a Microsoft MVP, a GitHub Star, and the founder of the #WomenOfDotNet Initiative. Layla loves sharing knowledge whilst having fun. No question is stupid and beginners are always welcome.',
+    twitter: 'LaylaCodesIt',
+    linkedin: 'layla-porter',
+    github: 'Layla-p',
+    abstract: `
 		<div>
 		  <p>
 			<strong>TDD and the Terminator - An introduction to Test Driven Development</strong>
@@ -290,15 +290,15 @@ const speakers2022: Speaker[] = [
 		  <p>Hasta La Vista badly-written code!</p>
 		</div>
 	  `
-	},
-	{
-		name: 'Cirpo Cinelli',
-		company: '',
-		title: 'DevX Engineering Manager',
-		image: {
-			url: 'alessandro-cinelli.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Cirpo Cinelli',
+    company: '',
+    title: 'DevX Engineering Manager',
+    image: {
+      url: 'alessandro-cinelli.jpeg'
+    },
+    bio: `
 		<div>
 		  <p>
 			Alessandro Cinelli (a.k.a. cirpo), Engineering Manager in London, loves building and
@@ -310,10 +310,10 @@ const speakers2022: Speaker[] = [
 		  <p>He is passionate about Lego, music, devx, communities, management, and people.</p>
 		</div>
 	  `,
-		twitter: 'cirpo',
-		linkedin: 'cirpo',
-		github: 'cirpo',
-		abstract: `
+    twitter: 'cirpo',
+    linkedin: 'cirpo',
+    github: 'cirpo',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Building a DevX team, my story</strong>
@@ -327,33 +327,34 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Brendan Falk',
-		company: 'Fig',
-		title: 'Co-founder & CEO',
-		image: {
-			url: 'brendan-falk.png'
-		},
-		bio: 'Brendan is co-founder/CEO of Fig. Fig makes the terminal easier for beginners, more productive for advanced engineers, and more collaborative for teams. Fig is backed by YC, General Catalyst, and founders/executives from Stripe, Heroku, Adobe, and GitHub. Brendan graduated from Harvard College in 2020 is originally from Australia.',
-		twitter: 'brendanfalk',
-		linkedin: 'brendanfalk',
-		github: 'brendanfalk',
-		abstract: 'How Fig makes engineers 10x more productive in the terminal.'
-	},
-	{
-		name: 'Victor Savkin',
-		title: 'Co-founder',
-		company: 'Nrwl',
-		image: {
-			url: 'victor-savkin.jpeg'
-		},
-		bio:
-			'Nrwl co-founder, ex-Googler, ex-Angular core. Work on dev tools for TS/JS. Nx and Nx Cloud creator.',
-		twitter: 'victorsavkin',
-		linkedin: 'victorsavkin',
-		github: 'vsavkin',
-		abstract: `
+  },
+  {
+    name: 'Brendan Falk',
+    company: 'Fig',
+    title: 'Co-founder & CEO',
+    image: {
+      url: 'brendan-falk.png'
+    },
+    bio:
+      'Brendan is co-founder/CEO of Fig. Fig makes the terminal easier for beginners, more productive for advanced engineers, and more collaborative for teams. Fig is backed by YC, General Catalyst, and founders/executives from Stripe, Heroku, Adobe, and GitHub. Brendan graduated from Harvard College in 2020 is originally from Australia.',
+    twitter: 'brendanfalk',
+    linkedin: 'brendanfalk',
+    github: 'brendanfalk',
+    abstract: 'How Fig makes engineers 10x more productive in the terminal.'
+  },
+  {
+    name: 'Victor Savkin',
+    title: 'Co-founder',
+    company: 'Nrwl',
+    image: {
+      url: 'victor-savkin.jpeg'
+    },
+    bio:
+      'Nrwl co-founder, ex-Googler, ex-Angular core. Work on dev tools for TS/JS. Nx and Nx Cloud creator.',
+    twitter: 'victorsavkin',
+    linkedin: 'victorsavkin',
+    github: 'vsavkin',
+    abstract: `
 		<div>
 		  <p>
 			<strong>The balancing act of delivering high quality DX</strong>
@@ -371,15 +372,15 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Zach Lloyd',
-		title: 'Founder & CEO',
-		company: 'Warp',
-		image: {
-			url: 'zach-lloyd.png'
-		},
-		bio: `
+  },
+  {
+    name: 'Zach Lloyd',
+    title: 'Founder & CEO',
+    company: 'Warp',
+    image: {
+      url: 'zach-lloyd.png'
+    },
+    bio: `
 		<p>
 		  Zach is currently the CEO and founder of Warp, which is reinventing the terminal, making it
 		  10x more usable for developers and teams. Prior to Warp, he was the interim CTO at TIME,
@@ -388,29 +389,29 @@ const speakers2022: Speaker[] = [
 		  a lot of people. He also loves playing guitar and hanging with his pup Blue.
 		</p>
 	  `,
-		twitter: 'zachlloydtweets',
-		linkedin: 'zachlloyd',
-		abstract: `
+    twitter: 'zachlloydtweets',
+    linkedin: 'zachlloyd',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Warp and the future of the terminal</strong>
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Lydia Hallie',
-		title: 'Staff Developer Advocate',
-		company: 'Vercel',
-		image: {
-			url: 'lydia-hallie.jpeg'
-		},
-		bio:
-			'Lydia Hallie is a Staff Developer Advocate at Vercel who primarily focuses on JavaScript, React, Node, serverless technologies, and web performance. She also spends her time mentoring and doing in-person training sessions.',
-		twitter: 'lydiahallie',
-		linkedin: 'lydia-hallie',
-		github: 'lydiahallie',
-		abstract: `
+  },
+  {
+    name: 'Lydia Hallie',
+    title: 'Staff Developer Advocate',
+    company: 'Vercel',
+    image: {
+      url: 'lydia-hallie.jpeg'
+    },
+    bio:
+      'Lydia Hallie is a Staff Developer Advocate at Vercel who primarily focuses on JavaScript, React, Node, serverless technologies, and web performance. She also spends her time mentoring and doing in-person training sessions.',
+    twitter: 'lydiahallie',
+    linkedin: 'lydia-hallie',
+    github: 'lydiahallie',
+    abstract: `
 		<div>
 		  <p>
 			As modern applications are getting more and more complex, it's quite easy to end up with
@@ -424,40 +425,40 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Inian Parameshwaran',
-		company: 'Supabase',
-		title: 'Senior Software Engineer',
-		image: {
-			url: 'inian.jpeg'
-		},
-		bio:
-			'Inian Parameshwaran is a Senior Software Engineer at Supabase, an open-source Firebase alternative. He likes chocolates, working on developer tools and is passionate about security and performance. Previously, he founded a venture backed startup which helps speed up websites automatically. Did I mention he likes chocolates?',
-		twitter: 'everconfusedguy',
-		linkedin: 'inianp',
-		github: 'inian',
-		abstract: `
+  },
+  {
+    name: 'Inian Parameshwaran',
+    company: 'Supabase',
+    title: 'Senior Software Engineer',
+    image: {
+      url: 'inian.jpeg'
+    },
+    bio:
+      'Inian Parameshwaran is a Senior Software Engineer at Supabase, an open-source Firebase alternative. He likes chocolates, working on developer tools and is passionate about security and performance. Previously, he founded a venture backed startup which helps speed up websites automatically. Did I mention he likes chocolates?',
+    twitter: 'everconfusedguy',
+    linkedin: 'inianp',
+    github: 'inian',
+    abstract: `
 		<div>
 		  <p>
 		  Supabase launched Edge Functions recently. This talk is a peek behind the curtains about how Supabase approaches Developer Experience. A lot of decisions went into ensuring that authoring and deploying functions on Supabase is as seamless as possible and I go over some of the tradeoffs we took. 
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Tarun Pothulapati',
-		title: 'Engineer',
-		company: 'Gitpod',
-		image: {
-			url: 'tarun-pothulapati.jpg'
-		},
-		bio:
-			'Tarun Pothulapati is an Engineer at Gitpod working on democratising cloud developer environments. Previously, He was a maintainer of Linkerd, an open source, CNCF Incubated Service Mesh project. He also spends his time contributing to other OSS projects like Tracing, etc. Apart from work, He’s trying to be a marathon runner, and is a big coffee enthusiast.',
-		twitter: 'tarrooon',
-		linkedin: 'tpothulapati',
-		github: 'pothulapati',
-		abstract: `
+  },
+  {
+    name: 'Tarun Pothulapati',
+    title: 'Engineer',
+    company: 'Gitpod',
+    image: {
+      url: 'tarun-pothulapati.jpg'
+    },
+    bio:
+      'Tarun Pothulapati is an Engineer at Gitpod working on democratising cloud developer environments. Previously, He was a maintainer of Linkerd, an open source, CNCF Incubated Service Mesh project. He also spends his time contributing to other OSS projects like Tracing, etc. Apart from work, He’s trying to be a marathon runner, and is a big coffee enthusiast.',
+    twitter: 'tarrooon',
+    linkedin: 'tpothulapati',
+    github: 'pothulapati',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Remote development in a remote-first world</strong>
@@ -500,19 +501,19 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Oleg Šelajev',
-		title: 'Developer Advocate',
-		company: 'AtomicJar',
-		image: {
-			url: 'oleg-selajev.jpg'
-		},
-		bio:
-			'Oleg Šelajev is a developer advocate at AtomicJar working integration tests with Testcontainers better for everyone in the community. VirtualJUG leader. In 2017 became a Java Champion.',
-		twitter: 'shelajev',
-		linkedin: 'shelajev',
-		abstract: `
+  },
+  {
+    name: 'Oleg Šelajev',
+    title: 'Developer Advocate',
+    company: 'AtomicJar',
+    image: {
+      url: 'oleg-selajev.jpg'
+    },
+    bio:
+      'Oleg Šelajev is a developer advocate at AtomicJar working integration tests with Testcontainers better for everyone in the community. VirtualJUG leader. In 2017 became a Java Champion.',
+    twitter: 'shelajev',
+    linkedin: 'shelajev',
+    abstract: `
 		<div>
 		  <p>
 			<strong>How to make a world-class integration testing library?</strong>
@@ -531,18 +532,18 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Alayshia Knighten',
-		title: 'Manager, Onboarding Engineering',
-		company: 'Honeycomb',
-		image: {
-			url: 'alayshia-knighten.jpg'
-		},
-		bio:
-			'Alayshia is an Onboarding Engineering manager at Honeycomb who specializes in Observability and Production Excellence. She is also a modern-day hippie that simply enjoys getting "ish" done while "buzzing" around with customers, transforming their DevOps world.',
-		linkedin: 'alayshia',
-		abstract: `
+  },
+  {
+    name: 'Alayshia Knighten',
+    title: 'Manager, Onboarding Engineering',
+    company: 'Honeycomb',
+    image: {
+      url: 'alayshia-knighten.jpg'
+    },
+    bio:
+      'Alayshia is an Onboarding Engineering manager at Honeycomb who specializes in Observability and Production Excellence. She is also a modern-day hippie that simply enjoys getting "ish" done while "buzzing" around with customers, transforming their DevOps world.',
+    linkedin: 'alayshia',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Progressive Delivery with Observability</strong>
@@ -561,20 +562,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Boris Kirov',
-		title: 'Senior Product Designer',
-		company: 'Elastic',
-		image: {
-			url: 'boris-kirov.jpg'
-		},
-		bio:
-			'Boris is a Bulgarian product designer, currently based in Amsterdam, The Netherlands. His interest in form and function lets him express himself with technology. Fascinated by computers, he is constantly experimenting with software to understand how programs communicate between each other and how we communicate with them. His passion for open source, collaboration and developer experience led him to Elastic, while previously he used to design the Platform experience at Miro.',
-		twitter: 'sboriskirov',
-		github: 'boriskirov',
-		linkedin: 'boris-kirov-b6b110a4',
-		abstract: `
+  },
+  {
+    name: 'Boris Kirov',
+    title: 'Senior Product Designer',
+    company: 'Elastic',
+    image: {
+      url: 'boris-kirov.jpg'
+    },
+    bio:
+      'Boris is a Bulgarian product designer, currently based in Amsterdam, The Netherlands. His interest in form and function lets him express himself with technology. Fascinated by computers, he is constantly experimenting with software to understand how programs communicate between each other and how we communicate with them. His passion for open source, collaboration and developer experience led him to Elastic, while previously he used to design the Platform experience at Miro.',
+    twitter: 'sboriskirov',
+    github: 'boriskirov',
+    linkedin: 'boris-kirov-b6b110a4',
+    abstract: `
 		<div>
 		  <p>
 			<strong>"Designing for developers"</strong>
@@ -589,20 +590,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Maya Kaczorowski',
-		title: 'Product Manager',
-		company: 'Tailscale',
-		image: {
-			url: 'maya-kaczorowski.jpg'
-		},
-		bio:
-			'Maya is a Product Manager at Tailscale, providing secure networking for the long tail. She was previously at GitHub in software supply chain security, and before that at Google working on container security and encryption key management. Prior to Google, Maya worked at McKinsey, and studied mathematics.',
-		twitter: 'MayaKaczorowski',
-		linkedin: 'mayakaczorowski',
-		github: 'mayakacz',
-		abstract: `
+  },
+  {
+    name: 'Maya Kaczorowski',
+    title: 'Product Manager',
+    company: 'Tailscale',
+    image: {
+      url: 'maya-kaczorowski.jpg'
+    },
+    bio:
+      'Maya is a Product Manager at Tailscale, providing secure networking for the long tail. She was previously at GitHub in software supply chain security, and before that at Google working on container security and encryption key management. Prior to Google, Maya worked at McKinsey, and studied mathematics.',
+    twitter: 'MayaKaczorowski',
+    linkedin: 'mayakaczorowski',
+    github: 'mayakacz',
+    abstract: `
 		<div>
 		  <p>
 		  	Although many development teams have now adapted to working remotely, far fewer are developing remotely. We all know the benefits of remote work - freedom and flexibility to work where and when you want - but we don’t often talk about the downsides, specifically thte isolation that comes from working alone.
@@ -615,20 +616,20 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Michael Bleigh',
-		title: ' Staff Software Engineer',
-		company: 'Google',
-		image: {
-			url: 'michael-bleigh.jpg'
-		},
-		bio:
-			'Michael is an engineering leader at Firebase and has been building stuff to make developers\' lives easier for more than a decade. Michael\'s experience across open source (creator of Ruby libraries such as omniauth and grape), startups (founder of Divshot), and scaled platforms (Firebase) gives him a great deal of empathy for developers and the challenges they face. Michael has also spoken at events including Railsconf, Rubyconf, OSCON, and Google I/O.',
-		twitter: 'mbleigh',
-		linkedin: 'mbleigh',
-		github: 'mbleigh',
-		abstract: `
+  },
+  {
+    name: 'Michael Bleigh',
+    title: ' Staff Software Engineer',
+    company: 'Google',
+    image: {
+      url: 'michael-bleigh.jpg'
+    },
+    bio:
+      "Michael is an engineering leader at Firebase and has been building stuff to make developers' lives easier for more than a decade. Michael's experience across open source (creator of Ruby libraries such as omniauth and grape), startups (founder of Divshot), and scaled platforms (Firebase) gives him a great deal of empathy for developers and the challenges they face. Michael has also spoken at events including Railsconf, Rubyconf, OSCON, and Google I/O.",
+    twitter: 'mbleigh',
+    linkedin: 'mbleigh',
+    github: 'mbleigh',
+    abstract: `
 		<div>
 		  <p>
 		  	<strong>What does it mean to create API products at scale? How do you do it well and keep the wheels from coming off?</strong>
@@ -638,15 +639,15 @@ const speakers2022: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Nathan Sobo',
-		title: 'Programmer / Entrepreneur',
-		company: 'Zed',
-		image: {
-			url: 'nathan-sobo.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Nathan Sobo',
+    title: 'Programmer / Entrepreneur',
+    company: 'Zed',
+    image: {
+      url: 'nathan-sobo.jpeg'
+    },
+    bio: `
 			<div>
 			<p>
 				Nathan joined GitHub in late 2011 to build the Atom text editor, and he led the Atom team until 2018.
@@ -661,9 +662,9 @@ const speakers2022: Speaker[] = [
 			</p>
 			</div>
 		`,
-		twitter: 'nathansobo',
-		github: 'nathansobo',
-		abstract: `
+    twitter: 'nathansobo',
+    github: 'nathansobo',
+    abstract: `
 		<div>
 			<p>Zed: Collaborative coding at the speed of light</p>
 			<p>
@@ -671,257 +672,260 @@ const speakers2022: Speaker[] = [
 			</p>
 		</div>
 	  `
-	},
-	{
-		name: 'Kirill Skrygan',
-		title: 'Department Lead',
-		company: 'Intellij',
-		image: {
-			url: 'kirill-skrygan.jpg'
-		},
-		bio: `Intellij Department lead`,
-		twitter: 'kskrygan',
-		github: 'kskrygan',
-		linkedin: 'kirill-skrygan-7b86073a',
-		abstract: `
+  },
+  {
+    name: 'Kirill Skrygan',
+    title: 'Department Lead',
+    company: 'Intellij',
+    image: {
+      url: 'kirill-skrygan.jpg'
+    },
+    bio: `Intellij Department lead`,
+    twitter: 'kskrygan',
+    github: 'kskrygan',
+    linkedin: 'kirill-skrygan-7b86073a',
+    abstract: `
 		<p>
 			Panel talk on remote development.
 		</p>
 	  `
-	},
-	{
-		name: 'Nik Molnar',
-		title: ' Product Director on Codespaces',
-		company: 'GitHub',
-		image: {
-			url: 'nik-molnar.jpg'
-		},
-		bio: `Nik Molnar is the Director of Product on Codespaces at GitHub. He is a father, daddy, baseball player, board gamer, Pluralsight author, lover of the web, and home chef.`,
-		twitter: 'nikmd23',
-		github: 'nikmd23',
-		linkedin: 'nikmd23',
-		abstract: `
+  },
+  {
+    name: 'Nik Molnar',
+    title: ' Product Director on Codespaces',
+    company: 'GitHub',
+    image: {
+      url: 'nik-molnar.jpg'
+    },
+    bio: `Nik Molnar is the Director of Product on Codespaces at GitHub. He is a father, daddy, baseball player, board gamer, Pluralsight author, lover of the web, and home chef.`,
+    twitter: 'nikmd23',
+    github: 'nikmd23',
+    linkedin: 'nikmd23',
+    abstract: `
 		<p>
 			Panel talk on remote development.
 		</p>
 	  `
-	},
-	{
-		name: 'Johannes Landgraf',
-		title: 'Co-founder & Co-CEO',
-		company: 'Gitpod',
-		image: {
-			url: 'johannes.jpeg'
-		},
-		bio: `Co-CEO & Co-Founder Gitpod`,
-		twitter: 'johannneslandgraf',
-		github: 'johannneslandgraf',
-		abstract: `
+  },
+  {
+    name: 'Johannes Landgraf',
+    title: 'Co-founder & Co-CEO',
+    company: 'Gitpod',
+    image: {
+      url: 'johannes.jpeg'
+    },
+    bio: `Co-CEO & Co-Founder Gitpod`,
+    twitter: 'johannneslandgraf',
+    github: 'johannneslandgraf',
+    abstract: `
 		<p>
 		Panel talk on remote development.
 		</p>
 	  `
-	},
-	{
-		name: 'Sven Efftinge',
-		title: 'Co-founder & Co-CEO',
-		company: 'Gitpod',
-		image: {
-			url: 'sven-efftinge.jpeg'
-		},
-		bio: `Sven is a Co-founder and Co-CEO of Gitpod. Before Gitpod he built and designed other development tools and programming languages. In his spare time he enjoys living at and kitesurfing on the baltic sea.`,
-		twitter: 'svenefftinge',
-		github: 'svenefftinge',
-		abstract: `
+  },
+  {
+    name: 'Sven Efftinge',
+    title: 'Co-founder & Co-CEO',
+    company: 'Gitpod',
+    image: {
+      url: 'sven-efftinge.jpeg'
+    },
+    bio: `Sven is a Co-founder and Co-CEO of Gitpod. Before Gitpod he built and designed other development tools and programming languages. In his spare time he enjoys living at and kitesurfing on the baltic sea.`,
+    twitter: 'svenefftinge',
+    github: 'svenefftinge',
+    abstract: `
 		<p>
 		Panel talk on remote development.
 		</p>
 	  `
-	},
-	{
-		name: 'Christof Marti',
-		title: 'Principal Software Engineer',
-		company: 'Microsoft',
-		image: {
-			url: 'christof-marti.jpeg'
-		},
-		bio: `Christof is the lead software engineer on the dev container project and a member of the VS Code team at Microsoft.`,
-		abstract: `
+  },
+  {
+    name: 'Christof Marti',
+    title: 'Principal Software Engineer',
+    company: 'Microsoft',
+    image: {
+      url: 'christof-marti.jpeg'
+    },
+    bio: `Christof is the lead software engineer on the dev container project and a member of the VS Code team at Microsoft.`,
+    abstract: `
 		<p>
 		Panel talk on remote development.
 		</p>
 	  `
-	},
-	{
-		name: 'Chad Metcalf',
-		title: 'Building a Self Hosted Business',
-		company: 'Gitpod',
-		image: {
-			url: 'chad-metcalf.jpg'
-		},
-		bio: `Currently helping to build Gitpod. Docker, Cloudera, Puppet, WibiData alumni. Advising startups. Angel investor.`,
-		twitter: 'metcalfc',
-		github: 'metcalfc',
-		abstract: `
+  },
+  {
+    name: 'Chad Metcalf',
+    title: 'Building a Self Hosted Business',
+    company: 'Gitpod',
+    image: {
+      url: 'chad-metcalf.jpg'
+    },
+    bio: `Currently helping to build Gitpod. Docker, Cloudera, Puppet, WibiData alumni. Advising startups. Angel investor.`,
+    twitter: 'metcalfc',
+    github: 'metcalfc',
+    abstract: `
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
 		</p>
 	  `
-	},
-	{
-		name: 'Ben Firshman',
-		title: 'Founder',
-		company: 'Replicate',
-		image: {
-			url: 'ben-firshman.jpg'
-		},
-		bio: `Founder of Replicate. Previously, he was product at Docker and was one of the creators of Docker Compose. He also founded a few companies, written things like https://clig.dev/ , helped create The Guardian’s iPad app, and worked on GOV.UK.`,
-		twitter: 'bfirsh',
-		abstract: `
+  },
+  {
+    name: 'Ben Firshman',
+    title: 'Founder',
+    company: 'Replicate',
+    image: {
+      url: 'ben-firshman.jpg'
+    },
+    bio: `Founder of Replicate. Previously, he was product at Docker and was one of the creators of Docker Compose. He also founded a few companies, written things like https://clig.dev/ , helped create The Guardian’s iPad app, and worked on GOV.UK.`,
+    twitter: 'bfirsh',
+    abstract: `
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
 		</p>
 	  `
-	},
-	{
-		name: 'Arnaud Porterie',
-		title: 'Founder',
-		company: 'Echoes HQ',
-		image: {
-			url: 'arnaud-porterie.jpg'
-		},
-		bio: `Arnaud Porterie is the founder of Echoes HQ, a product helping hundreds of engineering organizations maximize their impact.
+  },
+  {
+    name: 'Arnaud Porterie',
+    title: 'Founder',
+    company: 'Echoes HQ',
+    image: {
+      url: 'arnaud-porterie.jpg'
+    },
+    bio: `Arnaud Porterie is the founder of Echoes HQ, a product helping hundreds of engineering organizations maximize their impact.
 
 		At Docker, Arnaud has managed one of the most active open source communities with over a 400 weekly contributors. Running a project at this scale has taught him both the importance of data for decision making and the importance of developer experience.
 		
 		At Veepee, Arnaud has scaled a team of 350 to a European-wide organization of 900. He realized there how unequipped were engineering leaders to make data informed decisions and effectively communicate on their teams' activity in a way that their business partners and bosses could understand.`,
-		twitter: 'arnaudporterie',
-		abstract: `
+    twitter: 'arnaudporterie',
+    abstract: `
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
 		</p>
 	  `
-	},
-	{
-		name: 'Andrea Luzzardi',
-		title: 'Co-Founder',
-		company: 'Dagger',
-		image: {
-			url: 'andrea-luzzardi.png'
-		},
-		bio: `Co-Founder at Dagger. Previously engineering at Docker, Google & Microsoft.`,
-		twitter: 'aluzzardi',
-		abstract: `
+  },
+  {
+    name: 'Andrea Luzzardi',
+    title: 'Co-Founder',
+    company: 'Dagger',
+    image: {
+      url: 'andrea-luzzardi.png'
+    },
+    bio: `Co-Founder at Dagger. Previously engineering at Docker, Google & Microsoft.`,
+    twitter: 'aluzzardi',
+    abstract: `
 		<p>
 		Panel talk on a history and how Docker thought about DevX.
 		</p>
 	  	`
-	},
-	{
-		name: 'Shanea Leven',
-		title: 'Co-founder & CEO',
-		company: 'CodeSee',
-		image: {
-			url: 'shanea-leven.jpeg'
-		},
-		bio: `Shanea Leven is co-founder and CEO of CodeSee, a code understanding platform helping developers and teams onboard to codebases, improve code review, code planning, and more. Prior to CodeSee, Shanea led dev-focused product teams at Cloudflare, Docker, eBay and Google. Follow Shanea on Twitter @ShaneaLeven and CodeSee @CodeSeeio.`,
-		twitter: 'shanealeven',
-		abstract: `
+  },
+  {
+    name: 'Shanea Leven',
+    title: 'Co-founder & CEO',
+    company: 'CodeSee',
+    image: {
+      url: 'shanea-leven.jpeg'
+    },
+    bio: `Shanea Leven is co-founder and CEO of CodeSee, a code understanding platform helping developers and teams onboard to codebases, improve code review, code planning, and more. Prior to CodeSee, Shanea led dev-focused product teams at Cloudflare, Docker, eBay and Google. Follow Shanea on Twitter @ShaneaLeven and CodeSee @CodeSeeio.`,
+    twitter: 'shanealeven',
+    abstract: `
 		<p>
 		Code Reviews is more than a crushing Developer Experience, its really a deeply human experience.
 		</p>
 	  `
-	},
-	{
-		name: 'Wilson Mar',
-		title: 'Senior Domain Architect',
-		company: 'Hashicorp',
-		image: {
-			url: 'wilson-mar.jpeg'
-		},
-		bio: `After surviving dozens of botched onboardings as both employee and consultant, Wilson Mar has championed better processes, earlier for fellow developers and others at enterprise software organizations.`,
-		github: 'wilsonmar',
-		linkedin: 'wilsonmar',
-		abstract: `
+  },
+  {
+    name: 'Wilson Mar',
+    title: 'Senior Domain Architect',
+    company: 'Hashicorp',
+    image: {
+      url: 'wilson-mar.jpeg'
+    },
+    bio: `After surviving dozens of botched onboardings as both employee and consultant, Wilson Mar has championed better processes, earlier for fellow developers and others at enterprise software organizations.`,
+    github: 'wilsonmar',
+    linkedin: 'wilsonmar',
+    abstract: `
 		<p>
 		How to onboard people in a day. Companies that drag out onboarding drain the goodwill of new people. Here are dozens of specific, concrete actions to ensure instant productivity from joiners.
 		</p>
 	  `
-	},
+  }
 ];
 
 const hosts2022: Speaker[] = [
-	{
-		name: 'Michael Aring',
-		company: 'Gitpod',
-		title: 'GTM & DCS Lead',
-		image: {
-			url: 'michael-aring.jpg'
-		},
-		bio: 'Michael Aring is a Go-to-Market Lead at Gitpod. He is passionate about beautiful products and product-led growth. In the past, Michael has worked in venture capital at coparion and Riverside Acceleration Capital. Prior to that, he studied computer science at University College London and founded a travel marketplace in Mexico.',
-		twitter: 'MichaelAr1ng',
-		linkedin: 'michaelaring',
-	},
-	{
-		name: 'Pauline Narvas',
-		company: 'Gitpod',
-		title: 'Senior Community Engineer',
-		image: {
-			url: 'pauline-narvas.jpg'
-		},
-		bio: 'Pauline Narvas (she/her/hers) is a passionate multi-hyphenate. She’s worked in the tech industry for the past 3 years and is currently working at Gitpod as a Senior Community Engineer. Pauline is all about community and so alongside her role at Gitpod, she runs a community group called, “Ladies in DevOps”, a safe space for self-identifying women working in the DevOps/SRE/Cloud space to learn and connect with each other. She also hosts the DevX Podcast.',
-		twitter: 'paulienuh',
-		linkedin: 'pnarvas',
-		github: 'pawlean',
-	}
+  {
+    name: 'Michael Aring',
+    company: 'Gitpod',
+    title: 'GTM & DCS Lead',
+    image: {
+      url: 'michael-aring.jpg'
+    },
+    bio:
+      'Michael Aring is a Go-to-Market Lead at Gitpod. He is passionate about beautiful products and product-led growth. In the past, Michael has worked in venture capital at coparion and Riverside Acceleration Capital. Prior to that, he studied computer science at University College London and founded a travel marketplace in Mexico.',
+    twitter: 'MichaelAr1ng',
+    linkedin: 'michaelaring'
+  },
+  {
+    name: 'Pauline Narvas',
+    company: 'Gitpod',
+    title: 'Senior Community Engineer',
+    image: {
+      url: 'pauline-narvas.jpg'
+    },
+    bio:
+      'Pauline Narvas (she/her/hers) is a passionate multi-hyphenate. She’s worked in the tech industry for the past 3 years and is currently working at Gitpod as a Senior Community Engineer. Pauline is all about community and so alongside her role at Gitpod, she runs a community group called, “Ladies in DevOps”, a safe space for self-identifying women working in the DevOps/SRE/Cloud space to learn and connect with each other. She also hosts the DevX Podcast.',
+    twitter: 'paulienuh',
+    linkedin: 'pnarvas',
+    github: 'pawlean'
+  }
 ];
 
 export const speakers2021: Speaker[] = [
-	{
-		name: 'Jason Warner',
-		company: 'GitHub',
-		title: 'CTO',
-		image: {
-			url: 'jason-warner.jpeg'
-		},
-		bio: 'Jason Warner is GitHub’s Chief Technology Officer. In his role, Jason oversees the Office of the CTO, whose mission is to explore the unknown and non-existent aspects of technology and software in order to build a map of GitHub’s future. Jason was previously Senior Vice President of Technology at GitHub, where he has played an integral role in scaling the Engineering, Product, and Security Teams, and building GitHub’s product roadmap to fit the needs of developers around the world.Prior to joining GitHub in 2017, Jason was Vice President of Engineering at Heroku. Before Heroku, Jason oversaw Product Engineering for Ubuntu Desktop and Ubuntu Phone at Canonical. Jason is passionate about building technologies that bring people together, and he’s an active speaker, writer, and advisor.',
-		twitter: 'jasoncwarner',
-		linkedin: 'jcwarner',
-		github: 'jasoncwarner',
-		abstract: 'DevX at Heroku and GitHub - An interview with Jason Warner'
-	},
-	{
-		name: 'Erich Gamma',
-		company: 'Microsoft',
-		title: 'VS Code Dev Lead',
-		image: {
-			url: 'erich-gamma.jpg'
-		},
-		bio: `
+  {
+    name: 'Jason Warner',
+    company: 'GitHub',
+    title: 'CTO',
+    image: {
+      url: 'jason-warner.jpeg'
+    },
+    bio:
+      'Jason Warner is GitHub’s Chief Technology Officer. In his role, Jason oversees the Office of the CTO, whose mission is to explore the unknown and non-existent aspects of technology and software in order to build a map of GitHub’s future. Jason was previously Senior Vice President of Technology at GitHub, where he has played an integral role in scaling the Engineering, Product, and Security Teams, and building GitHub’s product roadmap to fit the needs of developers around the world.Prior to joining GitHub in 2017, Jason was Vice President of Engineering at Heroku. Before Heroku, Jason oversaw Product Engineering for Ubuntu Desktop and Ubuntu Phone at Canonical. Jason is passionate about building technologies that bring people together, and he’s an active speaker, writer, and advisor.',
+    twitter: 'jasoncwarner',
+    linkedin: 'jcwarner',
+    github: 'jasoncwarner',
+    abstract: 'DevX at Heroku and GitHub - An interview with Jason Warner'
+  },
+  {
+    name: 'Erich Gamma',
+    company: 'Microsoft',
+    title: 'VS Code Dev Lead',
+    image: {
+      url: 'erich-gamma.jpg'
+    },
+    bio: `
 		  <p>
 			Erich is a Microsoft Technical Fellow and is currently working on Visual Studio Code. In
 			the past he contributed to Design Patterns, JUnit, Eclipse, and IBM’s Rational Team
 			Concert. He works in Zurich and skis in Andermatt, Switzerland.
 		  </p>
 	  `,
-		twitter: 'ErichGamma',
-		linkedin: 'erichgamma',
-		github: 'egamma',
-		abstract: 'The evolution of DevX - An interview with Erich Gamma'
-	},
-	{
-		name: 'Henry Zhu',
-		company: 'Babel',
-		title: 'Core Maintainer',
-		image: {
-			url: 'henry-zhu.jpeg'
-		},
-		bio:
-			'Henry works in open source as a steward of Babel after leaving a job at Adobe. He wants to understand the future of open source through maintenance, funding efforts, and conversations via Hope in Source podcast.',
-		twitter: 'left_pad',
-		linkedin: '',
-		github: 'hzoo',
-		abstract: `
+    twitter: 'ErichGamma',
+    linkedin: 'erichgamma',
+    github: 'egamma',
+    abstract: 'The evolution of DevX - An interview with Erich Gamma'
+  },
+  {
+    name: 'Henry Zhu',
+    company: 'Babel',
+    title: 'Core Maintainer',
+    image: {
+      url: 'henry-zhu.jpeg'
+    },
+    bio:
+      'Henry works in open source as a steward of Babel after leaving a job at Adobe. He wants to understand the future of open source through maintenance, funding efforts, and conversations via Hope in Source podcast.',
+    twitter: 'left_pad',
+    linkedin: '',
+    github: 'hzoo',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Trapped in the Open Source Supply Chain</strong>
@@ -934,16 +938,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Jean Yang',
-		company: 'Akita Software',
-		title: 'Founder and CEO',
-		image: {
-			url: 'jean-yang.jpeg'
-		},
-		bio:
-			`
+  },
+  {
+    name: 'Jean Yang',
+    company: 'Akita Software',
+    title: 'Founder and CEO',
+    image: {
+      url: 'jean-yang.jpeg'
+    },
+    bio: `
 		  <p>
 			Jean Yang (
 			<a href="https://twitter.com/jeanqasaur" target="_blank">
@@ -958,10 +961,10 @@ export const speakers2021: Speaker[] = [
 			selected as one of the MIT Technology Review's 35 Innovators Under 35 in 2016.
 		  </p>
 		`,
-		twitter: 'jeanqasaur',
-		linkedin: 'jean-yang-96575030',
-		github: 'jeanqasaur',
-		abstract: `
+    twitter: 'jeanqasaur',
+    linkedin: 'jean-yang-96575030',
+    github: 'jeanqasaur',
+    abstract: `
 		<div>
 		  <p>
 			<strong>"Testing" in Prod Isn't the Only Way: Why Observability Needs Structure</strong>
@@ -978,20 +981,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Rachel Myers',
-		company: 'Google',
-		title: 'Engineer',
-		image: {
-			url: 'rachel-myers.jpg'
-		},
-		bio:
-			"Rachel's an engineer on Firebase Authentication and Security Rules; she focuses on empowering developers to build secure, best-in-class applications that robustly protect users’ privacy. Before joining Google, Rachel co-founded Opsolutely (YC S16), and was an early engineer at GitHub. Outside of work, she mentors and invests in founders from underrepresented backgrounds, serves on the Board for RailsBridge, and has received awards from Women Who Code. She/Her.",
-		twitter: 'rachelmyers',
-		linkedin: 'rachelmyers',
-		github: 'rachelmyers',
-		abstract: `
+  },
+  {
+    name: 'Rachel Myers',
+    company: 'Google',
+    title: 'Engineer',
+    image: {
+      url: 'rachel-myers.jpg'
+    },
+    bio:
+      "Rachel's an engineer on Firebase Authentication and Security Rules; she focuses on empowering developers to build secure, best-in-class applications that robustly protect users’ privacy. Before joining Google, Rachel co-founded Opsolutely (YC S16), and was an early engineer at GitHub. Outside of work, she mentors and invests in founders from underrepresented backgrounds, serves on the Board for RailsBridge, and has received awards from Women Who Code. She/Her.",
+    twitter: 'rachelmyers',
+    linkedin: 'rachelmyers',
+    github: 'rachelmyers',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Streamlining Firebase Development with local Emulators</strong>
@@ -1006,15 +1009,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Ellen Chisa',
-		company: 'Darklang',
-		title: 'Founder',
-		image: {
-			url: 'ellen-chisa.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Ellen Chisa',
+    company: 'Darklang',
+    title: 'Founder',
+    image: {
+      url: 'ellen-chisa.jpeg'
+    },
+    bio: `
 		<p>
 		  Ellen Chisa is founder-in-residence at Boldstart, a first check VC for technical founders.
 		  Previously, she cofounded Dark (
@@ -1024,10 +1027,10 @@ export const speakers2021: Speaker[] = [
 		  ), a programming language tightly integrated to its editor and infrastructure.
 		</p>
 	  `,
-		twitter: 'ellenchisa',
-		linkedin: 'ellenchisa',
-		github: 'ellenchisa',
-		abstract: `
+    twitter: 'ellenchisa',
+    linkedin: 'ellenchisa',
+    github: 'ellenchisa',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Is DevEx not good… because we don't want it to be?</strong>
@@ -1041,15 +1044,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Josh Long',
-		company: 'VMware',
-		title: 'Spring Developer Advocate',
-		image: {
-			url: 'josh-long.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Josh Long',
+    company: 'VMware',
+    title: 'Spring Developer Advocate',
+    image: {
+      url: 'josh-long.jpeg'
+    },
+    bio: `
 		<div>
 		  <a href="https://twitter.com/starbuxman" target="_blank">
 			Josh (@starbuxman)
@@ -1082,10 +1085,10 @@ export const speakers2021: Speaker[] = [
 		  ") and a YouTuber.
 		</div>
 	  `,
-		twitter: 'starbuxman',
-		linkedin: 'joshlong',
-		github: 'joshlong',
-		abstract: `
+    twitter: 'starbuxman',
+    linkedin: 'joshlong',
+    github: 'joshlong',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Cloud Native Java</strong>
@@ -1111,15 +1114,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Shanea Leven',
-		company: 'CodeSee',
-		title: 'Founder & CEO',
-		image: {
-			url: 'shanea-leven.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Shanea Leven',
+    company: 'CodeSee',
+    title: 'Founder & CEO',
+    image: {
+      url: 'shanea-leven.jpeg'
+    },
+    bio: `
 		<p>
 		  Shanea is the co-founder and CEO of a developer platform called 
 		  <a href="https://www.codesee.io/" target="_blank">
@@ -1132,10 +1135,10 @@ export const speakers2021: Speaker[] = [
 		  Business.
 		</p>
 	  `,
-		twitter: 'shanealeven',
-		linkedin: 'shaneak',
-		github: '',
-		abstract: `
+    twitter: 'shanealeven',
+    linkedin: 'shaneak',
+    github: '',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Internal DevX Experience is broken… and you should be pissed</strong>
@@ -1148,20 +1151,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Beyang Liu',
-		company: 'Sourcegraph',
-		title: 'CTO',
-		image: {
-			url: 'beyang-liu.jpeg'
-		},
-		bio:
-			'Beyang Liu is CTO and cofounder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.',
-		twitter: 'beyang',
-		linkedin: 'beyang-liu',
-		github: 'beyang',
-		abstract: `
+  },
+  {
+    name: 'Beyang Liu',
+    company: 'Sourcegraph',
+    title: 'CTO',
+    image: {
+      url: 'beyang-liu.jpeg'
+    },
+    bio:
+      'Beyang Liu is CTO and cofounder of Sourcegraph. Prior to Sourcegraph, Beyang was a software engineer at Palantir Technologies, where he developed new data analysis software on a small, customer-facing team working with Fortune 500 companies. Beyang studied Computer Science at Stanford, where he published research in probabilistic graphical models and computer vision at the Stanford AI Lab and thoroughly enjoyed his compilers course.',
+    twitter: 'beyang',
+    linkedin: 'beyang-liu',
+    github: 'beyang',
+    abstract: `
 		<div>
 		  <p>
 			<strong>DevX: History of Code Search</strong>
@@ -1175,20 +1178,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Maël Nison',
-		company: 'Yarn',
-		title: 'Lead Maintainer',
-		image: {
-			url: 'mael-nison.jpeg'
-		},
-		bio:
-			'Maël has worked with code repositories from small open source projects to large corporate behemoths. These experiences led to the development of many features seen in Yarn, the JavaScript package manager. Today, Maël is a Senior Software Engineer at Datadog, where he works on developer experience and continues to maintain Yarn.',
-		twitter: 'arcanis',
-		linkedin: '',
-		github: 'arcanis',
-		abstract: `
+  },
+  {
+    name: 'Maël Nison',
+    company: 'Yarn',
+    title: 'Lead Maintainer',
+    image: {
+      url: 'mael-nison.jpeg'
+    },
+    bio:
+      'Maël has worked with code repositories from small open source projects to large corporate behemoths. These experiences led to the development of many features seen in Yarn, the JavaScript package manager. Today, Maël is a Senior Software Engineer at Datadog, where he works on developer experience and continues to maintain Yarn.',
+    twitter: 'arcanis',
+    linkedin: '',
+    github: 'arcanis',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Monorepos, are they right for you?</strong>
@@ -1202,20 +1205,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Lili Kastilio',
-		company: 'Snyk',
-		title: 'Technical Services Architect',
-		image: {
-			url: 'lili.jpeg'
-		},
-		bio:
-			'Technical Services Architect @ Snyk designing & building TypeScript solutions by working closely with our customers. Recently a Lead Engineer at Snyk working on extending our current languages offering by introducing new languages and language specific concepts into our system in the shape of libraries, parsers and microservices. Spending lots of time working on dependency resolution, understanding the inner workings of package managers and integrating with package registries. When not coding I like to spend my time hanging upside down doing circus things & mentoring others by working on open source side projects in Django + JavaScript.',
-		twitter: 'lilianakastilio',
-		linkedin: 'kastilioliliana',
-		github: 'lili2311',
-		abstract: `
+  },
+  {
+    name: 'Lili Kastilio',
+    company: 'Snyk',
+    title: 'Technical Services Architect',
+    image: {
+      url: 'lili.jpeg'
+    },
+    bio:
+      'Technical Services Architect @ Snyk designing & building TypeScript solutions by working closely with our customers. Recently a Lead Engineer at Snyk working on extending our current languages offering by introducing new languages and language specific concepts into our system in the shape of libraries, parsers and microservices. Spending lots of time working on dependency resolution, understanding the inner workings of package managers and integrating with package registries. When not coding I like to spend my time hanging upside down doing circus things & mentoring others by working on open source side projects in Django + JavaScript.',
+    twitter: 'lilianakastilio',
+    linkedin: 'kastilioliliana',
+    github: 'lili2311',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Why I love incremental delivery and why you should too.</strong>
@@ -1231,20 +1234,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Nader Dabit',
-		company: 'Serverless @GraphQL',
-		title: 'Developer Advocate',
-		image: {
-			url: 'nader-dabit.jpg'
-		},
-		bio:
-			'Nader Dabit is an author and full stack developer currently working with Edge & Node on DeFi, Web3, and The Graph.',
-		twitter: 'dabit3',
-		linkedin: 'naderdabit',
-		github: 'dabit3',
-		abstract: `
+  },
+  {
+    name: 'Nader Dabit',
+    company: 'Serverless @GraphQL',
+    title: 'Developer Advocate',
+    image: {
+      url: 'nader-dabit.jpg'
+    },
+    bio:
+      'Nader Dabit is an author and full stack developer currently working with Edge & Node on DeFi, Web3, and The Graph.',
+    twitter: 'dabit3',
+    linkedin: 'naderdabit',
+    github: 'dabit3',
+    abstract: `
 		<div>
 		  <p>
 			<strong>How to build a dApp</strong>
@@ -1267,15 +1270,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Anurag Goel',
-		company: 'Render',
-		title: 'Founder & CEO',
-		image: {
-			url: 'anurag-goel.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Anurag Goel',
+    company: 'Render',
+    title: 'Founder & CEO',
+    image: {
+      url: 'anurag-goel.jpeg'
+    },
+    bio: `
 		<p>
 		  Anurag Goel is the founder and CEO of Render (
 		  <a href="https://render.com" target="_blank">
@@ -1285,10 +1288,10 @@ export const speakers2021: Speaker[] = [
 		  Risk at Stripe.
 		</p>
 	  `,
-		twitter: 'anuraggoel',
-		linkedin: 'anuragoel',
-		github: 'anurag',
-		abstract: `
+    twitter: 'anuraggoel',
+    linkedin: 'anuragoel',
+    github: 'anurag',
+    abstract: `
 		<div>
 		  <p>
 			<strong>DevX in the Internet Age: One Step Forward, Two Steps Back</strong>
@@ -1300,19 +1303,19 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Yihong Cheng',
-		company: 'Github1s',
-		title: 'Maintainer',
-		image: {
-			url: 'yihong-cheng.jpg'
-		},
-		bio: 'Yihong Chen is an engineer, works at Twitter, also an active open-source developer.',
-		twitter: 'xcv58',
-		linkedin: 'xcv58',
-		github: 'xcv58',
-		abstract: `
+  },
+  {
+    name: 'Yihong Cheng',
+    company: 'Github1s',
+    title: 'Maintainer',
+    image: {
+      url: 'yihong-cheng.jpg'
+    },
+    bio: 'Yihong Chen is an engineer, works at Twitter, also an active open-source developer.',
+    twitter: 'xcv58',
+    linkedin: 'xcv58',
+    github: 'xcv58',
+    abstract: `
 		<div>
 		  <p>
 			<strong>The story of GitHub1s - speed & familiarity matters</strong>
@@ -1325,20 +1328,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Kyle Quest',
-		company: 'DockerSlim',
-		title: 'Creator of',
-		image: {
-			url: 'kyle-quest.png'
-		},
-		bio:
-			'Kyle has been building applications and platforms using many different cloud service providers and even more programming languages since the early days of cloud computing. He created DockerSlim to simplify the developer experience with containers and to empower developers to build and run containerized cloud-native applications. Kyle is passionate about open source, developer experience, distributed system, Big Data and security. He loves hackathons and taking things apart.',
-		twitter: 'kcqon',
-		linkedin: 'kylequest',
-		github: 'kcq',
-		abstract: `
+  },
+  {
+    name: 'Kyle Quest',
+    company: 'DockerSlim',
+    title: 'Creator of',
+    image: {
+      url: 'kyle-quest.png'
+    },
+    bio:
+      'Kyle has been building applications and platforms using many different cloud service providers and even more programming languages since the early days of cloud computing. He created DockerSlim to simplify the developer experience with containers and to empower developers to build and run containerized cloud-native applications. Kyle is passionate about open source, developer experience, distributed system, Big Data and security. He loves hackathons and taking things apart.',
+    twitter: 'kcqon',
+    linkedin: 'kylequest',
+    github: 'kcq',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Simplifying the Journey of Your Containerized Application from Dev to Production</strong>
@@ -1348,20 +1351,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Aidan Cunniffe',
-		company: 'useoptic',
-		title: 'Creator of',
-		image: {
-			url: 'aidan-cunniffe.jpeg'
-		},
-		bio:
-			'Aidan Cunniffe keeps building developer tools and loves seeing everything the community builds with those tools. He’s the creator of the Optic OSS project that brings Git-like version control to the problem of documenting and managing changes to your APIs. Before that he built, contributed to, and advised many of the early tools in the low code space, and before that, he was building game engines during math class. When he’s not writing code, Aidan is one of the hosts of the API Storytelling stream, a runner, and a performing stand-up comic (jokes are builds, the audience is CI, laughs are green checks — you know why I do it).',
-		twitter: 'aidandcunniffe',
-		linkedin: 'acunniffe',
-		github: 'acunniffe',
-		abstract: `
+  },
+  {
+    name: 'Aidan Cunniffe',
+    company: 'useoptic',
+    title: 'Creator of',
+    image: {
+      url: 'aidan-cunniffe.jpeg'
+    },
+    bio:
+      'Aidan Cunniffe keeps building developer tools and loves seeing everything the community builds with those tools. He’s the creator of the Optic OSS project that brings Git-like version control to the problem of documenting and managing changes to your APIs. Before that he built, contributed to, and advised many of the early tools in the low code space, and before that, he was building game engines during math class. When he’s not writing code, Aidan is one of the hosts of the API Storytelling stream, a runner, and a performing stand-up comic (jokes are builds, the audience is CI, laughs are green checks — you know why I do it).',
+    twitter: 'aidandcunniffe',
+    linkedin: 'acunniffe',
+    github: 'acunniffe',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Make your APIs Developer-friendly</strong>
@@ -1378,20 +1381,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Natalie Pistunovich',
-		company: 'Aerospike',
-		title: 'Lead Developer Advocate',
-		image: {
-			url: 'natalie.png'
-		},
-		bio:
-			"Natalie is a learner, a Google Developer Expert for Go, an OpenAI Developer Ambassador, a public speaker and a sailor. When she's not working on robust systems at Aerospike, she is organizing the conferences: GopherCon Europe, Cloud Nein, HeyAI and BSides Berlin, and the Berlin chapters of the Go and Women Techmakers user groups. Previously, she was an Engineering Manager, Software and Hardware Engineer, and a Co-Founder of a mobile start-up. In her free time, she is wondering if there is life on Mars.",
-		twitter: 'NataliePis',
-		linkedin: 'nataliepistunovich',
-		github: 'Pisush',
-		abstract: `
+  },
+  {
+    name: 'Natalie Pistunovich',
+    company: 'Aerospike',
+    title: 'Lead Developer Advocate',
+    image: {
+      url: 'natalie.png'
+    },
+    bio:
+      "Natalie is a learner, a Google Developer Expert for Go, an OpenAI Developer Ambassador, a public speaker and a sailor. When she's not working on robust systems at Aerospike, she is organizing the conferences: GopherCon Europe, Cloud Nein, HeyAI and BSides Berlin, and the Berlin chapters of the Go and Women Techmakers user groups. Previously, she was an Engineering Manager, Software and Hardware Engineer, and a Co-Founder of a mobile start-up. In her free time, she is wondering if there is life on Mars.",
+    twitter: 'NataliePis',
+    linkedin: 'nataliepistunovich',
+    github: 'Pisush',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Building a K8s Operator for a Distributed Database</strong>
@@ -1419,19 +1422,19 @@ export const speakers2021: Speaker[] = [
 		  <p>Due to its stateful nature and the type of workloads that are usually handled, cluster management and recovery are non-trivial. We are using the Operators API to handle that complexity and control the clusters from within Kubernetes. In this talk we’ll cover the steps we took to plan and execute and the challenges we faced and share the best practices.</p>
 		</div>
 	  `
-	},
-	{
-		name: 'Tuomas Artman',
-		company: 'Linear',
-		title: 'CTO',
-		image: {
-			url: 'tuomas-artman.jpeg'
-		},
-		bio: '',
-		twitter: 'artman',
-		linkedin: 'tuomasartman',
-		github: 'artman',
-		abstract: `
+  },
+  {
+    name: 'Tuomas Artman',
+    company: 'Linear',
+    title: 'CTO',
+    image: {
+      url: 'tuomas-artman.jpeg'
+    },
+    bio: '',
+    twitter: 'artman',
+    linkedin: 'tuomasartman',
+    github: 'artman',
+    abstract: `
 		<div>
 		  <p>
 			<strong>
@@ -1440,20 +1443,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Ian Jennings',
-		company: 'HaxorDX',
-		title: 'Founder',
-		image: {
-			url: 'ian-jennings.jpeg'
-		},
-		bio:
-			'Ian Jennings is the founder of Haxor, a developer experience testing platform. Haxor tests and measures APIs, SDKs, and developer products with on-demand feedback from real developers.',
-		twitter: '@ianj3nnings',
-		linkedin: 'jnnngs',
-		github: 'ianjennings',
-		abstract: `
+  },
+  {
+    name: 'Ian Jennings',
+    company: 'HaxorDX',
+    title: 'Founder',
+    image: {
+      url: 'ian-jennings.jpeg'
+    },
+    bio:
+      'Ian Jennings is the founder of Haxor, a developer experience testing platform. Haxor tests and measures APIs, SDKs, and developer products with on-demand feedback from real developers.',
+    twitter: '@ianj3nnings',
+    linkedin: 'jnnngs',
+    github: 'ianjennings',
+    abstract: `
 		<div>
 		  <p>
 			<strong>
@@ -1469,33 +1472,33 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Yevgeny Pats',
-		company: 'CloudQuery',
-		title: 'Founder',
-		image: {
-			url: 'yevgeny-pats.jpeg'
-		},
-		bio: '',
-		twitter: 'yevgenypats',
-		linkedin: 'yevgeny-pats-5973328b',
-		github: 'yevgenypats',
-		abstract: ''
-	},
-	{
-		name: 'Inian Parameshwaran',
-		company: 'Supabase',
-		title: 'Senior Software Engineer',
-		image: {
-			url: 'inian.jpeg'
-		},
-		bio:
-			'Inian Parameshwaran is a Senior Software Engineer at Supabase, an open-source Firebase alternative. He likes chocolates, working on developer tools and is passionate about security and performance. Previously, he founded a venture backed startup which helps speed up websites automatically. Did I mention he likes chocolates?',
-		twitter: 'everconfusedguy',
-		linkedin: 'inianp',
-		github: 'inian',
-		abstract: `
+  },
+  {
+    name: 'Yevgeny Pats',
+    company: 'CloudQuery',
+    title: 'Founder',
+    image: {
+      url: 'yevgeny-pats.jpeg'
+    },
+    bio: '',
+    twitter: 'yevgenypats',
+    linkedin: 'yevgeny-pats-5973328b',
+    github: 'yevgenypats',
+    abstract: ''
+  },
+  {
+    name: 'Inian Parameshwaran',
+    company: 'Supabase',
+    title: 'Senior Software Engineer',
+    image: {
+      url: 'inian.jpeg'
+    },
+    bio:
+      'Inian Parameshwaran is a Senior Software Engineer at Supabase, an open-source Firebase alternative. He likes chocolates, working on developer tools and is passionate about security and performance. Previously, he founded a venture backed startup which helps speed up websites automatically. Did I mention he likes chocolates?',
+    twitter: 'everconfusedguy',
+    linkedin: 'inianp',
+    github: 'inian',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Building Supabase Storage. DevX, performance, security - choose three</strong>
@@ -1519,39 +1522,39 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: "Stephen O'Grady",
-		company: 'RedMonk',
-		title: 'Co-Founder',
-		image: {
-			url: 'steve-o-grady.jpeg'
-		},
-		bio: '',
-		twitter: 'sogrady',
-		linkedin: 'sogrady',
-		github: 'sogrady',
-		abstract: `
+  },
+  {
+    name: "Stephen O'Grady",
+    company: 'RedMonk',
+    title: 'Co-Founder',
+    image: {
+      url: 'steve-o-grady.jpeg'
+    },
+    bio: '',
+    twitter: 'sogrady',
+    linkedin: 'sogrady',
+    github: 'sogrady',
+    abstract: `
 		<div>
 		  <p>
 			<strong>The developer experience gap</strong>
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Thomas Paul Mann',
-		company: 'Raycast',
-		title: 'CEO & Co-Founder',
-		image: {
-			url: 'thomas-paul-mann.jpeg'
-		},
-		bio:
-			"Thomas loves to make tools. He's co-founder and CEO of Raycast and previously built products as a software engineer at Facebook.",
-		twitter: 'thomaspaulmann',
-		linkedin: 'thomas-paul-mann-5183101a4',
-		github: 'thomaspaulmann',
-		abstract: `
+  },
+  {
+    name: 'Thomas Paul Mann',
+    company: 'Raycast',
+    title: 'CEO & Co-Founder',
+    image: {
+      url: 'thomas-paul-mann.jpeg'
+    },
+    bio:
+      "Thomas loves to make tools. He's co-founder and CEO of Raycast and previously built products as a software engineer at Facebook.",
+    twitter: 'thomaspaulmann',
+    linkedin: 'thomas-paul-mann-5183101a4',
+    github: 'thomaspaulmann',
+    abstract: `
 		<div>
 		  <p>
 			<strong>
@@ -1560,15 +1563,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Borja Burgos',
-		company: 'Datadog',
-		title: 'Director of Product',
-		image: {
-			url: 'bojra-burgos.jpeg'
-		},
-		bio: `
+  },
+  {
+    name: 'Borja Burgos',
+    company: 'Datadog',
+    title: 'Director of Product',
+    image: {
+      url: 'bojra-burgos.jpeg'
+    },
+    bio: `
 		<p>
 		  Borja Burgos is a DevEx-obsessed entrepreneur and technologist. In 2013 he co-founded Tutum
 		  – a platform for developers to build and run their Docker applications. After Tutum's
@@ -1590,10 +1593,10 @@ export const speakers2021: Speaker[] = [
 		  team are building the next generation of developer-centric observability tools!
 		</p>
 	  `,
-		twitter: 'borja_burgos',
-		linkedin: 'borjaburgos',
-		github: 'borjaburgos',
-		abstract: `
+    twitter: 'borja_burgos',
+    linkedin: 'borjaburgos',
+    github: 'borjaburgos',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Using Observability to improve the Developer Experience</strong>
@@ -1607,20 +1610,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Mike Nikles',
-		company: 'Gitpod',
-		title: 'Senior Developer Success Engineer',
-		image: {
-			url: 'mike-nikles.png'
-		},
-		bio:
-			'Mike Nikles is a software architect who values developer experience, productivity and team morale. For two decades, Mike has taken ideas from inception to production, at startups or as lead for teams at large companies. He works as a Senior Developer & Customer Success Engineer at Gitpod where he helps teams automate their ephemeral development environments.',
-		twitter: 'mikenikles',
-		linkedin: 'mikenikles',
-		github: 'mikenikles',
-		abstract: `
+  },
+  {
+    name: 'Mike Nikles',
+    company: 'Gitpod',
+    title: 'Senior Developer Success Engineer',
+    image: {
+      url: 'mike-nikles.png'
+    },
+    bio:
+      'Mike Nikles is a software architect who values developer experience, productivity and team morale. For two decades, Mike has taken ideas from inception to production, at startups or as lead for teams at large companies. He works as a Senior Developer & Customer Success Engineer at Gitpod where he helps teams automate their ephemeral development environments.',
+    twitter: 'mikenikles',
+    linkedin: 'mikenikles',
+    github: 'mikenikles',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Ephemeral Development Environments</strong>
@@ -1633,20 +1636,20 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Anton Kosyakov',
-		company: 'Gitpod',
-		title: 'Principal Software Engineer',
-		image: {
-			url: 'anton-kosyakov.jpeg'
-		},
-		bio:
-			'Anton has been working on Gitpod since its beginning. He is responsible for providing tight and up-to-date integration of VS Code with Gitpod workspaces.',
-		twitter: 'akosyakov',
-		linkedin: 'anton-kosyakov-4093b610',
-		github: 'akosyakov',
-		abstract: `
+  },
+  {
+    name: 'Anton Kosyakov',
+    company: 'Gitpod',
+    title: 'Principal Software Engineer',
+    image: {
+      url: 'anton-kosyakov.jpeg'
+    },
+    bio:
+      'Anton has been working on Gitpod since its beginning. He is responsible for providing tight and up-to-date integration of VS Code with Gitpod workspaces.',
+    twitter: 'akosyakov',
+    linkedin: 'anton-kosyakov-4093b610',
+    github: 'akosyakov',
+    abstract: `
 		<div>
 		  <p>
 			<strong>Ephemeral Development Environments</strong>
@@ -1659,15 +1662,15 @@ export const speakers2021: Speaker[] = [
 		  </p>
 		</div>
 	  `
-	},
-	{
-		name: 'Ahmad Awais',
-		company: 'RapidAPI',
-		title: 'Head of Developer Relations ',
-		image: {
-			url: 'ahmad-awais.jpeg'
-		},
-		bio: `<div>
+  },
+  {
+    name: 'Ahmad Awais',
+    company: 'RapidAPI',
+    title: 'Head of Developer Relations ',
+    image: {
+      url: 'ahmad-awais.jpeg'
+    },
+    bio: `<div>
 		<p>
 		  <a href="https://twitter.com/MrAhmadAwais/" target="_blank">Ahmad Awais</a> is an <a href="https://www.linkedin.com/feed/update/urn:li:activity:6790272195416350720/" target="_blank">award-winning</a> open-source engineer​,​ Head of Developer Relations at <a href="https://rapidapi.com/company/about/" target="_blank">RapidAPI</a>, Google Developers Expert ​Dev Advocate, Node.js Community Committee Outreach Lead, WordPress Core​ Dev​, and ex VP ​of ​Engineering​​ at WGA. He has authored various open-source software tools used by millions of developers worldwide, like his <a href="https://ShadesOfPurple.pro/more" target="_blank">Shades of Purple</a> code-theme​ or projects like the​ <a href="https://github.com/AhmadAwais/corona-cli" target="_blank">corona-cli</a>​.
 		</p>
@@ -1675,1031 +1678,1054 @@ export const speakers2021: Speaker[] = [
 		  ​Awais ​loves to teach. Over 20,000 developers are learning from his courses ​, i.e., <a href="https://NodeCLI.com/?utm_medium=referral&amp;utm_campaign=speaking" target="_blank">NodeCLI.com</a>, <a href="https://VSCode.pro/?utm_medium=referral&amp;utm_campaign=speaking" target="_blank">VSCode.pro</a>,​ <a href="https://NextjsBeginner.com/?utm_medium=referral&amp;utm_campaign=speaking" target="_blank">NextjsBeginner.com</a>​​. He has spoken at 100+ tech conferences, including TEDx, ReactLive, Node Summit, Google Dev Summit, Next.js Conf. ​Awais received the FOSS community leadership recognition as one of the first 12 featured <a href="https://ahmadawais.com/github-stars/" target="_blank">GitHub Star</a> with a gold <a href="https://www.linkedin.com/feed/update/urn:li:activity:6790272195416350720/" target="_blank">GitHub Stars Award</a>. ​He is a member of the SmashingMagazine Experts Panel; featured &amp; published author at CSS-Tricks, Tuts+, Scotch.io, SitePoint. You can mostly find ​him on Twitter <a href="https://twitter.com/MrAhmadAwais/" target="_blank">@MrAhmadAwais</a>, where he tweets his <a href="https://Awais.dev/odmt" target="_blank">#OneDevMinute</a> developer tips.
 		​</p>
 	  </div>`,
-		twitter: 'MrAhmadAwais',
-		linkedin: 'mrahmadawais',
-		github: 'ahmadawais',
-		abstract: `<div>
+    twitter: 'MrAhmadAwais',
+    linkedin: 'mrahmadawais',
+    github: 'ahmadawais',
+    abstract: `<div>
 		<p>VSCode Power User Tips & Tricks</p>
 		<p>
 		After 10 years with Sublime Text, I switched to VSCode — the new open-source cross-platform editor everyone's talking about. I've spent over 1,000 hours perfecting my setup to help you switch today. In this talk, you'll get to learn tens of VSCode Power User workflows that'll help you save time and code more efficiently. Text manipulation to multi-cursors and even Markdown tips/tricks. You name it.
 		</p>
 	  </div>`
-	},
+  }
 ];
 
-const stringToBeautifiedFragment = (str = "") =>
-	str
-		.toLocaleLowerCase()
-		.replace(/\s/g, "-")
-		.replace(/\?/g, "")
-		.replace(/,/g, "");
-
+const stringToBeautifiedFragment = (str = '') =>
+  str.toLocaleLowerCase().replace(/\s/g, '-').replace(/\?/g, '').replace(/,/g, '');
 
 const getSpeakerByName = (name: string, speakers: Speaker[] = speakers2021) =>
-	speakers.find(s => s.name.toLowerCase() === name.toLowerCase());
+  speakers.find(s => s.name.toLowerCase() === name.toLowerCase());
 
 export const isEurope = () => {
-	const offset = new Date().getTimezoneOffset();
-	return offset <= 0 && offset >= -180;
+  const offset = new Date().getTimezoneOffset();
+  return offset <= 0 && offset >= -180;
 };
 
 const stages2022: Stage[] = [
-	{
-		name: 'Stage A',
-		day: 'Monday, May 2',
-		discord: '',
-		slug: 'a',
-		stream: 'znKHPTMpGTE',
-		schedule: [
-			{
-				title: 'Welcome to DevX Conf!',
-				scheduleOrder: 1,
-				description: '',
-				start: {
-					cest: '5:00 PM',
-					pt: '8:00 AM',
-				},
-				end: {
-					cest: '5:15 PM',
-					pt: '8:15 AM',
-				},
-				ytId: '',
-				speaker: [
-					// @ts-ignore
-					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
-				],
-			},
-			{
-				title: 'Panel: Remote development',
-				scheduleOrder: 2,
-				description: '',
-				start: {
-					cest: '5:15 PM',
-					pt: '8:15 AM',
-				},
-				end: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
-				},
-				ytId: '',
-				speaker: 'Kirill Skrygan, Christian Weichel, Nik Molnar, Christof Marti, Johannes Landgraf',
-			},
-			{
-				title: 'Maybe Its Time to Rethink How Youve Been Developing?',
-				scheduleOrder: 3,
-				description: '',
-				start: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
-				},
-				end: {
-					cest: '6:30 PM',
-					pt: '9:30 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: [getSpeakerByName('Ramiro Berrelleza', speakers2022), getSpeakerByName('Arsh Sharma', speakers2022)],
-			},
-			{
-				title: 'Implementation and use cases of modern rendering patterns',
-				scheduleOrder: 4,
-				description: '',
-				start: {
-					cest: '6:30 PM',
-					pt: '9:30 AM',
-				},
-				end: {
-					cest: '7:00 PM',
-					pt: '10:00 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Lydia Hallie', speakers2022),
-			},
-			{
-				title: 'Fig: Autocomplete for the Terminal',
-				scheduleOrder: 5,
-				description: '',
-				start: {
-					cest: '7:00 PM',
-					pt: '10:00 AM',
-				},
-				end: {
-					cest: '7:30 PM',
-					pt: '10:30 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Brendan Falk', speakers2022),
-			},
-			{
-				title: 'The Next Generation of Developer-First Products',
-				scheduleOrder: 6,
-				description: '',
-				start: {
-					cest: '7:30 PM',
-					pt: '10:30 AM',
-				},
-				end: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Zeno Rocha', speakers2022),
-			},
-			{
-				title: 'Building DevX Teams, my story',
-				scheduleOrder: 7,
-				description: '',
-				start: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				end: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Cirpo Cinelli', speakers2022),
-			},
-			{
-				title: 'Code Reviews is more than a crushing Developer Experience',
-				scheduleOrder: 23,
-				description: '',
-				start: {
-					cest: '9:00 PM',
-					pt: '12:00 AM',
-				},
-				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				ytId: '',
-				// 	// @ts-ignore
-				speaker: getSpeakerByName('Shanea Leven', speakers2022),
-			},
-			{
-				title: 'Conclude Day 1',
-				scheduleOrder: 9,
-				description: '',
-				start: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				end: {
-					cest: '9:40 PM',
-					pt: '12:40 PM',
-				},
-				ytId: '',
-				speaker: [
-					// @ts-ignore
-					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
-				],
-			},
-		]
-	},
-	{
-		name: 'Stage A',
-		day: 'Tuesday, May 3',
-		discord: '',
-		slug: 'a',
-		stream: 'znKHPTMpGTE',
-		schedule: [
-			{
-				title: 'Welcome to DevX Conf Day 2!',
-				scheduleOrder: 10,
-				description: '',
-				start: {
-					cest: '5:00 PM',
-					pt: '8:00 AM',
-				},
-				end: {
-					cest: '5:15 PM',
-					pt: '8:15 AM',
-				},
-				ytId: '',
-				speaker: [
-					// @ts-ignore
-					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
-				],
-			},
-			{
-				title: 'Panel: DevX Past and Future',
-				scheduleOrder: 12,
-				description: '',
-				start: {
-					cest: '5:15 PM',
-					pt: '8:15 AM',
-				},
-				end: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
-				},
-				ytId: '',
-				speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman ',
-			},
-			{
-				title: 'Remote development in a remote-first world',
-				scheduleOrder: 29,
-				description: '',
-				start: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
-				},
-				end: {
-					cest: '6:45 PM',
-					pt: '9:45 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Tarun Pothulapati', speakers2022),
-			},
-			{
-				title: 'The balancing act of delivering high-quality DX',
-				scheduleOrder: 13,
-				description: '',
-				start: {
-					cest: '6:45 PM',
-					pt: '9:45 AM',
-				},
-				end: {
-					cest: '7:15 PM',
-					pt: '10:15 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Victor Savkin', speakers2022),
-			},
-			{
-				title: 'How Spotify engineers use Backstage daily and keep their lives simple',
-				scheduleOrder: 14,
-				description: '',
-				start: {
-					cest: '7:15 PM',
-					pt: '10:15 AM',
-				},
-				end: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Himanshu Mishra', speakers2022),
-			},
-			{
-				title: 'Remote development can improve your developers’ remote work experience',
-				scheduleOrder: 15,
-				description: '',
-				start: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
-				},
-				end: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Maya Kaczorowski', speakers2022),
-			},
-			{
-				title: 'Zed: Collaborative coding at the speed of light',
-				scheduleOrder: 16,
-				description: '',
-				start: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				end: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Nathan Sobo', speakers2022),
-			},
-			{
-				title: 'Designing for developers',
-				scheduleOrder: 17,
-				description: '',
-				start: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
-				},
-				end: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Boris Kirov', speakers2022),
-			},
-			{
-				title: 'End of DevX Conf 2022!',
-				scheduleOrder: 18,
-				description: '',
-				start: {
-					cest: '9:30 PM',
-					pt: '12:30 PM',
-				},
-				end: {
-					cest: '9:40 PM',
-					pt: '12:40 PM',
-				},
-				ytId: '',
-				speaker: [
-					// @ts-ignore
-					getSpeakerByName('Michael Aring', hosts2022), getSpeakerByName('Pauline Narvas', hosts2022)
-				],
-			},
-		]
-	},
-	{
-		name: 'Stage B',
-		day: 'Monday, May 2',
-		discord: '',
-		slug: 'b',
-		stream: 'qAiiZtvbwpc',
-		schedule: [
-			{
-				title: 'The Radiating Circles of DevX',
-				scheduleOrder: 18,
-				description: '',
-				start: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
-				},
-				end: {
-					cest: '6:30 PM',
-					pt: '9:30 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Shawn Wang', speakers2022),
-			},
-			{
-				title: 'Peer Learning: Your developer adoption safety net',
-				scheduleOrder: 19,
-				description: '',
-				start: {
-					cest: '6:30 PM',
-					pt: '9:30 AM',
-				},
-				end: {
-					cest: '7:00 PM',
-					pt: '10:00 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Ana Hevesi', speakers2022),
-			},
-			{
-				title: 'Developer Experience and Product-Led Growth (PLG) - how they enable each other and your developer community, seamlessly',
-				scheduleOrder: 20,
-				description: '',
-				start: {
-					cest: '7:00 PM',
-					pt: '10:00 AM',
-				},
-				end: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Amara Graham', speakers2022),
-			},
-			{
-				title: 'How the Supabase architecture enables "Supa"-DX',
-				scheduleOrder: 8,
-				description: '',
-				start: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
-				},
-				end: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Inian Parameshwaran', speakers2022),
-			},
-			{
-				title: 'Make a world-class integration testing library',
-				scheduleOrder: 22,
-				description: '',
-				start: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				end: {
-					cest: '9:00 PM',
-					pt: '12:00 PM',
-				},
-				ytId: '',
-				// @ts-ignore
-				speaker: getSpeakerByName('Oleg Šelajev', speakers2022),
-			},
-		]
-	},
-	{
-		name: 'Stage B',
-		day: 'Tuesday, May 3',
-		discord: '',
-		slug: 'b',
-		stream: 'qAiiZtvbwpc',
-		schedule: [
-			{
-				title: 'TDD and the Terminator - An introduction to Test Driven Development',
-				scheduleOrder: 24,
-				description: '',
-				start: {
-					cest: '6:00 PM',
-					pt: '9:00 AM',
-				},
-				end: {
-					cest: '6:45 PM',
-					pt: '9:45 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Layla Porter', speakers2022),
-			},
-			{
-				title: 'Warp and the future of the terminal',
-				scheduleOrder: 25,
-				description: '',
-				start: {
-					cest: '6:45 PM',
-					pt: '9:45 AM',
-				},
-				end: {
-					cest: '7:15 PM',
-					pt: '10:15 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Zach Lloyd', speakers2022),
-			},
-			{
-				title: 'Progressive Delivery with Observability',
-				scheduleOrder: 26,
-				description: '',
-				start: {
-					cest: '7:15 PM',
-					pt: '10:15 AM',
-				},
-				end: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Alayshia Knighten', speakers2022),
-			},
-			{
-				title: 'What does it mean to create API products at scale?',
-				scheduleOrder: 27,
-				description: '',
-				start: {
-					cest: '7:45 PM',
-					pt: '10:45 AM',
-				},
-				end: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Michael Bleigh', speakers2022),
-			},
-			{
-				title: 'How to onboard people in a day',
-				scheduleOrder: 28,
-				description: '',
-				start: {
-					cest: '8:15 PM',
-					pt: '11:15 AM',
-				},
-				end: {
-					cest: '9:15 PM',
-					pt: '12:15 PM',
-				},
-				ytId: '',
-				speaker: getSpeakerByName('Wilson Mar', speakers2022),
-			},
-		]
-	}
-]
+  {
+    name: 'Stage A',
+    day: 'Monday, May 2',
+    discord: '',
+    slug: 'a',
+    stream: 'Qecr3TQk87Q',
+    schedule: [
+      {
+        title: 'Welcome to DevX Conf!',
+        scheduleOrder: 1,
+        description: '',
+        start: {
+          cest: '5:00 PM',
+          pt: '8:00 AM'
+        },
+        end: {
+          cest: '5:15 PM',
+          pt: '8:15 AM'
+        },
+        ytId: 'Qecr3TQk87Q',
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Michael Aring', hosts2022),
+          //@ts-ignore
+          getSpeakerByName('Pauline Narvas', hosts2022)
+        ]
+      },
+      {
+        title: 'Panel: Remote development',
+        scheduleOrder: 2,
+        description: '',
+        start: {
+          cest: '5:15 PM',
+          pt: '8:15 AM'
+        },
+        end: {
+          cest: '6:00 PM',
+          pt: '9:00 AM'
+        },
+        ytId: 'tWZ6VunABws',
+        speaker: 'Kirill Skrygan, Christian Weichel, Nik Molnar, Christof Marti, Johannes Landgraf'
+      },
+      {
+        title: 'Maybe Its Time to Rethink How Youve Been Developing?',
+        scheduleOrder: 3,
+        description: '',
+        start: {
+          cest: '6:00 PM',
+          pt: '9:00 AM'
+        },
+        end: {
+          cest: '6:30 PM',
+          pt: '9:30 AM'
+        },
+        ytId: 'FRmv-IS-7ow',
 
-const stages2021: Stage[] = [
-	{
-		name: 'Stage A',
-		day: 'Wednesday, April 28',
-		discord: '',
-		slug: 'a',
-		stream: 'aI-L72XGznU',
-		schedule: [
-			{
-				title: 'Intro',
-				scheduleOrder: 1,
-				description: '',
-				start: {
-					cest: '17:00 PM',
-					pt: '8:00 AM',
-				},
-				end: {
-					cest: '17:10 PM',
-					pt: '8:10 AM',
-				},
-				ytId: 'aI-L72XGznU',
-				speaker: [
-					{
-						name: 'Johannes Landgraf',
-						company: '',
-						title: '',
-						image: {
-							url: 'johannes.jpeg'
-						},
-						bio: '',
-						twitter: '',
-						linkedin: '',
-						github: '',
-						abstract: ''
-					},
-					{
-						name: 'Christin Frohne',
-						company: '',
-						title: '',
-						image: {
-							url: 'christin.jpeg'
-						},
-						bio: '',
-						twitter: '',
-						linkedin: '',
-						github: '',
-						abstract: ''
-					}
-				],
-			},
-			{
-				title: 'The evolution of DevX - An interview with Erich Gamma',
-				scheduleOrder: 2,
-				description: '',
-				start: {
-					cest: '17:10 PM',
-					pt: '8:10 AM'
-				},
-				end: {
-					cest: '17:40 PM',
-					pt: '8:40 AM'
-				},
-				ytId: 'JiBUDS9odA8',
-				// eslint-disable-next-line
-				// @ts-ignore
-				speaker: [getSpeakerByName('Erich Gamma'), {
-					name: 'Sven Efftinge',
-					company: '',
-					title: '',
-					image: {
-						url: 'sven-efftinge.jpeg'
-					},
-					bio: '',
-					twitter: '',
-					linkedin: '',
-					github: '',
-					abstract: ''
-				}]
-			},
-			{
-				title: "Is DevEx not good… because we don't want it to be?",
-				scheduleOrder: 4,
-				description: '',
-				start: {
-					cest: '18:00 PM',
-					pt: '9:00 AM'
-				},
-				end: {
-					cest: '18:20 PM',
-					pt: '9:20 AM'
-				},
-				ytId: 'nPO4QL0Q85s',
-				speaker: getSpeakerByName('Ellen Chisa')
-			},
-			{
-				title: 'DevX at Heroku and GitHub - An interview with Jason Warner',
-				scheduleOrder: 6,
-				description: '',
-				start: {
-					cest: '18:40 PM',
-					pt: '9:40 AM'
-				},
-				end: {
-					cest: '19:00 PM',
-					pt: '10:00 AM'
-				},
-				ytId: 'SddUEk878jM',
-				// eslint-disable-next-line
-				// @ts-ignore
-				speaker: [getSpeakerByName('Jason Warner'), {
-					name: 'Johannes Landgraf',
-					company: '',
-					title: '',
-					image: {
-						url: 'johannes.jpeg'
-					},
-					bio: '',
-					twitter: '',
-					linkedin: '',
-					github: '',
-					abstract: ''
-				}]
-			},
-			{
-				title: 'Internal DevX Experience is broken… and you should be pissed',
-				scheduleOrder: 8,
-				description: '',
-				start: {
-					cest: '19:20 PM',
-					pt: '10:20 AM'
-				},
-				end: {
-					cest: '19:40 PM',
-					pt: '10:40 AM'
-				},
-				ytId: 'N6XkqbNKxQA',
-				speaker: getSpeakerByName('Shanea Leven')
-			},
-			{
-				title: 'Find friction in your developer experience by user testing with developers',
-				scheduleOrder: 10,
-				description: '',
-				start: {
-					cest: '20:00 PM',
-					pt: '11:00 AM'
-				},
-				end: {
-					cest: '20:20 PM',
-					pt: '11:20 AM'
-				},
-				ytId: 'Dn6-See4wfk',
-				speaker: getSpeakerByName('Ian Jennings')
-			},
-			{
-				title: 'The developer experience gap',
-				scheduleOrder: 12,
-				description: '',
-				start: {
-					cest: '20:40 PM',
-					pt: '11:40 AM'
-				},
-				end: {
-					cest: '21:00 PM',
-					pt: '12:00 PM'
-				},
-				// start: isEurope() ? '20:40' : '11:40 AM',
-				// end: isEurope() ? '21:00' : '12:00 PM',
-				ytId: 'Z6O13JQOmiQ',
-				speaker: getSpeakerByName("Stephen O'Grady")
-			},
-		]
-	},
-	{
-		name: 'Stage A',
-		day: 'Thursday, April 29',
-		discord: '',
-		slug: 'a',
-		stream: 'aI-L72XGznU',
-		schedule: [
-			{
-				title: "VSCode Power User Tips & Tricks",
-				scheduleOrder: 14,
-				description: '',
-				start: {
-					cest: '16:40 PM',
-					pt: '7:40 AM'
-				},
-				end: {
-					cest: '17:00 PM',
-					pt: '8:00 AM'
-				},
-				// start: isEurope() ? '16:40' : '7:40 AM',
-				// end: isEurope() ? '17:00' : '8:00 AM',
-				ytId: 'M6E5L1-TVoc',
-				speaker: getSpeakerByName("Ahmad Awais")
-			},
-			{
-				title: 'Streamlining Firebase Development with local Emulators',
-				scheduleOrder: 16,
-				description: '',
-				start: {
-					cest: '17:20 PM',
-					pt: '8:20 AM'
-				},
-				end: {
-					cest: '17:40 PM',
-					pt: '8:40 AM'
-				},
-				ytId: '0AXj96IXueg',
-				speaker: getSpeakerByName("Rachel Myers"),
-			},
-			{
-				title: "The story of GitHub1s - speed & familiarity matters",
-				scheduleOrder: 18,
-				description: '',
-				start: {
-					cest: '18:00 PM',
-					pt: '9:00 AM'
-				},
-				end: {
-					cest: '18:20 PM',
-					pt: '9:20 AM'
-				},
-				ytId: '6Xyg6yQe2rk',
-				speaker: getSpeakerByName('Yihong Cheng')
-			},
-			{
-				title: 'Trapped in the open source supply chain',
-				scheduleOrder: 20,
-				description: '',
-				start: {
-					cest: '18:40 PM',
-					pt: '9:40 AM'
-				},
-				end: {
-					cest: '19:00 PM',
-					pt: '10:00 AM'
-				},
-				ytId: '0wRUU0ln9-0',
-				speaker: getSpeakerByName('Henry Zhu')
-			},
-			{
-				title: 'DevX in the Internet Age: One Step Forward, Two Steps Back',
-				scheduleOrder: 22,
-				description: '',
-				start: {
-					cest: '19:20 PM',
-					pt: '10:20 AM'
-				},
-				end: {
-					cest: '19:40 PM',
-					pt: '10:40 AM'
-				},
-				ytId: 'asA7rE0mDeo',
-				speaker: getSpeakerByName('Anurag Goel')
-			},
-			{
-				title: 'How to build a dApp',
-				scheduleOrder: 24,
-				description: '',
-				start: {
-					cest: '20:00 PM',
-					pt: '11:00 AM'
-				},
-				end: {
-					cest: '20:20 PM',
-					pt: '11:20 AM'
-				},
-				// start: isEurope() ? '20:00' : '11:00 AM',
-				// end: isEurope() ? '20:20' : '11:20 AM',
-				ytId: 'Ks9_hTXwh2o',
-				speaker: getSpeakerByName('Nader Dabit')
-			},
-			{
-				title: 'How to prioritize dev experience in the development process above all else',
-				scheduleOrder: 26,
-				description: '',
-				start: {
-					cest: '20:40 PM',
-					pt: '11:40 AM'
-				},
-				end: {
-					cest: '21:00 PM',
-					pt: '12:00 PM'
-				},
-				ytId: 'lWF_PNqyiE8',
-				// eslint-disable-next-line
-				// @ts-ignore
-				speaker: [getSpeakerByName("Tuomas Artman"), getSpeakerByName("Thomas Paul Mann")]
-			},
-		]
-	},
-	{
-		name: 'Stage B',
-		day: 'Wednesday, April 28',
-		discord: '',
-		slug: 'b',
-		stream: 'aI-L72XGznU',
-		schedule: [
-			{
-				title: 'Using Observability to improve the Developer Experience',
-				scheduleOrder: 3,
-				description: '',
-				start: {
-					cest: '17:40 PM',
-					pt: '8:40 AM'
-				},
-				end: {
-					cest: '18:00 PM',
-					pt: '9:00 AM'
-				},
-				ytId: '8LlM0knBuLQ',
-				speaker: getSpeakerByName('Borja Burgos')
-			},
-			{
-				title: 'Monorepos, are they right for you?',
-				scheduleOrder: 5,
-				description: '',
-				start: {
-					cest: '18:20 PM',
-					pt: '9:20 AM'
-				},
-				end: {
-					cest: '18:40 PM',
-					pt: '9:40 AM'
-				},
-				ytId: 'G3yIAS4NShk',
-				speaker: getSpeakerByName('Maël Nison')
-			},
-			{
-				title: 'Cloud native Java',
-				scheduleOrder: 7,
-				description: '',
-				start: {
-					cest: '19:00 PM',
-					pt: '10:00 AM'
-				},
-				end: {
-					cest: '19:20 PM',
-					pt: '10:20 AM'
-				},
-				ytId: 'oq5FcnqEMxk',
-				speaker: getSpeakerByName('Josh Long')
-			},
-			{
-				title: 'Infrastructure security, visibility and cost-optimization',
-				scheduleOrder: 9,
-				description: '',
-				start: {
-					cest: '19:40 PM',
-					pt: '10:40 AM'
-				},
-				end: {
-					cest: '20:00 PM',
-					pt: '11:00 AM'
-				},
-				ytId: 'AizWSieYRGk',
-				speaker: getSpeakerByName('Yevgeny Pats')
-			},
-			{
-				title: 'Ephemeral Development Environments',
-				scheduleOrder: 11,
-				description: '',
-				start: {
-					cest: '20:20 PM',
-					pt: '11:20 AM'
-				},
-				end: {
-					cest: '20:40 PM',
-					pt: '11:40 AM'
-				},
-				// start: isEurope() ? '20:20' : '11:20 AM',
-				// end: isEurope() ? '20:40' : '11:40 AM',
-				ytId: 'IXVmjkI7wkc',
-				// eslint-disable-next-line
-				// @ts-ignore
-				speaker: [getSpeakerByName('Mike Nikles'), getSpeakerByName('Anton Kosyakov')]
-			},
-			{
-				title: 'Building a K8s Operator for a Distributed Database',
-				scheduleOrder: 13,
-				description: '',
-				start: {
-					cest: '21:00 PM',
-					pt: '12:00 PM'
-				},
-				end: {
-					cest: '21:20 PM',
-					pt: '12:20 PM'
-				},
-				ytId: 'VUGBq0ME2Qc',
-				speaker: getSpeakerByName("Natalie Pistunovich")
-			}
-		]
-	},
-	{
-		name: 'Stage B',
-		day: 'Thursday, April 29',
-		discord: '',
-		slug: 'b',
-		stream: 'aI-L72XGznU',
-		schedule: [
-			{
-				title: 'Building Supabase Storage. DevX, performance, security - choose three',
-				scheduleOrder: 15,
-				description: '',
-				start: {
-					cest: '17:00 PM',
-					pt: '8:00 AM'
-				},
-				end: {
-					cest: '17:20 PM',
-					pt: '8:20 AM'
-				},
-				// start: isEurope() ? '17:00' : '8:00 AM',
-				// end: isEurope() ? '17:20' : '8:20 AM',
-				ytId: 'YsUYOsq_o7g',
-				speaker: getSpeakerByName("Inian Parameshwaran"),
-			},
-			{
-				title: 'DevX: history of code search',
-				scheduleOrder: 17,
-				description: '',
-				start: {
-					cest: '17:40 PM',
-					pt: '8:40 AM'
-				},
-				end: {
-					cest: '18:00 PM',
-					pt: '9:00 AM'
-				},
-				ytId: 'J4lArxTWiIY',
-				speaker: getSpeakerByName('Beyang Liu')
-			},
-			{
-				title: 'Why I love incremental delivery and why you should too',
-				scheduleOrder: 19,
-				description: '',
-				start: {
-					cest: '18:20 PM',
-					pt: '9:20 AM'
-				},
-				end: {
-					cest: '18:40 PM',
-					pt: '9:40 AM'
-				},
-				ytId: 'AnxWXQMauMI',
-				speaker: getSpeakerByName('Lili Kastilio')
-			},
-			{
-				title: 'Simplifying the journey of your containerized application from dev to production',
-				scheduleOrder: 21,
-				description: '',
-				start: {
-					cest: '19:00 PM',
-					pt: '10:00 AM'
-				},
-				end: {
-					cest: '19:20 PM',
-					pt: '10:20 AM'
-				},
-				// start: isEurope() ? '19:00' : '10:00 AM',
-				// end: isEurope() ? '19:20' : '10:20 AM',
-				ytId: '8iJ_6VUzk1I',
-				speaker: getSpeakerByName('Kyle Quest')
-			},
-			{
-				title: 'Make your APIs developer-friendly',
-				scheduleOrder: 23,
-				description: '',
-				start: {
-					cest: '19:40 PM',
-					pt: '10:40 AM'
-				},
-				end: {
-					cest: '20:00 PM',
-					pt: '11:00 AM'
-				},
-				ytId: 'E-2Eqh99nUw',
-				speaker: getSpeakerByName('Aidan Cunniffe')
-			},
-			{
-				title: '"Testing" in prod Isn\'t the only way: why observability needs structure',
-				scheduleOrder: 25,
-				description: '',
-				start: {
-					cest: '20:20 PM',
-					pt: '11:20 AM'
-				},
-				end: {
-					cest: '20:40 PM',
-					pt: '11:40 AM'
-				},
-				ytId: '0nrd5-9Lf7E',
-				speaker: getSpeakerByName('Jean Yang')
-			},
-		]
-	}
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Ramiro Berrelleza', speakers2022),
+          // @ts-ignore
+          getSpeakerByName('Arsh Sharma', speakers2022)
+        ]
+      },
+      {
+        title: 'Implementation and use cases of modern rendering patterns',
+        scheduleOrder: 4,
+        description: '',
+        start: {
+          cest: '6:30 PM',
+          pt: '9:30 AM'
+        },
+        end: {
+          cest: '7:00 PM',
+          pt: '10:00 AM'
+        },
+        ytId: 'RHFlQnug3bk',
+        // @ts-ignore
+        speaker: getSpeakerByName('Lydia Hallie', speakers2022)
+      },
+      {
+        title: 'Fig: Autocomplete for the Terminal',
+        scheduleOrder: 5,
+        description: '',
+        start: {
+          cest: '7:00 PM',
+          pt: '10:00 AM'
+        },
+        end: {
+          cest: '7:30 PM',
+          pt: '10:30 AM'
+        },
+        ytId: 'VhxGX8MV3Vw',
+        // @ts-ignore
+        speaker: getSpeakerByName('Brendan Falk', speakers2022)
+      },
+      {
+        title: 'The Next Generation of Developer-First Products',
+        scheduleOrder: 6,
+        description: '',
+        start: {
+          cest: '7:30 PM',
+          pt: '10:30 AM'
+        },
+        end: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        ytId: 'ja-Pr58FCIQ',
+        speaker: getSpeakerByName('Zeno Rocha', speakers2022)
+      },
+      {
+        title: 'Building DevX Teams, my story',
+        scheduleOrder: 7,
+        description: '',
+        start: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        end: {
+          cest: '9:00 PM',
+          pt: '12:00 PM'
+        },
+        ytId: 'xX5zeVy8Ta4',
+        speaker: getSpeakerByName('Cirpo Cinelli', speakers2022)
+      },
+      {
+        title: 'Code Reviews is more than a crushing Developer Experience',
+        scheduleOrder: 23,
+        description: '',
+        start: {
+          cest: '9:00 PM',
+          pt: '12:00 AM'
+        },
+        end: {
+          cest: '9:30 PM',
+          pt: '12:30 PM'
+        },
+        ytId: 'fy-mrkOMm0M',
+        // 	// @ts-ignore
+        speaker: getSpeakerByName('Shanea Leven', speakers2022)
+      },
+      {
+        title: 'Conclude Day 1',
+        scheduleOrder: 9,
+        description: '',
+        start: {
+          cest: '9:30 PM',
+          pt: '12:30 PM'
+        },
+        end: {
+          cest: '9:40 PM',
+          pt: '12:40 PM'
+        },
+        ytId: 'ZINFt0QQlkg',
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Michael Aring', hosts2022),
+          // @ts-ignore
+          getSpeakerByName('Pauline Narvas', hosts2022)
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Stage A',
+    day: 'Tuesday, May 3',
+    discord: '',
+    slug: 'a',
+    stream: 'Qecr3TQk87Q',
+    schedule: [
+      {
+        title: 'Welcome to DevX Conf Day 2!',
+        scheduleOrder: 10,
+        description: '',
+        start: {
+          cest: '5:00 PM',
+          pt: '8:00 AM'
+        },
+        end: {
+          cest: '5:15 PM',
+          pt: '8:15 AM'
+        },
+        ytId: 'vSUsXkew3X0',
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Michael Aring', hosts2022),
+          // @ts-ignore
+          getSpeakerByName('Pauline Narvas', hosts2022)
+        ]
+      },
+      {
+        title: 'Panel: DevX Past and Future',
+        scheduleOrder: 12,
+        description: '',
+        start: {
+          cest: '5:15 PM',
+          pt: '8:15 AM'
+        },
+        end: {
+          cest: '6:00 PM',
+          pt: '9:00 AM'
+        },
+        ytId: 'JmdUac950kk',
+        speaker: 'Chad Metcalf, Andrea Luzzardi, Arnaud Porterie, Ben Firshman '
+      },
+      {
+        title: 'Remote development in a remote-first world',
+        scheduleOrder: 29,
+        description: '',
+        start: {
+          cest: '6:00 PM',
+          pt: '9:00 AM'
+        },
+        end: {
+          cest: '6:45 PM',
+          pt: '9:45 AM'
+        },
+        ytId: 'pxJ1dgzn7vY',
+        speaker: getSpeakerByName('Tarun Pothulapati', speakers2022)
+      },
+      {
+        title: 'The balancing act of delivering high-quality DX',
+        scheduleOrder: 13,
+        description: '',
+        start: {
+          cest: '6:45 PM',
+          pt: '9:45 AM'
+        },
+        end: {
+          cest: '7:15 PM',
+          pt: '10:15 AM'
+        },
+        ytId: '8M0XYCN5Bn8',
+        speaker: getSpeakerByName('Victor Savkin', speakers2022)
+      },
+      {
+        title: 'How Spotify engineers use Backstage daily and keep their lives simple',
+        scheduleOrder: 14,
+        description: '',
+        start: {
+          cest: '7:15 PM',
+          pt: '10:15 AM'
+        },
+        end: {
+          cest: '7:45 PM',
+          pt: '10:45 AM'
+        },
+        ytId: 'YswvyxUQvPw',
+        speaker: getSpeakerByName('Himanshu Mishra', speakers2022)
+      },
+      {
+        title: 'Remote development can improve your developers’ remote work experience',
+        scheduleOrder: 15,
+        description: '',
+        start: {
+          cest: '7:45 PM',
+          pt: '10:45 AM'
+        },
+        end: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        ytId: 'FLxeKNLjfKU',
+        speaker: getSpeakerByName('Maya Kaczorowski', speakers2022)
+      },
+      {
+        title: 'Zed: Collaborative coding at the speed of light',
+        scheduleOrder: 16,
+        description: '',
+        start: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        end: {
+          cest: '9:00 PM',
+          pt: '12:00 PM'
+        },
+        ytId: 'wXT73bBr83s',
+        speaker: getSpeakerByName('Nathan Sobo', speakers2022)
+      },
+      {
+        title: 'Designing for developers',
+        scheduleOrder: 17,
+        description: '',
+        start: {
+          cest: '9:00 PM',
+          pt: '12:00 PM'
+        },
+        end: {
+          cest: '9:30 PM',
+          pt: '12:30 PM'
+        },
+        ytId: '-oSb5GUyUFo',
+        speaker: getSpeakerByName('Boris Kirov', speakers2022)
+      },
+      {
+        title: 'End of DevX Conf 2022!',
+        scheduleOrder: 18,
+        description: '',
+        start: {
+          cest: '9:30 PM',
+          pt: '12:30 PM'
+        },
+        end: {
+          cest: '9:40 PM',
+          pt: '12:40 PM'
+        },
+        ytId: 'Bv6z8nE7Z-M',
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Michael Aring', hosts2022),
+          // @ts-ignore
+          getSpeakerByName('Pauline Narvas', hosts2022)
+        ]
+      }
+    ]
+  },
+  {
+    name: 'Stage B',
+    day: 'Monday, May 2',
+    discord: '',
+    slug: 'b',
+    stream: 'Qecr3TQk87Q',
+    schedule: [
+      {
+        title: 'The Radiating Circles of DevX',
+        scheduleOrder: 18,
+        description: '',
+        start: {
+          cest: '6:00 PM',
+          pt: '9:00 AM'
+        },
+        end: {
+          cest: '6:30 PM',
+          pt: '9:30 AM'
+        },
+        ytId: 'd9lo-Ej98l4',
+        // @ts-ignore
+        speaker: getSpeakerByName('Shawn Wang', speakers2022)
+      },
+      {
+        title: 'Peer Learning: Your developer adoption safety net',
+        scheduleOrder: 19,
+        description: '',
+        start: {
+          cest: '6:30 PM',
+          pt: '9:30 AM'
+        },
+        end: {
+          cest: '7:00 PM',
+          pt: '10:00 AM'
+        },
+        ytId: 'bmsZGT151ys',
+        // @ts-ignore
+        speaker: getSpeakerByName('Ana Hevesi', speakers2022)
+      },
+      {
+        title:
+          'Developer Experience and Product-Led Growth (PLG) - how they enable each other and your developer community, seamlessly',
+        scheduleOrder: 20,
+        description: '',
+        start: {
+          cest: '7:00 PM',
+          pt: '10:00 AM'
+        },
+        end: {
+          cest: '7:45 PM',
+          pt: '10:45 AM'
+        },
+        ytId: 'uJ58xT4NWA8',
+        // @ts-ignore
+        speaker: getSpeakerByName('Amara Graham', speakers2022)
+      },
+      {
+        title: 'How the Supabase architecture enables "Supa"-DX',
+        scheduleOrder: 8,
+        description: '',
+        start: {
+          cest: '7:45 PM',
+          pt: '10:45 AM'
+        },
+        end: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        ytId: '1Tz0FBoqCTQ',
+        speaker: getSpeakerByName('Inian Parameshwaran', speakers2022)
+      },
+      {
+        title: 'Make a world-class integration testing library',
+        scheduleOrder: 22,
+        description: '',
+        start: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        end: {
+          cest: '9:00 PM',
+          pt: '12:00 PM'
+        },
+        ytId: 'A_I8_3UFHo0',
+        // @ts-ignore
+        speaker: getSpeakerByName('Oleg Šelajev', speakers2022)
+      }
+    ]
+  },
+  {
+    name: 'Stage B',
+    day: 'Tuesday, May 3',
+    discord: '',
+    slug: 'b',
+    stream: 'Qecr3TQk87Q',
+    schedule: [
+      {
+        title: 'TDD and the Terminator - An introduction to Test Driven Development',
+        scheduleOrder: 24,
+        description: '',
+        start: {
+          cest: '6:00 PM',
+          pt: '9:00 AM'
+        },
+        end: {
+          cest: '6:45 PM',
+          pt: '9:45 AM'
+        },
+        ytId: 'ukIQqIdZUvY',
+        speaker: getSpeakerByName('Layla Porter', speakers2022)
+      },
+      {
+        title: 'Warp and the future of the terminal',
+        scheduleOrder: 25,
+        description: '',
+        start: {
+          cest: '6:45 PM',
+          pt: '9:45 AM'
+        },
+        end: {
+          cest: '7:15 PM',
+          pt: '10:15 AM'
+        },
+        ytId: 'EFbicktk6C4',
+        speaker: getSpeakerByName('Zach Lloyd', speakers2022)
+      },
+      {
+        title: 'Progressive Delivery with Observability',
+        scheduleOrder: 26,
+        description: '',
+        start: {
+          cest: '7:15 PM',
+          pt: '10:15 AM'
+        },
+        end: {
+          cest: '7:45 PM',
+          pt: '10:45 AM'
+        },
+        ytId: 'OQ0qyGap60w',
+        speaker: getSpeakerByName('Alayshia Knighten', speakers2022)
+      },
+      {
+        title: 'What does it mean to create API products at scale?',
+        scheduleOrder: 27,
+        description: '',
+        start: {
+          cest: '7:45 PM',
+          pt: '10:45 AM'
+        },
+        end: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        ytId: '-6IinBFPKn4',
+        speaker: getSpeakerByName('Michael Bleigh', speakers2022)
+      },
+      {
+        title: 'How to onboard people in a day',
+        scheduleOrder: 28,
+        description: '',
+        start: {
+          cest: '8:15 PM',
+          pt: '11:15 AM'
+        },
+        end: {
+          cest: '9:15 PM',
+          pt: '12:15 PM'
+        },
+        ytId: 'mDpSVbEjEtw',
+        speaker: getSpeakerByName('Wilson Mar', speakers2022)
+      }
+    ]
+  }
 ];
 
-write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021))
+const stages2021: Stage[] = [
+  {
+    name: 'Stage A',
+    day: 'Wednesday, April 28',
+    discord: '',
+    slug: 'a',
+    stream: 'aI-L72XGznU',
+    schedule: [
+      {
+        title: 'Intro',
+        scheduleOrder: 1,
+        description: '',
+        start: {
+          cest: '17:00 PM',
+          pt: '8:00 AM'
+        },
+        end: {
+          cest: '17:10 PM',
+          pt: '8:10 AM'
+        },
+        ytId: 'aI-L72XGznU',
+        speaker: [
+          {
+            name: 'Johannes Landgraf',
+            company: '',
+            title: '',
+            image: {
+              url: 'johannes.jpeg'
+            },
+            bio: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            abstract: ''
+          },
+          {
+            name: 'Christin Frohne',
+            company: '',
+            title: '',
+            image: {
+              url: 'christin.jpeg'
+            },
+            bio: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            abstract: ''
+          }
+        ]
+      },
+      {
+        title: 'The evolution of DevX - An interview with Erich Gamma',
+        scheduleOrder: 2,
+        description: '',
+        start: {
+          cest: '17:10 PM',
+          pt: '8:10 AM'
+        },
+        end: {
+          cest: '17:40 PM',
+          pt: '8:40 AM'
+        },
+        ytId: 'JiBUDS9odA8',
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Erich Gamma'),
+          {
+            name: 'Sven Efftinge',
+            company: '',
+            title: '',
+            image: {
+              url: 'sven-efftinge.jpeg'
+            },
+            bio: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            abstract: ''
+          }
+        ]
+      },
+      {
+        title: "Is DevEx not good… because we don't want it to be?",
+        scheduleOrder: 4,
+        description: '',
+        start: {
+          cest: '18:00 PM',
+          pt: '9:00 AM'
+        },
+        end: {
+          cest: '18:20 PM',
+          pt: '9:20 AM'
+        },
+        ytId: 'nPO4QL0Q85s',
+        speaker: getSpeakerByName('Ellen Chisa')
+      },
+      {
+        title: 'DevX at Heroku and GitHub - An interview with Jason Warner',
+        scheduleOrder: 6,
+        description: '',
+        start: {
+          cest: '18:40 PM',
+          pt: '9:40 AM'
+        },
+        end: {
+          cest: '19:00 PM',
+          pt: '10:00 AM'
+        },
+        ytId: 'SddUEk878jM',
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [
+          // @ts-ignore
+          getSpeakerByName('Jason Warner'),
+          {
+            name: 'Johannes Landgraf',
+            company: '',
+            title: '',
+            image: {
+              url: 'johannes.jpeg'
+            },
+            bio: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            abstract: ''
+          }
+        ]
+      },
+      {
+        title: 'Internal DevX Experience is broken… and you should be pissed',
+        scheduleOrder: 8,
+        description: '',
+        start: {
+          cest: '19:20 PM',
+          pt: '10:20 AM'
+        },
+        end: {
+          cest: '19:40 PM',
+          pt: '10:40 AM'
+        },
+        ytId: 'N6XkqbNKxQA',
+        speaker: getSpeakerByName('Shanea Leven')
+      },
+      {
+        title: 'Find friction in your developer experience by user testing with developers',
+        scheduleOrder: 10,
+        description: '',
+        start: {
+          cest: '20:00 PM',
+          pt: '11:00 AM'
+        },
+        end: {
+          cest: '20:20 PM',
+          pt: '11:20 AM'
+        },
+        ytId: 'Dn6-See4wfk',
+        speaker: getSpeakerByName('Ian Jennings')
+      },
+      {
+        title: 'The developer experience gap',
+        scheduleOrder: 12,
+        description: '',
+        start: {
+          cest: '20:40 PM',
+          pt: '11:40 AM'
+        },
+        end: {
+          cest: '21:00 PM',
+          pt: '12:00 PM'
+        },
+        // start: isEurope() ? '20:40' : '11:40 AM',
+        // end: isEurope() ? '21:00' : '12:00 PM',
+        ytId: 'Z6O13JQOmiQ',
+        speaker: getSpeakerByName("Stephen O'Grady")
+      }
+    ]
+  },
+  {
+    name: 'Stage A',
+    day: 'Thursday, April 29',
+    discord: '',
+    slug: 'a',
+    stream: 'aI-L72XGznU',
+    schedule: [
+      {
+        title: 'VSCode Power User Tips & Tricks',
+        scheduleOrder: 14,
+        description: '',
+        start: {
+          cest: '16:40 PM',
+          pt: '7:40 AM'
+        },
+        end: {
+          cest: '17:00 PM',
+          pt: '8:00 AM'
+        },
+        // start: isEurope() ? '16:40' : '7:40 AM',
+        // end: isEurope() ? '17:00' : '8:00 AM',
+        ytId: 'M6E5L1-TVoc',
+        speaker: getSpeakerByName('Ahmad Awais')
+      },
+      {
+        title: 'Streamlining Firebase Development with local Emulators',
+        scheduleOrder: 16,
+        description: '',
+        start: {
+          cest: '17:20 PM',
+          pt: '8:20 AM'
+        },
+        end: {
+          cest: '17:40 PM',
+          pt: '8:40 AM'
+        },
+        ytId: '0AXj96IXueg',
+        speaker: getSpeakerByName('Rachel Myers')
+      },
+      {
+        title: 'The story of GitHub1s - speed & familiarity matters',
+        scheduleOrder: 18,
+        description: '',
+        start: {
+          cest: '18:00 PM',
+          pt: '9:00 AM'
+        },
+        end: {
+          cest: '18:20 PM',
+          pt: '9:20 AM'
+        },
+        ytId: '6Xyg6yQe2rk',
+        speaker: getSpeakerByName('Yihong Cheng')
+      },
+      {
+        title: 'Trapped in the open source supply chain',
+        scheduleOrder: 20,
+        description: '',
+        start: {
+          cest: '18:40 PM',
+          pt: '9:40 AM'
+        },
+        end: {
+          cest: '19:00 PM',
+          pt: '10:00 AM'
+        },
+        ytId: '0wRUU0ln9-0',
+        speaker: getSpeakerByName('Henry Zhu')
+      },
+      {
+        title: 'DevX in the Internet Age: One Step Forward, Two Steps Back',
+        scheduleOrder: 22,
+        description: '',
+        start: {
+          cest: '19:20 PM',
+          pt: '10:20 AM'
+        },
+        end: {
+          cest: '19:40 PM',
+          pt: '10:40 AM'
+        },
+        ytId: 'asA7rE0mDeo',
+        speaker: getSpeakerByName('Anurag Goel')
+      },
+      {
+        title: 'How to build a dApp',
+        scheduleOrder: 24,
+        description: '',
+        start: {
+          cest: '20:00 PM',
+          pt: '11:00 AM'
+        },
+        end: {
+          cest: '20:20 PM',
+          pt: '11:20 AM'
+        },
+        // start: isEurope() ? '20:00' : '11:00 AM',
+        // end: isEurope() ? '20:20' : '11:20 AM',
+        ytId: 'Ks9_hTXwh2o',
+        speaker: getSpeakerByName('Nader Dabit')
+      },
+      {
+        title: 'How to prioritize dev experience in the development process above all else',
+        scheduleOrder: 26,
+        description: '',
+        start: {
+          cest: '20:40 PM',
+          pt: '11:40 AM'
+        },
+        end: {
+          cest: '21:00 PM',
+          pt: '12:00 PM'
+        },
+        ytId: 'lWF_PNqyiE8',
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [getSpeakerByName('Tuomas Artman'), getSpeakerByName('Thomas Paul Mann')]
+      }
+    ]
+  },
+  {
+    name: 'Stage B',
+    day: 'Wednesday, April 28',
+    discord: '',
+    slug: 'b',
+    stream: 'aI-L72XGznU',
+    schedule: [
+      {
+        title: 'Using Observability to improve the Developer Experience',
+        scheduleOrder: 3,
+        description: '',
+        start: {
+          cest: '17:40 PM',
+          pt: '8:40 AM'
+        },
+        end: {
+          cest: '18:00 PM',
+          pt: '9:00 AM'
+        },
+        ytId: '8LlM0knBuLQ',
+        speaker: getSpeakerByName('Borja Burgos')
+      },
+      {
+        title: 'Monorepos, are they right for you?',
+        scheduleOrder: 5,
+        description: '',
+        start: {
+          cest: '18:20 PM',
+          pt: '9:20 AM'
+        },
+        end: {
+          cest: '18:40 PM',
+          pt: '9:40 AM'
+        },
+        ytId: 'G3yIAS4NShk',
+        speaker: getSpeakerByName('Maël Nison')
+      },
+      {
+        title: 'Cloud native Java',
+        scheduleOrder: 7,
+        description: '',
+        start: {
+          cest: '19:00 PM',
+          pt: '10:00 AM'
+        },
+        end: {
+          cest: '19:20 PM',
+          pt: '10:20 AM'
+        },
+        ytId: 'oq5FcnqEMxk',
+        speaker: getSpeakerByName('Josh Long')
+      },
+      {
+        title: 'Infrastructure security, visibility and cost-optimization',
+        scheduleOrder: 9,
+        description: '',
+        start: {
+          cest: '19:40 PM',
+          pt: '10:40 AM'
+        },
+        end: {
+          cest: '20:00 PM',
+          pt: '11:00 AM'
+        },
+        ytId: 'AizWSieYRGk',
+        speaker: getSpeakerByName('Yevgeny Pats')
+      },
+      {
+        title: 'Ephemeral Development Environments',
+        scheduleOrder: 11,
+        description: '',
+        start: {
+          cest: '20:20 PM',
+          pt: '11:20 AM'
+        },
+        end: {
+          cest: '20:40 PM',
+          pt: '11:40 AM'
+        },
+        // start: isEurope() ? '20:20' : '11:20 AM',
+        // end: isEurope() ? '20:40' : '11:40 AM',
+        ytId: 'IXVmjkI7wkc',
+        // eslint-disable-next-line
+        // @ts-ignore
+        speaker: [getSpeakerByName('Mike Nikles'), getSpeakerByName('Anton Kosyakov')]
+      },
+      {
+        title: 'Building a K8s Operator for a Distributed Database',
+        scheduleOrder: 13,
+        description: '',
+        start: {
+          cest: '21:00 PM',
+          pt: '12:00 PM'
+        },
+        end: {
+          cest: '21:20 PM',
+          pt: '12:20 PM'
+        },
+        ytId: 'VUGBq0ME2Qc',
+        speaker: getSpeakerByName('Natalie Pistunovich')
+      }
+    ]
+  },
+  {
+    name: 'Stage B',
+    day: 'Thursday, April 29',
+    discord: '',
+    slug: 'b',
+    stream: 'aI-L72XGznU',
+    schedule: [
+      {
+        title: 'Building Supabase Storage. DevX, performance, security - choose three',
+        scheduleOrder: 15,
+        description: '',
+        start: {
+          cest: '17:00 PM',
+          pt: '8:00 AM'
+        },
+        end: {
+          cest: '17:20 PM',
+          pt: '8:20 AM'
+        },
+        // start: isEurope() ? '17:00' : '8:00 AM',
+        // end: isEurope() ? '17:20' : '8:20 AM',
+        ytId: 'YsUYOsq_o7g',
+        speaker: getSpeakerByName('Inian Parameshwaran')
+      },
+      {
+        title: 'DevX: history of code search',
+        scheduleOrder: 17,
+        description: '',
+        start: {
+          cest: '17:40 PM',
+          pt: '8:40 AM'
+        },
+        end: {
+          cest: '18:00 PM',
+          pt: '9:00 AM'
+        },
+        ytId: 'J4lArxTWiIY',
+        speaker: getSpeakerByName('Beyang Liu')
+      },
+      {
+        title: 'Why I love incremental delivery and why you should too',
+        scheduleOrder: 19,
+        description: '',
+        start: {
+          cest: '18:20 PM',
+          pt: '9:20 AM'
+        },
+        end: {
+          cest: '18:40 PM',
+          pt: '9:40 AM'
+        },
+        ytId: 'AnxWXQMauMI',
+        speaker: getSpeakerByName('Lili Kastilio')
+      },
+      {
+        title: 'Simplifying the journey of your containerized application from dev to production',
+        scheduleOrder: 21,
+        description: '',
+        start: {
+          cest: '19:00 PM',
+          pt: '10:00 AM'
+        },
+        end: {
+          cest: '19:20 PM',
+          pt: '10:20 AM'
+        },
+        // start: isEurope() ? '19:00' : '10:00 AM',
+        // end: isEurope() ? '19:20' : '10:20 AM',
+        ytId: '8iJ_6VUzk1I',
+        speaker: getSpeakerByName('Kyle Quest')
+      },
+      {
+        title: 'Make your APIs developer-friendly',
+        scheduleOrder: 23,
+        description: '',
+        start: {
+          cest: '19:40 PM',
+          pt: '10:40 AM'
+        },
+        end: {
+          cest: '20:00 PM',
+          pt: '11:00 AM'
+        },
+        ytId: 'E-2Eqh99nUw',
+        speaker: getSpeakerByName('Aidan Cunniffe')
+      },
+      {
+        title: '"Testing" in prod Isn\'t the only way: why observability needs structure',
+        scheduleOrder: 25,
+        description: '',
+        start: {
+          cest: '20:20 PM',
+          pt: '11:20 AM'
+        },
+        end: {
+          cest: '20:40 PM',
+          pt: '11:40 AM'
+        },
+        ytId: '0nrd5-9Lf7E',
+        speaker: getSpeakerByName('Jean Yang')
+      }
+    ]
+  }
+];
 
-speakers2021.forEach((speaker) => {
-	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
-})
+write.sync(`${targetPath}/2021/speakers.json`, JSON.stringify(speakers2021));
 
-write.sync(`${targetPath}/2021/stages.json`, JSON.stringify(stages2021))
+speakers2021.forEach(speaker => {
+  write.sync(
+    `${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`,
+    JSON.stringify(speaker)
+  );
+});
 
-write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022))
+write.sync(`${targetPath}/2021/stages.json`, JSON.stringify(stages2021));
 
-write.sync(`${targetPath}/2022/stages.json`, JSON.stringify(stages2022))
+write.sync(`${targetPath}/2022/speakers.json`, JSON.stringify(speakers2022));
 
-speakers2022.forEach((speaker) => {
-	write.sync(`${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`, JSON.stringify(speaker))
-})
+write.sync(`${targetPath}/2022/stages.json`, JSON.stringify(stages2022));
 
-write.sync(`${targetPath}/2022/hosts.json`, JSON.stringify(hosts2022))
+speakers2022.forEach(speaker => {
+  write.sync(
+    `${targetPath}/${stringToBeautifiedFragment(speaker.name)}.json`,
+    JSON.stringify(speaker)
+  );
+});
 
-hosts2022.forEach((host) => {
-	write.sync(`${targetPath}/${stringToBeautifiedFragment(host.name)}.json`, JSON.stringify(host))
-})
+write.sync(`${targetPath}/2022/hosts.json`, JSON.stringify(hosts2022));
+
+hosts2022.forEach(host => {
+  write.sync(`${targetPath}/${stringToBeautifiedFragment(host.name)}.json`, JSON.stringify(host));
+});
