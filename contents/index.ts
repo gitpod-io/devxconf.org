@@ -1870,7 +1870,7 @@ const stages2022: Stage[] = [
     day: 'Tuesday, May 3',
     discord: '',
     slug: 'a',
-    stream: 'vSUsXkew3X0',
+    stream: 'Qecr3TQk87Q',
     schedule: [
       {
         title: 'Welcome to DevX Conf Day 2!',
@@ -2113,7 +2113,7 @@ const stages2022: Stage[] = [
     day: 'Tuesday, May 3',
     discord: '',
     slug: 'b',
-    stream: 'vSUsXkew3X0',
+    stream: 'Qecr3TQk87Q',
     schedule: [
       {
         title: 'TDD and the Terminator - An introduction to Test Driven Development',
