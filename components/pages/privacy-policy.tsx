@@ -75,6 +75,11 @@ const PrivacyPolicy = () => (
                 Our Website and some of the Services allow you to share information with other users and create and publish content. Any content that you post on or via the Website (“User Submissions”) may be publicly available to other users. The notices and tools that we provide on the Website are intended to inform you which information will be made publicly available. If you publish your personal information in any User Submissions, you may receive unsolicited messages from other users of the Website or the public. We, therefore, encourage you only to post information that you are sure you want to be accessible to anyone.
             </p>
 
+            <h4>Data Transfer outside the EU</h4>
+            <p>
+            In course of data processing by us data may be transferred to third countries, i.e. countries outside the EU. This may happen via implementation of third party providers such as cloud services and external service partners which process data on our behalf. Where this occurs we have proper safeguards in place to ensure the data is secured at an equivalent level to as if it had never left the EU.
+            </p>
+            
             <h4>Social Media Features</h4>
             <p>
                 Our Website and Services include social media buttons (“Features”) which directly lead to fan pages. There you can share posts and comment on through your social media account. The Features may enable the applicable social networks to collect your Internet Protocol address, identifiable information and may set a cookie to enable the functionality of the Feature. Your interactions with the Features are governed by the privacy policy of the third party who provided such Features and we are not responsible for the privacy practices or the content of such third-party Features. Please be aware that the third parties providing the Features may collect personal information from you. Accordingly, we encourage you to read the terms and conditions and privacy policy of each relevant third party that you choose to use or interact with.
