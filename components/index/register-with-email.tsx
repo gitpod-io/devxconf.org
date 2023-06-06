@@ -33,7 +33,7 @@ const RegisterWithEmail = ({
   const [loading, setLoading] = useState(false);
 
   const validateEmail = e => {
-    let email = e.target.value;
+    const email = e.target.value;
     if (validator.isEmail(email) || !email) {
       setEmailError('');
     } else {
