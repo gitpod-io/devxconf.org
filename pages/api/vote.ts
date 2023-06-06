@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getVoteCount, addVote } from '@lib/google-spreadsheet'
 
@@ -10,7 +12,7 @@ type ErrorResponse = {
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<{} | ErrorResponse>
+  res: NextApiResponse<unknown | ErrorResponse>
 ) {
   
   if(req.method === "GET") {

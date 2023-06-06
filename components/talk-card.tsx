@@ -20,6 +20,7 @@
 import { Image as ImageProps, Talk } from '@lib/types';
 import { isAfter, isBefore, parseISO } from 'date-fns';
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 
 import cn from 'classnames';
 import { isEurope } from 'utils/helpers';
@@ -59,61 +60,63 @@ export default function TalkCard({ talk: { title, speaker, start, end, ytId }, s
         end[isEurope() ? 'cest' : 'pt']
       )}`
     );
-  }, []);
+  }, [end, start]);
 
   const renderCardBody = () => (
-    <div className={styles['card-body']}>
-      <h4 title={title} className={styles.title}>
-        {title}
-      </h4>
-      {undefined !== speaker ? (
-        <div className={styles.speaker}>
-          <div className={styles['avatar-group']}>
-            {typeof speaker === 'string' ? (
-              <h4 className={styles['speaker-name']}>
-                {speaker}
-              </h4>
-            ) : speaker.length ? (
-              // eslint-disable-next-line
-              speaker.map(s => <Avatar name={s.name} image={s.image} />)
-            ) : (
-              <Avatar name={speaker.name} image={speaker.image} />
-            )}
+    <head>
+      <div className={styles['card-body']}>
+        <h4 title={title} className={styles.title}>
+          {title}
+        </h4>
+        {undefined !== speaker ? (
+          <div className={styles.speaker}>
+            <div className={styles['avatar-group']}>
+              {typeof speaker === 'string' ? (
+                <h4 className={styles['speaker-name']}>{speaker}</h4>
+              ) : speaker.length ? (
+                // eslint-disable-next-line
+                speaker.map(s => <Avatar name={s.name} image={s.image} />)
+              ) : (
+                <Avatar name={speaker.name} image={speaker.image} />
+              )}
+            </div>
+            <h4 className={styles['speaker-name']}>
+              {speaker.length === 2 ? `${speaker[0].name} and ${speaker[1].name}` : speaker.name}
+            </h4>
           </div>
-          <h4 className={styles['speaker-name']}>
-            {speaker.length === 2 ? `${speaker[0].name} and ${speaker[1].name}` : speaker.name}
-          </h4>
-        </div>
-      ) : null}
-    </div>
+        ) : null}
+      </div>
+    </head>
   );
 
   return (
-    <div key={title} className={styles.talk}>
-      {showTime && (
-        <p className={styles.time}>
-          {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
-        </p>
-      )}
-      {ytId ? (
-        <a
-          href={`https://youtu.be/${ytId}`}
-          target="_blank"
-          className={cn(styles.card, {
-            [styles['is-live']]: isTalkLive
-          })}
-        >
-          {renderCardBody()}
-        </a>
-      ) : (
-        <div
-          className={cn(styles.card, {
-            [styles['is-live']]: isTalkLive
-          })}
-        >
-          {renderCardBody()}
-        </div>
-      )}
-    </div>
+    <Head>
+      <div key={title} className={styles.talk}>
+        {showTime && (
+          <p className={styles.time}>
+            {startAndEndTime || <>&nbsp;</>} {isEurope() ? 'CEST' : 'PT'}
+          </p>
+        )}
+        {ytId ? (
+          <a
+            href={`https://youtu.be/${ytId}`}
+            target="_blank"
+            className={cn(styles.card, {
+              [styles['is-live']]: isTalkLive
+            })}
+          >
+            {renderCardBody()}
+          </a>
+        ) : (
+          <div
+            className={cn(styles.card, {
+              [styles['is-live']]: isTalkLive
+            })}
+          >
+            {renderCardBody()}
+          </div>
+        )}
+      </div>
+    </Head>
   );
 }

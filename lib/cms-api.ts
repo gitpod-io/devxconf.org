@@ -44,10 +44,10 @@ if (process.env.DATOCMS_READ_ONLY_API_TOKEN) {
   cmsApi = agilityApi;
 } else {
   cmsApi = {
-    getAllSpeakers: async () => [],
-    getAllStages: async () => [],
-    getAllSponsors: async () => [],
-    getAllJobs: async () => []
+    getAllSpeakers: () => Promise.resolve([]),
+    getAllStages: () => Promise.resolve([]),
+    getAllSponsors: () => Promise.resolve([]),
+    getAllJobs: () => Promise.resolve([])
   };
 }
 

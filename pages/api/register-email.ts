@@ -15,7 +15,7 @@ type ErrorResponse = {
 
 export default async function register(
   req: NextApiRequest,
-  res: NextApiResponse<{} | ErrorResponse>
+  res: NextApiResponse<unknown | ErrorResponse>
 ) {
   if (req.method !== 'POST') {
     return res.status(501).json({
