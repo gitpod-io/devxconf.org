@@ -22,6 +22,7 @@ const GitHubLogo = () => (
   </svg>
 );
 
+// tslint:disable-next-line: ban-types
 const GitHubButton = ({text, setLoggedIn}: {text: string, setLoggedIn?: Function}) => {
   const handleAuthorization = () => {
     const windowWidth = 600;

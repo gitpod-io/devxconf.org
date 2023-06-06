@@ -6,7 +6,7 @@ import AlreadyRegistered from './already-registered';
 import ConsentNote from './consent-note';
 import RegisterationSuccess from './registeration-success';
 import cn from 'classnames';
-import {setIsLoggedIn} from '../../utils/helpers'
+import { setIsLoggedIn } from '../../utils/helpers';
 import styles from './register-with-email.module.css';
 import validator from 'validator';
 
@@ -15,6 +15,7 @@ interface RegisterWithEmailProps {
   isConsentNoteShown?: boolean;
   buttonText?: string;
   successText?: string;
+  // tslint:disable-next-line: ban-types
   setLoggedIn?: Function;
 }
 
@@ -32,7 +33,7 @@ const RegisterWithEmail = ({
   const [loading, setLoading] = useState(false);
 
   const validateEmail = e => {
-    var email = e.target.value;
+    let email = e.target.value;
     if (validator.isEmail(email) || !email) {
       setEmailError('');
     } else {
@@ -55,7 +56,7 @@ const RegisterWithEmail = ({
         if (setLoggedIn) {
           setLoggedIn(true);
         }
-        setIsLoggedIn()
+        setIsLoggedIn();
       } else if (response.status === 400) {
         setEmailError('Please enter a valid email.');
       } else if (response.status === 409) {
@@ -64,7 +65,7 @@ const RegisterWithEmail = ({
         }
         setIsAlreadyRegistered(true);
         setSubmitted(true);
-        setIsLoggedIn()
+        setIsLoggedIn();
         setLoading(false);
       }
     } catch (e) {
@@ -93,16 +94,20 @@ const RegisterWithEmail = ({
           onChange={e => validateEmail(e)}
           className={styles.input}
         />
-        { 
-          emailError ? <span className={styles.error}>{emailError}</span> : null
-        }
-        {
-          !loading ? <button type="submit" className={cn('btn', styles.btn)} disabled={emailError ? true : false}>
-          {buttonText ? buttonText : 'Register Now'}
-        </button> : <span className={styles.error}>Loadig...</span>
-        }
+        {emailError ? <span className={styles.error}>{emailError}</span> : null}
+        {!loading ? (
+          <button
+            type="submit"
+            className={cn('btn', styles.btn)}
+            disabled={emailError ? true : false}
+          >
+            {buttonText ? buttonText : 'Register Now'}
+          </button>
+        ) : (
+          <span className={styles.error}>Loadig...</span>
+        )}
       </form>
-      {isConsentNoteShown ? <ConsentNote /> : null} 
+      {isConsentNoteShown ? <ConsentNote /> : null}
     </div>
   ) : isAlreadyRegistered ? (
     <AlreadyRegistered text={successText} />
