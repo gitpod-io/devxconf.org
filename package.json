@@ -16,6 +16,7 @@
   "dependencies": {
     "@agility/content-fetch": "1.0.0",
     "@agility/content-sync": "0.1.23",
+    "@netlify/plugin-nextjs": "^3.9.2",
     "@reach/skip-nav": "0.12.1",
     "@types/write": "^2.0.1",
     "chrome-aws-lambda": "5.5.0",
