@@ -52,7 +52,7 @@ export default function HostPage({ speaker }: any) {
   );
 }
 
-export async function getStaticProps({ params }: any) {
+export async function getServerSideProps({ params }: any) {
   const req = await fetch(`https://devxconf.org/json/${encodeURIComponent(params.slug)}.json`);
   const speaker = await req.json();
 

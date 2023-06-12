@@ -24,7 +24,7 @@ const SpeakersPage = ({ speakers }: any) => {
 
 export default SpeakersPage;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const req = await fetch(`https://devxconf.org/json/2021/speakers.json`);
   const speakers = await req.json();
 
