@@ -16,7 +16,7 @@ export default function Conf({stages}: any) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const req = await fetch(`https://devxconf.org/json/2021/stages.json`);
   const stages = await req.json();
 
