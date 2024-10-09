@@ -5,17 +5,5 @@
   from = "/*"
   to = "/index.html"
   status = 200
-[[redirects]]
-  from = "http://email.gitpod.io/*"
-  to = "https://e.customeriomail.com/:splat"
-  status = 301
-  force = true
-  headers = {host = "email.gitpod.io"}
-[[redirects]]
-  from = "https://email.gitpod.io/*"
-  to = "https://e.customeriomail.com/:splat"
-  status = 301
-  force = true
-  headers = {host = "email.gitpod.io"}
 [[plugins]]
   package = "@netlify/plugin-nextjs"
