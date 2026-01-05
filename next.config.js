@@ -16,15 +16,6 @@
 
 module.exports = {
   target: 'serverless',
-  async redirects() {
-    return [
-      {
-        source: '/:path*',
-        destination: 'https://ona.com',
-        permanent: false,
-      },
-    ];
-  },
   images: {
     domains: [
       'www.datocms-assets.com',
