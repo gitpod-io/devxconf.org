@@ -14,46 +14,23 @@
  * limitations under the License.
  */
 
-import '@styles/font.css';
-import '@styles/global.css';
-import '@styles/nprogress.css';
+import type { AppProps, AppContext } from 'next/app';
 
-import { OverlayProvider, SSRProvider } from 'react-aria';
+const REDIRECT_URL = 'https://ona.com';
 
-import type { AppProps } from 'next/app';
-import NProgress from '@components/nprogress';
-import ResizeHandler from '@components/resize-handler';
-import { handleFirstTab } from 'utils/accessibility';
-import { useEffect } from 'react';
-import { useRouter } from "next/router";
-import * as gtag from "lib/gtag";
-import { IS_PRODUCTION } from '@lib/constants';
-
-export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
-  useEffect(() => {
-    window.addEventListener('keydown', handleFirstTab);
-
-    const handleRouteChange = (url: URL) => {
-        /* invoke analytics function only for production */
-        if (IS_PRODUCTION) gtag.pageview(url);
-    };
-    router.events.on("routeChangeComplete", handleRouteChange);
-      
-    return (): void => {
-      window.removeEventListener('keydown', handleFirstTab);
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
-  return (
-    <SSRProvider>
-      <OverlayProvider>
-        <Component {...pageProps} />
-        <ResizeHandler />
-        <NProgress />
-      </OverlayProvider>
-    </SSRProvider>
-  );
+function App({ Component, pageProps }: AppProps) {
+  return null;
 }
+
+App.getInitialProps = async (appContext: AppContext) => {
+  const { ctx } = appContext;
+  
+  if (ctx.res) {
+    ctx.res.writeHead(302, { Location: REDIRECT_URL });
+    ctx.res.end();
+  }
+  
+  return { pageProps: {} };
+};
+
+export default App;
