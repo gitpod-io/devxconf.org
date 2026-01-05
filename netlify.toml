@@ -1,9 +1,5 @@
-[build]
-  command = "yarn build"
-  publish = ".next"
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  to = "https://ona.com"
+  status = 301
+  force = true
