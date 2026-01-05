@@ -3,7 +3,8 @@
   publish = ".next"
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
+  to = "https://ona.com"
+  status = 302
+  force = true
 [[plugins]]
   package = "@netlify/plugin-nextjs"
