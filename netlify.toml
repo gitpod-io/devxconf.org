@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/*"
   to = "https://ona.com"
-  status = 301
+  status = 302
   force = true
