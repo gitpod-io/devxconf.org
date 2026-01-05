@@ -19,6 +19,11 @@ module.exports = {
   async redirects() {
     return [
       {
+        source: '/',
+        destination: 'https://ona.com',
+        permanent: false,
+      },
+      {
         source: '/:path*',
         destination: 'https://ona.com',
         permanent: false,
