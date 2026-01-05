@@ -1,6 +1,6 @@
 [build]
-  command = "yarn build && yarn next export"
-  publish = "out"
+  command = "echo 'Redirect only'"
+  publish = "public"
 [[redirects]]
   from = "/*"
   to = "https://ona.com"
